@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'allauth',  # also required so copied from allauth installation doc
     'allauth.account',  # also required so copied from allauth doc
     'allauth.socialaccount',  # also required so copied from allauth doc
+    'home',
 
 ]
 
@@ -64,7 +65,10 @@ ROOT_URLCONF = 'shop_kbeauty.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
