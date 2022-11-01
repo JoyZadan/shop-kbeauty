@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.account',  # also required so copied from allauth doc
     'allauth.socialaccount',  # also required so copied from allauth doc
     'home',
+    'products',
 
 ]
 
