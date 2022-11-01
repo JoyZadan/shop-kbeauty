@@ -1,9 +1,9 @@
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
-    background: url('/media/homepage-img2-v2.png') no-repeat center center fixed;
+    background: url('/media/homepage-bg1.webp') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
