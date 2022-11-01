@@ -27,7 +27,7 @@ body {
     width: fit-content;
 }
 
-/* typography */
+/* typography styling */
 .text-shadow {
     text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
                     0px -5px 35px rgba(255,255,255,0.3);
@@ -36,6 +36,8 @@ body {
 .nowrap {
     white-space: nowrap !important;
 }
+
+/* buttons styling */
 
 .shop-now-button {
     background: black;
@@ -65,6 +67,17 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
+.bg-black {
+    background: #000 !important;
+}
+
+/* overlays styling */
+
+.overlay-dark {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 
 /* -------------------------------- Media Queries */
 
