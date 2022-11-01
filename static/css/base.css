@@ -27,6 +27,12 @@ body {
     width: fit-content;
 }
 
+/* typography */
+.text-shadow {
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
+                    0px -5px 35px rgba(255,255,255,0.3);
+}
+
 .nowrap {
     white-space: nowrap !important;
 }
@@ -48,7 +54,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #e9385c;
     color: white;
 }
 
