@@ -3,9 +3,9 @@
 } */
 
 body {
-    background: url('/media/homepage-bg.png') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
+    /* background: url('/media/homepage-bg.png') no-repeat center center fixed; */
+    /* background-size: cover; */
+    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Lato';
 }
@@ -26,6 +26,23 @@ body {
 .main-logo-link {
     width: fit-content;
 }
+
+/* hero section */
+.home-hero {
+    background: url('/media/homepage-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+/* placeholder content below hero */
+.home-hero2 {
+    background: url('/media/homepage-img2-v2.png') no-repeat center center fixed;
+    background-size: cover;
+    /* height: 400px; */
+    width: 100%;
+}
+
 
 /* typography styling */
 .text-shadow {
@@ -79,6 +96,10 @@ body {
     /* background-color: rgba(255, 215, 0, 0.2) */
 }
 
+/* -------------------------------- Footer Styling */
+.footer {
+    background-color: #e9385c;
+}
 
 /* -------------------------------- Media Queries */
 
@@ -102,4 +123,38 @@ body {
     .header-container {
         padding-top: 164px;
     }
+
+    #logo-mobile {
+        display: none;
+    }
 }
+
+/* styling for home hero content for medium screens and below */
+@media (max-width: 992px) {
+    .hero-heading {
+        margin-top: 6.25rem;
+    }
+}
+
+@media (max-width: 892px) {
+    .display-4 {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 441px) {
+    .hero-heading {
+        margin-top: 9.25rem;
+    }
+
+    .banner-font {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 418px) {
+    .hero-heading {
+        margin-top: 12rem;
+    }
+}
+
