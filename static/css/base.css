@@ -23,6 +23,10 @@ body {
     text-transform: uppercase;
 }
 
+.logo-footer {
+    font-size: 1.25rem;
+}
+
 .main-logo-link {
     width: fit-content;
 }
@@ -101,6 +105,11 @@ body {
     background-color: #e9385c;
 }
 
+.footer-note {
+    background-color: #000;
+    margin-bottom: 0 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -130,15 +139,35 @@ body {
 }
 
 /* styling for home hero content for medium screens and below */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .hero-heading {
-        margin-top: 6.25rem;
+        margin-top: 7.5rem;
     }
 }
 
 @media (max-width: 892px) {
     .display-4 {
         font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 698px) {
+    .hero-heading {
+        margin-top: 7.5rem;
+    }
+
+    .logo-font {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 636px) {
+    .nav-link {
+        padding: 0;
+    }
+
+    .hero-heading {
+        margin-top: 7rem;
     }
 }
 
@@ -149,12 +178,27 @@ body {
 
     .banner-font {
         font-size: 1.25rem;
+        text-transform: uppercase;
     }
 }
 
 @media (max-width: 418px) {
     .hero-heading {
-        margin-top: 12rem;
+        margin-top: 9rem;
     }
 }
 
+@media (max-width: 367px) {
+    .logo-font {
+        font-size: 1.75rem;
+    }
+    .banner-font {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 333px) {
+    .nav-link {
+        padding: 0;
+    }
+}
