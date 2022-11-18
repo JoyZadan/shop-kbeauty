@@ -12,8 +12,6 @@
   <meta name="description" content="Shop K-Beauty">
   <meta name="author" content="Joy Zadan">
   {% comment %} Favicon {% endcomment %}
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/favicon/apple-touch-icon.png' %}"> -->
-  <!-- <link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/> -->
   <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
   {% endblock %}
 
@@ -50,6 +48,7 @@
 <body>
   <!-- Header section -->
   <header class="container-fluid fixed-top">
+    <!-- Logo, search bar, my account and cart area -->
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -113,6 +112,7 @@
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
     </div>
+    <!-- Navbar area -->
     <div class="row bg-white">
       <nav class="navbar navbar-expand-lg navbar-light w-100">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -123,6 +123,7 @@
         {% include 'includes/main_nav.html' %}
       </nav>
     </div>
+    <!-- Delivery banner area -->
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-black text-white">
         <h4 class="logo-font my-1">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
