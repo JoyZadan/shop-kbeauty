@@ -19,10 +19,6 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
 .logo-footer {
     font-size: 1.25rem;
 }
@@ -47,8 +43,21 @@ body {
     width: 100%;
 }
 
-
 /* typography styling */
+.logo-font {
+    text-transform: uppercase;
+}
+
+.nav-font {
+    text-transform: uppercase;
+}
+
+.brand-font {
+    color: #e9385c;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .text-shadow {
     text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
                     0px -5px 35px rgba(255,255,255,0.3);
@@ -57,6 +66,9 @@ body {
 .nowrap {
     white-space: nowrap !important;
 }
+
+
+
 
 /* buttons styling */
 
@@ -158,6 +170,10 @@ body {
 
     .logo-font {
         font-size: 1.5rem;
+    }
+
+    .nav-font {
+        font-size: 1rem;
     }
 }
 

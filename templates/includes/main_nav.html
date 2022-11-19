@@ -1,4 +1,4 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<!-- <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
@@ -63,4 +63,132 @@
             </div>
         </li>
     </ul>
+</div> -->
+
+<!-- draft redo of nav to reflect product main cat, cat and subcat better -->
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav nav-fill w-auto mx-auto">
+        <!-- "ALL PRODUCTS" navlinks in here -->
+        <li class="nav-item px-4 dropdown">
+            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Products
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="" class="dropdown-item">By Price</a>
+                <a href="" class="dropdown-item ">By Rating</a>
+                <a href="" class="dropdown-item ">By Category</a>
+                <a href="" class="dropdown-item">All Products</a>
+            </div>
+        </li>
+        <!-- "SKINCARE" mega menu in here -->
+        <li class="nav-item px-4 dropdown">
+            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="skincare-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SKINCARE</a>
+            <div class="dropdown-menu border-0" aria-labelledby="skincare-dropdown">
+                <h2 class="brand-font ml-4 h4">PRODUCT TYPES</h2>
+                <div class="dropdown-divider"></div>
+                <div>
+                    <div>
+                        <div class="dropdown-header brand-font">Face Care</div>
+                        <a class="dropdown-item" href="#">Moisturizer &amp; Cream</a>
+                        <a class="dropdown-item" href="#">Essence &amp; Serum</a>
+                        <a class="dropdown-item" href="#">Sunscreen</a>
+                        <a class="dropdown-item" href="#">Spot Treatment</a>
+                    </div>
+                    <div>
+                        <div class="dropdown-header brand-font">Facial Cleanser</div>
+                        <a class="dropdown-item" href="#">Face Wash &amp; Cleanser</a>
+                        <a class="dropdown-item" href="#">Exfoliator, Peeling &amp; Scrub</a>
+                        <a class="dropdown-item" href="#">Makeup Remover</a>
+                    </div>
+                    <div>
+                        <div class="dropdown-header brand-font">Eye Care</div>
+                        <a class="dropdown-item" href="#">Eye Cream</a>
+                        <a class="dropdown-item" href="#">Eye Serum & Essence</a>
+                    </div>
+                    <div>
+                        <div class="dropdown-header brand-font">Lip Care</div>
+                        <a class="dropdown-item" href="#">Lip Mask</a>
+                        <a class="dropdown-item" href="#">Lip Balm &amp; Cream</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- "HAIR & BODY" mega menu in here -->
+        <li class="nav-item px-4 dropdown">
+            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="hair-body-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HAIR &amp; BODY</a>
+            <div class="dropdown-menu border-0" aria-labelledby="hair-body-dropdown">
+                <h2 class="brand-font ml-4 h4">PRODUCT TYPES</h2>
+                <div class="dropdown-divider"></div>
+                <div>
+                    <div>
+                        <div class="dropdown-header brand-font">Hair Care</div>
+                        <a class="dropdown-item" href="#">Shampoo &amp; Conditioner</a>
+                        <a class="dropdown-item" href="#">Hair Treatment</a>
+                        <a class="dropdown-item" href="#">Hair Tools &amp; Accessories</a>
+                    </div>
+                    <div>
+                        <div class="dropdown-header brand-font">Body Care</div>
+                        <a class="dropdown-item" href="#">Bath &amp; Shower</a>
+                        <a class="dropdown-item" href="#">Body Scrubs &amp; Exfoliants</a>
+                        <a class="dropdown-item" href="#">Body Lotion &amp; Moisturizer</a>
+                    </div>
+                    <div>
+                        <div class="dropdown-header brand-font">Hand Care</div>
+                        <a class="dropdown-item" href="#">Hand Moisturizer &amp; Lotion</a>
+                        <a class="dropdown-item" href="#">Nail Care</a>
+                        <a class="dropdown-item" href="#">Nail Tools &amp; Accessories</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- "MAKEUP" mega menu in here -->
+        <li class="nav-item px-4 dropdown">
+            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="makeup-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MAKEUP</a>
+            <div class="dropdown-menu border-0" aria-labelledby="hair-body-dropdown">
+                <h2 class="brand-font ml-4 h4">PRODUCT TYPES</h2>
+                <div class="dropdown-divider"></div>
+                <div class="d-md-flex align-items-start justify-content-start">
+                    <div>
+                        <div class="dropdown-header brand-font">Face</div>
+                        <a class="dropdown-item" href="#">Foundation</a>
+                        <a class="dropdown-item" href="#">BB &amp; CC Cream</a>
+                        <a class="dropdown-item" href="#">Powder</a>
+                        <a class="dropdown-item" href="#">Concealer</a>
+                        <a class="dropdown-item" href="#">Blush</a>
+                    </div>
+
+                    <div>
+                        <div class="dropdown-header brand-font">Eye</div>
+                        <a class="dropdown-item" href="#">Eyebrow</a>
+                        <a class="dropdown-item" href="#">Eyeliner</a>
+                        <a class="dropdown-item" href="#">Mascara</a>
+                        <a class="dropdown-item" href="#">Eyeshadow</a>
+                    </div>
+
+                    <div>
+                        <div class="dropdown-header brand-font">Lip</div>
+                        <a class="dropdown-item" href="#">Lipstick</a>
+                        <a class="dropdown-item" href="#">Lip Pencil</a>
+                        <a class="dropdown-item" href="#">Lip Gloss</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <!-- "SPECIAL OFFERS" navlinks in here -->
+        <li class="nav-item px-4 dropdown">
+            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Special Offers
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="" class="dropdown-item">New Arrivals</a>
+                <a href="" class="dropdown-item">Deals</a>
+                <a href="" class="dropdown-item">Clearance</a>
+                <a href="" class="dropdown-item">All Specials</a>
+            </div>
+        </li>
+    </ul>
 </div>
+
+
