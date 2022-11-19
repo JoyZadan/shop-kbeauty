@@ -1,11 +1,4 @@
-/* html {
-    height: 100%;
-} */
-
 body {
-    /* background: url('/media/homepage-bg.png') no-repeat center center fixed; */
-    /* background-size: cover; */
-    /* height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Lato';
 }
@@ -39,11 +32,10 @@ body {
 .home-hero2 {
     background: url('/media/homepage-img2-v2.png') no-repeat center center fixed;
     background-size: cover;
-    /* height: 400px; */
     width: 100%;
 }
 
-/* typography styling */
+/* -------------------------------- Typography Styling */
 .logo-font {
     text-transform: uppercase;
 }
@@ -67,11 +59,7 @@ body {
     white-space: nowrap !important;
 }
 
-
-
-
-/* buttons styling */
-
+/* -------------------------------- Buttons Styling */
 .shop-now-button {
     background: black;
     color: white;
@@ -123,7 +111,6 @@ body {
 }
 
 /* -------------------------------- Media Queries */
-
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
