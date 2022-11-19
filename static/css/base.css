@@ -63,7 +63,7 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 16.25rem;
 }
 
 .btn-black {
@@ -195,13 +195,24 @@ body {
     .logo-font {
         font-size: 1.75rem;
     }
+
     .banner-font {
         font-size: 1.25rem;
+    }
+
+    .display-4 {
+        font-size: 2rem !important;
     }
 }
 
 @media (max-width: 333px) {
     .nav-link {
         padding: 0;
+    }
+
+    .shop-now-button {
+        background: black;
+        color: white;
+        min-width: 14rem;
     }
 }
