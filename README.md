@@ -207,7 +207,7 @@ The following error handlers were added to the Application to handle possible sc
 # Bugs, Issues and Solutions
 | # | Bugs, Errors and Issues | Solutions |
 | :--- | :--- | :--- |
-| 1 | Error: You are trying to add a non-nullable field to without a default  | Solution: Choose option 1 from two options provided by Django when making migrations, add timezone.now, then migrate. New error appeared: "'TypeError: Field 'id' expected a number but got datetime.datetime(2022, 11, 20, 13, 54, 36, 590663, tzinfo=<UTC>)"'. I then looked for the latest _auto_ file from migrations folder, then changed "'default=got datetime.datetime(2022, 11, 20, 13, 54, 36, 590663, tzinfo=<UTC>)'" to "'default=1'". I was then able to migrate successfully. |
+| 1 | Error: You are trying to add a non-nullable field to without a default  | Solution: Choose option 1 from two options provided by Django when making migrations, add timezone.now, then migrate. New error appeared: ```TypeError: Field 'id' expected a number but got datetime.datetime(2022, 11, 20, 13, 54, 36, 590663, tzinfo=<UTC>)```. I then looked for the latest _auto_ file from migrations folder, then changed ```default=got datetime.datetime(2022, 11, 20, 13, 54, 36, 590663, tzinfo=<UTC>)``` to ```default=1```. I was then able to migrate successfully. |
 | 2 |   |   |
 
 
