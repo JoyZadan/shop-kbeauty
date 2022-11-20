@@ -110,6 +110,8 @@ class Product(models.Model):
     """ Product model """
     category = models.ForeignKey('Category', on_delete=models.CASCADE,
                                  verbose_name='category title')
+    subcategory = models.ForeignKey(Subcategory, on_delete=models.CASCADE,
+                                    verbose_name='subcategory title')
     brand = models. ForeignKey('Brand', on_delete=models.CASCADE,
                                related_name='products',
                                verbose_name='brand title')
