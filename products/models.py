@@ -45,7 +45,7 @@ class Category(models.Model):
 
     def __str__(self):
         """ String representation of Category model """
-        return self.name + " -- " + self.main_category.name
+        return self.name
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
@@ -108,6 +108,9 @@ class Brand(models.Model):
 
 class Product(models.Model):
     """ Product model """
+    main_category = models.ForeignKey('Main_Category',
+                                      on_delete=models.CASCADE,
+                                      verbose_name='main category title')
     category = models.ForeignKey('Category', on_delete=models.CASCADE,
                                  verbose_name='category title')
     subcategory = models.ForeignKey(Subcategory, on_delete=models.CASCADE,
