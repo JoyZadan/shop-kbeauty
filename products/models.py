@@ -89,6 +89,8 @@ class Brand(models.Model):
     description = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Brand description',
                                    help_text='format: reqd, max_length=2500')
+    image_url = models.URLField(max_length=1500, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
     is_featured = models.BooleanField(default=False)
 
     class Meta:
@@ -143,7 +145,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     discount = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1500, null=True, blank=True)
-    image = models.ImageField(null=False, blank=False,)
+    image = models.ImageField(null=False, blank=False)
 
     class Meta:
         """ Meta class for Product model """

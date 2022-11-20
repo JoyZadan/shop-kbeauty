@@ -256,6 +256,7 @@ The product names, images, descriptions and other information were sourced from:
 * [CULT BEAUTY](https://www.cultbeauty.co.uk/)
 * [YESSTYLE](https://www.yesstyle.com/en/home.html)
 * [MELON & STARFISH](https://melonandstarfish.com/)
+* [UK iHERB](https://uk.iherb.com/)
 
 The .... for information on the K-Beauty global phenomena.
 
