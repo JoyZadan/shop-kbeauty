@@ -3,7 +3,7 @@
 
 Shop K-Beauty is an e-commerce store for every lover of K-Beauty skincare, hair & body and makeup lines.
 
-![amiresponsive mock-ups of Paleo Recipes App]()
+![amiresponsive mock-ups of SHOP K-BEAUTY]()
 
 ### [Link to the Deployed App]()
 
