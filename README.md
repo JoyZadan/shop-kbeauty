@@ -258,6 +258,7 @@ The product names, images, descriptions and other information were sourced from:
 * [MELON & STARFISH](https://melonandstarfish.com/)
 * [K-BEAUTY UK](https://www.k-beauty.co.uk/)
 * [UK iHERB](https://uk.iherb.com/)
+* [SKINLIBRARY](https://skinlibrary.co.uk/)
 
 The .... for information on the K-Beauty global phenomena.
 
