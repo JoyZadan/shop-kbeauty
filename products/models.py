@@ -128,10 +128,10 @@ class Product(models.Model):
     availability = models.IntegerField(null=False, unique=False, blank=False)
     description = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Product description',
-                                   help_text='format: required, max_length=2500')
+                                   help_text='format: reqd, max_length=2500')
     how_to_use = models.TextField(max_length=2500, null=False, blank=False,
                                   verbose_name='How to use',
-                                  help_text='format: required, max_length=2500')
+                                  help_text='format: reqd, max_length=2500')
     ingredients = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Product ingredients',
                                    help_text='format: reqd, max_length=2500')
