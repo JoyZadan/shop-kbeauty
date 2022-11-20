@@ -249,12 +249,13 @@ Press Enter. Your clone will be created.
 ## Code
 
 ## Content
-product name, images, descriptions and other infor were sourced from:
+The product names, images, descriptions and other information were sourced from:
 * [SKINSIDER](https://skinsider.co.uk/)
 * [STYLEVANA](https://www.stylevana.com/en_GB/)
 * [PURESEOUL](https://pureseoul.co.uk/)
 * [CULT BEAUTY](https://www.cultbeauty.co.uk/)
 * [YESSTYLE](https://www.yesstyle.com/en/home.html)
+* [MELON & STARFISH](https://melonandstarfish.com/)
 
 The .... for information on the K-Beauty global phenomena.
 
