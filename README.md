@@ -7,10 +7,10 @@ Shop K-Beauty is an e-commerce store for every lover of K-Beauty skincare, hair 
 
 ### [Link to the Deployed App]()
 
-![GitHub last commit](https://img.shields.io/github/last-commit/JoyZadan/paleo-recipes?color=blue&style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/JoyZadan/paleo-recipes?color=green&style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/JoyZadan/paleo-recipes?color=orange&style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/JoyZadan/paleo-recipes?color=brown&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/JoyZadan/shop-kbeauty?color=pink&style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/JoyZadan/shop-kbeauty?color=purple&style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/JoyZadan/shop-kbeauty?color=orange&style=for-the-badge)
+![GitHub top language](https://img.shields.io/github/languages/top/JoyZadan/shop-kbeauty?color=green&style=for-the-badge)
 
 # Project Overview
 
