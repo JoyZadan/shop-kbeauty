@@ -32,10 +32,10 @@ class Category(models.Model):
                                       verbose_name='main category title')
     name = models. CharField(max_length=100, null=False, unique=True,
                              blank=False, verbose_name='Category title',
-                             help_text='format: required, max_length=150')
+                             help_text='format: required, max_length=100')
     slug = models.SlugField(max_length=150, null=False, unique=True,
                             blank=False, verbose_name='Category slug',
-                            help_text='format: required, max_length=250')
+                            help_text='format: required, max_length=150')
 
     class Meta:
         """ Meta class for Category model """
@@ -59,9 +59,9 @@ class Subcategory(models.Model):
     name = models. CharField(max_length=100, null=False, unique=True,
                              blank=False, verbose_name='Subcategory title',
                              help_text='format: required, max_length=100')
-    slug = models.SlugField(max_length=250, null=False, unique=True,
+    slug = models.SlugField(max_length=150, null=False, unique=True,
                             blank=False, verbose_name='Subcategory slug',
-                            help_text='format: required, max_length=250')
+                            help_text='format: required, max_length=150')
 
     class Meta:
         """ Meta class for Subcategory model """
@@ -85,10 +85,10 @@ class Brand(models.Model):
                              help_text='format: required, max_length=100')
     slug = models.SlugField(max_length=100, null=False, unique=True,
                             blank=False, verbose_name='Brand slug',
-                            help_text='format: required, max_length=150')
-    description = models.TextField(max_length=500, null=False, blank=False,
+                            help_text='format: required, max_length=100')
+    description = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Brand description',
-                                   help_text='format: reqd, max_length=500')
+                                   help_text='format: reqd, max_length=2500')
     is_featured = models.BooleanField(default=False)
 
     class Meta:
@@ -123,18 +123,18 @@ class Product(models.Model):
                             blank=False, verbose_name='Product slug',
                             help_text='format: required, max_length=250')
     is_featured = models.BooleanField(default=False)
-    total_quantity = models.IntegerField(null=False, unique=True, blank=False,
+    total_quantity = models.IntegerField(null=False, unique=False, blank=False,
                                          verbose_name='Product quantity')
-    availability = models.IntegerField(null=False, unique=True, blank=False)
-    description = models.TextField(max_length=500, null=False, blank=False,
+    availability = models.IntegerField(null=False, unique=False, blank=False)
+    description = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Product description',
-                                   help_text='format: required, max_length=50')
-    how_to_use = models.TextField(max_length=500, null=False, blank=False,
+                                   help_text='format: required, max_length=2500')
+    how_to_use = models.TextField(max_length=2500, null=False, blank=False,
                                   verbose_name='How to use',
-                                  help_text='format: required, max_length=500')
-    ingredients = models.TextField(max_length=500, null=False, blank=False,
+                                  help_text='format: required, max_length=2500')
+    ingredients = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Product ingredients',
-                                   help_text='format: reqd, max_length=500')
+                                   help_text='format: reqd, max_length=2500')
     price = models.DecimalField(max_digits=6, decimal_places=2)
     discount = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1500, null=True, blank=True)
