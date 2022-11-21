@@ -10,16 +10,45 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ products }}
+<!-- All Products area -->
+    <h2 class="display-4 brand-font-alt text-shadow text-center my-5">
+        All Products
+    </h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
+    <!-- <div class="row row-cols-sm-1 row-cols-md-4 row-cols-lg-3 row-cols-xl-4 mx-5 mb-5"> -->
+        {% for product in products %}
+        <div class="col mb-5">
+            <div class="card h-100">
+                {% if product.image %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body">
+                    <p class="text-center">{{ product.name }}</p>
+                </div>
+                <div class="card-footer">
+                    <h3 class="mb-0 text-center brand-font pb-3">£{{ product.price }}</h3>
+                    {% if product.rating %}
+                    <span class="float-right">
+                        {{ product.rating }}
+                        <i class="fa fa-star text-warning"></i>
+                    </span>
+                    {% else %}
+                    <span class="float-right">
+                        No Rating
+                        <i class="fa fa-star text-warning"></i>
+                    </span>
+                    {% endif %}
+                    <button class="btn btn-sm btn-brand"><i class="fa fa-heart"></i></button>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-
-
-
-
 
 {% endblock%}

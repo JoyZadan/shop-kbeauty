@@ -111,6 +111,12 @@ body {
     /* background-color: rgba(255, 215, 0, 0.2) */
 }
 
+/* -------------------------------- Cards Styling */
+/* .card-shadow {
+    box-shadow:  8px 8px 8px rgba(0,0,0,0.6),
+                    8px 8px 35px rgba(255,255,255,0.3);
+} */
+
 /* -------------------------------- Footer Styling */
 .footer {
     background-color: #e9385c;
