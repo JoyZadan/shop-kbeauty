@@ -247,6 +247,7 @@ Press Enter. Your clone will be created.
 
 # Credits
 ## Code
+* Credit and thanks to [MDBootstrap](https://mdbootstrap.com/docs/b4/jquery/javascript/accordion/) for the accordion on product detail page.
 
 ## Content
 The product names, images, descriptions and other information were sourced from:
