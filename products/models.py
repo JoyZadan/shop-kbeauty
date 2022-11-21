@@ -151,7 +151,7 @@ class Product(models.Model):
         """ Meta class for Product model """
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
-        ordering = ['name']
+        ordering = ['sku']
 
     def __str__(self):
         """ String representation of Product model """
