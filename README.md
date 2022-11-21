@@ -273,11 +273,11 @@ The .... for information on the K-Beauty global phenomena.
 5. CodePiep YouTube
 
 # Acknowledgements
-A very, very special thanks to ...
+A very, very special thanks to my family, especially my daughter Zoe, for your unwavering support and understanding and allowing me the space to focus on my quest to complete my projects and gain my Diploma in Web Application Development (Full Stack).
 
 Special mention and thanks to my mentor, Dario Carrasquel, for his support, invaluable insights and his belief that I can do this well. I am so grateful to have you as my mentor.
 
-A special mention to my MS3 cohorts, glad to have you guys around! Kera, Nazia, Tom and Jack. Thanks! Thanks also to Jo Bowden at SDC.
+
 
 
 # Copyrights
