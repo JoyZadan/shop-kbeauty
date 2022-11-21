@@ -111,12 +111,6 @@ body {
     /* background-color: rgba(255, 215, 0, 0.2) */
 }
 
-/* -------------------------------- Cards Styling */
-/* .card-shadow {
-    box-shadow:  8px 8px 8px rgba(0,0,0,0.6),
-                    8px 8px 35px rgba(255,255,255,0.3);
-} */
-
 /* -------------------------------- Footer Styling */
 .footer {
     background-color: #e9385c;
@@ -135,32 +129,14 @@ body {
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* sticky top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
-
     #logo-mobile {
         display: none;
     }
 }
 
 /* styling for home hero content for medium screens and below */
-@media (max-width: 991px) {
-    .hero-heading {
-        margin-top: 7.5rem;
-    }
-}
-
 @media (max-width: 892px) {
     .display-4 {
         font-size: 2.5rem !important;
@@ -168,10 +144,6 @@ body {
 }
 
 @media (max-width: 698px) {
-    .hero-heading {
-        margin-top: 7.5rem;
-    }
-
     .logo-font {
         font-size: 1.5rem;
     }
@@ -185,26 +157,12 @@ body {
     .nav-link {
         padding: 0;
     }
-
-    .hero-heading {
-        margin-top: 7rem;
-    }
 }
 
 @media (max-width: 441px) {
-    .hero-heading {
-        margin-top: 9.25rem;
-    }
-
     .banner-font {
         font-size: 1.25rem;
         text-transform: uppercase;
-    }
-}
-
-@media (max-width: 418px) {
-    .hero-heading {
-        margin-top: 9rem;
     }
 }
 
