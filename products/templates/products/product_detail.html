@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<!-- Individual product area -->
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top product-image" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top product-image" src="{{ MEDIA_URL }}shop-kbeauty-logo.png" alt="{{ product.name }}">
+                    </a>
+                {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <p class="mb-0 h4 font-weight-bold brand-font-alt">{{ product.name }}</p>
+                    <p class="lead mb-0 text-left font-weight-bold pb-3 brand-font">£{{ product.price }}</p>
+                    {% if product.rating %}
+                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% else %}
+                        <small class="text-muted">No Rating</small>
+                    {% endif %}
+                    <!-- Start of product description, how-to and ingredients accordion -->
+                    <!-- Accordion credit: MDBootstrap.com -->
+                    <!--Accordion wrapper-->
+                    <div class="accordion md-accordion mt-5" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingTwo1">
+                                <a class="collapsed text-decoration-none" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
+                                    aria-expanded="false" aria-controls="collapseTwo1">
+                                    <h5 class="mb-0 brand-font-alt h6">
+                                        Description <span class="float-right"><i class="fas fa-angle-down rotate-icon"></i></span>
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1"
+                                data-parent="#accordionEx1">
+                                <div class="card-body">
+                                    <p class="mt-3">{{ product.description }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingTwo2">
+                                <a class="collapsed text-decoration-none" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
+                                    aria-expanded="false" aria-controls="collapseTwo21">
+                                    <h5 class="mb-0 brand-font-alt h6">
+                                        How to use <span class="float-right"><i class="fas fa-angle-down rotate-icon"></i></span>
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                                data-parent="#accordionEx1">
+                                <div class="card-body">
+                                    <p class="mt-3">{{ product.how_to_use }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                        <!-- Accordion card -->
+                        <div class="card">
+                            <!-- Card header -->
+                            <div class="card-header" role="tab" id="headingThree31">
+                                <a class="collapsed text-decoration-none" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
+                                    aria-expanded="false" aria-controls="collapseThree31">
+                                    <h5 class="mb-0 brand-font-alt h6">
+                                        Ingredients <span class="float-right"><i class="fas fa-angle-down rotate-icon"></i></span>
+                                    </h5>
+                                </a>
+                            </div>
+                            <!-- Card body -->
+                            <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
+                                data-parent="#accordionEx1">
+                                <div class="card-body">
+                                    <p class="mt-3">{{ product.ingredients }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Accordion card -->
+                    </div>
+                    <!-- Accordion wrapper -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+{% endblock%}

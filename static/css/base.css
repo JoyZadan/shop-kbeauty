@@ -104,12 +104,17 @@ body {
     color: white;
 }
 
-/* overlays styling */
-
-.overlay-dark {
-    background-color: rgba(233, 56, 92, 0.4);
-    /* background-color: rgba(255, 215, 0, 0.2) */
+/* -------------------------------- Product Image Styling */
+.image-container {
+    margin: 2rem auto !important;
 }
+
+.product-image {
+    width: 15.625rem;
+    height: 18.75rem;
+    margin-left: 2rem;
+}
+
 
 /* -------------------------------- Footer Styling */
 .footer {
