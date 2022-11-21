@@ -50,6 +50,12 @@ body {
     font-weight: 700;
 }
 
+.brand-font-alt {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 .text-shadow {
     text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
                     0px -5px 35px rgba(255,255,255,0.3);
@@ -91,6 +97,11 @@ body {
 
 .bg-black {
     background: #000 !important;
+}
+
+.btn-brand {
+    background: #e9385c;
+    color: white;
 }
 
 /* overlays styling */
