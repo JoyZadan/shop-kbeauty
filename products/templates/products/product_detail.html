@@ -49,7 +49,6 @@
                         <p class="mb-0 text-left"><span class="text-danger">You save: </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
-
                     <!-- Start of order form -->
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
@@ -79,7 +78,6 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
-
                     <!-- Start of product description, how-to and ingredients accordion -->
                     <!-- Accordion credit: MDBootstrap.com -->
                     <!--Accordion wrapper-->
