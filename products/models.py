@@ -30,9 +30,9 @@ class Category(models.Model):
     """ Category model """
     main_category = models.ForeignKey(Main_Category, on_delete=models.CASCADE,
                                       verbose_name='main category title')
-    name = models. CharField(max_length=100, null=False, unique=True,
-                             blank=False, verbose_name='Category title',
-                             help_text='format: required, max_length=100')
+    name = models.CharField(max_length=100, null=False, unique=True,
+                            blank=False, verbose_name='Category title',
+                            help_text='format: required, max_length=100')
     slug = models.SlugField(max_length=150, null=False, unique=True,
                             blank=False, verbose_name='Category slug',
                             help_text='format: required, max_length=150')
