@@ -10,10 +10,56 @@
 {% endblock %}
 
 {% block content %}
-<!-- All Products area -->
-    <h2 class="display-4 brand-font-alt text-shadow text-center my-5">
-        K-Beauty Products
-    </h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center mt-1">
+                <h2 class="display-4 brand-font-alt text-shadow text-center my-5">Products</h2>
+                {% for c in current_categories %}
+                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="product-container col-10 offset-1">
+                <div class="row mt-1 mb-2">
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                        <div class="sort-select-wrapper w-50">
+                            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                <option value="name_asc" {% if current_sorting == 'brand_asc' %}selected{% endif %}>Brand (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'brand_desc' %}selected{% endif %}>Brand (Z-A)</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'discount_asc' %}selected{% endif %}>Discount (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'discount_desc' %}selected{% endif %}>Discount (Z-A)</option>
+                                <!-- <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option> -->
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                                <option value="name_asc" {% if current_sorting == 'subcategory_asc' %}selected{% endif %}>Subcategory (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'subcategory_desc' %}selected{% endif %}>Subcategory (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-first">
+                        <p class="text-muted mt-3 text-center text-md-left">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            {% endif %}
+                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- All Products area -->
+
+    <!-- Individual product cards -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
         {% for product in products %}
         <div class="col mb-5">
@@ -29,19 +75,28 @@
                 {% endif %}
                 <div class="card-body">
                     <p class="text-center mb-1">{{ product.name }}</p>
-                    <small class="text-center text-info">{{ product.category.friendly_name }}</small>
+
+                    <!-- <small class="text-center text-info">{{ product.category.friendly_name }}</small> -->
+                    {% if product.category %}
+                    <p class="small mt-2 mb-0">
+                        <a class="text-info"
+                            href="{% url 'products' %}?category={{ product.category.name }}">
+                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
                 </div>
                 <div class="card-footer">
                     <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
                     {% if product.discount > 0.01 %}
                     <p class="mb-0 text-center pb-3"><span class="text-danger">You save: </span> £{{ product.discount }}</p>
                     {% endif %}
-                    {% if product.rating %}
+                    <!-- {% if product.rating %}
                     <span class="float-right">
                         {{ product.rating }}
                         <i class="fa fa-star text-warning"></i>
                     </span>
-                    {% else %}
+                    {% else %} -->
                     <span class="float-right">
                         No Rating
                         <i class="fa fa-star text-warning"></i>
@@ -55,3 +110,35 @@
     </div>
 
 {% endblock%}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.btt-link').click(function (e) {
+            window.scrollTo(0, 0)
+        })
+    </script>
+
+    <script type="text/javascript">
+        $('#sort-selector').change(function () {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if (selectedVal != "reset") {
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+    </script>
+{% endblock %}

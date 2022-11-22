@@ -20,10 +20,8 @@ body {
 
 .logo-footer {
     font-size: 1.25rem;
-}
-
-.main-logo-link {
-    width: fit-content;
+    margin: 0 auto;
+    text-transform: uppercase;
 }
 
 /* -------------------------------- Hero Section Styling */
@@ -80,7 +78,7 @@ body {
     white-space: nowrap !important;
 }
 
-/* -------------------------------- Buttons Styling */
+/* -------------------------------- Buttons & Links Styling */
 .shop-now-button {
     background: black;
     color: white;
@@ -90,6 +88,12 @@ body {
 .btn-black {
     background: black;
     color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
 }
 
 .shop-now-button:hover,
@@ -117,6 +121,17 @@ body {
 .btn-brand {
     background: #e9385c;
     color: white;
+}
+
+a.category-badge > span.badge {
+    background: #e9385c !important;
+    color: #fff !important;
+    border-color: #e9385c !important;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 /* -------------------------------- Product Image Styling */
