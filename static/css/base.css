@@ -54,6 +54,10 @@ body {
     font-weight: 700;
 }
 
+.price-font {
+    color: #e9385c;
+}
+
 .brand-link:hover,
 .banner-link:active,
 .brand-link:focus {

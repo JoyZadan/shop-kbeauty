@@ -28,10 +28,14 @@
                 </a>
                 {% endif %}
                 <div class="card-body">
-                    <p class="text-center">{{ product.name }}</p>
+                    <p class="text-center mb-1">{{ product.name }}</p>
+                    <small class="text-center text-info">{{ product.category.name }}</small>
                 </div>
                 <div class="card-footer">
-                    <h3 class="mb-0 text-center brand-font pb-3">£{{ product.price }}</h3>
+                    <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
+                    {% if product.discount > 0.01 %}
+                    <p class="mb-0 text-center pb-3"><span class="text-danger">You save: </span> £{{ product.discount }}</p>
+                    {% endif %}
                     {% if product.rating %}
                     <span class="float-right">
                         {{ product.rating }}

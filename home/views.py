@@ -6,7 +6,7 @@ from products.models import Brand
 
 def index(request):
     """ A view to return the index page """
-    brands = Brand.objects.all()[:8]
+    brands = Brand.objects.all()
     context = {
         'brands': brands,
     }
