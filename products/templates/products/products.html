@@ -28,20 +28,20 @@
                         <div class="sort-select-wrapper w-50">
                             <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                                <option value="name_asc" {% if current_sorting == 'brand_asc' %}selected{% endif %}>Brand (A-Z)</option>
-                                <option value="name_desc" {% if current_sorting == 'brand_desc' %}selected{% endif %}>Brand (Z-A)</option>
+                                <option value="brand_asc" {% if current_sorting == 'brand_asc' %}selected{% endif %}>Brand (A-Z)</option>
+                                <option value="brand_desc" {% if current_sorting == 'brand_desc' %}selected{% endif %}>Brand (Z-A)</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                                <option value="name_asc" {% if current_sorting == 'discount_asc' %}selected{% endif %}>Discount (A-Z)</option>
-                                <option value="name_desc" {% if current_sorting == 'discount_desc' %}selected{% endif %}>Discount (Z-A)</option>
+                                <option value="discount_asc" {% if current_sorting == 'discount_asc' %}selected{% endif %}>Discount (A-Z)</option>
+                                <option value="discount_desc" {% if current_sorting == 'discount_desc' %}selected{% endif %}>Discount (Z-A)</option>
                                 <!-- <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
                                 <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option> -->
                                 <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
                                 <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
                                 <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
                                 <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
-                                <option value="name_asc" {% if current_sorting == 'subcategory_asc' %}selected{% endif %}>Subcategory (A-Z)</option>
-                                <option value="name_desc" {% if current_sorting == 'subcategory_desc' %}selected{% endif %}>Subcategory (Z-A)</option>
+                                <option value="subcategory_asc" {% if current_sorting == 'subcategory_asc' %}selected{% endif %}>Subcategory (A-Z)</option>
+                                <option value="subcategory_desc" {% if current_sorting == 'subcategory_desc' %}selected{% endif %}>Subcategory (Z-A)</option>
                             </select>
                         </div>
                     </div>
