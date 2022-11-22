@@ -1,10 +1,10 @@
 <div id="logo-mobile" class="text-center">
     <a href="{% url 'home' %}" class="nav-link main-logo-link">
         <h2 class="logo-font text-black my-0"><strong>Shop</strong> K-Beauty</h2>
-
     </a>
 </div>
 <ul>
+    <!-- Search bar -->
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -27,6 +27,7 @@
             </form>
         </div>
     </li>
+    <!-- Account area -->
     <li class="list-inline-item dropdown">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -47,15 +48,16 @@
             {% endif %}
         </div>
     </li>
+    <!-- Bag area -->
     <li class="list-inline-item">
-        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
+        <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
             <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
                     {% if grand_total %}
-                            ${{ grand_total|floatformat:2 }}
+                        £{{ grand_total|floatformat:2 }}
                     {% else %}
-                            $0.00
+                        £0.00
                     {% endif %}
                 </p>
             </div>
