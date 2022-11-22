@@ -33,6 +33,7 @@ class Category(models.Model):
     name = models.CharField(max_length=100, null=False, unique=True,
                             blank=False, verbose_name='Category title',
                             help_text='format: required, max_length=100')
+    friendly_name = models.CharField(max_length=200, null=True, blank=True)
     slug = models.SlugField(max_length=150, null=False, unique=True,
                             blank=False, verbose_name='Category slug',
                             help_text='format: required, max_length=150')
@@ -46,6 +47,9 @@ class Category(models.Model):
     def __str__(self):
         """ String representation of Category model """
         return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
@@ -83,6 +87,7 @@ class Brand(models.Model):
     name = models. CharField(max_length=100, null=False, unique=True,
                              blank=False, verbose_name='Brand name',
                              help_text='format: required, max_length=100')
+    friendly_name = models.CharField(max_length=200, null=True, blank=True)
     slug = models.SlugField(max_length=100, null=False, unique=True,
                             blank=False, verbose_name='Brand slug',
                             help_text='format: required, max_length=100')
@@ -102,6 +107,9 @@ class Brand(models.Model):
     def __str__(self):
         """ String representation of Product model """
         return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)

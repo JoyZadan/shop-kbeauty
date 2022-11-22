@@ -14,6 +14,7 @@ class Main_CategoryAdmin(admin.ModelAdmin):
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
+        'friendly_name',
         'slug',
         'main_category',
     )
@@ -30,6 +31,7 @@ class SubcategoryAdmin(admin.ModelAdmin):
 class BrandAdmin(admin.ModelAdmin):
     list_display = (
         'name',
+        'friendly_name',
         'slug',
         'description',
         'is_featured',

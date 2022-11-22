@@ -29,8 +29,8 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt">{{ product.name }}</p>
-                    <p class="mb-0 py-2">By <span class="brand-font-alt h6 pb-3">{{ product.brand.name }}</span></p>
-                    <small class="text-info"><i class="fas fa-thin-list mr-1"></i>Category: {{ product.category.name }}</small>
+                    <p class="mb-0 py-2">By <span class="brand-font-alt h6 pb-3">{{ product.brand.friendly_name }}</span></p>
+                    <small class="text-dark">{{ product.category.friendly_name }}</small>
                     {% if product.rating %}
                     <small class="text-warning float-right"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                     {% else %}
