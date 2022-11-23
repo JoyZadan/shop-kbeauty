@@ -151,8 +151,14 @@ class Product(models.Model):
                                    verbose_name='Product ingredients',
                                    help_text='format: reqd, max_length=2500')
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    discount = models.DecimalField(max_digits=6, decimal_places=2)
+    size = models.CharField(max_length=50, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2, null=False,
+                                blank=False)
+    discount = models.DecimalField(max_digits=6, decimal_places=2, null=True,
+                                   blank=True)
+    original_price = models.DecimalField(max_digits=10,
+                                         decimal_places=2, null=True,
+                                         blank=True)
     image_url = models.URLField(max_length=1500, null=True, blank=True)
     image = models.ImageField(null=False, blank=False)
 
