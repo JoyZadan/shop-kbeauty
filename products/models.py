@@ -150,6 +150,7 @@ class Product(models.Model):
     ingredients = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Product ingredients',
                                    help_text='format: reqd, max_length=2500')
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     discount = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1500, null=True, blank=True)
@@ -168,7 +169,3 @@ class Product(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
-
-    def get_tags(self):
-        """ Get all available tags of products """
-        return self.tags.all()
