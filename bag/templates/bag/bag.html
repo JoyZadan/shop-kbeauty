@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
     <div class="container">
@@ -36,22 +37,26 @@
 
                             {% for item in bag_items %}
                             <tr>
+                                <!-- item image column area -->
                                 <td class="p-3 w-25">
                                     <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                                 </td>
+                                <!-- item name, size and sku column -->
                                 <td class="py-3">
                                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                    <p class="my-0"><strong>Size:
-                                        </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
+                                    <p class="my-0 text-muted">Size:
+                                        {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}one size only{% endif %}
                                     </p>
                                     <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                 </td>
+                                <!-- item price column -->
                                 <td class="py-3">
                                     <p class="my-0">£{{ item.product.price }}</p>
                                 </td>
+                                <!-- item quantity column -->
                                 <td class="py-3 w-25">
                                     <!-- Form to allow users to edit quantity of items in their shopping bag -->
-                                    <form action="" method="POST" class="form update-form">
+                                    <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
                                         {% csrf_token %}
                                         <div class="form-group">
                                             <div class="input-group">
@@ -82,15 +87,18 @@
                                             </div>
                                         </div>
                                     </form>
+                                    <!-- links to adjust quantity of item or remove the item -->
                                     <a class="update-link text-info"><small>Update</small></a>
                                     <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"
-                                        data-size="{{ item.size }}"><small>Remove</small></a>
+                                        data-product_size="{{ item.size }}"><small>Remove</small></a>
                                 </td>
+                                <!-- item subtotal column -->
                                 <td class="py-3">
-                                    <p class="my-0">£{{ item.product.price }}</p>
+                                    <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                 </td>
                             </tr>
                             {% endfor %}
+                            <!-- bag grand total area -->
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
@@ -152,9 +160,9 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var size = $(this).data('size');
-        var url = `/bag/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+        var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
         $.post(url, data)
          .done(function() {

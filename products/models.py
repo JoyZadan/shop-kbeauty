@@ -151,7 +151,6 @@ class Product(models.Model):
                                    verbose_name='Product ingredients',
                                    help_text='format: reqd, max_length=2500')
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    size = models.CharField(max_length=50, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2, null=False,
                                 blank=False)
     discount = models.DecimalField(max_digits=6, decimal_places=2, null=True,
