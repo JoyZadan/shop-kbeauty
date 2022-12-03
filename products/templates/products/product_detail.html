@@ -46,6 +46,7 @@
                     <div class="price-box">
                         <p class="mb-0 pt-3 pb-1"><span class="h3 text-left font-weight-bold price-font">£{{ product.price }}</span></p>
                         {% if product.discount > 0.01 %}
+                        <p class="mb-0"><s>£{{ product.original_price }}</s></p>
                         <p class="mb-0 text-left"><span class="text-danger">You save: </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
