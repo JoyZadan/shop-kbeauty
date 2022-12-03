@@ -47,6 +47,7 @@ class ProductAdmin(admin.ModelAdmin):
         'subcategory',
         'total_quantity',
         'availability',
+        'original_price',
         'price',
         'discount',
         'image'
