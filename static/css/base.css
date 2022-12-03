@@ -148,6 +148,22 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+/* ------------------------------- bootstrap toasts */
+.message-container {
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* -------------------------------- Product Image Styling */
 .image-container {
     margin: 2rem auto !important;
