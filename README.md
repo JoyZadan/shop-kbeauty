@@ -174,8 +174,11 @@ The following error handlers were added to the Application to handle possible sc
 * [pillow](https://pip.pypa.io/en/stable/)
     * Pillow is the required Python image library used to enable handling of images.
 
-* [dnspython](https://www.dnspython.org/) -----???
+* [dnspython](https://www.dnspython.org/)
     * Dnspython is a DNS toolkit for python.
+
+* [pycodestyle, formerly called pep8](https://pypi.org/project/pycodestyle/)
+    * pycodestyle is a tool used to check the Python code against some of the style conventions in PEP 8.
 
 * [Balsamiq](https://balsamiq.com/)
     * Balsamiq was used to create the wireframes for this project.
