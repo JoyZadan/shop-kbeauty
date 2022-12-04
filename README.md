@@ -81,13 +81,13 @@ Based on the results of the Feature Ideas Planning, I have decided to attempt to
 ...
 
 #### Guest User
-![GUEST USER JOURNEY ACROSS THE PALEO RECIPES APP]()
+![GUEST USER JOURNEY ACROSS SHOP K-BEAUTY]()
 
 #### Registered User
-![REGISTERED USER'S JOURNEY ACROSS THE PALEO RECIPES APP]())
+![REGISTERED USER'S JOURNEY ACROSS SHOP K-BEAUTY]())
 
 #### Superadmin User
-![SUPERADMIN'S PERMISSION AND ACCESS ACROSS THE PALEO RECIPES APP]()
+![SUPERADMIN'S PERMISSION AND ACCESS ACROSS SHOP K-BEAUTY]()
 
 ### Database Schema and Structure
 Shop K-Beauty is developed using ...
@@ -112,7 +112,7 @@ I used Google Fonts to import the fonts I used across the application.
 
 #### Imagery & UI
 ![INSERT HERE COLOUR SCHEME]()
-The colour scheme and typography used for the Paleo ...
+The colour scheme and typography used for Shop K-Beauty...
 
 ## Features
 Breakdown of the features and elements implemented for the App.
