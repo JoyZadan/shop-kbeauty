@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
+                <div class="product-details-container mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt">{{ product.name }}</p>
                     <p class="mb-0 py-2">By <span class="brand-font-alt h6 pb-3">{{ product.brand.friendly_name }}</span></p>
                     {% if product.category %}
@@ -57,16 +57,16 @@
                             <!-- Product sizes box area if product has sizes -->
                             {% with product.has_sizes as s %}
                             {% if s %}
-                                <div class="col-12">
-                                    <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
-                                        <option value="30ml">30ml</option>
-                                        <option value="60ml"selected>60ml</option>
-                                        <option value="100ml">100ml</option>
-                                        <option value="200ml">200ml</option>
-                                        <option value="330ml">330ml</option>
-                                    </select>
-                                </div>
+                            <div class="col-12">
+                                <p><strong>Size:</strong></p>
+                                <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <option value="30ml">30ml</option>
+                                    <option value="60ml"selected>60ml</option>
+                                    <option value="100ml">100ml</option>
+                                    <option value="200ml">200ml</option>
+                                    <option value="330ml">330ml</option>
+                                </select>
+                            </div>
                             {% endif %}
                             <!-- Order quantity button -->
                             <div class="col-12">
