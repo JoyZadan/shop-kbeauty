@@ -32,8 +32,8 @@ class Order(models.Model):
     def _generate_order_number(self):
         """
         Generates a random, unique 32 character order number using UUID
-        Model method prepended with an underscore by convention to indicate it's
-        a private method which will only be used inside this class
+        Model method prepended with an underscore by convention to indicate
+        it's a private method which will only be used inside this class
         """
         return uuid.uuid4().hex.upper()
 
