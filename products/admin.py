@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Main_Category, Category, Subcategory, Brand, Product
+from .models import MainCategory, Category, Subcategory, Brand, Product
 
 # Register your models here.
 
 
-class Main_CategoryAdmin(admin.ModelAdmin):
+class MainCategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'slug',
@@ -54,7 +54,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Main_Category, Main_CategoryAdmin)
+admin.site.register(MainCategory, MainCategoryAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Subcategory, SubcategoryAdmin)
 admin.site.register(Brand, BrandAdmin)

@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.text import slugify
 
 
-class Main_Category(models.Model):
+class MainCategory(models.Model):
     """ Main Category model """
     name = models. CharField(max_length=100, null=False, unique=True,
                              blank=False, verbose_name='Main Category title',
@@ -28,7 +28,7 @@ class Main_Category(models.Model):
 
 class Category(models.Model):
     """ Category model """
-    main_category = models.ForeignKey(Main_Category, on_delete=models.CASCADE,
+    main_category = models.ForeignKey(MainCategory, on_delete=models.CASCADE,
                                       verbose_name='main category title')
     name = models.CharField(max_length=100, null=False, unique=True,
                             blank=False, verbose_name='Category title',
@@ -118,7 +118,7 @@ class Brand(models.Model):
 
 class Product(models.Model):
     """ Product model """
-    main_category = models.ForeignKey('Main_Category',
+    main_category = models.ForeignKey('MainCategory',
                                       on_delete=models.CASCADE,
                                       verbose_name='main category title')
     category = models.ForeignKey('Category', on_delete=models.CASCADE,
