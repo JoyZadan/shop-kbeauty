@@ -36,6 +36,18 @@
     border: 1px solid #000;
 }
 
+/* greyed out styling for the country downdown box when there's no country selected */
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
+/* styling for the loading overlay and spinner after submitting complete order button */
 #loading-overlay {
 	display: none;
 	position: fixed;
