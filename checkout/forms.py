@@ -5,15 +5,10 @@ from .models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('full_name',
-                  'email',
-                  'phone_number',
-                  'street_address1',
-                  'street_address2',
-                  'town_or_city',
-                  'postcode',
-                  'county',
-                  'country',)
+        fields = ('full_name', 'email', 'phone_number',
+                  'street_address1', 'street_address2',
+                  'town_or_city', 'postcode', 'country',
+                  'county',)
 
     def __init__(self, *args, **kwargs):
         """
@@ -26,7 +21,7 @@ class OrderForm(forms.ModelForm):
             'email': 'Email Address',
             'phone_number': 'Phone Number',
             'country': 'Country',
-            'postcode': 'Post Code',
+            'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
             'street_address2': 'Street Address 2',
