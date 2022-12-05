@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, Subcategory
 
 # Create your views here.
 
@@ -14,6 +14,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    subcategories = None
     sort = None
     direction = None
 
@@ -36,6 +37,11 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if 'subcategory' in request.GET:
+            subcategories = request.GET['subcategory'].split(',')
+            products = products.filter(subcategory__name__in=subcategories)
+            subcategories = Subcategory.objects.filter(name__in=subcategories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -55,6 +61,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_subcategories': subcategories,
         'current_sorting': current_sorting,
     }
 

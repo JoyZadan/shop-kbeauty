@@ -19,6 +19,11 @@
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
+                {% for subcat in current_subcategories %}
+                    <a class="subcategory-badge text-decoration-none" href="{% url 'products' %}?subcategory={{ subcat.name }}">
+                        <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ subcat.friendly_name }}</span>
+                    </a>
+                {% endfor %}
             </div>
         </div>
         <div class="row mt-3">
@@ -32,8 +37,8 @@
                                 <option value="brand_desc" {% if current_sorting == 'brand_desc' %}selected{% endif %}>Brand (Z-A)</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                                <option value="discount_asc" {% if current_sorting == 'discount_asc' %}selected{% endif %}>Discount (A-Z)</option>
-                                <option value="discount_desc" {% if current_sorting == 'discount_desc' %}selected{% endif %}>Discount (Z-A)</option>
+                                <option value="discount_asc" {% if current_sorting == 'discount_asc' %}selected{% endif %}>Discount (high to low)</option>
+                                <option value="discount_desc" {% if current_sorting == 'discount_desc' %}selected{% endif %}>Discount (low to high)</option>
                                 <!-- <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
                                 <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option> -->
                                 <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
@@ -75,15 +80,29 @@
                 <div class="card-body">
                     <p class="text-center mb-1">{{ product.name }}</p>
 
-                    <!-- <small class="text-center text-info">{{ product.category.friendly_name }}</small> -->
                     {% if product.category %}
-                    <p class="small mt-2 mb-0">
-                        <a class="text-info"
+                    <p class="small mt-2 mb-0 text-center">
+                        <a class="text-muted"
                             href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            <i class="fas fa-list"></i> {{ product.category.friendly_name }}
                         </a>
                     </p>
                     {% endif %}
+
+                    {% if product.subcategory %}
+                    <p class="small mt-2 mb-0 text-center">
+                        <a class="text-muted"
+                            href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                            <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
+                        </a>
+                    </p>
+
+                    <!-- <span class="float-right">
+                        {{ product.subcategory.friendly_name }}
+                        <i class="fas fa-tag text-warning"></i>
+                    </span> -->
+                    {% endif %}
+
                 </div>
                 <div class="card-footer">
                     <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
