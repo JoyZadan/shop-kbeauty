@@ -36,7 +36,7 @@
                 <strong>
                     <p class="mt-3 mb-1 text-black">
                         Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}:
-                        <span class="float-right">${{ total|floatformat:2 }}</span>
+                        <span class="float-right">£{{ total|floatformat:2 }}</span>
                     </p>
                 </strong>
                 {% if free_delivery_delta > 0 %}
