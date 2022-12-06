@@ -3,8 +3,6 @@ from django.shortcuts import render, redirect, reverse, \
 from django.contrib import messages
 from products.models import Product
 
-# Create your views here.
-
 
 def view_bag(request):
     """ A view that returns the bag contents page """
