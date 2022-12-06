@@ -10,7 +10,7 @@
                 <a href="{% url 'products' %}?sort=brand&direction=asc" class="dropdown-item">By Brand</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=discount&direction=desc" class="dropdown-item">By Discount</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}?sort=subcategory&direction=asc" class="dropdown-item">By Subcategory</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
@@ -22,8 +22,8 @@
                 Skincare
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-skincare-link">
-                <h2 class="nav-font-alt font-weight-bold text-center h6">PRODUCT TYPES</h2>
-                <div class="dropdown-divider"></div>
+                <p class="nav-font-alt font-weight-bold text-center">PRODUCT TYPES</p>
+                <hr class="alt-hr">
                 <a href="{% url 'products' %}?category=face_care" class="dropdown-item">Face Care</a>
                 <a href="{% url 'products' %}?category=facial_cleanser" class="dropdown-item ">Facial Cleanser</a>
                 <a href="{% url 'products' %}?category=face_mask" class="dropdown-item">Face Mask</a>
@@ -40,8 +40,8 @@
                 Hair &amp; Body
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-skincare-link">
-                <h2 class="nav-font-alt font-weight-bold text-center h6">PRODUCT TYPES</h2>
-                <div class="dropdown-divider"></div>
+                <p class="nav-font-alt font-weight-bold text-center">PRODUCT TYPES</p>
+                <hr class="alt-hr">
                 <a href="{% url 'products' %}?category=hair_care" class="dropdown-item">Hair Care</a>
                 <a href="{% url 'products' %}?category=body_care" class="dropdown-item ">Body Care</a>
                 <a href="{% url 'products' %}?category=hand_care" class="dropdown-item ">Hand Care</a>
