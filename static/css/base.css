@@ -69,6 +69,9 @@ body {
     font-weight: 700;
 }
 
+.alt-text-muted {
+    color: #e9385c;
+}
 .text-shadow {
     text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
                     0px -5px 35px rgba(255,255,255,0.3);
@@ -79,6 +82,12 @@ body {
 }
 
 /* -------------------------------- Buttons & Links Styling */
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none !important;
+}
+
 .shop-now-button {
     background: black;
     color: white;
@@ -123,6 +132,24 @@ body {
     color: white;
 }
 
+.alt-a,
+.alt-text-info,
+.alt-text-primary {
+    color: #e9385c !important;
+}
+
+.alt-a:hover,
+.alt-a:active,
+.alt-a:focus,
+.alt-text-info:hover,
+.alt-text-info:active,
+.alt-text-info:focus,
+.alt-text-primary:hover,
+.alt-text-primary:active,
+.alt-text-primary:focus {
+    color: #ffc107!important;
+}
+
 a.category-badge > span.badge,
 a.subcategory-badge > span.badge {
     background: #e9385c !important;
@@ -148,6 +175,22 @@ a.subcategory-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+/* ------------------------------- additional styling for better UI */
+hr {
+    border-top: 1px solid #000;
+}
+
+.alt-border {
+    border: 1px solid #000;
+}
+
+/* ------------------------------- card styling to overwrite bootstrap's default styling */
+.card {
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
 }
 
 /* ------------------------------- bootstrap toasts */
