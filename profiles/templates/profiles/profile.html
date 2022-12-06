@@ -14,13 +14,31 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container mb-5">
         <div class="row">
             <div class="col">
                 <h2 class="display-5 brand-font-alt text-shadow mt-5 mb-3">My Profile</h2>
                 <hr>
             </div>
         </div>
-        {{ profile }}
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <p class="alt-text-muted">Default Delivery Information</p>
+                <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <p class="alt-text-muted">Order History</p>
+                {{ orders }}
+            </div>
+        </div>
     </div>
 {% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{%  endblock %}

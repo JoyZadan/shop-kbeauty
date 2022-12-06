@@ -154,7 +154,7 @@ a.category-badge > span.badge,
 a.subcategory-badge > span.badge {
     background: #e9385c !important;
     color: #fff !important;
-    border-color: #e9385c !important;
+    border-color: #fff !important;
 }
 
 a.category-badge > span.badge:hover,
@@ -200,7 +200,6 @@ hr {
 .card {
     color: #000 !important;
     border: 1px solid #000 !important;
-    border-radius: 0 !important;
 }
 
 /* ------------------------------- bootstrap toasts */
