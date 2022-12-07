@@ -210,14 +210,14 @@
                     <span class="icon mr-2">
                         <i class="fas fa-angle-left"></i>
                     </span>
-                    <span class="text-uppercase">Now check out the latest deals!</span>
+                    <span class="text-uppercase">Back to Profile</span>
                 </a>
                 {% else %}
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
+                <a href="{% url 'products' %}?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new" class="btn btn-black rounded-0 my-2">
                     <span class="icon mr-2">
                         <i class="fas fa-gifts"></i>
                     </span>
-                    <span class="text-uppercase">Back to Profile</span>
+                    <span class="text-uppercase">Now check out the latest deals!</span>
                 </a>
                 {% endif %}
             </div>
