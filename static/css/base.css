@@ -200,6 +200,7 @@ hr {
 .card {
     color: #000 !important;
     border: 1px solid #000 !important;
+    border-radius: 0;
 }
 
 /* ------------------------------- bootstrap toasts */
