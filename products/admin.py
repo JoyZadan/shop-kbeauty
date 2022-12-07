@@ -1,7 +1,5 @@
 from django.contrib import admin
-from .models import MainCategory, Category, Subcategory, Brand, Product
-
-# Register your models here.
+from .models import MainCategory, Category, Subcategory, Brand, Product, ProductReview
 
 
 class MainCategoryAdmin(admin.ModelAdmin):
@@ -55,8 +53,19 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
 
+class ProductReviewAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'user',
+        'content',
+        'stars',
+        'date_added',
+    )
+
+
 admin.site.register(MainCategory, MainCategoryAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Subcategory, SubcategoryAdmin)
 admin.site.register(Brand, BrandAdmin)
 admin.site.register(Product, ProductAdmin)
+admin.site.register(ProductReview, ProductReviewAdmin)

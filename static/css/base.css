@@ -363,6 +363,39 @@ hr {
     border-radius: 0;
 }
 
+/* -------------------------------- Product Reviews Styling */
+/* From Bulma and from Code with Stein */
+form .helptext {
+    font-size: 12px;
+    color: #ccc;
+}
+
+form ul:not(.errorlist) {
+    display: none;
+}
+
+.newsletter-wrapper {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.newsletter-wrapper .notification {
+    margin-top: 20px;
+}
+
+.newsletter-wrapper .field.has-addons {
+    justify-content: center;
+}
+
+.notification.space-below {
+    margin-bottom: 20px;
+}
+
+.reviews-wrapper {
+    background-color: #f1c6d5;
+}
+
 /* -------------------------------- Footer Styling */
 .footer {
     background-color: #e9385c;
