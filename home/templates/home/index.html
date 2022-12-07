@@ -37,7 +37,7 @@
         {% for brand in brands %}
             {% if brand.is_featured %}
             <div class="col mb-4">
-                <div class="card">
+                <div class="card h-100">
                     <img class="card-img-top" src="{{ brand.image.url }}" alt="">
                     <div class="card-body">
                         <h3 class="card-title brand-font-alt h6 text-center">{{ brand.friendly_name }}</h3>

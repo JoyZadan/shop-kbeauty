@@ -97,10 +97,12 @@
                         </a>
                     </p>
 
-                    <!-- <span class="float-right">
-                        {{ product.subcategory.friendly_name }}
-                        <i class="fas fa-tag text-warning"></i>
-                    </span> -->
+                    {% if request.user.is_superuser %}
+                    <small class="float-right h6 mt-3">
+                        <a href="{% url 'edit_product' product.id %}" class="text-purple">Edit</a> |
+                        <a class="text-success" href="{% url 'delete_product' product.id %}">Delete</a>
+                    </small>
+                    {% endif %}
                     {% endif %}
 
                 </div>
