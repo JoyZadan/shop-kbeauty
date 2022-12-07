@@ -75,7 +75,7 @@ class Subcategory(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        """ String representation of Category model """
+        """ String representation of Subcategory model """
         return self.name
 
     def get_friendly_name(self):
@@ -109,7 +109,7 @@ class Brand(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        """ String representation of Product model """
+        """ String representation of Brand model """
         return self.name
 
     def get_friendly_name(self):
