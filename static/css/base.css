@@ -105,20 +105,18 @@ a:visited {
     border: 1px solid black;
 }
 
-.btn-outline-brand {
+.btn-brand {
     background: #e9385c;
-    color: white !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #e9385c;
+    color: white;
 }
 
-.btn-outline-brand:hover,
-.btn-outline-brand:active,
-.btn-outline-brand:focus {
+.btn-brand:hover,
+.btn-brand:active,
+.btn-brand:focus {
     background: black;
     color: white !important;
     border: 1px solid black;
 }
-
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -214,7 +212,7 @@ hr {
 /* ------------------------------- card styling to overwrite bootstrap's default styling */
 .card {
     color: #000 !important;
-    border: 1px solid #000 !important;
+    border: 1px solid #000;
     border-radius: 0;
 }
 

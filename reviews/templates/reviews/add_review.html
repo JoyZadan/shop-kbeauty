@@ -12,7 +12,7 @@
 {% block content %}
     <div class="container mb-5">
         <h2 class="display-4 brand-font-alt text-shadow text-center my-5">ADD A REVIEW</h2>
-        <p class="alt-text-muted h5">Share your experience of using the products with your fellow K-Beauty enthusiasts</p>
+        <p class="alt-text-muted text-center">Share your experience using {{ product.name}}</p>
         <hr>
         <!-- Add product review column -->
         <div class="row">
@@ -41,7 +41,7 @@
                     <div class="row g-2">
                         <div class="col-md-6">
                             <a href="{% url 'product_detail' product.id %}">
-                                <img class="review-product-img float-left" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="img-fluid mt-3" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                         </div>
                         <div class="col-md-6">

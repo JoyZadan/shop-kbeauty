@@ -71,11 +71,6 @@
                         </a>
                     </p>
                     {% endif %}
-                    <!-- {% if product.rating %}
-                    <small class="text-warning float-right"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    {% else %}
-                    <small class="text-muted float-right"><i class="fas fa-star mr-1"></i>No Rating</small>
-                    {% endif %} -->
                     {% if request.user.is_superuser %}
                     <small class="ml-3 float-right h6">
                         <a href="{% url 'edit_product' product.id %}" class="text-purple">Edit</a> |
@@ -240,7 +235,7 @@
                                 <p class="brand-font-alt">
                                     Have you used {{ product.name }} before?
                                 </p>
-                                <a href="{% url 'add_review' product.id %}" class="btn btn-sm btn-outline-brand rounded-0 text-shadow">
+                                <a href="{% url 'add_review' product.id %}" class="btn btn-sm btn-brand rounded-0 text-shadow">
                                     Share your experience!
                                 </a>
                             </div>
