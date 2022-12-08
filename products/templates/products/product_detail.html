@@ -27,16 +27,20 @@
                 {% endif %}
                 </div>
                 <!-- See Reviews and Add Review links as buttons -->
-                <div class="col-12 mt-5">
+                <div class="col-12 mt-3">
+                    <p class="alt-text-muted small w-75">
+                        Have you tried this product from {{ product.brand.friendly_name }}?
+                        Share your experience with your fellow K-Beauty enthusiasts.
+                    </p>
                     <!-- See reviews link -->
-                    <a href="{% url 'reviews' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-2">
+                    <a href="{% url 'reviews' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-1">
                         <span class="text-uppercase">See Reviews</span>
                         <span class="icon">
                             <i class="fas fa-chevron-right"></i>
                         </span>
                     </a>
                     <!-- Add a review link -->
-                    <a href="{% url 'add_review' product.id %}" class="btn btn-outline-black rounded-0 mt-2">
+                    <a href="{% url 'add_review' product.id %}" class="btn btn-outline-black rounded-0 mt-1">
                         <span class="icon">
                             <i class="fas fa-plus"></i>
                         </span>

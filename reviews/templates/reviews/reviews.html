@@ -12,33 +12,39 @@
 
 {% block content %}
     <!-- Heading -->
-    <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
-        What our customers are saying about this product
-    </h2>
+    <div class="container mb-5">
+        <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
+            What our customers are saying about this product
+        </h2>
+        <hr>
 
-    <!-- All Available Reviews -->
-    {% if reviews %}
-    <div class="row">
-        {% for review in reviews %}
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
-                    <p class="card-text">{{ review.user }}</p>
-                    <p class="text-muted">{{ review.date }}</p>
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-sm btn-brand text-shadow">
-                        Does the product work? Find out!
-                    </a>
+            <!-- All Available Reviews -->
+        {% if reviews %}
+        <div class="row">
+            {% for review in reviews %}
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
+                        <p class="card-text">{{ review.user }}</p>
+                        <p class="text-muted">{{ review.date }}</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="" class="btn btn-sm btn-brand text-shadow">
+                            Does the product work? Find out!
+                        </a>
+                    </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
-        {% endfor %}
+        {% else %}
+        <div class="col">
+            <p class="alt-text-muted h5">Share your experience of using the products with your fellow K-Beauty enthusiasts</p>
+            <p>No reviews available for this product yet.</p>
+        </div>
+        {% endif %}
+
     </div>
-    {% else %}
-    <div class="">
-        <p>No reviews available for this product yet.</p>
-    </div>
-    {% endif %}
+
 {% endblock %}
