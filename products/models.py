@@ -90,9 +90,9 @@ class Subcategory(models.Model):
 
 class Brand(models.Model):
     """ Brand model """
-    name = models. CharField(max_length=100, null=False, unique=True,
-                             blank=False, verbose_name='Brand name',
-                             help_text='format: required, max_length=100')
+    name = models.CharField(max_length=100, null=False, unique=True,
+                            blank=False, verbose_name='Brand name',
+                            help_text='format: required, max_length=100')
     friendly_name = models.CharField(max_length=200, null=True, blank=True)
     slug = models.SlugField(max_length=100, null=False, unique=True,
                             blank=False, verbose_name='Brand slug',
@@ -131,9 +131,9 @@ class Product(models.Model):
                                  verbose_name='category title')
     subcategory = models.ForeignKey(Subcategory, on_delete=models.CASCADE,
                                     verbose_name='subcategory title')
-    brand = models. ForeignKey('Brand', on_delete=models.CASCADE,
-                               related_name='products',
-                               verbose_name='brand title')
+    brand = models.ForeignKey('Brand', on_delete=models.CASCADE,
+                              related_name='products',
+                              verbose_name='brand title')
     sku = models.CharField(max_length=50, null=False, unique=False,
                            blank=False,
                            help_text='format: required,max_length=50')
@@ -180,13 +180,3 @@ class Product(models.Model):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
-
-
-class ProductReview(models.Model):
-    """ Product Review model """
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, related_name='reviews',
-                             on_delete=models.CASCADE)
-    content = models.TextField(blank=True, null=True, max_length=1000)
-    stars = models.IntegerField()
-    date_added = models.DateTimeField(auto_now_add=True)
