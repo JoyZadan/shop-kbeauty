@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, MainCategory, Category, Subcategory, Brand
+from reviews.models import Review
 from .forms import ProductForm
 
 
@@ -73,9 +74,11 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     brands = Brand.objects.all()
+    reviews = Review.objects.filter(product=product)
 
     context = {
         'product': product,
+        'reviews': reviews,
         'brands': brands,
     }
 

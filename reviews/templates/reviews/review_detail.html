@@ -11,10 +11,9 @@
 
 {% block content %}
     <div class="container mb-5">
-        <h2 class="display-4 brand-font-alt text-shadow text-center my-5">ADD A REVIEW</h2>
-        <p class="alt-text-muted h5">Share your experience of using the products with your fellow K-Beauty enthusiasts</p>
+        <h2 class="display-4 brand-font-alt text-shadow text-center my-5">Product Review</h2>
+        <p class="alt-text-muted h5">Thanks for sharing your review!</p>
         <hr>
-
         <div>
             <!-- Review details  -->
             <h4><strong>{{ review.title }}</strong></h4>
@@ -32,10 +31,17 @@
                 <button class="btn btn-outline-black rounded-0 mt-1 text-uppercase" type="submit">
                     Delete
                     <span class="icon">
-                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-trash"></i>
                     </span>
                 </button>
             {% endif %}
         </div>
+    <!-- Continue Shopping link -->
+        <a href="{% url 'products' %}" class="btn btn-brand rounded-0 mt-3 text-shadow">
+            <span class="icon">
+                <i class="fas fa-shopping-bag"></i>
+            </span>
+        <span class="text-uppercase">Keep Shopping</span>
+        </a>
     </div>
 {% endblock %}

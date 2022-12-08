@@ -14,26 +14,91 @@
         <h2 class="display-4 brand-font-alt text-shadow text-center my-5">ADD A REVIEW</h2>
         <p class="alt-text-muted h5">Share your experience of using the products with your fellow K-Beauty enthusiasts</p>
         <hr>
+        <!-- Add product review column -->
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <!-- Add review form  -->
+                <form method="POST" action="{% url 'add_review' product.id %}" id="add-review-form">
+                    {% csrf_token %}
+                    {{ review_form|crispy }}
+                    <!-- Cancel review link -->
+                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
+                        <span class="text-uppercase">Cancel</span>
+                    </a>
+                    <!-- Submit review button -->
+                    <button class="btn btn-outline-black rounded-0 mt-1 mb-3 text-uppercase" type="submit">
+                        Submit review
+                        <span class="icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <!-- Product being reviewed column -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <!-- Start of product card -->
+                <div class="card product-review-card mb-5 border-none">
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="review-product-img float-left" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
+                            </div>
+                            <div class=" text-center">
+                                <div class="price-box">
+                                    <p class="mb-0 pb-1"><span
+                                            class="text-left alt-text-muted brand-font">£{{ product.price }}</span></p>
+                                    {% if product.discount > 0.01 %}
+                                    <p class="mb-0 text-muted"><s>£{{ product.original_price }}</s></p>
+                                    <p class="mb-0 text-center"><span class="text-danger alt-text-muted">You save:
+                                        </span> £{{ product.discount }}</p>
+                                    {% endif %}
+                                </div>
+                                <a href="{% url 'product_detail' product.id %}"
+                                    class="btn btn-sm btn-brand text-shadow mt-1 rounded-0 mb-3">
+                                    <span class="text-uppercase">Shop Now</span>
+                                    <span class="icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div>
-            <!-- Add review form  -->
-            <form method="POST" action="{% url 'add_review' product.id %}" id="add-review-form">
-                {% csrf_token %}
-                {{ review_form|crispy }}
-                <!-- Cancel review link -->
-                <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
-                    <span class="text-uppercase">Cancel</span>
-                </a>
-                <!-- Submit review button -->
-                <button class="btn btn-outline-black rounded-0 mt-1 text-uppercase" type="submit">
-                    Submit review
-                    <span class="icon">
-                        <i class="fas fa-arrow-right"></i>
-                    </span>
-                </button>
-            </form>
+                <!-- <div class="card">
+                    <div class="card-horizontal">
+                        <div class="img-square-wrapper">
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="product-img-review" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
+                        </div>
+                        <div class="card-footer text-center">
+                            <div class="price-box">
+                                <p class="mb-0 pb-1"><span class="text-left alt-text-muted brand-font">£{{ product.price }}</span></p>
+                                {% if product.discount > 0.01 %}
+                                <p class="mb-0 text-muted"><s>£{{ product.original_price }}</s></p>
+                                <p class="mb-0 text-center"><span class="text-danger alt-text-muted">You save: </span> £{{ product.discount }}</p>
+                                {% endif %}
+                            </div>
+                            <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-brand text-shadow mt-1">
+                                <span class="text-uppercase">Shop Now</span>
+                                <span class="icon">
+                                    <i class="fas fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
 
+                    </div>
+                </div> -->
+            </div>
         </div>
-
     </div>
 {% endblock %}

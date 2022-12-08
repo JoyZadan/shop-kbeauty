@@ -5,3 +5,17 @@
 #add-review-form input::placeholder {
     color: #aab7c4;
 }
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.product-review-card {
+    max-width: 540px;
+}
+
+.review-product-img {
+    max-width: 3rem;
+    max-height: 3rem;
+}

@@ -52,10 +52,10 @@
                             <p class="mb-0 text-center"><span class="text-danger alt-text-muted">You save: </span> £{{ product.discount }}</p>
                             {% endif %}
                         </div>
-                        <a href="{% url 'product_detail' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-1">
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-outline-brand text-shadow mt-1 rounded-0">
                             <span class="text-uppercase">Shop Now</span>
                             <span class="icon">
-                                <i class="fas fa-chevron-right"></i>
+                                <i class="fas fa-shopping-bag"></i>
                             </span>
                         </a>
                     </div>
@@ -77,13 +77,6 @@
                     <img class="card-img-top" src="{{ brand.image.url }}" alt="">
                     <div class="card-body">
                         <h3 class="card-title brand-font-alt h6 text-center">{{ brand.friendly_name }}</h3>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn btn-sm btn-brand"><i class="fa fa-search"></i></button>
-                        <span class="float-right">
-                            4.8 / 5.0
-                            <i class="fa fa-star text-warning"></i>
-                        </span>
                     </div>
                 </div>
             </div>

@@ -105,6 +105,21 @@ a:visited {
     border: 1px solid black;
 }
 
+.btn-outline-brand {
+    background: #e9385c;
+    color: white !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #e9385c;
+}
+
+.btn-outline-brand:hover,
+.btn-outline-brand:active,
+.btn-outline-brand:focus {
+    background: black;
+    color: white !important;
+    border: 1px solid black;
+}
+
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
