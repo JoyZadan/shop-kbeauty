@@ -16,6 +16,7 @@ def reviews(request, product_id):
 
     context = {
         'reviews': reviews,
+        'product': product
     }
 
     return render(request, template, context)

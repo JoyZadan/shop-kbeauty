@@ -13,8 +13,8 @@
 {% block content %}
     <!-- Heading -->
     <div class="container mb-5">
-        <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
-            What our customers are saying about this product
+        <h2 class="display-5 brand-font-alt text-shadow text-center pt-2 my-5">
+            All available reviews for {{ product.name }}
         </h2>
         <hr>
 
@@ -31,8 +31,11 @@
                         <p class="card-text">{{ review.content }}</p>
                     </div>
                     <div class="card-footer">
-                        <a href="" class="btn btn-sm btn-brand text-shadow">
-                            Does the product work? Find out!
+                        <p class="">
+                            Have you used {{ product.name }} before?
+                        </p>
+                        <a href="{% url 'add_review' product.id %}" class="btn btn-sm btn-outline-brand rounded-0 text-shadow">
+                            Share your experience!
                         </a>
                     </div>
                 </div>
