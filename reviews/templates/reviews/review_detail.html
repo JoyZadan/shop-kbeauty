@@ -16,24 +16,26 @@
         <hr>
 
         <div>
-            <!-- Add review form  -->
-            <form method="POST" action="{% url 'add_review' product.id %}" id="add-review-form">
-                {% csrf_token %}
-                {{ review_form|crispy }}
+            <!-- Review details  -->
+            <h4><strong>{{ review.title }}</strong></h4>
+            <p>{{ review.product }}</p>
+            <p>{{ review.content }}</p>
+            <p>Created by: {{ review.user }}</p>
+            <p>{{ review.date }}</p>
+            {% if request.user.is_superuser %}
+                <!-- See Reviews and Add Review links as buttons -->
                 <!-- Cancel review link -->
                 <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
-                    <span class="text-uppercase">Cancel</span>
+                    <span class="text-uppercase">Edit</span>
                 </a>
                 <!-- Submit review button -->
                 <button class="btn btn-outline-black rounded-0 mt-1 text-uppercase" type="submit">
-                    Submit review
+                    Delete
                     <span class="icon">
                         <i class="fas fa-arrow-right"></i>
                     </span>
                 </button>
-            </form>
-
+            {% endif %}
         </div>
-
     </div>
 {% endblock %}

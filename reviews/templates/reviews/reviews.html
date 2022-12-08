@@ -18,16 +18,17 @@
         </h2>
         <hr>
 
-            <!-- All Available Reviews -->
+        <!-- All Available Reviews -->
         {% if reviews %}
         <div class="row">
             {% for review in reviews %}
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-md-6 col-lg-3 mt-3">
                 <div class="card h-100">
                     <div class="card-body">
                         <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
-                        <p class="card-text">{{ review.user }}</p>
-                        <p class="text-muted">{{ review.date }}</p>
+                        <small class="text-muted p-0">{{ review.user }}</small>
+                        <small class="text-muted p-0 float-right">{{ review.date }}</small>
+                        <p class="card-text">{{ review.content }}</p>
                     </div>
                     <div class="card-footer">
                         <a href="" class="btn btn-sm btn-brand text-shadow">

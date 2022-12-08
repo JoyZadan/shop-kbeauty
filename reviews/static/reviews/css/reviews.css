@@ -1,0 +1,7 @@
+#add-review-form .form-control {
+    color: #000;
+}
+
+#add-review-form input::placeholder {
+    color: #aab7c4;
+}

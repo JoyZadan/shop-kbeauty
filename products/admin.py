@@ -49,7 +49,8 @@ class ProductAdmin(admin.ModelAdmin):
         'original_price',
         'price',
         'discount',
-        'image'
+        'is_featured',
+        'image',
     )
 
 

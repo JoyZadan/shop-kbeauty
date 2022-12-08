@@ -1,6 +1,6 @@
 from django import forms
 from .models import Review
-from products.models import Category
+from products.models import Category, Product
 from django.contrib.auth.models import User
 
 
@@ -15,9 +15,10 @@ class ReviewForm(forms.ModelForm):
         """ Adds placeholders and classes """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'title': 'title',
-            'content': 'content',
+            'title': 'Review Title',
+            'content': 'Review Content',
         }
+
         self.fields['title'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
