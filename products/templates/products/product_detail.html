@@ -13,6 +13,7 @@
     <!-- Individual product area -->
     <div class="container-fluid mt-4 mb-5">
         <div class="row">
+            <!-- Product image and reviews links as buttons -->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     {% if product.image %}
@@ -25,7 +26,23 @@
                     </a>
                 {% endif %}
                 </div>
+                <!-- See Reviews and Add Review links as buttons -->
+                <div class="col-12 mt-5">
+                    <a href="" class="btn btn-black rounded-0 text-uppercase mt-2">
+                        <span class="text-uppercase">See Reviews</span>
+                        <span class="icon">
+                            <i class="fas fa-chevron-right"></i>
+                        </span>
+                    </a>
+                    <a href="" class="btn btn-outline-black rounded-0 mt-2">
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text-uppercase">Add Review</span>
+                    </a>
+                </div>
             </div>
+            <!-- Products details area -->
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt">{{ product.name }}</p>
