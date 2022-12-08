@@ -28,13 +28,15 @@
                 </div>
                 <!-- See Reviews and Add Review links as buttons -->
                 <div class="col-12 mt-5">
-                    <a href="" class="btn btn-black rounded-0 text-uppercase mt-2">
+                    <!-- See reviews link -->
+                    <a href="{% url 'reviews' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-2">
                         <span class="text-uppercase">See Reviews</span>
                         <span class="icon">
                             <i class="fas fa-chevron-right"></i>
                         </span>
                     </a>
-                    <a href="" class="btn btn-outline-black rounded-0 mt-2">
+                    <!-- Add a review link -->
+                    <a href="{% url 'add_review' product.id %}" class="btn btn-outline-black rounded-0 mt-2">
                         <span class="icon">
                             <i class="fas fa-plus"></i>
                         </span>
