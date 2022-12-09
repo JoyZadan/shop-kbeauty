@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class Review(models.Model):
     """ Review model """
     product = models.ForeignKey(Product, null=True, blank=True,
-                                on_delete=models.SET_NULL)
+                                on_delete=models.CASCADE)
     user = models.ForeignKey(User, null=True, blank=True,
                              on_delete=models.CASCADE)
     title = models.CharField(max_length=30)

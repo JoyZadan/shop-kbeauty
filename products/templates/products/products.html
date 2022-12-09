@@ -97,8 +97,8 @@
 
                     {% if request.user.is_superuser %}
                     <small class="float-right h6 mt-3">
-                        <a href="{% url 'edit_product' product.id %}" class="text-purple">Edit</a> |
-                        <a class="text-success" href="{% url 'delete_product' product.id %}">Delete</a>
+                        <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2">Edit</a>
+                        <a class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" href="{% url 'delete_product' product.id %}">Delete</a>
                     </small>
                     {% endif %}
                     {% endif %}

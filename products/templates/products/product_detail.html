@@ -26,6 +26,18 @@
                     </a>
                 {% endif %}
                 </div>
+
+                <!-- FOR SUPERADMIN: Links as buttons to quickly edit or delete a product -->
+                <div class="row">
+                    {% if request.user.is_superuser %}
+                    <small class="ml-3 float-right h6">
+                        <a href="{% url 'edit_product' product.id %}"
+                            class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2">Edit</a>
+                        <a class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2"
+                            href="{% url 'delete_product' product.id %}">Delete</a>
+                    </small>
+                    {% endif %}
+                </div>
                 <!-- See Reviews and Add Review links as buttons -->
                 <div class="col-12 mt-3">
                     <p class="alt-text-muted small w-75">
@@ -70,12 +82,6 @@
                             <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
                         </a>
                     </p>
-                    {% endif %}
-                    {% if request.user.is_superuser %}
-                    <small class="ml-3 float-right h6">
-                        <a href="{% url 'edit_product' product.id %}" class="text-purple">Edit</a> |
-                        <a class="text-success" href="{% url 'delete_product' product.id %}">Delete</a>
-                    </small>
                     {% endif %}
                     <div class="price-box">
                         <p class="mb-0 pt-3 pb-1"><span class="h3 text-left font-weight-bold price-font">£{{ product.price }}</span></p>
@@ -213,7 +219,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Featured Reviews -->
         <div class="container mb-5">
             <h3 class="brand-font-alt text-shadow pt-2">
@@ -249,9 +254,7 @@
                 <p>No reviews available for this product yet.</p>
             </div>
             {% endif %}
-
         </div>
-
         <!-- Featured Brands -->
         <hr>
         <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
@@ -271,10 +274,6 @@
                 {% endif %}
             {% endfor %}
         </div>
-
-
-
-
     </div>
 
 {% endblock%}

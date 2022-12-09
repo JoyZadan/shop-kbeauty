@@ -212,6 +212,7 @@ The following error handlers were added to the Application to handle possible sc
 | :--- | :--- | :--- |
 | 1 | Error: You are trying to add a non-nullable field to without a default  | Solution: Choose option 1 from two options provided by Django when making migrations, add timezone.now, then migrate. New error appeared: ```TypeError: Field 'id' expected a number but got datetime.datetime(2022, 11, 20, 13, 54, 36, 590663, tzinfo=<UTC>)```. I then looked for the latest _auto_ file from migrations folder, then changed ```default=got datetime.datetime(2022, 11, 20, 13, 54, 36, 590663, tzinfo=<UTC>)``` to ```default=1```. I was then able to migrate successfully. |
 | 2 | Stripe Webhook errors, ```401 ERR```, x 23 times and 100% failure rate  |  After numerous attempts to solve this by going over and over the source code for webhook handlers, searching the Stripe docs and, stackover and slack, unbelievably, the solution was simple enough: I just had to share my GitPod workspace!  |
+| 3 | Reviews were not deleting after an associated product is deleted  |  Fortunately, this was a simple bug. I just had to edit the product (fk) in my review model. ``` on_delete=models.SET_NULL``` was changed to ``` on_delete=models.CASCADE ```, then migrate. |
 
 
 # Deployment & Local Development
