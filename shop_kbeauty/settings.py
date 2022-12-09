@@ -129,12 +129,12 @@ WSGI_APPLICATION = 'shop_kbeauty.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE_URL' in os.environ:
-    # use the deployed db stored in heroku confi vars
+    # Use the deployed db stored in heroku config vars
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
-    # use the development sqlite db
+    # se the development sqlite db
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
