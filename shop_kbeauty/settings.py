@@ -119,7 +119,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-# ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
@@ -136,7 +135,7 @@ if 'DATABASE_URL' in os.environ:
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
-    # se the development sqlite db
+    # use the development sqlite db
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
