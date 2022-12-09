@@ -251,6 +251,9 @@ Press Enter. Your clone will be created.
 
 # Credits
 ## Code
+* Credit to Code Institute's Boutique Ado Django ecommerce walkthrough, from which this project was largely based from.
+* Credit to [Very Academy YouTube Channel](https://www.youtube.com/c/veryacademy) for the very detailed insights on database models.
+* Cfredit to [Stuart073's Music Box django ecommerce project for the inspiration, particularly for his reviews app](https://github.com/stuartj073/music-box)
 * Credit and thanks to [MDBootstrap](https://mdbootstrap.com/docs/b4/jquery/javascript/accordion/) for the accordion on product detail page.
 
 ## Content
@@ -279,7 +282,9 @@ The .... for information on the K-Beauty global phenomena.
 5. CodePiep YouTube
 
 # Acknowledgements
-A very, very special thanks to my family, especially my daughter Zoe, for your unwavering support and understanding and allowing me the space to focus on my quest to complete my projects and gain my Diploma in Web Application Development (Full Stack).
+A very, very special thanks to my family, especially my daughter Zoe, for the unwavering support and understanding and allowing me the space to focus on my projects.
+
+A big thanks to Conrad Saunders and Chris Booth as SDC for the assist with my EC requests due illness. It's not easy to concentrate and code when stricken with COVID!
 
 Special mention and thanks to my mentor, Dario Carrasquel, for his support, invaluable insights and his belief that I can do this well. I am so grateful to have you as my mentor.
 
