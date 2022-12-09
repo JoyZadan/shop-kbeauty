@@ -80,7 +80,7 @@ def edit_review(request, review_id):
         return redirect(reverse('account_login'))
 
     review = get_object_or_404(Review, pk=review_id)
-    products = Product.objects.filter(review=review)
+    product = Product.objects.filter(review=review)
 
     if request.method == "POST":
         review_form = ReviewForm(request.POST, request.FILES, instance=review)
@@ -93,15 +93,28 @@ def edit_review(request, review_id):
             messages.error(request, f"Failed to update review.")
     else:
         review_form = ReviewForm(instance=review)
+        messages.info(request, f'You are editing {review.title}')
 
     template = 'reviews/edit_review.html'
 
     context = {
         'review': review,
-        'products': products,
+        'product': product,
         'review_form': review_form,
     }
 
     return render(request, template, context)
 
 
+@login_required
+def delete_review(request, review_id):
+    """
+    Delete specific blog post for user
+    """
+
+    review = get_object_or_404(Review, pk=review_id)
+
+    review.delete()
+
+    messages.success(request, "Review successfully deleted")
+    return redirect(reverse('products'))

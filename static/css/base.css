@@ -128,6 +128,19 @@ a:visited {
     color: white;
 }
 
+.btn-red {
+    background: red;
+    color: white;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
 .text-black {
     color: #000 !important;
 }
@@ -138,11 +151,6 @@ a:visited {
 
 .bg-black {
     background: #000 !important;
-}
-
-.btn-brand {
-    background: #e9385c;
-    color: white;
 }
 
 .alt-a,

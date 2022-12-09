@@ -81,10 +81,54 @@
                         </tbody>
                     </table>
                 </div>
-
-
             </div>
         </div>
+        <!-- Testing rendering reviews -->
+        <div class="row">
+            <div class="col-12">
+                <!-- All Available Reviews -->
+                {% if user %}
+                    {% if reviews %}
+                    <div class="row">
+                        {% for review in reviews %}
+                        <div class="col-12 col-md-6 col-lg-3 mt-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
+                                    <small class="text-muted p-0">{{ review.user }}</small>
+                                    <small class="text-muted p-0 float-right">{{ review.date }}</small>
+                                    <p class="card-text">{{ review.content }}</p>
+
+                                    {% if request.user.is_superuser %}
+                                    <a class="btn btn-sm btn-black text-shadow mt-1 rounded-0 mb-3" href="{% url 'edit_review' review.id %}">
+                                        Edit
+                                    </a>
+                                    {% endif %}
+
+                                </div>
+                                <div class="card-footer">
+                                    <p class="">
+                                        Have you used {{ product.name }} before?
+                                    </p>
+                                    <a href="{% url 'add_review' product.id %}" class="btn btn-sm btn-brand rounded-0 text-shadow">
+                                        Share your experience!
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="mt-3">
+                        <p class="alt-text-muted h5 text-center">You have not submitted any product review.</p>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+
     </div>
 {% endblock %}
 

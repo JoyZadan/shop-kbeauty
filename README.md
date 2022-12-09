@@ -47,7 +47,7 @@ Table of Contents - Click to Expand
 * ...
 
 ### User Demographic
-* Ages 16 and above for viewing, registering and contributing to recipes
+* Ages 16 and above for viewing, registering and purchasing products
 * Visitors who are interested in K-Beauty products
 * Visitors who are looking for K-Beauty products
 * ...
@@ -154,7 +154,7 @@ The following error handlers were added to the Application to handle possible sc
     * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
     * [Python](https://www.python.org/) was used for the back end programming of the site.
 
-* [Cloudinary ??? or S3](???) was used to enable users to upload images for their recipes whilst keeping the App safe and secure
+* [Cloudinary ??? or S3](???) was used to enable users to upload images for their whilst keeping the App safe and secure
 
 * [DB.SQLITE3](https://www.postgresql.org/)
     * SQLITE3 was the relational database used for the project (development).
