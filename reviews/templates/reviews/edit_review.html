@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Edit review form  -->
+    <div class="container mb-5">
+        <h2 class="display-4 brand-font-alt text-shadow text-center my-5">EDIT YOUR REVIEW</h2>
+        <hr>
+        <!-- Edit product review column -->
+        <div class="row">
+            <div class="col">
+                <!-- Edit review form  -->
+                <form method="POST" action="{% url 'edit_review' review.id %}" id="edit-review-form">
+                    {% csrf_token %}
+                    {{ review_form|crispy }}
+                    <!-- Cancel review link -->
+                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
+                        <span class="text-uppercase">Cancel</span>
+                    </a>
+                    <!-- Submit review button -->
+                    <button class="btn btn-outline-black rounded-0 mt-1 mb-3 text-uppercase" type="submit">
+                         Done editing
+                        <span class="icon">
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

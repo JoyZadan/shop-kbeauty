@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
 from products.models import Product
 from .models import Review
 from .forms import ReviewForm
@@ -65,6 +66,40 @@ def review_detail(request, review_id):
 
     context = {
         'review': review,
+    }
+
+    return render(request, template, context)
+
+
+@login_required()
+def edit_review(request, review_id):
+    """ Views to enable users to edit their own review """
+    if not request.user.is_authenticated:
+        messages.error(request,
+                       'Sorry, you need to be logged in to add a review.')
+        return redirect(reverse('account_login'))
+
+    review = get_object_or_404(Review, pk=review_id)
+    products = Product.objects.filter(review=review)
+
+    if request.method == "POST":
+        review_form = ReviewForm(request.POST, request.FILES, instance=review)
+        if review_form.is_valid():
+            review_form.save()
+            messages.success(request, f"Successfully updated review.")
+            return redirect(reverse('review_detail', args=[review.id]))
+        else:
+            print("Form invalid")
+            messages.error(request, f"Failed to update review.")
+    else:
+        review_form = ReviewForm(instance=review)
+
+    template = 'reviews/edit_review.html'
+
+    context = {
+        'review': review,
+        'products': products,
+        'review_form': review_form,
     }
 
     return render(request, template, context)

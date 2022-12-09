@@ -21,19 +21,20 @@
             <p>{{ review.content }}</p>
             <p>Created by: {{ review.user }}</p>
             <p>{{ review.date }}</p>
+
             {% if request.user.is_superuser %}
-                <!-- See Reviews and Add Review links as buttons -->
-                <!-- Cancel review link -->
-                <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
-                    <span class="text-uppercase">Edit</span>
-                </a>
-                <!-- Submit review button -->
-                <button class="btn btn-outline-black rounded-0 mt-1 text-uppercase" type="submit">
-                    Delete
-                    <span class="icon">
-                        <i class="fas fa-trash"></i>
-                    </span>
-                </button>
+            <!-- See Reviews and Add Review links as buttons -->
+            <!-- Cancel review link -->
+            <a href="{% url 'edit_review' review.id %}" class="btn btn-black rounded-0 text-uppercase mt-1">
+                <span class="text-uppercase">Edit</span>
+            </a>
+            <!-- Submit review button -->
+            <button class="btn btn-outline-black rounded-0 mt-1 text-uppercase" type="submit">
+                Delete
+                <span class="icon">
+                    <i class="fas fa-trash"></i>
+                </span>
+            </button>
             {% endif %}
         </div>
     <!-- Continue Shopping link -->
