@@ -1,0 +1,1 @@
+[{"model": "products.maincategory", "pk": 1, "fields": {"name": "skincare", "slug": "skincare"}}, {"model": "products.maincategory", "pk": 2, "fields": {"name": "hair_body", "slug": "hair_body"}}]
