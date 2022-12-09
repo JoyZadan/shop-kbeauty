@@ -144,9 +144,8 @@ class Product(models.Model):
                             blank=False, verbose_name='Product slug',
                             help_text='format: required, max_length=250')
     is_featured = models.BooleanField(default=False)
-    total_quantity = models.IntegerField(null=False, unique=False, blank=False,
-                                         verbose_name='Product quantity')
-    availability = models.IntegerField(null=False, unique=False, blank=False)
+    total_quantity = models.IntegerField(null=True, unique=False, blank=True)
+    availability = models.IntegerField(null=True, unique=False, blank=True)
     description = models.TextField(max_length=2500, null=False, blank=False,
                                    verbose_name='Product description',
                                    help_text='format: reqd, max_length=2500')
