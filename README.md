@@ -147,27 +147,23 @@ The following error handlers were added to the Application to handle possible sc
 
 # Technologies Used
 * Languages:
-    * [DJANGO]() was used ...
-    * [DJANGO-ALLAUTH]() was used ...
     * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
     * [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
     * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
     * [Python](https://www.python.org/) was used for the back end programming of the site.
 
-* [Cloudinary ??? or S3](???) was used to enable users to upload images for their whilst keeping the App safe and secure
+* Frameworks and integrated applications:
+    * [DJANGO - version 3.2 ](https://docs.djangoproject.com/en/4.1/releases/3.2/) Django is a free and open-source, Python-based web  framework that follows the model–template–views architectural pattern.
+    * [DJANGO-ALLAUTH](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication
 
-* [DB.SQLITE3](https://www.postgresql.org/)
-    * SQLITE3 was the relational database used for the project (development).
+* Databases:
+    * [DB.SQLITE3](https://www.postgresql.org/) was the database used for the project (development).
+    * [Postgres](https://www.postgresql.org/) Postgres was the relational database used for the project.
 
-* [Postgres](https://www.postgresql.org/)
-    * Postgres was the relational database used for the project.
+* Cloud Storages:
+    * [AWS S3](???) was used to store upload images and static files
 
-* [ELEPHANTSQL](https://www.postgresql.org/)
-    * ElephantSQL was used to host the the Postgres DB for the project
-
-* [Flask-PyMongo](https://pypi.org/project/Flask-PyMongo/)
-    * Flask-PyMongo provides MongoDB support for Flask applications.
-
+* Libraries and packages:
 * [pip](https://pip.pypa.io/en/stable/)
     * Pip is the package installer for Python, allowing us to install the packages we need for this site.
 
@@ -192,12 +188,12 @@ The following error handlers were added to the Application to handle possible sc
 * [Chrome](https://www.google.com/intl/en_uk/chrome/)
     * This project was created in the Google Chrome browser, and as such Chrome was used as the default testing browser.
 
-* [Heroku](https://devcenter.heroku.com/)
-    * Heroku is where we deploy this live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
-
 * [GitHub](https://github.com/)
     * GitHub is where we host our site.
 
+* Hosting & Deployment
+    * [Heroku](https://devcenter.heroku.com/) Heroku is where we deploy this live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
+    * [ELEPHANTSQL](https://www.postgresql.org/) ElephantSQL was used to host the the Postgres DB for the project
 
 ## Future Implementation
 * Include a ...
