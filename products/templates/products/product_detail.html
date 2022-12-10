@@ -232,8 +232,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
-                                <small class="text-muted p-0">{{ review.user }}</small>
-                                <small class="text-muted p-0 float-right">{{ review.date }}</small>
+                                <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</small></em></p>
                                 <p class="card-text">{{ review.content }}</p>
                             </div>
                             <div class="card-footer">
