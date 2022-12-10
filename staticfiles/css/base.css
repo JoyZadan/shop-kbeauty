@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #000;
+    font-family: 'Lato';
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-footer {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+/* -------------------------------- Hero Section Styling */
+.home-hero {
+    background: url('/media/homepage-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+/* -------------------------------- Typography Styling */
+.logo-font {
+    text-transform: uppercase;
+}
+
+.nav-font {
+    text-transform: uppercase;
+}
+
+.nav-font-alt {
+    color: #e9385c;
+    text-transform: uppercase;
+}
+
+.brand-font {
+    color: #e9385c;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.price-font {
+    color: #e9385c;
+}
+
+.brand-link:hover,
+.banner-link:active,
+.brand-link:focus {
+    color: #000;
+    padding: 5px;
+}
+
+.brand-font-alt {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.alt-text-muted {
+    color: #e9385c;
+}
+.text-shadow {
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
+                    0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.nowrap {
+    white-space: nowrap !important;
+}
+
+/* -------------------------------- Buttons & Links Styling */
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none !important;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 16.25rem;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-brand {
+    background: #e9385c;
+    color: white;
+}
+
+.btn-brand:hover,
+.btn-brand:active,
+.btn-brand:focus {
+    background: black;
+    color: white !important;
+    border: 1px solid black;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #e9385c;
+    color: white;
+}
+
+.btn-red {
+    background: red;
+    color: white;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.alt-a,
+.alt-text-info,
+.alt-text-primary {
+    color: #e9385c !important;
+}
+
+.alt-a:hover,
+.alt-a:active,
+.alt-a:focus,
+.alt-text-info:hover,
+.alt-text-info:active,
+.alt-text-info:focus,
+.alt-text-primary:hover,
+.alt-text-primary:active,
+.alt-text-primary:focus {
+    color: #17a2b8!important;
+}
+
+a.category-badge > span.badge,
+a.subcategory-badge > span.badge {
+    background: #e9385c !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+a.category-badge > span.badge:hover,
+a.subcategory-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 2.625rem;
+    width: 2.625rem;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+/* ------------------------------- additional styling for better UI */
+hr {
+    border-top: 1px solid #000;
+}
+
+.alt-hr {
+    border-top: 1px solid #000;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.alt-border {
+    border: 1px solid #000;
+}
+
+/* ------------------------------- card styling to overwrite bootstrap's default styling */
+.card {
+    color: #000 !important;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+/* ------------------------------- bootstrap toasts */
+.message-container {
+    position: fixed;
+    top: 4.5rem;
+    right: 1rem;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 2.25rem;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 6.25rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* -------------------------------- Product Image Styling */
+.image-container {
+    margin: 2rem auto !important;
+}
+
+.product-image {
+    width: 15.625rem;
+    height: 18.75rem;
+    margin-left: 2rem;
+}
+
+/* -------------------------------- Allauth Forms Styling */
+/* Allauth form formatting */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
+/* -------------------------------- Product Form including clearable file input widget to handle image field */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0;
+    border-color: #dc3545;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border-radius: 0;
+}
+
+/* -------------------------------- Footer Styling */
+.footer {
+    background-color: #e9385c;
+}
+
+.footer-note {
+    background-color: #000;
+    margin-bottom: 0 !important;
+}
+
+/* -------------------------------- Media Queries */
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* sticky top navbar only on medium and up */
+@media (min-width: 992px) {
+    #logo-mobile {
+        display: none;
+    }
+}
+
+/* styling for home hero content for medium screens and below */
+@media (max-width: 892px) {
+    .display-4 {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 698px) {
+    .logo-font {
+        font-size: 1.5rem;
+    }
+
+    .nav-font {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 636px) {
+    .nav-link {
+        padding: 0;
+    }
+}
+
+@media (max-width: 441px) {
+    .banner-font {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 367px) {
+    .logo-font {
+        font-size: 1.75rem;
+    }
+
+    .banner-font {
+        font-size: 1.25rem;
+    }
+
+    .display-4 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 333px) {
+    .nav-link {
+        padding: 0;
+    }
+
+    .shop-now-button {
+        background: black;
+        color: white;
+        min-width: 14rem;
+    }
+}

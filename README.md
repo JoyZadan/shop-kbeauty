@@ -136,6 +136,7 @@ Breakdown of the features and elements implemented for the App.
 #### User and Superadmin Dashboard
 - ...
 - ...
+to do
 
 
 ### Error Handling
