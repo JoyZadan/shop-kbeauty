@@ -18,6 +18,10 @@ body {
     width: 1.5rem;
 }
 
+.navbar-toggler-icon {
+    color: #000 !important;
+}
+
 .logo-footer {
     font-size: 1.25rem;
     margin: 0 auto;
@@ -407,7 +411,31 @@ hr {
     #logo-mobile {
         display: none;
     }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
 }
+
+
 
 /* styling for home hero content for medium screens and below */
 @media (max-width: 892px) {
