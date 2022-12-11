@@ -41,6 +41,10 @@ body {
     text-transform: uppercase;
 }
 
+#home-cta-font {
+    font-size: 2rem;
+}
+
 .nav-font {
     text-transform: uppercase;
 }
