@@ -53,11 +53,11 @@ Table of Contents - Click to Expand
 ### User Stories
 | USER STORY # | As a/an | I want to be able to... | So that I can... |
 | --- | --- | --- | --- |
-| VIEWING & NAVIGATION | --- | --- | --- |
+| VIEWING & NAVIGATION |   |
 | [#9](https://github.com/JoyZadan/shop-kbeauty/issues/9) | Shopper | Navigate around the site | view a list of products  |
-| [#54](https://github.com/JoyZadan/shop-kbeauty/issues/54) | Shopper |  |  |
-| 2 | Shopper |  |  |
-| 2 | Shopper |  |  |
+| [#54](https://github.com/JoyZadan/shop-kbeauty/issues/54) | Shopper | View a specific category of products | Quickly find products I'm interested in without having to search through all products. |
+| [#47](https://github.com/JoyZadan/shop-kbeauty/issues/47) | Shopper | Quickly identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
+| [#32](https://github.com/JoyZadan/shop-kbeauty/issues/32) | Shopper | Quickly view how much was the original price | Identify how much I may be able to save when buying the product and may also help me compare prices with other sites |
 | 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
 
