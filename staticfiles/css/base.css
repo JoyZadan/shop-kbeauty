@@ -384,6 +384,14 @@ hr {
     border-radius: 0;
 }
 
+/* -------------------------------- 500 Error Page Styling */
+.hero-500-error {
+    background: url('/media/500-error-bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
 /* -------------------------------- Footer Styling */
 .footer {
     background-color: #e9385c;
