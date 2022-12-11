@@ -14,7 +14,7 @@
                 <hr class="mt-1 mb-3">
             </div>
         </div>
-        {% if grand_total and not on_profile_page %}
+        {% if grand_total and not on_profile_page %}{% else %}{% grand_total and not on_profile_page %}{% endif %}
             <p class="logo-font bg-white text-black py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
                 {% for item in bag_items %}
@@ -34,28 +34,6 @@
                     </div>
                 </div>
                 {% endfor %}
-        {% else %}
-        {% if grand_total and not on_add_review_page %}
-            <p class="logo-font bg-white text-black py-1">Your Bag ({{ product_count }})</p>
-            <div class="bag-notification-wrapper">
-                {% for item in bag_items %}
-                <div class="row">
-                    <div class="col-3 my-1">
-                        {% if item.product.image %}
-                        <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
-                        {% else %}
-                        <img class="w-100" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.png" alt="{{ item.product.name }}">
-                        {% endif %}
-                    </div>
-                    <div class="col-9">
-                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small">Size:
-                            {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-        {% endif %}
         </div>
         <div class="row">
             <div class="col">
