@@ -19,7 +19,7 @@ Shop K-Beauty ...
 
 <details>
 <summary>
-Table of Contents - Click to Expand
+TABLE OF CONTENTS - Click to Expand
 </summary>
 
 - [UX DEVELOPMENT](#ux-development)
@@ -47,8 +47,13 @@ Table of Contents - Click to Expand
 * ...
 ## Scope Plane
 ### Feature Ideas Planning
-*
-*
+When planning the Shop K-Beauty ecommerce store's features and scope, I drew up an Importance Viability analysis of these features, please see below:
+
+| # | Feature | Importance | Viability |
+| --- | --- | --- | --- |
+| 1 | ... |  |  |
+| 2 | ... |  |  |
+
 ## Structure Plane
 ### User Stories
 | **USER STORY #** | **As a/an** | **I want to be able to...** | **So that I can...** |
@@ -115,14 +120,7 @@ Table of Contents - Click to Expand
 #### Site Admin Goals - As an administrator, I want to be able to:
 * Have the ability to ...
 
-## Scope
-### Feature Ideas Planning
-When planning the App features and scope, I drew up an Importance Viability analysis of these features, please see below:
 
-| # | Feature | Importance | Viability |
-| --- | --- | --- | --- |
-| 1 | ... |  |  |
-| 2 | ... |  |  |
 
 Based on the results of the Feature Ideas Planning, I have decided to attempt to implement Features numbers ... for this production release and park the remaining features due to time limitations.
 
