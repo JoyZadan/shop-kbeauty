@@ -53,7 +53,6 @@ def add_review(request, product_id):
     context = {
         'review_form': review_form,
         'product': product,
-        'on_profile_page': True
     }
 
     return render(request, template, context)
