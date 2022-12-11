@@ -85,11 +85,6 @@ Table of Contents - Click to Expand
 | 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
-| **REGISTRATION & ACCOUNTS** |   |
-| 2 | Shopper |  |  |
-| 2 | Shopper |  |  |
-| 2 | Shopper |  |  |
-
 
 
 ### Database Schema
