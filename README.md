@@ -51,15 +51,42 @@ Table of Contents - Click to Expand
 *
 ## Structure Plane
 ### User Stories
-| USER STORY # | As a/an | I want to be able to... | So that I can... |
+| **USER STORY #** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- |
-| VIEWING & NAVIGATION |   |
+| **VIEWING & NAVIGATION** |   |
 | [#9](https://github.com/JoyZadan/shop-kbeauty/issues/9) | Shopper | Navigate around the site | view a list of products  |
 | [#54](https://github.com/JoyZadan/shop-kbeauty/issues/54) | Shopper | View a specific category of products | Quickly find products I'm interested in without having to search through all products. |
 | [#47](https://github.com/JoyZadan/shop-kbeauty/issues/47) | Shopper | Quickly identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
 | [#32](https://github.com/JoyZadan/shop-kbeauty/issues/32) | Shopper | Quickly view how much was the original price | Identify how much I may be able to save when buying the product and may also help me compare prices with other sites |
 | 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
+| **REGISTRATION & USER ACCOUNTS** |   |
+| [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
+| [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| **REGISTRATION & ACCOUNTS** |   |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| **SORTING & SEARCHING** |   |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| **BUYER REVIEWS & FEEDBACK** |   |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| **ADMIN & STORE MANAGEMENT** |   |
+| 2 | Store Owner |  |  |
+| 2 | Store Owner |  |  |
+| 2 | Store Owner |  |  |
+| **DIGITAL & MARKETING** |   |
+| 2 | Store Owner |  |  |
+| 2 | Store Owner |  |  |
+| 2 | Shopper |  |  |
+
+
 
 ### Database Schema
 ### Entity Relationship Diagram
