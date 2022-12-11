@@ -65,10 +65,6 @@ Table of Contents - Click to Expand
 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
 | 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
-| **REGISTRATION & ACCOUNTS** |   |
-| 2 | Shopper |  |  |
-| 2 | Shopper |  |  |
-| 2 | Shopper |  |  |
 | **SORTING & SEARCHING** |   |
 | 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
@@ -84,6 +80,14 @@ Table of Contents - Click to Expand
 | **DIGITAL & MARKETING** |   |
 | 2 | Store Owner |  |  |
 | 2 | Store Owner |  |  |
+| 2 | Shopper |  |  |
+| **FOR FUTURE IMPLEMENTATION** |   |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| **REGISTRATION & ACCOUNTS** |   |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
 | 2 | Shopper |  |  |
 
 
