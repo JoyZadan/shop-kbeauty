@@ -515,4 +515,8 @@ hr {
         color: white;
         min-width: 14rem;
     }
+
+    #home-cta-font {
+        font-size: 2rem !important;
+    }
 }
