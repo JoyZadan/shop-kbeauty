@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- 500 Error Heading -->
+    <div class="home-hero container-fluid">
+        <div class="row hero-heading">
+            <div class="col-7 col-md-6 mt-5 pl-5">
+                <h1 class="display-4 logo-font text-white text-shadow">
+                    500 - Internal Server Error
+                </h1>
+                <h2 class="display-4 logo-font text-black">
+                    Sorry! It's <span class="nowrap">not</span> you. It's us.
+                </h2>
+                <div class="my-5">
+                    <p class="h2">Please return to Home Page</p>
+                    <h4 class="text-shadow">
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-large rounded-0 text-upppercase py-3">Shop K-Beauty</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
