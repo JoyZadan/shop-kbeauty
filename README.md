@@ -39,12 +39,39 @@ Table of Contents - Click to Expand
 
 ---
 
-# UX Development
+# User Experience
 
-## Strategy
+## Strategy Plane
 ### Project Goals
 * To develop an App where users can easily find, purchase and add reviews.
 * ...
+## Scope Plane
+### Feature Ideas Planning
+*
+*
+## Structure Plane
+### User Stories
+| USER STORY # | As a/an | I want to be able to... | So that I can... |
+| --- | --- | --- | --- |
+| VIEWING & NAVIGATION | --- | --- | --- |
+| [#9](https://github.com/JoyZadan/shop-kbeauty/issues/9) | Shopper | Navigate around the site | view a list of products  |
+| [#54](https://github.com/JoyZadan/shop-kbeauty/issues/54) | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+| 2 | Shopper |  |  |
+
+### Database Schema
+### Entity Relationship Diagram
+### User Journey - Topology Digram
+
+## Skeleton Plan
+### Wireframes
+
+## Surface Plane
+### Typography
+### Colour Scheme
+### Imagery
 
 ### User Demographic
 * Ages 16 and above for viewing, registering and purchasing products
