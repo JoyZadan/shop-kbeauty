@@ -126,6 +126,21 @@ a:visited {
     border: 1px solid black;
 }
 
+.brand-name-link {
+    color: #17a2b8 !important;
+}
+
+.brand-name-link:hover,
+.brand-name-link:active,
+.brand-name-link:visited {
+    text-decoration: none !important;
+    color: #000;
+}
+
+.all-brands {
+    display: none;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,

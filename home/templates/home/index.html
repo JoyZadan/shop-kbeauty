@@ -66,7 +66,7 @@
     </div>
 
     <!-- Featured Brands -->
-    <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
+    <h2 class="display-4 brand-font-alt text-shadow text-center my-5">
         Featured Brands
     </h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
@@ -83,4 +83,49 @@
         {% endfor %}
     </div>
 
+    <!-- Show/ Hide All Brands -->
+
+    <div class="col-12 mt-2 text-center mb-5">
+        <!-- Show/ Hide All Brands -->
+        <div class="mb-3">
+            <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3" id="show-brands" value="Show">
+                <span class="text-uppercase">See All Brands</span>
+                <span class="icon">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </button>
+            <p class="all-brands">Test</p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
+            {% for brand in brands %}
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <p class="mb-0 py-2">
+                        <span class="brand-font-alt h6 pb-3 brand-name-link">
+                            <a href="{% url 'brand_detail' brand.id %}" class="brand-name-link" id="list"> {{ brand.friendly_name }}</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock%}
+
+{% block postloadjs %}
+<script type="text/javascript">
+    $("#tog").click(function () {
+        // var value = this.value;
+        // if (value == "Show") {
+        //     this.value = "Hide"
+        //     $(this).next().show();
+        // } else {
+        //     this.value = "Show"
+        //     $(this).next().hide();
+        // }
+            $('#list').append('<p>{% for brand in brands %}{{ brand.friendly_name }}{% endfor %}</p>');
+    });
+
+</script>
+{% endblock %}

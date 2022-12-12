@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-1">
-                <h2 class="display-5 brand-font-alt text-center my-4">Products</h2>
+                <h2 class="display-5 brand-font-alt text-shadow text-center my-5">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -127,6 +127,7 @@
 <!-- JQuery for the sort selector box, credit to Code Institute Django Ecommerce Walkthrough -->
 {% block postloadjs %}
     {{ block.super }}
+    <!-- scroll to top button -->
     <script type="text/javascript">
         $('.btt-link').click(function (e) {
             window.scrollTo(0, 0)
