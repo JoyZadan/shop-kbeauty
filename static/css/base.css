@@ -176,7 +176,7 @@ a:visited {
 .alt-text-primary:hover,
 .alt-text-primary:active,
 .alt-text-primary:focus {
-    color: #17a2b8!important;
+    color: #17a2b8 !important;
 }
 
 a.category-badge > span.badge,

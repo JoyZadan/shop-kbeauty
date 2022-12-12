@@ -219,6 +219,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Featured Reviews -->
         <div class="container mb-5">
             <h3 class="brand-font-alt pt-2">
@@ -249,11 +250,12 @@
                 {% endfor %}
             </div>
             {% else %}
-            <div class="col">
-                <p>No reviews available for this product yet.</p>
-            </div>
+                <div class="col">
+                    <p>No reviews available for this product yet.</p>
+                </div>
             {% endif %}
         </div>
+
         <!-- Featured Brands -->
         <hr>
         <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
@@ -264,7 +266,9 @@
                 {% if brand.is_featured %}
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img class="card-img-top" src="{{ brand.image.url }}" alt="">
+                        <a href="{% url 'brand_detail' brand.id %}">
+                            <img class="card-img-top" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                        </a>
                         <div class="card-body">
                             <h3 class="card-title brand-font-alt h6 text-center">{{ brand.friendly_name }}</h3>
                         </div>
@@ -273,6 +277,7 @@
                 {% endif %}
             {% endfor %}
         </div>
+
     </div>
 
 {% endblock%}

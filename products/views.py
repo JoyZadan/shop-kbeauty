@@ -153,3 +153,19 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def brand_detail(request, brand_id):
+    """ A view to show individual brand details """
+    product = Product.objects.all()
+    brand = get_object_or_404(Brand, pk=brand_id)
+    # brands = Brand.objects.all()
+    # reviews = Review.objects.filter(product=product)
+
+    context = {
+        'product': product,
+        # 'reviews': reviews,
+        'brand': brand,
+    }
+
+    return render(request, 'products/brand_detail.html', context)

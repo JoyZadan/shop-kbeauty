@@ -54,9 +54,9 @@
                         </div>
                         <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
                             <span class="text-uppercase">Shop Now</span>
-                            <!-- <span class="icon">
+                            <span class="icon">
                                 <i class="fas fa-shopping-bag"></i>
-                            </span> -->
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -74,10 +74,9 @@
             {% if brand.is_featured %}
             <div class="col mb-4">
                 <div class="card h-100">
-                    <img class="card-img-top" src="{{ brand.image.url }}" alt="">
-                    <div class="card-body">
-                        <h3 class="card-title brand-font-alt h6 text-center">{{ brand.friendly_name }}</h3>
-                    </div>
+                    <a href="{% url 'brand_detail' brand.id %}">
+                        <img class="card-img-top img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                    </a>
                 </div>
             </div>
             {% endif %}

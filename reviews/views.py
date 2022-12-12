@@ -86,11 +86,11 @@ def edit_review(request, review_id):
         review_form = ReviewForm(request.POST, request.FILES, instance=review)
         if review_form.is_valid():
             review_form.save()
-            messages.success(request, f"Successfully updated review.")
+            messages.success(request, f'Successfully updated review.')
             return redirect(reverse('review_detail', args=[review.id]))
         else:
             print("Form invalid")
-            messages.error(request, f"Failed to update review.")
+            messages.error(request, f'Failed to update review.')
     else:
         review_form = ReviewForm(instance=review)
         messages.info(request, f'You are editing {review.title}')

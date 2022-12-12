@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- Individual brand area -->
+    <div class="container-fluid mt-4 mb-5">
+        <h2 class="display-5 brand-font-alt text-center my-4">Featured Brands</h2>
+        <div class="row">
+            <!-- Loops through all brands -->
+                <!-- Column for brand image -->
+                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                    <div class="image-container my-5">
+                        {% if brand.image %}
+                        <a href="{{ brand.image.url }}" target="_blank">
+                            <img class="card-img-top product-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top product-image" src="{{ MEDIA_URL }}shop-kbeauty-logo.png" alt="{{ brand.name }}">
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                <!-- Column for brand description -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="product-details-container mb-5 mt-md-4">
+                        <p class="mb-0 h4 font-weight-bold brand-font-alt">{{ brand.friendly_name }}</p>
+                    </div>
+                    <div>
+                        <p>{{ brand.description }}</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+{% endblock %}
