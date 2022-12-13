@@ -67,10 +67,11 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 7 | 2 | Shopper | Easily view the total of my purchases in the bag at any time | Avoid spending too much |
 | 8 | [#28](https://github.com/JoyZadan/shop-kbeauty/issues/28) | Shopper | Easily view the featured brands | To assure me that Shop K-Beauty really offers K-Beauty products from authentic K-Beauty brands |
 | 9 | 2 | Shopper | Search/ View all of the available K-Beauty brands | Look for my favourite brands  |
+| 10 | [#70](https://github.com/JoyZadan/shop-kbeauty/issues/70) | Shopper | Easily view details about the brand of a product I am purchasing | Learn more about the brands and feel confident about my purchase  |
 | **REGISTRATION & USER ACCOUNTS** |   |   |
-| 10 | [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
-| 11 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
-| 12 | 2 | Shopper |  |  |
+| 11 | [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
+| 12 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
+| 13 | 2 | Shopper | Easily recover my password in case I forget it | Recover access to my account |
 | 13 | 2 | Shopper |  |  |
 | **SORTING & SEARCHING** |   |   |
 | 14 | 2 | Shopper |  |  |
