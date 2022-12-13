@@ -83,12 +83,13 @@
         {% endfor %}
     </div>
 
+    <!-- WORK IN PROGRESS -->
     <!-- Show/ Hide All Brands -->
 
     <div class="col-12 mt-2 text-center mb-5">
         <!-- Show/ Hide All Brands -->
         <div class="mb-3">
-            <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3" id="show-brands" value="Show">
+            <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3" id="view">
                 <span class="text-uppercase">See All Brands</span>
                 <span class="icon">
                     <i class="fas fa-chevron-down"></i>
@@ -102,30 +103,46 @@
                 <div class="card h-100">
                     <p class="mb-0 py-2">
                         <span class="brand-font-alt h6 pb-3 brand-name-link">
-                            <a href="{% url 'brand_detail' brand.id %}" class="brand-name-link" id="list"> {{ brand.friendly_name }}</a>
+                            <a href="{% url 'brand_detail' brand.id %}" class="brand-name-link"> {{ brand.friendly_name }}</a>
                         </span>
                     </p>
                 </div>
             </div>
             {% endfor %}
         </div>
+        <!-- testing new way to communicate with server via json response -->
+        <div class="row my-5">
+            <div class="col-12 col-lg-6 offset-lg-2">
+                <p>Hello</p>
+                <ul class="list-group">
+                    <!-- List of brand goes here -->
+                </ul>
+            </div>
+        </div>
     </div>
 
 {% endblock%}
 
 {% block postloadjs %}
+{{ block.super }}
 <script type="text/javascript">
-    $("#tog").click(function () {
-        // var value = this.value;
-        // if (value == "Show") {
-        //     this.value = "Hide"
-        //     $(this).next().show();
-        // } else {
-        //     this.value = "Show"
-        //     $(this).next().hide();
-        // }
-            $('#list').append('<p>{% for brand in brands %}{{ brand.friendly_name }}{% endfor %}</p>');
-    });
+    $(document).ready(function() {
+    $.ajax({
+        url: '/brand_list/',
+        type: 'GET',
+        dataType: 'json',
+    }).done(function(response) {
+        for (var i in response.brands) {
+            var brand = `<span>${response.brands[i].name}</span>`
+            var item = `<li class ="list-group-item d-flex justify-content-between">
+                ${brand.name}`
+        $('list-group').append(item)
+        }
+        console.log(response)
+    })
+});
 
 </script>
+
+
 {% endblock %}

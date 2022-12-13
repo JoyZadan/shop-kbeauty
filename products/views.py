@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -156,17 +157,33 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
+def brand_list(request):
+    brands = Brand.objects.all()
+
+    return JsonResponse({'brands': list(brands.values())})
+
+
 def brand_detail(request, brand_id):
     """ A view to show individual brand details """
     product = Product.objects.all()
     brand = get_object_or_404(Brand, pk=brand_id)
-    # brands = Brand.objects.all()
-    # reviews = Review.objects.filter(product=product)
 
     context = {
         'product': product,
-        # 'reviews': reviews,
         'brand': brand,
     }
 
     return render(request, 'products/brand_detail.html', context)
+
+
+# WIP
+def brand_product_list(request):
+    """ A view to show products available from individual brands """
+
+    product = get_object_or_404(Product, pk=product_id)
+    brand = get_object_or_404(Brand, pk=brand_id)
+
+    context = {
+        'product': product,
+        'brand': brand,
+    }

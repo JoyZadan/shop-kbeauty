@@ -73,7 +73,7 @@ def review_detail(request, review_id):
 
 @login_required()
 def edit_review(request, review_id):
-    """ Views to enable users to edit their own review """
+    """ Views to enable superusers to edit a review """
     if not request.user.is_authenticated:
         messages.error(request,
                        'Sorry, you need to be logged in to add a review.')
@@ -109,7 +109,7 @@ def edit_review(request, review_id):
 @login_required
 def delete_review(request, review_id):
     """
-    Delete specific blog post for user
+    Delete specific review
     """
 
     review = get_object_or_404(Review, pk=review_id)
