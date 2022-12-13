@@ -22,7 +22,7 @@ Shop K-Beauty ...
 TABLE OF CONTENTS - Click to Expand
 </summary>
 
-- [UX DEVELOPMENT](#ux-development)
+- [USER EXPERIENCE](#user-experience)
     - [Strategy](#strategy)
     - [Scope](#scope)
     - [Structure](#structure)
@@ -63,8 +63,8 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 3 | [#54](https://github.com/JoyZadan/shop-kbeauty/issues/54) | Shopper | View a specific category of products | Quickly find products I'm interested in without having to search through all products. |
 | 4 | [#47](https://github.com/JoyZadan/shop-kbeauty/issues/47) | Shopper | Quickly identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |
 | 5 | [#32](https://github.com/JoyZadan/shop-kbeauty/issues/32) | Shopper | Quickly view how much was the original price | Identify how much I may be able to save when buying the product and may also help me compare prices with other sites |
-| 6 | 2 | Shopper | View individual product details | Identify the price, description, product reviews, product image, product ingredients and and instructions how to use product |
-| 7 | 2 | Shopper | Easily view the total of my purchases in the bag at any time | Avoid spending too much |
+| 6 | [#36](https://github.com/JoyZadan/shop-kbeauty/issues/36) | Shopper | View individual product details | Identify the price, description, product reviews, product image, product ingredients and and instructions how to use product |
+| 7 | [#38](https://github.com/JoyZadan/shop-kbeauty/issues/38) | Shopper | Easily view the total of my purchases in the bag at any time | Avoid spending too much |
 | 8 | [#28](https://github.com/JoyZadan/shop-kbeauty/issues/28) | Shopper | Easily view the featured brands | To assure me that Shop K-Beauty really offers K-Beauty products from authentic K-Beauty brands |
 | 9 | 2 | Shopper | Search/ View all of the available K-Beauty brands | Look for my favourite brands  |
 | 10 | [#70](https://github.com/JoyZadan/shop-kbeauty/issues/70) | Shopper | Easily view details about the brand of a product I am purchasing | Learn more about the brands and feel confident about my purchase  |
