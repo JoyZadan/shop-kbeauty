@@ -74,7 +74,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 13 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
 | 14 | [#51](https://github.com/JoyZadan/shop-kbeauty/issues/51) | Shopper | Easily recover my password in case I forget it | Recover access to my account |
 | **SORTING & SEARCHING** |   |   |
-| 14 | 2 | Shopper | Sort the list of available products | Easily identiify the best rated, best priced and categorically sorted products |
+| 14 | [#31](https://github.com/JoyZadan/shop-kbeauty/issues/31) | Shopper | Sort the list of available products | Easily identiify the best rated, best priced and categorically sorted products |
 | 15 | 2 | Shopper | Sort a specific category of product | Find the best priced or best rated product in a specific category, or sort the products in that categpry by name |
 | 16 | 2 | Shopper | Sort a specific subcategories of products | To easily identify the most suitable product for me to purchase  |
 | 17 | 2 | Shopper | Sort multiple categories of prodcuts simultaneously | Find the best priced or best rated products across broad categories, such as "makeup" or "skincare"  |
