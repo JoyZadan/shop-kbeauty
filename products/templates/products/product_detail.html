@@ -66,10 +66,10 @@
                 <div class="product-details-container mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt mb-1">{{ product.name }}</p>
                     <!-- Link to brand description -->
-                    <p class="mb-0 py-2">By
+                    <p class="mb-0 py-2 text-muted">Brand:
                         <span class="brand-font-alt h6 pb-3 brand-name-link">
-                            <a href="{% url 'brand_detail' product.brand.id %}" class="brand-name-link"> {{ product.brand.friendly_name }}</a>
-                        </span>
+                            <a href="{% url 'brand_detail' product.brand.id %}" class="brand-name-link"> <em>{{ product.brand.friendly_name }}</a>
+                            </em></span>
                     </p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
