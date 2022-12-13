@@ -47,6 +47,22 @@
                         <div class="col-md-6">
                             <div class="card-body">
                                 <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
+                                {% if product.category %}
+                                <p class="small mt-1 mb-0 text-center">
+                                    <a class="alt-text-muted"
+                                        href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <i class="fas fa-list mr-1"></i>{{ product.category.friendly_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
+                                {% if product.subcategory %}
+                                <p class="small mt-1 mb-0 text-center">
+                                    <a class="text-muted"
+                                        href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                        <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
                             </div>
                             <div class=" text-center">
                                 <div class="price-box">
