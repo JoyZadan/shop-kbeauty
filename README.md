@@ -70,17 +70,25 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 10 | [#70](https://github.com/JoyZadan/shop-kbeauty/issues/70) | Shopper | Easily view details about the brand of a product I am purchasing | Learn more about the brands and feel confident about my purchase  |
 | **REGISTRATION & USER ACCOUNTS** |   |   |
 | 11 | [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
-| 12 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
-| 13 | 2 | Shopper | Easily recover my password in case I forget it | Recover access to my account |
-| 13 | 2 | Shopper |  |  |
+| 12 | 2 | Shopper | Receive an email confirmation after registering | View that my personal account registration was successful |
+| 13 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
+| 14 | [#51](https://github.com/JoyZadan/shop-kbeauty/issues/51) | Shopper | Easily recover my password in case I forget it | Recover access to my account |
 | **SORTING & SEARCHING** |   |   |
-| 14 | 2 | Shopper |  |  |
-| 15 | 2 | Shopper |  |  |
-| 16 | 2 | Shopper |  |  |
+| 14 | 2 | Shopper | Sort the list of available products | Easily identiify the best rated, best priced and categorically sorted products |
+| 15 | 2 | Shopper | Sort a specific category of product | Find the best priced or best rated product in a specific category, or sort the products in that categpry by name |
+| 16 | 2 | Shopper | Sort a specific subcategories of products | To easily identify the most suitable product for me to purchase  |
+| 16 | 2 | Shopper | Sort multiple categories of prodcuts simultaneously | Find the best priced or best rated products across broad categories, such as "makeup" or "skincare"  |
+| 16 | 2 | Shopper | Search for a product or products by name, by description or by ingredients | Find a specific product I'd like to purchase  |
+| 16 | 2 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+| 16 | 2 | Shopper |  | Find the best priced or best rated products across broad categories, such as "makeup" or "skincare"  |
 | **PRODUCT REVIEWS** |   |   |
-| 17 | 2 | Shopper |  |  |
-| 18 | 2 | Shopper |  |  |
-| 19 | 2 | Shopper |  |  |
+| 17 | [#64](https://github.com/JoyZadan/shop-kbeauty/issues/64) | Shopper | View available reviews for a product I am viewing  | Find out what others think of the product |
+| 18 | [#58](https://github.com/JoyZadan/shop-kbeauty/issues/58) | Shopper | Easily see how I can add my reviews on products I purchased | Decide whether I want to add my review |
+| 19 | 2 | Shopper | Easily view/ have access to details about the product I am reviewing | Refer to the information about the product, should I need to do so |
+| 20 | [#65](https://github.com/JoyZadan/shop-kbeauty/issues/65) | Shopper | Add my review of the product | Share my personal experienceof using the products  |
+| 21 | [#23](https://github.com/JoyZadan/shop-kbeauty/issues/23) | Store Owner | Add Featured Reviews on specific product detail page | Opt to highlight specific reviews |
+| 22 | [#66](https://github.com/JoyZadan/shop-kbeauty/issues/66) | Store Owner | Edit submitted reviews | Opt to block off profanities, if any |
+| 23 | [#67](https://github.com/JoyZadan/shop-kbeauty/issues/67) | Store Owner | Delete a review | Have control over unacceptable comments such as discriminatory statements, if any |
 | **ADMIN & STORE MANAGEMENT** |   |   |
 | 20 | 2 | Store Owner |  |  |
 | 21 | 2 | Store Owner |  |  |
