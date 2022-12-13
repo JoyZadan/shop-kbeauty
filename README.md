@@ -65,7 +65,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 5 | [#32](https://github.com/JoyZadan/shop-kbeauty/issues/32) | Shopper | Quickly view how much was the original price | Identify how much I may be able to save when buying the product and may also help me compare prices with other sites |
 | 6 | 2 | Shopper | View individual product details | Identify the price, description, product reviews, product image, product ingredients and and instructions how to use product |
 | 7 | 2 | Shopper | Easily view the total of my purchases in the bag at any time | Avoid spending too much |
-| 8 | [#28](https://github.com/JoyZadan/shop-kbeauty/issues/28) | Shopper | Easily view the featured brands | To assure me that K-Beauty Shop really offers K-Beauty products from authentic K-Beauty brands |
+| 8 | [#28](https://github.com/JoyZadan/shop-kbeauty/issues/28) | Shopper | Easily view the featured brands | To assure me that Shop K-Beauty really offers K-Beauty products from authentic K-Beauty brands |
 | 9 | 2 | Shopper | Search/ View all of the available K-Beauty brands | Look for my favourite brands  |
 | **REGISTRATION & USER ACCOUNTS** |   |   |
 | 10 | [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
