@@ -137,10 +137,6 @@ a:visited {
     color: #000;
 }
 
-.all-brands {
-    display: none;
-}
-
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -219,6 +215,15 @@ a.subcategory-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.list-holder {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+    text-decoration: none !important;
 }
 
 input[name='q']::placeholder {

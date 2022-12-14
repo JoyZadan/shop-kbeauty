@@ -158,6 +158,7 @@ def delete_product(request, product_id):
 
 
 def brand_list(request):
+    """ A view to list all available brands """
     context = {
         'brands': Brand.objects.all()
     }

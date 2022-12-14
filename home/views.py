@@ -13,8 +13,3 @@ def index(request):
     }
     return render(request, 'home/index.html', context)
 
-
-def brand_list(request):
-    brands = Brand.objects.all()
-
-    return JsonResponse({'brands': list(brands.values())})
