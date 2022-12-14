@@ -158,9 +158,11 @@ def delete_product(request, product_id):
 
 
 def brand_list(request):
-    brands = Brand.objects.all()
+    context = {
+        'brands': Brand.objects.all()
+    }
 
-    return JsonResponse({'brands': list(brands.values())})
+    return render(request, 'products/brand_list.html', context)
 
 
 def brand_detail(request, brand_id):
@@ -177,13 +179,15 @@ def brand_detail(request, brand_id):
 
 
 # WIP
-def brand_product_list(request):
+def brand_products(request):
     """ A view to show products available from individual brands """
 
-    product = get_object_or_404(Product, pk=product_id)
-    brand = get_object_or_404(Brand, pk=brand_id)
+    product = Product.objects.filter(brand=brand_id)
+    brand = Brand.objects.all()
 
     context = {
         'product': product,
         'brand': brand,
     }
+
+    return render(request, '')

@@ -103,9 +103,12 @@
                 <div class="card h-100">
                     <p class="mb-0 py-2">
                         <span class="brand-font-alt h6 pb-3 brand-name-link">
-                            <a href="{% url 'brand_detail' brand.id %}" class="brand-name-link"> {{ brand.friendly_name }}</a>
+                            <a href="{% url 'brand_detail' brand.id %}" class="brand-name-link">{{ brand.friendly_name }}</a>
                         </span>
                     </p>
+                    <ul>
+                        <li data-brand-name="{{ brand.friendly_name }}" data-brand-desc="{{ brand.description }}">{{ brand.friendly_name }}</li>
+                    </ul>
                 </div>
             </div>
             {% endfor %}
@@ -113,10 +116,23 @@
         <!-- testing new way to communicate with server via json response -->
         <div class="row my-5">
             <div class="col-12 col-lg-6 offset-lg-2">
-                <p>Hello</p>
-                <ul class="list-group">
+                <!-- {% for brand in brands %}
+                <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3" data-brand-name="{{ brand.friendly_name }}">
+                    <span class="text-uppercase">See All Brands</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+                {% endfor %} -->
+
+                <ul >
                     <!-- List of brand goes here -->
+                    {% for brand in brands %}
+                        <li data-brand-name="{{ brand.friendly_name }}" data-brand-desc="{{ brand.description }}">{{ brand.friendly_name }}</li>
+                    {% endfor %}
                 </ul>
+
+                <div id="brand-list"></div>
             </div>
         </div>
     </div>
@@ -126,21 +142,54 @@
 {% block postloadjs %}
 {{ block.super }}
 <script type="text/javascript">
-    $(document).ready(function() {
-    $.ajax({
-        url: '/brand_list/',
-        type: 'GET',
-        dataType: 'json',
-    }).done(function(response) {
-        for (var i in response.brands) {
-            var brand = `<span>${response.brands[i].name}</span>`
-            var item = `<li class ="list-group-item d-flex justify-content-between">
-                ${brand.name}`
-        $('list-group').append(item)
-        }
-        console.log(response)
+//     $(document).ready(function() {
+//     $.ajax({
+//         url: '/brand_list/',
+//         type: 'GET',
+//         dataType: 'json',
+//     }).done(function(response) {
+//         for (var i in response.brands) {
+//             var brand = `<span>${response.brands[i].name}</span>`
+//             var item = `<li class ="list-group-item d-flex justify-content-between">
+//                 ${brand.name}`
+//         $('list-group').append(item)
+//         }
+//         console.log(response)
+//     })
+// });
+
+    let elements = document.querySelectorAll('li');
+    let container = document.getElementById('brand-list');
+    elements.forEach( element => {
+        element.addEventListener('click', function() {
+            removeContainerChildren(container)
+            addBrandList(container, element)
+        })
     })
-});
+
+    function addBrandList(container, brandElement) {
+        let data = brandElement.dataset
+        console.log(data.brandName)
+
+        // add the name of the brand
+        let nameElement = document.createElement('h3')
+        let nameText = document.createTextNode(data.brandName)
+        nameElement.appendChild(nameText)
+
+        // add the description of the brand
+        let descElement = document.createElement('p')
+        let descText = document.createTextNode(data.brandDesc)
+        descElement.appendChild(descText)
+
+        container.append(nameElement, descElement)
+    }
+
+    // remove name and description of the brand
+    function removeContainerChildren(container) {
+        while (container.firstChild) {
+            container.removeChild(container.firstChild);
+        }
+    }
 
 </script>
 
