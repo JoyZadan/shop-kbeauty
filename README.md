@@ -70,7 +70,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 10 | [#70](https://github.com/JoyZadan/shop-kbeauty/issues/70) | Shopper | Easily view details about the brand of a product I am purchasing | Learn more about the brands and feel confident about my purchase  |
 | **REGISTRATION & USER ACCOUNTS** |   |   |
 | 11 | [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
-| 12 | 2 | Shopper | Receive an email confirmation after registering | View that my personal account registration was successful |
+| 12 | [#48](https://github.com/JoyZadan/shop-kbeauty/issues/48) | Shopper | Receive an email confirmation after registering | View that my personal account registration was successful |
 | 13 | [#50](https://github.com/JoyZadan/shop-kbeauty/issues/50) | Shopper | Easily login and logout of my shopper's account | Access my personal account information |
 | 14 | [#51](https://github.com/JoyZadan/shop-kbeauty/issues/51) | Shopper | Easily recover my password in case I forget it | Recover access to my account |
 | **SORTING & SEARCHING** |   |   |
