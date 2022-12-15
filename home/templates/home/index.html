@@ -95,7 +95,7 @@
                 {% for brand in brands %}
                 <p data-brand-name="{{ brand.friendly_name }}">
                     <a href="{% url 'brand_detail' brand.id %}">
-                        <span class="brand-font-alt h6 pb-3 brand-name-link pointer">| {{ brand.friendly_name }} |</span>
+                        <span class="brand-font-alt h6 pb-2 brand-name-link px-2 pointer"> {{ brand.friendly_name }} |</span>
                     </a>
                 </p>
                 {% endfor %}
