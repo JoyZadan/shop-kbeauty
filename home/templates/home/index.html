@@ -101,9 +101,6 @@
                 <!-- testing list of brands styling in production -->
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <a href="{% url 'brand_detail' brand.id %}">
-                            <img class="card-img-top img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
-                        </a>
                     </div>
                     <div class="card-body">
                         <p class="card-title brand-font-alt h6 text-center" data-brand-name="{{ brand.friendly_name }}">{{ brand.friendly_name }}</p>
