@@ -157,13 +157,13 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
-def brand_list(request):
-    """ A view to list all available brands """
-    context = {
-        'brands': Brand.objects.all()
-    }
+# def brand_list(request):
+#     """ A view to list all available brands """
+#     context = {
+#         'brands': Brand.objects.all()
+#     }
 
-    return render(request, 'products/brand_list.html', context)
+#     return render(request, 'products/brand_list.html', context)
 
 
 def brand_detail(request, brand_id):

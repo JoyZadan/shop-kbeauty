@@ -88,32 +88,19 @@
     <div class="col-12 mt-2 text-center mb-5">
         <!-- Show/ Hide All Brands -->
         <div class="mb-3">
-            <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
+            <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3" value="Show">
                 <span class="text-uppercase">See All Brands</span>
                 <span class="icon">
                     <i class="fas fa-chevron-down"></i>
                 </span>
             </button>
-            <div class="container mb-5 text-center" id="brand-list"></div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
+            <div class="row" id="brand-show">
                 {% for brand in brands %}
-                <div class="col mb-4">
-                    <div class="card h-100">
-                        <!-- <p data-brand-name="{{ brand.friendly_name }}" class="mb-0 py-2">
-                            <a href="{% url 'brand_detail' brand.id %}">
-                                <span class="brand-font-alt h6 pb-3 brand-name-link pointer">{{ brand.friendly_name }}</span>
-                            </a>
-                        </p> -->
-                        <p data-brand-name="{{ brand.friendly_name }}" data-brand-desc="{{ brand.description }}" class="mb-0 py-2">
-                            <!-- <a href="{% url 'brand_detail' brand.id %}"> -->
-                                <span class="brand-font-alt h6 pb-3 brand-name-link pointer">{{ brand.friendly_name }}</span>
-                            <!-- </a> -->
-                        </p>
-                        <p class="mb-0">
-                            <a href="{% url 'brand_detail' brand.id %}" class="text-muted"><em>find out more...</em></a>
-                        </p>
-                    </div>
-                </div>
+                <p data-brand-name="{{ brand.friendly_name }}">
+                    <a href="{% url 'brand_detail' brand.id %}">
+                        <span class="brand-font-alt h6 pb-3 brand-name-link pointer">{{ brand.friendly_name }}</span>
+                    </a>
+                </p>
                 {% endfor %}
             </div>
         </div>
@@ -123,40 +110,36 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script>
+    $(":button").click(function () {
+        var value = this.value;
+        if (value == "Show") {
+            this.value = "Hide"
+            $(this).next().show();
+        } else {
+            this.value = "Show"
+            $(this).next().hide();
+        }
+    });
+</script>
+
 <script type="text/javascript" defer>
     let elements = document.querySelectorAll('p');
-    let container = document.getElementById('brand-list');
     elements.forEach( element => {
         element.addEventListener('click', function() {
-            removeContainerChildren(container)
-            addBrandList(container, element)
+            addBrandList(element)
         })
     })
 
-    function addBrandList(container, brandElement) {
+    function addBrandList(brandElement) {
         let data = brandElement.dataset
-        console.log(data.brandName)
 
         // add the name of the brand
-        let nameElement = document.createElement('h3')
+        let nameElement = document.createElement('p')
         let nameText = document.createTextNode(data.brandName)
+        nameElement.classList.add('all-brands-list')
         nameElement.appendChild(nameText)
-
-        // add the description of the brand
-        let descElement = document.createElement('p')
-        let descText = document.createTextNode(data.brandDesc)
-        descElement.appendChild(descText)
-        container.append(nameElement, descElement)
     }
-
-    // remove name and description of the brand
-    function removeContainerChildren(container) {
-        while (container.firstChild) {
-            container.removeChild(container.firstChild);
-        }
-    }
-
 </script>
-
 
 {% endblock %}

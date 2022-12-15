@@ -137,6 +137,24 @@ a:visited {
     color: #000;
 }
 
+#brand-show {
+    display: none;
+}
+
+/* #brand-list-container {
+    display: flex !important;
+    flex-wrap: wrap;
+} */
+
+/* .all-brands-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+} */
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -215,15 +233,6 @@ a.subcategory-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
-}
-
-.list-holder {
-    display: none;
-}
-
-.pointer {
-    cursor: pointer;
-    text-decoration: none !important;
 }
 
 input[name='q']::placeholder {
