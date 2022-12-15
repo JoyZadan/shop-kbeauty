@@ -95,17 +95,9 @@
                 {% for brand in brands %}
                 <p data-brand-name="{{ brand.friendly_name }}">
                     <a href="{% url 'brand_detail' brand.id %}">
-                        <span class="brand-font-alt h6 pb-3 brand-name-link pointer">{{ brand.friendly_name }}</span>
+                        <span class="brand-font-alt h6 pb-3 brand-name-link pointer">{{ brand.friendly_name }}  |  </span>
                     </a>
                 </p>
-                <!-- testing list of brands styling in production -->
-                <div class="col mb-4">
-                    <div class="card h-100">
-                    </div>
-                    <div class="card-body">
-                        <p class="card-title brand-font-alt h6 text-center" data-brand-name="{{ brand.friendly_name }}">{{ brand.friendly_name }}</p>
-                    </div>
-                </div>
                 {% endfor %}
             </div>
         </div>
@@ -142,7 +134,6 @@
         // add the name of the brand
         let nameElement = document.createElement('p')
         let nameText = document.createTextNode(data.brandName)
-        nameElement.classList.add('all-brands-list')
         nameElement.appendChild(nameText)
     }
 </script>
