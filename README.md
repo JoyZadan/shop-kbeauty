@@ -81,26 +81,36 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 18 | [#56](https://github.com/JoyZadan/shop-kbeauty/issues/56) | Shopper | Sort multiple categories of products simultaneously | Find the best priced, special offers or best rated /reviewed products across broad categories, such as "makeup" or "skincare"  |
 | 19 | [#29](https://github.com/JoyZadan/shop-kbeauty/issues/29) | Shopper | Search for a product or products by name, by description or by ingredients | Find a specific product I'd like to purchase  |
 | 20 | [#57](https://github.com/JoyZadan/shop-kbeauty/issues/57) | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
+| **PURCHASING & CHECKOUT** |   |   |
+| 21 | [#32](https://github.com/JoyZadan/shop-kbeauty/issues/32)  | Quickly view how much was the original price and what savings, if any are available | Easily compare prices with other sites |
+| 22 | # | Easily select the size and quantity for a product when purchasing it |Ensure I don't accidentally select the wrong product, quantity or size |
+| 23 | # | Easily view notifications on screen when I add a product to my bag | Find out immediately if my actions were correct or if the was an error |
+| 24 | # | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
+| 25 | # | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
+| 26 | # | Easily enter my payment information | Check out quickly and with no hassles |
+| 27 | # | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 28 | # | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 29 | # | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **PRODUCT REVIEWS** |   |   |
-| 21 | [#64](https://github.com/JoyZadan/shop-kbeauty/issues/64) | Shopper | View available reviews for a product I am viewing  | Find out what others think of the product |
-| 22 | [#58](https://github.com/JoyZadan/shop-kbeauty/issues/58) | Shopper | Easily see how I can add my reviews on products I purchased | Decide whether I want to add my review |
-| 23| [#71](https://github.com/JoyZadan/shop-kbeauty/issues/71) | Shopper | Easily view/ have access to details about the product I am reviewing | Refer to the information about the product, should I need to do so |
-| 24 | [#65](https://github.com/JoyZadan/shop-kbeauty/issues/65) | Shopper | Add my review of the product | Share my personal experienceof using the products  |
-| 25 | [#23](https://github.com/JoyZadan/shop-kbeauty/issues/23) | Store Owner | Add Featured Reviews on specific product detail page | Opt to highlight specific reviews |
-| 26 | [#66](https://github.com/JoyZadan/shop-kbeauty/issues/66) | Store Owner | Edit submitted reviews | Opt to block off profanities, if any |
-| 27 | [#67](https://github.com/JoyZadan/shop-kbeauty/issues/67) | Store Owner | Delete a review | Have control over unacceptable comments such as discriminatory statements, if any |
+| 30 | [#64](https://github.com/JoyZadan/shop-kbeauty/issues/64) | Shopper | View available reviews for a product I am viewing  | Find out what others think of the product |
+| 31 | [#58](https://github.com/JoyZadan/shop-kbeauty/issues/58) | Shopper | Easily see how I can add my reviews on products I purchased | Decide whether I want to add my review |
+| 32| [#71](https://github.com/JoyZadan/shop-kbeauty/issues/71) | Shopper | Easily view/ have access to details about the product I am reviewing | Refer to the information about the product, should I need to do so |
+| 33 | [#65](https://github.com/JoyZadan/shop-kbeauty/issues/65) | Shopper | Add my review of the product | Share my personal experienceof using the products  |
+| 34 | [#23](https://github.com/JoyZadan/shop-kbeauty/issues/23) | Store Owner | Add Featured Reviews on specific product detail page | Opt to highlight specific reviews |
+| 35 | [#66](https://github.com/JoyZadan/shop-kbeauty/issues/66) | Store Owner | Edit submitted reviews | Opt to block off profanities, if any |
+| 36 | [#67](https://github.com/JoyZadan/shop-kbeauty/issues/67) | Store Owner | Delete a review | Have control over unacceptable comments such as discriminatory statements, if any |
 | **ADMIN & STORE MANAGEMENT** |   |   |
-| 28 | [#60](https://github.com/JoyZadan/shop-kbeauty/issues/60) | Store Owner | Add a product | Add new items to my store |
-| 29 | [#61](https://github.com/JoyZadan/shop-kbeauty/issues/61) | Store Owner | Edit/update a product | Change product proces, descriptions, ingredients, images and other product criteria |
-| 30 | [#62](https://github.com/JoyZadan/shop-kbeauty/issues/62) | Store Owner | Delete a product | Remove items that are no longer for sale |
+| 37 | [#60](https://github.com/JoyZadan/shop-kbeauty/issues/60) | Store Owner | Add a product | Add new items to my store |
+| 38 | [#61](https://github.com/JoyZadan/shop-kbeauty/issues/61) | Store Owner | Edit/update a product | Change product proces, descriptions, ingredients, images and other product criteria |
+| 39 | [#62](https://github.com/JoyZadan/shop-kbeauty/issues/62) | Store Owner | Delete a product | Remove items that are no longer for sale |
 | **DIGITAL & MARKETING** |   |   |
-| 31 | 2 | Store Owner |  |  |
-| 32 | 2 | Store Owner |  |  |
-| 33 | 2 | Shopper |  |  |
+| 40 | 2 | Store Owner |  |  |
+| 41 | 2 | Store Owner |  |  |
+| 42 | 2 | Shopper |  |  |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
-| 34| 2 | Shopper |  |  |
-| 35 | 2 | Shopper |  |  |
-| 36 | 2 | Shopper |  |  |
+| 43| 2 | Shopper |  |  |
+| 44 | 2 | Shopper |  |  |
+| 45 | 2 | Shopper |  |  |
 
 
 ### Database Schema
