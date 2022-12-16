@@ -113,8 +113,8 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 45 | 2 | Shopper |  |  |
 
 
-### Database Schema
-### Entity Relationship Diagram
+### Database Schema - Entity Relationship Diagram
+![ERD/DATABASE SCHEMA](./documentation/database/shop-kbeauty-erd.png)
 ### User Journey - Topology Digram
 
 ## Skeleton Plan
@@ -161,10 +161,10 @@ Based on the results of the Feature Ideas Planning, I have decided to attempt to
 #### Superadmin User
 ![SUPERADMIN'S PERMISSION AND ACCESS ACROSS SHOP K-BEAUTY]()
 
-### Database Schema and Structure
-Shop K-Beauty is developed using ...
 
-![ERD/DATABASE SCHEMA](./documentation/database/shop-kbeauty-erd.png)
+
+
+
 
 ## Skeleton
 ### Wireframes
