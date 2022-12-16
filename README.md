@@ -56,7 +56,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 
 ## Structure Plane
 ### User Stories
-| **USER STORY #** | **ISSUE #** | **As a/an** | **I want to be able to...** | **So that I can...** |
+| **USER STORY #** | **ISSUE ID** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- | --- |
 | **VIEWING & NAVIGATION** |   |   |
 | 1 | [#9](https://github.com/JoyZadan/shop-kbeauty/issues/9) | Shopper | Navigate around the site | view a list of products  |
@@ -154,7 +154,7 @@ Based on the results of the Feature Ideas Planning, I have decided to attempt to
 ### Database Schema and Structure
 Shop K-Beauty is developed using ...
 
-![ERD/DATABASE SCHEMA]()
+![ERD/DATABASE SCHEMA](./documentation/database/shop-kbeauty-erd.png)
 
 ## Skeleton
 ### Wireframes
