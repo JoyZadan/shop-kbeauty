@@ -283,6 +283,9 @@ The following error handlers were added to the Application to handle possible sc
 | 2 | Stripe Webhook errors, ```401 ERR```, x 23 times and 100% failure rate  |  After numerous attempts to solve this by going over and over the source code for webhook handlers, searching the Stripe docs and, stackover and slack, unbelievably, the solution was simple enough: I just had to share my GitPod workspace!  |
 | 3 | Reviews were not deleting after an associated product is deleted  |  Fortunately, this was a simple bug. I just had to edit the product (fk) in my review model. ``` on_delete=models.SET_NULL``` was changed to ``` on_delete=models.CASCADE ```, then migrate. |
 
+| # | Unsolved Bugs, Errors and Issues | Justification |
+| :--- | :--- | :--- |
+| 1 | Browser: Chrome, Error: **Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received**. This error appears after about a minute or two of loading any page of the web application. | I have spent days looking for where this error was coming from, initially thinking it was caught by the show and hide button on the homepage to hide and show list of available brands. I switched off the event listener. The error still appeared. I tried to debug and refactor all the event listeners but found it impossible to do so without disabling the required JQuery functions for the application to run smoothly. I have found references to the same error and they point to using incognito mode as a possible solution. The error did not appear when using incognito mode. Due to time constraints, the real solution for this error may be investigated further on the next sprint/ future development. |
 
 # Deployment & Local Development
 
@@ -337,6 +340,9 @@ The product names, images, descriptions and other information were sourced from:
 * [TONYMOLY](https://tonymolyonline.co.uk/)
 * [UK iHERB](https://uk.iherb.com/)
 * [SKINLIBRARY](https://skinlibrary.co.uk/)
+
+The policies were generated from:
+* [TERMSFEED](https://www.termsfeed.com/)
 
 The .... for information on the K-Beauty global phenomena.
 
