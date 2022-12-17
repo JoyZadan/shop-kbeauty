@@ -83,14 +83,14 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 20 | [#57](https://github.com/JoyZadan/shop-kbeauty/issues/57) | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |
 | **PURCHASING & CHECKOUT** |   |   |
 | 21 | [#32](https://github.com/JoyZadan/shop-kbeauty/issues/32)  | Quickly view how much was the original price and what savings, if any are available | Easily compare prices with other sites |
-| 22 | # | Easily select the size and quantity for a product when purchasing it |Ensure I don't accidentally select the wrong product, quantity or size |
-| 23 | # | Easily view notifications on screen when I add a product to my bag | Find out immediately if my actions were correct or if the was an error |
-| 24 | # | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
-| 25 | # | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
-| 26 | # | Easily enter my payment information | Check out quickly and with no hassles |
+| 22 | [#39](https://github.com/JoyZadan/shop-kbeauty/issues/39) | Easily select the size and quantity for a product when purchasing it |Ensure I don't accidentally select the wrong product, quantity or size |
+| 23 | [#33](https://github.com/JoyZadan/shop-kbeauty/issues/33) | Easily view notifications on screen when I add a product to my bag | Find out immediately if my actions were correct or if the was an error |
+| 24 | [#40](https://github.com/JoyZadan/shop-kbeauty/issues/40) | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
+| 25 | [#41](https://github.com/JoyZadan/shop-kbeauty/issues/41) | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
+| 26 | [#42](https://github.com/JoyZadan/shop-kbeauty/issues/42) | Easily enter my payment information | Check out quickly and with no hassles |
 | 27 | # | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
-| 28 | # | View an order confirmation after checkout | Verify that I haven't made any mistakes |
-| 29 | # | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
+| 28 | [#44](https://github.com/JoyZadan/shop-kbeauty/issues/44) | View an order confirmation after checkout | Verify that I haven't made any mistakes |
+| 29 | [#45](https://github.com/JoyZadan/shop-kbeauty/issues/45) | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **PRODUCT REVIEWS** |   |   |
 | 30 | [#64](https://github.com/JoyZadan/shop-kbeauty/issues/64) | Shopper | View available reviews for a product I am viewing  | Find out what others think of the product |
 | 31 | [#58](https://github.com/JoyZadan/shop-kbeauty/issues/58) | Shopper | Easily see how I can add my reviews on products I purchased | Decide whether I want to add my review |

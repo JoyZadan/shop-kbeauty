@@ -107,7 +107,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
+<script type="text/javascript" defer>
     $(":button").click(function () {
         var value = this.value;
         if (value == "Show") {
