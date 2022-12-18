@@ -88,7 +88,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 24 | [#40](https://github.com/JoyZadan/shop-kbeauty/issues/40) | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |
 | 25 | [#41](https://github.com/JoyZadan/shop-kbeauty/issues/41) | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |
 | 26 | [#42](https://github.com/JoyZadan/shop-kbeauty/issues/42) | Shopper | Easily enter my payment information | Check out quickly and with no hassles |
-| 27 | # | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
+| 27 | [#43](https://github.com/JoyZadan/shop-kbeauty/issues/43) | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |
 | 28 | [#44](https://github.com/JoyZadan/shop-kbeauty/issues/44) | Shopper |View an order confirmation after checkout | Verify that I haven't made any mistakes |
 | 29 | [#45](https://github.com/JoyZadan/shop-kbeauty/issues/45) | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |
 | **PRODUCT REVIEWS** |   |   |
@@ -104,9 +104,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 38 | [#61](https://github.com/JoyZadan/shop-kbeauty/issues/61) | Store Owner | Edit/update a product | Change product proces, descriptions, ingredients, images and other product criteria |
 | 39 | [#62](https://github.com/JoyZadan/shop-kbeauty/issues/62) | Store Owner | Delete a product | Remove items that are no longer for sale |
 | **DIGITAL & MARKETING** |   |   |
-| 40 | 2 | Store Owner |  |  |
-| 41 | 2 | Store Owner |  |  |
-| 42 | 2 | Shopper |  |  |
+| 40 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
 | 43| 2 | Shopper |  |  |
 | 44 | 2 | Shopper |  |  |
