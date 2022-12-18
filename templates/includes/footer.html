@@ -3,51 +3,110 @@
         <div class="col-12">
             <div class="text-center foot-sm mt-2">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-footer text-black text-center"><strong>Shop</strong> K-Beauty</h2>
+                    <p class="logo-footer text-center"><strong>Shop</strong> K-Beauty</p>
                 </a>
                 <p class="ml-3 mb-0 text-white">
-                    123 Shop Street, London, EC2B 2BU, UK
+                    <small>123 Shop Street, London, EC2B 2BU, UK</small>
                 </p>
                 <p class="ml-3 mb-0 text-white">
-                    info@shop-kbeauty.com
+                    <small>info@shop-kbeauty.com</small>
                 </p>
                 <p class="ml-3 mb-0 text-white">
-                    020 7888 8888
+                    <small>020 7888 8888</small>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- about us -->
+            <div class="col-sm mb-2">
+                <p class="h5 footer-heading">ABOUT</p>
+                <p class="text-white">
+                    <small>
+                        Shop K-Beauty is an online shop for all your K-Beauty needs. We stock a wide range of affordable and leading selection
+                        of Korean skincare and hair & body products that will help your skin look and feel amazing!
+                    </small>
+                </p>
+            </div>
+            <!-- policies -->
+            <div class="col-sm mb-4">
+                <p class="h5 footer-heading">POLICIES</p>
+                <a href="return_refund_policy.html">
+                    <p class="text-white text-left mb-0"><small>Privacy Policy</small></p>
+                </a>
+                <a href="return_refund_policy.html">
+                    <p class="text-white text-left mb-0"><small>Terms & Conditions</small></p>
+                </a>
+                <a href="return_refund_policy.html">
+                    <p class="text-white text-left mb-0"><small>Return and Refund Policy</small></p>
+                </a>
+                <a href="return_refund_policy.html">
+                    <p class="text-white text-left mb-0"><small>Shipping Policy</small></p>
+                </a>
+            </div>
+            <!-- social media -->
+            <div class="col-sm mb-4">
+                <p class="h5 footer-heading">FOLLOW US</p>
+                <div class="col p-0">
+                    <a href="https://facebook.com" class="text-decoration-none" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-square text-white" aria-hidden="true">
+                            <small class="text-white social-font"> Facebook</small>
+                        </i>
+                    </a>
+                </div>
+                <div class="col p-0">
+                    <a href="https://facebook.com" class="text-decoration-none" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram text-white" aria-hidden="true">
+                            <small class="text-white social-font"> Instagram</small>
+                        </i>
+                    </a>
+                </div>
+                <div class="col p-0">
+                    <a href="https://facebook.com" class="text-decoration-none" target="_blank" rel="noopener">
+                        <i class="fab fa-pinterest text-white" aria-hidden="true">
+                            <small class="text-white social-font"> Pinterest</small>
+                        </i>
+                    </a>
+                </div>
+                <div class="col p-0">
+                    <a href="https://facebook.com" class="text-decoration-none" target="_blank" rel="noopener">
+                        <i class="fab fa-twitter text-white" aria-hidden="true">
+                            <small class="text-white social-font"> Twitter</small>
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <!-- payments processing -->
+            <div class="col-sm mb-2">
+                <p class="h5 footer-heading">PAYMENTS PROCESSING</p>
+                <p class="text-white">
+                    <small>
+                        Shop K-Beauty's payments processing is powered by Stripe.
+                        Stripe is a suite of APIs powering online payment processing and commerce solutions
+                        for internet businesses of all sizes.
+                    </small>
                 </p>
             </div>
         </div>
     </div>
     <div class="footer-note">
+        <hr class="footer-hr">
         <p class="py-3 text-center text-white footer-note">©<span id="current-year"></span>
-            Shop K-Beauty, a Full Stack E-Commerce Project by <a href="https://github.com/JoyZadan">Joy Zadan</a>  - For Educational Purposes Only
+            Shop K-Beauty, a Full Stack E-Commerce Project by
+            <a href="https://github.com/JoyZadan">
+                <span class="text-decoration-none footer-heading">Joy Zadan</span>
+            </a>  - For Educational Purposes Only
+        </p>
+        <p class="mb-0 ml-5 mr-5 pb-3 text-center text-white">
+            <small>
+                <em>
+                    Please note: as a student project, we only simulate payments using Stripe's test mode. Although this means that the developer
+                    of this project can, at anytime, test and confirm that the payment integration works correctly and simulate transactions,
+                    this is done without moving any real money. As such, no real order will be processed for delivery.
+                </em>
+            </small>
         </p>
     </div>
-    <!-- testing new footer style to include policies -->
-    <div class="row align-items-center text-center">
-        <div class="col">
-            <div class="row">
-                <div class="col-12">
-                    <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                        <h2 class="logo-footer text-black text-center"><strong>Shop</strong> K-Beauty</h2>
-                    </a>
-                </div>
-                <div class="col text-left">
-                    <p class="h-2">Privacy Policy</p>
-                    <a href="return_refund_policy.html" class="h2">
-                        <p class="text-black text-center">Return and Refund Policy</p>
-                    </a>
-
-                    <p class="h-2">
-
-                        Return and Refund Policy</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
 </footer>
 

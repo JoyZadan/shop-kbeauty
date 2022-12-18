@@ -23,9 +23,10 @@ body {
 }
 
 .logo-footer {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 0 auto;
     text-transform: uppercase;
+    color: #e9385c;
 }
 
 /* -------------------------------- Hero Section Styling */
@@ -140,15 +141,6 @@ a:visited {
 #brand-show {
     display: none;
 }
-
-/* .all-brands-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-} */
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -426,12 +418,27 @@ hr {
 
 /* -------------------------------- Footer Styling */
 .footer {
-    background-color: #e9385c;
+    background-color: #000;
 }
 
 .footer-note {
     background-color: #000;
     margin-bottom: 0 !important;
+}
+
+.footer-heading {
+    color: #e9385c;
+}
+
+.social-font {
+    font-family: Lato;
+    font-size: .875rem;
+}
+
+.footer-hr {
+    border-top: 1px solid #e9385c;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* -------------------------------- Media Queries */
