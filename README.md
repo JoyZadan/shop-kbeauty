@@ -323,8 +323,11 @@ Press Enter. Your clone will be created.
 ## Code
 * Credit to Code Institute's Boutique Ado Django ecommerce walkthrough, from which this project was largely based from.
 * Credit to [Very Academy YouTube Channel](https://www.youtube.com/c/veryacademy) for the very detailed insights on database models.
-* Cfredit to [Stuart073's Music Box django ecommerce project for the inspiration, particularly for his reviews app](https://github.com/stuartj073/music-box)
+* Credit to [Stuart073's Music Box django ecommerce project for the inspiration, particularly for his reviews app](https://github.com/stuartj073/music-box).
 * Credit and thanks to [MDBootstrap](https://mdbootstrap.com/docs/b4/jquery/javascript/accordion/) for the accordion on product detail page.
+* Credit to [Adam Johnson](https://adamj.eu/tech/2022/10/06/how-to-safely-pass-data-to-javascript-in-a-django-template/) on How to Safely Pass Data to JavaScript in a Django Template.
+* Credit to [BugBytes](https://www.youtube.com/watch?v=h39eMGWmEV4) for his video based on Adam Johnson's post.
+* Credit to [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari) for how to disable Safari on mobile auto creating phone number link.
 
 ## Content
 The product names, images, descriptions and other information were sourced from:
