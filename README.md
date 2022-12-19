@@ -3,11 +3,11 @@
 
 Shop K-Beauty is an e-commerce store for every lover of K-Beauty skincare, hair & body and makeup lines.
 
-![amiresponsive mock-ups of SHOP K-BEAUTY]()
+![amiresponsive mock-ups of SHOP K-BEAUTY](./documentation/responsiveness/am-i-responsive.png)
 
-### [Link to the Deployed App]()
+### [Link to the Deployed App](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/JoyZadan/shop-kbeauty?color=pink&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/JoyZadan/shop-kbeauty?color=fuschia&style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/JoyZadan/shop-kbeauty?color=purple&style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/JoyZadan/shop-kbeauty?color=blue&style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/JoyZadan/shop-kbeauty?color=yellow&style=for-the-badge)
