@@ -12,7 +12,7 @@
 {% block content %}
     <div class="container mb-5">
         <h2 class="display-5 brand-font-alt text-shadow text-center my-5">Shipping Policy</h2>
-        <p>Last updated: December 17, 2022</p>
+        <p class="ml-3">Last updated: December 17, 2022</p>
         <hr>
         <div class="row mx-3 mt-2">
             <p>
@@ -20,52 +20,88 @@
                 conditions that constitute our Shipping Policy.
             </p>
             <h3>Domestic Shipping Policy</h3>
-            <h4>Shipment processing time</h4>
-            <p>
-                All orders are processed within 3-10 business days. Orders are not shipped or delivered on
-                weekends or holidays.
-            </p>
-            <p>
-                If we are experiencing a high volume of orders, shipments may be delayed by a few days. Please
-                allow additional days in transit for delivery. If there will be a significant delay in shipment of your
-                order, we will contact you via email or telephone.
-            </p>
-            <h4>Shipping rates and delivery estimates</h4>
-            <p>Shipping charges for your order will be calculated and displayed at checkout.</p>
+            <div>
+                <h4>Shipment processing time</h4>
+                <p>
+                    All orders are processed within 3-10 business days. Orders are not shipped or delivered on
+                    weekends or holidays.
+                </p>
+                <p>
+                    If we are experiencing a high volume of orders, shipments may be delayed by a few days. Please
+                    allow additional days in transit for delivery. If there will be a significant delay in shipment of your
+                    order, we will contact you via email or telephone.
+                </p>
+            </div>
+            <div>
+                <h4>Shipping rates and delivery estimates</h4>
+                <p>Shipping charges for your order will be calculated and displayed at checkout.</p>
 
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">Shipment Method</th>
-                        <th scope="col">Estimated Delivery Time</th>
-                        <th scope="col">Shipment Cost</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>FedEx Standard</td>
-                        <td>3-5 business days</td>
-                        <td>Free for orders over £50.00</td>
-                    </tr>
-                    <tr>
-                        <td>FedEx Two Days</td>
-                        <td>2 business days</td>
-                        <td>£12.95</td>
-                    </tr>
-                    <tr>
-                        <td>FedEx Overnight*</td>
-                        <td>1-2 business days</td>
-                        <td>£19.95</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>
-                <small>
-                    <em>Overnight delivery is only available for orders with delivery addresses within the United Kingdom</em>
-                </small>
-            </p>
-            <p>Delivery delays can occasionally occur.</p>
-
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Shipment Method</th>
+                            <th scope="col">Estimated Delivery Time</th>
+                            <th scope="col">Shipment Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FedEx Standard</td>
+                            <td>3-5 business days</td>
+                            <td>Free for orders over £50.00</td>
+                        </tr>
+                        <tr>
+                            <td>FedEx Two Days</td>
+                            <td>2 business days</td>
+                            <td>£12.95</td>
+                        </tr>
+                        <tr>
+                            <td>FedEx Overnight*</td>
+                            <td>1-2 business days</td>
+                            <td>£19.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <small>
+                        <em>Overnight delivery is only available for orders with delivery addresses within the United Kingdom</em>
+                    </small>
+                </p>
+                <p>Delivery delays can occasionally occur.</p>
+                <p>If you select an expedited shipping option, please contact us for any additional shipping information.</p>
+                <p>All times and dates given for the delivery of your order are given in good faith but are estimates only.</p>
+                <p>
+                    NOTE: Shop K-Beauty is an e-commerce store developed for a fullstack software development project for Code Institute's
+                    Level 5 Diploma in Web Application Development. This site is built for purely educational purposes only. As such, no real payment
+                    will be processed and no real orders will be processed for the purposes of delivering goods.
+                </p>
+            </div>
+            <div>
+                <h3>Do you deliver internationally?</h3>
+                <p>
+                    We offer worldwide shipping. Free standard, free shipping delivery for orders over £50 is valid on international orders.
+                </p>
+                <p>
+                    Please note, we may be subject to various rules and restrictions in relation to some international deliveries and you may be
+                    subject to additional taxes and duties over which we have no control. If such cases apply, you are responsible for complying with
+                    the laws applicable to the country where you live and will be responsible for any such additional costs or taxes.
+                </p>
+            </div>
+            <div>
+                <h3>How can you contact us about this policy?</h3>
+                <p>
+                    If you have any further questions or comments, you may contact us by email:
+                    shop-k-beauty@example.com
+                </p>
+            </div>
+            <div>
+                <p>
+                    This shipping policy was created using Termly's
+                    <a href="https://termly.io/products/shipping-policy-generator/"
+                        target="_blank" rel="external nofollow noopener">Shipping Policy Generator
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
 {% endblock %}
