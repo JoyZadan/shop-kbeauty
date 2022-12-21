@@ -159,13 +159,18 @@ def delete_product(request, product_id):
 
 
 def brand_detail(request, brand_id):
-    """ A view to show individual brand details """
+    """
+    A view to show individual brand details
+    including filtered products by brand
+    """
     product = Product.objects.all()
     brand = get_object_or_404(Brand, pk=brand_id)
+    products = Product.objects.filter(brand=brand)
 
     context = {
         'product': product,
         'brand': brand,
+        'products': products,
     }
 
     return render(request, 'products/brand_detail.html', context)
