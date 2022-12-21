@@ -43,15 +43,15 @@
         </div>
         <!-- Available products filtered by individual brand -->
         <div>
-            <h3 class="display-6 brand-font text-center mt-3 mb-4">
+            <h3 class="display-6 brand-font text-center mt-2 mb-4">
                 All available products from {{ brand.friendly_name}}
             </h3>
         </div>
         <!-- Individual product cards -->
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-2 mb-5">
+        {% if products %}
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-2 mb-2">
             {% for product in products %}
             <div class="col mb-5">
-
                 <div class="card h-100">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
@@ -102,8 +102,14 @@
             </div>
             {% endfor %}
         </div>
-
-
+        {% else %}
+        <div class="mb-4">
+            <p>
+                Sorry, there are no products available for {{ brand.friendly_name }} at the moment.
+                Please come back soon to check as we add new products as soon as they become available.
+            </p>
+        </div>
+        {% endif %}
         <!-- Continue Shopping link -->
         <div class="col text-center mt-1">
             <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
