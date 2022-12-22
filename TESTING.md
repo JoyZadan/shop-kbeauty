@@ -38,7 +38,7 @@
 2. Change the custom_clearble_file_input.html (line 19): from ```<input id="new-image">``` to ```.new-image ```
 3. We cannot leave it here because the forms.py file in the products app has a forloop that adds class attributes:
 ```for field_name, field in self.fields.items(): field.widget.attrs['class'] = 'border-black rounded-0'```. Left unsolved, we would just be exchanging a duplicate id error with a duplicate class error. So I deleted this forloop.
-4. To still have the ```border-black rounded-0``` attributes added to the add/edit a product forms, I then added these to new attributes to base.css ```.select, .form-control {border: 1px solid #000 !important; border-radius: 0 !important;}```
+4. To still have the ```border-black rounded-0``` attributes added to the add/edit a product forms, I then added these to new attributes to base.css ```.select, .form-control {border: 1px solid #000 !important; border-radius: 0 !important;}``` |
 
 | # | Unsolved Bugs, Errors and Issues | Justification |
 | :--- | :--- | :--- |
