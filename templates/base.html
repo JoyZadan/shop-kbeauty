@@ -12,7 +12,7 @@
     <meta name="description" content="Shop K-Beauty">
     <meta name="author" content="Joy Zadan">
   {% comment %} Favicon {% endcomment %}
-    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
   {% endblock %}
 
   {% block extra_meta %}
@@ -165,7 +165,7 @@
   {% include 'includes/footer.html' %}
 
   {% block postloadjs %}
-  <script type="text/javascript">
+  <script>
     $('.toast').toast('show');
   </script>
   {% endblock %}
