@@ -241,6 +241,12 @@ hr {
     border: 1px solid #000;
 }
 
+.select,
+.form-control {
+    border: 1px solid #000 !important;
+    border-radius: 0 !important;
+}
+
 /* ------------------------------- card styling to overwrite bootstrap's default styling */
 .card {
     color: #000 !important;
