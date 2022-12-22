@@ -14,7 +14,7 @@
     <br>
     {{ widget.input_text }}
 {% endif %}
-<!-- file input styled as a button -->
+<!-- file input styled as a button that displays the filename once selected -->
 <span class="btn btn-black rounded-0 btn-file">
     Select Image <input class="new-image" type="{{ widget.type }}"
     name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %} aria-label="select-image">
