@@ -16,7 +16,8 @@
 {% endif %}
 <!-- file input styled as a button -->
 <span class="btn btn-black rounded-0 btn-file">
-    Select Image <input id="new-image" type="{{ widget.type }}" name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+    Select Image <input id="new-image" type="{{ widget.type }}"
+    name="{{ widget.name }}" {% include "django/forms/widgets/attrs.html" %} aria-label="select-image">
 </span>
 <!-- paragraph below holds the file name once one is selected -->
-<strong><p class="text-danger" id="filename"></p></strong>
+<p class="text-danger" id="filename"><strong></strong></p>
