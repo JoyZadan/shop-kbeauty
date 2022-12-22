@@ -5,8 +5,8 @@
 ---
 ## TABLE OF CONTENTS
 ---
-* Automated Testing
-    * HTML Validation
+* [Automated Testing](#automated-testing)
+    * [HTML Validation](#html-validation)
     * CSS Validation
     * JavaScript Validation
     * Python Validation
@@ -26,6 +26,26 @@
     * Solved Bugs
     * Unsolved Bugs
 ---
+
+# Automated Testing
+* HTML Validation:
+    * [Homepage](./documentation/html-validation/homepage-html-validation.png)
+    * [Products Page](./documentation/html-validation/products-page-html-validation.png)
+    * [Add a Product Page](./documentation/html-validation/add-product-html-validation-no-error.png)
+    * [Edit a Product Page](./documentation/html-validation/edit-product-html-validation-no-error.png)
+    * [Product Detail Page](./documentation/html-validation/product-detail-page-html-validation.png)
+    * [Brand Detail Page](./documentation/html-validation/brand-detail-page-html-validation.png)
+    * [Add a Review Page](./documentation/html-validation/add-a-review-page-html-validation.png)
+    * [Edit a Review Page](./documentation/html-validation/edit-a-review-page-html-validation.png)
+    * [Review Detail Page]()
+    * [Checkout Page]()
+    * [Checkout Success Page]()
+    * [Sign In Page](./documentation/html-validation/sign-in-html-validation.png)
+    * [Sign Up Page](./documentation/html-validation/sign-up-html-validation.png)
+    * [Privacy Policy Page](./documentation/html-validation/privacy-policy-page-html-validation.png)
+    * [Terms & Conditiions Page](./documentation/html-validation/terms-and-conditions-page-html-validation.png)
+    * [Return & Refund Policy Page](./documentation/html-validation/return-refund-policy-page-html-validation.png)
+    * [Shipping Policy Page](./documentation/html-validation/shipping-policy-page-html-validation.png)
 
 # Bugs, Errors & Solutions
 **Solved Bugs**
