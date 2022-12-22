@@ -107,7 +107,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript" defer>
+<script>
     $(":button").click(function () {
         var value = this.value;
         if (value == "Show") {
@@ -120,7 +120,7 @@
     });
 </script>
 
-<script type="text/javascript" defer>
+<script>
     let elements = document.querySelectorAll('p');
     elements.forEach( element => {
          addBrandList(element)
