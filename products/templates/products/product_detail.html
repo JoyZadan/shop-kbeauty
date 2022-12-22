@@ -68,8 +68,10 @@
                     <!-- Link to brand description -->
                     <p class="mb-0 py-2 text-muted">Brand:
                         <span class="brand-font-alt h6 pb-3 brand-name-link">
-                            <a href="{% url 'brand_detail' product.brand.id %}" class="brand-name-link"> <em>{{ product.brand.friendly_name }}</a>
-                            </em></span>
+                            <a href="{% url 'brand_detail' product.brand.id %}" class="brand-name-link">
+                                <em>{{ product.brand.friendly_name }}</em>
+                            </a>
+                        </span>
                     </p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
@@ -191,14 +193,13 @@
                                 </a>
                             </div>
                             <!-- Card body -->
-                            <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="headingTwo21"
+                            <div id="collapseTwo21" class="collapse" role="tabpanel" aria-labelledby="collapseTwo21"
                                 data-parent="#accordionEx1">
                                 <div class="card-body">
                                     <p class="mt-3">{{ product.how_to_use }}</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Accordion card -->
                         <!-- Accordion card -->
                         <div class="card">
                             <!-- Card header -->
@@ -211,7 +212,7 @@
                                 </a>
                             </div>
                             <!-- Card body -->
-                            <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="headingThree31"
+                            <div id="collapseThree31" class="collapse" role="tabpanel" aria-labelledby="collapseThree31"
                                 data-parent="#accordionEx1">
                                 <div class="card-body">
                                     <p class="mt-3">{{ product.ingredients }}</p>
@@ -237,7 +238,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
-                                <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</small></em></p>
+                                <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</em></small></p>
                                 <p class="card-text">{{ review.content }}</p>
                             </div>
                             <div class="card-footer">
