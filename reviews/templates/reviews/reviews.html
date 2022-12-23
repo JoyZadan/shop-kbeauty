@@ -24,7 +24,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
-                        <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</small></em></p>
+                        <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</em></small></p>
                         <p class="card-text">{{ review.content }}</p>
                         {% if request.user.is_superuser %}
                         <!-- start of modal -->
