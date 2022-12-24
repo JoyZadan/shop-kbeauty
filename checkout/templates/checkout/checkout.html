@@ -92,10 +92,17 @@
 								<label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
                                 <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
-								<label class="form-check-label" for="id-save-info">
-                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
-                                    <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
-                                </label>
+								<!-- <label class="form-check-label" for="id-save-info"> -->
+                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account </a>
+                                    <span class="ml-1 mr-1"> or </span>
+                                    <a class="text-info" href="{% url 'account_login' %}"> login</a>
+                                    <span class="ml-1 mr-1"> to save this information </span>
+                                <!-- </label>     -->
+                                <!-- <p>
+                                    <a class="text-info" href="{% url 'account_signup' %}"> <span> Create an account </span></a>
+                                    <a class="text-info" href="{% url 'account_login' %}"> <span> login</span></a>
+                                </p> -->
+                                <!-- </label> -->
 							{% endif %}
 						</div>
                     </fieldset>
