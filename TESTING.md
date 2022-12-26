@@ -71,14 +71,16 @@
 #### Django Unit Testing - Issues
 #### Djangon Unit Testing - Unsolved Issues
 
-## Manual Testing
 ---
+## Manual Testing
+
 
 ### Testing User Stories
 ### Full Manual Testing
 
-## Bugs, Errors & Solutions
 ---
+## Bugs, Errors & Solutions
+
 
 ### Solved Bugs
 | # | Bugs, Errors and Issues | Solutions |
