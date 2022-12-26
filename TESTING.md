@@ -81,7 +81,6 @@
 ---
 ## Bugs, Errors & Solutions
 
-
 ### Solved Bugs
 | # | Bugs, Errors and Issues | Solutions |
 | :--- | :--- | :--- |

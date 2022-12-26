@@ -124,7 +124,6 @@
 
 {% endblock%}
 
-<!-- JQuery for the sort selector box, credit to Code Institute Django Ecommerce Walkthrough -->
 {% block postloadjs %}
     {{ block.super }}
     <!-- scroll to top button -->
@@ -133,7 +132,7 @@
             window.scrollTo(0, 0)
         })
     </script>
-
+    <!-- JQuery for the sort selector box, credit to Code Institute Django Ecommerce Walkthrough -->
     <script>
         $('#sort-selector').change(function () {
             var selector = $(this);
