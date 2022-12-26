@@ -44,7 +44,7 @@
     * [Checkout Success Page](./documentation/html-validation/checkout-success-page-html-validation.png)
     * [Sign In Page](./documentation/html-validation/sign-in-html-validation.png)
     * [Sign Up Page](./documentation/html-validation/sign-up-html-validation.png)
-    * [Profile Page]()
+    * [Profile Page](./documentation/html-validation/profile-page-html-validation.png)
     * [Privacy Policy Page](./documentation/html-validation/privacy-policy-page-html-validation.png)
     * [Terms & Conditiions Page](./documentation/html-validation/terms-and-conditions-page-html-validation.png)
     * [Return & Refund Policy Page](./documentation/html-validation/return-refund-policy-page-html-validation.png)
