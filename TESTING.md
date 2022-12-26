@@ -4,7 +4,7 @@
 ### [Link to the Deployed App](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)
 ---
 ## TABLE OF CONTENTS
----
+
 * [Automated Testing](#automated-testing)
     * [HTML Validation](#html-validation)
     * [CSS Validation](#css-validation)
@@ -58,8 +58,8 @@
 ### Python Validation
 
 ### Lighthouse Report
-#### [Desktop]()
-#### [Mobile]()
+* [Desktop]()
+* [Mobile]()
 
 ### WAVE Web Accessibility Evaluation Tool
 
@@ -72,10 +72,14 @@
 #### Djangon Unit Testing - Unsolved Issues
 
 ## Manual Testing
+---
+
 ### Testing User Stories
 ### Full Manual Testing
 
 ## Bugs, Errors & Solutions
+---
+
 ### Solved Bugs
 | # | Bugs, Errors and Issues | Solutions |
 | :--- | :--- | :--- |
