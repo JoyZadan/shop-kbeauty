@@ -124,7 +124,6 @@ a:visited {
 .btn-brand:focus {
     background: black;
     color: white !important;
-    border: 1px solid black;
 }
 
 .brand-name-link {
@@ -162,7 +161,6 @@ a:visited {
 .btn-red:focus {
     background: black;
     color: white;
-    border: 1px solid black;
 }
 
 .text-black {
@@ -461,6 +459,7 @@ hr {
         display: none;
     }
 
+    .btn-red,
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
         padding: .375rem .375rem;

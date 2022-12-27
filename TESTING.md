@@ -51,7 +51,10 @@
 * [Shipping Policy Page](./documentation/html-validation/shipping-policy-page-html-validation.png)
 
 ### CSS Validation
-### [CSS Validation]()
+* [checkout.css](./documentation/css-validation/checkout-css.png)
+* [profile.css](./documentation/css-validation/profile-css.png)
+* [reviews.css](./documentation/css-validation/reviews-css.png)
+* [base.css]()
 
 ### JavaScript Validation
 
