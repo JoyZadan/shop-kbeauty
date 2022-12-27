@@ -62,7 +62,7 @@
     </div>
     <!-- All Products area -->
     <!-- Individual product cards -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-4 mb-3">
         {% for product in products %}
         <div class="col mb-5">
             <div class="card h-100">
@@ -75,9 +75,8 @@
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
-                <div class="card-body">
+                <div class="card-body p-1">
                     <p class="text-center mb-1">{{ product.name }}</p>
-
                     {% if product.category %}
                     <p class="small mt-2 mb-0 text-center">
                         <a class="alt-text-muted"
@@ -86,7 +85,6 @@
                         </a>
                     </p>
                     {% endif %}
-
                     {% if product.subcategory %}
                     <p class="small mt-2 mb-0 text-center">
                         <a class="text-muted"
@@ -94,17 +92,55 @@
                             <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
                         </a>
                     </p>
-
+                    {% endif %}
+                    <!-- start of modal for editing and deleting products to avoid accidental deletion -->
                     {% if request.user.is_superuser %}
-                    <small class="float-right h6 mt-3">
-                        <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2">Edit</a>
-                        <a class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" href="{% url 'delete_product' product.id %}">Delete</a>
-                    </small>
+                    <div class="text-center">
+                        <div class="container d-flex justify-content-center mt-2 mb-2">
+                            <a class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2" href="{% url 'edit_product' product.id %}">
+                                Edit Product
+                            </a>
+                            <button class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" data-toggle="modal" data-target="#modal-{{ product.id }}">
+                                Delete Product
+                            </button>
+                            <div id="modal-{{ product.id }}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content border-0">
+                                        <div class="modal-body p-0">
+                                            <div class="card border-0 p-sm-3 p-2 justify-content-center">
+                                                <div class="card-header pb-0 bg-white border-0 ">
+                                                    <div class="row">
+                                                        <div class="col ml-auto">
+                                                            <button type="button" class="close"
+                                                                data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <p class="font-weight-bold mb-2"> Are you sure you want to delete this
+                                                        product?
+                                                    </p>
+                                                    <p class="text-muted ">This product will be deleted forever if you continue.
+                                                    </p>
+                                                </div>
+                                                <div class="card-body px-sm-4 mb-2 pt-1 pb-0 text-center">
+                                                    <div class="row justify-content-end no-gutters">
+                                                        <button type="button" class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2"
+                                                            data-dismiss="modal">Cancel</button>
+                                                        <a href="{% url 'delete_product' product.id %}"
+                                                            class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2">Delete</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     {% endif %}
-                    {% endif %}
-
                 </div>
-                <div class="card-footer">
+                <div class="card-footer p-1">
                     <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
                     {% if product.discount > 0.01 %}
                     <p class="mb-0 text-center"><s>£{{ product.original_price }}</s></p>
