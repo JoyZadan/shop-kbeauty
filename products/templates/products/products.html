@@ -64,7 +64,7 @@
     <!-- Individual product cards -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-4 mb-3">
         {% for product in products %}
-        <div class="col mb-5">
+        <div class="col mb-4">
             <div class="card h-100">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
@@ -76,7 +76,7 @@
                 </a>
                 {% endif %}
                 <div class="card-body p-1">
-                    <p class="text-center mb-1">{{ product.name }}</p>
+                    <p class="text-center mb-1 brand-font-alt">{{ product.name }}</p>
                     {% if product.category %}
                     <p class="small mt-2 mb-0 text-center">
                         <a class="alt-text-muted"

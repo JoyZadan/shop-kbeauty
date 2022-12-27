@@ -30,11 +30,11 @@
 ## Automated Testing
 ### HTML Validation:
 * [Homepage](./documentation/html-validation/homepage-html-validation.png)
-* [Products Page](./documentation/html-validation/products-page-html-validation.png)
+* [Products Page](./documentation/html-validation/products-page-html-validation.png) * for revalidation
 * [Add a Product Page](./documentation/html-validation/add-product-html-validation-no-error.png)
 * [Edit a Product Page](./documentation/html-validation/edit-product-html-validation-no-error.png)
 * [Product Detail Page](./documentation/html-validation/product-detail-page-html-validation.png)
-* [Brand Detail Page](./documentation/html-validation/brand-detail-page-html-validation.png)
+* [Brand Detail Page](./documentation/html-validation/brand-detail-page-html-validation.png) * for revalidation
 * [Add a Review Page](./documentation/html-validation/add-a-review-page-html-validation.png)
 * [Edit a Review Page](./documentation/html-validation/edit-a-review-page-html-validation.png)
 * [Review Detail Page](./documentation/html-validation/review-detail-page-html-validation.png)
