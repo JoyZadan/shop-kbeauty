@@ -137,7 +137,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=50, null=False, unique=False,
                            blank=False,
                            help_text='format: required,max_length=50')
-    name = models. CharField(max_length=200, null=False, unique=True,
+    name = models. CharField(max_length=200, null=False, unique=False,
                              blank=False, verbose_name='Product name',
                              help_text='format: required, max_length=200')
     slug = models.SlugField(max_length=250, null=False, unique=True,
