@@ -105,13 +105,13 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 39 | [#61](https://github.com/JoyZadan/shop-kbeauty/issues/61) | Store Owner | Edit/update a product | Change product proces, descriptions, ingredients, images and other product criteria |
 | 40 | [#62](https://github.com/JoyZadan/shop-kbeauty/issues/62) | Store Owner | Delete a product | Remove items that are no longer for sale |
 | 41 | [#72](https://github.com/JoyZadan/shop-kbeauty/issues/72) | Store Owner | Use/ have policy pages (privacy, terms & conditions, return & refund and shipping) | Be assured that all the legalities of doing business online are taken care of |
-| 42 | [#76](https://github.com/JoyZadan/shop-kbeauty/issues/76) | Store Owner | Receive warning if I accidentally click the delete a product button | Avoid accidental deletion of a product |
+| 42 | [#76](https://github.com/JoyZadan/shop-kbeauty/issues/76) | Store Owner | Receive a warning if I accidentally click the delete a product button | Avoid accidental deletion of a product |
 | **DIGITAL MARKETING** |   |   |
-| 42 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
+| 43 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
-| 43| 2 | Shopper |  |  |
-| 44 | 2 | Shopper |  |  |
+| 44| 2 | Shopper |  |  |
 | 45 | 2 | Shopper |  |  |
+| 46 | 2 | Shopper |  |  |
 
 
 ### Database Schema - Entity Relationship Diagram
