@@ -59,10 +59,11 @@
 * [base.css](./documentation/css_validation/base-css.png)
 
 ### JavaScript Validation using [JSHint](https://jshint.com/)
-* [scrollToTop script]()
-* [updateQuantity and removeItem and reload script]()
-* [show and hide list of brands on click script]()
-* [safely passing data from backend to JavaScript script]()
+* [scrollToTop script](./documentation/javascript_validation/scroll-to-top-script.png)
+* [updateQuantity and removeItem and reload script](./documentation/javascript_validation/update-quantity-remove-item-reload-script.png)
+* [show and hide list of brands on click script](./documentation/javascript_validation/show-hide-brands-list-script.png)
+* [safely passing data from backend to JavaScript script](./documentation/javascript_validation/safely-passing-data-from-backend-to-javascript-script.png)
+* [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png)
 
 ### Python Validation
 
