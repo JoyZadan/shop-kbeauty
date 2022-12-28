@@ -364,7 +364,6 @@ hr {
     -ms-user-select: none;
     user-select: none;
     background-color: #000;
-    border: 1px solid #000;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -378,7 +377,6 @@ hr {
 .allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
     background-color: #222;
-    border-color: #222;
 }
 
 .allauth-form-inner-content a {
@@ -408,7 +406,6 @@ hr {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
     border-radius: 0;
 }
 
