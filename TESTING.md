@@ -56,7 +56,7 @@
 * [checkout.css](./documentation/css-validation/checkout-css.png)
 * [profile.css](./documentation/css-validation/profile-css.png)
 * [reviews.css](./documentation/css-validation/reviews-css.png)
-* [base.css]()
+* [base.css](./documentation/css-validation/base-css.png)
 
 ### JavaScript Validation
 
