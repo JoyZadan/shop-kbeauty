@@ -68,6 +68,7 @@
 | products/templates/products/products.html |0 errors and 0 warnings | [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png) |
 | products/templates/products/includes/quantity_input_script.html | 0 errors and 7 warnings | [Quantity Input Script](./documentation/javascript_validation/quantity-input-script.png) |
 | profiles/templates/profiles/profile.html | 0 errors and 0 warnings | [countryfield script](./documentation/javascript_validation/countryfield-script.png) |
+| products/templates/products/includes/new_image_widget_script.html | 0 errors, 0 warnings | [new image widget script](./documentation/javascript_validation/new-image-widget-script.png) |
 
 
 ### Python Validation
