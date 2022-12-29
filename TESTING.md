@@ -67,6 +67,7 @@
 | home/templates/home/index.html | 0 errors and 0 warnings | [safely passing data from backend to JavaScript script](./documentation/javascript_validation/safely-passing-data-from-backend-to-javascript-script.png) |
 | products/templates/products/products.html |0 errors and 0 warnings | [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png) |
 | products/templates/products/includes/quantity_input_script.html | 0 errors and 7 warnings | [Quantity Input Script](./documentation/javascript_validation/quantity-input-script.png) |
+| profiles/templates/profiles/profile.html | 0 errors and 0 warnings | [countryfield script](./documentation/javascript_validation/countryfield-script.png) |
 
 
 ### Python Validation
