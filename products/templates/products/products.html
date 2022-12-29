@@ -100,9 +100,7 @@
                             <a class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2" href="{% url 'edit_product' product.id %}">
                                 Edit Product
                             </a>
-                            <button class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" data-toggle="modal" data-target="#modal-{{ product.id }}">
-                                Delete Product
-                            </button>
+                            <button class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" data-toggle="modal" data-target="#modal-{{ product.id }}">Delete Product</button>
                             <div id="modal-{{ product.id }}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content border-0">
