@@ -60,7 +60,7 @@
 
 ### JavaScript Validation using [JSHint](https://jshint.com/)
 | Page | Result | Test Details & Screenshots |
-| ----------- | ---------------- | ------------ |
+| ---- | ------ | -------------------------- |
 | bag/templates/bag/includes/scroll_to_top_script.html | 0 errors and 0 warnings | [scrollToTop script](./documentation/javascript_validation/scroll-to-top-script.png) |
 | bag/templates/bag/includes/quantity_update_remove_script.html | 0 errors and 0 warnings | [updateQuantity and removeItem and reload script](./documentation/javascript_validation/update-quantity-remove-item-reload-script.png) |
 | home/templates/home/includes/show_hide_brands_list_script.html | 0 errors and 0 warnings | [show and hide list of brands on click script](./documentation/javascript_validation/show-hide-brands-list-script.png) |
@@ -73,7 +73,17 @@
 
 ### Python Validation
 
-### Lighthouse Report
+### [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
+#### Desktop
+| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) |
+| ---- | --------------- | ----------------- | ------------------ | ------- |
+| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 90 | 93 | 92 | 100 |
+
+#### Mobile
+| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) |
+| ---- | --------------- | ----------------- | ------------------ | ------- |
+| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 67 | 93 | 92 | 98 |
+
 * [Desktop]()
 * [Mobile]()
 
