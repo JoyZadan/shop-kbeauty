@@ -160,12 +160,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<!-- scroll to top button -->
-<script>
-    $('.btt-link').click(function (e) {
-        window.scrollTo(0, 0);
-    });
-</script>
+{% include 'bag/includes/scroll_to_top_script.html' %}
 <!-- JQuery for the sort selector box, credit to Code Institute Django Ecommerce Walkthrough -->
 <script>
     $('#sort-selector').change(function () {
