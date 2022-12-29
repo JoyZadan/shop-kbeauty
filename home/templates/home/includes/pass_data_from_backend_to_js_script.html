@@ -1,0 +1,15 @@
+<script>
+    let elements = document.querySelectorAll('p');
+    elements.forEach( element => {
+         addBrandList(element);
+        });
+
+    function addBrandList(brandElement) {
+        let data = brandElement.dataset;
+
+        // add the name of the brand
+        let nameElement = document.createElement('p');
+        let nameText = document.createTextNode(data.brandName);
+        nameElement.appendChild(nameText);
+    }
+</script>

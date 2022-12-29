@@ -107,33 +107,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
-    $(":button").click(function () {
-        var value = this.value;
-        if (value == "Show") {
-            this.value = "Hide"
-            $(this).next().show();
-        } else {
-            this.value = "Show"
-            $(this).next().hide();
-        }
-    });
-</script>
-
-<script>
-    let elements = document.querySelectorAll('p');
-    elements.forEach( element => {
-         addBrandList(element);
-        });
-
-    function addBrandList(brandElement) {
-        let data = brandElement.dataset;
-
-        // add the name of the brand
-        let nameElement = document.createElement('p');
-        let nameText = document.createTextNode(data.brandName);
-        nameElement.appendChild(nameText);
-    }
-</script>
+{% include 'home/includes/show_hide_brands_list_script.html' %}
+{% include 'home/includes/pass_data_from_backend_to_js_script.html' %}
 
 {% endblock %}

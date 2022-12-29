@@ -1,0 +1,14 @@
+<script>
+    $(":button").click(function () {
+        var value = this.value;
+        if (value == "Show") {
+            this.value = "Hide"
+            $(this).next().show();
+        } else {
+            this.value = "Show"
+            $(this).next().hide();
+        }
+    });
+
+
+</script>
