@@ -59,11 +59,15 @@
 * [base.css](./documentation/css_validation/base-css.png)
 
 ### JavaScript Validation using [JSHint](https://jshint.com/)
-* [scrollToTop script](./documentation/javascript_validation/scroll-to-top-script.png)
-* [updateQuantity and removeItem and reload script](./documentation/javascript_validation/update-quantity-remove-item-reload-script.png)
-* [show and hide list of brands on click script](./documentation/javascript_validation/show-hide-brands-list-script.png)
-* [safely passing data from backend to JavaScript script](./documentation/javascript_validation/safely-passing-data-from-backend-to-javascript-script.png)
-* [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png)
+| Page | Result | Test Details & Screenshots |
+| ----------- | ---------------- | ------------ |
+| bag/templates/bag/bag.html, products/templates/products/products.html | 0 errors and 0 warnings | [scrollToTop script](./documentation/javascript_validation/scroll-to-top-script.png) |
+| bag/templates/bag/bag.html | 0 errors and 0 warnings | [updateQuantity and removeItem and reload script](./documentation/javascript_validation/update-quantity-remove-item-reload-script.png) |
+| home/templates/home/index.html | 0 errors and 0 warnings | [show and hide list of brands on click script](./documentation/javascript_validation/show-hide-brands-list-script.png) |
+| home/templates/home/index.html | 0 errors and 0 warnings | [safely passing data from backend to JavaScript script](./documentation/javascript_validation/safely-passing-data-from-backend-to-javascript-script.png) |
+| products/templates/products/products.html |0 errors and 0 warnings | [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png) |
+| products/templates/products/includes/quantity_input_script.html | 0 errors and 7 warnings | [Quantity Input Script](./documentation/javascript_validation/quantity-input-script.png) |
+
 
 ### Python Validation
 
