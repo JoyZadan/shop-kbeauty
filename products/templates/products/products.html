@@ -161,27 +161,5 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'bag/includes/scroll_to_top_script.html' %}
-<!-- JQuery for the sort selector box, credit to Code Institute Django Ecommerce Walkthrough -->
-<script>
-    $('#sort-selector').change(function () {
-        var selector = $(this);
-        var currentUrl = new URL(window.location);
-
-        var selectedVal = selector.val();
-        if (selectedVal != "reset") {
-            var sort = selectedVal.split("_")[0];
-            var direction = selectedVal.split("_")[1];
-
-            currentUrl.searchParams.set("sort", sort);
-            currentUrl.searchParams.set("direction", direction);
-
-            window.location.replace(currentUrl);
-        } else {
-            currentUrl.searchParams.delete("sort");
-            currentUrl.searchParams.delete("direction");
-
-            window.location.replace(currentUrl);
-        }
-    });
-</script>
+{% include 'products/includes/sort_selector_box_script.html' %}
 {% endblock %}
