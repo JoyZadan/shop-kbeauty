@@ -25,7 +25,7 @@
                 <div class="d-block d-md-none">
                     <div class="row">
                         <div class="col">
-                            {% include "bag/bag-total.html" %}
+                            {% include "bag/bag_total.html" %}
                         </div>
                     </div>
                     <div class="row">
@@ -90,7 +90,7 @@
                         {% endfor %}
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
-                                {% include "bag/bag-total.html" %}
+                                {% include "bag/bag_total.html" %}
                             </td>
                         </tr>
                         <tr>
@@ -116,33 +116,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<!-- scroll to top button -->
 <script>
-    $('.btt-link').click(function(e) {
-        window.scrollTo(0,0);
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0);
     });
 </script>
-
 {% include 'products/includes/quantity_input_script.html' %}
+{% include 'bag/includes/quantity_update_remove_script.html' %}
 
-<script>
-    // Update quantity on click
-    $('.update-link').click(function(e) {
-        var form = $(this).prev('.update-form');
-        form[0].requestSubmit();
-    });
 
-    // Remove item and reload on click
-    $('.remove-item').click(function(e) {
-        var csrfToken = "{{ csrf_token }}";
-        var itemClass = $(this).attr('class').split('remove_')[1];
-        var size = $(this).data('product_size');
-        var url = `/bag/remove/${itemClass}/`;
-        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
-
-        $.post(url, data)
-         .done(function() {
-             location.reload();
-         });
-    });
-</script>
 {% endblock %}
