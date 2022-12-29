@@ -65,7 +65,7 @@
 | bag/templates/bag/includes/quantity_update_remove_script.html | 0 errors and 0 warnings | [updateQuantity and removeItem and reload script](./documentation/javascript_validation/update-quantity-remove-item-reload-script.png) |
 | home/templates/home/includes/show_hide_brands_list_script.html | 0 errors and 0 warnings | [show and hide list of brands on click script](./documentation/javascript_validation/show-hide-brands-list-script.png) |
 | home/templates/home/includes/pass_data_from_backend_to_js_script.html | 0 errors and 0 warnings | [safely passing data from backend to JavaScript script](./documentation/javascript_validation/safely-passing-data-from-backend-to-javascript-script.png) |
-| products/templates/products/products.html |0 errors and 0 warnings | [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png) |
+| home/templates/home/includes/pass_data_from_backend_to_js_script.html |0 errors and 0 warnings | [JQuery for the sort selector box](./documentation/javascript_validation/jquery-for-sort-selector-box-script.png) |
 | products/templates/products/includes/quantity_input_script.html | 0 errors and 7 warnings | [Quantity Input Script](./documentation/javascript_validation/quantity-input-script.png) |
 | profiles/templates/profiles/profile.html | 0 errors and 0 warnings | [countryfield script](./documentation/javascript_validation/countryfield-script.png) |
 | products/templates/products/includes/new_image_widget_script.html | 0 errors, 0 warnings | [new image widget script](./documentation/javascript_validation/new-image-widget-script.png) |
