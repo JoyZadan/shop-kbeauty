@@ -335,7 +335,7 @@ hr {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: #343a40; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
