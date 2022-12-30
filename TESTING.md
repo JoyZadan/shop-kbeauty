@@ -82,7 +82,7 @@
 #### Mobile
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | | Reasons & Solutions for Low Scores (if applicable) |
 | ---- | --------------- | ----------------- | ------------------ | ------- | --- |
-| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 74 | 93 | 92 | 98 | Extensive efforts were done to improve the Performance score for mobile by converting all images that appear on the index page (incl the largest contentful paint - hero image) from png to webp. The opportunities to increase the score suggested by Lighthouse such as eliminating render-blocking resources and reduce unused JS point to 3rd party libraries: Bootstrap, JQuery and Stripe.
+| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | averages between 71 to 79  | 93 | 92 | 98 | Extensive efforts were done to improve the Performance score for mobile by converting all images that appear on the index page (incl the largest contentful paint - hero image) from png to webp and setting explicit height and width to them. The opportunities to increase the score suggested by Lighthouse such as eliminating render-blocking resources and reduce unused JS point to 3rd party libraries: Bootstrap, JQuery and Stripe. |
 
 * [Desktop]()
 * [Mobile]()

@@ -33,7 +33,7 @@ body {
 .home-hero {
     background: url('/media/hero-bg-new.webp') no-repeat center center fixed;
     background-size: cover;
-    height: 600px;
+    height: 43.75rem;
     width: 100%;
 }
 
