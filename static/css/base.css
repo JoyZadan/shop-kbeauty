@@ -81,6 +81,16 @@ body {
 .alt-text-muted {
     color: #e9385c;
 }
+
+.alt-text-muted:hover,
+.alt-text-muted:active,
+.alt-text-muted:focus,
+.text-muted:hover,
+.text-muted:active,
+.text-muted:focus {
+    color: #17a2b8 !important;
+}
+
 .text-shadow {
     text-shadow: 2px 8px 6px rgba(0,0,0,0.6),
                     0px -5px 35px rgba(255,255,255,0.3);
@@ -323,7 +333,7 @@ hr {
     overflow-y: auto;
 }
 
-/* -------------------------------- Product Image Styling */
+/* -------------------------------- Product and Brand Image Styling */
 .image-container {
     margin: 2rem auto !important;
 }
@@ -331,7 +341,13 @@ hr {
 .product-image {
     width: 15.625rem;
     height: 18.75rem;
-    margin-left: 2rem;
+}
+
+.brand-image {
+    display: flex;
+    width: 12.5rem;
+    height: 6.25rem;
+    margin: 0 auto;
 }
 
 /* -------------------------------- Allauth Forms Styling */

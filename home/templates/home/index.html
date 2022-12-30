@@ -39,7 +39,7 @@
             <div class="col mb-4">
                 <div class="card h-100">
                     <a href="{% url 'product_detail' product.id %}">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     <div class="card-body">
                         <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
@@ -75,7 +75,7 @@
             <div class="col mb-4">
                 <div class="card h-100">
                     <a href="{% url 'brand_detail' brand.id %}">
-                        <img class="card-img-top img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                        <img class="card-img-top img-fluid brand-image mx-auto text-center" src="{{ brand.image.url }}" alt="{{ brand.name }}">
                     </a>
                 </div>
             </div>

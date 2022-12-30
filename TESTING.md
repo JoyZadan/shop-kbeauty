@@ -75,14 +75,14 @@
 
 ### [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
 #### Desktop
-| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) |
-| ---- | --------------- | ----------------- | ------------------ | ------- |
-| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 90 | 93 | 92 | 100 |
+| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
+| ---- | --------------- | ----------------- | ------------------ | ------- | --- |
+| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 90 | 93 | 92 | 100 | Scores are good enough |
 
 #### Mobile
-| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) |
-| ---- | --------------- | ----------------- | ------------------ | ------- |
-| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 67 | 93 | 92 | 98 |
+| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | | Reasons & Solutions for Low Scores (if applicable) |
+| ---- | --------------- | ----------------- | ------------------ | ------- | --- |
+| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 74 | 93 | 92 | 98 | Extensive efforts were done to improve the Performance score for mobile by converting all images that appear on the index page (incl the largest contentful paint - hero image) from png to webp. The opportunities to increase the score suggested by Lighthouse such as eliminating render-blocking resources and reduce unused JS point to 3rd party libraries: Bootstrap, JQuery and Stripe.
 
 * [Desktop]()
 * [Mobile]()

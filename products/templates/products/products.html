@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
-                        <p class="alt-a mt-3 text-center text-md-left">
+                        <p class="alt-a mt-3 text-center font-weight-bold text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
                                 <span ><a href="{% url 'products' %}" class="alt-a">Products Home</a> | </span>
                             {% endif %}
@@ -68,7 +68,7 @@
             <div class="card h-100">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top product-image" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
