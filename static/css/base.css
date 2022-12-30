@@ -31,7 +31,7 @@ body {
 
 /* -------------------------------- Hero Section Styling */
 .home-hero {
-    background: url('/media/homepage-bg.png') no-repeat center center fixed;
+    background: url('/media/hero-bg-new.webp') no-repeat center center fixed;
     background-size: cover;
     height: 600px;
     width: 100%;
