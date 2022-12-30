@@ -339,8 +339,10 @@ hr {
 }
 
 .product-image {
+    display: flex;
     width: 15.625rem;
     height: 18.75rem;
+    margin: 0 auto;
 }
 
 .brand-image {
