@@ -337,6 +337,7 @@ The product names, images, descriptions and other information were sourced from:
 * [TONYMOLY](https://tonymolyonline.co.uk/)
 * [UK iHERB](https://uk.iherb.com/)
 * [SKINLIBRARY](https://skinlibrary.co.uk/)
+* [BEAUTY&SEOUL](https://beautyandseoul.co.uk/)
 
 The policies were generated from:
 * [TERMSFEED](https://www.termsfeed.com/)
