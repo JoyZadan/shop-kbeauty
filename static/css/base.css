@@ -167,6 +167,10 @@ a:visited {
     color: #000 !important;
 }
 
+.text-muted {
+    color: #343a40 !important;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
