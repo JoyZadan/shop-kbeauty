@@ -81,21 +81,13 @@
                                 <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
                             </a>
                         </p>
-
-                        {% if request.user.is_superuser %}
-                        <small class="float-right h6 mt-3">
-                            <a href="{% url 'edit_product' product.id %}" class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2">Edit</a>
-                            <a class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" href="{% url 'delete_product' product.id %}">Delete</a>
-                        </small>
                         {% endif %}
-                        {% endif %}
-
                     </div>
                     <div class="card-footer">
                         <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
                         {% if product.discount > 0.01 %}
                         <p class="mb-0 text-center"><s>£{{ product.original_price }}</s></p>
-                        <p class="mb-0 text-center pb-3"><span class="text-danger">You save: </span> £{{ product.discount }}</p>
+                        <p class="mb-0 text-center pb-3"><span class="text-info">You save: </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
                 </div>
