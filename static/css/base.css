@@ -7,6 +7,7 @@
 body {
     color: #000;
     font-family: 'Lato';
+    overflow-x: hidden;
 }
 
 /* from Bulma */
@@ -574,7 +575,7 @@ hr {
 
 @media (max-width: 441px) {
     .banner-font {
-        font-size: 1.25rem;
+        font-size: 1rem;
         text-transform: uppercase;
     }
 
@@ -585,14 +586,6 @@ hr {
 }
 
 @media (max-width: 367px) {
-    .logo-font {
-        font-size: 1.75rem;
-    }
-
-    .banner-font {
-        font-size: 1.25rem;
-    }
-
     .display-4 {
         font-size: 2rem !important;
     }
@@ -606,10 +599,10 @@ hr {
     .shop-now-button {
         background: black;
         color: white;
-        min-width: 14rem;
+        min-width: 12.5rem;
     }
 
     #home-cta-font {
-        font-size: 2rem !important;
+        font-size: 1.75rem !important;
     }
 }
