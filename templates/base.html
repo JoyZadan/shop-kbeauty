@@ -61,7 +61,7 @@
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-          <h2 class="logo-font text-black my-0"><strong>Shop</strong> K-Beauty</h2>
+          <h1 class="h2 logo-font text-black my-0"><strong>Shop</strong> K-Beauty</h1>
         </a>
       </div>
       <!-- Search bar -->
@@ -137,7 +137,10 @@
     <!-- Delivery banner area -->
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-black text-white">
-        <h4 class="logo-font my-1 banner-font">Free delivery on orders over £{{ free_delivery_threshold }}!</h4>
+        <h2 class="h5 logo-font my-1 banner-font">
+          <i class="fas fa-truck"></i>
+          Free delivery on orders over £{{ free_delivery_threshold }}!
+        </h2>
       </div>
     </div>
   </header>
