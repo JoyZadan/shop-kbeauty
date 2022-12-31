@@ -37,6 +37,10 @@ body {
     width: 100%;
 }
 
+.mask {
+    background-color: rgba(0,0,0,0.2);
+}
+
 /* -------------------------------- Typography Styling */
 .logo-font {
     text-transform: uppercase;

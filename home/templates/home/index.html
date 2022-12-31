@@ -10,15 +10,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="home-hero container-fluid">
+    <div class="home-hero">
         <div class="row hero-heading">
-            <div class="col-7 col-md-6 mt-5 pl-5">
-                <h1 class="display-4 brand-font text-black">
+            <!-- <div class="col-7 col-md-6 mt-5 pl-5"> -->
+            <div class="col-10 offset-1 text-center my-5 mask">
+                <h2 class="display-4 brand-font text-black">
                     <i class="far fa-bell"></i> New arrivals!
-                </h1>
-                <h2 class="display-4 logo-font text-shadow" id="home-cta-font">
-                    Latest <span class="nowrap">K-Beauty</span> collections just landed!
                 </h2>
+                <h3 class="display-4 logo-font text-white" id="home-cta-font">
+                    Latest <span class="nowrap">K-Beauty</span> collections just landed!
+                </h3>
                 <div class="my-5">
                     <p class="text-shadow h4">
                         <a href="{% url 'products' %}" class="shop-now-button btn btn-large rounded-0 text-upppercase py-3">Shop Now</a>
@@ -28,6 +29,10 @@
 
         </div>
     </div>
+    <!-- testing srcset -->
+
+
+
 
     <!-- Featured Products -->
     <h2 class="display-4 brand-font text-black text-center pt-2 my-5">
