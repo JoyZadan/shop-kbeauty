@@ -488,10 +488,13 @@ hr {
 
 /* -------------------------------- 500 and 400 Error Pages Styling */
 .error-hero-bg {
-    background: url('/media/error-bg.png') no-repeat center center fixed;
+    background-image: url('/media/error-bg.webp');
     background-size: cover;
-    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 48rem;
     width: 100%;
+
 }
 
 /* -------------------------------- Footer Styling */
@@ -555,7 +558,8 @@ hr {
         font-size: 2.5rem !important;
     }
 
-    .home-hero {
+    .home-hero,
+    .error-hero-bg {
         height: 36rem;
         width: 100%;
     }
@@ -570,7 +574,8 @@ hr {
         font-size: 1rem;
     }
 
-    .home-hero {
+    .home-hero,
+    .error-hero-bg {
         height: 35rem;
         width: 100%;
     }
@@ -588,7 +593,8 @@ hr {
         text-transform: uppercase;
     }
 
-    .home-hero {
+    .home-hero,
+    .error-hero-bg {
         height: 37rem;
         width: 100%;
     }
