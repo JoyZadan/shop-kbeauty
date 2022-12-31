@@ -549,6 +549,11 @@ hr {
     .display-4 {
         font-size: 2.5rem !important;
     }
+
+    .home-hero {
+        height: 38rem;
+        width: 100%;
+    }
 }
 
 @media (max-width: 698px) {
@@ -571,6 +576,11 @@ hr {
     .banner-font {
         font-size: 1.25rem;
         text-transform: uppercase;
+    }
+
+    .home-hero {
+        height: 35rem;
+        width: 100%;
     }
 }
 
