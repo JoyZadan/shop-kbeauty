@@ -18,6 +18,11 @@ body {
     width: 1.5rem;
 }
 
+.navbar-toggler {
+    border: 1px solid #000 !important;
+    border-radius: 0;
+}
+
 .navbar-toggler-icon {
     color: #000 !important;
 }
@@ -38,12 +43,44 @@ body {
 }
 
 .mask {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.2);
 }
+
+/* Text color animation credit to Swarup Kumar Kuila - https://codepen.io/uiswarup/pen/XWgQJrq */
+.animate-it {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+}
+
+ @keyframes textclip {
+     to {
+         background-position: 200% center;
+     }
+ }
 
 /* -------------------------------- Typography Styling */
 .logo-font {
     text-transform: uppercase;
+}
+
+.logo-font-alt {
+    text-transform: uppercase;
+    color: #231557;
+    font-weight: 500;
 }
 
 #home-cta-font {
@@ -92,7 +129,7 @@ body {
 .text-muted:hover,
 .text-muted:active,
 .text-muted:focus {
-    color: #17a2b8 !important;
+    color: #231557;
 }
 
 .text-shadow {
@@ -208,7 +245,7 @@ a:visited {
 .alt-text-primary:hover,
 .alt-text-primary:active,
 .alt-text-primary:focus {
-    color: #17a2b8 !important;
+    color: #231557 !important;
 }
 
 a.category-badge > span.badge,
@@ -272,6 +309,11 @@ hr {
 
 .card-footer {
     border-top: 1px solid #fff;
+}
+
+.savings-text {
+    /* color: #206e1a; */
+    color: #231557;
 }
 
 /* ------------------------------- bootstrap toasts */
