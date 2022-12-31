@@ -77,7 +77,7 @@
 #### Desktop
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
 | ---- | --------------- | ----------------- | ------------------ | ------- | --- |
-| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page.png) | 90 | 93 | 92 | 100 | Scores are above 90% on average |
+| [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page-new.png) | 90 | 93 | 100 | 100 | Scores are above 90% on average |
 
 #### Mobile
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
