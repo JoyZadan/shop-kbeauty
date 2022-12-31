@@ -99,7 +99,7 @@
                 <div class="product-details-container mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt mb-1 mt-3">{{ product.name }}</p>
                     <!-- Link to brand description -->
-                    <p class="mb-0 py-2 text-muted">Brand:
+                    <p class="mb-0 py-2">Brand:
                         <span class="brand-font-alt h6 pb-3 brand-name-link">
                             <a href="{% url 'brand_detail' product.brand.id %}" class="brand-name-link">
                                 <em>{{ product.brand.friendly_name }}</em>
@@ -126,7 +126,7 @@
                         <p class="mb-0 pt-3 pb-1"><span class="h3 text-left font-weight-bold price-font">£{{ product.price }}</span></p>
                         {% if product.discount > 0.01 %}
                         <p class="mb-0"><s>£{{ product.original_price }}</s></p>
-                        <p class="mb-0 text-left"><span class="text-info">You save: </span> £{{ product.discount }}</p>
+                        <p class="mb-0 text-left"><span class="savings-text"><strong>You save:</strong> </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
                     <!-- Start of order form -->
@@ -295,7 +295,7 @@
         </div>
         <!-- Featured Brands -->
         <hr>
-        <h2 class="display-4 brand-font-alt text-shadow text-center pt-2 my-5">
+        <h2 class="display-4 brand-font-alt text-center pt-2 my-5">
             Featured Brands
         </h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
@@ -314,7 +314,26 @@
                 {% endif %}
             {% endfor %}
         </div>
-
+        <!-- Show/ Hide All Brands -->
+        <div class="col-12 mt-2 text-center mb-5">
+            <div class="mb-3">
+                <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3" value="Show">
+                    <span class="text-uppercase">See All Brands</span>
+                    <span class="icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </button>
+                <div class="row" id="brand-show">
+                    {% for brand in brands %}
+                    <p data-brand-name="{{ brand.friendly_name }}">
+                        <a href="{% url 'brand_detail' brand.id %}">
+                            <span class="brand-font-alt h6 pb-1 brand-name-link pl-2 pr-2 pointer">{{ brand.friendly_name }}</span>
+                        </a>
+                    </p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
     </div>
 
 {% endblock%}
@@ -322,4 +341,6 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+{% include 'home/includes/show_hide_brands_list_script.html' %}
+{% include 'home/includes/pass_data_from_backend_to_js_script.html' %}
 {% endblock %}

@@ -128,11 +128,22 @@ body {
 
 .alt-text-muted:hover,
 .alt-text-muted:active,
-.alt-text-muted:focus,
+.alt-text-muted:focus {
+    color: #231557;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-muted {
+    color: #231557 !important;
+}
+
 .text-muted:hover,
 .text-muted:active,
 .text-muted:focus {
-    color: #231557;
+    color: #e9385c !important;
 }
 
 .text-shadow {
@@ -215,14 +226,6 @@ a:visited {
 .btn-red:focus {
     background: black;
     color: white;
-}
-
-.text-black {
-    color: #000 !important;
-}
-
-.text-muted {
-    color: #343a40 !important;
 }
 
 .border-black {
@@ -315,7 +318,6 @@ hr {
 }
 
 .savings-text {
-    /* color: #206e1a; */
     color: #231557;
 }
 
@@ -589,6 +591,10 @@ hr {
     .home-hero {
         height: 37rem;
         width: 100%;
+    }
+
+    .mask {
+        background-color: rgba(255,255,255,0.6);
     }
 }
 

@@ -13,7 +13,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-1">
-                <h2 class="display-5 brand-font-alt text-shadow text-center my-5">Products</h2>
+                <h2 class="display-5 brand-font text-black text-center my-5">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -143,7 +143,7 @@
                         <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
                         {% if product.discount > 0.01 %}
                         <p class="mb-0"><s>£{{ product.original_price }}</s></p>
-                        <p class="mb-0 text-center"><span class="text-info alt-text-muted"><strong>You save:</strong> </span> £{{ product.discount }}</p>
+                        <p class="mb-0 text-center"><span class="savings-text"><strong>You save:</strong> </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
                     <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
