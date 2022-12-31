@@ -266,6 +266,10 @@ hr {
     border-radius: 0;
 }
 
+.card-footer {
+    border-top: 1px solid #fff;
+}
+
 /* ------------------------------- bootstrap toasts */
 .message-container {
     position: fixed;

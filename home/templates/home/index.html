@@ -14,7 +14,7 @@
         <div class="row hero-heading">
             <div class="col-7 col-md-6 mt-5 pl-5">
                 <h1 class="display-4 brand-font text-black">
-                    <i class="fas fa-bell"></i> New arrivals!
+                    <i class="far fa-bell"></i> New arrivals!
                 </h1>
                 <h2 class="display-4 logo-font text-shadow" id="home-cta-font">
                     Latest <span class="nowrap">K-Beauty</span> collections just landed!
@@ -44,12 +44,12 @@
                     <div class="card-body">
                         <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="price-box">
-                            <p class="mb-0 pb-1"><span class="text-left alt-text-muted brand-font">£{{ product.price }}</span></p>
+                    <div class="card-footer bg-white text-center mb-2">
+                        <div class="price-box mb-1">
+                            <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
                             {% if product.discount > 0.01 %}
-                            <p class="mb-0 text-muted"><s>£{{ product.original_price }}</s></p>
-                            <p class="mb-0 text-center"><span class="text-info alt-text-muted">You save: </span> £{{ product.discount }}</p>
+                            <p class="mb-0"><s>£{{ product.original_price }}</s></p>
+                            <p class="mb-0 text-center"><span class="text-info alt-text-muted"><strong>You save:</strong> </span> £{{ product.discount }}</p>
                             {% endif %}
                         </div>
                         <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">

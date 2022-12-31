@@ -76,7 +76,7 @@
                 </a>
                 {% endif %}
                 <div class="card-body p-1">
-                    <p class="text-center mb-1 brand-font-alt">{{ product.name }}</p>
+                    <p class="card-title brand-font-alt h6 text-center mt-2">{{ product.name }}</p>
                     {% if product.category %}
                     <p class="small mt-2 mb-0 text-center">
                         <a class="alt-text-muted"
@@ -138,12 +138,20 @@
                     </div>
                     {% endif %}
                 </div>
-                <div class="card-footer p-1">
-                    <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
-                    {% if product.discount > 0.01 %}
-                    <p class="mb-0 text-center"><s>£{{ product.original_price }}</s></p>
-                    <p class="mb-0 text-center pb-3"><span class="text-info">You save: </span> £{{ product.discount }}</p>
-                    {% endif %}
+                <div class="card-footer bg-white text-center mb-2">
+                    <div class="price-box mb-1">
+                        <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
+                        {% if product.discount > 0.01 %}
+                        <p class="mb-0"><s>£{{ product.original_price }}</s></p>
+                        <p class="mb-0 text-center"><span class="text-info alt-text-muted"><strong>You save:</strong> </span> £{{ product.discount }}</p>
+                        {% endif %}
+                    </div>
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
+                        <span class="text-uppercase">Shop Now</span>
+                        <span class="icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
