@@ -37,14 +37,16 @@ body {
 
 /* -------------------------------- Hero Section Styling */
 .home-hero {
-    background: url('/media/hero-bg-new.webp') no-repeat center center fixed;
+    background-image: url('/media/hero-bg-new.webp');
     background-size: cover;
-    height: 43.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 48rem;
     width: 100%;
 }
 
 .mask {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.4);
 }
 
 /* Text color animation credit to Swarup Kumar Kuila - https://codepen.io/uiswarup/pen/XWgQJrq */
@@ -552,7 +554,7 @@ hr {
     }
 
     .home-hero {
-        height: 38rem;
+        height: 36rem;
         width: 100%;
     }
 }
@@ -564,6 +566,11 @@ hr {
 
     .nav-font {
         font-size: 1rem;
+    }
+
+    .home-hero {
+        height: 35rem;
+        width: 100%;
     }
 }
 
@@ -580,7 +587,7 @@ hr {
     }
 
     .home-hero {
-        height: 35rem;
+        height: 37rem;
         width: 100%;
     }
 }
