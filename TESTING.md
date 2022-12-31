@@ -1,7 +1,7 @@
 # **Shop K-Beauty Testing Results**
 
-![amiresponsive mock-ups of SHOP K-BEAUTY](./documentation/responsiveness/mock-up-generator.png)
-### [Link to the Deployed App](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)
+![amiresponsive mock-ups of SHOP K-BEAUTY](./documentation/responsiveness/am-i-responsive-new.png)
+**[Link to the Deployed App](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)**
 ---
 ## TABLE OF CONTENTS
 
