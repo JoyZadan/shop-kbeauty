@@ -345,6 +345,8 @@ The product names, images, descriptions and other information were sourced from:
 * [BEAUTY&SEOUL](https://beautyandseoul.co.uk/)
 * [SEPHORA UK](https://www.sephora.co.uk/)
 * [INCIDECODER](https://incidecoder.com/)
+* [BEAUTYBOXKOREA](https://beautyboxkorea.com/)
+* [AMAZON.COM](https://www.amazon.com/)
 
 The policies were generated from:
 * [TERMSFEED](https://www.termsfeed.com/)
