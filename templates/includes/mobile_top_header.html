@@ -6,16 +6,19 @@
 <ul>
     <!-- Search bar -->
     <li class="list-inline-item">
-        <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             <div class="text-center">
                 <div><i class="fas fa-search fa-lg"></i></div>
                 <p class="my-0">Search</p>
             </div>
         </a>
+        <!-- Search bar dropdown -->
         <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
             <form class="form" method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search">
+                    <input class="form-control border border-black rounded-0" type="text" name="q"
+                        placeholder="Search products, brands or ingredients">
                     <div class="input-group-append">
                         <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
                             <span class="icon">
