@@ -269,6 +269,11 @@ The following error handlers were added to the Application to handle possible sc
     * [Heroku](https://devcenter.heroku.com/) Heroku is where we deploy this live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
     * [ELEPHANTSQL](https://www.postgresql.org/) ElephantSQL was used to host the the Postgres DB for the project
 
+* Serving images in next-gen formats - these free online tools are used to convert the png images of products, brands and site background images to next generation image format, webp. These have helped increase the Lighthouse performance scores of the site.
+    * [CloudConvert](https://cloudconvert.com/webp-converter)
+    * [OnlineConvert](https://www.online-convert.com/)
+
+
 ## Future Implementation
 * Include a ...
 * ...
@@ -339,6 +344,7 @@ The product names, images, descriptions and other information were sourced from:
 * [SKINLIBRARY](https://skinlibrary.co.uk/)
 * [BEAUTY&SEOUL](https://beautyandseoul.co.uk/)
 * [SEPHORA UK](https://www.sephora.co.uk/)
+* [INCIDECODER](https://incidecoder.com/)
 
 The policies were generated from:
 * [TERMSFEED](https://www.termsfeed.com/)
