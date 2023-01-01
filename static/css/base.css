@@ -395,7 +395,7 @@ hr {
 
 .product-image {
     display: flex;
-    width: 12.5rem;
+    width: 15.625rem;
     height: 18.75rem;
     margin: 0 auto;
 }
