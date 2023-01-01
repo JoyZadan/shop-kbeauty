@@ -395,7 +395,7 @@ hr {
 
 .product-image {
     display: flex;
-    width: 15.625rem;
+    width: 12.5rem;
     height: 18.75rem;
     margin: 0 auto;
 }
@@ -486,7 +486,7 @@ hr {
     border-radius: 0;
 }
 
-/* -------------------------------- 500 and 400 Error Pages Styling */
+/* -------------------------------- 400, 403, 404 and 500 Error Pages Styling */
 .error-hero-bg {
     background-image: url('/media/error-bg.webp');
     background-size: cover;
