@@ -78,6 +78,7 @@
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
 | ---- | --------------- | ----------------- | ------------------ | ------- | --- |
 | [home/templates/home/index.html](./documentation/lighthouse_report/desktop-home-templates-home-index-page-new.png) | 90 | 93 | 100 | 100 | Scores are above 90% on average |
+| [products/templates/products/products.html]() | 57 | 97 | 100 | 100 | Extensive efforts were done to improve the Performance score for desktop by converting all images from png to next-gen webp. The opportunities suggested by Lighthouse to potentially improve the score point to [reducing initial server response time]() and [serving static assets with an efficient cache policy](). As a student project, I am only using Heroku's free dynos with ElephantSQL's free Postgres database and Amazon's free tier S3 to host the media and static files. Reading up on [how to improve the performance of the application](https://help.heroku.com/VKCGHPPB/how-do-i-improve-the-performance-of-my-app), Heroku suggests using production-suitable Dynos and Postgres DB, but these are not free. Meanwhile, Amazon S3's cache control is not
 
 #### Mobile
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
