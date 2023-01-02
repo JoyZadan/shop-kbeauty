@@ -592,11 +592,6 @@ hr {
         height: 9.375rem;
         margin: 2rem auto;
     }
-
-    .product-image-lg {
-        width: 7.8125rem;
-        height: 9.375rem;
-    }
 }
 
 @media (max-width: 698px) {
@@ -618,6 +613,11 @@ hr {
 @media (max-width: 636px) {
     .nav-link {
         padding: 0;
+    }
+
+    .product-image-lg {
+        width: 7.8125rem;
+        height: 9.375rem;
     }
 }
 
