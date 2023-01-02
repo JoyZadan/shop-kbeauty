@@ -317,8 +317,13 @@ hr {
     border-radius: 0;
 }
 
+.card-body {
+    padding-bottom: 10px !important;
+}
+
 .card-footer {
     border-top: 1px solid #fff;
+    padding-top: 5px !important;
 }
 
 .purple-text {
@@ -409,13 +414,6 @@ hr {
     width: 15.625rem;
     height: 18.75rem;
     margin: 1rem auto;
-}
-
-.product-review-img {
-    display: flex;
-    width: 7.8125rem;
-    height: 9.375rem;
-    margin: 2rem auto;
 }
 
 .brand-image {
@@ -582,6 +580,15 @@ hr {
     }
 }
 
+@media (max-width: 767px) {
+    .product-review-img {
+        display: flex;
+        width: auto !important;
+        height: 9.375rem;
+        margin: 2rem auto;
+    }
+}
+
 @media (max-width: 698px) {
     .logo-font {
         font-size: 1.5rem;
@@ -624,6 +631,11 @@ hr {
     .shop-now-button,
     .show-brands-list-btn {
         min-width: 12rem;
+    }
+
+    .product-image-lg {
+        width: 7.8125rem;
+        height: 9.375rem;
     }
 }
 

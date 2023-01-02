@@ -41,7 +41,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <a href="{% url 'product_detail' product.id %}">
-                                <img class="product-review-img mt-3" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="w-100 product-review-img" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                         </div>
                         <div class="col-md-6">
@@ -76,7 +76,7 @@
                                     {% endif %}
                                 </div>
                                 <a href="{% url 'product_detail' product.id %}"
-                                    class="btn btn-sm btn-black text-shadow mt-1 rounded-0 mb-3">
+                                    class="btn btn-sm btn-black text-shadow mt-1 rounded-0 mb-4">
                                     <span class="text-uppercase">Shop Now</span>
                                     <span class="icon">
                                         <i class="fas fa-chevron-right"></i>

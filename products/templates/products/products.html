@@ -62,8 +62,7 @@
     </div>
     <!-- All Products area -->
     <!-- Individual product cards -->
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
-    <!-- <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-2 mb-2"> -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
         {% for product in products %}
         <div class="col mb-4">
             <div class="card h-100">
@@ -76,8 +75,8 @@
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ product.name }}">
                 </a>
                 {% endif %}
-                <div class="card-body p-1">
-                    <p class="card-title brand-font-alt h6 text-center mt-2">{{ product.name }}</p>
+                <div class="card-body pb-0">
+                    <p class="card-title brand-font-alt h6 text-center">{{ product.name }}</p>
                     {% if product.category %}
                     <p class="small mt-2 mb-0 text-center">
                         <a class="alt-text-muted font-weight-bold"
@@ -97,7 +96,7 @@
                     <!-- start of modal for editing and deleting products to avoid accidental deletion -->
                     {% if request.user.is_superuser %}
                     <div class="text-center">
-                        <div class="container d-flex justify-content-center mt-2 mb-2">
+                        <div class="container d-flex justify-content-center mt-2">
                             <a class="btn btn-sm btn-outline-black text-shadow mt-1 font-weight-bold rounded-0 mb-3 mx-2" href="{% url 'edit_product' product.id %}">
                                 Edit Product
                             </a>
