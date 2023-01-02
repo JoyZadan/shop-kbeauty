@@ -14,7 +14,7 @@
             <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}
                 {% if item.size %}size_{{ item.item_id }}_{{ item.size }}{% endif %}" type="number"
                 name="quantity" value="{{ item.quantity }}" min="1" max="99"
-                data-item_id="{{ item.item_id }}" data-size="{{ item.size }}">
+                data-item_id="{{ item.item_id }}" data-size="{{ item.size }}" aria-label="item quantity">
             <div class="input-group-append">
                 <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }}
                     {% if item.size %}increment-size_{{ item.item_id }}_{{ item.size }}{% endif %}"
@@ -30,5 +30,7 @@
         </div>
     </div>
 </form>
-<a class="update-link text-info"><small>Update</small></a>
-<a class="remove-item text-danger float-right remove_{{ item.item_id }}"  data-product_size="{{ item.size }}"><small>Remove</small></a>
+<button type="button" class="update-link text-info" aria-label="update item quantity button"><small>Update</small></button>
+<button type="button" class="remove-item text-danger float-right remove_{{ item.item_id }}" data-product_size="{{ item.size }}" aria-label="remove item button">
+    <small>Remove</small>
+</button>

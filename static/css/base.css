@@ -279,10 +279,15 @@ a.subcategory-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link,
+.btt-link {
+    cursor: pointer;
+}
+
 .update-link,
 .remove-item {
     cursor: pointer;
+    border: 0;
+    background-color: #fff;
 }
 
 input[name='q']::placeholder {
