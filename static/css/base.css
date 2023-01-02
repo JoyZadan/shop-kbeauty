@@ -165,7 +165,8 @@ a:visited {
     text-decoration: none !important;
 }
 
-.shop-now-button {
+.shop-now-button,
+.show-brands-list-btn {
     background: black;
     color: white;
     min-width: 16.25rem;
@@ -602,25 +603,27 @@ hr {
     }
 
     .mask {
-        background-color: rgba(255,255,255,0.6);
+        background-color: rgba(255,255,255,0.7);
+        margin-top: 2rem !important;
     }
+
+    .shop-now-button,
+    .show-brands-list-btn {
+        min-width: 12rem;
 }
 
 @media (max-width: 367px) {
     .display-4 {
         font-size: 2rem !important;
     }
+
+    .shop-now-button {
+        min-width: 10rem;
 }
 
 @media (max-width: 333px) {
     .nav-link {
         padding: 0;
-    }
-
-    .shop-now-button {
-        background: black;
-        color: white;
-        min-width: 12.5rem;
     }
 
     #home-cta-font {
