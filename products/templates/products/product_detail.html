@@ -30,10 +30,10 @@
                 {% if request.user.is_superuser %}
                 <div class="text-center">
                     <div class="container d-flex justify-content-start mt-2 mb-2">
-                        <a class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2" href="{% url 'edit_product' product.id %}">
+                        <a class="btn btn-sm btn-outline-black text-shadow font-weight-bold mt-1 rounded-0 mb-3 mx-2" href="{% url 'edit_product' product.id %}">
                             Edit Product
                         </a>
-                        <button class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2" data-toggle="modal" data-target="#modal-{{ product.id }}">Delete Product</button>
+                        <button class="btn btn-sm btn-red text-shadow font-weight-bold mt-1 rounded-0 mb-3 mx-2" data-toggle="modal" data-target="#modal-{{ product.id }}">Delete Product</button>
                         <div id="modal-{{ product.id }}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content border-0">
@@ -56,10 +56,10 @@
                                             </div>
                                             <div class="card-body px-sm-4 mb-2 pt-1 pb-0 text-center">
                                                 <div class="row justify-content-end no-gutters">
-                                                    <button type="button" class="btn btn-sm btn-outline-black text-shadow mt-1 rounded-0 mb-3 mx-2"
+                                                    <button type="button" class="btn btn-sm btn-outline-black font-weight-bold text-shadow mt-1 rounded-0 mb-3 mx-2"
                                                         data-dismiss="modal">Cancel</button>
                                                     <a href="{% url 'delete_product' product.id %}"
-                                                        class="btn btn-sm btn-red text-shadow mt-1 rounded-0 mb-3 mx-2">Delete</a>
+                                                        class="btn btn-sm btn-red font-weight-bold text-shadow mt-1 rounded-0 mb-3 mx-2">Delete</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -72,7 +72,7 @@
                 {% endif %}
                 <!-- See Reviews and Add Review links as buttons -->
                 <div class="col-12 mt-2">
-                    <p class="alt-text-muted small w-75">
+                    <p class="text-muted font-weight-bold small w-75">
                         <em>Have you tried this product from {{ product.brand.friendly_name }}?
                         Share your experience with your fellow K-Beauty enthusiasts.</em>
                     </p>
@@ -100,15 +100,15 @@
                     <p class="mb-0 h4 font-weight-bold brand-font-alt mb-1 mt-3">{{ product.name }}</p>
                     <!-- Link to brand description -->
                     <p class="mb-0 py-2">Brand:
-                        <span class="brand-font-alt h6 pb-3 brand-name-link">
-                            <a href="{% url 'brand_detail' product.brand.id %}" class="brand-name-link">
-                                <em>{{ product.brand.friendly_name }}</em>
+                        <span class="h6 pb-3 brand-font-alt brand-name-link">
+                            <a href="{% url 'brand_detail' product.brand.id %}" >
+                                <em class="brand-font-alt brand-name-link">{{ product.brand.friendly_name }}</em>
                             </a>
                         </span>
                     </p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
-                        <a class="alt-text-muted"
+                        <a class="alt-text-muted font-weight-bold"
                             href="{% url 'products' %}?category={{ product.category.name }}">
                             <i class="fas fa-list mr-1"></i>{{ product.category.friendly_name }}
                         </a>
@@ -116,7 +116,7 @@
                     {% endif %}
                     {% if product.subcategory %}
                     <p class="small mt-1 mb-0">
-                        <a class="text-muted"
+                        <a class="text-muted font-weight-bold"
                             href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
                             <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
                         </a>
@@ -154,18 +154,17 @@
                                     <div class="input-group input-group-{{ product.id }}">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ product.id }}"
-                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" aria-label="decrement item number">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
                                             </button>
                                         </div>
                                         <input class="form-control qty_input id_qty_{{ product.id }}" type="number" name="quantity" value="1"
-                                            min="1" max="99" data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
+                                            min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" aria-label="item quantity">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-black rounded-0 increment-qty_{{ product.id }}"
-                                                data-item_id="{{ product.id }}">
+                                                data-item_id="{{ product.id }}" aria-label="increment item number">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
@@ -182,8 +181,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-2"
-                                    value="Add to Bag">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-2" value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -200,9 +198,9 @@
                             <div class="card-header" role="tab" id="headingTwo1">
                                 <a class="collapsed text-decoration-none" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo1"
                                     aria-expanded="false" aria-controls="collapseTwo1">
-                                    <h5 class="mb-0 brand-font-alt h6">
+                                    <p class="mb-0 brand-font-alt h6">
                                         Description <span class="float-right"><i class="fas fa-angle-down rotate-icon"></i></span>
-                                    </h5>
+                                    </p>
                                 </a>
                             </div>
                             <!-- Card body -->
@@ -219,9 +217,9 @@
                             <div class="card-header" role="tab" id="headingTwo2">
                                 <a class="collapsed text-decoration-none" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo21"
                                     aria-expanded="false" aria-controls="collapseTwo21">
-                                    <h5 class="mb-0 brand-font-alt h6">
+                                    <p class="mb-0 brand-font-alt h6">
                                         How to use <span class="float-right"><i class="fas fa-angle-down rotate-icon"></i></span>
-                                    </h5>
+                                    </p>
                                 </a>
                             </div>
                             <!-- Card body -->
@@ -238,9 +236,9 @@
                             <div class="card-header" role="tab" id="headingThree31">
                                 <a class="collapsed text-decoration-none" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseThree31"
                                     aria-expanded="false" aria-controls="collapseThree31">
-                                    <h5 class="mb-0 brand-font-alt h6">
+                                    <p class="mb-0 brand-font-alt h6">
                                         Ingredients <span class="float-right"><i class="fas fa-angle-down rotate-icon"></i></span>
-                                    </h5>
+                                    </p>
                                 </a>
                             </div>
                             <!-- Card body -->
@@ -277,7 +275,7 @@
                                 <p class="brand-font-alt">
                                     Have you used {{ product.name }} before?
                                 </p>
-                                <a href="{% url 'add_review' product.id %}" class="btn btn-sm btn-brand rounded-0 text-shadow">
+                                <a href="{% url 'add_review' product.id %}" class="btn btn-sm btn-black rounded-0 text-shadow">
                                     Share your experience!
                                 </a>
                             </div>
@@ -303,11 +301,8 @@
                 <div class="col mb-4">
                     <div class="card h-100">
                         <a href="{% url 'brand_detail' brand.id %}">
-                            <img class="card-img-top" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                            <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
                         </a>
-                        <div class="card-body">
-                            <h3 class="card-title brand-font-alt h6 text-center">{{ brand.friendly_name }}</h3>
-                        </div>
                     </div>
                 </div>
                 {% endif %}
