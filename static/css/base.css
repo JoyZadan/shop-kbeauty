@@ -404,6 +404,13 @@ hr {
     margin: 0 auto;
 }
 
+.product-review-img {
+    display: flex;
+    width: 7.8125rem;
+    height: 9.375rem;
+    margin: 0 auto;
+}
+
 .brand-image {
     display: flex;
     width: 12.5rem;

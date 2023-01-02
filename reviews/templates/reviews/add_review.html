@@ -11,8 +11,8 @@
 
 {% block content %}
     <div class="container mb-5">
-        <h2 class="display-5 brand-font-alt text-center my-5">Add a review</h2>
-        <p class="alt-text-muted text-center">Share your experience using {{ product.name }}</p>
+        <h2 class="display-5 brand-font-alt text-center mt-5 mb-3">Add a review</h2>
+        <p class="text-center h6">Share your experience using {{ product.name }}</p>
         <hr>
         <!-- Add product review column -->
         <div class="row">
@@ -38,18 +38,18 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <!-- Start of product card -->
                 <div class="card product-review-card mb-5 border-none">
-                    <div class="row g-2">
+                    <div class="row">
                         <div class="col-md-6">
                             <a href="{% url 'product_detail' product.id %}">
-                                <img class="img-fluid mt-3" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                <img class="product-review-img mt-3" src="{{ product.image.url }}" alt="{{ product.name }}">
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <div class="card-body">
+                            <div class="card-body pt-3 pr-2 pl-0">
                                 <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
                                 {% if product.category %}
                                 <p class="small mt-1 mb-0 text-center">
-                                    <a class="alt-text-muted"
+                                    <a class="alt-text-muted font-weight-bold"
                                         href="{% url 'products' %}?category={{ product.category.name }}">
                                         <i class="fas fa-list mr-1"></i>{{ product.category.friendly_name }}
                                     </a>
@@ -57,7 +57,7 @@
                                 {% endif %}
                                 {% if product.subcategory %}
                                 <p class="small mt-1 mb-0 text-center">
-                                    <a class="text-muted"
+                                    <a class="text-muted font-weight-bold"
                                         href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
                                         <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
                                     </a>
@@ -65,8 +65,8 @@
                                 {% endif %}
                             </div>
                             <div class=" text-center">
-                                <div class="price-box">
-                                    <p class="mb-0 pb-1"><span
+                                <div class="price-box mb-2">
+                                    <p class="h4 mb-0 pb-1"><span
                                             class="text-left alt-text-muted brand-font">£{{ product.price }}</span></p>
                                     {% if product.discount > 0.01 %}
                                     <p class="mb-0 text-muted"><s>£{{ product.original_price }}</s></p>
@@ -76,7 +76,7 @@
                                     {% endif %}
                                 </div>
                                 <a href="{% url 'product_detail' product.id %}"
-                                    class="btn btn-sm btn-brand text-shadow mt-1 rounded-0 mb-3">
+                                    class="btn btn-sm btn-black text-shadow mt-1 rounded-0 mb-3">
                                     <span class="text-uppercase">Shop Now</span>
                                     <span class="icon">
                                         <i class="fas fa-chevron-right"></i>

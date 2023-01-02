@@ -49,23 +49,23 @@
         {% if products %}
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-2 mb-2">
             {% for product in products %}
-            <div class="col mb-5">
+            <div class="col mb-4">
                 <div class="card h-100">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
                     {% else %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ product.name }}">
                     </a>
                     {% endif %}
-                    <div class="card-body">
-                        <p class="text-center mb-1">{{ product.name }}</p>
-
+                    <div class="card-body p-1">
+                        <!-- <p class="text-center mb-1">{{ product.name }}</p> -->
+                        <p class="card-title brand-font-alt h6 text-center mt-2">{{ product.name }}</p>
                         {% if product.category %}
                         <p class="small mt-2 mb-0 text-center">
-                            <a class="alt-text-muted"
+                            <a class="alt-text-muted font-weight-bold"
                                 href="{% url 'products' %}?category={{ product.category.name }}">
                                 <i class="fas fa-list"></i> {{ product.category.friendly_name }}
                             </a>
@@ -74,19 +74,29 @@
 
                         {% if product.subcategory %}
                         <p class="small mt-2 mb-0 text-center">
-                            <a class="text-muted"
+                            <a class="text-muted font-weight-bold"
                                 href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
                                 <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
                             </a>
                         </p>
                         {% endif %}
                     </div>
-                    <div class="card-footer">
-                        <h3 class="mb-0 text-center brand-font pb-1">£{{ product.price }}</h3>
-                        {% if product.discount > 0.01 %}
-                        <p class="mb-0 text-center"><s>£{{ product.original_price }}</s></p>
-                        <p class="mb-0 text-center pb-3"><span class="purple-text"><strong>You save:</strong> </span> £{{ product.discount }}</p>
-                        {% endif %}
+                    <div class="card-footer bg-white text-center mb-2">
+                        <div class="price-box mb-1">
+                            <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
+                            {% if product.discount > 0.01 %}
+                            <p class="mb-0"><s>£{{ product.original_price }}</s></p>
+                            <p class="mb-0 text-center"><span class="purple-text"><strong>You save:</strong> </span>
+                                £{{ product.discount }}</p>
+                            {% endif %}
+                        </div>
+                        <a href="{% url 'product_detail' product.id %}"
+                            class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
+                            <span class="text-uppercase">Shop Now</span>
+                            <span class="icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
