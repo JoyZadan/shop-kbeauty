@@ -75,14 +75,14 @@
 
 ### [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
 **Desktop**
-| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
+| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | If has low score(s) |
 | --- | --- | --- | --- | --- | ------------- |
 | ['templates/home/index.html'](./documentation/lighthouse_report/desktop-home-templates-home-index-page-new.png) | 90 | 93 | 100 | 100 | Scores are above 90% on average |
 | ['templates/products/products.html'](./documentation/lighthouse_report/desktop-products-templates-products-page.png) | 57 | 97 | 100 | 100 | Extensive efforts were done to improve the Performance score for desktop by converting all images from png to next-gen webp and moving the Google font link from base.html to base.css. Shop K-Beauty currently has 100 products being rendered on this page. The [opportunities](./documentation/lighthouse_report/desktop-products-templates-products-page-opportunities.png) suggested by Lighthouse to potentially improve the score point to **reduce initial server response time** and **serve static assets with an efficient cache policy** all point to 3rd party services and libraries. As a student project, I am only using Heroku's free dynos with ElephantSQL's free Postgres database and Amazon's free tier S3 to host the media and static files. Reading up on [how to improve the performance of the application](https://help.heroku.com/VKCGHPPB/how-do-i-improve-the-performance-of-my-app), Heroku suggests using production-suitable Dynos and Postgres DB, but these are not free. Meanwhile, Amazon S3's cache control is not working, despite using the same source code from the Boutique Ado walkthrough. Further development time is required to investigate Amazon's [File Cache and/or Amazon CloudFront](https://aws.amazon.com/caching/aws-caching/). Meanwhile, when I validated the [same product page but filtered to show only all specials]((./documentation/lighthouse_report/desktop-products-templates-products-page-all-special-offers.png)), the results improved from Performance: 57% to **Performance: 80%**! |
 
 **Mobile**
-| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | Reasons & Solutions for Low Scores (if applicable) |
-| --- | --- | --- | --- | --- | ------------- |
+| Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | If has low score(s) |
+| --- | ----- | ----- | ----- | ----- | ------------- |
 | ['templates/home/index.html'](./documentation/lighthouse_report/mobile-home-templates-home-index-page.png) | 79  | 93 | 92 | 98 | Extensive efforts were done to improve the Performance score for mobile by converting all images that appear on the index page (incl the largest contentful paint - hero image) from png to webp and setting explicit height and width to them. The opportunities to increase the score suggested by Lighthouse such as [eliminating render-blocking resources](./documentation/lighthouse_report/mobile-home-eliminate-render-blocking-resources.png) and [reduce unused JS](./documentation/lighthouse_report/mobile-home-reduce-unused-js.png) point to 3rd party libraries: Bootstrap, JQuery and Stripe. |
 
 
@@ -105,7 +105,7 @@
 ### Full Manual Testing
 
 ---
-## Bugs, Errors & Solutions
+## Bugs found during testing and development phase
 
 ### Solved Bugs
 | # | Bugs, Errors and Issues | Solutions |
