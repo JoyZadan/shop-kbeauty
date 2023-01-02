@@ -610,6 +610,7 @@ hr {
     .shop-now-button,
     .show-brands-list-btn {
         min-width: 12rem;
+    }
 }
 
 @media (max-width: 367px) {
@@ -619,6 +620,8 @@ hr {
 
     .shop-now-button {
         min-width: 10rem;
+}
+
 }
 
 @media (max-width: 333px) {
