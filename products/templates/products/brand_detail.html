@@ -20,11 +20,11 @@
                 <div class="image-container my-5">
                     {% if brand.image %}
                     <a href="{{ brand.image.url }}" target="_blank">
-                        <img class="card-img-top product-image img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                        <img class="card-img-top brand-image img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
                     </a>
                     {% else %}
                     <a href="">
-                        <img class="card-img-top product-image img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ brand.name }}">
+                        <img class="card-img-top brand-image img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ brand.name }}">
                     </a>
                     {% endif %}
                 </div>
@@ -41,8 +41,8 @@
         </div>
         <!-- Available products filtered by individual brand -->
         <div>
-            <h3 class="display-6 brand-font text-center mt-2 mb-4">
-                All available products from {{ brand.friendly_name}}
+            <h3 class="display-6 brand-font text-center mt-4 mb-4">
+                Shop available products from {{ brand.friendly_name}}
             </h3>
         </div>
         <!-- Individual product cards -->

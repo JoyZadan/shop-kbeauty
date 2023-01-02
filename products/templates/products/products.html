@@ -63,12 +63,13 @@
     <!-- All Products area -->
     <!-- Individual product cards -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
+    <!-- <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-2 mb-2"> -->
         {% for product in products %}
         <div class="col mb-4">
             <div class="card h-100">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top product-image img-fluid mt-2" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
