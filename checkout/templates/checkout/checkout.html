@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
-                <p class="text-muted">Order Summary ({{ product_count }})</p>
+                <p class="font-weight-bold">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+                <p class="font-weight-bold">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
@@ -92,9 +92,9 @@
                             <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
 							{% else %}
                             <p>
-                                <a class="text-info" href="{% url 'account_signup' %}">Create an account </a>
+                                <a class="alt-text-muted font-weight-bold" href="{% url 'account_signup' %}">Create an account </a>
                                 <span class="ml-1 mr-1"> or </span>
-                                <a class="text-info" href="{% url 'account_login' %}"> login</a>
+                                <a class="alt-text-muted font-weight-bold" href="{% url 'account_login' %}"> login</a>
                                 <span class="ml-1 mr-1"> to save this information </span>
                             </p>
 							{% endif %}
