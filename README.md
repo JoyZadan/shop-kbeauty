@@ -109,9 +109,11 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | **DIGITAL MARKETING** |   |   |
 | 43 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
-| 44| 2 | Shopper |  |  |
-| 45 | 2 | Shopper |  |  |
+| 44| 2 | Shopper | register an account via social account | easy registration |
+| 45 | 2 | Shopper | login via social account | avoid having to keep track of login details |
 | 46 | 2 | Shopper |  |  |
+| 47 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
+
 
 
 ### Database Schema - Entity Relationship Diagram
