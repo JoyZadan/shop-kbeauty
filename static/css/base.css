@@ -23,14 +23,14 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #e9385c;
-    color: #fff;
+    background-color: #e9385c !important;
+    color: #fff !important;
 }
 
 .navbar-toggler:active,
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    background-color: #231557;
+    background-color: #231557 !important;
 }
 
 .logo-footer {
