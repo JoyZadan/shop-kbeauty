@@ -97,6 +97,16 @@
               {% endif %}
             </div>
           </li>
+          <!-- Wishlist area -->
+          <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-heart fa-lg"></i></div>
+                <p class="my-0">Wishlist</p>
+              </div>
+            </a>
+          </li>
           <!-- Bag area -->
           <li class="list-inline-item">
             <a class="{% if grand_total %}alt-text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">

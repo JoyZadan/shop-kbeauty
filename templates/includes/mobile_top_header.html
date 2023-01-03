@@ -1,9 +1,9 @@
 <div id="logo-mobile" class="text-center">
     <a href="{% url 'home' %}" class="nav-link main-logo-link">
-        <h2 class="logo-font text-black my-0"><strong>Shop</strong> K-Beauty</h2>
+        <h2 class="logo-font text-black my-0 mx-2"><strong>Shop</strong> K-Beauty</h2>
     </a>
 </div>
-<ul class="offset-2">
+<ul class="mx-auto">
     <!-- Search bar -->
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
@@ -50,6 +50,15 @@
                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
         </div>
+    </li>
+    <!-- Wishlist area -->
+    <li class="list-inline-item dropdown">
+        <a class="text-black nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="text-center">
+                <div><i class="fas fa-heart fa-lg"></i></div>
+                <p class="my-0">Wishlist</p>
+            </div>
+        </a>
     </li>
     <!-- Bag area -->
     <li class="list-inline-item">
