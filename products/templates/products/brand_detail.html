@@ -10,46 +10,41 @@
 {% endblock %}
 
 {% block content %}
+    <div>
+        <h2 class="display-5 brand-font text-black text-center mt-5 mb-3">K-Beauty Brand</h2>
+        <hr class="w-75 mx-auto">
+    </div>
     <!-- Individual brand area -->
-    <div class="container mb-5">
-        <h2 class="display-5 brand-font text-black text-center my-5">K-Beauty Brand</h2>
-        <hr>
-        <div class="row">
-            <!-- Column for brand image -->
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    {% if brand.image %}
-                    <a href="{{ brand.image.url }}" target="_blank">
-                        <img class="card-img-top brand-image img-fluid" src="{{ brand.image.url }}" alt="{{ brand.name }}">
-                    </a>
-                    {% else %}
-                    <a href="">
-                        <img class="card-img-top brand-image img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ brand.name }}">
-                    </a>
-                    {% endif %}
-                </div>
-            </div>
-            <!-- Column for brand description -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-4">
-                    <p class="mb-0 h4 font-weight-bold brand-font-alt">{{ brand.friendly_name }}</p>
-                </div>
-                <div>
-                    <p>{{ brand.description }}</p>
-                </div>
+    <div class="container mb-3">
+        <!-- Individual brand logo and description -->
+        <div class="row mx-3">
+            <div class="col-12">
+                {% if brand.image %}
+                <a href="{{ brand.image.url }}" target="_blank">
+                    <img class="brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top brand-image img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ brand.name }}">
+                </a>
+                {% endif %}
+                <p class="mb-2 h4 font-weight-bold brand-font-alt text-center">{{ brand.friendly_name }}</p>
+                <p class="mt-3">{{ brand.description }}</p>
             </div>
         </div>
-        <!-- Available products filtered by individual brand -->
-        <div>
-            <h3 class="display-6 brand-font text-center mt-4 mb-4">
-                Shop available products from {{ brand.friendly_name}}
-            </h3>
-        </div>
-        <!-- Individual product cards -->
+    </div>
+    <!-- Available products filtered by individual brand -->
+    <div class="container">
+        <h3 class="display-6 brand-font text-center mb-4">
+            Shop available products from {{ brand.friendly_name}}
+        </h3>
+    </div>
+    <!-- Individual product cards -->
+    <div class="container">
         {% if products %}
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-2 mb-2">
+        <div class="row">
             {% for product in products %}
-            <div class="col mb-4">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3">
                 <div class="card h-100">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
@@ -61,7 +56,6 @@
                     </a>
                     {% endif %}
                     <div class="card-body p-1">
-                        <!-- <p class="text-center mb-1">{{ product.name }}</p> -->
                         <p class="card-title brand-font-alt h6 text-center mt-2">{{ product.name }}</p>
                         {% if product.category %}
                         <p class="small mt-2 mb-0 text-center">
@@ -71,7 +65,6 @@
                             </a>
                         </p>
                         {% endif %}
-
                         {% if product.subcategory %}
                         <p class="small mt-2 mb-0 text-center">
                             <a class="text-muted font-weight-bold"
@@ -110,15 +103,15 @@
             </p>
         </div>
         {% endif %}
-        <!-- Continue Shopping link -->
-        <div class="col text-center mt-1">
-            <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
-                <span class="icon">
-                    <i class="fas fa-shopping-bag"></i>
-                </span>
-            <span class="text-uppercase">Keep Shopping</span>
-            </a>
-        </div>
+    </div>
+    <!-- Continue Shopping link -->
+    <div class="col text-center mt-3 mb-5">
+        <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
+            <span class="icon">
+                <i class="fas fa-shopping-bag"></i>
+            </span>
+        <span class="text-uppercase">Keep Shopping</span>
+        </a>
     </div>
 
 {% endblock %}
