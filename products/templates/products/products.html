@@ -52,7 +52,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="alt-a mt-3 text-center font-weight-bold text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span ><a href="{% url 'products' %}" class="alt-a font-weight-bold">Products Home</a> | </span>
+                                <span ><a href="{% url 'products' %}" class="alt-a font-weight-bold">View All Products </a> | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
