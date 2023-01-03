@@ -23,12 +23,14 @@ body {
 }
 
 .navbar-toggler {
-    border: 1px solid #000 !important;
-    border-radius: 0;
+    background-color: #e9385c;
+    color: #fff;
 }
 
-.navbar-toggler-icon {
-    color: #000 !important;
+.navbar-toggler:active,
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #231557;
 }
 
 .logo-footer {
@@ -276,6 +278,11 @@ a.subcategory-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.btt-button:active {
+    background-color: #000;
 }
 
 .btt-link {
