@@ -158,6 +158,16 @@ def delete_product(request, product_id):
     return redirect(reverse('products'))
 
 
+def all_brands(request):
+    """A view to show all the available brands """
+    brands = Brand.objects.all()
+
+    context = {
+        'brands': brands,
+    }
+    return render(request, 'products/brands.html', context)
+
+
 def brand_detail(request, brand_id):
     """
     A view to show individual brand details

@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav nav-fill w-auto mx-auto">
         <!-- "ALL PRODUCTS" navlinks in here -->
-        <li class="nav-item px-4 dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
@@ -16,7 +16,7 @@
             </div>
         </li>
         <!-- "SKINCARE CATEGORIES" navlinks in here -->
-        <li class="nav-item px-4 dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-skincare-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Skincare
@@ -34,7 +34,7 @@
         </li>
 
         <!-- "HAIR & BODY" navlinks in here -->
-        <li class="nav-item px-4 dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-hairbody-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Hair &amp; Body
@@ -50,7 +50,7 @@
             </div>
         </li>
         <!-- "SPECIAL OFFERS" navlinks in here -->
-        <li class="nav-item px-4 dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Special Offers
@@ -61,6 +61,13 @@
                 <a href="{% url 'products' %}?category=hair_body_clearance,skincare_clearance" class="dropdown-item">Clearance</a>
                 <a href="{% url 'products' %}?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new" class="dropdown-item">All Specials</a>
             </div>
+        </li>
+        <!-- "ALL AVAILABLE K-BEAUTY BRANDS" navlink in here -->
+        <li class="nav-item">
+            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="{% url 'brands' %}"
+                aria-label="link to view all available brands">
+                K-Beauty Brands
+            </a>
         </li>
     </ul>
 </div>

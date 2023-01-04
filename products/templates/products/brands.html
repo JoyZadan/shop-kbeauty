@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="col text-center mt-1">
+            <h2 class="display-5 brand-font text-black text-center my-5">Shop All Brands</h2>
+        </div>
+        <!-- List of all available brands -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
+            {% for brand in brands %}
+            <div class="col mb-4">
+                <div class="card h-100">
+                    <a href="{% url 'brand_detail' brand.id %}">
+                        <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- Back to All Products link as button -->
+    <!-- Show/ Hide All Brands -->
+    <div class="col text-center mt-3 mb-5">
+        <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
+            <span class="icon">
+                <i class="fas fa-shopping-bag"></i>
+            </span>
+        <span class="text-uppercase">View all products</span>
+        </a>
+    </div>
+
+{% endblock %}
