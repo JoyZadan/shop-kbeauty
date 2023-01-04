@@ -36,6 +36,7 @@
 * [Edit a Product Page](./documentation/html_validation/edit-product-html-validation-no-error.png)
 * [Product Detail Page](./documentation/html_validation/product-detail-page-html-validation.png)
 * [Product Detail Page - New Validation After Modal was Added](./documentation/html_validation/product-detail-page-html-validation-new.png)
+* [Brands Page](./documentation/html_validation/brands-page-html-validation.png)
 * [Brand Detail Page](./documentation/html_validation/brand-detail-page-html-validation.png)
 * [Add a Review Page](./documentation/html_validation/add-a-review-page-html-validation.png)
 * [Edit a Review Page](./documentation/html_validation/edit-a-review-page-html-validation.png)

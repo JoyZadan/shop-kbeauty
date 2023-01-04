@@ -60,14 +60,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- All Products area -->
-    <!-- Individual product cards -->
-    <div class="container mb-5">
-    <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5"> -->
-        <div class="row">
+        <!-- All Products area -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
             {% for product in products %}
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3">
+            <!-- Individual product cards -->
+            <div class="col mb-4">
                 <div class="card h-100">
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
@@ -78,7 +75,7 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ product.name }}">
                     </a>
                     {% endif %}
-                    <div class="card-body pb-0">
+                    <div class="card-body">
                         <p class="card-title brand-font-alt h6 text-center">{{ product.name }}</p>
                         {% if product.category %}
                         <p class="small mt-2 mb-0 text-center">
