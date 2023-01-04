@@ -84,6 +84,20 @@ body {
      }
  }
 
+/* -------------------------------- Skincare Tips Page Styling */
+.tips-hero {
+    background-image: url('/media/skincare-tips-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 48rem; */
+    width: 100%;
+}
+
+.tips-margin {
+    margin-top: 15rem;
+}
+
 /* -------------------------------- Typography Styling */
 .logo-font {
     text-transform: uppercase;
@@ -355,12 +369,55 @@ hr {
     padding-top: 5px !important;
 }
 
-.purple-text {
+.text-purple {
     color: #26145b;
 }
 
 .baby-blue-text {
     color: #83a8db;
+}
+
+/* ------------------------------- card styling for the K-Beauty tips page */
+.card-alt {
+    border: 1px solid #fff !important;
+    border-radius: 5px;
+}
+
+.light-blue-bg {
+    background-color: #83abdb;
+}
+
+.light-pink-bg {
+    background-color: #fcadc1;
+}
+
+.green-bg {
+    background-color: #2a9d8f;
+}
+
+.midnight-blue-bg {
+    background-color: #26145b;
+}
+
+.beige-bg {
+    background-color: #f9f8eb;
+}
+
+.dark-pink-bg {
+    background-color: #e93f5b;
+}
+
+.orange-bg {
+    background-color: #ee6c4d;
+}
+
+.border-glow {
+    border: 1px solid #ffca13 !important;
+}
+
+.mx-extra {
+    margin-left: 5rem !important;
+    margin-right: 5rem !important;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -626,6 +683,11 @@ hr {
         width: auto !important;
         height: 9.375rem;
         margin: 2rem auto;
+    }
+
+    .mx-extra {
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
     }
 }
 

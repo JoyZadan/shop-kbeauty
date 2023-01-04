@@ -14,6 +14,12 @@ def index(request):
     return render(request, 'home/index.html', context)
 
 
+def skincare_tips(request):
+    """ A view to render the k-beauty tips page """
+
+    return render(request, 'home/skincare_tips.html')
+
+
 def privacy_policy(request):
     """ A view to render the privacy policy page """
 
