@@ -23,14 +23,19 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #e9385c !important;
-    color: #fff !important;
+    background-color: #83a8db !important;
+    color: #000 !important;
 }
 
 .navbar-toggler:active,
 .navbar-toggler:hover,
 .navbar-toggler:focus {
-    background-color: #231557 !important;
+    background-color: #26145b !important;
+    color: #fff !important;
+}
+
+.nav-fill .nav-item, .nav-fill>.nav-link {
+    text-align: start !important;
 }
 
 .logo-footer {
@@ -58,7 +63,7 @@ body {
 .animate-it {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
-            #231557 0%,
+            #26145b 0%,
             #44107a 29%,
             #ff1361 67%,
             #fff800 100%);
@@ -86,7 +91,7 @@ body {
 
 .logo-font-alt {
     text-transform: uppercase;
-    color: #231557;
+    color: #26145b;
     font-weight: 500;
 }
 
@@ -99,18 +104,18 @@ body {
 }
 
 .nav-font-alt {
-    color: #e9385c;
+    color: #e93f5b;
     text-transform: uppercase;
 }
 
 .brand-font {
-    color: #e9385c;
+    color: #e93f5b;
     text-transform: uppercase;
     font-weight: 700;
 }
 
 .price-font {
-    color: #e9385c;
+    color: #e93f5b;
 }
 
 .brand-link:hover,
@@ -127,13 +132,13 @@ body {
 }
 
 .alt-text-muted {
-    color: #e9385c;
+    color: #e93f5b;
 }
 
 .alt-text-muted:hover,
 .alt-text-muted:active,
 .alt-text-muted:focus {
-    color: #231557;
+    color: #26145b;
 }
 
 .text-black {
@@ -141,13 +146,13 @@ body {
 }
 
 .text-muted {
-    color: #231557 !important;
+    color: #26145b !important;
 }
 
 .text-muted:hover,
 .text-muted:active,
 .text-muted:focus {
-    color: #e9385c !important;
+    color: #e93f5b !important;
 }
 
 .text-shadow {
@@ -185,7 +190,7 @@ a:visited {
 }
 
 .btn-brand {
-    background: #e9385c;
+    background: #e93f5b;
     color: white;
 }
 
@@ -197,14 +202,14 @@ a:visited {
 }
 
 .brand-name-link {
-    color: #231557 !important;
+    color: #26145b !important;
 }
 
 .brand-name-link:hover,
 .brand-name-link:active,
 .brand-name-link:visited {
     text-decoration: none !important;
-    color: #e9385c !important;
+    color: #e93f5b !important;
 }
 
 #brand-show {
@@ -241,10 +246,14 @@ a:visited {
     background: #000 !important;
 }
 
+.border-warning {
+    border-color: #ffca13!important;
+}
+
 .alt-a,
 .alt-text-info,
 .alt-text-primary {
-    color: #e9385c !important;
+    color: #e93f5b !important;
 }
 
 .alt-a:hover,
@@ -256,20 +265,29 @@ a:visited {
 .alt-text-primary:hover,
 .alt-text-primary:active,
 .alt-text-primary:focus {
-    color: #231557 !important;
+    color: #26145b !important;
 }
 
-a.category-badge > span.badge,
-a.subcategory-badge > span.badge {
-    background: #e9385c !important;
+a.category-badge > span.badge {
+    background: #e93f5b !important;
     color: #fff !important;
     border-color: #fff !important;
 }
 
-a.category-badge > span.badge:hover,
-a.subcategory-badge > span.badge:hover {
+a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+a.subcategory-badge > span.badge {
+    background: #26145b !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+a.subcategory-badge > span.badge:hover {
+    background: #ffca13 !important;
+    color: #000 !important;
 }
 
 .btt-button {
@@ -338,7 +356,11 @@ hr {
 }
 
 .purple-text {
-    color: #231557;
+    color: #26145b;
+}
+
+.baby-blue-text {
+    color: #83a8db;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -535,7 +557,7 @@ hr {
 }
 
 .footer-heading {
-    color: #e9385c;
+    color: #83a8db;
 }
 
 .social-font {

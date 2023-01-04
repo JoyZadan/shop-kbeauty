@@ -5,7 +5,7 @@
 ---
 ## TABLE OF CONTENTS
 
-* [Automated Testing](#automated-testing)
+* [Automated Testing and Validation](#automated-testing-and-validation)
     * [HTML Validation](#html-validation)
     * [CSS Validation](#css-validation)
     * [JavaScript Validation](#javascript-validation)
@@ -27,10 +27,15 @@
     * [Unsolved Bugs](#unsolved-bugs)
 ---
 
-## Automated Testing
-### HTML Validation using [W3C Markup Validation Service](https://validator.w3.org/):
-* [Homepage](./documentation/html_validation/homepage-html-validation.png)
-* [Products Page](./documentation/html_validation/products-page-html-validation.png)
+## Automated Testing and Validation
+### HTML Validation
+I used [W3C Markup Validation Service](https://validator.w3.org/) to validate all the HTML files by direct input:
+| Page | Result | Validation Details & Screenshots |
+| ---- | :-: | -------------------------- |
+| 'templates/home/index.html' | 0 error and 0 warning | [Homepage](./documentation/html_validation/homepage-html-validation.png) |
+| 'templates/products/products.html' | 0 error and 0 warning | [Products Page](./documentation/html_validation/products-page-html-validation.png) |
+
+
 * [Products Page - New Validation After Modal was Added](./documentation/html_validation/products-page-html-validation-new.png)
 * [Add a Product Page](./documentation/html_validation/add-product-html-validation-no-error.png)
 * [Edit a Product Page](./documentation/html_validation/edit-product-html-validation-no-error.png)
@@ -71,8 +76,11 @@
 | profiles/static/profiles/js/countryfield.js | 0 errors, <br/>0 warnings | [countryfield script](./documentation/javascript_validation/countryfield-script.png) |
 | products/templates/products/includes/new_image_widget_script.html | 0 errors, <br/>0 warnings | [new image widget script](./documentation/javascript_validation/new-image-widget-script.png) |
 
-
 ### Python Validation
+At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my IDE and throughout the development, I was using it to test and fix the errors as they appear. I also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint my Python code.
+| App | Result | Test Details & Screenshots |
+| ---- | :-: | -------------------------- |
+
 
 ### [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
 **Desktop**
