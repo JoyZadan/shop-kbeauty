@@ -69,7 +69,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 8 | [#48](https://github.com/JoyZadan/shop-kbeauty/issues/48) | Shopper | Search/ View all of the available K-Beauty brands | Look for my favourite brands  |
 | 9 | [#70](https://github.com/JoyZadan/shop-kbeauty/issues/70) | Shopper | Easily view details about the brand of a product I am purchasing | Learn more about the brands and feel confident about my purchase |
 | 10 | [#73](https://github.com/JoyZadan/shop-kbeauty/issues/73) | Shopper | View a list of available products when viewing the details about a brand | Quickly decide what product to purchase from a particular brand |
-| 11 | # | Shopper | Find skincare tips and information about K-Beauty skincare routine | Decide which products I need to purchase |
+| 11 | [#81](https://github.com/JoyZadan/shop-kbeauty/issues/81) | Shopper | Find skincare tips and information about K-Beauty skincare routine | Decide which products I need to purchase |
 | **REGISTRATION & USER ACCOUNTS** |   |   |
 | 12 | [#8](https://github.com/JoyZadan/shop-kbeauty/issues/8)| Site User | Easily register for an account | Have a personal account and be able to view my profile |
 | 13 | [#52](https://github.com/JoyZadan/shop-kbeauty/issues/52) | Shopper | Receive an email confirmation after registering | View that my personal account registration was successful |
@@ -125,7 +125,18 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 
 ## Surface Plane
 ### Typography
+I decided to use only one font, Lato, for this project and used different font-weights and italics to add contrast to text. The decision to stick to one font is based how ecommerce shops tend to look very busy with photos of products, call-to-action buttons, pricing and discount buttons, etc. For the hero section on the index.html and skincare_tips.html pages, I added an animation to the text using linear-gradient based on the site's colour scheme.
+<br/><br/>
+![LATO FONT](./documentation/branding/lato-font.png)
+
 ### Colour Scheme
+The site is mainly black and white and uses accent colours to liven it up. I have taken inspiration from the hero image colours and added midnight blue and light blue colours to add contrast.
+
+Following the Lighthouse and a11y validation results, I amended the colour scheme [from](./documentation/branding/palette-old.png) to this:
+<br/><br/>
+![NEW COLOUR SCHEME](./documentation/branding/shop-k-beauty-new.png)
+
+
 ### Imagery
 
 ### User Demographic
