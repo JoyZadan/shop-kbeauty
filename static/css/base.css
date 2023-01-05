@@ -118,7 +118,7 @@ body {
 }
 
 .nav-font-alt {
-    color: #dc3545;
+    color: #26145b;
     text-transform: uppercase;
 }
 
@@ -179,10 +179,23 @@ body {
 }
 
 /* -------------------------------- Buttons & Links Styling */
+.product-subcategories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1rem auto;
+}
+
 a:hover,
 a:active,
 a:visited {
     text-decoration: none !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active,
+.dropdown-item:hover {
+    background-color: #83a8db !important;
 }
 
 .shop-now-button,

@@ -2,11 +2,13 @@
     <ul class="navbar-nav nav-fill w-auto mx-auto">
         <!-- "ALL PRODUCTS" navlinks in here -->
         <li class="nav-item dropdown">
-            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
+            <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <p class="nav-font-alt text-center mb-0"><small class="font-weight-bold">View Products:</small></p>
+                <hr class="alt-hr">
                 <a href="{% url 'products' %}?sort=brand&direction=asc" class="dropdown-item">By Brand</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=discount&direction=desc" class="dropdown-item">By Discount</a>
@@ -17,14 +19,23 @@
         </li>
         <!-- "SKINCARE CATEGORIES" navlinks in here -->
         <li class="nav-item dropdown">
-            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-skincare-link"
+            <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="all-skincare-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Skincare
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-skincare-link">
-                <p class="nav-font-alt font-weight-bold text-center">PRODUCT TYPES</p>
+                <p class="nav-font-alt text-center mb-0"><small class="font-weight-bold">PRODUCT TYPES</small></p>
                 <hr class="alt-hr">
                 <a href="{% url 'products' %}?category=face_care" class="dropdown-item">Face Care</a>
+                <!-- "FACE CARE SUBCATEGORIES" navlinks in here -->
+                <div class="product-subcategories container-fluid">
+                    <ul class="mx-auto">
+                        <li><a href="{% url 'products' %}?subcategory=essence_serum" class="">Facial Cleanser</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=moisturizer_cream" class="">Moisturizer & Cream</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=spot_treatment" class="">Spot Treatment</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=sunscreen" class="">Sunscreen</a></li>
+                    </ul>
+                </div>
                 <a href="{% url 'products' %}?category=facial_cleanser" class="dropdown-item ">Facial Cleanser</a>
                 <a href="{% url 'products' %}?category=face_mask" class="dropdown-item">Face Mask</a>
                 <a href="{% url 'products' %}?category=eye_care" class="dropdown-item">Eye Care</a>
@@ -34,12 +45,12 @@
         </li>
         <!-- "HAIR & BODY" navlinks in here -->
         <li class="nav-item dropdown">
-            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="all-hairbody-link"
+            <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="all-hairbody-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Hair &amp; Body
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-hairbody-link">
-                <p class="nav-font-alt font-weight-bold text-center">PRODUCT TYPES</p>
+                <p class="nav-font-alt text-center mb-0"><small class="font-weight-bold">PRODUCT TYPES</small></p>
                 <hr class="alt-hr">
                 <a href="{% url 'products' %}?category=hair_care" class="dropdown-item">Hair Care</a>
                 <a href="{% url 'products' %}?category=body_care" class="dropdown-item ">Body Care</a>
@@ -50,11 +61,13 @@
         </li>
         <!-- "SPECIAL OFFERS" navlinks in here -->
         <li class="nav-item dropdown">
-            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown"
+            <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="specials-link" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <p class="nav-font-alt text-center mb-0"><small class="font-weight-bold">DEAL TYPES</small></p>
+                <hr class="alt-hr">
                 <a href="{% url 'products' %}?category=hair_body_new,skincare_new" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=hair_body_deals,skincare_deals" class="dropdown-item">Top Deals</a>
                 <a href="{% url 'products' %}?category=hair_body_clearance,skincare_clearance" class="dropdown-item">Clearance</a>
@@ -63,14 +76,14 @@
         </li>
         <!-- "ALL AVAILABLE K-BEAUTY BRANDS" navlink in here -->
         <li class="nav-item">
-            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="{% url 'brands' %}"
+            <a class="nav-font font-weight-bold nav-link text-black mr-3" href="{% url 'brands' %}"
                 aria-label="link to view all available brands">
                 Brands
             </a>
         </li>
         <!-- "K-BEAUTY TIPS" navlink in here -->
         <li class="nav-item">
-            <a class="nav-font font-weight-bold nav-link text-black mr-5" href="{% url 'skincare_tips' %}"
+            <a class="nav-font font-weight-bold nav-link text-black mr-3" href="{% url 'skincare_tips' %}"
                 aria-label="link to view all available brands">
                 K-Beauty Tips
             </a>

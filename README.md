@@ -125,14 +125,14 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 
 ## Surface Plane
 ### Typography
-I decided to use only one font, Lato, for this project and used different font-weights and italics to add contrast to text. The decision to stick to one font is based how ecommerce shops tend to look very busy with photos of products, call-to-action buttons, pricing and discount buttons, etc. For the hero section on the index.html and skincare_tips.html pages, I added an animation to the text using linear-gradient based on the site's colour scheme.
+I decided to use only one font, **Lato**, for this project and used different font-weights and italics to add contrast to text. The decision to stick to one font is based how ecommerce shops tend to look very busy with photos of products, call-to-action buttons, pricing and discount buttons, etc. For the hero section on the index.html and skincare_tips.html pages, I added an animation to the text using linear-gradient based on the site's colour scheme.
 <br/><br/>
 ![LATO FONT](./documentation/branding/lato-font.png)
 
 ### Colour Scheme
-The site is mainly black and white and uses accent colours to liven it up. I have taken inspiration from the hero image colours and added midnight blue and light blue colours to add contrast.
+The site is mainly black and white and uses accent colours to liven it up. I have taken inspiration from the hero image colours, pink and yellow, and also added midnight blue and light blue colours to add contrast.
 
-Following the Lighthouse and a11y validation results, I amended the colour scheme [from](./documentation/branding/palette-old.png) to this:
+Following the Lighthouse and a11y validation results, I amended the colour scheme from **[this](./documentation/branding/palette-old.png)** to this:
 <br/><br/>
 ![NEW COLOUR SCHEME](./documentation/branding/shop-k-beauty-new.png)
 
