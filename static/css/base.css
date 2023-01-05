@@ -38,6 +38,11 @@ body {
     text-align: start !important;
 }
 
+.dropdown-menu {
+    min-width: 25rem !important;
+    padding-top: 0 !important;
+}
+
 .logo-footer {
     font-size: 1.5rem;
     margin: 0 auto;
@@ -181,9 +186,8 @@ body {
 /* -------------------------------- Buttons & Links Styling */
 .product-subcategories {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    margin: 1rem auto;
 }
 
 a:hover,
@@ -727,6 +731,12 @@ hr {
 }
 
 @media (max-width: 441px) {
+    .dropdown-menu {
+        min-width: 15rem !important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
     .banner-font {
         font-size: 1rem;
         text-transform: uppercase;
