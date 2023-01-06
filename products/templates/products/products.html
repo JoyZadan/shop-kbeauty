@@ -13,12 +13,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-1">
-                <h2 class="display-5 brand-font text-black text-center my-5">Shop All Products</h2>
+                <h2 class="display-5 brand-font text-black text-center my-5">All K-Beauty Products</h2>
+                <!-- PRODUCTS FILTERING &amp SORTING AREA -->
+                <!-- Dynamically displays category badge based on filtered data passed from a user's navbar click event -->
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
+                <!-- Dynamically displays subcategory badge based on filtered data passed from a user's navbar click event -->
                 {% for subcat in current_subcategories %}
                     <a class="subcategory-badge text-decoration-none" href="{% url 'products' %}?subcategory={{ subcat.name }}">
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ subcat.friendly_name }}</span>
@@ -26,6 +29,7 @@
                 {% endfor %}
             </div>
         </div>
+
         <!-- Products sorting dropdown -->
         <div class="row mt-3">
             <div class="product-container col-10 offset-1">
@@ -49,6 +53,8 @@
                             </select>
                         </div>
                     </div>
+
+                    <!-- Displays number of products available from user actions: searched term on search bar, product sorting or navbar click event -->
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="alt-a mt-3 text-center font-weight-bold text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
@@ -60,12 +66,15 @@
                 </div>
             </div>
         </div>
-        <!-- All Products area -->
+
+        <!-- ALL PRODUCTS AREA -->
+        <!-- Also where all available products based on searched term, sorting action or navigation click results are displayed to users -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
             {% for product in products %}
             <!-- Individual product cards -->
             <div class="col mb-4">
                 <div class="card h-100">
+                    <!-- Product image -->
                     {% if product.image %}
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top product-image img-fluid mt-2" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -75,8 +84,10 @@
                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ product.name }}">
                     </a>
                     {% endif %}
+                    <!-- Product name -->
                     <div class="card-body">
                         <p class="card-title brand-font-alt h6 text-center">{{ product.name }}</p>
+                        <!-- Product category name -->
                         {% if product.category %}
                         <p class="small mt-2 mb-0 text-center">
                             <a class="alt-text-muted font-weight-bold"
@@ -85,6 +96,7 @@
                             </a>
                         </p>
                         {% endif %}
+                        <!-- Product subcategory name -->
                         {% if product.subcategory %}
                         <p class="small mt-2 mb-0 text-center">
                             <a class="text-muted font-weight-bold"
@@ -93,7 +105,8 @@
                             </a>
                         </p>
                         {% endif %}
-                        <!-- start of modal for editing and deleting products to avoid accidental deletion -->
+                        <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a product -->
+                        <!-- Start of Modal - available to superusers only -->
                         {% if request.user.is_superuser %}
                         <div class="text-center">
                             <div class="container d-flex justify-content-center mt-2">
@@ -115,16 +128,20 @@
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                        <p class="font-weight-bold mb-2"> Are you sure you want to delete this
-                                                            product?
+                                                        <!-- Popup Message to confirm intention to delete product -->
+                                                        <p class="font-weight-bold text-danger mb-2">
+                                                            Are you sure you want to delete this product?
                                                         </p>
-                                                        <p class="text-muted ">This product will be deleted forever if you continue.
+                                                        <p class="text-purple font-weight-bold">
+                                                            This product will be deleted forever if you continue.
                                                         </p>
                                                     </div>
                                                     <div class="card-body px-sm-4 mb-2 pt-1 pb-0 text-center">
                                                         <div class="row justify-content-end no-gutters">
+                                                            <!-- Cancel action button  -->
                                                             <button type="button" class="btn btn-sm btn-outline-black font-weight-bold text-shadow mt-1 rounded-0 mb-3 mx-2"
                                                                 data-dismiss="modal">Cancel</button>
+                                                            <!-- Delete link as button  -->
                                                             <a href="{% url 'delete_product' product.id %}"
                                                                 class="btn btn-sm btn-red text-shadow mt-1 font-weight-bold rounded-0 mb-3 mx-2">Delete</a>
                                                         </div>
@@ -139,6 +156,7 @@
                         {% endif %}
                     </div>
                     <div class="card-footer bg-white text-center mb-2">
+                         <!-- Displays the price of product, if discount is available, also shows original price and savings -->
                         <div class="price-box mb-1">
                             <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
                             {% if product.discount > 0.01 %}
@@ -146,6 +164,7 @@
                             <p class="mb-0 text-center"><span class="text-purple"><strong>You save:</strong> </span> £{{ product.discount }}</p>
                             {% endif %}
                         </div>
+                         <!-- Shop Now CTA to open product detail page for current product -->
                         <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
                             <span class="text-uppercase">Shop Now</span>
                             <span class="icon">

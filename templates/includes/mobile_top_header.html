@@ -4,7 +4,7 @@
     </a>
 </div>
 <ul class="mx-auto">
-    <!-- Search bar -->
+    <!-- SEARCH BAR AREA -->
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
@@ -30,7 +30,8 @@
             </form>
         </div>
     </li>
-    <!-- Account area -->
+
+    <!-- USER/VISITOR ACCOUNT AREA -->
     <li class="list-inline-item dropdown">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -38,20 +39,24 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
+        <!-- Account management buttons - register/login/logout and product management for superusers -->
         <div class="dropdown-menu border-0 mr-1" aria-labelledby="mobile-user-options">
+            <!-- Product Management button - displays for authenticated superusers only -->
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
                     <a href="{% url 'add_product' %}" class="dropdown-item mr-1">Product Management</a>
                 {% endif %}
                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <!-- Register and Login buttons -->
             {% else %}
                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
         </div>
     </li>
-    <!-- Wishlist area -->
+
+    <!-- WISHLIST BUTTON -->
     <li class="list-inline-item dropdown">
         <a class="text-black nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
@@ -60,11 +65,13 @@
             </div>
         </a>
     </li>
-    <!-- Bag area -->
+
+    <!-- SHOPPING BAG AREA -->
     <li class="list-inline-item">
         <a class="{% if grand_total %}alt-text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
             <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <!-- Displays total item price in the bag -->
                 <p class="my-0">
                     {% if grand_total %}
                         £{{ grand_total|floatformat:2 }}
