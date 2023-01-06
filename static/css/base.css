@@ -125,12 +125,24 @@ body {
 .nav-font-alt {
     color: #26145b;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .brand-font {
     color: #dc3545;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.subcat-font {
+    color: #000;
+}
+
+.subcat-font:hover,
+.subcat-font:active,
+.subcat-font:focus {
+    font-weight: 700;
+    color: #26145b;
 }
 
 .price-font {
@@ -194,12 +206,6 @@ a:hover,
 a:active,
 a:visited {
     text-decoration: none !important;
-}
-
-.dropdown-item:hover,
-.dropdown-item:active,
-.dropdown-item:hover {
-    background-color: #83a8db !important;
 }
 
 .shop-now-button,
