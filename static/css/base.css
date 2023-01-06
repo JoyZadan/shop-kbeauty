@@ -41,6 +41,8 @@ body {
 .dropdown-menu {
     min-width: 25rem !important;
     padding-top: 0 !important;
+    border-radius: 0;
+    border: 2px solid #83a8db;
 }
 
 .logo-footer {
@@ -376,6 +378,10 @@ hr {
     border-radius: 0 !important;
 }
 
+.featured-bg {
+    background-color: #e1e2e7;
+}
+
 /* ------------------------------- card styling to overwrite bootstrap's default styling */
 .card {
     color: #000 !important;
@@ -403,7 +409,7 @@ hr {
 /* ------------------------------- card styling for the K-Beauty tips page */
 .card-alt {
     border: 1px solid #fff !important;
-    border-radius: 5px;
+    border-radius: 0;
 }
 
 .light-blue-bg {

@@ -63,25 +63,30 @@
         {% endfor %}
     </div>
     <!-- Featured Brands -->
-    <h2 class="display-4 brand-font text-black text-center my-5">
-        Featured Brands
-    </h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
-        {% for brand in brands %}
-            {% if brand.is_featured %}
-            <div class="col mb-4">
-                <div class="card h-100">
-                    <a href="{% url 'brand_detail' brand.id %}">
-                        <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
-                    </a>
+    <div class="featured-bg mt-3">
+        <h2 class="display-4 brand-font text-black text-center pt-5 pb-4">
+            Featured Brands
+        </h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
+            {% for brand in brands %}
+                {% if brand.is_featured %}
+                <div class="col mb-4">
+                    <div class="card card-alt h-100">
+                        <a href="{% url 'brand_detail' brand.id %}">
+                            <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            {% endif %}
-        {% endfor %}
-    </div>
-    <!-- Show/ Hide All Brands -->
-    <div class="col-12 mt-2 text-center mb-5">
-        <div class="mb-3">
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <!-- BUTTON TO SHOW/ HIDE ALL AVAILABLE BRANDS -->
+        <!-- This is a sample of how to pass data safely from Django to JavaScript -->
+        <!-- Credits to: Adam Johnson's How to Safely Pass Data to JavaScript in a Django Template
+        (https://adamj.eu/tech/2022/10/06/how-to-safely-pass-data-to-javascript-in-a-django-template/)
+        and to: BugBytes for his video based on this article (https://www.youtube.com/watch?v=h39eMGWmEV4)  -->
+        <div class="col-12 text-center pb-5">
             <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3 show-brands-list-btn" value="Show">
                 <span class="text-uppercase h4">See All Brands </span>
                 <span class="icon">

@@ -10,8 +10,8 @@
 {% endblock %}
 
 {% block content %}
-    <!-- Individual product area -->
     <div class="container-fluid mt-4 mb-5">
+        <!-- INDIVIDUAL PRODUCT AREA -->
         <div class="row">
             <!-- Product image and reviews links as buttons -->
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
@@ -26,7 +26,9 @@
                     </a>
                     {% endif %}
                 </div>
-                <!-- start of modal -->
+
+                <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a product -->
+                <!-- Start of Modal -->
                 {% if request.user.is_superuser %}
                 <div class="text-center">
                     <div class="container d-flex justify-content-start mt-2 mb-2">
@@ -48,16 +50,19 @@
                                                         </button>
                                                     </div>
                                                 </div>
-                                                <p class="font-weight-bold mb-2"> Are you sure you want to delete this
-                                                    product?
+                                                <!-- Popup Message to confirm intention to delete product -->
+                                                <p class="font-weight-bold mb-2">
+                                                    Are you sure you want to delete this product?
                                                 </p>
-                                                <p class="text-muted ">This product will be deleted forever if you continue.
-                                                </p>
+                                                <p class="text-muted ">This product will be deleted forever if you continue.</p>
                                             </div>
+
                                             <div class="card-body px-sm-4 mb-2 pt-1 pb-0 text-center">
                                                 <div class="row justify-content-end no-gutters">
+                                                    <!-- Cancel action button  -->
                                                     <button type="button" class="btn btn-sm btn-outline-black font-weight-bold text-shadow mt-1 rounded-0 mb-3 mx-2"
                                                         data-dismiss="modal">Cancel</button>
+                                                    <!-- Delete link as button  -->
                                                     <a href="{% url 'delete_product' product.id %}"
                                                         class="btn btn-sm btn-red font-weight-bold text-shadow mt-1 rounded-0 mb-3 mx-2">Delete</a>
                                                 </div>
@@ -70,6 +75,8 @@
                     </div>
                 </div>
                 {% endif %}
+
+                <!-- VIEW ALL REVIEWS AND ADD A REVIEW BUTTONS -->
                 <!-- See Reviews and Add Review links as buttons -->
                 <div class="col-12 mt-2">
                     <p class="text-muted font-weight-bold small w-75">
@@ -94,7 +101,8 @@
                     </a>
                 </div>
             </div>
-            <!-- Products details area -->
+
+            <!-- PRODUCT DETAILS AREA -->
             <div class="col-12 col-md-6 col-lg-4 mb-1">
                 <div class="product-details-container mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt mb-1 mt-3">{{ product.name }}</p>
@@ -106,6 +114,7 @@
                             </a>
                         </span>
                     </p>
+                    <!-- Displays the category for product and links to products page, filtered by current category -->
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="alt-text-muted font-weight-bold"
@@ -114,6 +123,7 @@
                         </a>
                     </p>
                     {% endif %}
+                    <!-- Displays the subcategory for product and links to products page, filtered by current subcategory -->
                     {% if product.subcategory %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted font-weight-bold"
@@ -122,6 +132,7 @@
                         </a>
                     </p>
                     {% endif %}
+                    <!-- Displays the price of product, if discount is available, also shows original price and savings -->
                     <div class="price-box">
                         <p class="mb-0 pt-3 pb-1"><span class="h3 text-left font-weight-bold price-font">£{{ product.price }}</span></p>
                         {% if product.discount > 0.01 %}
@@ -129,7 +140,8 @@
                         <p class="mb-0 text-left"><span class="text-purple"><strong>You save:</strong> </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
-                    <!-- Start of order form -->
+
+                    <!-- START OF THE ORDER FORM, DISPLAYS SIZES IF THEY ARE AVAILABLE AND SHOWS THE ORDER QUANTITY BUTTON -->
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
@@ -152,6 +164,7 @@
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group input-group-{{ product.id }}">
+                                        <!-- Decrement order quantity button -->
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-black rounded-0 decrement-qty_{{ product.id }}"
                                                 data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" aria-label="decrement item number">
@@ -162,6 +175,7 @@
                                         </div>
                                         <input class="form-control qty_input id_qty_{{ product.id }}" type="number" name="quantity" value="1"
                                             min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}" aria-label="item quantity">
+                                        <!-- Decrement order quantity button -->
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-black rounded-0 increment-qty_{{ product.id }}"
                                                 data-item_id="{{ product.id }}" aria-label="increment item number">
@@ -173,6 +187,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Keep shopping link as button -->
                             <div class="col-12{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-2">
@@ -187,10 +202,11 @@
                         </div>
                         {% endwith %}
                     </form>
-                    <!-- End of order form -->
-                    <!-- Start of product description, how-to and ingredients accordion -->
-                    <!-- Accordion credit: MDBootstrap.com -->
-                    <!--Accordion wrapper-->
+                    <!-- END OF ORDER FORM -->
+
+                    <!-- START OF ACCORDION FOR PRODUCT DESCRIPTION, HOW TO USE AND PRODUCT INGREDIENTS -->
+                    <!-- Accordion credit: MDBootstrap.com (https://mdbootstrap.com/docs/standard/components/accordion/) -->
+                    <!-- Accordion wrapper-->
                     <div class="accordion md-accordion mt-5" id="accordionEx1" role="tablist" aria-multiselectable="true">
                         <!-- Accordion card -->
                         <div class="card">
@@ -253,9 +269,12 @@
                     </div>
                     <!-- End of Accordion wrapper -->
                 </div>
+                <!-- END OF ACCORDION -->
             </div>
         </div>
-        <!-- Featured Reviews -->
+        <!-- END OF INDIVIDUAL PRODUCT AREA -->
+
+        <!-- FEATURED REVIEWS -->
         <div class="container mb-5">
             <h3 class="brand-font-alt pt-2">
                 Featured Reviews for {{ product.name }}
@@ -267,10 +286,14 @@
                     <div class="col-12 mt-3">
                         <div class="card h-100">
                             <div class="card-body">
+                                <!-- Review title -->
                                 <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
+                                <!-- Review author -->
                                 <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</em></small></p>
+                                <!-- Review content -->
                                 <p class="card-text">{{ review.content }}</p>
                             </div>
+                            <!-- Prompts site users/ visitors to add their review if they use current product -->
                             <div class="card-footer">
                                 <p class="brand-font-alt">
                                     Have you used {{ product.name }} before?
@@ -285,21 +308,24 @@
                 {% endfor %}
             </div>
             {% else %}
+            <!-- Message displays if there are no featured or available reviews -->
             <div class="col">
-                <p>No reviews available for this product yet.</p>
+                <p>No featured reviews available for this product yet.</p>
             </div>
             {% endif %}
         </div>
-        <!-- Featured Brands -->
-        <hr>
-        <h2 class="display-4 brand-font-alt text-center pt-2 my-5">
+    </div>
+
+    <!-- FEATURED BRANDS -->
+    <div class="featured-bg mt-3">
+        <h2 class="display-4 brand-font-alt text-center pt-5 pb-4">
             Featured Brands
         </h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-5 mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
             {% for brand in brands %}
                 {% if brand.is_featured %}
                 <div class="col mb-4">
-                    <div class="card h-100">
+                    <div class="card card-alt h-100">
                         <a href="{% url 'brand_detail' brand.id %}">
                             <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
                         </a>
@@ -308,8 +334,9 @@
                 {% endif %}
             {% endfor %}
         </div>
-        <!-- Show/ Hide All Brands -->
-        <div class="col-12 mt-2 text-center mb-5">
+
+        <!-- BUTTON TO SHOW/ HIDE ALL AVAILABLE BRANDS -->
+        <div class="col-12 mt-2 text-center pb-5">
             <div class="mb-3">
                 <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3 show-brands-list-btn" value="Show">
                     <span class="text-uppercase h4">See All Brands</span>
