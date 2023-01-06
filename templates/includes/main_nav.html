@@ -1,5 +1,6 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav nav-fill w-auto mx-auto">
+
         <!-- "ALL PRODUCTS" navlinks in here -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="all-products-link"
@@ -17,6 +18,7 @@
                 <a href="{% url 'products' %}" class="dropdown-item brand-font">All Products</a>
             </div>
         </li>
+
         <!-- "SKINCARE CATEGORIES" navlinks in here -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="all-skincare-link"
@@ -26,8 +28,10 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-skincare-link">
                 <p class="nav-font text-center mb-0"><small class="font-weight-bold">Product Types</small></p>
                 <hr class="alt-hr">
+
+                <!-- "FACE CARE CATEGORY" navlink in here -->
                 <a href="{% url 'products' %}?category=face_care" class="dropdown-item nav-font-alt">Face Care</a>
-                <!-- "FACE CARE SUBCATEGORIES" navlinks in here -->
+                    <!-- "FACE CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=essence_serum" class="subcat-font">Essence &amp Serum</a></li>
@@ -36,8 +40,10 @@
                         <li><a href="{% url 'products' %}?subcategory=sunscreen" class="subcat-font">Sunscreen</a></li>
                     </ul>
                 </div>
+
+                <!-- "FACIAL CLEANSER CATEGORY" navlink in here -->
                 <a href="{% url 'products' %}?category=facial_cleanser" class="dropdown-item font-weight-bold nav-font-alt">Facial Cleanser</a>
-                <!-- "FACIAL CLEANSER SUBCATEGORIES" navlinks in here -->
+                    <!-- "FACIAL CLEANSER SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=exfoliator_peeling_scrub" class="subcat-font">Exfoliator, Peeling &amp Scrub</a></li>
@@ -45,8 +51,10 @@
                         <li><a href="{% url 'products' %}?subcategory=makeup_remover" class="subcat-font">Makeup Remover</a></li>
                     </ul>
                 </div>
+
+                <!-- "FACE MASK CATEGORY" navlink in here -->
                 <a href="{% url 'products' %}?category=face_mask" class="dropdown-item font-weight-bold nav-font-alt">Face Mask</a>
-                <!-- "FACE MASK SUBCATEGORIES" navlinks in here -->
+                    <!-- "FACE MASK SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=gel_masks" class="subcat-font">Gel Masks</a></li>
@@ -54,8 +62,10 @@
                         <li><a href="{% url 'products' %}?subcategory=sleeping_masks" class="subcat-font">Sleeping Masks</a></li>
                     </ul>
                 </div>
+
+                <!-- "EYE CARE CATEGORY" navlink in here -->
                 <a href="{% url 'products' %}?category=eye_care" class="dropdown-item font-weight-bold nav-font-alt">Eye Care</a>
-                <!-- "EYE CARE SUBCATEGORIES" navlinks in here -->
+                    <!-- "EYE CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=eye_cream" class="subcat-font">Eye Cream</a></li>
@@ -63,18 +73,23 @@
                         <li><a href="{% url 'products' %}?subcategory=eye_serum_essence" class="subcat-font">Eye Serum &amp Essence</a></li>
                     </ul>
                 </div>
+
+                <!-- "LIP CARE CATEGORY" navlink in here -->
                 <a href="{% url 'products' %}?category=lip_care" class="dropdown-item font-weight-bold nav-font-alt">Lip Care</a>
-                <!-- "LIP CARE SUBCATEGORIES" navlinks in here -->
+                    <!-- "LIP CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=lip_mask" class="subcat-font">Lip Masks</a></li>
                     </ul>
                 </div>
+
+                <!-- "LINK TO ALL SKINCARE PRODUCTS -->
                 <a href="{% url 'products' %}?category=face_care,facial_cleanser,face_mask,eye_care,lip_care"
                     class="dropdown-item font-weight-bold brand-font">All Skincare
                 </a>
             </div>
         </li>
+
         <!-- "HAIR & BODY" navlinks in here -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="all-hairbody-link"
@@ -84,13 +99,53 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-hairbody-link">
                 <p class="nav-font text-center mb-0"><small class="font-weight-bold">Product Types</small></p>
                 <hr class="alt-hr">
-                <a href="{% url 'products' %}?category=hair_care" class="dropdown-item">Hair Care</a>
-                <a href="{% url 'products' %}?category=body_care" class="dropdown-item ">Body Care</a>
-                <a href="{% url 'products' %}?category=hand_care" class="dropdown-item ">Hand Care</a>
-                <a href="{% url 'products' %}?category=foot_care" class="dropdown-item">Foot Care</a>
-                <a href="{% url 'products' %}?category=hair_care,body_care,hand_care,foot_care" class="dropdown-item">All Hair &amp Body</a>
+
+                <!-- "HAIR CARE CATEGORY" navlink in here -->
+                <a href="{% url 'products' %}?category=hair_care" class="dropdown-item font-weight-bold nav-font-alt">Hair Care</a>
+                    <!-- "HAIR CARE SUBCATEGORIES" navlinks in here -->
+                <div class="product-subcategories">
+                    <ul class="ml-5">
+                        <li><a href="{% url 'products' %}?subcategory=hair_treatment" class="subcat-font">Hair Treatment</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=shampoo_conditioner" class="subcat-font">Shampoo &amp Conditioner</a></li>
+                    </ul>
+                </div>
+
+                <!-- "BODY CARE CATEGORY" navlink in here -->
+                <a href="{% url 'products' %}?category=body_care" class="dropdown-item font-weight-bold nav-font-alt">Body Care</a>
+                    <!-- "HAIR CARE SUBCATEGORIES" navlinks in here -->
+                <div class="product-subcategories">
+                    <ul class="ml-5">
+                        <li><a href="{% url 'products' %}?subcategory=bath_shower" class="subcat-font">Bath &amp Shower</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=body_lotion_moisturizer" class="subcat-font">Body Lotion &amp Moisturizer</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=body_scrubs_exfoliants" class="subcat-font">Body Scrubs &amp Exfoliants</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=body_spray" class="subcat-font">Body Spray</a></li>
+                    </ul>
+                </div>
+
+                <!-- "HAND CARE CATEGORY" navlink in here -->
+                <a href="{% url 'products' %}?category=hand_care" class="dropdown-item font-weight-bold nav-font-alt">Hand Care</a>
+                    <!-- "HAND CARE SUBCATEGORIES" navlinks in here -->
+                <div class="product-subcategories">
+                    <ul class="ml-5">
+                        <li><a href="{% url 'products' %}?subcategory=hand_moisturizer_lotion" class="subcat-font">Hand Moisturizer &amp Lotion</a></li>
+                    </ul>
+                </div>
+
+                <!-- "FOOT CARE CATEGORY" navlink in here -->
+                <a href="{% url 'products' %}?category=foot_care" class="dropdown-item font-weight-bold nav-font-alt">Foot Care</a>
+                    <!-- "FOOT CARE SUBCATEGORIES" navlinks in here -->
+                <div class="product-subcategories">
+                    <ul class="ml-5">
+                        <li><a href="{% url 'products' %}?subcategory=foot_cream_care" class="subcat-font">Foot Cream &amp Care</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=foot_scrub_exfoliants" class="subcat-font">Foot Scrub &amp Exfoliants</a></li>
+                    </ul>
+                </div>
+
+                <!-- "LINK TO ALL HAIR &amp BODY PRODUCTS -->
+                <a href="{% url 'products' %}?category=hair_care,body_care,hand_care,foot_care" class="dropdown-item font-weight-bold brand-font">All Hair &amp Body</a>
             </div>
         </li>
+
         <!-- "SPECIAL OFFERS" navlinks in here -->
         <li class="nav-item dropdown">
             <a class="nav-font font-weight-bold nav-link text-black mr-3" href="#" id="specials-link" data-toggle="dropdown"
@@ -103,9 +158,13 @@
                 <a href="{% url 'products' %}?category=hair_body_new,skincare_new" class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=hair_body_deals,skincare_deals" class="dropdown-item">Top Deals</a>
                 <a href="{% url 'products' %}?category=hair_body_clearance,skincare_clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new" class="dropdown-item">All Specials</a>
+                <!-- "LINK TO ALL SPECIAL OFFERS -->
+                <a href="{% url 'products' %}?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new"
+                    class="dropdown-item font-weight-bold brand-font">All Special Offers
+                </a>
             </div>
         </li>
+
         <!-- "ALL AVAILABLE K-BEAUTY BRANDS" navlink in here -->
         <li class="nav-item">
             <a class="nav-font font-weight-bold nav-link text-black mr-3" href="{% url 'brands' %}"
@@ -113,6 +172,7 @@
                 Brands
             </a>
         </li>
+
         <!-- "K-BEAUTY TIPS" navlink in here -->
         <li class="nav-item">
             <a class="nav-font font-weight-bold nav-link text-black mr-3" href="{% url 'skincare_tips' %}"
@@ -122,5 +182,3 @@
         </li>
     </ul>
 </div>
-
-
