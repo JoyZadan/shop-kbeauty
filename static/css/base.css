@@ -22,6 +22,11 @@ body {
     width: 1.5rem;
 }
 
+/* -------------------------------- Navbar Styling */
+.navbar {
+    padding-bottom: 0;
+}
+
 .navbar-toggler {
     background-color: #26145b !important;
     color: #fff !important;
@@ -40,16 +45,11 @@ body {
 
 .dropdown-menu {
     min-width: 25rem !important;
+    margin-top: 0 !important;
     padding-top: 0 !important;
     border-radius: 0;
     border: 2px solid #83a8db;
-}
-
-.logo-footer {
-    font-size: 1.5rem;
-    margin: 0 auto;
-    text-transform: uppercase;
-    color: #dc3545;
+    background-color: #e1e2e7;
 }
 
 /* -------------------------------- Hero Section Styling */
@@ -641,6 +641,13 @@ hr {
     background-color: #000;
 }
 
+.logo-footer {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #dc3545;
+}
+
 .footer-note {
     background-color: #000;
     margin-bottom: 0 !important;
@@ -674,6 +681,14 @@ hr {
         display: none;
     }
 
+    .navbar-icons {
+        margin-bottom: 0 !important;
+    }
+
+    .navbar-collapse {
+        margin-bottom: 0.625rem;
+    }
+
     .btn-red,
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
@@ -687,6 +702,14 @@ hr {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-icons {
+        display: flex;
+        /* margin: 0 auto; */
+        margin-bottom: 0 !important;
     }
 }
 
@@ -707,6 +730,13 @@ hr {
     .product-image-lg {
         width: 7.8125rem;
         height: 9.375rem;
+    }
+}
+
+@media (max-width: 798px) {
+    .navbar-icons {
+        display: flex;
+        margin: 0 auto;
     }
 }
 
@@ -743,6 +773,10 @@ hr {
 @media (max-width: 636px) {
     .nav-link {
         padding: 0;
+    }
+
+    .navbar {
+        margin-bottom: 0.625rem;
     }
 }
 

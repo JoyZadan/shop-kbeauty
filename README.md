@@ -11,7 +11,7 @@
 
 # Project Overview
 
-Shop K-Beauty is a multi-brand ecommerce full stack project built using Django, Python and JavaScript, deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Shop K-Beauty is a business to consumer online retailer of K-Beauty skincare and hair &amp; body products. The categories of available products are further split into subcategories. On a brand's page, all available products from the brand are also displayed.
+Shop K-Beauty is a multi-brand, ecommerce full stack project built using Django, Python and JavaScript, deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Shop K-Beauty is a business to consumer online retailer of K-Beauty skincare and hair &amp; body products. The categories of available products are further split into subcategories. On a brand's page, all available products from the brand are also displayed.
 <br/>
 <br/>
 
