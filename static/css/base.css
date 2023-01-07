@@ -685,10 +685,6 @@ hr {
         margin-bottom: 0 !important;
     }
 
-    .navbar-collapse {
-        margin-bottom: 0.625rem;
-    }
-
     .btn-red,
     .btn.btn-outline-black.rounded-0,
     .btn.btn-black.rounded-0 {
@@ -710,6 +706,10 @@ hr {
         display: flex;
         /* margin: 0 auto; */
         margin-bottom: 0 !important;
+    }
+
+    .navbar-collapse {
+        margin-bottom: 0.625rem;
     }
 }
 
