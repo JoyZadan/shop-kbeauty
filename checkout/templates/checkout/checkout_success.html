@@ -17,12 +17,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font-alt text-center my-4">Thank You</h2>
                 <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
         </div>
-
-        <!-- Order Summary -->
+        <!-- ORDER SUMMARY -->
         <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="order-confirmation-wrapper p-2 alt-border">
@@ -30,7 +30,7 @@
                     <!-- ORDER INFO -->
                     <div class="row">
                         <div class="col">
-                            <small class="alt-text-muted">Order Info:</small>
+                            <small class="text-pink">Order Info:</small>
                         </div>
                     </div>
                     <div class="row">
@@ -38,6 +38,7 @@
                             <p class="mb-0 text-black font-weight-bold">Order Number</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
+                            <!-- Order Number -->
                             <p class=" small mb-0">{{ order.order_number }}</p>
                         </div>
                     </div>
@@ -46,6 +47,7 @@
                             <p class="mb-0 text-black font-weight-bold">Order Date</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
+                            <!-- Order Date -->
                             <p class="mb-0">{{ order.date }}</p>
                         </div>
                     </div>
@@ -53,10 +55,10 @@
                     <!-- ORDER DETAILS -->
                     <div class="row mt-3">
                         <div class="col">
-                            <small class="alt-text-muted">Order Details:</small>
+                            <small class="text-pink">Order Details:</small>
                         </div>
                     </div>
-
+                    <!-- Lists all items ordered including product name, size, item quantity and price of each item -->
                     {% for item in order.lineitems.all %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -73,10 +75,9 @@
                     <!-- DELIVERING TO -->
                     <div class="row mt-3">
                         <div class="col">
-                            <small class="alt-text-muted">Delivering To:</small>
+                            <small class="text-pink">Delivering To:</small>
                         </div>
                     </div>
-
                     <!-- 8 rows for each form field in the Delivering To section -->
                     <!-- row 1: Full Name -->
                     <div class="row">
@@ -87,7 +88,6 @@
                             <p class="mb-0">{{ order.full_name }}</p>
                         </div>
                     </div>
-
                     <!-- row 2: Address 1 -->
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -97,7 +97,6 @@
                             <p class="mb-0">{{ order.street_address1 }}</p>
                         </div>
                     </div>
-
                     <!-- row 3: Address 2 -->
                     {% if order.street_address2 %}
                     <div class="row">
@@ -109,7 +108,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     <!-- row 4: County -->
                     {% if order.county %}
                     <div class="row">
@@ -121,7 +119,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     <!-- row 5: Town or City -->
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -131,7 +128,6 @@
                             <p class="mb-0">{{ order.town_or_city }}</p>
                         </div>
                     </div>
-
                     {% if order.postcode %}
                     <!-- row 6: Post Code -->
                     <div class="row">
@@ -143,7 +139,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     <!-- row 7: Country -->
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -153,7 +148,6 @@
                             <p class="mb-0">{{ order.country }}</p>
                         </div>
                     </div>
-
                     <!-- row 8: Phone Number -->
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -167,10 +161,9 @@
                     <!-- BILLING INFO -->
                     <div class="row mt-3">
                         <div class="col">
-                            <small class="alt-text-muted">Billing Info:</small>
+                            <small class="text-pink">Billing Info:</small>
                         </div>
                     </div>
-
                     <!-- 3 rows for each form field in the Billing Info section -->
                     <!-- row 1: Order Total -->
                     <div class="row">
@@ -199,12 +192,14 @@
                             <p class="mb-0">£{{ order.grand_total }}</p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+
+        <!-- REDIRECT LINKS -->
         <div class="row mb-5 mt-3">
             <div class="col-12 col-lg-7 text-right">
+                <!-- Link to user profile if from profile -->
                 {% if from_profile %}
                 <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
                     <span class="icon mr-2">
@@ -213,6 +208,7 @@
                     <span class="text-uppercase">Back to Profile</span>
                 </a>
                 {% else %}
+                <!-- Link to all specials if not from profile -->
                 <a href="{% url 'products' %}?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new" class="btn btn-black rounded-0 my-2">
                     <span class="icon mr-2">
                         <i class="fas fa-gifts"></i>

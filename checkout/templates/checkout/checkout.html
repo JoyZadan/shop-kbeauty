@@ -18,21 +18,25 @@
     <div class="container">
         <div class="row">
             <div class="col">
+                <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font-alt text-center my-4">Checkout</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
+
+            <!-- ORDER SUMMARY, ONE OF TWO COLUMNS AND SHOWS ON RIGHT SIDE FOR 992px SCREEN SIZE AND UP -->
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="font-weight-bold">Order Summary ({{ product_count }})</p>
                 <div class="row">
                     <div class="col-7 offset-2">
-                        <p class="mb-1 mt-0 small text-muted">Item</p>
+                        <p class="mb-1 mt-0 small text-purple font-weight-bold">Item</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                        <p class="mb-1 mt-0 small text-purple font-weight-bold">Subtotal</p>
                     </div>
                 </div>
+                <!-- List of items in the bag -->
                 {% for item in bag_items %}
                 <div class="row my-1">
                     <div class="col-2 mb-1">
@@ -46,11 +50,11 @@
                     </div>
                     <div class="col-7">
                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                        <p class="my-0 small text-muted">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        <p class="my-0 small text-black">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                        <p class="my-0 small text-black">Qty: {{ item.quantity }}</p>
                     </div>
                     <div class="col-3 text-right">
-                        <p class="my-0 small text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p class="my-0 small text-black">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
                 {% endfor %}
@@ -68,17 +72,19 @@
                     </div>
                 </div>
             </div>
+
+            <!-- ORDER FORM, ONE OF TWO COLUMNS AND SHOWS ON LEFT SIDE FOR 992px SCREEN SIZE AND UP -->
             <div class="col-12 col-lg-6">
                 <p class="font-weight-bold">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small text-purple font-weight-bold px-2 w-auto">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label small text-purple font-weight-bold px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
@@ -101,7 +107,7 @@
 						</div>
                     </fieldset>
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small text-purple font-weight-bold px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->
@@ -133,6 +139,7 @@
             </div>
         </div>
     </div>
+
     <!-- Loading overlay with a giant spinner icon in the center of the screen -->
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">

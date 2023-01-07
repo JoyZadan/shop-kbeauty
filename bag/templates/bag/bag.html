@@ -33,7 +33,8 @@
                     <div class="row">
                         <div class="col">
                             {% include "bag/checkout_buttons.html" %}
-                            <p class="alt-text-muted mb-5 mt-3">A summary of your bag contents is below</p>
+                            <!-- Summary of bag content message that only appears on small screens -->
+                            <p class="text-purple font-weight-bold mb-5 mt-3">A summary of your bag contents is below:</p>
                         </div>
                     </div>
                     {% for item in bag_items %}

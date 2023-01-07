@@ -17,12 +17,13 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col">
+                <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font-alt text-center my-5">My Profile</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="h6">Hi {{ user.username }},</p>
+                <p class="font-weight-bold">Hi {{ user.username }},</p>
             </div>
             <div class="col-12">
                 <p>
@@ -32,16 +33,18 @@
             </div>
         </div>
         <div class="row">
+            <!-- DEFAULT DELIVERY INFORMATION, ONE OF TWO COLUMNS AND SHOWS ON LEFT SIDE FOR 992px SCREEN SIZE AND UP -->
             <div class="col-12 col-lg-6">
-                <p class="alt-text-muted">Default Delivery Information</p>
+                <p class="text-pink font-weight-bold">Default Delivery Information</p>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
                 </form>
             </div>
+            <!-- ORDER HISTORY, ONE OF TWO COLUMNS AND SHOWS ON RIGHT SIDE FOR 992px SCREEN SIZE AND UP -->
             <div class="col-12 col-lg-6">
-                <p class="alt-text-muted">Order History</p>
+                <p class="text-pink font-weight-bold">Order History</p>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">
                         <thead>
@@ -53,11 +56,13 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Lists all past orders -->
                             {% for order in orders %}
                             <tr>
                                 <td>
+                                    <!-- Link to open past order confirmation  -->
                                     <a href="{% url 'order_history' order.order_number %}"
-                                        title="{{ order.order_number }}">
+                                        title="{{ order.order_number }}" class="alt-text-muted font-weight-bold">
                                         {{ order.order_number|truncatechars:6 }}
                                     </a>
                                 </td>

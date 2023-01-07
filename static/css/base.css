@@ -178,6 +178,10 @@ body {
     color: #000 !important;
 }
 
+.text-pink {
+    color: #dc3545;
+}
+
 .text-muted {
     color: #26145b !important;
 }

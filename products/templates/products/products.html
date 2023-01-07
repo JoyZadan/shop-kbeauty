@@ -16,7 +16,7 @@
                 <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font text-black text-center my-5">All K-Beauty Products</h2>
 
-                <!-- PRODUCTS FILTERING &amp SORTING AREA -->
+                <!-- PRODUCTS FILTERING &amp; SORTING AREA -->
                 {% for c in current_categories %}
                     <!-- Dynamically displays category badge based on filtered data passed from a user's navbar click event -->
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">

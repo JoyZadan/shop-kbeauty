@@ -10,11 +10,11 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <p class="nav-font text-center mb-0"><small class="font-weight-bold">View Products:</small></p>
                 <hr class="alt-hr">
-                <a href="{% url 'products' %}?sort=brand&ampdirection=asc" class="dropdown-item">By Brand</a>
-                <a href="{% url 'products' %}?sort=price&ampdirection=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=discount&ampdirection=desc" class="dropdown-item">By Discount</a>
-                <a href="{% url 'products' %}?sort=category&ampdirection=asc" class="dropdown-item">By Category</a>
-                <a href="{% url 'products' %}?sort=subcategory&ampdirection=asc" class="dropdown-item">By Subcategory</a>
+                <a href="{% url 'products' %}?sort=brand&amp;direction=asc" class="dropdown-item">By Brand</a>
+                <a href="{% url 'products' %}?sort=price&amp;direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=discount&amp;direction=desc" class="dropdown-item">By Discount</a>
+                <a href="{% url 'products' %}?sort=category&amp;direction=asc" class="dropdown-item">By Category</a>
+                <a href="{% url 'products' %}?sort=subcategory&amp;direction=asc" class="dropdown-item">By Subcategory</a>
                 <a href="{% url 'products' %}" class="dropdown-item brand-font">All Products</a>
             </div>
         </li>
@@ -34,8 +34,8 @@
                     <!-- "FACE CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
-                        <li><a href="{% url 'products' %}?subcategory=essence_serum" class="subcat-font">Essence &amp Serum</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=moisturizer_cream" class="subcat-font">Moisturizer &amp Cream</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=essence_serum" class="subcat-font">Essence &amp; Serum</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=moisturizer_cream" class="subcat-font">Moisturizer &amp; Cream</a></li>
                         <li><a href="{% url 'products' %}?subcategory=spot_treatment" class="subcat-font">Spot Treatment</a></li>
                         <li><a href="{% url 'products' %}?subcategory=sunscreen" class="subcat-font">Sunscreen</a></li>
                     </ul>
@@ -46,8 +46,8 @@
                     <!-- "FACIAL CLEANSER SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
-                        <li><a href="{% url 'products' %}?subcategory=exfoliator_peeling_scrub" class="subcat-font">Exfoliator, Peeling &amp Scrub</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=face_wash_cleanser" class="subcat-font">Face Wash &amp Cleanser</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=exfoliator_peeling_scrub" class="subcat-font">Exfoliator, Peeling &amp; Scrub</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=face_wash_cleanser" class="subcat-font">Face Wash &amp; Cleanser</a></li>
                         <li><a href="{% url 'products' %}?subcategory=makeup_remover" class="subcat-font">Makeup Remover</a></li>
                     </ul>
                 </div>
@@ -70,7 +70,7 @@
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=eye_cream" class="subcat-font">Eye Cream</a></li>
                         <li><a href="{% url 'products' %}?subcategory=eye_gel_patch" class="subcat-font">Eye Gel Patch</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=eye_serum_essence" class="subcat-font">Eye Serum &amp Essence</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=eye_serum_essence" class="subcat-font">Eye Serum &amp; Essence</a></li>
                     </ul>
                 </div>
 
@@ -106,7 +106,7 @@
                 <div class="product-subcategories">
                     <ul class="ml-5">
                         <li><a href="{% url 'products' %}?subcategory=hair_treatment" class="subcat-font">Hair Treatment</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=shampoo_conditioner" class="subcat-font">Shampoo &amp Conditioner</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=shampoo_conditioner" class="subcat-font">Shampoo &amp; Conditioner</a></li>
                     </ul>
                 </div>
 
@@ -115,9 +115,9 @@
                     <!-- "HAIR CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
-                        <li><a href="{% url 'products' %}?subcategory=bath_shower" class="subcat-font">Bath &amp Shower</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=body_lotion_moisturizer" class="subcat-font">Body Lotion &amp Moisturizer</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=body_scrubs_exfoliants" class="subcat-font">Body Scrubs &amp Exfoliants</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=bath_shower" class="subcat-font">Bath &amp; Shower</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=body_lotion_moisturizer" class="subcat-font">Body Lotion &amp; Moisturizer</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=body_scrubs_exfoliants" class="subcat-font">Body Scrubs &amp; Exfoliants</a></li>
                         <li><a href="{% url 'products' %}?subcategory=body_spray" class="subcat-font">Body Spray</a></li>
                     </ul>
                 </div>
@@ -127,7 +127,7 @@
                     <!-- "HAND CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
-                        <li><a href="{% url 'products' %}?subcategory=hand_moisturizer_lotion" class="subcat-font">Hand Moisturizer &amp Lotion</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=hand_moisturizer_lotion" class="subcat-font">Hand Moisturizer &amp; Lotion</a></li>
                     </ul>
                 </div>
 
@@ -136,13 +136,13 @@
                     <!-- "FOOT CARE SUBCATEGORIES" navlinks in here -->
                 <div class="product-subcategories">
                     <ul class="ml-5">
-                        <li><a href="{% url 'products' %}?subcategory=foot_cream_care" class="subcat-font">Foot Cream &amp Care</a></li>
-                        <li><a href="{% url 'products' %}?subcategory=foot_scrub_exfoliants" class="subcat-font">Foot Scrub &amp Exfoliants</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=foot_cream_care" class="subcat-font">Foot Cream &amp; Care</a></li>
+                        <li><a href="{% url 'products' %}?subcategory=foot_scrub_exfoliants" class="subcat-font">Foot Scrub &amp; Exfoliants</a></li>
                     </ul>
                 </div>
 
-                <!-- "LINK TO ALL HAIR &amp BODY PRODUCTS -->
-                <a href="{% url 'products' %}?category=hair_care,body_care,hand_care,foot_care" class="dropdown-item font-weight-bold brand-font">All Hair &amp Body</a>
+                <!-- "LINK TO ALL HAIR &amp; BODY PRODUCTS -->
+                <a href="{% url 'products' %}?category=hair_care,body_care,hand_care,foot_care" class="dropdown-item font-weight-bold brand-font">All Hair &amp; Body</a>
             </div>
         </li>
 
