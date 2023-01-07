@@ -67,8 +67,9 @@
                             </div>
                             <div class=" text-center">
                                 <div class="price-box mb-2">
-                                    <p class="h4 mb-0 pb-1"><span
-                                            class="text-left alt-text-muted brand-font">£{{ product.price }}</span></p>
+                                    <p class="h4 mb-0 pb-1">
+                                        <span class="text-left text-pink brand-font">£{{ product.price }}</span>
+                                    </p>
                                     {% if product.discount > 0.01 %}
                                     <p class="mb-0 text-muted"><s>£{{ product.original_price }}</s></p>
                                     <p class="mb-0 text-center"><span class="text-purple">
