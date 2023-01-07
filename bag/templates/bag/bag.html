@@ -14,12 +14,15 @@
     <div class="container mb-2">
         <div class="row">
             <div class="col">
+                <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font-alt text-center my-5">Shopping Bag</h2>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col">
+
+                <!-- SHOPPING BAG LAYOUT FOR SMALL SCREENS -->
                 {% if bag_items %}
                 <div class="d-block d-md-none">
                     <div class="row">
@@ -57,6 +60,8 @@
                         <i class="fas fa-arrow-up text-warning text-decoration-none mx-auto my-auto"></i>
                     </button>
                 </div>
+
+                <!-- SHOPPING BAG LAYOUT FOR SCREENS 768px AND UP -->
                 <div class="table-responsive rounded d-none d-md-block">
                     <table class="table table-sm table-borderless">
                         <thead class="text-black">
@@ -106,6 +111,7 @@
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
+                        <!-- CTA BUTTON -->
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
                 </div>

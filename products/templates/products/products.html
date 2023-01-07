@@ -13,16 +13,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-1">
+                <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font text-black text-center my-5">All K-Beauty Products</h2>
+
                 <!-- PRODUCTS FILTERING &amp SORTING AREA -->
-                <!-- Dynamically displays category badge based on filtered data passed from a user's navbar click event -->
                 {% for c in current_categories %}
+                    <!-- Dynamically displays category badge based on filtered data passed from a user's navbar click event -->
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
-                <!-- Dynamically displays subcategory badge based on filtered data passed from a user's navbar click event -->
                 {% for subcat in current_subcategories %}
+                    <!-- Dynamically displays subcategory badge based on filtered data passed from a user's navbar click event -->
                     <a class="subcategory-badge text-decoration-none" href="{% url 'products' %}?subcategory={{ subcat.name }}">
                         <span class="p-2 mt-2 badge badge-green text-black rounded-0 border border-dark">{{ subcat.friendly_name }}</span>
                     </a>
@@ -30,7 +32,7 @@
             </div>
         </div>
 
-        <!-- Products sorting dropdown -->
+        <!-- PRODUCTS SORTING DROPDOWN -->
         <div class="row mt-3">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2">
@@ -68,8 +70,8 @@
         </div>
 
         <!-- ALL PRODUCTS AREA -->
-        <!-- Also where all available products based on searched term, sorting action or navigation click results are displayed to users -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
+            <!-- Also where all available products based on searched term, sorting action or navigation click results are displayed to users -->
             {% for product in products %}
             <!-- Individual product cards -->
             <div class="col mb-4">
@@ -105,8 +107,8 @@
                             </a>
                         </p>
                         {% endif %}
+
                         <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a product -->
-                        <!-- Start of Modal - available to superusers only -->
                         {% if request.user.is_superuser %}
                         <div class="text-center">
                             <div class="container d-flex justify-content-center mt-2">
@@ -114,6 +116,7 @@
                                     Edit Product
                                 </a>
                                 <button class="btn btn-sm btn-red text-shadow font-weight-bold mt-1 rounded-0 mb-3 mx-2" data-toggle="modal" data-target="#modal-{{ product.id }}">Delete Product</button>
+                                <!-- Start of Modal - available to superusers only -->
                                 <div id="modal-{{ product.id }}" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                         <div class="modal-content border-0">
@@ -151,6 +154,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- End of Modal -->
                             </div>
                         </div>
                         {% endif %}

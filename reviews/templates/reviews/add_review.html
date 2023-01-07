@@ -11,6 +11,7 @@
 
 {% block content %}
     <div class="container mb-5">
+        <!-- PAGE HEADING -->
         <h2 class="display-5 brand-font-alt text-center mt-5 mb-3">Add a review</h2>
         <p class="text-center h6">Share your experience using {{ product.name }}</p>
         <hr>
@@ -75,6 +76,7 @@
                                     </p>
                                     {% endif %}
                                 </div>
+                                <!-- CTA LINK AS BUTTON -->
                                 <a href="{% url 'product_detail' product.id %}"
                                     class="btn btn-sm btn-black text-shadow mt-1 rounded-0 mb-4">
                                     <span class="text-uppercase">Shop Now</span>

@@ -9,7 +9,7 @@ from profiles.models import UserProfile
 
 
 def reviews(request, product_id):
-    """ A view to show review form """
+    """ A view to show all available reviews for current product """
     product = get_object_or_404(Product, pk=product_id)
 
     reviews = Review.objects.filter(product=product)
@@ -23,8 +23,9 @@ def reviews(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def add_review(request, product_id):
-    """ Renders a form to allow user to add a review """
+    """ Renders a form to allow users to add a review """
     if not request.user.is_authenticated:
         messages.error(request,
                        'Sorry, you need to be logged in to add a review.')
@@ -59,7 +60,9 @@ def add_review(request, product_id):
 
 
 def review_detail(request, review_id):
-    """ A view to show each review available """
+    """
+        A view to display details individual reviews
+    """
     review = get_object_or_404(Review, pk=review_id)
 
     template = 'reviews/review_detail.html'

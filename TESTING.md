@@ -22,7 +22,7 @@
 * [Manual Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Manual Testing](#full-manual-testing)
-* [Bugs, Errors & Solutions](#bugs-errors--solutions)
+* [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
     * [Solved Bugs](#solved-bugs)
     * [Unsolved Bugs](#unsolved-bugs)
 ---
@@ -58,13 +58,15 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 * [Return & Refund Policy Page](./documentation/html_validation/return-refund-policy-page-html-validation.png)
 * [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png)
 
-### CSS Validation using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+### CSS Validation
+I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input
 * [checkout.css](./documentation/css_validation/checkout-css.png)
 * [profile.css](./documentation/css_validation/profile-css.png)
 * [reviews.css](./documentation/css_validation/reviews-css.png)
 * [base.css](./documentation/css_validation/base-css.png)
 
-### JavaScript Validation using [JSHint](https://jshint.com/)
+### JavaScript Validation
+I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
 | Page | Result | Test Details & Screenshots |
 | ---- | :-: | -------------------------- |
 | bag/templates/bag/includes/scroll_to_top_script.html | 0 errors, <br/>0 warnings | [scrollToTop script](./documentation/javascript_validation/scroll-to-top-script.png) |
@@ -81,9 +83,9 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | App | Result | Test Details & Screenshots |
 | ---- | :-: | -------------------------- |
 
-
-### [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
-**Desktop**
+### Lighthouse Report
+[Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
+#### Desktop
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | If score is below 90% |
 | :-- | :-: | :-: | :-: | :-: | :-- |
 | ['index.html'](./documentation/lighthouse_report/desktop-index-page-after-image-aspect-ratio-refactor.png) | 98 | 97 | 100 | 100 | Scores are above 90% on average |
@@ -96,7 +98,7 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | ['brands.html'](./documentation/lighthouse_report/desktop-brands-page.png) | 92 | 98 | 100 | 100 | Scores are above 90% on average |
 | ['brand_detail.html'](./documentation/lighthouse_report/desktop-brand-detail-page.png) | 94 | 97 | 100 | 100 | Scores are above 90% on average |
 
-**Mobile**
+#### Mobile
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | If score is below 90% |
 | :-- | :-: | :-: | :-: | :-: | :-- |
 | ['index.html'](./documentation/lighthouse_report/mobile-home-templates-home-index-page.png) | 79  | 93 | 92 | 98 | Extensive efforts were done to improve the Performance score for mobile by converting all images that appear on the index page (incl the largest contentful paint - hero image) from png to webp and setting explicit height and width to them. The opportunities to increase the score suggested by Lighthouse such as [eliminating render-blocking resources](./documentation/lighthouse_report/mobile-home-eliminate-render-blocking-resources.png) and [reduce unused JS](./documentation/lighthouse_report/mobile-home-reduce-unused-js.png) point to third-party libraries: Bootstrap, JQuery and Stripe. |
@@ -110,8 +112,10 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 
 
 ### WAVE Web Accessibility Evaluation Tool
+[WAVE](https://wave.webaim.org/) was used to ensure that Shop K-Beauty's content is also accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, which are then corrected following the results of the initial evaluation.
 
 ### a11y Color Contrast Accessibility for the Visually Impaired Test Results
+[a11y color contrast analysis tools](https://color.a11y.com/) were used to check for color contrast issues and color-pairings used on the site. Any errors or warnings are then corrected following the results of the initial evaluation.
 
 ### Responsive Design Testing
 
