@@ -23,7 +23,6 @@ def reviews(request, product_id):
     return render(request, template, context)
 
 
-@login_required
 def add_review(request, product_id):
     """ Renders a form to allow users to add a review """
     if not request.user.is_authenticated:
