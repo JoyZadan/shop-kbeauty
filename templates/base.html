@@ -48,7 +48,7 @@
     <body>
         <!-- Header section -->
         <header class="container-fluid sticky-top">
-            <!-- Logo, search bar, my account and cart area -->
+            <!-- Logo, search bar, my account, wishlist and cart area -->
             <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                 <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                     <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -97,15 +97,16 @@
                             </div>
                         </li>
                         <!-- Wishlist area -->
+                        {% if request.user.is_authenticated %}
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link px-1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
+                            <a class="text-black nav-link px-1" href="{% url 'wishlist' %}">
                                 <div class="text-center">
                                     <div><i class="fas fa-heart fa-lg"></i></div>
                                     <p class="my-0">Wishlist</p>
                                 </div>
                             </a>
                         </li>
+                        {% endif %}
                         <!-- Bag area -->
                         <li class="list-inline-item">
                             <a class="{% if grand_total %}alt-text-info font-weight-bold{% else %}text-black{% endif %} nav-link px-1" href="{% url 'view_bag' %}">
