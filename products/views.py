@@ -211,3 +211,33 @@ def add_brand(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_brand(request, brand_id):
+    """ Edit a product in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    brand = get_object_or_404(Brand, pk=brand_id)
+    if request.method == 'POST':
+        form = BrandForm(request.POST, request.FILES, instance=brand)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated brand!')
+            return redirect(reverse('brand_detail', args=[brand.id]))
+        else:
+            messages.error(request, 'Failed to update brand.\
+                Please ensure the form is valid.')
+    else:
+        form = BrandForm(instance=brand)
+        messages.info(request, f'You are editing {brand.friendly_name}')
+
+    template = 'products/edit_brand.html'
+    context = {
+        'form': form,
+        'brand': brand,
+    }
+
+    return render(request, template, context)
