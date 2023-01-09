@@ -7,7 +7,7 @@ from django.db.models.functions import Lower
 
 from .models import Product, MainCategory, Category, Subcategory, Brand
 from reviews.models import Review
-from .forms import ProductForm
+from .forms import ProductForm, BrandForm
 
 
 def all_products(request):
@@ -184,3 +184,30 @@ def brand_detail(request, brand_id):
     }
 
     return render(request, 'products/brand_detail.html', context)
+
+
+@login_required
+def add_brand(request):
+    """ Add a brand to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = BrandForm(request.POST, request.FILES)
+        if form.is_valid():
+            brand = form.save()
+            messages.success(request, 'Successfully added brand!')
+            return redirect(reverse('brand_detail', args=[brand.id]))
+        else:
+            messages.error(request, 'Failed to add brand. \
+                           Please ensure the form is valid.')
+    else:
+        form = BrandForm()
+
+    template = 'products/add_brand.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

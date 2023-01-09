@@ -18,3 +18,16 @@ class ProductForm(forms.ModelForm):
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
 
         self.fields['category'].choices = friendly_names
+
+
+class BrandForm(forms.ModelForm):
+
+    class Meta:
+        model = Brand
+        fields = '__all__'
+
+    image = forms.ImageField(label='Image', required=True,
+                             widget=CustomClearableFileInput)
+
+    def __str__(self):
+        return self.name

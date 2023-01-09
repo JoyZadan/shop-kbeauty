@@ -12,4 +12,5 @@ urlpatterns = [
     path('brands', views.all_brands, name='brands'),
     path('brand_detail/<int:brand_id>',
          views.brand_detail, name='brand_detail'),
+    path('add_brand/', views.add_brand, name='add_brand'),
 ]
