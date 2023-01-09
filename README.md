@@ -107,14 +107,14 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 42 | [#62](https://github.com/JoyZadan/shop-kbeauty/issues/62) | Store Owner | Delete a product | Remove items that are no longer for sale |
 | 43 | [#72](https://github.com/JoyZadan/shop-kbeauty/issues/72) | Store Owner | Use/ have policy pages (privacy, terms & conditions, return & refund and shipping) | Be assured that all the legalities of doing business online are taken care of |
 | 44 | [#76](https://github.com/JoyZadan/shop-kbeauty/issues/76) | Store Owner | Receive a warning if I accidentally click the delete a product button | Avoid accidental deletion of a product |
+| 45 | [#83](https://github.com/JoyZadan/shop-kbeauty/issues/83) | Store Owner | Add a brand to my store | Add new products even if the product's brand is not in the store yet |
+| 46 | [#84](https://github.com/JoyZadan/shop-kbeauty/issues/84) | Store Owner | Edit/ Update a brand in my store | Make changes to a brand name, description, brand logo or choose to feature a brand |
 | **DIGITAL MARKETING** |   |   |
-| 45 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
+| 47 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
-| 46| # | Shopper | register an account via social account | easy registration |
-| 47 | # | Shopper | login via social account | avoid having to keep track of login details |
-| 48 | # | Shop Owner | brand management functionality | avoid having to add brand via the Django Admin Panel |
-| 49 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
-
+| 48| # | Shopper | register an account via social account | easy registration |
+| 49 | # | Shopper | login via social account | avoid having to keep track of login details |
+| 50 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
 
 ### Database Schema - Entity Relationship Diagram
