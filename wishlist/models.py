@@ -8,9 +8,9 @@ class Wishlist(models.Model):
     user_profile = models.ForeignKey(UserProfile, null=True, blank=True,
                                      on_delete=models.CASCADE)
     product = models.ForeignKey(Product, null=True, blank=True,
-                                on_delete=models.CASCADE)
-    added = models.DateField(auto_now_add=True, blank=False, null=False)
+                                on_delete=models.CASCADE, default=1)
+    date_added = models.DateField(auto_now_add=True, blank=False, null=False)
 
     def __str__(self):
         """ String representation of Wishlist model """
-        return self.name
+        return f'Wishlist ({self.user_profile})'

@@ -26,7 +26,6 @@
                     </a>
                     {% endif %}
                 </div>
-
                 <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a product -->
                 {% if request.user.is_superuser %}
                 <div class="text-center">
@@ -77,7 +76,6 @@
                     </div>
                 </div>
                 {% endif %}
-
                 <!-- VIEW ALL REVIEWS AND ADD A REVIEW LINKS AS BUTTONS -->
                 <div class="col-12 mt-2">
                     <p class="text-purple font-weight-bold small w-75">
@@ -102,19 +100,36 @@
                     </a>
                 </div>
             </div>
-
             <!-- PRODUCT DETAILS AREA -->
             <div class="col-12 col-md-6 col-lg-4 mb-1">
                 <div class="product-details-container mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold brand-font-alt mb-1 mt-3">{{ product.name }}</p>
                     <!-- Link to brand description -->
-                    <p class="mb-0 py-2">Brand:
-                        <span class="h6 pb-3 brand-font-alt brand-name-link">
-                            <a href="{% url 'brand_detail' product.brand.id %}" >
-                                <em class="brand-font-alt brand-name-link">{{ product.brand.friendly_name }}</em>
-                            </a>
-                        </span>
-                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb-0 pt-2">Brand:
+                                <span class="h6 pb-3 brand-font-alt brand-name-link">
+                                    <a href="{% url 'brand_detail' product.brand.id %}" >
+                                        <em class="brand-font-alt brand-name-link">{{ product.brand.friendly_name }}</em>
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
+                        <!-- WISHLIST ADD/ REMOVE LINKS AS ICONS -->
+                        <div class="col pt-2 pl-0">
+                            	<p class="text-right mb-0">
+                                    {% if not wishlist %}
+                                    <span class="pr-1">Wishlist: </span>
+                                    <a href="{% if user.is_authenticated %}{% url 'add_to_wishlist' product.id %}{% else %}{% url 'account_login' %}{% endif %}" aria-label="Add product to Wishlist">
+                                        <i class="fas fa-heart alt-text-muted"></i>
+                                    </a>
+                                    {% else %}
+                                    <span class="pr-1">Wishlist: </span>
+                                    <a href="" aria-label="Remove from Wishlist"><i class="fas fa-trash alt-text-muted"></i></a>
+                                    {% endif %}
+                                </p>
+                        </div>
+                    </div>
                     <!-- Displays the category for product and links to products page, filtered by current category -->
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
@@ -141,7 +156,6 @@
                         <p class="mb-0 text-left"><span class="text-purple"><strong>You save:</strong> </span> £{{ product.discount }}</p>
                         {% endif %}
                     </div>
-
                     <!-- START OF THE ORDER FORM, DISPLAYS SIZES IF THEY ARE AVAILABLE AND SHOWS THE ORDER QUANTITY BUTTON -->
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
@@ -188,7 +202,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <!-- Keep shopping link as button -->
                             <div class="col-12{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-2">
@@ -204,11 +217,9 @@
                         {% endwith %}
                     </form>
                     <!-- END OF ORDER FORM -->
-
                     <!-- START OF ACCORDION FOR PRODUCT DESCRIPTION, HOW TO USE AND PRODUCT INGREDIENTS -->
                     <!-- Accordion credit: MDBootstrap.com (https://mdbootstrap.com/docs/standard/components/accordion/) -->
-                    <!-- Accordion wrapper-->
-                    <div class="accordion md-accordion mt-5" id="accordionEx1" role="tablist" aria-multiselectable="true">
+                    <div class="accordion md-accordion mt-4" id="accordionEx1" role="tablist" aria-multiselectable="true">
                         <!-- Accordion card -->
                         <div class="card">
                             <!-- Card header -->

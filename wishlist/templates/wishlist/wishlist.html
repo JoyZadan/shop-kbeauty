@@ -10,15 +10,71 @@
 {% endblock %}
 
 {% block content %}
+    <div class="container mb-1">
+        <div class="row">
+            <div class="col">
+                <!-- PAGE HEADING -->
+                <h2 class="display-5 brand-font-alt text-center mt-5 mb-3">Wishlist</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="font-weight-bold mb-0">Hi {{ user.username }},</p>
+                <p>Here are the current list of products in your Wishlist.</p>
+            </div>
+        </div>
+    </div>
     <div class="container mb-5">
-        <!-- PAGE HEADING -->
-        <h2 class="display-5 brand-font-alt text-center my-5">
-            Wishlist - WIP
-        </h2>
-        <hr>
-
-        <!-- WISHLIST - PRODUCT DETAIL, DATE ADDED &amp; ADD/REMOVE LINKS AS BUTTONS -->
-
+        {% if wishlist %}
+        <div class="table-responsive rounded-0">
+            <table class="table wishlist-table wishlist-table-lg text-align-center">
+                <thead class="wishlist-thead">
+                    <tr class="wishlist-tr wishlist-tr-lg mx-1 my-1">
+                        <th class="wishlist-th brand-font-alt">Product Image</th>
+                        <th class="wishlist-th brand-font-alt">Name</th>
+                        <th class="wishlist-th brand-font-alt">Price</th>
+                        <th class="wishlist-th brand-font-alt">Shop Now</th>
+                        <th class="wishlist-th brand-font-alt">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in wishlist %}
+                    <tr class="wishlist-tr wishlist-tr-lg">
+                        <td class="wishlist-td" data-label="Product: ">
+                            <!-- Product image -->
+                            {% if product.product.image %}
+                            <img class="product-image-sm" src="{{ product.product.image.url }}" alt="{{ product.product.name }}">
+                            {% else %}
+                            <img class="" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ product.product.name }}">
+                            {% endif %}
+                        </td>
+                        <td class="wishlist-td" data-label="Name:">
+                            <p class="h6 brand-font-alt">{{ product.product.name }}</p>
+                        </td>
+                        <td class="wishlist-td" data-label="Price:">
+                            <div>
+                                <p class="h6 mb-0 pb-1"><span class="text-left brand-font">£{{ product.product.price }}</span></p>
+                                {% if product.product.discount > 0.01 %}
+                                <p class="mb-0"><s>£{{ product.product.original_price }}</s></p>
+                                <p class="mb-0"><span class="text-purple"><strong>You save:</strong> </span> £{{ product.product.discount }}</p>
+                                {% endif %}
+                            </div>
+                        </td>
+                        <td class="wishlist-td" data-label="Shop Now: ">
+                            <!-- Shop Now CTA to open product detail page for current product -->
+                            <a href="{% url 'product_detail' product.product.id %}">
+                                <i class="fas fa-shopping-bag text-muted"></i>
+                            </a>
+                        </td>
+                        <td class="wishlist-td" data-label="Remove: ">
+                            <a href=""><i class="fas fa-trash alt-text-muted"></i></a>
+                        </td>
+                    </tr>
+                    {% endfor%}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
     </div>
 
 {% endblock %}

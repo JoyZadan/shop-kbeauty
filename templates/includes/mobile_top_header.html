@@ -57,14 +57,16 @@
     </li>
 
     <!-- WISHLIST BUTTON -->
+    {% if request.user.is_authenticated %}
     <li class="list-inline-item dropdown">
-        <a class="text-black nav-link d-block d-lg-none" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="text-black nav-link px-1 d-lg-none" href="{% url 'wishlist' %}">
             <div class="text-center">
                 <div><i class="fas fa-heart fa-lg"></i></div>
                 <p class="my-0">Wishlist</p>
             </div>
         </a>
     </li>
+    {% endif %}
 
     <!-- SHOPPING BAG AREA -->
     <li class="list-inline-item">

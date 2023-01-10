@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.http import Http404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
@@ -20,3 +21,15 @@ def wishlist(request):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def add_to_wishlist(request, product_id):
+    """ A view to add product to a logged in user's wishlist """
+    user = get_object_or_404(UserProfile, user=request.user)
+    product = get_object_or_404(Product, pk=product_id)
+
+    wishlist = Wishlist.objects.create(user_profile=user, product=product)
+    messages.info(request, 'Product added to your wishlist!')
+
+    return redirect(reverse('product_detail', args=[product.id]))
