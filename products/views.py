@@ -80,9 +80,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     brands = Brand.objects.all()
     reviews = Review.objects.filter(product=product)
-    user_profile = get_object_or_404(UserProfile, user=request.user)
-    wishlist = Wishlist.objects.filter(user_profile=user_profile,
-                                       product=product_id)
+    wishlist = Wishlist.objects.filter(product=product_id)
 
     context = {
         'product': product,

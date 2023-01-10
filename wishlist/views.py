@@ -23,9 +23,13 @@ def wishlist(request):
     return render(request, template, context)
 
 
-@login_required
 def add_to_wishlist(request, product_id):
     """ A view to add product to a logged in user's wishlist """
+    if not request.user.is_authenticated:
+        messages.error(request,
+                       'Sorry, you need to be logged in to add your wishlist.')
+        return redirect(reverse('account_login'))
+
     user = get_object_or_404(UserProfile, user=request.user)
     product = get_object_or_404(Product, pk=product_id)
 
