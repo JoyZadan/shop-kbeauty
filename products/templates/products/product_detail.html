@@ -117,17 +117,38 @@
                         </div>
                         <!-- WISHLIST ADD/ REMOVE LINKS AS ICONS -->
                         <div class="col pt-2 pl-0">
-                            	<p class="text-right mb-0">
+                            <p class="text-right mb-0">
+                                {% if not user.is_authenticated %}
+                                <span class="pr-1">Wishlist: </span>
+                                <a href="{% url 'account_login' %}" aria-label="Add product to Wishlist">
+                                    <i class="fas fa-heart alt-text-muted"></i>
+                                </a>
+                                {% endif %}
+                                {% if user.is_authenticated %}
                                     {% if not wishlist %}
                                     <span class="pr-1">Wishlist: </span>
-                                    <a href="{% if user.is_authenticated %}{% url 'add_to_wishlist' product.id %}{% else %}{% url 'account_login' %}{% endif %}" aria-label="Add product to Wishlist">
+                                    <a href="{% url 'add_to_wishlist' product.id %}" aria-label="Add product to Wishlist">
                                         <i class="fas fa-heart alt-text-muted"></i>
                                     </a>
                                     {% else %}
                                     <span class="pr-1">Wishlist: </span>
                                     <a href="" aria-label="Remove from Wishlist"><i class="fas fa-trash alt-text-muted"></i></a>
                                     {% endif %}
-                                </p>
+                                {% endif %}
+                                {% if user.is_authenticated %}
+                                    {% if user.user_profile %}
+                                        {% if not wishlist %}
+                                        <span class="pr-1">Wishlist: </span>
+                                        <a href="{% url 'add_to_wishlist' product.id %}" aria-label="Add product to Wishlist">
+                                            <i class="fas fa-heart alt-text-muted"></i>
+                                        </a>
+                                        {% else %}
+                                        <span class="pr-1">Wishlist: </span>
+                                        <a href="" aria-label="Remove from Wishlist"><i class="fas fa-trash alt-text-muted"></i></a>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            </p>
                         </div>
                     </div>
                     <!-- Displays the category for product and links to products page, filtered by current category -->
@@ -285,7 +306,6 @@
             </div>
         </div>
         <!-- END OF INDIVIDUAL PRODUCT AREA -->
-
         <!-- FEATURED REVIEWS -->
         <div class="container mb-5">
             <h3 class="brand-font-alt pt-2">
@@ -327,7 +347,6 @@
             {% endif %}
         </div>
     </div>
-
     <!-- FEATURED BRANDS -->
     <div class="featured-bg mt-3">
         <h2 class="display-4 brand-font-alt text-center pt-5 pb-4">
@@ -346,7 +365,6 @@
                 {% endif %}
             {% endfor %}
         </div>
-
         <!-- BUTTON TO SHOW/ HIDE ALL AVAILABLE BRANDS -->
         <div class="col-12 mt-2 text-center pb-5">
             <div class="mb-3">
