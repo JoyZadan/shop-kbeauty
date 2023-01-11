@@ -82,6 +82,19 @@ def product_detail(request, product_id):
     reviews = Review.objects.filter(product=product)
     wishlist = Wishlist.objects.filter(product=product_id)
 
+    if not request.user.is_authenticated:
+        template = 'products/product_detail.html'
+        context = {
+            'product': product,
+            'reviews': reviews,
+            'brands': brands,
+        }
+        return render(request, template, context)
+    else:
+        user_profile = get_object_or_404(UserProfile, user=request.user)
+        wishlist = Wishlist.objects.filter(user_profile=user_profile,
+                                           product=product_id)
+    template = 'products/product_detail.html'
     context = {
         'product': product,
         'reviews': reviews,
