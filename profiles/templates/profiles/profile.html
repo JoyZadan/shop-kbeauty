@@ -14,11 +14,11 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container mb-5">
+    <div class="container mb-4">
         <div class="row">
             <div class="col">
                 <!-- PAGE HEADING -->
-                <h2 class="display-5 brand-font-alt text-center my-5">My Profile</h2>
+                <h2 class="display-5 brand-font-alt text-center mt-5 mb-4">My Profile</h2>
             </div>
         </div>
         <div class="row">
@@ -27,8 +27,19 @@
             </div>
             <div class="col-12">
                 <p>
-                    This is where you can view your order history and order confirmations. You can also update your personal information.
+                    This is where you can view your order history and order confirmations.
+                    You can also update your personal information.
+                    To view your favourite products, click the button below:
                 </p>
+                <!-- View Wishlist link -->
+                <div class="col pl-0">
+                    <a href="{% url 'wishlist' %}" class="btn btn-black rounded-0 text-uppercase mt-1">
+                        <span class="icon">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    <span class="text-uppercase">Wishlist</span>
+                    </a>
+                </div>
                 <hr>
             </div>
         </div>
