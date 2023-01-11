@@ -111,10 +111,13 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 46 | [#84](https://github.com/JoyZadan/shop-kbeauty/issues/84) | Store Owner | Edit/ Update a brand in my store | Make changes to a brand name, description, brand logo or choose to feature a brand |
 | **DIGITAL MARKETING** |   |   |
 | 47 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
+| **USER'S WISHLIST** |   |   |
+| 48 | [#85](https://github.com/JoyZadan/shop-kbeauty/issues/85) | Shopper | Easily add a product to my wishlist | Save it for future purchase or reference |
+| 49 | [#87](https://github.com/JoyZadan/shop-kbeauty/issues/87) | Shopper | Easily remove a product from my wishlist | Keep pnly the products I'm interested in |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
-| 48| # | Shopper | register an account via social account | easy registration |
-| 49 | # | Shopper | login via social account | avoid having to keep track of login details |
-| 50 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
+| 50| # | Shopper | register an account via social account | easy registration |
+| 51 | # | Shopper | login via social account | avoid having to keep track of login details |
+| 52 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
 
 ### Database Schema - Entity Relationship Diagram
@@ -343,6 +346,7 @@ Press Enter. Your clone will be created.
 * Credit to [BugBytes](https://www.youtube.com/watch?v=h39eMGWmEV4) for his video based on Adam Johnson's post.
 * Credit to [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari) for how to disable Safari on mobile auto creating phone number link.
 * Credit to [Masa Kudamatsu at DEV.to](https://dev.to/masakudamatsu/loading-google-fonts-and-any-other-web-fonts-as-fast-as-possible-in-early-2021-4f5o) for his very helpful article, **Loading Google Fonts and any other web fonts as fast as possible in early 2021** which helped me increase the Lighthouse performance score (mobile) from 67% to 73%.
+* Credit to [carla Buogiorno's La Fraschetta django ecommerce project for the inspiration, particularly for her wishlist app](https://github.com/CarlaBuongiorno/la_fraschetta).
 
 ## Content
 The product names, images, descriptions and other information were sourced from:
@@ -382,7 +386,9 @@ A very, very special thanks to my family, especially my daughter Zoe, for the un
 
 A big thanks to Conrad Saunders and Chris Booth as SDC for the assist with my EC requests due illness. It's not easy to concentrate and code when stricken with COVID!
 
-A special thank you to [Jason Dunton](https://www.linkedin.com/in/jason-dunton/) from Tutor Support at Code Institute. Jason, thanks for the assist, I appreciate your help!
+A special thank you to [Jason Dunton](https://www.linkedin.com/in/jason-dunton/) from Tutor Support at Code Institute. Jason, thanks for the assist, I appreciate your help! A special thanks also to Ger and to Oisin also from Tutor Support at Code Institute, I appreciate the guidance on the numerous occassions I got stuck on a piece of functionality I wanted to implement! Thanks, guys!
+
+I was looking for a shade of grey that "feels right" as a background for some of the elements on the project and was inspired by [Isabella Mitchell's own project](https://github.com/Isabella-Mitchell/lonely-house). Thanks, Isabella!
 
 Special mention and thanks to my mentor, Dario Carrasquel, for his support, invaluable insights and his belief that I can do this well. I am so grateful to have you as my mentor.
 
