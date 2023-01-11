@@ -99,10 +99,15 @@
                         <!-- Wishlist area -->
                         {% if request.user.is_authenticated %}
                         <li class="list-inline-item dropdown">
-                            <a class="text-black nav-link px-1" href="{% url 'wishlist' %}">
+                            <a class="{% if wishlist %}alt-text-info font-weight-bold{% else %}text-black{% endif %} nav-link px-1" href="{% url 'wishlist' %}">
                                 <div class="text-center">
+                                    {% if wishlist.count %}
+                                    <div><i class="fas fa-heart fa-lg"></i></div>
+                                    <p class="my-0">Wishlist ({{ wishlist.count }})</p>
+                                    {% else %}
                                     <div><i class="fas fa-heart fa-lg"></i></div>
                                     <p class="my-0">Wishlist</p>
+                                    {% endif %}
                                 </div>
                             </a>
                         </li>
