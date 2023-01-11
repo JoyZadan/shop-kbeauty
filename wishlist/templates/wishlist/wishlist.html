@@ -80,7 +80,7 @@
                             </a>
                         </td>
                         <td class="wishlist-td" data-label="Remove: ">
-                            <a href=""><i class="fas fa-trash alt-text-muted"></i></a>
+                            <a href="{% url 'remove_from_wishlist' product.product.id %}"><i class="fas fa-trash alt-text-muted"></i></a>
                         </td>
                     </tr>
                     {% endfor%}
