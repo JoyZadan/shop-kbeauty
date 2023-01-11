@@ -5,13 +5,6 @@ from wishlist.models import Wishlist
 class WishlistAdmin(admin.ModelAdmin):
     list_display = (
         'user_profile',
-        'date_added',
-    )
-    list_filter = (
-        'user_profile',
-    )
-    search_fields = (
-        'user',
         'product',
         'date_added',
     )
@@ -19,4 +12,4 @@ class WishlistAdmin(admin.ModelAdmin):
     ordering = ('-user_profile',)
 
 
-admin.site.register(Wishlist)
+admin.site.register(Wishlist, WishlistAdmin)
