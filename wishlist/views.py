@@ -1,5 +1,4 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from django.http import Http404
 from django.conf import settings
 from django.contrib import messages
 
