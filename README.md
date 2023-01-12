@@ -21,18 +21,59 @@ Shop K-Beauty is a multi-brand, ecommerce full stack project built using Django,
 TABLE OF CONTENTS - Click to Expand
 </summary>
 
-- [USER EXPERIENCE](#user-experience)
-    - [Strategy](#strategy)
-    - [Scope](#scope)
-    - [Structure](#structure)
-    - [Skeleton](#skeleton)
-    - [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Testing](#testing)
-- [Bugs, Issues and Solutions](#bugs-issues-and-solutions)
-- [Deployment](#deployment)
-- [Credits](#credits)
-- [Acknowledgements](#acknowledgements)
+* [USER EXPERIENCE](#user-experience)
+    * [Strategy Plane](#strategy-plane)
+        * [Project Goals](#project-goals)
+            * [Stakeholders' Goals](#stakeholders-goals)
+                * [Business Model](#business-model)
+            * [User Research](#user-research)
+                * [Discovery Phase](#discovery-phase)
+                * [Design Phase](#design-phase)
+                * [Product Launch - Alpha](#product-launch-alpha)
+                * [Product Launch - Beta](#product-launch-beta)
+    * [Scope Plane](#scope-plane)
+        * [Feature Planning](#feature-planning)
+        * [Content Requirement Planning](#content-requirement-planning)
+        * [Functionalities for User Interaction](#functionalities-for-user-interaction)
+            * [User Stories](#user-stories)
+    * [Structure Plane](#structure-plane)
+        * [Interaction Design](#interaction-design)
+            * [User Journey Flow Chart](#user-journey-flow-chart)
+        * [Information Architecture](#information-architecture)
+            * [Site Map](#site-map)
+        * [Website Pages](#website-pages)
+        * [Database Design](#database-design)
+            * [Database ERD](#database-erd)
+            * [Data Modelling](#data-modelling)
+                * [User Model](#user-model)
+                * [UserProfile](#userprofile-model)
+                * [MainCategory Model](#maincategory-model)
+                * [Category Model](#category-model)
+                * [Subcategory Model](#subcategory-model)
+                * [Brand Model](#brand-model)
+                * [Product Model](#product-model)
+                * [Order Model](#order-model)
+                * [OrderLineItem Model](#orderlineitem-model)
+                * [Review Model](#review-model)
+                * [Wishlist Model](#wishlist-model)
+    * [Skeleton Plane](#skeleton-plane)
+        * [Wireframes](#wireframes)
+    * [Surface Plane](#surface-plane)
+        * [Typography](#typography)
+        * [Colour Palette](#colour-palette)
+* [Agile Methodology](#agile-methodology)
+    * [GitHub Project Management](#github-project-management)
+* [Features](#features)
+    * [General Features of the Site](#general-features-of-the-site)
+    * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
+    * [Accessibility](#accessibility)
+    * [Future Development and Implementation](#future-development-and-implementation)
+* [Technologies Used](#technologies-used)
+* [Testing](#testing)
+* [Bugs, Issues and Solutions](#bugs-issues-and-solutions)
+* [Deployment](#deployment)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
 
 </details>
 
@@ -120,7 +161,8 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 52 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
 
-### Database Schema - Entity Relationship Diagram
+### Database Schema
+Entity Relationship Diagram
 ![ERD/DATABASE SCHEMA](./documentation/database/shop-kbeauty-erd.png)
 ### User Journey - Topology Digram
 
