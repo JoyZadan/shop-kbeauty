@@ -45,7 +45,7 @@ def add_to_wishlist(request, product_id):
     existing = Wishlist.objects.filter(product=product,
                                        user_profile=user).exists()
     if existing:
-        messages.error(request, 'This product is already in your Wishlist!')
+        messages.error(request, f'{product.name} is already in your Wishlist!')
         return redirect(reverse('product_detail', args=[product.id]))
     else:
         wishlist_item = Wishlist.objects.create(user_profile=user,
