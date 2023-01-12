@@ -163,7 +163,9 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 
 ### Database Schema
 Entity Relationship Diagram
-![ERD/DATABASE SCHEMA](./documentation/database/shop-kbeauty-erd.png)
+[ERD/DATABASE SCHEMA - VERSION 1](./documentation/database/shop-kbeauty-erd.png)
+[ERD/DATABASE SCHEMA - FINAL](./documentation/database/shop-kbeauty-erd-final.png)
+<br/>
 ### User Journey - Topology Digram
 
 ## Skeleton Plan
@@ -175,7 +177,7 @@ I decided to use only one font, **Lato**, for this project and used different fo
 <br/><br/>
 ![LATO FONT](./documentation/branding/lato-font.png)
 
-### Colour Scheme
+### Colour Palette
 The site is mainly black and white and uses accent colours to liven it up. I have taken inspiration from the hero image colours, pink and yellow, and also added midnight blue and light blue colours to add contrast.
 
 Following the Lighthouse and a11y validation results, I amended the colour scheme from **[this](./documentation/branding/palette-old.png)** to this:
