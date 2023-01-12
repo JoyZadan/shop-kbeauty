@@ -5,6 +5,7 @@
 ---
 ## TABLE OF CONTENTS
 
+
 * [Automated Testing and Validation](#automated-testing-and-validation)
     * [HTML Validation](#html-validation)
     * [CSS Validation](#css-validation)
