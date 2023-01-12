@@ -91,20 +91,20 @@ TABLE OF CONTENTS - Click to Expand
 
 ---
 
-# USER EXPERIENCE
+## USER EXPERIENCE
 
-## STRATEGY PLANE
-### Project Goals
-#### Stakeholders' Goals
-##### Business Model
-#### User Research
-##### Discovery Phase
-##### Design Phase
-##### Product Launch - Alpha
-##### Product Launch - Beta
+### STRATEGY PLANE
+#### Project Goals
+##### Stakeholders' Goals
+###### Business Model
+##### User Research
+###### Discovery Phase
+###### Design Phase
+###### Product Launch - Alpha
+###### Product Launch - Beta
 
-## SCOPE PLANE
-### Feature Planning
+### SCOPE PLANE
+#### Feature Planning
 When planning the Shop K-Beauty ecommerce store's features and scope, I drew up an Importance Viability analysis of these features, please see below:
 
 | # | Feature | Importance | Viability | User Impact Score | Release Notes |
@@ -112,9 +112,9 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 1 | ... |  |  |  |  |
 | 2 | ... |  |  |  |  |
 
-### Content Requirement Planning
-### Functionalities for User Interaction
-#### User Stories
+#### Content Requirement Planning
+#### Functionalities for User Interaction
+##### User Stories
 | **USER STORY #** | **ISSUE ID** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- | --- |
 | **VIEWING & NAVIGATION** |   |   |
@@ -179,58 +179,59 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 51 | # | Shopper | login via social account | avoid having to keep track of login details |
 | 52 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
-## STRUCTURE PLANE
-### Interaction Design
-#### User Journey Flow Chart
-### Information Architecture
-#### Site Map
-### Website Pages
-### Database Design
-#### Database ERD
+### STRUCTURE PLANE
+#### Interaction Design
+##### User Journey Flow Chart
+#### Information Architecture
+##### Site Map
+#### Website Pages
+#### Database Design
+##### Database ERD
 **Entity Relationship Diagram**<br/>
 Version 1: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd-v1.png)<br/>
 Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kbeauty-erd.webp)
 
 <br/>
 
-#### Data Modelling
-##### User Model
-##### UserProfile Model
-##### MainCategory Model
-##### Category Model
-##### Subcategory Model
-##### Brand Model
-##### Product Model
-##### Order Model
-##### OrderLineItem Model
-##### Review Model
-##### Wishlist Model
+##### Data Modelling
+###### User Model
+###### UserProfile Model
+###### MainCategory Model
+###### Category Model
+###### Subcategory Model
+###### Brand Model
+###### Product Model
+###### Order Model
+###### OrderLineItem Model
+###### Review Model
+###### Wishlist Model
 
-## SKELETON PLANE
-### Wireframes
+### SKELETON PLANE
+#### Wireframes
 
-## SURFACE PLANE
-### Typography
+### SURFACE PLANE
+#### Typography
 I decided to use only one font, **Lato**, for this project and used different font-weights and italics to add contrast to text. The decision to stick to one font is based how ecommerce shops tend to look very busy with photos of products, call-to-action buttons, pricing and discount buttons, etc. For the hero section on the index.html and skincare_tips.html pages, I added an animation to the text using linear-gradient based on the site's colour scheme.
 <br/><br/>
 ![LATO FONT](./documentation/branding/lato-font.png)
-### Colour Palette
+
+#### Colour Palette
 The site is mainly black and white and uses accent colours to liven it up. I have taken inspiration from the hero image colours, pink and yellow, and also added midnight blue and light blue colours to add contrast.
 
 Following the Lighthouse and a11y validation results, I amended the colour scheme from **[this](./documentation/branding/palette-old.png)** to this:
 <br/><br/>
 ![NEW COLOUR SCHEME](./documentation/branding/shop-k-beauty-new.png)
 
-### Imagery
+#### Imagery
 
-### Mockups
+#### Mockups
 ---
-# AGILE METHODOLOGY
-## GitHub Project Management
+## AGILE METHODOLOGY
+### GitHub Project Management
 
 ---
-# FEATURES
-## General Features of the Site
+## FEATURES
+### General Features of the Site
 Common to all pages of the Shop K-Beauty site are:
 * Navbar:
     * Top Navigation:
@@ -249,14 +250,37 @@ Common to all pages of the Shop K-Beauty site are:
         * bag
     * Main Navigation
 * Footer:
-    * Shop K-Beauty fictitious address, email and phone number
-    * About - brief blurb about the shop
-    * Policies
-    * Social Media Links
-    * Payment Processing Statement
-    * Copyright and Disclaimer
+        * Shop K-Beauty fictitious address, email and phone number
+        * About - brief blurb about the shop
+        * Policies
+        * Social Media Links
+        * Payment Processing Statement
+        * Copyright and Disclaimer
+
+#### Product Categorization
+**"Accurate product categorization improves the customer experience and also helps merchants reach the right shoppers."** - [Feedonomics](https://feedonomics.com/blog/product-categorization-101-why-it-matters/)
+* Main Categories
+* Categories
+* Subcategories
+
+#### Site Pages
+##### Home Page
+Shop K-Beauty's home page features the following:
+* "Above the fold":
+    * A background hero image showcasing some of the globally renowned K-Beauty brands.
+    * An attending getting Call to Action text announcing the arrival of the latest collections and a "shop now" button
+* "Below the fold":
+    * Featured Products
+    * Featured Brands
+    * See All Brands Button
+
+**Home page Screenshot**
+<br/>
+![Homepage - Laptop](./documentation/site_pages/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
 
 
+
+#### Defensive Programming
 
 ## Shop K-Beauty and Must Have Features of an Ecommerce Site
 ## Accessibility
