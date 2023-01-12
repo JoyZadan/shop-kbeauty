@@ -231,6 +231,33 @@ Following the Lighthouse and a11y validation results, I amended the colour schem
 ---
 # FEATURES
 ## General Features of the Site
+Common to all pages of the Shop K-Beauty site are:
+* Navbar:
+    * Top Navigation:
+        * logo
+        * search bar
+        * my account (login, register)
+            * for logged in superadmin:
+                * brand management
+                * product management
+                * my profile
+                * logout
+            * for logged in user:
+                * my profile
+                * logout
+        * wishlist (for logged in user)
+        * bag
+    * Main Navigation
+* Footer:
+    * Shop K-Beauty fictitious address, email and phone number
+    * About - brief blurb about the shop
+    * Policies
+    * Social Media Links
+    * Payment Processing Statement
+    * Copyright and Disclaimer
+
+
+
 ## Shop K-Beauty and Must Have Features of an Ecommerce Site
 ## Accessibility
 ## Future Development, Iteration and Implementation
