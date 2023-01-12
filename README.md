@@ -67,7 +67,7 @@ TABLE OF CONTENTS - Click to Expand
     * [General Features of the Site](#general-features-of-the-site)
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
     * [Accessibility](#accessibility)
-    * [Future Development and Implementation](#future-development-and-implementation)
+    * [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
     * [Frameworks Used](#frameworks-used)
@@ -79,7 +79,11 @@ TABLE OF CONTENTS - Click to Expand
     * [Cloud Storage Services Used](#cloud-storage-services-used)
 * [Testing](#testing)
 * [Bugs, Issues and Solutions](#bugs-issues-and-solutions)
-* [Deployment](#deployment)
+* [Deployment and Local Development](#deployment-and-local-development)
+    * [Deployment](#deployment)
+    * [Local Development](#local-development)
+        * [How to Fork](#how-to-fork)
+        * [How to Clone](#how-to-clone)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
 
@@ -87,23 +91,30 @@ TABLE OF CONTENTS - Click to Expand
 
 ---
 
-# User Experience
+# USER EXPERIENCE
 
-## Strategy Plane
+## STRATEGY PLANE
 ### Project Goals
-* To develop an App where users can easily find, purchase and add reviews.
-* ...
-## Scope Plane
-### Feature Ideas Planning
+#### Stakeholders' Goals
+##### Business Model
+#### User Research
+##### Discovery Phase
+##### Design Phase
+##### Product Launch - Alpha
+##### Product Launch - Beta
+
+## SCOPE PLANE
+### Feature Planning
 When planning the Shop K-Beauty ecommerce store's features and scope, I drew up an Importance Viability analysis of these features, please see below:
 
-| # | Feature | Importance | Viability |
-| --- | --- | --- | --- |
-| 1 | ... |  |  |
-| 2 | ... |  |  |
+| # | Feature | Importance | Viability | User Impact Score | Release Notes |
+| --- | --- | --- | --- | --- | --- |
+| 1 | ... |  |  |  |  |
+| 2 | ... |  |  |  |  |
 
-## Structure Plane
-### User Stories
+### Content Requirement Planning
+### Functionalities for User Interaction
+#### User Stories
 | **USER STORY #** | **ISSUE ID** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- | --- |
 | **VIEWING & NAVIGATION** |   |   |
@@ -168,23 +179,45 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 51 | # | Shopper | login via social account | avoid having to keep track of login details |
 | 52 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
+## STRUCTURE PLANE
+### Interaction Design
+#### User Journey Flow Chart
+### Information Architecture
+#### Site Map
+### Website Pages
+### Database Design
+#### Database ERD
+**Entity Relationship Diagram**
 
-### Database Schema
-Entity Relationship Diagram
-[ERD/DATABASE SCHEMA - VERSION 1](./documentation/database/shop-kbeauty-erd.png)
-[ERD/DATABASE SCHEMA - FINAL](./documentation/database/shop-kbeauty-erd-final.png)
+Version 1: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd.png)
+
+Version 2: [ERD/DATABASE SCHEMA - V2](./documentation/database/shop-kbeauty-erd-final.png)
+
+Version 3: [ERD/ DATABASE SCHEMA - V3]()
+
 <br/>
-### User Journey - Topology Digram
 
-## Skeleton Plan
+#### Data Modelling
+##### User Model
+##### UserProfile Model
+##### MainCategory Model
+##### Category Model
+##### Subcategory Model
+##### Brand Model
+##### Product Model
+##### Order Model
+##### OrderLineItem Model
+##### Review Model
+##### Wishlist Model
+
+## SKELETON PLANE
 ### Wireframes
 
-## Surface Plane
+## SURFACE PLANE
 ### Typography
 I decided to use only one font, **Lato**, for this project and used different font-weights and italics to add contrast to text. The decision to stick to one font is based how ecommerce shops tend to look very busy with photos of products, call-to-action buttons, pricing and discount buttons, etc. For the hero section on the index.html and skincare_tips.html pages, I added an animation to the text using linear-gradient based on the site's colour scheme.
 <br/><br/>
 ![LATO FONT](./documentation/branding/lato-font.png)
-
 ### Colour Palette
 The site is mainly black and white and uses accent colours to liven it up. I have taken inspiration from the hero image colours, pink and yellow, and also added midnight blue and light blue colours to add contrast.
 
@@ -192,120 +225,115 @@ Following the Lighthouse and a11y validation results, I amended the colour schem
 <br/><br/>
 ![NEW COLOUR SCHEME](./documentation/branding/shop-k-beauty-new.png)
 
-
 ### Imagery
 
-### User Demographic
-* Ages 16 and above for viewing, registering and purchasing products
-* Visitors who are interested in K-Beauty products
-* Visitors who are looking for K-Beauty products
-* ...
+### Mockups
+---
+# AGILE METHODOLOGY
+## GitHub Project Management
 
-### User Stories
-#### First Time Visitor Goals - As a first time user who has not created an account, I want to be able to:
-* Immediately understand the main purpose of ...
+---
+# FEATURES
+## General Features of the Site
+## Shop K-Beauty and Must Have Features of an Ecommerce Site
+## Accessibility
+## Future Development, Iteration and Implementation
 
-#### Registered User Goals - As a registered user, I want to be able to:
-* ...
+---
+# TECHNOLOGIES USED
+## Languages Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
+* [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
+* [Python](https://www.python.org/) was used for the back end programming of the site.
+## Frameworks Used
+* [DJANGO - version 3.2 ](https://docs.djangoproject.com/en/4.1/releases/3.2/) Django is a free and open-source, Python-based web  framework that follows the model–template–views architectural pattern.
+* [DJANGO-ALLAUTH](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication
 
-#### Site Admin Goals - As an administrator, I want to be able to:
-* Have the ability to ...
+## Databases Used
+* [DB.SQLITE3](https://www.postgresql.org/) was the database used for the project (development).
+* [ElephantSQL](https://www.elephantsql.com/) ElephantSQL's Postgres as a Service was used to host the the database for the project
 
+## Libraries and Packages Used
+## Programmes and Applications Used
+## Payment Processing Platform Used
+## Cloud Application Platforms Used
+## Cloud Storage Services Used
+* [AWS S3](https://aws.amazon.com/) was used to store upload images and static files
+---
 
+# TESTING
+<br/>
 
-Based on the results of the Feature Ideas Planning, I have decided to attempt to implement Features numbers ... for this production release and park the remaining features due to time limitations.
+---
+# BUGS, ISSUES AND SOLUTIONS
+<br/>
 
-### Functionality Requirements
-* ...
+---
+# DEPLOYMENT
+<br/>
+---
 
-## Structure
-### Topology Diagrams
-...
+# CREDITS
+## Code
+* Credit to Code Institute's Boutique Ado Django ecommerce walkthrough, from which this project was based from.
+* Credit to [Very Academy YouTube Channel](https://www.youtube.com/c/veryacademy) for the very detailed insights on database models.
+* Credit to [Stuart073's Music Box django ecommerce project](https://github.com/stuartj073/music-box) for the inspiration, particularly for his reviews app.
+* Credit and thanks to [MDBootstrap](https://mdbootstrap.com/docs/b4/jquery/javascript/accordion/) for the accordion on product detail page.
+* Credit to [Adam Johnson](https://adamj.eu/tech/2022/10/06/how-to-safely-pass-data-to-javascript-in-a-django-template/) on How to Safely Pass Data to JavaScript in a Django Template.
+* Credit to [BugBytes](https://www.youtube.com/watch?v=h39eMGWmEV4) for his video based on Adam Johnson's post.
+* Credit to [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari) for how to disable Safari on mobile auto creating phone number link.
+* Credit to [Masa Kudamatsu at DEV.to](https://dev.to/masakudamatsu/loading-google-fonts-and-any-other-web-fonts-as-fast-as-possible-in-early-2021-4f5o) for his very helpful article, **Loading Google Fonts and any other web fonts as fast as possible in early 2021** which helped me increase the Lighthouse performance score (mobile) from 67% to 73%.
+* Credit to [Swarup Kumar Kuila's text color animation](https://codepen.io/uiswarup/pen/XWgQJrq) that I used as part of the Call to Action on the Homepage and on the Skincare Tips page.
+* Credit to [carla Buogiorno's La Fraschetta django ecommerce project](https://github.com/CarlaBuongiorno/la_fraschetta) for the inspiration, particularly for her wishlist app.
+## Content
+The product names, images, descriptions and other information were sourced from:
+* [SKINSIDER](https://skinsider.co.uk/)
+* [STYLEVANA](https://www.stylevana.com/en_GB/)
+* [PURESEOUL](https://pureseoul.co.uk/)
+* [CULT BEAUTY](https://www.cultbeauty.co.uk/)
+* [YESSTYLE](https://www.yesstyle.com/en/home.html)
+* [MELON & STARFISH](https://melonandstarfish.com/)
+* [K-BEAUTY UK](https://www.k-beauty.co.uk/)
+* [TONYMOLY](https://tonymolyonline.co.uk/)
+* [UK iHERB](https://uk.iherb.com/)
+* [SKINLIBRARY](https://skinlibrary.co.uk/)
+* [BEAUTY&SEOUL](https://beautyandseoul.co.uk/)
+* [SEPHORA UK](https://www.sephora.co.uk/)
+* [INCIDECODER](https://incidecoder.com/)
+* [BEAUTYBOXKOREA](https://beautyboxkorea.com/)
+* [AMAZON.COM](https://www.amazon.com/)
 
-#### Guest User
-![GUEST USER JOURNEY ACROSS SHOP K-BEAUTY]()
+The policies were generated from:
+* [TERMSFEED](https://www.termsfeed.com/)
 
-#### Registered User
-![REGISTERED USER'S JOURNEY ACROSS SHOP K-BEAUTY]())
+The .... for information on the K-Beauty global phenomena.
+## Media
+* Other images used for the project were licensed from Adobe Stock.
+## Other Resources
+1. Code Institute Boutique Ado walkthrough
+2. Very Academy
+3. Codemy YouTube
+4. CodeEx YouTube
+5. CodePiep YouTube
+---
 
-#### Superadmin User
-![SUPERADMIN'S PERMISSION AND ACCESS ACROSS SHOP K-BEAUTY]()
+# ACKNOWLEDGEMENTS
+A very, very special thanks to my family, especially my daughter Zoe, for the unwavering support and understanding and allowing me the space to focus on my projects.
 
+A big thanks to Conrad Saunders and Chris Booth as SDC for the assist with my EC requests due illness. It's not easy to concentrate and code when stricken with COVID!
 
+A special thank you to [Jason Dunton](https://www.linkedin.com/in/jason-dunton/) from Tutor Support at Code Institute. Jason, thanks for the assist, I appreciate your help! A special thanks also to Ger and to Oisin also from Tutor Support at Code Institute, I appreciate the guidance on the numerous occassions I got stuck on a piece of functionality I wanted to implement! Thanks, guys!
 
+I was looking for a shade of grey that "feels right" as a background for some of the elements on the project and was inspired by [Isabella Mitchell's own project](https://github.com/Isabella-Mitchell/lonely-house). Thanks, Isabella!
 
+Special mention and thanks to my mentor, Dario Carrasquel, for his support, invaluable insights and his belief that I can do this well. I am so grateful to have you as my mentor.
 
+# Copyrights
+&copy; 2022 SHOP K-BEAUTY by Joy Zadan (An e-commerce Full Stack Developer Project)
 
-## Skeleton
-### Wireframes
-The wireframes created for this project:
-- [DESKTOP - INDEX PAGE]()
-- ...
-
-### Design
-[Bootstrap4]() was used and customised for the front-end development.
-
-#### Colour Scheme
-![COLOURS]()
-
-#### Typography
-I used Google Fonts to import the fonts I used across the application.
-![LATO]()
-
-#### Imagery & UI
-![INSERT HERE COLOUR SCHEME]()
-The colour scheme and typography used for Shop K-Beauty...
-
-## Features
-Breakdown of the features and elements implemented for the App.
-### Multi Page Elements
-#### Navbar
-- ...
-- ...
-
-#### Footer
-- ...
-- ...
-
-#### Home/ Index Page
-- ...
-- ...
-
-#### Other Pages...
-- ...
-- ...
-
-#### User and Superadmin Dashboard
-- ...
-- ...
-to do
-
-
-### Error Handling
-The following error handlers were added to the Application to handle possible scenarios requiring specific HTTP Response:
-* errorhandler(400) for a Bad Request error
-* errorhandler(404) for a 404 Not Found error
-* errorhandler(408) for a 408 Request Timeout error
-* errorhandler(500) for a 500 Internal Server error
-
-# Technologies Used
-* Languages:
-    * [HTML5](https://en.wikipedia.org/wiki/HTML5) was used for the content and structure of the site.
-    * [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3) was used for the styling of the site.
-    * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
-    * [Python](https://www.python.org/) was used for the back end programming of the site.
-
-* Frameworks and integrated applications:
-    * [DJANGO - version 3.2 ](https://docs.djangoproject.com/en/4.1/releases/3.2/) Django is a free and open-source, Python-based web  framework that follows the model–template–views architectural pattern.
-    * [DJANGO-ALLAUTH](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication
-
-* Databases:
-    * [DB.SQLITE3](https://www.postgresql.org/) was the database used for the project (development).
-    * [Postgres](https://www.postgresql.org/) Postgres was the relational database used for the project.
-
-* Cloud Storages:
-    * [AWS S3](???) was used to store upload images and static files
-
+----------------------------------
+# DRAFT BELOW HERE:
 * Libraries and packages:
 * [pip](https://pip.pypa.io/en/stable/)
     * Pip is the package installer for Python, allowing us to install the packages we need for this site.
@@ -336,117 +364,14 @@ The following error handlers were added to the Application to handle possible sc
 
 * Hosting & Deployment
     * [Heroku](https://devcenter.heroku.com/) Heroku is where we deploy this live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
-    * [ELEPHANTSQL](https://www.postgresql.org/) ElephantSQL was used to host the the Postgres DB for the project
+
 
 * Serving images in next-gen formats - these free online tools are used to convert the png images of products, brands and site background images to next generation image format, webp. These have helped increase the Lighthouse performance scores of the site.
     * [CloudConvert](https://cloudconvert.com/webp-converter)
     * [OnlineConvert](https://www.online-convert.com/)
 
 
-## Future Implementation
-* Include a ...
-* ...
-
-
-# Testing
-## All testing undertaken for this project can be found in the [Testing Document](./TESTING.md)
-
-# Bugs, Issues and Solutions [Testing](./TESTING.md)
-
-
-# Deployment & Local Development
-
-## Deployment to Heroku
-To deploy this project, I used Heroku.
-1. ...
-2. ...
-
-| Key | Value |
-| :---: | :---: |
-|  |  |
-| API_KEY | myapikey |
-| API_SECRET | myapisecret |
-| IP | 0.0.0.0 |
-| PORT | 5000 |
-| SECRET_KEY | mysecretkey |
-| DATABASE_URL | postgresql |
-
-3. ...
-4. ...
-5. ...
-
-
-## Local Development
-* How to Fork To fork the repository, use the following steps:
-Login or signup to Github and locate the repository.
-Click the Fork button in the top right corner
-## Making Local Clone
-Login or signup to GitHub and locate the GitHub Repository GitHub Repository.
-Under the repository name, click "clone" or "download".
-To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-Open the terminal in your preferred code editor and change the current working directory to the location you want to use for the cloned directory.
-Type git clone, and then paste the URL you copied in Step 3.
-Press Enter. Your clone will be created.
-
-# Credits
-## Code
-* Credit to Code Institute's Boutique Ado Django ecommerce walkthrough, from which this project was largely based from.
-* Credit to [Very Academy YouTube Channel](https://www.youtube.com/c/veryacademy) for the very detailed insights on database models.
-* Credit to [Stuart073's Music Box django ecommerce project for the inspiration, particularly for his reviews app](https://github.com/stuartj073/music-box).
-* Credit and thanks to [MDBootstrap](https://mdbootstrap.com/docs/b4/jquery/javascript/accordion/) for the accordion on product detail page.
-* Credit to [Adam Johnson](https://adamj.eu/tech/2022/10/06/how-to-safely-pass-data-to-javascript-in-a-django-template/) on How to Safely Pass Data to JavaScript in a Django Template.
-* Credit to [BugBytes](https://www.youtube.com/watch?v=h39eMGWmEV4) for his video based on Adam Johnson's post.
-* Credit to [Stack Overflow](https://stackoverflow.com/questions/226131/how-to-disable-phone-number-linking-in-mobile-safari) for how to disable Safari on mobile auto creating phone number link.
-* Credit to [Masa Kudamatsu at DEV.to](https://dev.to/masakudamatsu/loading-google-fonts-and-any-other-web-fonts-as-fast-as-possible-in-early-2021-4f5o) for his very helpful article, **Loading Google Fonts and any other web fonts as fast as possible in early 2021** which helped me increase the Lighthouse performance score (mobile) from 67% to 73%.
-* Credit to [Swarup Kumar Kuila's text color animation](https://codepen.io/uiswarup/pen/XWgQJrq) that I used as part of the Call to Action on the Homepage and on the Skincare Tips page.
-* Credit to [carla Buogiorno's La Fraschetta django ecommerce project for the inspiration, particularly for her wishlist app](https://github.com/CarlaBuongiorno/la_fraschetta).
-
-## Content
-The product names, images, descriptions and other information were sourced from:
-* [SKINSIDER](https://skinsider.co.uk/)
-* [STYLEVANA](https://www.stylevana.com/en_GB/)
-* [PURESEOUL](https://pureseoul.co.uk/)
-* [CULT BEAUTY](https://www.cultbeauty.co.uk/)
-* [YESSTYLE](https://www.yesstyle.com/en/home.html)
-* [MELON & STARFISH](https://melonandstarfish.com/)
-* [K-BEAUTY UK](https://www.k-beauty.co.uk/)
-* [TONYMOLY](https://tonymolyonline.co.uk/)
-* [UK iHERB](https://uk.iherb.com/)
-* [SKINLIBRARY](https://skinlibrary.co.uk/)
-* [BEAUTY&SEOUL](https://beautyandseoul.co.uk/)
-* [SEPHORA UK](https://www.sephora.co.uk/)
-* [INCIDECODER](https://incidecoder.com/)
-* [BEAUTYBOXKOREA](https://beautyboxkorea.com/)
-* [AMAZON.COM](https://www.amazon.com/)
-
-The policies were generated from:
-* [TERMSFEED](https://www.termsfeed.com/)
-
-The .... for information on the K-Beauty global phenomena.
-
-## Media
-* Images used for the project were licensed from Adobe Stock and as per above.
-
-## Resources
-1. Code Institute Boutique Ado walkthrough
-2. Very Academy
-3. Codemy YouTube
-4. CodeEx YouTube
-5. CodePiep YouTube
-
-# Acknowledgements
-A very, very special thanks to my family, especially my daughter Zoe, for the unwavering support and understanding and allowing me the space to focus on my projects.
-
-A big thanks to Conrad Saunders and Chris Booth as SDC for the assist with my EC requests due illness. It's not easy to concentrate and code when stricken with COVID!
-
-A special thank you to [Jason Dunton](https://www.linkedin.com/in/jason-dunton/) from Tutor Support at Code Institute. Jason, thanks for the assist, I appreciate your help! A special thanks also to Ger and to Oisin also from Tutor Support at Code Institute, I appreciate the guidance on the numerous occassions I got stuck on a piece of functionality I wanted to implement! Thanks, guys!
-
-I was looking for a shade of grey that "feels right" as a background for some of the elements on the project and was inspired by [Isabella Mitchell's own project](https://github.com/Isabella-Mitchell/lonely-house). Thanks, Isabella!
-
-Special mention and thanks to my mentor, Dario Carrasquel, for his support, invaluable insights and his belief that I can do this well. I am so grateful to have you as my mentor.
 
 
 
 
-# Copyrights
-&copy; 2022 SHOP K-BEAUTY by Joy Zadan (An e-commerce Full Stack Developer Project)
