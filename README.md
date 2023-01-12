@@ -187,13 +187,9 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 ### Website Pages
 ### Database Design
 #### Database ERD
-**Entity Relationship Diagram**
-
-Version 1: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd.png)
-
-Version 2: [ERD/DATABASE SCHEMA - V2](./documentation/database/shop-kbeauty-erd-final.png)
-
-Version 3: [ERD/ DATABASE SCHEMA - V3]()
+**Entity Relationship Diagram**<br/>
+Version 1: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd-v1.png)<br/>
+Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kbeauty-erd.webp)
 
 <br/>
 
