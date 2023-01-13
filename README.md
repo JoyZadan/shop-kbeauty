@@ -294,15 +294,19 @@ Shop K-Beauty's home page features the following:
 * [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used for the interactivity of the site.
 * [Python](https://www.python.org/) was used for the back end programming of the site.
 ## Frameworks Used
-* [DJANGO - version 3.2 ](https://docs.djangoproject.com/en/4.1/releases/3.2/) Django is a free and open-source, Python-based web  framework that follows the model–template–views architectural pattern.
-* [DJANGO-ALLAUTH](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication
-
+* [DJANGO - v3.2 ](https://docs.djangoproject.com/en/4.1/releases/3.2/) Django is a free and open-source, Python-based web  framework that follows the model–template–views architectural pattern.
+* [Bootstrap4 - v4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) was used as the frontend framework.
 ## Databases Used
-* [DB.SQLITE3](https://www.postgresql.org/) was the database used for the project (development).
-* [ElephantSQL](https://www.elephantsql.com/) ElephantSQL's Postgres as a Service was used to host the the database for the project
+* [DB.SQLITE3](https://docs.djangoproject.com/en/4.1/ref/databases/#sqlite-notes) was the database used for the project (development).
+* [ElephantSQL](https://www.elephantsql.com/) ElephantSQL's Postgres as a Service was used to host the the database for the project (production).
 
 ## Libraries and Packages Used
+* [django-allauth](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication
+* [JQuery - v3.5.1](https://jquery.com/) is a fast, small, and feature-rich JavaScript library.
+* [Font Awesome Kit](https://fontawesome.com/v5/docs/web/setup/use-kit) is used for its icon toolkit
+* []()
 ## Programmes and Applications Used
+
 ## Payment Processing Platform Used
 ## Cloud Application Platforms Used
 ## Cloud Storage Services Used
@@ -325,6 +329,21 @@ Please also refer to [TESTING.md](./TESTING.md) file for:
 
 ---
 # DEPLOYMENT
+Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
+* Creating the database to be used in production
+* Deploying to Heroku
+* Setting up AmazonS3 for hosting our static and media files
+* Instructions to common question: *"What if you didn't use fixtures in your project?"*
+
+
+(DRAFT BELOW):
+* Heroku Setup and CLI
+* Installing Project Requirements
+* Creating a Heroku App
+* Creating a database to be used in production
+* Connecting the database to our application
+* Connecting the database to GitPod
+* Setting Up AWS
 <br/>
 ---
 
