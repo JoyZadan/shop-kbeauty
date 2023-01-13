@@ -310,10 +310,17 @@ Shop K-Beauty's home page features the following:
 ---
 
 # TESTING
+Please refer to [TESTING.md](./TESTING.md) file for:
+* Automated Testing and Validation Results
+* Manual Testing and Results
+
 <br/>
 
 ---
 # BUGS, ISSUES AND SOLUTIONS
+Please also refer to [TESTING.md](./TESTING.md) file for:
+* Solutions to bugs found during testing and development phase
+* Known bugs
 <br/>
 
 ---

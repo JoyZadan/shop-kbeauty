@@ -25,7 +25,7 @@
     * [Full Manual Testing](#full-manual-testing)
 * [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
     * [Solved Bugs](#solved-bugs)
-    * [Unsolved Bugs](#unsolved-bugs)
+    * [Known Bugs](#known-bugs)
 ---
 
 ## Automated Testing and Validation
@@ -152,7 +152,7 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | 13 | Unable to add new product if the product brand is not in the store yet | Shop K-Beauty is a multi-brand ecommerce store and a brand is required when adding a new product via the product management functionality.  When I tested adding a new product, I realised that a store owner can only add a product if said product's brand is already in the store. A store owner would have to add a brand via the Django admin, which is not ideal in a real life situation. To fix this, and since the code to add a brand is pretty much similar to adding a product and the custom clearable file input can also be reused, it makes sense to add the brand management functionality, starting with adding a brand. |
 | 14 | A logged in user is able to add a product to their own wishlist even if the product is already in the wishlist | To Fix this, I first passed both the product and the user_product to the query for an existing duplicate wishlist by using <br/>```Wishlist.objects.get ``` <br/> This didn't work as the GET function will raise an error if a product does not exist in the wishlist. <br/> The next solution is to use a combination of filter/exists, which solved the bug: <br/> ```existing = Wishlist.objects.filter(product=product, user_profile=user).exists() ```. Credit and thanks to Oisin from Tutor Support at Code Institute for helping me solve this bug. |
 
-### Unsolved Bugs
+### Known Bugs
 | # | Unsolved Bugs, Errors and Issues | Justification |
 | :--- | :--- | :--- |
 | 1 | Browser: Chrome, Error: **Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received**. This error appears after about a minute or two of loading any page of the web application. | I have spent days looking for where this error was coming from, initially thinking it was caused by the show and hide button on the homepage to hide and show list of available brands. I switched off the event listener. The error still appeared. I tried to debug and refactor all the event listeners but found it impossible to do so without disabling the required JQuery functions for the application to run smoothly. Googling for possible causes and reasons, I have found references to the same error and they point to using incognito mode as a possible solution. The error did not appear when using incognito mode. Due to time constraints, the real solution for this error may be investigated further on the next sprint/ future development. |
