@@ -35,7 +35,7 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | ---- | :-: | -------------------------- |
 | 'templates/home/index.html' | 0 error and 0 warning | [Homepage](./documentation/html_validation/homepage-html-validation.png) |
 | 'templates/products/products.html' | 0 error and 0 warning | [Products Page](./documentation/html_validation/products-page-html-validation.png) |
-| 'templates/products/products.html' - new validation after modal was added | 0 error and 0 warning | [Products Page](./documentation/html_validation/products-page-html-validation-new.png) |
+| 'templates/products/products.html' - new validation after modal was added | 0 error and 0 warning | [Products Page - New](./documentation/html_validation/products-page-html-validation-new.png) |
 | 'templates/products/add_product.html' | 0 error and 0 warning | [Add a Product Page](./documentation/html_validation/add-product-html-validation-no-error.png) |
 | 'templates/products/edit_product.html' | 0 error and 0 warning | [Edit a Product Page](./documentation/html_validation/edit-product-html-validation-no-error.png) |
 | 'templates/products/product_detail.html' | 0 error and 0 warning | [Product Detail Page](./documentation/html_validation/product-detail-page-html-validation.png) |
@@ -53,7 +53,7 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | 'templates/allauth/account/signup.html' | 0 error and 0 warning | [Sign Up Page](./documentation/html_validation/sign-up-html-validation.png) |
 | 'templates/profiles/profile.html' | 0 error and 0 warning | [Profile Page](./documentation/html_validation/profile-page-html-validation.png) |
 | 'templates/home/privacy_policy.html' | 0 error and 0 warning | [Privacy Policy Page](./documentation/html_validation/privacy-policy-page-html-validation.png) |
-| 'templates/home/terms_and_conditions.html' | 0 error and 0 warning | [Terms & Conditiions Page](./documentation/html_validation/terms-and-conditions-page-html-validation.png) |
+| 'templates/home/terms_and_conditions.html' | 0 error and 0 warning | [Terms & Conditions Page](./documentation/html_validation/terms-and-conditions-page-html-validation.png) |
 | 'templates/home/return_and_refund_policy.html' | 0 error and 0 warning | [Return & Refund Policy Page](./documentation/html_validation/return-refund-policy-page-html-validation.png) |
 | 'templates/home/shipping_policy.html' | 0 error and 0 warning | [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png) |
 | 'templates/wishlist/wishlist.html' |  | [Wishlist Page]() |
