@@ -35,29 +35,34 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | ---- | :-: | -------------------------- |
 | 'templates/home/index.html' | 0 error and 0 warning | [Homepage](./documentation/html_validation/homepage-html-validation.png) |
 | 'templates/products/products.html' | 0 error and 0 warning | [Products Page](./documentation/html_validation/products-page-html-validation.png) |
+| 'templates/products/products.html' - new validation after modal was added | 0 error and 0 warning | [Products Page](./documentation/html_validation/products-page-html-validation-new.png) |
+| 'templates/products/add_product.html' | 0 error and 0 warning | [Add a Product Page](./documentation/html_validation/add-product-html-validation-no-error.png) |
+| 'templates/products/edit_product.html' | 0 error and 0 warning | [Edit a Product Page](./documentation/html_validation/edit-product-html-validation-no-error.png) |
+| 'templates/products/product_detail.html' | 0 error and 0 warning | [Product Detail Page](./documentation/html_validation/product-detail-page-html-validation.png) |
+| 'templates/products/brands.html' | 0 error and 0 warning | [Brands Page](./documentation/html_validation/brands-page-html-validation.png) |
+| 'templates/products/brand_details.html' | 0 error and 0 warning | [Brand Detail Page](./documentation/html_validation/brand-detail-page-html-validation.png) |
+| 'templates/products/add_brand.html' |  | [Add Brand Page]() |
+| 'templates/products/add_review.html' | 0 error and 0 warning | [Add Review Page](./documentation/html_validation/add-a-review-page-html-validation.png) |
+| 'templates/products/edit_review.html' | 0 error and 0 warning | [Edit Review Page](./documentation/html_validation/edit-a-review-page-html-validation.png) |
+| 'templates/products/review_detail.html' | 0 error and 0 warning | [Review Detail Page](./documentation/html_validation/review-detail-page-html-validation.png) |
+| 'templates/products/reviews.html' | 0 error and 0 warning | [Reviews Page](./documentation/html_validation/reviews-page-html-validation.png) |
+| 'templates/bag/bag.html' | 0 error and 0 warning | [Bag Page](./documentation/html_validation/bag-page-html-validation.png) |
+| 'templates/checkout/checkout.html' | 0 error and 0 warning | [Checkout Page](./documentation/html_validation/checkout-page-html-validation.png) |
+| 'templates/checkout/checkout_success.html' | 0 error and 0 warning | [Checkout Success Page](./documentation/html_validation/checkout-success-page-html-validation.png) |
+| 'templates/allauth/account/login.html' | 0 error and 0 warning | [Log In Page](./documentation/html_validation/sign-in-html-validation.png) |
+| 'templates/allauth/account/signup.html' | 0 error and 0 warning | [Sign Up Page](./documentation/html_validation/sign-up-html-validation.png) |
+| 'templates/profiles/profile.html' | 0 error and 0 warning | [Profile Page](./documentation/html_validation/profile-page-html-validation.png) |
+| 'templates/home/privacy_policy.html' | 0 error and 0 warning | [Privacy Policy Page](./documentation/html_validation/privacy-policy-page-html-validation.png) |
+| 'templates/home/terms_and_conditions.html' | 0 error and 0 warning | [Terms & Conditiions Page](./documentation/html_validation/terms-and-conditions-page-html-validation.png) |
+| 'templates/home/return_and_refund_policy.html' | 0 error and 0 warning | [Return & Refund Policy Page](./documentation/html_validation/return-refund-policy-page-html-validation.png) |
+| 'templates/home/shipping_policy.html' | 0 error and 0 warning | [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png) |
+| 'templates/wishlist/wishlist.html' |  | [Wishlist Page]() |
 
 
-* [Products Page - New Validation After Modal was Added](./documentation/html_validation/products-page-html-validation-new.png)
-* [Add a Product Page](./documentation/html_validation/add-product-html-validation-no-error.png)
-* [Edit a Product Page](./documentation/html_validation/edit-product-html-validation-no-error.png)
-* [Product Detail Page](./documentation/html_validation/product-detail-page-html-validation.png)
-* [Product Detail Page - New Validation After Modal was Added](./documentation/html_validation/product-detail-page-html-validation-new.png)
-* [Brands Page](./documentation/html_validation/brands-page-html-validation.png)
-* [Brand Detail Page](./documentation/html_validation/brand-detail-page-html-validation.png)
-* [Add a Review Page](./documentation/html_validation/add-a-review-page-html-validation.png)
-* [Edit a Review Page](./documentation/html_validation/edit-a-review-page-html-validation.png)
-* [Review Detail Page](./documentation/html_validation/review-detail-page-html-validation.png)
-* [Reviews Page](./documentation/html_validation/reviews-page-html-validation.png)
-* [Bag Page](./documentation/html_validation/bag-page-html-validation.png)
-* [Checkout Page](./documentation/html_validation/checkout-page-html-validation.png)
-* [Checkout Success Page](./documentation/html_validation/checkout-success-page-html-validation.png)
-* [Sign In Page](./documentation/html_validation/sign-in-html-validation.png)
-* [Sign Up Page](./documentation/html_validation/sign-up-html-validation.png)
-* [Profile Page](./documentation/html_validation/profile-page-html-validation.png)
-* [Privacy Policy Page](./documentation/html_validation/privacy-policy-page-html-validation.png)
-* [Terms & Conditiions Page](./documentation/html_validation/terms-and-conditions-page-html-validation.png)
-* [Return & Refund Policy Page](./documentation/html_validation/return-refund-policy-page-html-validation.png)
-* [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png)
+
+
+
+
 
 ### CSS Validation
 I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input
