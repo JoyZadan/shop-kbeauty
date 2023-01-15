@@ -41,7 +41,7 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | 'templates/products/product_detail.html' | 0 error and 0 warning | [Product Detail Page](./documentation/html_validation/product-detail-page-html-validation.png) |
 | 'templates/products/brands.html' | 0 error and 0 warning | [Brands Page](./documentation/html_validation/brands-page-html-validation.png) |
 | 'templates/products/brand_details.html' | 0 error and 0 warning | [Brand Detail Page](./documentation/html_validation/brand-detail-page-html-validation.png) |
-| 'templates/products/add_brand.html' |  | [Add Brand Page]() |
+| 'templates/products/add_brand.html' | 0 error and 0 warning | [Add Brand Page](./documentation/html_validation/add-brand-html-validation-no-error.png) |
 | 'templates/products/add_review.html' | 0 error and 0 warning | [Add Review Page](./documentation/html_validation/add-a-review-page-html-validation.png) |
 | 'templates/products/edit_review.html' | 0 error and 0 warning | [Edit Review Page](./documentation/html_validation/edit-a-review-page-html-validation.png) |
 | 'templates/products/review_detail.html' | 0 error and 0 warning | [Review Detail Page](./documentation/html_validation/review-detail-page-html-validation.png) |
@@ -56,12 +56,7 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | 'templates/home/terms_and_conditions.html' | 0 error and 0 warning | [Terms & Conditions Page](./documentation/html_validation/terms-and-conditions-page-html-validation.png) |
 | 'templates/home/return_and_refund_policy.html' | 0 error and 0 warning | [Return & Refund Policy Page](./documentation/html_validation/return-refund-policy-page-html-validation.png) |
 | 'templates/home/shipping_policy.html' | 0 error and 0 warning | [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png) |
-| 'templates/wishlist/wishlist.html' |  | [Wishlist Page]() |
-
-
-
-
-
+| 'templates/wishlist/wishlist.html' | 0 error and 0 warning | [Wishlist Page](./documentation/html_validation/wishlist-html-validation-no-error.png) |
 
 
 ### CSS Validation
