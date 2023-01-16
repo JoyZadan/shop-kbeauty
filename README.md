@@ -31,7 +31,6 @@ TABLE OF CONTENTS - Click to Expand
             * [Product Goals](#product-goals)
             * [User Research](#user-research)
                 * [Discovery Phase](#discovery-phase)
-                * [Design Phase](#design-phase)
                 * [Product Launch - Alpha](#product-launch---alpha)
                 * [Product Launch - Beta](#product-launch---beta)
     * [Scope Plane](#scope-plane)
@@ -179,11 +178,24 @@ Those who answered yes were then asked asked the next set of qualitative questio
 - Email me a reminder
 - Post it on your social media so I can follow you/ remember to buy
 
-###### Design Phase
-
 ###### Product Launch - Alpha
-###### Product Launch - Beta
+This is to be conducted after initial deployment. Alpha testing will assess the quality and stability of the site under test in the testing environment.
 
+The Product Launch - Alpha will be focused on:
+1. Uncovering bugs
+2. Usability issues
+3. Feature gaps
+4. Compatibility/ inter-operability issues
+
+Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
+
+Update:
+###### Product Launch - Beta
+Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
+
+Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
+
+Update:
 
 ### SCOPE PLANE
 #### Feature Planning
