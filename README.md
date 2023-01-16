@@ -11,7 +11,9 @@
 
 # Project Overview
 
-Shop K-Beauty is a multi-brand, ecommerce full stack project built using Django, Python and JavaScript, deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Shop K-Beauty is a business to consumer online retailer of K-Beauty skincare and hair &amp; body products. The categories of available products are further split into subcategories. On a brand's page, all available products from the brand are also displayed.
+Shop K-Beauty is a multi-brand, ecommerce full stack project built using Django, Python and JavaScript, deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Shop K-Beauty is a business to consumer online retailer of K-Beauty skincare and hair &amp; body products.
+
+Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diploma in Web Application Development (Full Stack Software Development).
 <br/>
 <br/>
 
@@ -26,11 +28,12 @@ TABLE OF CONTENTS - Click to Expand
         * [Project Goals](#project-goals)
             * [Stakeholders' Goals](#stakeholders-goals)
                 * [Business Model](#business-model)
+            * [Product Goals](#product-goals)
             * [User Research](#user-research)
                 * [Discovery Phase](#discovery-phase)
                 * [Design Phase](#design-phase)
-                * [Product Launch - Alpha](#product-launch-alpha)
-                * [Product Launch - Beta](#product-launch-beta)
+                * [Product Launch - Alpha](#product-launch---alpha)
+                * [Product Launch - Beta](#product-launch---beta)
     * [Scope Plane](#scope-plane)
         * [Feature Planning](#feature-planning)
         * [Content Requirement Planning](#content-requirement-planning)
@@ -93,15 +96,39 @@ TABLE OF CONTENTS - Click to Expand
 
 ## USER EXPERIENCE
 
-### STRATEGY PLANE
+### STRATEGY
+
+Straits Research, in its [K-Beauty Products Market Report](https://straitsresearch.com/report/k-beauty-products-market) stated that **"the global K-Beauty products market size had a revenue holding of US$8.30 billion in 2021. It is expected to reach US$18.32 billion by 2030, growing at a CAGR (compound annual growth rate) of 9.2% during the forecast period (2022-2030). Skincare items originating in South Korea are collectively referred to as K-Beauty."**
+
 #### Project Goals
-##### Stakeholders' Goals
+This section aims to answer the key question: *What problems are we trying to solve with Shop K-Beauty?*
+
+Although the demand for cosmetics products declined globally during the pandemic due mainly to fewer occasions to wear make-up given the guidelines on working from home, social distancing and wearing masks, there was also a corresponding rise in consumption focused on skincare products driven by increasing demand for affordable, fast-acting, self-care beauty routines.
+
+Shop K-Beauty, a multi-brand ecommerce store specialising in K-Beauty skincare and hair &amp; body products, aims to provide an easy to use online shop for consumers to browse and purchase K-Beauty products. Shop K-Beauty also aims to provide the information that consumers may require such as a product description, how to use a product and the product ingredients.
+
+Update:
+1. Brand
+2. Reviews
+3. Wishlist
+In addition, Shop K-Beauty aims to include a reviews functionality for anynomous shoppers to view available product reviews and logged in users to add their own product reviews.
+
+##### Internal Stakeholders'
+Ultimately, the internal stakeholders' goals would be to have a profitable and positively-perceived online shop specialising in K-Beauty products.
+
+To achieve the above, internal stakeholders would need to be able to make informed decisions by having a clear set of metrics and KPIs (key performance indicators) they should be able to access and review on a regular basis.
+
+
 ###### Business Model
+
+##### Product
+
 ##### User Research
 ###### Discovery Phase
 ###### Design Phase
 ###### Product Launch - Alpha
 ###### Product Launch - Beta
+
 
 ### SCOPE PLANE
 #### Feature Planning
