@@ -134,17 +134,50 @@ Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands 
 What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using.
 
 ###### Discovery Phase
-During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask the several qualitative questions:
-1. Qualifying question: Have you heard of / use K-Beauty skincare products?
+During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask them several qualitative questions:
+1. Qualifying question: Have you heard of / use K-Beauty skincare products?  <br/>
 Those who answered yes were then asked asked the next question:
-2. Would you like to participate in an informal user research about K-Beauty products?
+2. Would you like to participate in an informal user research about K-Beauty products?  <br/>
 Those who answered yes were then asked asked the next set of qualitative questions:
-3. Where do you normally purchase these products? From a pharmacy/ beauty shop or online?
-4. How might we provide you the information that you look for when buying a skincare and/or hair &amp; beauty products?
-Answers: Product name, price, brand name, description, how to use, ingredients, skincare concern, discounts, reviews, availability, delivery charge
-5. How might we help you decide on the trustworthiness of a K-Beauty product you are thinking of buying?
-Answers: brand name and information, products from a particular brand, reviews
-6. Once you have found the product you are looking for, how might we help you
+3. Where do you normally purchase these products? From a pharmacy/ beauty shop or online? <br/>
+*Answers received:*
+- online
+- pharmacy/ physical store
+- both online and physical shop
+4. How might we help you find K-Beauty products?  <br/>
+*Answers received:*
+- Post them on social media
+- create helpful skincare groups on social media
+- send your products to skinfluencers for reviews
+4. How might we provide you the information that you typically look for when buying a skincare and/or hair &amp; beauty products?  <br/>
+*Answers received:*
+- name
+- price
+- brand name
+- description
+- how to use
+- ingredients
+- skincare concern
+- discounts
+- reviews
+- availability
+- delivery charge
+5. How might we help you decide on the trustworthiness of a K-Beauty product you are thinking of buying?  <br/>
+*Answers received*:
+- brand name and information
+- products from a particular brand
+- product reviews and ratings
+6. Once you have found the product you are looking for, how might we help you make the decision to purchase the product?  <br/>
+*Answers received:*
+- Show me what discounts are available
+- I want to see deals
+- I want to read reviews about the product so that I can check if it's gentle on the skin/ is effective
+- Show me related products in case I'm still not convinced
+7. How might we help you come back to make the purchase in case you did not buy the products from your visit?  <br/>
+*Answers received:*
+- Just let me save the product to my wishlist
+- Email me a reminder
+- Post it on your social media so I can follow you/ remember to buy
 
 ###### Design Phase
 
