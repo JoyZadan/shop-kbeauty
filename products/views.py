@@ -11,6 +11,8 @@ from .forms import ProductForm, BrandForm
 from profiles.models import UserProfile
 from wishlist.models import Wishlist
 
+import random
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -75,9 +77,18 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """
+        A view to show individual product details, available featured reviews,
+        link to add product to a user's wishlist, related products
+        and featured brands
+    """
 
     product = get_object_or_404(Product, pk=product_id)
+    products = Product.objects.all()
+    related_products = list(Product.objects.filter(
+        subcategory=product.subcategory).exclude(pk=product_id))
+    if len(related_products) >= 4:
+        related_products = random.sample(related_products, 4)
     brands = Brand.objects.all()
     reviews = Review.objects.filter(product=product)
     wishlist = Wishlist.objects.filter(product=product_id)
@@ -86,6 +97,7 @@ def product_detail(request, product_id):
         template = 'products/product_detail.html'
         context = {
             'product': product,
+            'related_products': related_products,
             'reviews': reviews,
             'brands': brands,
         }
@@ -97,6 +109,7 @@ def product_detail(request, product_id):
     template = 'products/product_detail.html'
     context = {
         'product': product,
+        'related_products': related_products,
         'reviews': reviews,
         'brands': brands,
         'wishlist': wishlist,

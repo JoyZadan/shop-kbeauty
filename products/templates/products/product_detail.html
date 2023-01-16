@@ -321,43 +321,59 @@
             {% endif %}
         </div>
     </div>
-    <!-- FEATURED BRANDS -->
-    <div class="featured-bg mt-3">
-        <h2 class="display-4 brand-font-alt text-center pt-5 pb-4">
-            Featured Brands
-        </h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
-            {% for brand in brands %}
-                {% if brand.is_featured %}
-                <div class="col mb-4">
-                    <div class="card card-alt h-100">
-                        <a href="{% url 'brand_detail' brand.id %}">
-                            <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+    <!-- RELATED PRODUCTS -->
+    <div class="featured-bg pb-5">
+        <h4 class="display-4 related-products-heading pt-5 pb-3 animate-it">
+            <em>Related Products</em>
+        </h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 ml-3 mr-3">
+            {% for product in related_products %}
+            <div class="col mb-4">
+                <div class="card card-alt h-100">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
+                        <!-- Product category name -->
+                        {% if product.category %}
+                        <p class="small mt-2 mb-0 text-center">
+                            <a class="alt-text-muted font-weight-bold"
+                                href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-list"></i> {{ product.category.friendly_name }}
+                            </a>
+                        </p>
+                        {% endif %}
+                        <!-- Product subcategory name -->
+                        {% if product.subcategory %}
+                        <p class="small mt-2 mb-0 text-center">
+                            <a class="text-muted font-weight-bold"
+                                href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                <i class="fas fa-tag"></i> {{ product.subcategory.friendly_name }}
+                            </a>
+                        </p>
+                        {% endif %}
+                    </div>
+                    <div class="card-footer bg-white text-center mb-2">
+                        <div class="price-box mb-1">
+                            <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
+                            {% if product.discount > 0.01 %}
+                            <p class="mb-0"><s>£{{ product.original_price }}</s></p>
+                            <p class="mb-0 text-center"><span class="text-purple"><strong>You save:</strong> </span> £{{ product.discount }}</p>
+                            {% endif %}
+                        </div>
+                        <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
+                            <span class="text-uppercase">Shop Now</span>
+                            <span class="icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </span>
                         </a>
                     </div>
                 </div>
-                {% endif %}
-            {% endfor %}
-        </div>
-        <!-- BUTTON TO SHOW/ HIDE ALL AVAILABLE BRANDS -->
-        <div class="col-12 mt-2 text-center pb-5">
-            <div class="mb-3">
-                <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3 show-brands-list-btn" value="Show">
-                    <span class="text-uppercase h4">See All Brands</span>
-                    <span class="icon">
-                        <i class="fas fa-chevron-down"></i>
-                    </span>
-                </button>
-                <div class="row" id="brand-show">
-                    {% for brand in brands %}
-                    <p data-brand-name="{{ brand.friendly_name }}">
-                        <a href="{% url 'brand_detail' brand.id %}">
-                            <span class="brand-font-alt h6 pb-1 brand-name-link pl-2 pr-2 pointer">{{ brand.friendly_name }}</span>
-                        </a>
-                    </p>
-                    {% endfor %}
-                </div>
             </div>
+            {% empty%}
+            <p class="text-center brand-font">Sorry, no related products available.</p>
+            {% endfor %}
         </div>
     </div>
 

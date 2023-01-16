@@ -147,7 +147,7 @@ Those who answered yes were then asked asked the next set of qualitative questio
 *Answers received:*
 - Post them on social media
 - create helpful skincare groups on social media
-- send your products to skinfluencers for reviews
+- send your products to 'skinfluencers' for reviews
 4. How might we provide you the information that you typically look for when buying a skincare and/or hair &amp; beauty products?  <br/>
 *Answers received:*
 - name

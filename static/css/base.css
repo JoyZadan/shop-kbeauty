@@ -384,6 +384,13 @@ hr {
     background-color: #e1e2e7;
 }
 
+.related-products-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
 /* ------------------------------- card styling to overwrite bootstrap's default styling */
 .card {
     color: #000 !important;
