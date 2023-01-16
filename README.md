@@ -26,7 +26,7 @@ TABLE OF CONTENTS - Click to Expand
 * [USER EXPERIENCE](#user-experience)
     * [Strategy Plane](#strategy-plane)
         * [Project Goals](#project-goals)
-            * [Stakeholders' Goals](#stakeholders-goals)
+            * [Internal Stakeholders' Goals](#internal-stakeholders-goals)
                 * [Business Model](#business-model)
             * [Product Goals](#product-goals)
             * [User Research](#user-research)
@@ -111,21 +111,43 @@ Update:
 1. Brand
 2. Reviews
 3. Wishlist
-In addition, Shop K-Beauty aims to include a reviews functionality for anynomous shoppers to view available product reviews and logged in users to add their own product reviews.
 
-##### Internal Stakeholders'
-Ultimately, the internal stakeholders' goals would be to have a profitable and positively-perceived online shop specialising in K-Beauty products.
+##### **Internal Stakeholders' Goals**
+Ultimately, the internal stakeholders' goals would be to have a profitable and positively-perceived online shop specialising in K-Beauty products. Internal stakeholders are the shop owners, online shop administrators and staff (the latter two may also be the shop owners themselves).
 
-To achieve the above, internal stakeholders would need to be able to make informed decisions by having a clear set of metrics and KPIs (key performance indicators) they should be able to access and review on a regular basis.
+To achieve the above, the internal stakeholders' goals for the ecommerce shop are focused on:
+1. **Trustworthiness** - How can the online shop effectively present the trustworthiness and the high quality of the available K-Beauty products?
+2. **Simplicity and Ease of Use** - How can the quality of the content presented to end-users (shop visitors and shoppers) be easy to follow, engaging and provides balanced information and detail without being overwhelming or distracting?
+3. **Transparency** - How can we unsure that our contact information, the policies for shipping, returns and privacy and product reviews are easy to find?
 
+Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/) *The Ultimate Guide to Designing Ecommerce Sites*
 
-###### Business Model
+###### **Business Model**
+Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands of K-Beauty products.
 
-##### Product
+##### Product Goals
+1. Proven Effectiveness - evidenced by user reviews
+2. Branded Products - inclusion of product brand and brand description
+3. Attractive Price Points - through price competiveness and savings on offer
 
 ##### User Research
+What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using.
+
 ###### Discovery Phase
+During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask the several qualitative questions:
+1. Qualifying question: Have you heard of / use K-Beauty skincare products?
+Those who answered yes were then asked asked the next question:
+2. Would you like to participate in an informal user research about K-Beauty products?
+Those who answered yes were then asked asked the next set of qualitative questions:
+3. Where do you normally purchase these products? From a pharmacy/ beauty shop or online?
+4. How might we provide you the information that you look for when buying a skincare and/or hair &amp; beauty products?
+Answers: Product name, price, brand name, description, how to use, ingredients, skincare concern, discounts, reviews, availability, delivery charge
+5. How might we help you decide on the trustworthiness of a K-Beauty product you are thinking of buying?
+Answers: brand name and information, products from a particular brand, reviews
+6. Once you have found the product you are looking for, how might we help you
+
 ###### Design Phase
+
 ###### Product Launch - Alpha
 ###### Product Launch - Beta
 
