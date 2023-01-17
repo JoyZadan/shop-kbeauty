@@ -15,7 +15,6 @@ Shop K-Beauty is a multi-brand, ecommerce full stack project built using Django,
 
 Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diploma in Web Application Development (Full Stack Software Development).
 <br/>
-<br/>
 
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
@@ -89,28 +88,28 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
 
 # User Experience
 
-## Strategy Plane
+## STRATEGY PLANE
 
 Straits Research, in its [K-Beauty Products Market Report](https://straitsresearch.com/report/k-beauty-products-market) stated that **"the global K-Beauty products market size had a revenue holding of US$8.30 billion in 2021. It is expected to reach US$18.32 billion by 2030, growing at a CAGR (compound annual growth rate) of 9.2% during the forecast period (2022-2030). Skincare items originating in South Korea are collectively referred to as K-Beauty."**
 
-### Project Goals
+### **Project Goals**
 This section aims to answer the key question: *What problems are we trying to solve with Shop K-Beauty?*
 
 Although the demand for cosmetics products declined globally during the pandemic due mainly to fewer occasions to wear make-up given the guidelines on working from home, social distancing and wearing masks, there was also a corresponding rise in consumption focused on skincare products driven by increasing demand for affordable, fast-acting, self-care beauty routines.
 
-#### Problems We Are Trying to Solve
-**Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician**
+#### **Problems We Are Trying to Solve**
+- *Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician*
 Shop K-Beauty, a multi-brand ecommerce store specialising in K-Beauty skincare and hair &amp; body products, aims to provide an easy to use online shop for consumers to browse and purchase K-Beauty products. These curated K-Beauty products are proven to be effective, gentle on the skin, and can be used at home without requiring the assistance of a skincare professional.
 
-**Problem 2: Confusion around K-Beauty products and K-Beauty Skincare routines**
+- *Problem 2: Confusion around K-Beauty products and K-Beauty Skincare routines*
 Shop K-Beauty also aims to provide the information that consumers may require such as a product description, how to use a product and detailed product ingredients. With an uncluttered, easy to follow product detail and with our K-Beauty tips, we hope to also demystify the ins and outs of K-Beauty skincare routines.
 
-In addition, a brief information about a product brand's company background, ethos and values will also be made available to all visitors and shoppers.
+    In addition, a brief information about a product brand's company background, ethos and values will also be made available to all visitors and shoppers.
 
-**Problem 3: Expensive skincare and hair &amp; body products**
+- *Problem 3: Expensive skincare and hair &amp; body products*
 Cognizant of ever-increasing costs of living and typically high price points of skincare and hair &amp; body products available in the UK, Europe, Middle East and the USA, Shop K-Beauty aims to offer more affordable products without sacrificing quality, effectiveness and enjoyability. K-Beauty products are generally already attractively priced compared to their Western counterparts and whenever possible, product discounts, deals and offers will be available on the Shop.
 
-Update:
+- Update:
 1. Brand
 2. Reviews
 3. Wishlist
@@ -124,89 +123,95 @@ To achieve the above, the internal stakeholders' goals for the ecommerce shop ar
 1. **Trustworthiness** - How can the online shop effectively present the trustworthiness and the high quality of the available K-Beauty products?
 2. **Simplicity and Ease of Use** - How can the quality of the content presented to end-users (shop visitors and shoppers) be easy to follow, engaging and provides balanced information and detail without being overwhelming or distracting?
 3. **Transparency** - How can we unsure that our contact information, the policies for shipping, returns and privacy and product reviews are easy to find?
-
+<br/>
 Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/) *The Ultimate Guide to Designing Ecommerce Sites*
 
 #### **Business Model**
 Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands of K-Beauty products.
 
-#### Product Goals
+#### **Product Goals**
 1. Proven Effectiveness - evidenced by user reviews
 2. Branded Products - inclusion of product brand and brand description
 3. Attractive Price Points - through price competiveness and savings on offer
 
-#### User Research
+#### **User Research**
 What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using. For the Shop K-Beauty project, user research will be done in three phases: Doscovery Phase, Product Launch - Alpha and Product Launch - Beta.
 
-##### Discovery Phase
-During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask them several qualitative questions:
-1. Qualifying question: Have you heard of / use K-Beauty skincare products?  <br/>
-Those who answered yes were then asked asked the next question:
-2. Would you like to participate in an informal user research about K-Beauty products?  <br/>
-Those who answered yes were then asked asked the next set of qualitative questions:
-3. Where do you normally purchase these products? From a pharmacy/ beauty shop or online? <br/>
-*Answers received:*
-- online
-- pharmacy/ physical store
-- both online and physical shop
-4. How might we help you find K-Beauty products?  <br/>
-*Answers received:*
-- Post them on social media
-- create helpful skincare groups on social media
-- send your products to 'skinfluencers' for reviews
-4. How might we provide you the information that you typically look for when buying a skincare and/or hair &amp; beauty products?  <br/>
-*Answers received:*
-- name
-- price
-- brand name
-- description
-- how to use
-- ingredients
-- skincare concern
-- discounts
-- reviews
-- availability
-- delivery charge
-5. How might we help you decide on the trustworthiness of a K-Beauty product you are thinking of buying?  <br/>
-*Answers received*:
-- brand name and information
-- products from a particular brand
-- product reviews and ratings
-6. Once you have found the product you are looking for, how might we help you make the decision to purchase the product?  <br/>
-*Answers received:*
-- Show me what discounts are available
-- I want to see deals
-- I want to read reviews about the product so that I can check if it's gentle on the skin/ is effective
-- Show me related products in case I'm still not convinced
-7. How might we help you come back to make the purchase in case you did not buy the products from your visit?  <br/>
-*Answers received:*
-- Just let me save the product to my wishlist
-- Email me a reminder
-- Post it on your social media so I can follow you/ remember to buy
+- #### **Discovery Phase**
+    During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask them several qualitative questions:
+    1. Qualifying question: Have you heard of / use K-Beauty skincare products?  <br/>
+        Those who answered yes were then asked asked the next question:
+    2. Would you like to participate in an informal user research about K-Beauty products?  <br/>
+        Those who answered yes were then asked asked the next set of qualitative questions:
+    3. Where do you normally purchase these products? From a pharmacy/ beauty shop or online? <br/>
+        *Answers received:*
+        - online
+        - pharmacy/ physical store
+        - both online and physical shop
+    4. How might we help you find K-Beauty products?  <br/>
+        * Answers received:*
+        - Post them on social media
+        - create helpful skincare groups on social media
+        - send your products to 'skinfluencers' for reviews
+    5. How might we provide you the information that you typically look for when buying a skincare and/or hair &amp; beauty products?  <br/>
+        *Answers received:*
+        - name
+        - price
+        - brand name
+        - description
+        - how to use
+        - ingredients
+        - skincare concern
+        - discounts
+        - reviews
+        - availability
+        - delivery charge
+    6. How might we help you decide on the trustworthiness of a K-Beauty product you are thinking of buying?  <br/>
+        *Answers received*:
+        - brand name and information
+        - products from a particular brand
+        - product reviews and ratings
+    7. Once you have found the product you are looking for, how might we help you make the decision to purchase the product?  <br/>
+        *Answers received:*
+        - Show me what discounts are available
+        - I want to see deals
+        - I want to read reviews about the product so that I can check if it's gentle on the skin/ is effective
+        - Show me related products in case I'm still not convinced
+    8. How might we help you come back to make the purchase in case you did not buy the products from your visit?  <br/>
+        *Answers received:*
+        - Just let me save the product to my wishlist
+        - Email me a reminder
+        - Post it on your social media so I can follow you/ remember to buy
+<br/>
 
-##### Product Launch - Alpha
-This is to be conducted after initial deployment. Alpha testing will assess the quality and stability of the site under test in the testing environment.
+- #### **Product Launch - Alpha**
+    This is to be conducted after initial deployment. Alpha testing will assess the quality and stability of the site under test in the testing environment.
 
-The Product Launch - Alpha will be focused on:
-1. Uncovering bugs
-2. Usability issues
-3. Feature gaps
-4. Compatibility/ inter-operability issues
+    The Product Launch - Alpha will be focused on:
+    1. Uncovering bugs
+    2. Usability issues
+    3. Feature gaps
+    4. Compatibility/ inter-operability issues
 
-Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
+    Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
 
-Update:
-##### Product Launch - Beta
-Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
+    Update:
 
-Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
-Source: [Google's HEART Framework](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36299.pdf)
-* Google's HEART Framework for Measuring UX. HEART stands for Happiness, Engagement, Adoption, Retention, Task Success
+<br/>
 
-Update:
+- #### **Product Launch - Beta**
+    Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
+
+    Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
+    Source: [Google's HEART Framework](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36299.pdf)
+    * Google's HEART Framework for Measuring UX. HEART stands for Happiness, Engagement, Adoption, Retention, Task Success
+
+    Update:
+
+<br/>
 
 ## SCOPE PLANE
-### Feature Planning
+### **Feature Planning**
 When planning the Shop K-Beauty ecommerce store's features and scope, I drew up a Desirability, Feasibility and  Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised. The target users for each ranked feature are also identified.
 
 | # | Feature | Target User | Desirability | Importance | Viability  | Delivered |
@@ -217,7 +222,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 3 | User Email Confirmation | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 4 | Password Reset | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 5 | Social Media Registration &amp; Login | Visitors &amp; Shoppers | 5 | 2 | 2 | ❌ |
-| 6 | User Profile Page | 5 | 5 | 5 | ✅ |
+| 6 | User Profile Page | Registered Users | 5 | 5 | 5 | ✅ |
 | Navigation |  |  |  |  |  |  |
 | 7 | Top Navigation to include: logo, search bar, my account (register, login) and bag | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 8 | Top Navigation to include: my account (my profile, logout), wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
@@ -262,13 +267,22 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 37 | Loyalty Cards | Shoppers | 4 | 3 | 2 | ❌ |
 | 38 | Digital Gift Cards | All Users <sup>1</sup> | 5 | 2 | 1 | ❌ |
 
-1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
+*1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins*
 
-2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
+*2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)*
 
-### Content Requirement Planning
-### Functionalities for User Interaction
-### User Stories
+<br/>
+
+### **Content Requirement Planning**
+
+
+<br/>
+
+### **Functionalities for User Interaction**
+
+<br/>
+
+### **User Stories**
 | **USER STORY #** | **ISSUE ID** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- | --- |
 | **VIEWING & NAVIGATION** |   |   |
