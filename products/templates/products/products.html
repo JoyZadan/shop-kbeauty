@@ -15,7 +15,6 @@
             <div class="col text-center mt-1">
                 <!-- PAGE HEADING -->
                 <h2 class="display-5 brand-font text-black text-center my-5">All K-Beauty Products</h2>
-
                 <!-- PRODUCTS FILTERING &amp; SORTING AREA -->
                 {% for c in current_categories %}
                     <!-- Dynamically displays category badge based on filtered data passed from a user's navbar click event -->
@@ -31,7 +30,6 @@
                 {% endfor %}
             </div>
         </div>
-
         <!-- PRODUCTS SORTING DROPDOWN -->
         <div class="row mt-3">
             <div class="product-container col-10 offset-1">
@@ -55,7 +53,6 @@
                             </select>
                         </div>
                     </div>
-
                     <!-- Displays number of products available from user actions: searched term on search bar, product sorting or navbar click event -->
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="alt-a mt-3 text-center font-weight-bold text-md-left">
@@ -68,7 +65,6 @@
                 </div>
             </div>
         </div>
-
         <!-- ALL PRODUCTS AREA -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
             <!-- Also where all available products based on searched term, sorting action or navigation click results are displayed to users -->
@@ -107,7 +103,6 @@
                             </a>
                         </p>
                         {% endif %}
-
                         <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a product -->
                         {% if request.user.is_superuser %}
                         <div class="text-center">
