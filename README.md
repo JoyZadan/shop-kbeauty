@@ -17,17 +17,13 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
 <br/>
 <br/>
 
-
-<details>
-<summary>
-TABLE OF CONTENTS - Click to Expand
-</summary>
-
+**TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
     * [Strategy Plane](#strategy-plane)
         * [Project Goals](#project-goals)
+            * [Problems We Are Trying to Solve](#problems-we-are-trying-to-solve)
             * [Internal Stakeholders' Goals](#internal-stakeholders-goals)
-                * [Business Model](#business-model)
+            * [Business Model](#business-model)
             * [Product Goals](#product-goals)
             * [User Research](#user-research)
                 * [Discovery Phase](#discovery-phase)
@@ -37,7 +33,7 @@ TABLE OF CONTENTS - Click to Expand
         * [Feature Planning](#feature-planning)
         * [Content Requirement Planning](#content-requirement-planning)
         * [Functionalities for User Interaction](#functionalities-for-user-interaction)
-            * [User Stories](#user-stories)
+        * [User Stories](#user-stories)
     * [Structure Plane](#structure-plane)
         * [Interaction Design](#interaction-design)
             * [User Journey Flow Chart](#user-journey-flow-chart)
@@ -89,21 +85,20 @@ TABLE OF CONTENTS - Click to Expand
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
 
-</details>
-
 ---
 
-## USER EXPERIENCE
+# User Experience
 
-### STRATEGY
+## Strategy Plane
 
 Straits Research, in its [K-Beauty Products Market Report](https://straitsresearch.com/report/k-beauty-products-market) stated that **"the global K-Beauty products market size had a revenue holding of US$8.30 billion in 2021. It is expected to reach US$18.32 billion by 2030, growing at a CAGR (compound annual growth rate) of 9.2% during the forecast period (2022-2030). Skincare items originating in South Korea are collectively referred to as K-Beauty."**
 
-#### Project Goals
+### Project Goals
 This section aims to answer the key question: *What problems are we trying to solve with Shop K-Beauty?*
 
 Although the demand for cosmetics products declined globally during the pandemic due mainly to fewer occasions to wear make-up given the guidelines on working from home, social distancing and wearing masks, there was also a corresponding rise in consumption focused on skincare products driven by increasing demand for affordable, fast-acting, self-care beauty routines.
 
+#### Problems We Are Trying to Solve
 **Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician**
 Shop K-Beauty, a multi-brand ecommerce store specialising in K-Beauty skincare and hair &amp; body products, aims to provide an easy to use online shop for consumers to browse and purchase K-Beauty products. These curated K-Beauty products are proven to be effective, gentle on the skin, and can be used at home without requiring the assistance of a skincare professional.
 
@@ -122,7 +117,7 @@ Update:
 4. Search for specific ingredients
 5. Improved Navigation to include subcategories for each category of products
 
-##### i. Internal Stakeholders' Goals
+#### **Internal Stakeholders' Goals**
 Ultimately, the internal stakeholders' goal is to have a profitable and positively-perceived online shop specialising in K-Beauty products. Internal stakeholders are the shop owners, online shop administrators and staff (the latter two may also be the shop owners themselves).
 
 To achieve the above, the internal stakeholders' goals for the ecommerce shop are focused on:
@@ -132,18 +127,18 @@ To achieve the above, the internal stakeholders' goals for the ecommerce shop ar
 
 Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/) *The Ultimate Guide to Designing Ecommerce Sites*
 
-###### **Business Model**
+#### **Business Model**
 Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands of K-Beauty products.
 
-##### ii. Product Goals
+#### Product Goals
 1. Proven Effectiveness - evidenced by user reviews
 2. Branded Products - inclusion of product brand and brand description
 3. Attractive Price Points - through price competiveness and savings on offer
 
-##### iii. User Research
+#### User Research
 What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using. For the Shop K-Beauty project, user research will be done in three phases: Doscovery Phase, Product Launch - Alpha and Product Launch - Beta.
 
-###### Discovery Phase
+##### Discovery Phase
 During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask them several qualitative questions:
 1. Qualifying question: Have you heard of / use K-Beauty skincare products?  <br/>
 Those who answered yes were then asked asked the next question:
@@ -189,7 +184,7 @@ Those who answered yes were then asked asked the next set of qualitative questio
 - Email me a reminder
 - Post it on your social media so I can follow you/ remember to buy
 
-###### Product Launch - Alpha
+##### Product Launch - Alpha
 This is to be conducted after initial deployment. Alpha testing will assess the quality and stability of the site under test in the testing environment.
 
 The Product Launch - Alpha will be focused on:
@@ -201,7 +196,7 @@ The Product Launch - Alpha will be focused on:
 Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
 
 Update:
-###### Product Launch - Beta
+##### Product Launch - Beta
 Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
 
 Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
@@ -210,11 +205,11 @@ Source: [Google's HEART Framework](https://storage.googleapis.com/pub-tools-publ
 
 Update:
 
-### SCOPE PLANE
-#### Feature Planning
+## SCOPE PLANE
+### Feature Planning
 When planning the Shop K-Beauty ecommerce store's features and scope, I drew up a Desirability, Feasibility and  Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised. The target users for each ranked feature are also identified.
 
-| # | Feature | Target User | Desirability | Feasibility | Viability  | Delivered |
+| # | Feature | Target User | Desirability | Importance | Viability  | Delivered |
 | --- | --- | --- | --- | --- | --- | --- |
 | User Accounts |  |  |  |  |  |  |
 | 1 | User Role Permissions | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
@@ -222,54 +217,58 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 3 | User Email Confirmation | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 4 | Password Reset | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 5 | Social Media Registration &amp; Login | Visitors &amp; Shoppers | 5 | 2 | 2 | ❌ |
+| 6 | User Profile Page | 5 | 5 | 5 | ✅ |
 | Navigation |  |  |  |  |  |  |
-| 6 | Top Navigation to include: logo, search bar, my account (register, login) and bag | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 7 | Top Navigation to include: my account (my profile, logout), wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
-| 8 | Top Navigation Search Bar: to be enabled for product name, brands or ingredients searching | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 9 | Top Navigation to include: my account (brand management, product management, my profile, logout) and wishlist | Logged In Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
-| 10 | Main Navigation to include links to: all products, product types by categories, special offers and available brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 7 | Top Navigation to include: logo, search bar, my account (register, login) and bag | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 8 | Top Navigation to include: my account (my profile, logout), wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
+| 9 | Top Navigation Search Bar: to be enabled for product name, brands or ingredients searching | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 10 | Top Navigation to include: my account (brand management, product management, my profile, logout) and wishlist | Logged In Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
+| 11 | Main Navigation to include links to: all products, product types by categories, special offers and available brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | Products |  |  |  |  |  |  |
-| 11 | Featured Products | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 12 | Product Main Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 13 | Product Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 14 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 15 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain descriptio, how to use and ingredient details | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 16 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 17 | Randomized List of Related Products (filtered by subcategory) | All Users <sup>1</sup> | 5 | 4 | 3 | ✅ |
-| 18 | Product Management - Create, Read, Update and Delete Products via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
+| 12 | Featured Products | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 13 | Product Main Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 14 | Product Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 15 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 16 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain descriptio, how to use and ingredient details | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 17 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 18 | Randomized List of Related Products (filtered by subcategory) | All Users <sup>1</sup> | 5 | 4 | 3 | ✅ |
+| 19 | Product Management - Create, Read, Update and Delete Products via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
 | Brands |  |  |  |  |  |  |
-| 19 | Featured Brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 20 | List of All Available Brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 21 | List of All Available Products by Brand | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 22 | Brand Management - Create, Read, Update Brands via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
+| 20 | Featured Brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 21 | List of All Available Brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 22 | List of All Available Products by Brand | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 23 | Brand Management - Create, Read, Update Brands via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
 | Stock Inventory |  |  |  |  |  |  |
-| 23 | Display Percentage of Stock Availability against Total Quantity of Stocks Per Product  | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
-| 24 | Automatically Deduct quantity of product sold from Total Quantity and Update Stock Availability Displayed on Product Detail Page | All Users <sup>1</sup> | 4 | 2 | 2 | ❌ |
-| 25 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners &amp; Superadmin | 5 | 5 | 5 | ✅ |
+| 24 | Display Percentage of Stock Availability against Total Quantity of Stocks Per Product  | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
+| 25 | Automatically Deduct quantity of product sold from Total Quantity and Update Stock Availability Displayed on Product Detail Page | All Users <sup>1</sup> | 4 | 2 | 2 | ❌ |
+| 26 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners &amp; Superadmin | 5 | 5 | 5 | ✅ |
 | Checkout |  |  |  |  |  |  |
-| 26 | Email Confirmation of Order | Shoppers | 5 | 5 | 5 | ✅ |
-| 27 | Order History | Shoppers | 5 | 5 | 5 | ✅ |
-| 28 | Save/ Update Customer Details on Checkout | Shoppers | 5 | 5 | 5 | ✅ |
+| 27 | Email Confirmation of Order | Shoppers | 5 | 5 | 5 | ✅ |
+| 28 | Order History | Shoppers | 5 | 5 | 5 | ✅ |
+| 29 | Save/ Update Customer Details on Checkout | Shoppers | 5 | 5 | 5 | ✅ |
 | Product Reviews |  |  |  |  |  |  |
-| 29 | Product Reviews - Create and Read Reviews | Logged In Users  |  5 | 5 | 5 | ✅ |
-| 29 | Product Reviews - Create, Read Update and Delete Reviews | Shop Owners and Superadmins (CRUD) |  5 | 5 | 5 | ✅ |
+| 30 | Product Reviews - Create and Read Reviews | Logged In Users  |  5 | 5 | 5 | ✅ |
+| 31 | Product Reviews - Create, Read Update and Delete Reviews | Shop Owners and Superadmins (CRUD) |  5 | 5 | 5 | ✅ |
 | Wishlist |  |  |  |  |  |  |
-| 30 | Individual User's Wishlist - Create, Read, Update and Delete Wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
-| 31 | Policy Pages | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 32 | Individual User's Wishlist - Create, Read, Update and Delete Wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
+| 33 | Policy Pages | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | Digital Marketing |  |  |  |  |  |  |
-| 32 | Social Media Presence | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
+| 34 | Social Media Presence | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
 | Email Marketing |  |  |  |  |  |  |
-| 33 | Email Subscription, Powered by MailChimp | Registered Subscribers | 3 | 3 | 3 | ❌ |
+| 35 | Email Subscription, Powered by MailChimp | Registered Subscribers | 3 | 3 | 3 | ❌ |
 | Contact Us |  |  |  |  |  |  |
-| 34 | Contact Form | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
+| 36 | Contact Form | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
+| Loyalty and Gift Cards |  |  |  |  |  |  |
+| 37 | Loyalty Cards | Shoppers | 4 | 3 | 2 | ❌ |
+| 38 | Digital Gift Cards | All Users <sup>1</sup> | 5 | 2 | 1 | ❌ |
 
 1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
 
 2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
 
-#### Content Requirement Planning
-#### Functionalities for User Interaction
-##### User Stories
+### Content Requirement Planning
+### Functionalities for User Interaction
+### User Stories
 | **USER STORY #** | **ISSUE ID** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- | --- |
 | **VIEWING & NAVIGATION** |   |   |
