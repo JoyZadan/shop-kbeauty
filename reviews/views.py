@@ -60,7 +60,7 @@ def add_review(request, product_id):
 
 def review_detail(request, review_id):
     """
-        A view to display details individual reviews
+        A view to display details of just submitted review
     """
     review = get_object_or_404(Review, pk=review_id)
 

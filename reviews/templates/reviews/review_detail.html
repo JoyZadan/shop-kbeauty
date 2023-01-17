@@ -22,7 +22,6 @@
             <p>{{ review.content }}</p>
             <p>Created by: {{ review.user }}</p>
             <p>{{ review.date }}</p>
-
             <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a review -->
             {% if request.user.is_superuser %}
             <div class="text-center">
