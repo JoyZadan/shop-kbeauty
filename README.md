@@ -31,9 +31,9 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Scope Plane](#scope-plane)
         * [Feature Planning](#feature-planning)
         * [Content Requirement Planning](#content-requirement-planning)
-            * [Text](#text)
-            * [Images](#images)
-            * [Video](#video)
+            * [Content Type: Text](#content-type-text)
+            * [Content Type: Images](#content-type-images)
+            * [Content Type: Videos](#content-type-videos)
         * [Functionalities for User Interaction](#functionalities-for-user-interaction)
         * [User Stories](#user-stories)
     * [Structure Plane](#structure-plane)
@@ -202,7 +202,6 @@ What is user research? User research is the process of researching Shop K-Beauty
 
     Update:
 
-<br/>
 
 - #### **Product Launch - Beta**
     Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
@@ -283,13 +282,39 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 ### **Content Requirement Planning**
 *Design in the absence of content is not design, it's decoration.* - [Jeffrey Zeldman](https://en.wikipedia.org/wiki/Jeffrey_Zeldman)
 
-**Content Types:**
+Whilst Content Strategy and Planning are not technically a part of UX, content bridges the gap between the Business Goals and the end users. Having a clear vision of what we need to achieve (ie the type of content that relates to the users and satisfies their needs) and a roadmap for how exactly we can get there (by understanding the users and creating quality content) are as equally important as having a good understand of the Features we want to implement.
 
-- #### **Text**
+Earlier, we discussed the Internal Stakeholders' Goals -- a profitable, positively-perceived specialist online shop focused on delivering: Trustworthiness, Simplicity and Ease of Use, Transparency.
 
-- #### **Images**
+Meanwhile, from our User Research (Discovery Phase), we found out that shoppers of skincare and hair &amp; body products typically look specific information when buying these products.
 
-- #### **Video**
+- #### **Content Type: Text**
+| # | Information a Shopper Needs to Make a Buying Decision | Delivered |
+| --- | --- | --- |
+| 1 | Brand Name  | ✅ |
+| 2 | Brand's Products  | ✅ |
+| 3 | Brand's Product to Aid with Skincare Concern  | ✅ |
+| 4 | Product Price | ✅ |
+| 5 | Product Description | ✅ |
+| 6 | Product's Ingredients  | ✅ |
+| 7 | How to Use the Product  | ✅ |
+| 8 | Product Discounts | ✅ |
+| 9 | Delivery Fees | ✅ |
+| 10 | Promotional Codes and Discounts | ✅ |
+| 11 | Product Reviews | ✅ |
+| 12 | Additional Info: Skincare Routines and Tips | ✅ |
+
+- #### **Content Type: Images**
+| # | Image(s) a Shopper Needs to Make a Buying Decision | Why? | Delivered |
+| --- | --- | --- | --- |
+| 1 | Product Image | To make sure it's the correct product | ✅ |
+| 2 | Brand Logo | To make sure it's the correct brand or the brand I had in mind | ✅ |
+
+- #### **Content Type: Videos**
+| # | Videos a Shopper Needs to Make a Buying Decision | Why? | Delivered |
+| --- | --- | --- | --- |
+| 1 | Product Review | To help user decide to purchase the product or looking for something else | ✅ |
+| 2 | Skincare Routine - How To | To be sure of following the right steps, of correctly layering the serums and other products | ❌ |
 
 **Integrating Content Strategy and SEO**
 
