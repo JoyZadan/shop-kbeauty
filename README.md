@@ -194,17 +194,66 @@ Update:
 Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
 
 Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
+Source: [Google's HEART Framework](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36299.pdf)
+* Google's HEART Framework for Measuring UX. HEART stands for Happiness, Engagement, Adoption, Retention, Task Success
 
 Update:
 
 ### SCOPE PLANE
 #### Feature Planning
-When planning the Shop K-Beauty ecommerce store's features and scope, I drew up an Importance Viability analysis of these features, please see below:
+When planning the Shop K-Beauty ecommerce store's features and scope, I drew up a Desirability, Feasibility and  Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised. The target users for each ranked feature are also identified.
 
-| # | Feature | Importance | Viability | User Impact Score | Release Notes |
-| --- | --- | --- | --- | --- | --- |
-| 1 | ... |  |  |  |  |
-| 2 | ... |  |  |  |  |
+| # | Feature | Target User | Desirability | Feasibility | Viability  | Delivered |
+| --- | --- | --- | --- | --- | --- | --- |
+| User Accounts |  |  |  |  |  |  |
+| 1 | User Role Permissions | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 2 | Account Registration | All Users | 5 | 5 | 5 | ✅ |
+| 3 | User Email Confirmation | All Users | 5 | 5 | 5 | ✅ |
+| 4 | Password Reset | All Users | 5 | 5 | 5 | ✅ |
+| 5 | Social Media Registration &amp; Login | Visitors and Shoppers | 5 | 2 | 2 | ❌ |
+| Navigation |  |  |  |  |  |  |
+| 6 | Top Navigation to include: logo, search bar, my account (register, login) and bag | All Users | 5 | 5 | 5 | ✅ |
+| 7 | Top Navigation to include: my account (my profile, logout), wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
+| 8 | Top Navigation Search Bar: to be enabled for product name, brands or ingredients searching | All Users | 5 | 5 | 5 | ✅ |
+| 9 | Top Navigation to include: my account (brand management, product management, my profile, logout) and wishlist | Logged In Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| 10 | Main Navigation to include links to: all products, product types by categories, special offers and available brands | All Users | 5 | 5 | 5 | ✅ |
+| Products |  |  |  |  |  |  |
+| 11 | Featured Products | All Users | 5 | 5 | 5 | ✅ |
+| 12 | Product Main Categories | All Users | 5 | 5 | 5 | ✅ |
+| 13 | Product Categories | All Users | 5 | 5 | 5 | ✅ |
+| 14 | Product Subcategories | All Users | 5 | 5 | 5 | ✅ |
+| 15 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain descriptio, how to use and ingredient details | All Users | 5 | 5 | 5 | ✅ |
+| 16 | Product Subcategories | All Users | 5 | 5 | 5 | ✅ |
+| 17 | Randomized List of Related Products (filtered by subcategory) | All Users | 5 | 4 | 3 | ✅ |
+| 18 | Product Management - Create, Read, Update and Delete Products via the front-end | Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| Brands |  |  |  |  |  |  |
+| 19 | Featured Brands | All Users | 5 | 5 | 5 | ✅ |
+| 20 | List of All Available Brands | All Users | 5 | 5 | 5 | ✅ |
+| 21 | List of All Available Products by Brand | All Users | 5 | 5 | 5 | ✅ |
+| 22 | Brand Management - Create, Read, Update Brands via the front-end | Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| Stock Inventory |  |  |  |  |  |  |
+| 23 | Display Percentage of Stock Availability against Total Quantity of Stocks Per Product  | All Users | 3 | 3 | 3 | ❌ |
+| 24 | Automatically Deduct quantity of product sold from Total Quantity and Update Stock Availability Displayed on Product Detail Page | All Users | 4 | 2 | 2 | ❌ |
+| 25 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners/Superadmin | 5 | 5 | ✅ |
+| Checkout |  |  |  |  |  |  |
+| 26 | Email Confirmation of Order | Shoppers | 5 | 5 | 5 | ✅ |
+| 27 | Order History | Shoppers | 5 | 5 | 5 | ✅ |
+| 28 | Save/ Update Customer Details on Checkout | Shoppers | 5 | 5 | 5 | ✅ |
+| Product Reviews |  |  |  |  |  |  |
+| 29 | Product Reviews - Create, Read Update and Delete Reviews | Shoppers (Create and Read), Shop Owners and Superadmins (CRUD) |  5 | 5 | 5 | ✅ |
+| Wishlist |  |  |  |  |  |  |
+| 30 | Individual User's Wishlist - Create, Read, Update and Delete Wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
+| 31 | Policy Pages | All Users | 5 | 5 | 5 | ✅ |
+| Digital Marketing |  |  |  |  |  |  |
+| 32 | Social Media Presence | Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| Email Marketing |  |  |  |  |  |  |
+| 33 | Email Subscription, Powered by MailChimp | All Registered Subscribers | 3 | 3 | 3 | ❌ |
+| Contact Us |  |  |  |  |  |  |
+| 34 | Contact Form | All Users | 3 | 3 | 3 | ❌ |
+
+1. Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
+
+2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
 
 #### Content Requirement Planning
 #### Functionalities for User Interaction
