@@ -207,49 +207,50 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | --- | --- | --- | --- | --- | --- | --- |
 | User Accounts |  |  |  |  |  |  |
 | 1 | User Role Permissions | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 2 | Account Registration | All Users | 5 | 5 | 5 | ✅ |
-| 3 | User Email Confirmation | All Users | 5 | 5 | 5 | ✅ |
-| 4 | Password Reset | All Users | 5 | 5 | 5 | ✅ |
-| 5 | Social Media Registration &amp; Login | Visitors and Shoppers | 5 | 2 | 2 | ❌ |
+| 2 | Account Registration | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 3 | User Email Confirmation | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 4 | Password Reset | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 5 | Social Media Registration &amp; Login | Visitors &amp; Shoppers | 5 | 2 | 2 | ❌ |
 | Navigation |  |  |  |  |  |  |
-| 6 | Top Navigation to include: logo, search bar, my account (register, login) and bag | All Users | 5 | 5 | 5 | ✅ |
+| 6 | Top Navigation to include: logo, search bar, my account (register, login) and bag | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 7 | Top Navigation to include: my account (my profile, logout), wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
-| 8 | Top Navigation Search Bar: to be enabled for product name, brands or ingredients searching | All Users | 5 | 5 | 5 | ✅ |
-| 9 | Top Navigation to include: my account (brand management, product management, my profile, logout) and wishlist | Logged In Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
-| 10 | Main Navigation to include links to: all products, product types by categories, special offers and available brands | All Users | 5 | 5 | 5 | ✅ |
+| 8 | Top Navigation Search Bar: to be enabled for product name, brands or ingredients searching | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 9 | Top Navigation to include: my account (brand management, product management, my profile, logout) and wishlist | Logged In Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
+| 10 | Main Navigation to include links to: all products, product types by categories, special offers and available brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | Products |  |  |  |  |  |  |
-| 11 | Featured Products | All Users | 5 | 5 | 5 | ✅ |
-| 12 | Product Main Categories | All Users | 5 | 5 | 5 | ✅ |
-| 13 | Product Categories | All Users | 5 | 5 | 5 | ✅ |
-| 14 | Product Subcategories | All Users | 5 | 5 | 5 | ✅ |
-| 15 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain descriptio, how to use and ingredient details | All Users | 5 | 5 | 5 | ✅ |
-| 16 | Product Subcategories | All Users | 5 | 5 | 5 | ✅ |
-| 17 | Randomized List of Related Products (filtered by subcategory) | All Users | 5 | 4 | 3 | ✅ |
-| 18 | Product Management - Create, Read, Update and Delete Products via the front-end | Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| 11 | Featured Products | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 12 | Product Main Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 13 | Product Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 14 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 15 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain descriptio, how to use and ingredient details | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 16 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 17 | Randomized List of Related Products (filtered by subcategory) | All Users <sup>1</sup> | 5 | 4 | 3 | ✅ |
+| 18 | Product Management - Create, Read, Update and Delete Products via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
 | Brands |  |  |  |  |  |  |
-| 19 | Featured Brands | All Users | 5 | 5 | 5 | ✅ |
-| 20 | List of All Available Brands | All Users | 5 | 5 | 5 | ✅ |
-| 21 | List of All Available Products by Brand | All Users | 5 | 5 | 5 | ✅ |
-| 22 | Brand Management - Create, Read, Update Brands via the front-end | Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| 19 | Featured Brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 20 | List of All Available Brands | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 21 | List of All Available Products by Brand | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 22 | Brand Management - Create, Read, Update Brands via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
 | Stock Inventory |  |  |  |  |  |  |
-| 23 | Display Percentage of Stock Availability against Total Quantity of Stocks Per Product  | All Users | 3 | 3 | 3 | ❌ |
-| 24 | Automatically Deduct quantity of product sold from Total Quantity and Update Stock Availability Displayed on Product Detail Page | All Users | 4 | 2 | 2 | ❌ |
-| 25 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners/Superadmin | 5 | 5 | ✅ |
+| 23 | Display Percentage of Stock Availability against Total Quantity of Stocks Per Product  | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
+| 24 | Automatically Deduct quantity of product sold from Total Quantity and Update Stock Availability Displayed on Product Detail Page | All Users <sup>1</sup> | 4 | 2 | 2 | ❌ |
+| 25 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners &amp; Superadmin | 5 | 5 | ✅ |
 | Checkout |  |  |  |  |  |  |
 | 26 | Email Confirmation of Order | Shoppers | 5 | 5 | 5 | ✅ |
 | 27 | Order History | Shoppers | 5 | 5 | 5 | ✅ |
 | 28 | Save/ Update Customer Details on Checkout | Shoppers | 5 | 5 | 5 | ✅ |
 | Product Reviews |  |  |  |  |  |  |
-| 29 | Product Reviews - Create, Read Update and Delete Reviews | Shoppers (Create and Read), Shop Owners and Superadmins (CRUD) |  5 | 5 | 5 | ✅ |
+| 29 | Product Reviews - Create and Read Reviews | Logged In Users  |  5 | 5 | 5 | ✅ |
+| 29 | Product Reviews - Create, Read Update and Delete Reviews | Shop Owners and Superadmins (CRUD) |  5 | 5 | 5 | ✅ |
 | Wishlist |  |  |  |  |  |  |
 | 30 | Individual User's Wishlist - Create, Read, Update and Delete Wishlist | Logged In Users | 5 | 5 | 5 | ✅ |
-| 31 | Policy Pages | All Users | 5 | 5 | 5 | ✅ |
+| 31 | Policy Pages | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | Digital Marketing |  |  |  |  |  |  |
-| 32 | Social Media Presence | Shop Owners and Superadmins | 5 | 5 | 5 | ✅ |
+| 32 | Social Media Presence | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
 | Email Marketing |  |  |  |  |  |  |
-| 33 | Email Subscription, Powered by MailChimp | All Registered Subscribers | 3 | 3 | 3 | ❌ |
+| 33 | Email Subscription, Powered by MailChimp | Registered Subscribers | 3 | 3 | 3 | ❌ |
 | Contact Us |  |  |  |  |  |  |
-| 34 | Contact Form | All Users | 3 | 3 | 3 | ❌ |
+| 34 | Contact Form | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
 
 1. Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
 
