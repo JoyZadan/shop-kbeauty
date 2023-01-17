@@ -31,6 +31,9 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Scope Plane](#scope-plane)
         * [Feature Planning](#feature-planning)
         * [Content Requirement Planning](#content-requirement-planning)
+            * [Text]
+            * [Images]
+            * [Video]
         * [Functionalities for User Interaction](#functionalities-for-user-interaction)
         * [User Stories](#user-stories)
     * [Structure Plane](#structure-plane)
@@ -276,7 +279,17 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 <br/>
 
 ### **Content Requirement Planning**
+*Design in the absence of content is not design, it's decoration.* - [Jeffrey Zeldman](https://en.wikipedia.org/wiki/Jeffrey_Zeldman)
 
+**Content Types:**
+
+- #### **Text**
+
+- #### **Images**
+
+- #### **Video**
+
+**Integrating Content Strategy and SEO**
 
 <br/>
 
