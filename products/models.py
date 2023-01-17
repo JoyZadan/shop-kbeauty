@@ -23,6 +23,12 @@ class MainCategory(models.Model):
         """ String representation of Main Category model """
         return self.name
 
+    # slugify is a function on the built-in utils.text module
+    # converts a normal string into a URL slug by removing characters
+    # that aren't alphanumeric, underscores, hyphens or whitespaces
+    # also converts to lowercare
+    # expects as parameters the string we want to slugify,
+    # in this case, the MainCategory name
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
@@ -53,6 +59,8 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+    # expects as parameters the string we want to slugify
+    # in this case, the category name
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
@@ -83,6 +91,8 @@ class Subcategory(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+    # expects as parameters the string we want to slugify,
+    # in this case, the subcategory name
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
@@ -117,6 +127,8 @@ class Brand(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+    # expects as parameters the string we want to slugify
+    # in this case, the brand name
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
@@ -176,6 +188,8 @@ class Product(models.Model):
         """ String representation of Product model """
         return self.name
 
+    # expects as parameters the string we want to slugify
+    # in this case, the product name
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
