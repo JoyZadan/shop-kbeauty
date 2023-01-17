@@ -23,7 +23,7 @@
                     {% csrf_token %}
                     {{ review_form|crispy }}
                     <!-- Cancel review link -->
-                    <a href="{% url 'products' %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
+                    <a href="{% url 'product_detail' product.id %}" class="btn btn-black rounded-0 text-uppercase mt-1 mb-3">
                         <span class="text-uppercase">Cancel</span>
                     </a>
                     <!-- Submit review button -->

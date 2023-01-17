@@ -44,13 +44,13 @@ def add_to_wishlist(request, product_id):
     existing = Wishlist.objects.filter(product=product,
                                        user_profile=user).exists()
     if existing:
-        messages.error(request, f'{product.name} is already in your Wishlist!')
+        messages.info(request, f'{product.name} is already in your Wishlist!')
         return redirect(reverse('product_detail', args=[product.id]))
     else:
         wishlist_item = Wishlist.objects.create(user_profile=user,
                                                 product=product)
-    messages.info(request,
-                  f'{product.name} has been added to your Wishlist!')
+    messages.success(request,
+                     f'{product.name} has been added to your Wishlist!')
 
     return redirect(reverse('product_detail', args=[product.id]))
 
