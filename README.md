@@ -271,6 +271,8 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | Loyalty and Gift Cards |  |  |  |  |  |  |
 | 37 | Loyalty Cards | Shoppers | 4 | 3 | 2 | ❌ |
 | 38 | Digital Gift Cards | All Users <sup>1</sup> | 5 | 2 | 1 | ❌ |
+| Other Features |  |  |  |  |  |  |
+| 39 | Use Slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
 
 *1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins*
 
