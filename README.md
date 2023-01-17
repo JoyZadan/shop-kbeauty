@@ -310,7 +310,7 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 - #### **Content Type: Videos**
 | # | Videos a Shopper Needs to Make a Buying Decision | Why? | Delivered |
 | --- | --- | --- | --- |
-| 1 | Product Review | To help user decide to purchase the product or looking for something else | ✅ |
+| 1 | Product Review | To help user decide to purchase the product or looking for something else | ❌ |
 | 2 | Skincare Routine - How To | To be sure of following the right steps, of correctly layering the serums and other products | ❌ |
 
 - #### **Integrating Content Strategy and SEO**
