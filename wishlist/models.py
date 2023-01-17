@@ -9,6 +9,7 @@ class Wishlist(models.Model):
                                      on_delete=models.CASCADE)
     product = models.ForeignKey(Product, null=True, blank=True,
                                 on_delete=models.CASCADE, default=1)
+    # automatically create and add date when a review is added
     date_added = models.DateField(auto_now_add=True, blank=False, null=False)
 
     def __str__(self):
