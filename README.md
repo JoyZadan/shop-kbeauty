@@ -90,7 +90,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
 
 ## STRATEGY PLANE
 
-Straits Research, in its [K-Beauty Products Market Report](https://straitsresearch.com/report/k-beauty-products-market) stated that **"the global K-Beauty products market size had a revenue holding of US$8.30 billion in 2021. It is expected to reach US$18.32 billion by 2030, growing at a CAGR (compound annual growth rate) of 9.2% during the forecast period (2022-2030). Skincare items originating in South Korea are collectively referred to as K-Beauty."**
+Straits Research, in its [K-Beauty Products Market Report](https://straitsresearch.com/report/k-beauty-products-market) stated that *"the global K-Beauty products market size had a revenue holding of US$8.30 billion in 2021. It is expected to reach US$18.32 billion by 2030, growing at a CAGR (compound annual growth rate) of 9.2% during the forecast period (2022-2030). Skincare items originating in South Korea are collectively referred to as K-Beauty."*
 
 ### **Project Goals**
 This section aims to answer the key question: *What problems are we trying to solve with Shop K-Beauty?*
@@ -99,14 +99,17 @@ Although the demand for cosmetics products declined globally during the pandemic
 
 #### **Problems We Are Trying to Solve**
 - *Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician*
+
 Shop K-Beauty, a multi-brand ecommerce store specialising in K-Beauty skincare and hair &amp; body products, aims to provide an easy to use online shop for consumers to browse and purchase K-Beauty products. These curated K-Beauty products are proven to be effective, gentle on the skin, and can be used at home without requiring the assistance of a skincare professional.
 
 - *Problem 2: Confusion around K-Beauty products and K-Beauty Skincare routines*
+
 Shop K-Beauty also aims to provide the information that consumers may require such as a product description, how to use a product and detailed product ingredients. With an uncluttered, easy to follow product detail and with our K-Beauty tips, we hope to also demystify the ins and outs of K-Beauty skincare routines.
 
-    In addition, a brief information about a product brand's company background, ethos and values will also be made available to all visitors and shoppers.
+In addition, a brief information about a product brand's company background, ethos and values will also be made available to all visitors and shoppers.
 
 - *Problem 3: Expensive skincare and hair &amp; body products*
+
 Cognizant of ever-increasing costs of living and typically high price points of skincare and hair &amp; body products available in the UK, Europe, Middle East and the USA, Shop K-Beauty aims to offer more affordable products without sacrificing quality, effectiveness and enjoyability. K-Beauty products are generally already attractively priced compared to their Western counterparts and whenever possible, product discounts, deals and offers will be available on the Shop.
 
 - Update:
@@ -135,7 +138,7 @@ Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands 
 3. Attractive Price Points - through price competiveness and savings on offer
 
 #### **User Research**
-What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using. For the Shop K-Beauty project, user research will be done in three phases: Doscovery Phase, Product Launch - Alpha and Product Launch - Beta.
+What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using. For the Shop K-Beauty project, user research will be done in three phases: Discovery Phase, Product Launch - Alpha, and Product Launch - Beta.
 
 - #### **Discovery Phase**
     During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask them several qualitative questions:
@@ -182,7 +185,6 @@ What is user research? User research is the process of researching Shop K-Beauty
         - Just let me save the product to my wishlist
         - Email me a reminder
         - Post it on your social media so I can follow you/ remember to buy
-<br/>
 
 - #### **Product Launch - Alpha**
     This is to be conducted after initial deployment. Alpha testing will assess the quality and stability of the site under test in the testing environment.
@@ -203,8 +205,8 @@ What is user research? User research is the process of researching Shop K-Beauty
     Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
 
     Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
-    Source: [Google's HEART Framework](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36299.pdf)
-    * Google's HEART Framework for Measuring UX. HEART stands for Happiness, Engagement, Adoption, Retention, Task Success
+    Source: [Google's HEART* Framework for Measuring UX](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36299.pdf)
+    * HEART stands for Happiness, Engagement, Adoption, Retention, Task Success
 
     Update:
 
@@ -212,7 +214,7 @@ What is user research? User research is the process of researching Shop K-Beauty
 
 ## SCOPE PLANE
 ### **Feature Planning**
-When planning the Shop K-Beauty ecommerce store's features and scope, I drew up a Desirability, Feasibility and  Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised. The target users for each ranked feature are also identified.
+When planning the Shop K-Beauty ecommerce store's features and scope, I drew up a Desirability, Importance and  Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised and should they have been delivered within this release, will then be marked accordingly so. The target users for each ranked feature are also identified.
 
 | # | Feature | Target User | Desirability | Importance | Viability  | Delivered |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -234,7 +236,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 13 | Product Main Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 14 | Product Categories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 15 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
-| 16 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain descriptio, how to use and ingredient details | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
+| 16 | Product Detail page to include: link to brands, categories and subcategories, accordion to contain description, how to use and ingredient details | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 17 | Product Subcategories | All Users <sup>1</sup> | 5 | 5 | 5 | ✅ |
 | 18 | Randomized List of Related Products (filtered by subcategory) | All Users <sup>1</sup> | 5 | 4 | 3 | ✅ |
 | 19 | Product Management - Create, Read, Update and Delete Products via the front-end | Shop Owners &amp; Superadmins | 5 | 5 | 5 | ✅ |
