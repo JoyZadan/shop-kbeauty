@@ -12,6 +12,7 @@ class Review(models.Model):
     title = models.CharField(max_length=30)
     friendly_name = models.CharField(max_length=30, null=True, blank=True)
     content = models.TextField(max_length=500)
+    # automatically create and add date when a review is added
     date = models.DateField(auto_now_add=True, blank=False, null=False)
     is_featured = models.BooleanField(default=False)
 
