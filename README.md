@@ -252,7 +252,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | Contact Us |  |  |  |  |  |  |
 | 34 | Contact Form | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
 
-1. Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
+1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
 
 2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
 
