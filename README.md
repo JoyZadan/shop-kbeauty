@@ -34,7 +34,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
             * [Content Type: Text](#content-type-text)
             * [Content Type: Images](#content-type-images)
             * [Content Type: Videos](#content-type-videos)
-        * [Functionalities for User Interaction](#functionalities-for-user-interaction)
+            * [Integrating Content Strategy and SEO](#integrating-content-strategy-and-seo)
         * [User Stories](#user-stories)
     * [Structure Plane](#structure-plane)
         * [Interaction Design](#interaction-design)
@@ -212,8 +212,6 @@ What is user research? User research is the process of researching Shop K-Beauty
 
     Update:
 
-<br/>
-
 ## SCOPE PLANE
 ### **Feature Planning**
 When planning the Shop K-Beauty ecommerce store's features and scope, I drew up a Desirability, Importance and  Viability analysis of all the possible features to be included in the project, ranking them by order of importance from low (1) to high (5). Features that ranked the highest will be prioritised and should they have been delivered within this release, will then be marked accordingly so. The target users for each ranked feature are also identified.
@@ -273,16 +271,15 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | Other Features |  |  |  |  |  |  |
 | 39 | Use Slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
 
-*1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins*
+1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
 
-*2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)*
+2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
 
-<br/>
 
 ### **Content Requirement Planning**
 *Design in the absence of content is not design, it's decoration.* - [Jeffrey Zeldman](https://en.wikipedia.org/wiki/Jeffrey_Zeldman)
 
-Whilst Content Strategy and Planning are not technically a part of UX, content bridges the gap between the Business Goals and the end users. Having a clear vision of what we need to achieve (ie the type of content that relates to the users and satisfies their needs) and a roadmap for how exactly we can get there (by understanding the users and creating quality content) are as equally important as having a good understand of the Features we want to implement.
+Whilst Content Strategy and Planning are not technically a part of UX, content bridges the gap between the Business Goals and the end users. Having a clear vision of what we need to achieve (ie the type of content that relates to the users and satisfies their needs) and a roadmap for how exactly we can get there (by understanding the users and creating quality content) are as equally important as having a good understand of the Features we want to implement. - [UX Collective](https://uxdesign.cc/content-strategy-in-ux-design-c2e41d19d447)
 
 Earlier, we discussed the Internal Stakeholders' Goals -- a profitable, positively-perceived specialist online shop focused on delivering: Trustworthiness, Simplicity and Ease of Use, Transparency.
 
@@ -316,11 +313,35 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 | 1 | Product Review | To help user decide to purchase the product or looking for something else | ✅ |
 | 2 | Skincare Routine - How To | To be sure of following the right steps, of correctly layering the serums and other products | ❌ |
 
-**Integrating Content Strategy and SEO**
+- #### **Integrating Content Strategy and SEO**
+**Shop K-Beauty's on-page SEO requirements**
 
-<br/>
+| Page | Content Type | Current URL to New URL  | Current Page Title to New Page Title | Current Page Description to New Page Description | Page Description Length | Purpose of the Page | Target Keyword | Target Audience | Internal Links | Social Media Sharing | Calls to Action |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Home Page |  |  |  |  |  |  |  |  |  |  |  |
+| Products Page |  |  |  |  |  |  |  |  |  |  |  |
+| Product Detail Page |  |  |  |  |  |  |  |  |  |  |  |
+| Product Management Page |  |  |  |  |  |  |  |  |  |  |  |
+| Brands Page |  |  |  |  |  |  |  |  |  |  |  |
+| Brand Detail Page |  |  |  |  |  |  |  |  |  |  |  |
+| Brand Management Page |  |  |  |  |  |  |  |  |  |  |  |
+| Shopping Bag |  |  |  |  |  |  |  |  |  |  |  |
+| Checkout |  |  |  |  |  |  |  |  |  |  |  |
+| Register Page |  |  |  |  |  |  |  |  |  |  |  |
+| Login Page |  |  |  |  |  |  |  |  |  |  |  |
+| Profile Page |  |  |  |  |  |  |  |  |  |  |  |
+| Reviews Page |  |  |  |  |  |  |  |  |  |  |  |
+| Add Reviews Page |  |  |  |  |  |  |  |  |  |  |  |
+| Wishlist Page |  |  |  |  |  |  |  |  |  |  |  |
+| K-Beauty Tips Page |  |  |  |  |  |  |  |  |  |  |  |
+| Privacy Policy Page |  |  |  |  |  |  |  |  |  |  |  |
+| Terms & Conditions Page |  |  |  |  |  |  |  |  |  |  |  |
+| Return & Refund Policy Page |  |  |  |  |  |  |  |  |  |  |  |
+| Shipping Policy Page |  |  |  |  |  |  |  |  |  |  |  |
 
-### **Functionalities for User Interaction**
+Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-starter-pack?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-url=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_content=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-cta=cta_button&hubs_content-cta=cta_button&hsCtaTracking=1d7211ac-7b1b-4405-b940-54b8acedb26e%7C882f38ab-3d08-4abe-b1c9-fed6ebc3579f)
+
+
 
 <br/>
 
@@ -485,11 +506,14 @@ Shop K-Beauty's home page features the following:
     * Featured Brands
     * See All Brands Button
 
-**Home page Screenshot**
+**Home page screenshot**
 <br/>
 ![Homepage - Laptop](./documentation/site_pages/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
 
+**Product page screenshot**
 
+**Product detail page screenshot**
+SKU - add format here and why?
 
 #### Defensive Programming
 
