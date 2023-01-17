@@ -5,7 +5,7 @@ from products.models import Product
 
 
 def view_bag(request):
-    """ A view that returns the bag contents page """
+    """ A view that returns the shopping bag page """
 
     return render(request, 'bag/bag.html')
 
@@ -55,8 +55,10 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """ Adjust the quantity of the specified product
-    to the specified amount """
+    """
+    Adjust the quantity of the specified product
+    to the updated amount
+    """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
