@@ -104,15 +104,26 @@ This section aims to answer the key question: *What problems are we trying to so
 
 Although the demand for cosmetics products declined globally during the pandemic due mainly to fewer occasions to wear make-up given the guidelines on working from home, social distancing and wearing masks, there was also a corresponding rise in consumption focused on skincare products driven by increasing demand for affordable, fast-acting, self-care beauty routines.
 
-Shop K-Beauty, a multi-brand ecommerce store specialising in K-Beauty skincare and hair &amp; body products, aims to provide an easy to use online shop for consumers to browse and purchase K-Beauty products. Shop K-Beauty also aims to provide the information that consumers may require such as a product description, how to use a product and the product ingredients.
+**Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician**
+Shop K-Beauty, a multi-brand ecommerce store specialising in K-Beauty skincare and hair &amp; body products, aims to provide an easy to use online shop for consumers to browse and purchase K-Beauty products. These curated K-Beauty products are proven to be effective, gentle on the skin, and can be used at home without requiring the assistance of a skincare professional.
+
+**Problem 2: Confusion around K-Beauty products and K-Beauty Skincare routines**
+Shop K-Beauty also aims to provide the information that consumers may require such as a product description, how to use a product and detailed product ingredients. With an uncluttered, easy to follow product detail and with our K-Beauty tips, we hope to also demystify the ins and outs of K-Beauty skincare routines.
+
+In addition, a brief information about a product brand's company background, ethos and values will also be made available to all visitors and shoppers.
+
+**Problem 3: Expensive skincare and hair &amp; body products**
+Cognizant of ever-increasing costs of living and typically high price points of skincare and hair &amp; body products available in the UK, Europe, Middle East and the USA, Shop K-Beauty aims to offer more affordable products without sacrificing quality, effectiveness and enjoyability. K-Beauty products are generally already attractively priced compared to their Western counterparts and whenever possible, product discounts, deals and offers will be available on the Shop.
 
 Update:
 1. Brand
 2. Reviews
 3. Wishlist
+4. Search for specific ingredients
+5. Improved Navigation to include subcategories for each category of products
 
-##### **Internal Stakeholders' Goals**
-Ultimately, the internal stakeholders' goals would be to have a profitable and positively-perceived online shop specialising in K-Beauty products. Internal stakeholders are the shop owners, online shop administrators and staff (the latter two may also be the shop owners themselves).
+##### i. Internal Stakeholders' Goals
+Ultimately, the internal stakeholders' goal is to have a profitable and positively-perceived online shop specialising in K-Beauty products. Internal stakeholders are the shop owners, online shop administrators and staff (the latter two may also be the shop owners themselves).
 
 To achieve the above, the internal stakeholders' goals for the ecommerce shop are focused on:
 1. **Trustworthiness** - How can the online shop effectively present the trustworthiness and the high quality of the available K-Beauty products?
@@ -124,13 +135,13 @@ Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ulti
 ###### **Business Model**
 Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands of K-Beauty products.
 
-##### Product Goals
+##### ii. Product Goals
 1. Proven Effectiveness - evidenced by user reviews
 2. Branded Products - inclusion of product brand and brand description
 3. Attractive Price Points - through price competiveness and savings on offer
 
-##### User Research
-What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using.
+##### iii. User Research
+What is user research? User research is the process of researching Shop K-Beauty's potential users what K-Beauty products they want and will feel good about using. For the Shop K-Beauty project, user research will be done in three phases: Doscovery Phase, Product Launch - Alpha and Product Launch - Beta.
 
 ###### Discovery Phase
 During the discovery phase of User Research, to begin with, we asked several participants from a skincare enthusiasts on Facebook: [The Ordinary Skincare Fans (UK/US/Europe)](https://www.facebook.com/groups/theordinaryskincarefans) and two K-Beauty skincare product users (known to the developer) to ask them several qualitative questions:
