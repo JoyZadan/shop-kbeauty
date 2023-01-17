@@ -234,7 +234,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | Stock Inventory |  |  |  |  |  |  |
 | 23 | Display Percentage of Stock Availability against Total Quantity of Stocks Per Product  | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
 | 24 | Automatically Deduct quantity of product sold from Total Quantity and Update Stock Availability Displayed on Product Detail Page | All Users <sup>1</sup> | 4 | 2 | 2 | ❌ |
-| 25 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners &amp; Superadmin | 5 | 5 | ✅ |
+| 25 | Design SKUs to Conform with both Stock Inventory and Pick and Pack Fulfillment <sup>2</sup> | Shop Owners &amp; Superadmin | 5 | 5 | 5 | ✅ |
 | Checkout |  |  |  |  |  |  |
 | 26 | Email Confirmation of Order | Shoppers | 5 | 5 | 5 | ✅ |
 | 27 | Order History | Shoppers | 5 | 5 | 5 | ✅ |
