@@ -12,6 +12,7 @@ from profiles.models import UserProfile
 
 class Order(models.Model):
     """ Order model """
+    # unique order numbers are automatically generated
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(UserProfile, null=True, blank=True,
                                      on_delete=models.SET_NULL,

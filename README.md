@@ -31,9 +31,9 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Scope Plane](#scope-plane)
         * [Feature Planning](#feature-planning)
         * [Content Requirement Planning](#content-requirement-planning)
-            * [Text]
-            * [Images]
-            * [Video]
+            * [Text](#text)
+            * [Images](#images)
+            * [Video](#video)
         * [Functionalities for User Interaction](#functionalities-for-user-interaction)
         * [User Stories](#user-stories)
     * [Structure Plane](#structure-plane)
@@ -130,7 +130,7 @@ To achieve the above, the internal stakeholders' goals for the ecommerce shop ar
 2. **Simplicity and Ease of Use** - How can the quality of the content presented to end-users (shop visitors and shoppers) be easy to follow, engaging and provides balanced information and detail without being overwhelming or distracting?
 3. **Transparency** - How can we unsure that our contact information, the policies for shipping, returns and privacy and product reviews are easy to find?
 <br/>
-Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/) *The Ultimate Guide to Designing Ecommerce Sites*
+Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/)
 
 #### **Business Model**
 Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands of K-Beauty products.
