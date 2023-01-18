@@ -28,7 +28,7 @@ body {
 }
 
 .navbar-toggler {
-    background-color: #26145b !important;
+    background-color: #26145b !important; /* use important to override link colors for <a> elements */
     color: #fff !important;
 }
 
@@ -226,7 +226,7 @@ a:visited {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 
@@ -417,8 +417,24 @@ hr {
 
 /* ------------------------------- card styling for the K-Beauty tips page */
 .card-alt {
-    border: 1px solid #fff !important;
+    border: 1px solid #e1e2e7 !important;
     border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-transition: border 2s ease-out;
+    -moz-transition: border 2s ease-out;
+    -o-transition: border 2s ease-out;
+    transition: border 2s ease-out;
+    -webkit-transition: box-shadow 2s ease-out;
+    -moz-transition: box-shadow 2s ease-out;
+    -o-transition: box-shadow 2s ease-out;
+    transition: box-shadow 2s ease-out;
+}
+
+.card-alt:hover {
+    box-shadow: 0 22px 22px -8px #cbced1,
+                -8px 0 22px -8px #cbced1,
+                22px 0 22px -8px #cbced1;
+    border: 1px solid rgba(225, 226, 231, 0.3) !important;
 }
 
 .light-blue-bg {

@@ -35,7 +35,7 @@
         {% for product in products %}
             {% if product.is_featured %}
             <div class="col mb-4">
-                <div class="card h-100">
+                <div class="card card-alt h-100">
                     <a href="{% url 'product_detail' product.id %}">
                         <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                     </a>
