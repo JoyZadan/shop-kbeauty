@@ -129,8 +129,8 @@ To achieve the above, the internal stakeholders' goals for the ecommerce shop ar
 1. **Trustworthiness** - How can the online shop effectively present the trustworthiness and the high quality of the available K-Beauty products?
 2. **Simplicity and Ease of Use** - How can the quality of the content presented to end-users (shop visitors and shoppers) be easy to follow, engaging and provides balanced information and detail without being overwhelming or distracting?
 3. **Transparency** - How can we unsure that our contact information, the policies for shipping, returns and privacy and product reviews are easy to find?
-<br/>
-Source: [Web Designer Depot's](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/)
+
+Source: [Web Designer Depot's Ultimate Guide to Designing ECommerce Websites](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/)
 
 #### **Business Model**
 Shop K-Beauty is a Business to Consumer (B2C) direct sellers of multiple brands of K-Beauty products.
@@ -201,7 +201,6 @@ What is user research? User research is the process of researching Shop K-Beauty
     Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
 
     Update:
-
 
 - #### **Product Launch - Beta**
     Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
