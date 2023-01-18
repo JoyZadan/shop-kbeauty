@@ -29,6 +29,7 @@ class MainCategory(models.Model):
     # also converts to lowercare
     # expects as parameters the string we want to slugify,
     # in this case, the MainCategory name
+    # super() overrides the save method
     def save(self, *args, **kwargs):
         self.slug = slugify(self.name)
         super().save(*args, **kwargs)
