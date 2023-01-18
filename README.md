@@ -271,7 +271,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | Other Features |  |  |  |  |  |  |
 | 39 | Use Slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
 
-1. All Users: Site Visitors, Logged In Users, Shop Owners, SuperAdmins
+1. All Users: Site Visitors, Logged In Users, Shop Owners, Superadmins
 
 2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
 
@@ -318,7 +318,7 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 
 | Page | Content Type | Current URL to New URL  | Current Page Title to New Page Title | Current Page Description to New Page Description | Page Description Length | Purpose of the Page | Target Keyword | Target Audience | Internal Links | Social Media Sharing | Calls to Action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Home Page |  |  |  |  |  |  |  |  |  |  |  |
+| Home Page |   |  |  |  |  |  |  |  |  |  |  |
 | Products Page |  |  |  |  |  |  |  |  |  |  |  |
 | Product Detail Page |  |  |  |  |  |  |  |  |  |  |  |
 | Product Management Page |  |  |  |  |  |  |  |  |  |  |  |
