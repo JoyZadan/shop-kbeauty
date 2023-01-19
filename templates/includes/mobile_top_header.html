@@ -38,7 +38,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
-        <!-- Account management buttons - register/login/logout and product management for superusers -->
+        <!-- Account management buttons - signup/login/logout and product management for superusers -->
         <div class="dropdown-menu border-0 mr-1" aria-labelledby="mobile-user-options">
             <!-- Product Management button - displays for authenticated superusers only -->
             {% if request.user.is_authenticated %}
@@ -47,9 +47,9 @@
                 {% endif %}
                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            <!-- Register and Login buttons -->
+            <!-- Sign Up and Login buttons -->
             {% else %}
-                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
                 <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
         </div>
