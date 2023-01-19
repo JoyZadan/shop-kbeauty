@@ -338,16 +338,14 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 | Reviews/ Edit Reviews | Edit a Review + Shop K-Beauty | For Authorized Personnel Only. Your opinions on K-Beauty products are important to our community of skin enthusiasts. We only edit reviews for profane terms. (157) | K-beauty, effective k-beauty products, k-beauty product reviews, k-beauty skincare, affordable k-beauty products | Home, Login, Forgot Password? | Add Review |
 | Wishlist | Wishlist + Shop K-Beauty | For Logged In Users. Shop K-Beauty is an online shop for your K-Beauty needs. Create your wish list of K-Beauty products and don't miss out on great deals! (155) | K-beauty, skincare, k-beauty wish list, serums, ampoules, glass skin, essence, younger-looking skin, discounts, deals | Wishlist Product Detail | Shop Now, Remove from Wishlist |
 | K-Beauty Tips | K-Beauty Tips + Shop K-Beauty | What is K-Beauty? Here's everything you need to know. Discover great K-Beauty products, skincare routines and tips from people we love here at Shop K-Beauty! (157) | K-beauty, skincare, hair & body products, skincare routine, serums, ampoules, glass skin, essence, sunscreen, younger-looking skin | Products | Keep Shopping |
-| Privacy Policy | Privacy Policy + Shop K-Beauty | Here's everything you need to know about how we collect, store and manage our customers' data. Shop K-Beauty is an online shop for all your K-Beauty needs. (155) | K-beauty, Shop K-Beauty, privacy policy, customer data, skincare products, hair &amp; body products | Home | Contact Us |
-| Terms & Conditions | Terms and Conditions + Shop K-Beauty | Terms and Conditions. These Terms apply to all visitors, users and others who access or use our Site. Shop K-Beauty is an online shop for your K-Beauty needs. (158) |   |   |    |  |
-| Return & Refund Policy | Return and Refund + Shop K-Beauty  |  |  |    |  |  |
-| Shipping Policy | Shipping Policy + Shop K-Beauty |  |   |  |  |  |
+| Privacy Policy | Privacy Policy + Shop K-Beauty | Here's everything you need to know about how we collect, store and manage our customers' data. Shop K-Beauty is an online shop for all your K-Beauty needs. (155) | K-beauty, Shop K-Beauty, privacy policy, customer data, skincare products, hair &amp; body products | Home | none |
+| Terms & Conditions | Terms and Conditions + Shop K-Beauty | Terms and Conditions. These Terms apply to all visitors, users and others who access or use our Site. Shop K-Beauty is an online shop for your K-Beauty needs. (158) | K-beauty, Shop K-Beauty, terms and conditions, skincare products, hair &amp; body products  | Home | none |
+| Return & Refund Policy | Return and Refund + Shop K-Beauty | Here's everything you need to know about your Order Cancellation Rights, Conditions for Returns, Goods Marked as Gifts and how to contact Shop K-Beauty. (152) | K-beauty, Shop K-Beauty, return and refund policy, skincare products, hair &amp; body products | Home | none |
+| Shipping Policy | Shipping Policy + Shop K-Beauty | Here's what you need to know about our Domestic and International Shipping Policy, the Shipping Rates and Delivery Estimates and how to contact Shop K-Beauty.(158) | K-beauty, Shop K-Beauty, domestic and international shipping policy, order delivery, skincare products, hair &amp; body products | Home | none |
 
 The site's footer will contain links to social media pages of Shop K-Beauty as well as the policy pages.
 
 Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-starter-pack?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-url=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_content=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-cta=cta_button&hubs_content-cta=cta_button&hsCtaTracking=1d7211ac-7b1b-4405-b940-54b8acedb26e%7C882f38ab-3d08-4abe-b1c9-fed6ebc3579f)
-
-
 
 <br/>
 
