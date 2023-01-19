@@ -268,7 +268,7 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 37 | Loyalty Cards | Shoppers | 4 | 3 | 2 | ❌ |
 | 38 | Digital Gift Cards | All Users <sup>1</sup> | 5 | 2 | 1 | ❌ |
 | Other Features |  |  |  |  |  |  |
-| 39 | Use Slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
+| 39 | SEO Friendly URLs - use slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
 
 1. All Users: Site Visitors, Logged In Users, Shop Owners, Superadmins
 
@@ -588,7 +588,7 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 
 # CREDITS
 ## Code
-* Credit to Code Institute's Boutique Ado Django ecommerce walkthrough, from which this project was based from.
+* Credit to [Code Institute's](https://codeinstitute.net/) Boutique Ado walkthrough, from which this project got its start.
 * Credit to [Very Academy YouTube Channel](https://www.youtube.com/c/veryacademy) for the very detailed insights on database models.
 * Credit to [Stuart073's Music Box django ecommerce project](https://github.com/stuartj073/music-box) for the inspiration, particularly for his reviews app.
 * Credit and thanks to [MDBootstrap](https://mdbootstrap.com/docs/b4/jquery/javascript/accordion/) for the accordion on product detail page.
@@ -602,7 +602,7 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 * Credit to [CSS Tricks's The Essential Meta Tags for Social Media](https://css-tricks.com/essential-meta-tags-social-media/)
 
 ## Content
-The product names, images, descriptions and other information were sourced from:
+The product names, images, descriptions, brand logos and description and other information were sourced from:
 * [SKINSIDER](https://skinsider.co.uk/)
 * [STYLEVANA](https://www.stylevana.com/en_GB/)
 * [PURESEOUL](https://pureseoul.co.uk/)
@@ -621,16 +621,26 @@ The product names, images, descriptions and other information were sourced from:
 
 The policies were generated from:
 * [TERMSFEED](https://www.termsfeed.com/)
+* [TERMLY](https://termly.io/products/shipping-policy-generator/)
 
-The .... for information on the K-Beauty global phenomena.
+Additional information about the K-Beauty global phenomena as well as the Korean 10-Step skincare routines were gathered together from the following online publications and expert skincare professionals:
+* [Elle.com](https://www.elle.com/uk/beauty/skin/a25415/k-beauty-what-is-it-korean-beauty-10-step-beauty-cleansing-skincare/)
+* [NBC News](https://www.nbcnews.com/select/shopping/best-korean-beauty-products-ncna1274400)
+* [Dermacare Direct](https://www.dermacaredirect.co.uk/advice/what-is-k-beauty/)
+* [We Heart This](https://weheartthis.com/what-is-k-beauty/)
+
 ## Media
 * Other images used for the project were licensed from Adobe Stock.
+
 ## Other Resources
-1. Code Institute Boutique Ado walkthrough
-2. Very Academy
-3. Codemy YouTube
-4. CodeEx YouTube
-5. CodePiep YouTube
+These other resources were used for research and/or for finding solutions when I got stuck.
+1. [Stack Overflow](https://stackoverflow.com/)
+2. [Very Academy](https://www.youtube.com/playlist?list=PLOLrQ9Pn6cay_cQkyg-WYYiJ_EKU8KWKh)
+3. [Codemy YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy)
+4. [CodingEx YouTube](https://www.youtube.com/watch?v=3cTVjPdP8ps&list=PLTV1jAY3nKHPPi74LSSsqiqG1H7pSlSj5)
+5. [CodePiep YouTube](https://www.youtube.com/watch?v=AU9kjY2iZp0)
+6. [The Open Graph Protocol](https://ogp.me/)
+6. [Makneta Coding Journal](https://makneta.herokuapp.com/post/how-to-add-unique-meta-tags-in-django/)
 ---
 
 # ACKNOWLEDGEMENTS
