@@ -1,6 +1,30 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+    <meta name="description" property="og:description"
+        content="Discover our wide range of affordable and leading selection of Korean skincare and hair & body products that will help your skin look and feel amazing!">
+    <meta name="keywords" content="Shop K-Beauty, K-Beauty, skincare, hair & body products, skincare routine, serums, ampoules, glass skin,
+    essence, sunscreen, Korean skincare, Korean hair &amp; body products">
+    {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
+    <meta property="og:title" content="Products | Shop K-Beauty">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{% static 'images/shop-k-beauty-site-image.png' %}">
+    <meta property="og:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/">
+    <meta robots="index, follow">
+    <meta name="twitter:card" content="summary_large_image">
+    {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
+    <meta property="og:site_name" content="Products | Shop K-Beauty">
+    <meta name="twitter:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    {% comment %} Non-Essential but Required for Analytics {% endcomment %}
+    <meta property="fb:app_id" content="1004587674262621">
+{% endblock %}
+
+{% block extra_title %}Products |{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
