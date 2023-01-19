@@ -7,18 +7,18 @@
     <meta name="keywords" content="Shop K-Beauty, K-beauty skincare, K-beauty hair & body products, affordable K-beauty products">
 
     {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
-    <meta property="og:title" content="{{product.name}} | Shop K-Beauty">
+    <meta property="og:title" content="{{ product.name }} | Shop K-Beauty">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{% static 'images/shop-k-beauty-site-image.png' %}">
     <meta property="og:image:alt"
         content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
-    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/">
+    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/{{ product.id }}">
     <meta name="twitter:card" content="summary_large_image">
 
     {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
     <meta property="og:description"
         content="From serums to treatment ampoules, we offer a wide-range of affordable and leading selection of K-Beauty products for all your skincare routines.">
-    <meta property="og:site_name" content="{{product.name}} | Shop K-Beauty">
+    <meta property="og:site_name" content="{{ product.name }} | Shop K-Beauty">
     <meta name="twitter:image:alt"
         content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
 
