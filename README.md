@@ -313,30 +313,33 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 | 2 | Skincare Routine - How To | To be sure of following the right steps, of correctly layering the serums and other products | ❌ |
 
 - #### **Integrating Content Strategy and SEO**
-**Shop K-Beauty's on-page SEO requirements**
+**Shop K-Beauty's on-page SEO (search engine optimization) requirements**
 
-| Page | Content Type | Current URL to New URL  | Current Page Title to New Page Title | Current Page Description to New Page Description | Page Description Length | Purpose of the Page | Target Keyword | Target Audience | Internal Links | Social Media Sharing | Calls to Action |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Home Page |   |  |  |  |  |  |  |  |  |  |  |
-| Products Page |  |  |  |  |  |  |  |  |  |  |  |
-| Product Detail Page |  |  |  |  |  |  |  |  |  |  |  |
-| Product Management Page |  |  |  |  |  |  |  |  |  |  |  |
-| Brands Page |  |  |  |  |  |  |  |  |  |  |  |
-| Brand Detail Page |  |  |  |  |  |  |  |  |  |  |  |
-| Brand Management Page |  |  |  |  |  |  |  |  |  |  |  |
-| Shopping Bag |  |  |  |  |  |  |  |  |  |  |  |
-| Checkout |  |  |  |  |  |  |  |  |  |  |  |
-| Register Page |  |  |  |  |  |  |  |  |  |  |  |
-| Login Page |  |  |  |  |  |  |  |  |  |  |  |
-| Profile Page |  |  |  |  |  |  |  |  |  |  |  |
-| Reviews Page |  |  |  |  |  |  |  |  |  |  |  |
-| Add Reviews Page |  |  |  |  |  |  |  |  |  |  |  |
-| Wishlist Page |  |  |  |  |  |  |  |  |  |  |  |
-| K-Beauty Tips Page |  |  |  |  |  |  |  |  |  |  |  |
-| Privacy Policy Page |  |  |  |  |  |  |  |  |  |  |  |
-| Terms & Conditions Page |  |  |  |  |  |  |  |  |  |  |  |
-| Return & Refund Policy Page |  |  |  |  |  |  |  |  |  |  |  |
-| Shipping Policy Page |  |  |  |  |  |  |  |  |  |  |  |
+| Page | Page Title | Page Description & Length (50-158 char) | Target Keyword(s) | Internal Links | Calls to Action |
+| --- | --- | --- | --- | --- | --- |
+| Home | Shop K-Beauty | Shop K-Beauty is an online shop for your K-Beauty needs. View our range of affordable &amp; leading selection of Korean skincare and hair &amp; body products! (158) | K-beauty, skincare, hair &amp; body products, skincare routine, serums, ampoules, glass skin, essence, sunscreen, younger-looking skin | New Arrivals, Product Detail, Brand Detail | Shop Now |
+| Products | All K-Beauty Products + Shop K-Beauty | Discover our wide range of affordable and leading selection of Korean skincare and hair & body products that will help your skin look and feel amazing! (151) | Korean skincare, Korean hair &amp; body products | Product Detail, links to categories and subcategories | Shop Now |
+| Product Detail | Product Name + Shop K-Beauty | From serums to treatment ampoules, we offer a wide-range of affordable and leading selection of K-Beauty products for all your skincare routines. (145) | K-beauty skincare, K-beauty hair &amp; body products, affordable K-beauty products | Product Brand, Product Category and Subcategory | Item Quantity, Keep Shopping, Add to Bag, Wishlist, See All Reviews, Add Review, Shop Now |
+| Add Product | Product Management - Add Product + Shop K-Beauty | For Authorized Personnel Only. Add a new product to the store. Shop K-Beauty is an online shop for all your K-Beauty needs. (123) | K-beauty, skincare, hair &amp; body products, affordable K-beauty products | Products | Add Product  |
+| Edit Product | Product Management - Edit Product + Shop K-Beauty | For Authorized Personnel Only. Edit an existing product. Shop K-Beauty is an online shop for all your K-Beauty needs. (118) | K-beauty, skincare, hair &amp; body products, affordable K-beauty products | Products | Edit Product  |
+| Brands | All K-Beauty Brands + Shop K-Beauty | Discover our wide range of leading selection of K-Beauty brands. Shop K-Beauty is an online shop specialising in K-Beauty skincare, hair and body products. | K-beauty, k-beauty brands, k-beauty skincare, k-beauty hair &amp; body products | Brand detail | View All Products |
+| Brand Detail | Brand Name + Shop K-Beauty |  |  |  |  |  |
+| Brand Management | Brand Management + Shop K-Beauty |  |  |  |  |   |
+| Shopping Bag | Shopping Bag + Shop K-Beauty |  |  |  |  |  |
+| Checkout | Checkout + Shop K-Beauty |  |  |  |  |  |
+| Register | Register + Shop K-Beauty |  |  |  |  |  |
+| Login | Login + Shop K-Beauty |  |  |  |  |    |
+| Profile | Profile + Shop K-Beauty |  |  |    |  |  |
+| Reviews | All Reviews + Shop K-Beauty |  |  |  |  |  |
+| Add Reviews | Add Review + Shop K-Beauty  |   |  |  |  |  |
+| Wishlist | Wishlist + Shop K-Beauty  |  |  |  |  |  |  |  |
+| K-Beauty Tips | K-Beauty Tips + Shop K-Beauty |  |  |  |  |  |
+| Privacy Policy | Privacy Policy + Shop K-Beauty  |  |  |  |  |   |
+| Terms & Conditions | Terms and Conditions + Shop K-Beauty |  |   |   |    |  |
+| Return & Refund Policy | Return and Refund + Shop K-Beauty  |  |  |    |  |  |
+| Shipping Policy | Shipping Policy + Shop K-Beauty |  |   |  |  |  |
+
+The site's footer will contain links to social media pages of Shop K-Beauty as well as the policy pages.
 
 Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-starter-pack?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-url=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_content=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-cta=cta_button&hubs_content-cta=cta_button&hsCtaTracking=1d7211ac-7b1b-4405-b940-54b8acedb26e%7C882f38ab-3d08-4abe-b1c9-fed6ebc3579f)
 
