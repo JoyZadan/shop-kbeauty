@@ -1,6 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+    <meta name="description" property="og:description"
+        content="For Authorized Personnel Only. Add a new brand to the store. Shop K-Beauty is an online shop for all your K-Beauty needs.">
+    <meta name="keywords" content="Shop K-Beauty, K-beauty skincare, K-beauty hair & body products, affordable K-beauty products">
+    {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
+    <meta property="og:title" content="Brand Management - Add Brand | Shop K-Beauty">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{% static 'images/shop-k-beauty-site-image.png' %}">
+    <meta property="og:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/">
+    <meta name=robots content="noindex, nofollow">
+    <meta name="twitter:card" content="summary_large_image">
+    {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
+    <meta property="og:description"
+    content="For Authorized Personnel Only. Add a new brand to the store. Shop K-Beauty is an online shop for all your K-Beauty needs.">
+    <meta property="og:site_name" content="Brand Management - Add Brand | Shop K-Beauty">
+    <meta name="twitter:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    {% comment %} Non-Essential but Required for Analytics {% endcomment %}
+    <meta property="fb:app_id" content="1004587674262621">
+{% endblock %}
+
+{% block extra_title %}Brand Management - Add Brand | {% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">

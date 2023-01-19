@@ -1,43 +1,69 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+    <meta name="description" property="og:description"
+        content="For Authorized Personnel Only. Add a new product to the store. Shop K-Beauty is an online shop for all your K-Beauty needs.">
+    <meta name="keywords"
+        content="Shop K-Beauty, K-beauty skincare, K-beauty hair & body products, affordable K-beauty products">
+    {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
+    <meta property="og:title" content="Product Management - Add Product | Shop K-Beauty">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{% static 'images/shop-k-beauty-site-image.png' %}">
+    <meta property="og:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/">
+    <meta name=robots content="noindex, nofollow">
+    <meta name="twitter:card" content="summary_large_image">
+    {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
+    <meta property="og:description"
+        content="For Authorized Personnel Only. Add a new product to the store. Shop K-Beauty is an online shop for all your K-Beauty needs.">
+    <meta property="og:site_name" content="Product Management - Add Product | Shop K-Beauty">
+    <meta name="twitter:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    {% comment %} Non-Essential but Required for Analytics {% endcomment %}
+    <meta property="fb:app_id" content="1004587674262621">
+{% endblock %}
+
+{% block extra_title %}Product Management - Add Product | {% endblock %}
+
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h2 class="5 brand-font text-black text-center my-5">Product Management</h2>
-                <p class="text-pink font-weight-bold">Add a Product</p>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {% if field.name != 'image' %}
-                            {{ field | as_crispy_field }}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
-                    {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Product</button>
-                    </div>
-                </form>
-            </div>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <h2 class="5 brand-font text-black text-center my-5">Product Management</h2>
+            <p class="text-pink font-weight-bold">Add a Product</p>
+            <hr>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Add Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block postloadjs %}

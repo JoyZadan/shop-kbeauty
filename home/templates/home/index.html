@@ -3,9 +3,10 @@
 
 {% block extra_meta %}
     <meta name="description" property="og:description" content="Shop K-Beauty is an online shop for your K-Beauty needs.
-    View our range of affordable and leading selection of Korean skincare and hair &amp; body products!">
+        View our range of affordable and leading selection of Korean skincare and hair &amp; body products!">
     <meta name="keywords" content="Shop K-Beauty, K-Beauty, skincare, hair & body products, skincare routine, serums, ampoules, glass skin,
-    essence, sunscreen, younger-looking skin">
+        essence, sunscreen, younger-looking skin">
+
     {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
     <meta property="og:title" content="Home | Shop K-Beauty">
     <meta property="og:type" content="article">
@@ -13,12 +14,16 @@
     <meta property="og:image:alt"
         content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
     <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/">
-    <meta robots="index, follow">
     <meta name="twitter:card" content="summary_large_image">
+
     {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
+    <meta property="og:description"
+        content="Shop K-Beauty is an online shop for your K-Beauty needs. View our range of affordable and leading selection of Korean skincare and hair &amp;
+    body products!">
     <meta property="og:site_name" content="Home | Shop K-Beauty">
     <meta name="twitter:image:alt"
         content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+
     {% comment %} Non-Essential but Required for Analytics {% endcomment %}
     <meta property="fb:app_id" content="1004587674262621">
 {% endblock %}
@@ -26,108 +31,112 @@
 {% block extra_title %}Home |{% endblock %}
 
 {% block page_header %}
-    <div class="container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid home-hero">
-        <div class="row hero-heading">
-            <div class="col-10 offset-1 text-center my-5 mask">
-                <h2 class="display-4 brand-font mt-5 animate-it">
-                    <i class="far fa-bell"></i> New arrivals!
-                </h2>
-                <h3 class="logo-font-alt text-black mt-2" id="home-cta-font">
-                    Latest <span class="nowrap">K-Beauty</span> collections just landed!
-                </h3>
-                <div class="my-5">
-                    <p class="text-shadow h4">
-                        <a href="{% url 'products' %}?category=hair_body_new,skincare_new" class="shop-now-button btn btn-large rounded-0 text-upppercase py-3">Shop Now</a>
-                    </p>
-                </div>
+<div class="container-fluid home-hero">
+    <div class="row hero-heading">
+        <div class="col-10 offset-1 text-center my-5 mask">
+            <h2 class="display-4 brand-font mt-5 animate-it">
+                <i class="far fa-bell"></i> New arrivals!
+            </h2>
+            <h3 class="logo-font-alt text-black mt-2" id="home-cta-font">
+                Latest <span class="nowrap">K-Beauty</span> collections just landed!
+            </h3>
+            <div class="my-5">
+                <p class="text-shadow h4">
+                    <a href="{% url 'products' %}?category=hair_body_new,skincare_new"
+                        class="shop-now-button btn btn-large rounded-0 text-upppercase py-3">Shop Now</a>
+                </p>
             </div>
         </div>
     </div>
-    <!-- Featured Products -->
-    <h2 class="display-4 brand-font text-black text-center pt-2 my-5">
-        Featured Products
-    </h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
-        {% for product in products %}
-            {% if product.is_featured %}
-            <div class="col mb-4">
-                <div class="card card-alt h-100">
-                    <a href="{% url 'product_detail' product.id %}">
-                        <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    </a>
-                    <div class="card-body">
-                        <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
-                    </div>
-                    <div class="card-footer bg-white text-center mb-2">
-                        <div class="price-box mb-1">
-                            <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
-                            {% if product.discount > 0.01 %}
-                            <p class="mb-0"><s>£{{ product.original_price }}</s></p>
-                            <p class="mb-0 text-center"><span class="text-purple"><strong>You save:</strong> </span> £{{ product.discount }}</p>
-                            {% endif %}
-                        </div>
-                        <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
-                            <span class="text-uppercase">Shop Now</span>
-                            <span class="icon">
-                                <i class="fas fa-shopping-bag"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+</div>
+<!-- Featured Products -->
+<h2 class="display-4 brand-font text-black text-center pt-2 my-5">
+    Featured Products
+</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-5">
+    {% for product in products %}
+    {% if product.is_featured %}
+    <div class="col mb-4">
+        <div class="card card-alt h-100">
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="card-img-top product-image img-fluid" src="{{ product.image.url }}"
+                    alt="{{ product.name }}">
+            </a>
+            <div class="card-body">
+                <h3 class="card-title brand-font-alt h6 text-center">{{ product.name }}</h3>
             </div>
-            {% endif %}
+            <div class="card-footer bg-white text-center mb-2">
+                <div class="price-box mb-1">
+                    <p class="h4 mb-0 pb-1"><span class="text-left brand-font">£{{ product.price }}</span></p>
+                    {% if product.discount > 0.01 %}
+                    <p class="mb-0"><s>£{{ product.original_price }}</s></p>
+                    <p class="mb-0 text-center"><span class="text-purple"><strong>You save:</strong> </span>
+                        £{{ product.discount }}</p>
+                    {% endif %}
+                </div>
+                <a href="{% url 'product_detail' product.id %}" class="btn btn-sm btn-black text-shadow mt-1 rounded-0">
+                    <span class="text-uppercase">Shop Now</span>
+                    <span class="icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+<!-- Featured Brands -->
+<div class="featured-bg mt-3">
+    <h2 class="display-4 brand-font text-black text-center pt-5 pb-4">
+        Featured Brands
+    </h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
+        {% for brand in brands %}
+        {% if brand.is_featured %}
+        <div class="col mb-4">
+            <div class="card card-alt h-100">
+                <a href="{% url 'brand_detail' brand.id %}">
+                    <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
+                </a>
+            </div>
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
-    <!-- Featured Brands -->
-    <div class="featured-bg mt-3">
-        <h2 class="display-4 brand-font text-black text-center pt-5 pb-4">
-            Featured Brands
-        </h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 mx-3 mb-3">
-            {% for brand in brands %}
-                {% if brand.is_featured %}
-                <div class="col mb-4">
-                    <div class="card card-alt h-100">
-                        <a href="{% url 'brand_detail' brand.id %}">
-                            <img class="card-img-top img-fluid brand-image" src="{{ brand.image.url }}" alt="{{ brand.name }}">
-                        </a>
-                    </div>
-                </div>
-                {% endif %}
-            {% endfor %}
-        </div>
 
-        <!-- BUTTON TO SHOW/ HIDE ALL AVAILABLE BRANDS -->
-        <!-- This is a sample of how to pass data safely from Django to JavaScript -->
-        <!-- Credits to: Adam Johnson's How to Safely Pass Data to JavaScript in a Django Template
+    <!-- BUTTON TO SHOW/ HIDE ALL AVAILABLE BRANDS -->
+    <!-- This is a sample of how to pass data safely from Django to JavaScript -->
+    <!-- Credits to: Adam Johnson's How to Safely Pass Data to JavaScript in a Django Template
         (https://adamj.eu/tech/2022/10/06/how-to-safely-pass-data-to-javascript-in-a-django-template/)
         and to: BugBytes for his video based on this article (https://www.youtube.com/watch?v=h39eMGWmEV4)  -->
-        <div class="col-12 text-center pb-5">
-            <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3 show-brands-list-btn" value="Show">
-                <span class="text-uppercase h4">See All Brands </span>
-                <span class="icon">
-                    <i class="fas fa-chevron-down"></i>
-                </span>
-            </button>
-            <div class="row" id="brand-show">
-                {% for brand in brands %}
-                <p data-brand-name="{{ brand.friendly_name }}">
-                    <a href="{% url 'brand_detail' brand.id %}">
-                        <span class="brand-font-alt h6 pb-1 brand-name-link pl-2 pr-2 pointer">{{ brand.friendly_name }}</span>
-                    </a>
-                </p>
-                {% endfor %}
-            </div>
+    <div class="col-12 text-center pb-5">
+        <button class="btn btn-black rounded-0 text-uppercase mt-1 mb-3 show-brands-list-btn" value="Show">
+            <span class="text-uppercase h4">See All Brands </span>
+            <span class="icon">
+                <i class="fas fa-chevron-down"></i>
+            </span>
+        </button>
+        <div class="row" id="brand-show">
+            {% for brand in brands %}
+            <p data-brand-name="{{ brand.friendly_name }}">
+                <a href="{% url 'brand_detail' brand.id %}">
+                    <span
+                        class="brand-font-alt h6 pb-1 brand-name-link pl-2 pr-2 pointer">{{ brand.friendly_name }}</span>
+                </a>
+            </p>
+            {% endfor %}
         </div>
     </div>
+</div>
 
 {% endblock%}
 
