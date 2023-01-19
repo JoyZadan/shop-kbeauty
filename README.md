@@ -328,7 +328,8 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 | Edit Brand | Brand Management - Edit Brand + Shop K-Beauty | For Authorized Personnel Only. Edit an existing brand. Shop K-Beauty is an online shop for all your K-Beauty needs. (115) | K-beauty, K-beauty brands, skincare, hair & body products, affordable K-beauty brands | Brands | Edit Brand |
 | Bag | Shopping Bag + Shop K-Beauty | From serums to treatment ampoules, we offer a wide-range of affordable and leading selection of K-Beauty products for all your skincare routines. (145) | K-beauty skincare, K-beauty hair & body products, affordable K-beauty products | Products, Checkout | Update Item Quantity, Remove Item, Keep Shopping, Secure Checkout |
 | Checkout | Checkout + Shop K-Beauty | Shop K-Beauty's payments processing is powered by Stripe, offering secure and encrypted protection. Shop K-Beauty is an online shop for your K-Beauty needs. (156) | K-beauty, k-beauty products, skincare, hair &amp; body products, secure payments | Account Signup, Account Login, View Bag | Save Info, Adjust Bag, Complete Order |
-| Register | Register + Shop K-Beauty |  |  |  |  |  |
+| Checkout Success | Checkout Success! + Shop K-Beauty | Thank you for shopping at Shop K-Beauty, the online shop for all your K-Beauty needs. View our range of affordable and leading selection of K-Beauty products! (158) | K-beauty, k-beauty products, skincare, hair &amp; body products | Profile, Products/All Special Offers | Back to Profile, Check out the latest deals |
+| Signup | Signup + Shop K-Beauty |  |  |  |  |  |
 | Login | Login + Shop K-Beauty |  |  |  |  |    |
 | Profile | Profile + Shop K-Beauty |  |  |    |  |  |
 | Reviews | All Reviews + Shop K-Beauty |  |  |  |  |  |
