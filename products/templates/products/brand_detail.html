@@ -11,9 +11,9 @@
     {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
     <meta property="og:title" content="{{ brand.friendly_name }} | Shop K-Beauty">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="{{{ brand.image_field.url }">
+    <meta property="og:image" content="{% static 'images/shop-k-beauty-products-brands.png' %}">
     <meta property="og:image:alt"
-        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+        content="Shop K-Beauty online shop's available brands shown on a variety of screen sizes and devices, from laptops to tablets to mobiles">
     <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/{{ brand.id }}">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -22,7 +22,7 @@
         content="{{ brand.description }}">
     <meta property="og:site_name" content="{{ brand.friendly_name }} | Shop K-Beauty">
     <meta name="twitter:image:alt"
-        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+        content="Shop K-Beauty online shop's available brands shown on a variety of screen sizes and devices, from laptops to tablets to mobiles">
 
     {% comment %} Non-Essential but Required for Analytics {% endcomment %}
     <meta property="fb:app_id" content="1004587674262621">

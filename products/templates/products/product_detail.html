@@ -11,7 +11,8 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="{{ product.image_field.url }}">
     <meta property="og:image:alt"
-        content="Shop K-Beauty online shop products shown on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+        content="Image of {{ product.name }}. Discover our wide range of affordable and leading selection of Korean skincare and hair & body products that will
+    help your skin look and feel amazing!">
     <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/{{ product.id }}">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -20,7 +21,8 @@
         content="{{ product.description }}">
     <meta property="og:site_name" content="{{ product.name }} | Shop K-Beauty">
     <meta name="twitter:image:alt"
-        content="Shop K-Beauty online shop products shown on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+        content="Image of {{ product.name }}. Discover our wide range of affordable and leading selection of Korean skincare and hair & body products that will
+    help your skin look and feel amazing!">
 
     {% comment %} Non-Essential but Required for Analytics {% endcomment %}
     <meta property="fb:app_id" content="1004587674262621">
