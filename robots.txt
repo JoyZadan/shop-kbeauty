@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://shop-k-beauty-django-joy-zadan.herokuapp.com/sitemap.xml
