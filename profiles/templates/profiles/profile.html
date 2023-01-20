@@ -1,6 +1,37 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_meta %}
+    <meta name="description" property="og:description"
+        content="For Logged In Users Only. View your Shop K-Beauty order history; create, add to or edit your wish list.
+    Discover our wide range of leading K-Beauty products!">
+    <meta name="keywords"
+        content="K-beauty, create your k-beauty products wish list, k-beauty skincare routines, hair &body k-beauty products">
+
+    {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
+    <meta property="og:title" content="Profile | Shop K-Beauty">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{% static 'images/shop-k-beauty-site-image.png' %}">
+    <meta property="og:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/profile/">
+    <meta name=robots content="noindex, nofollow">
+    <meta name="twitter:card" content="summary_large_image">
+
+    {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
+    <meta property="og:description"
+        content="For Logged In Users Only. View your Shop K-Beauty order history; create, add to or edit your wish list.
+    Discover our wide range of leading K-Beauty products!">
+    <meta property="og:site_name" content="Profile | Shop K-Beauty">
+    <meta name="twitter:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+
+    {% comment %} Non-Essential but Required for Analytics {% endcomment %}
+    <meta property="fb:app_id" content="1004587674262621">
+{% endblock %}
+
+{% block extra_title %}Profile | {% endblock %}
+
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
