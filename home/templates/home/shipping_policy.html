@@ -1,6 +1,34 @@
 {% extends "base.html" %}
 {% load static %}
 
+block extra_meta %}
+    <meta name="description" property="og:description" content="Here's what you need to know about our Domestic and International
+    Shipping Policy, the Shipping Rates and Delivery Estimates and how to contact Shop K-Beauty.">
+    <meta name="keywords" content="Shop K-Beauty, K-beauty, domestic and international shipping policy, order delivery,
+    skincare products, hair & body products">
+
+    {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
+    <meta property="og:title" content="Shipping Policy | Shop K-Beauty">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{% static 'images/shop-k-beauty-site-image.png' %}">
+    <meta property="og:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+    <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/shipping_policy/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    {% comment %} Non-Essential but Recommended Meta Tags {% endcomment %}
+    <meta property="og:description" content="Here's what you need to know about our Domestic and International Shipping Policy,
+    the Shipping Rates and Delivery Estimates and how to contact Shop K-Beauty.">
+    <meta property="og:site_name" content="Shipping Policy | Shop K-Beauty">
+    <meta name="twitter:image:alt"
+        content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
+
+    {% comment %} Non-Essential but Required for Analytics {% endcomment %}
+    <meta property="fb:app_id" content="1004587674262621">
+{% endblock %}
+
+{% block extra_title %}Shipping Policy |{% endblock %}
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
