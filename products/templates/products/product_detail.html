@@ -9,7 +9,7 @@
     {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
     <meta property="og:title" content="{{ product.name }} | Shop K-Beauty">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="{{product.image_field.url}}">
+    <meta property="og:image" content="{{ product.image_field.url }}">
     <meta property="og:image:alt"
         content="Shop K-Beauty online shop products shown on a variety of screen sizes and devices, from laptops to tablets to mobiles">
     <meta property="og:url" content="https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/{{ product.id }}">

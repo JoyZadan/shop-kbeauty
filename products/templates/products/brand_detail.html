@@ -9,7 +9,7 @@
         content="Shop K-Beauty, K-beauty, k-beauty brands, k-beauty skincare, k-beauty hair & body products">
 
     {% comment %} Essential Meta Tags for Social Media - Facebook {% endcomment %}
-    <meta property="og:title" content="{{ brand.name }} | Shop K-Beauty">
+    <meta property="og:title" content="{{ brand.friendly_name }} | Shop K-Beauty">
     <meta property="og:type" content="article">
     <meta property="og:image" content="{% static 'images/shop-k-beauty-products-brands.png' %}">
     <meta property="og:image:alt"
@@ -21,7 +21,7 @@
     <meta property="og:description"
         content="From Axis-Y to The Vegan Glow, from skincare to hair and body products, we stock a wide-range of affordable and leading selection
     of K-Beauty brands.">
-    <meta property="og:site_name" content="{{ brand.name }} | Shop K-Beauty">
+    <meta property="og:site_name" content="{{ brand.friendly_name }} | Shop K-Beauty">
     <meta name="twitter:image:alt"
         content="Shop K-Beauty online shop on a variety of screen sizes and devices, from laptops to tablets to mobiles">
 
@@ -29,7 +29,7 @@
     <meta property="fb:app_id" content="1004587674262621">
 {% endblock %}
 
-{% block extra_title %}{{ brand.name }} | {% endblock %}
+{% block extra_title %}{{ brand.friendly_name }} | {% endblock %}
 
 {% block page_header %}
     <div class="container header-container">
