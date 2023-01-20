@@ -1,0 +1,1017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/bag/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?sort=brand&amp;direction=asc</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?sort=discount&amp;direction=desc</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?sort=subcategory&amp;direction=asc</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=face_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=essence_serum</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=moisturizer_cream</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=spot_treatment</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=sunscreen</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=facial_cleanser</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=exfoliator_peeling_scrub</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=face_wash_cleanser</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=makeup_remover</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=face_mask</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=gel_masks</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=sheet_masks</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=sleeping_masks</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=eye_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=eye_cream</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=eye_gel_patch</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=eye_serum_essence</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=lip_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=lip_mask</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=face_care,facial_cleanser,face_mask,eye_care,lip_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=hair_treatment</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=shampoo_conditioner</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=body_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=bath_shower</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=body_lotion_moisturizer</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=body_scrubs_exfoliants</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=body_spray</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hand_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=hand_moisturizer_lotion</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=foot_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=foot_cream_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?subcategory=foot_scrub_exfoliants</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_care,body_care,hand_care,foot_care</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_new,skincare_new</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_deals,skincare_deals</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_clearance,skincare_clearance</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brands/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/skincare_tips/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/81/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/79/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/21/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/36/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/76/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/26/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/13/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/73/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/50/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/56/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/51/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/80/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/67/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/77/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/60/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/11</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/7</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/12</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/1</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/2</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/3</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/5</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/10</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/6</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/21</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/16</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/30</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/4</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/24</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/8</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/28</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/9</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/23</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/27</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/22</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/17</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/14</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/18</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/20</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/19</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/15</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/25</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/13</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/26</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/29</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/102/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=skincare_new</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/100/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=skincare_deals</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/101/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/103/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/104/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/16/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/17/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/14/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/30/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/82/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/109/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/32/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/41/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/54/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/68/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/40/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/33/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=skincare_clearance</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/42/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/83/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/4/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/19/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/20/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/34/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/35/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/49/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/9/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/10/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/18/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/99/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_new</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/91/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/7/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/43/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/55/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/70/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/22/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/2/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/37/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/5/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/6/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/8/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_deals</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/11/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/38/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/53/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/12/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/46/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/39/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/44/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/45/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/47/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/92/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/23/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/27/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/25/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/28/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/24/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/93/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/48/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/57/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/58/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/59/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/97/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/98/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/94/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/96/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/52/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/95/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/84/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/87/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/86/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/85/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/106/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/63/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/105/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/64/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/65/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/66/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/62/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/78/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/69/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/88/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/72/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/?category=hair_body_clearance</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/71/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/89/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/90/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/61/</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/81</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/79</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/76</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/50</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/60</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/102</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/100</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/101</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/104</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/14</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/32</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/54</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://shop-k-beauty-django-joy-zadan.herokuapp.com/reviews/reviews/52</loc>
+  <lastmod>2023-01-20T17:01:08+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
