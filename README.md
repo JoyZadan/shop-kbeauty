@@ -418,7 +418,9 @@ Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-sta
 ### STRUCTURE PLANE
 #### Interaction Design
 ##### **User Flow Diagram**
-![Shop K-Beauty User Flow Diagram: logged in superadmins, logged in user, and anonymous shopper](./documentation/diagrams/shop-k-beauty-user-flow-diagram.png)
+![Shop K-Beauty User Flow Diagram: logged in superadmins, logged in user, and anonymous shopper](./documentation/diagrams/shop-k-beauty-user-flow-diagram-v2.png)
+
+
 
 #### Information Architecture
 ##### Site Map
