@@ -2,7 +2,7 @@
 
 ![amiresponsive mock-ups of SHOP K-BEAUTY](./documentation/responsiveness/mock-up-generator-new.png)
 
-**[Link to the Deployed App](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)**
+**[Link to the Deployed Site](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)**
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/JoyZadan/shop-kbeauty?color=fuschia&style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/JoyZadan/shop-kbeauty?color=purple&style=for-the-badge)
