@@ -65,6 +65,8 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
 * [Features](#features)
     * [General Features of the Site](#general-features-of-the-site)
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
+        * [Product Categorization](#product-categorization)
+        * [SKU Architecture](#sku-architecture)
     * [Accessibility](#accessibility)
     * [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
 * [Technologies Used](#technologies-used)
@@ -482,8 +484,6 @@ Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kb
 ## **SKELETON PLANE**
 ### **Wireframes**
 
----
-
 ## **SURFACE PLANE**
 ### **Typography**
 I decided to use only one font, **Lato**, for this project and used different font-weights and italics to add contrast to text. The decision to stick to one font is based how ecommerce shops tend to look very busy with photos of products, call-to-action buttons, pricing and discount buttons, etc. For the hero section on the index.html and skincare_tips.html pages, I added an animation to the text using linear-gradient based on the site's colour scheme.
@@ -537,6 +537,11 @@ Common to all pages of the Shop K-Beauty site are:
 * Main Categories
 * Categories
 * Subcategories
+
+## **SKU Architecture**
+**Shop K-Beauty's product SKUs** have been designed to conform with both the Stock Inventory and Pick and Pack Fulfillment best practices.
+
+According to ...
 
 ## **Site Pages**
 ### **Home Page**
