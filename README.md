@@ -38,7 +38,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
         * [User Stories](#user-stories)
     * [Structure Plane](#structure-plane)
         * [Interaction Design](#interaction-design)
-            * [User Journey Flow Chart](#user-journey-flow-chart)
+            * [User Flow Diagram](#user-flow-diagram)
         * [Information Architecture](#information-architecture)
             * [Site Map](#site-map)
         * [Website Pages](#website-pages)
@@ -417,7 +417,9 @@ Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-sta
 
 ### STRUCTURE PLANE
 #### Interaction Design
-##### User Journey Flow Chart
+##### **User Flow Diagram**
+![Shop K-Beauty User Flow Diagram: logged in superadmins, logged in user, and anonymous shopper](./documentation/diagrams/shop-k-beauty-user-flow-diagram.png)
+
 #### Information Architecture
 ##### Site Map
 #### Website Pages
