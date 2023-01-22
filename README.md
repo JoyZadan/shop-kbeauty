@@ -44,7 +44,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
         * [Database Design](#database-design)
             * [Database ERD](#database-erd)
             * [Data Modelling](#data-modelling)
-                * [User Model](#user-model)
+                * [User Model](#user-model-django.contrib.auth)
                 * [UserProfile](#userprofile-model)
                 * [MainCategory Model](#maincategory-model)
                 * [Category Model](#category-model)
@@ -481,23 +481,55 @@ Each of the models below are used for the project and contain the fields and beh
 ##### *UserProfile Model*
 - The UserProfile model is an extension of the Django User model and has a one-to-one relationship with it.
 - The UserProfile model contains the following fields: user, default_phone_number, default_street_address1, default_street_address2,default_town_or_city, default_county, default_postcode and default_country.
-- The UserProfile model is included in the installed Profiles application.
+- The UserProfile model is included in the installed profiles application.
 
-##### *MainCategory Model* (Custom model)
-- The MainCategory model contains the following fields: name and slug; and is one of FIVE original custom models included in the installed Products application.
+##### *MainCategory Model*
+- The MainCategory model contains the following fields: name and slug.
+- It is one of the models included in the installed products application.
+- It is one of FIVE original custom Django models created for the project.
 
 ##### *Category Model*
 - The Category model contains the following fields: name, friendly_name and slug.
-- It also contains main_category as a
-; and is one of FIVE original custom models included in the installed Products application.
+- It also contains Main_Category as a ForeignKey
+- It is one of the models included in the installed products application.
 
-##### *Subcategory Model* (Custom model)
-##### *Brand Model* (Custom model)
+##### *Subcategory Model*
+- The Subcategory model contains the following fields: name, friendly_name and slug
+- It also contains Category as a ForeignKey
+- It is one of the models included in the installed products application.
+- It is one of FIVE original custom Django models created for the project.
+
+##### *Brand Model*
+- The Brand model contains the following fields: name, friendly_name, slug, description, image_url, image and is_featured.
+- It is one of the models included in the installed products application.
+- It is one of FIVE original custom Django models created for the project.
+
 ##### *Product Model*
+- The Product model contains the following fields: sku, name, slug, is_featured, total_quantity, availability, description, how_to_use, ingredients, has-sizes, price, discount, original_price, image_url and image.
+- It also contains MainCategory, Category, Subcategory and Brand as ForeignKeys
+- It is one of the models included in the installed products application.
+
 ##### *Order Model*
+- The Order model contains the following fields: order_number, full_name, email, phone_number, country, postcode, town_or_city street_address1, street_address2, county, date, delivery_cost, order_total, grand_total, original_bag and stripe_pid.
+- It also contains UserProfile as a ForeignKey.
+- It is one of the models included in the installed checkout application.
+
 ##### *OrderLineItem Model*
-##### *Review Model* (Custom model)
-##### *Wishlist Model* (Custom model)
+- The OrderLineItem model contains the following fields: product_size, quantity and lineitem_total.
+- It also contains Order and Product as ForeignKeys.
+- It is one of the models included in the installed checkout application.
+
+##### *Review Model*
+- The Review model contains the following fields: title, friendly_name, slug, content, date, is_featured.
+- It also contains Product and User as ForeignKeys
+- It is the only model included in the installed reviews application.
+- It is one of FIVE original custom Django models created for the project.
+
+##### *Wishlist Model*
+- The Wishlist model contains the following field: date_added.
+- It also contains UserProfile and Product as ForeignKeys.
+- It is the only model included in the installed wishlist application.
+- It is one of FIVE original custom Django models created for the project.
 
 ## **SKELETON PLANE**
 ### **Wireframes**
