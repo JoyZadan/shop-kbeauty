@@ -11,7 +11,7 @@
 
 # Project Overview
 
-Shop K-Beauty is a multi-brand, ecommerce full stack project built using Django, Python and JavaScript, deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Shop K-Beauty is a business to consumer online retailer of K-Beauty skincare and hair &amp; body products.
+Shop K-Beauty is a fictitious multi-brand, ecommerce full stack project built using Django, Python, JavaScript and Bootstrap 4. The site is deployed to Heroku, uses Amazon S3 for cloud storage and Stripe for payment processing. Shop K-Beauty is a business to consumer online retailer of K-Beauty skincare and hair &amp; body products.
 
 Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diploma in Web Application Development (Full Stack Software Development).
 <br/>
@@ -461,7 +461,9 @@ This first phase was completed after the following information were gathered/ de
 
 #### **Database ERD**
 **Entity Relationship Diagram**<br/>
-This ER diagram captures the relationships between real-world entities. These entities  where the objects' data points (objects are the persons, places and things) are stored as entities together with their own attributes. The cardinality (relationships) between entities are also mapped.
+This ER diagram captures the relationships between real-world entities. The entities are the data points of objects such as persons, places and things and together with their attributes, compose their domain, ie, their individual table. The cardinality (relationships) between these entities are then mapped and identified (see **Database Design** above).
+
+[ERD Cardinality](./documentation/database/erd-cardinality.png) - Source: [Lucid Chart](https://lucidchart.zendesk.com/hc/en-us/articles/207299756-Entity-Relationship-Diagrams)
 
 Version 1: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd-v1.png)<br/>
 Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kbeauty-erd.webp)
@@ -469,9 +471,20 @@ Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kb
 <br/>
 
 #### **Data Modelling**
-##### *User Model*
+As evidenced by the database design and the ERD discussed above, the data model type used for this project is the Relational Model. Further readings about Relational Model can be found [here](https://www.guru99.com/relational-data-model-dbms.html).
+
+Each of the models below are used for the project and contain the fields and behaviours of the data being created and stored.
+##### *User Model (django.contrib.auth)*
+- The User model is a component of Django's Authentication system and contains information about the user.
+- The User model contains the following fields: username, email, first_name, last_name, password, is_staff, is_active, is_superuser, date_joined, and last_login.
+
 ##### *UserProfile Model*
+- The UserProfile model is an extension of the Django User model and has a one-to-one relationship with it.
+- The UserProfile model contains the following fields: user, default_phone_number, default_street_address1, default_street_address2,default_town_or_city, default_county, default_postcode and default_country.
+- The UserProfile model is included in the installed Profiles application.
+
 ##### *MainCategory Model* (Custom model)
+
 ##### *Category Model*
 ##### *Subcategory Model* (Custom model)
 ##### *Brand Model* (Custom model)
@@ -594,6 +607,7 @@ SKU - add format here and why?
 ## **Programmes and Applications Used**
 * [XML-Sitemaps.com](https://www.xml-sitemaps.com/) was to generate an XML sitemap for Shop K-Beauty
 * [Visual Site Maps](https://visualsitemaps.com/) was used to autogenerate Shop K-Beauty's visualized site map.
+* [Lucid Chart](https://www.lucidchart.com/pages/) was used to draw and build the Entity Relationship Diagram. It was also used to draw the User Flow Diagram.
 
 ## **Payment Processing Platform Used**
 * [Stripe](https://stripe.com/gb) was used to test and implement the payment processing for the site.
