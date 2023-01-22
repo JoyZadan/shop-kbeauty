@@ -44,7 +44,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
         * [Database Design](#database-design)
             * [Database ERD](#database-erd)
             * [Data Modelling](#data-modelling)
-                * [User Model](#user-model-django.contrib.auth)
+                * [User Model](#user-model)
                 * [UserProfile](#userprofile-model)
                 * [MainCategory Model](#maincategory-model)
                 * [Category Model](#category-model)
@@ -465,8 +465,8 @@ This ER diagram captures the relationships between real-world entities. The enti
 
 [ERD Cardinality](./documentation/database/erd-cardinality.png) - Source: [Lucid Chart](https://lucidchart.zendesk.com/hc/en-us/articles/207299756-Entity-Relationship-Diagrams)
 
-Version 1: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd-v1.png)<br/>
-Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kbeauty-erd.webp)
+Initial ERD: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd-v1.png)<br/>
+Final ERD: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kbeauty-erd.webp)
 
 <br/>
 
@@ -474,7 +474,7 @@ Version 2 - FINAL: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kb
 As evidenced by the database design and the ERD discussed above, the data model type used for this project is the Relational Model. Further readings about Relational Model can be found [here](https://www.guru99.com/relational-data-model-dbms.html).
 
 Each of the models below are used for the project and contain the fields and behaviours of the data being created and stored.
-##### *User Model (django.contrib.auth)*
+##### *User Model*
 - The User model is a component of Django's Authentication system and contains information about the user.
 - The User model contains the following fields: username, email, first_name, last_name, password, is_staff, is_active, is_superuser, date_joined, and last_login.
 
@@ -533,6 +533,40 @@ Each of the models below are used for the project and contain the fields and beh
 
 ## **SKELETON PLANE**
 ### **Wireframes**
+The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/templates/wireframe).
+
+* Home Page
+![Home Page Wireframe](./documentation/wireframes/home-page-wireframe.png)
+
+* Products Page
+
+* Product Detail Page
+
+* Brands Page
+
+* Brand Detail Page
+
+* Sign Up Page
+
+* Log In Page
+
+* Shopping Bag Page
+
+* Checkout Page
+
+* Profile Page
+
+* Wishlist Page
+
+* Add Review Page
+
+* Reviews Page
+
+* Edit Review Page
+
+* Product Management (Add and Edit) Pages
+
+* Brand Management (Add and Edit) Pages
 
 ## **SURFACE PLANE**
 ### **Typography**
