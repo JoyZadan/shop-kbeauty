@@ -584,18 +584,25 @@ SKU - add format here and why?
 * [ElephantSQL](https://www.elephantsql.com/) ElephantSQL's Postgres as a Service was used to host the the database for the project (production).
 
 ## **Libraries and Packages Used**
-* [django-allauth](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication
+* [django-allauth](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication.
 * [JQuery - v3.5.1](https://jquery.com/) is a fast, small, and feature-rich JavaScript library.
-* [Font Awesome Kit](https://fontawesome.com/v5/docs/web/setup/use-kit) is used for its icon toolkit
-* []()
+* [Font Awesome Kit](https://fontawesome.com/v5/docs/web/setup/use-kit) is used for its icon toolkit.
+* [django-countries, v7.2.1](https://pypi.org/project/django-countries/7.2.1/) was the Django application used to provide country choices for use with forms, and a country field for models.
+* [django-crispy-forms, v1.14.0](https://pypi.org/project/django-crispy-forms/) was used to build programmatic reusable layouts out of form components.
+* [boto3==1.26.27](), [botocore==1.29.27]
 
 ## **Programmes and Applications Used**
 * [XML-Sitemaps.com](https://www.xml-sitemaps.com/) was to generate an XML sitemap for Shop K-Beauty
+* [Visual Site Maps](https://visualsitemaps.com/) was used to autogenerate Shop K-Beauty's visualized site map.
 
 ## **Payment Processing Platform Used**
+* [Stripe](https://stripe.com/gb) was used to test and implement the payment processing for the site.
+
 ## **Cloud Application Platforms Used**
+* [Heroku](https://devcenter.heroku.com/) was used for hosting and deployment of the live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
+
 ## **Cloud Storage Services Used**
-* [AWS S3](https://aws.amazon.com/) was used to store upload images and static files
+* [AWS S3](https://aws.amazon.com/) was used to store the images and static files.
 ---
 
 # **TESTING**
