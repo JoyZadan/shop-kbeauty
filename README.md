@@ -484,8 +484,13 @@ Each of the models below are used for the project and contain the fields and beh
 - The UserProfile model is included in the installed Profiles application.
 
 ##### *MainCategory Model* (Custom model)
+- The MainCategory model contains the following fields: name and slug; and is one of FIVE original custom models included in the installed Products application.
 
 ##### *Category Model*
+- The Category model contains the following fields: name, friendly_name and slug.
+- It also contains main_category as a
+; and is one of FIVE original custom models included in the installed Products application.
+
 ##### *Subcategory Model* (Custom model)
 ##### *Brand Model* (Custom model)
 ##### *Product Model*
