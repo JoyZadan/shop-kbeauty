@@ -548,6 +548,7 @@ The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/
 ![Brands Page Wireframe](./documentation/wireframes/brands-page-wireframe.png)
 
 * Brand Detail Page
+![Brand Detail Wireframe](./documentation/wireframes/brand-detail-page-wireframe.png)
 
 * Sign Up Page
 ![Sign Up Page Wireframe](./documentation/wireframes/sign-up-page-wireframe.png)
@@ -556,6 +557,7 @@ The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/
 ![Log In Page Wireframe](./documentation/wireframes/login-page-wireframe.png)
 
 * Shopping Bag Page
+![Shopping Bag Page Wireframe](./documentation/wireframes/bag-page-wireframe.png)
 
 * Checkout Page
 
