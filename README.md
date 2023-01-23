@@ -539,14 +539,17 @@ The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/
 ![Home Page Wireframe](./documentation/wireframes/home-page-wireframe.png)
 
 * Products Page
+![Products Page Wireframe](./documentation/wireframes/products-page-wireframe.png)
 
 * Product Detail Page
 
 * Brands Page
+![Brands Page Wireframe](./documentation/wireframes/brands-page-wireframe.png)
 
 * Brand Detail Page
 
 * Sign Up Page
+![Sign Up Page Wireframe](./documentation/wireframes/sign-up-page-wireframe.png)
 
 * Log In Page
 
