@@ -560,6 +560,7 @@ The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/
 ![Shopping Bag Page Wireframe](./documentation/wireframes/bag-page-wireframe.png)
 
 * Checkout Page
+![Checkout Page Wireframe](./documentation/wireframes/checkout-page-wireframe.png)
 
 * Checkout Success Page
 
