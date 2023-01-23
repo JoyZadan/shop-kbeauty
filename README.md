@@ -156,7 +156,7 @@ What is user research? User research is the process of researching Shop K-Beauty
         - pharmacy/ physical store
         - both online and physical shop
     4. How might we help you find K-Beauty products?  <br/>
-        * Answers received:*
+        *Answers received:*
         - Post them on social media
         - create helpful skincare groups on social media
         - send your products to 'skinfluencers' for reviews
@@ -348,8 +348,6 @@ The site's footer will contain links to social media pages of Shop K-Beauty as w
 
 Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-starter-pack?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-url=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_content=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-cta=cta_button&hubs_content-cta=cta_button&hsCtaTracking=1d7211ac-7b1b-4405-b940-54b8acedb26e%7C882f38ab-3d08-4abe-b1c9-fed6ebc3579f)
 
-<br/>
-
 ### **User Stories**
 | **USER STORY #** | **ISSUE ID** | **As a/an** | **I want to be able to...** | **So that I can...** |
 | --- | --- | --- | --- | --- |
@@ -467,8 +465,6 @@ This ER diagram captures the relationships between real-world entities. The enti
 
 Initial ERD: [ERD/DATABASE SCHEMA - V1](./documentation/database/shop-kbeauty-erd-v1.png)<br/>
 Final ERD: ![ERD/ DATABASE SCHEMA - V3](./documentation/database/shop-kbeauty-erd.webp)
-
-<br/>
 
 #### **Data Modelling**
 As evidenced by the database design and the ERD discussed above, the data model type used for this project is the Relational Model. Further readings about Relational Model can be found [here](https://www.guru99.com/relational-data-model-dbms.html).
