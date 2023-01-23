@@ -561,6 +561,8 @@ The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/
 
 * Checkout Page
 
+* Checkout Success Page
+
 * Profile Page
 
 * Wishlist Page
