@@ -559,21 +559,34 @@ The wireframes were created using [Lucidchart](https://www.lucidchart.com/pages/
 ![Checkout Page Wireframe](./documentation/wireframes/checkout-page-wireframe.png)
 
 * Checkout Success Page
+![Checout Success Page Wireframe](./documentation/wireframes/checkout-success-page-wireframe.png)
 
 * Profile Page
 ![Profile Page Wireframe](./documentation/wireframes/profile-page-wireframe.png)
 
 * Wishlist Page
+![Wishlist Page Wireframe](./documentation/wireframes/wishlist-page-wireframe.png)
 
 * Add Review Page
+![Add a Review Page Wireframe](./documentation/wireframes/add-review-page-wireframe.png)
 
 * Reviews Page
+![Reviews Page Wireframe](./documentation/wireframes/reviews-page-wireframe.png)
 
 * Edit Review Page
+![Edit a Review Page Wireframe](./documentation/wireframes/edit-review-page-wireframe.png)
 
-* Product Management (Add and Edit) Pages
+* Product Management: Add a Product Page
+![Add a Product Page Wireframe](./documentation/wireframes/add-product-page-wireframe.png)
 
-* Brand Management (Add and Edit) Pages
+* Product Management: Edit a Product Page
+![Edit a Product Page Wireframe](./documentation/wireframes/edit-product-page-wireframe.png)
+
+* Brand Management: Add a Brand Page
+![Add a Brand Page Wireframe](./documentation/wireframes/add-brand-page-wireframe.png)
+
+* Brand Management: Edit a Brand Page
+![Edit a Brand Page Wireframe](./documentation/wireframes/edit-brand-page-wireframe.png)
 
 ## **SURFACE PLANE**
 ### **Typography**
