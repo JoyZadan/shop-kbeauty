@@ -60,6 +60,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Surface Plane](#surface-plane)
         * [Typography](#typography)
         * [Colour Palette](#colour-palette)
+        * [Imagery](#imagery)
 * [Agile Methodology](#agile-methodology)
     * [GitHub Project Management](#github-project-management)
 * [Features](#features)
@@ -414,7 +415,6 @@ Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-sta
 | 52 | # | Shopper | login via social account | avoid having to keep track of login details |
 | 53 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
-
 ## STRUCTURE PLANE
 ### **Interaction Design**
 #### **User Flow Diagram**
@@ -602,8 +602,8 @@ Following the Lighthouse and a11y validation results, I amended the colour schem
 ![NEW COLOUR SCHEME](./documentation/branding/shop-k-beauty-new.png)
 
 ### **Imagery**
+The hero image used on the home page inspired the colour palette for the site. The said hero image was licensed from Adobe Stock and super imposed by images of popular K-Beauty products. The products and brand images were sourced from various ecommerce sites. The sources are listed and credited on the Credits section of this document.
 
-### **Mockups**
 ---
 # **AGILE METHODOLOGY**
 ## **GitHub Project Management**
