@@ -66,12 +66,33 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
 * [Agile Methodology](#agile-methodology)
     * [GitHub Projects](#github-projects)
 * [Features](#features)
-    * [Site features common to all pages](#site-features-common-to-all-pages)
-    * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
-        * [Product Categorization](#product-categorization)
-        * [Stock Keeping Unit (SKU) Architecture](#stock-keeping-unit-sku-architecture)
+    * [Product Categorization](#product-categorization)
+    * [Stock Keeping Unit (SKU) Architecture](#stock-keeping-unit-sku-architecture)
+    * [Defensive Programming](#defensive-programming)
     * [Accessibility](#accessibility)
-    * [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
+    * [Extra Meta Tags for Specific Pages](extra-meta-tags-for-specific-pages)
+    * [Site Features Common to All Pages](#site-features-common-to-all-pages)
+    * [Site Pages](#site-pages)
+        * [Home Page](#home-page)
+        * [Products Page](#products-page)
+        * [Product Detail Page](#product-detail-page)
+        * [Brands Page](#brands-page)
+        * [Brand Detail Page](#brand-detail-page)
+        * [Shopping Bag Page](#shopping-bag-page)
+        * [Checkout Page](#checkout-page)
+        * [Profile Page](#profile-page)
+        * [Reviews Page](#reviews-page)
+        * [Add Review Page](#add-review-page)
+        * [Review Detail Page](#review-detail-page)
+        * [Wishlist Page](#wishlist-page)
+        * [Brand Management Page](#brand-management-page)
+        * [Product Management Page](#product-management-page)
+        * [Privacy Policy Page](#privacy-policy-page)
+        * [Terms and Conditions Page](#terms-and-conditions-page)
+        * [Return and Refund Policy Page](#return-and-refund-policy-page)
+        * [Shipping Policy Page](#shipping-policy-page)
+    * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
+* [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
     * [Frameworks Used](#frameworks-used)
@@ -650,6 +671,10 @@ According to [James and James eCommerce Fulfillment](https://www.ecommercefulfil
 
 ## **Defensive Programming**
 
+## **Accessibility**
+
+## **Extra Meta Tags for Specific Pages**
+
 ## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
 
 ## **Site features common to all pages**
@@ -673,12 +698,12 @@ Common to all pages of the Shop K-Beauty site are:
     * Main Navigation
     * Delivery Banner
 * Footer:
-        * Shop K-Beauty fictitious address, email and phone number
-        * About - brief blurb about the shop
-        * Policies
-        * Social Media Links
-        * Payment Processing Statement
-        * Copyright and Disclaimer
+    * Shop K-Beauty fictitious address, email and phone number
+    * About - brief blurb about the shop
+    * Policies
+    * Social Media Links
+    * Payment Processing Statement
+    * Copyright and Disclaimer
 
 ## **Site Pages**
 ### **Home Page**
@@ -692,13 +717,45 @@ Shop K-Beauty's home page features the following:
     * See All Brands Button
 
 **Home page screenshot**
-<br/>
 ![Homepage - Laptop](./documentation/features/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
 
-**Product page screenshot**
+### **Products Page**
+**Products page screenshot**
 
+### **Product Detail Page**
 **Product detail page screenshot**
-SKU - add format here and why?
+
+### **Brands Page**
+
+### **Brand Detail Page**
+
+### **Shopping Page**
+
+### **Checkout Page**
+
+### **Checkout Success Page**
+
+### **Profile Page**
+
+### **Reviews Page**
+
+### **Add Reviews Page**
+
+### **Review Detail Page**
+
+### **Wishlist Page**
+
+### **Brand Management Page**
+
+### **Product Management Page**
+
+### **Brand Management Page**
+
+### **Privacy Policy Page**
+
+### **Terms and Conditions Page**
+
+### **Shipping Policy Page**
 
 ## **Accessibility**
 # **Future Development, Iteration and Implementation**
