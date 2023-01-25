@@ -658,7 +658,15 @@ Initially largely informed by my personal and family members' experience buying 
 <br/>
 
 What came out of this research is the need to classify the products into the following categorization:
+* Main Categories
+* Categories
+* Subcategories
+
 ![Product Categorization Tree](./documentation/diagrams/product-categorization-tree.png)
+
+Having these in place help to future-proof the site for the addition of more products such as makeup (Main Category) lines that can then be further categorized into face, eye and lip (Categories) and foundation, concealer, blush, etc (Subcategories of the face category), etc.
+
+When we get to the Product Detail page, the power of grouping together the site's products into these hierarchical categories is evidenced by the display of tailored related products based on the subcategory of the current item that a potential or current customer is browsing.
 
 ## **Stock Keeping Unit (SKU) Architecture**
 To mimic the needs of a real ecommerce shop to have a SKU architecture in place in order to keep track of a product, Shop K-Beauty's product SKUs have been designed to conform with both the Stock Inventory and Pick and Pack Fulfillment best practices.
@@ -667,24 +675,39 @@ According to [James and James eCommerce Fulfillment](https://www.ecommercefulfil
 1. Pick and Pack: labelling the products with a SKU can be really useful in a fulfillment warehouse during pick and pack. The SKU number helps the staff identify the right product quickly to ensure that the customer X does not end up with, say, a [Laneige](https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/17) Lip Sleeping Mask (Berry) when the order was for Laneige Lip Sleeping Mask (Grapefruit).
 2. The second advantage of using SKUs is that it enables ecommerce stores to *take more accurate stock readings, and understand your best and worst-selling products.* - James and James
 
-![Shop K-Beauty's SKUs format at a glance](./documentation/features/sku-format.png)
+**Shop K-Beauty's Products SKUs at a glance**
+![Shop K-Beauty's Products SKUs format at a glance](./documentation/features/sku-format.png)
 
 ## **Defensive Programming**
+To keep the site secure and protected against a brute force attack or attempts to access pages reserved solely based on user permissions, defensive programming was at the forefront of the development.
+
+* I implemented login_required functionality across relevant views and templates.
+* On specific views.py files, I made sure to check if the user is authenticated and when required, the user's permission level.
+
+Defensive programming is also implemented to help the site owners and users with superadmin permissions to avoid the mistake of deleting products and reviews through the use of a modal which pops up to confirm their intended action prior to the deletion of data.
 
 ## **Accessibility**
 
 ## **Extra Meta Tags for Specific Pages**
+These extra meta tags are in place to tailor the content share on social media.
+
+* [Tailored product detail post]()
+* [Tailored brand detail post]()
+
+The meta tags are also in place to dynamically change what's displayed on the browser tabs, for example when the product detail page is opened, the name of the product comes up first followed by the site's title. This is particularly important as the slugs are not being utilised in place of product IDs.
+* [Product name on the browser tab]()
 
 ## **Site features common to all pages**
 Common to all pages of the Shop K-Beauty site are:
+
 * Favicon
-The favicon has been tested against the following browsers:
+The favicon is an effective visual reminder of the site's identity in the browser tabs and has been tested against the following browsers:
     1. Safari
     2. Google Chrome
     3. Microsoft Edge
     4. Firefox
 
-
+[Favicons screenshot]()
 
 * Navbar:
     * Top Navigation:
