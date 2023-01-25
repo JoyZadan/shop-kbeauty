@@ -675,11 +675,17 @@ According to [James and James eCommerce Fulfillment](https://www.ecommercefulfil
 
 ## **Extra Meta Tags for Specific Pages**
 
-## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
-
 ## **Site features common to all pages**
 Common to all pages of the Shop K-Beauty site are:
 * Favicon
+The favicon has been tested against the following browsers:
+    1. Safari
+    2. Google Chrome
+    3. Microsoft Edge
+    4. Firefox
+
+
+
 * Navbar:
     * Top Navigation:
         * logo
@@ -757,7 +763,8 @@ Shop K-Beauty's home page features the following:
 
 ### **Shipping Policy Page**
 
-## **Accessibility**
+DRAFT:  ## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
+
 # **Future Development, Iteration and Implementation**
 
 ---
