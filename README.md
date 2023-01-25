@@ -665,7 +665,7 @@ To mimic the needs of a real ecommerce shop to have a SKU architecture in place 
 
 According to [James and James eCommerce Fulfillment](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/), using SKUs within an ecommerce business can have two benefits in two key areas:
 1. Pick and Pack: labelling the products with a SKU can be really useful in a fulfillment warehouse during pick and pack. The SKU number helps the staff identify the right product quickly to ensure that the customer X does not end up with, say, a [Laneige](https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/17) Lip Sleeping Mask (Berry) when the order was for Laneige Lip Sleeping Mask (Grapefruit).
-2. The second advantage of using SKUs is that it enables ecommerce stores to * take more accurate stock readings, and understand your best and worst-selling products.* - James and James
+2. The second advantage of using SKUs is that it enables ecommerce stores to *take more accurate stock readings, and understand your best and worst-selling products.* - James and James
 
 ![Shop K-Beauty's SKUs format at a glance](./documentation/features/sku-format.png)
 
