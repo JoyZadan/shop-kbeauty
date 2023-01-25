@@ -16,6 +16,8 @@ Shop K-Beauty is a fictitious multi-brand, ecommerce full stack project built us
 Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diploma in Web Application Development (Full Stack Software Development).
 <br/>
 
+---
+
 **TABLE OF CONTENTS**
 * [USER EXPERIENCE](#user-experience)
     * [Strategy Plane](#strategy-plane)
@@ -62,7 +64,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
         * [Colour Palette](#colour-palette)
         * [Imagery](#imagery)
 * [Agile Methodology](#agile-methodology)
-    * [GitHub Project Management](#github-project-management)
+    * [GitHub Projects](#github-projects)
 * [Features](#features)
     * [General Features of the Site](#general-features-of-the-site)
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
@@ -266,11 +268,12 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 | 35 | Email Subscription, Powered by MailChimp | Registered Subscribers | 3 | 3 | 3 | ❌ |
 | Contact Us |  |  |  |  |  |  |
 | 36 | Contact Form | All Users <sup>1</sup> | 3 | 3 | 3 | ❌ |
-| Loyalty and Gift Cards |  |  |  |  |  |  |
+| Loyalty, Gift Cards and Discount Vouchers |  |  |  |  |  |  |
 | 37 | Loyalty Cards | Shoppers | 4 | 3 | 2 | ❌ |
 | 38 | Digital Gift Cards | All Users <sup>1</sup> | 5 | 2 | 1 | ❌ |
+| 39 | Digital Discount Vouchers | All Users <sup>1</sup> | 5 | 2 | 1 | ❌ |
 | Other Features |  |  |  |  |  |  |
-| 39 | SEO Friendly URLs - use slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
+| 40 | SEO Friendly URLs - use slugs for URLs vs IDs such as product id, review id, brand id for better SEO | All Users <sup>1</sup> | 3 | 5 | 2 | ❌ |
 
 1. All Users: Site Visitors, Logged In Users, Shop Owners, Superadmins
 
@@ -606,7 +609,24 @@ The hero image used on the home page inspired the colour palette for the site. T
 
 ---
 # **AGILE METHODOLOGY**
-## **GitHub Project Management**
+## **GitHub Projects**
+
+GitHub Projects was used to manage the development of the site. It helped me break down large issues into smaller issues and how these fit into the overall goals of implementing specific features I wanted for the site and ensuring that these also satisfy all the Milestone 4 assessment criteria for the project. I used labels to distinguish the issues which are part of the setup, of the documentation, the must haves and the enhancements, the validations as well as the bugs.
+
+* GitHub Projects - in progress
+![GitHub Projects - progress](./documentation/agile_development/github-projects-issues-in-progress.png)
+* GitHub Projects - completed and closed remaining issues, except for those moved to Future Development
+![]()
+
+* [Closed Issues - Setup](./documentation/agile_development/closed-issues-setup.png)
+* [Closed Issues - Must Have - part1](./documentation/agile_development/closed-issues-must-have-part1.png)
+* [Closed Issues - Must Have - part2](./documentation/agile_development/closed-issues-must-have-part2.png)
+* [Closed Issues - Must Have - part3](./documentation/agile_development/closed-issues-must-have-part3.png)
+* [Closed Issues - Enhancement - part1](./documentation/agile_development/closed-issues-enhancement-part1.png)
+* [Closed Issues - Enhancement - part2](./documentation/agile_development/closed-issues-enhancement-part2.png)
+
+* Open Issues closed prior to project submission
+![Closed Issues]
 
 ---
 # **FEATURES**
