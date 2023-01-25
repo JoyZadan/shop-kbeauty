@@ -69,7 +69,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Site features common to all pages](#site-features-common-to-all-pages)
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
         * [Product Categorization](#product-categorization)
-        * [SKU Architecture](#sku-architecture)
+        * [Stock Keeping Unit (SKU) Architecture](#stock-keeping-unit-sku-architecture)
     * [Accessibility](#accessibility)
     * [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
 * [Technologies Used](#technologies-used)
@@ -637,14 +637,16 @@ Initially largely informed by my personal and family members' experience buying 
 <br/>
 
 What came out of this research is the need to classify the products into the following categorization:
-* ![Product Categorization Tree](./documentation/diagrams/product-categorization-tree.png)
+![Product Categorization Tree](./documentation/diagrams/product-categorization-tree.png)
 
+## **Stock Keeping Unit (SKU) Architecture**
+To mimic the needs of a real ecommerce shop to have a SKU architecture in place in order to keep track of a product, Shop K-Beauty's product SKUs have been designed to conform with both the Stock Inventory and Pick and Pack Fulfillment best practices.
 
+According to [James and James eCommerce Fulfillment](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/), using SKUs within an ecommerce business can have two benefits in two key areas:
+1. Pick and Pack: labelling the products with a SKU can be really useful in a fulfillment warehouse during pick and pack. The SKU number helps the staff identify the right product quickly to ensure that the customer X does not end up with, say, a [Laneige](https://shop-k-beauty-django-joy-zadan.herokuapp.com/products/brand_detail/17) Lip Sleeping Mask (Berry) when the order was for Laneige Lip Sleeping Mask (Grapefruit).
+2. The second advantage of using SKUs is that it enables ecommerce stores to * take more accurate stock readings, and understand your best and worst-selling products.* - James and James
 
-## **SKU Architecture**
-**Shop K-Beauty's product SKUs** have been designed to conform with both the Stock Inventory and Pick and Pack Fulfillment best practices.
-
-According to ...
+![Shop K-Beauty's SKUs format at a glance](./documentation/features/sku-format.png)
 
 ## **Defensive Programming**
 
@@ -691,7 +693,7 @@ Shop K-Beauty's home page features the following:
 
 **Home page screenshot**
 <br/>
-![Homepage - Laptop](./documentation/site_pages/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
+![Homepage - Laptop](./documentation/features/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
 
 **Product page screenshot**
 
