@@ -66,7 +66,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
 * [Agile Methodology](#agile-methodology)
     * [GitHub Projects](#github-projects)
 * [Features](#features)
-    * [General Features of the Site](#general-features-of-the-site)
+    * [Site features common to all pages](#site-features-common-to-all-pages)
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
         * [Product Categorization](#product-categorization)
         * [SKU Architecture](#sku-architecture)
@@ -611,7 +611,7 @@ The hero image used on the home page inspired the colour palette for the site. T
 # **AGILE METHODOLOGY**
 ## **GitHub Projects**
 
-GitHub Projects was used to manage the development of the site. It helped me break down large issues into smaller issues and how these fit into the overall goals of implementing specific features I wanted for the site and ensuring that these also satisfy all the Milestone 4 assessment criteria for the project. I used labels to distinguish the issues which are part of the setup, of the documentation, the must haves and the enhancements, the validations as well as the bugs.
+GitHub Projects was used to manage the development of the site. It helped me break down large issues into smaller issues and how these fit into the overall goals of implementing specific features I wanted for the site. I also used labels to distinguish the issues which are part of the setup, of the documentation, the must haves and the enhancements, and the required validations.
 
 * GitHub Projects - in progress
 ![GitHub Projects - progress](./documentation/agile_development/github-projects-issues-in-progress.png)
@@ -630,8 +630,29 @@ GitHub Projects was used to manage the development of the site. It helped me bre
 
 ---
 # **FEATURES**
-## **General Features of the Site**
+## **Product Categorization**
+*Accurate product categorization improves the customer experience and also helps merchants reach the right shoppers.* - [Feedonomics](https://feedonomics.com/blog/product-categorization-101-why-it-matters/)
+
+Initially largely informed by my personal and family members' experience buying skincare and hair &amp; body products online, I knew that getting the product categorization correctly is one of the key factors that will influence how the products application of the site should be designed and what models are required. To make sure that the products are grouped together into **distinct, hierarchical categories**, I researched how similar ecommerce sites have classified their products and have also checked the responses from the initial User Research conducted earlier in the planning (see Strategy Plane > User Research > Discovery Phase).
+<br/>
+
+What came out of this research is the need to classify the products into the following categorization:
+* ![Product Categorization Tree](./documentation/diagrams/product-categorization-tree.png)
+
+
+
+## **SKU Architecture**
+**Shop K-Beauty's product SKUs** have been designed to conform with both the Stock Inventory and Pick and Pack Fulfillment best practices.
+
+According to ...
+
+## **Defensive Programming**
+
+## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
+
+## **Site features common to all pages**
 Common to all pages of the Shop K-Beauty site are:
+* Favicon
 * Navbar:
     * Top Navigation:
         * logo
@@ -642,12 +663,13 @@ Common to all pages of the Shop K-Beauty site are:
                 * product management
                 * my profile
                 * logout
-            * for logged in user:
+            * for logged in users (no superadmin permissions):
                 * my profile
                 * logout
-        * wishlist (for logged in user)
+        * wishlist (for logged in users)
         * bag
     * Main Navigation
+    * Delivery Banner
 * Footer:
         * Shop K-Beauty fictitious address, email and phone number
         * About - brief blurb about the shop
@@ -655,17 +677,6 @@ Common to all pages of the Shop K-Beauty site are:
         * Social Media Links
         * Payment Processing Statement
         * Copyright and Disclaimer
-
-## **Product Categorization**
-**"Accurate product categorization improves the customer experience and also helps merchants reach the right shoppers."** - [Feedonomics](https://feedonomics.com/blog/product-categorization-101-why-it-matters/)
-* Main Categories
-* Categories
-* Subcategories
-
-## **SKU Architecture**
-**Shop K-Beauty's product SKUs** have been designed to conform with both the Stock Inventory and Pick and Pack Fulfillment best practices.
-
-According to ...
 
 ## **Site Pages**
 ### **Home Page**
@@ -687,11 +698,8 @@ Shop K-Beauty's home page features the following:
 **Product detail page screenshot**
 SKU - add format here and why?
 
-## **Defensive Programming**
-
-## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
 ## **Accessibility**
-## **Future Development, Iteration and Implementation**
+# **Future Development, Iteration and Implementation**
 
 ---
 # **TECHNOLOGIES USED**
