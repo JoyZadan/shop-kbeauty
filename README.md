@@ -690,11 +690,14 @@ Defensive programming is also implemented to handle bad user inputs or actions a
 * Edit a brand: user is logged in but without the correct permission level
     * ![Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
 
-* [Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
+* Incognito Mode - edit a brand - user is not logged in
+    * ![Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
 
-* [Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
+* Add a product - logged in user without the correct permission level
+    * ![Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
 
-* [Modal](./documentation/features/modal.png)
+* Modal
+    * ![Modal](./documentation/features/modal.png)
 
 ## **Accessibility**
 
@@ -714,7 +717,12 @@ Having these extra meta tags feature is particularly important for Shop K-Beauty
 
 <br/>
 
-3. **Brand detail page shared on social media:**
+3. . **Brands page shared on social media:**
+    * ![Brands page shared on social media](./documentation/features/brands-page-facebook-post.png)
+
+<br/>
+
+4. **Brand detail page shared on social media:**
     * ![Brand detail post](./documentation/features/brand-detail-page-facebook-post.png)
 
 The meta tags are also in place to dynamically change what's displayed on the browser tabs, for example when the product detail page is opened, the name of the product comes up first followed by the site's title. This is particularly important as the slugs are not being utilised in place of product IDs.
@@ -732,8 +740,8 @@ Common to all pages of the Shop K-Beauty site are:
     2. Google Chrome
     3. Microsoft Edge
     4. Firefox
-
-    * [Favicons screenshot](./documentation/features/shop-kbeauty-favicons.png)
+    * Favicons
+        * ![Favicons screenshot](./documentation/features/shop-kbeauty-favicons.png)
 
 * Navbar
     The navbar has two main components, the top navigation and the main navigation. The first component is the top navigation (see below). It shows the site's logo, visitors can search for products using the search bar, sign up or login via the My Account icon and view the grand total of items in their bag. The second component is the main navigation that allows the visitors to browse for products, special offers, brands and K-Beauty tips. The navbar and all its components are fully responsive, as evidenced by the screenshots below.
@@ -753,7 +761,7 @@ Common to all pages of the Shop K-Beauty site are:
         * wishlist (for logged in users)
         * bag
 
-            **Top Navigation Screenshots**<br/>
+            **Top Navigation screenshots**<br/>
         1. **Top Navigation - desktop**
             * ![Top Navigation - desktop](./documentation/features/top-navigation-desktop.png)
         2. **Top Navigation - mobile**
@@ -779,7 +787,7 @@ Common to all pages of the Shop K-Beauty site are:
         * brands
         * k-beauty tips
 
-        **Main Navigation Screenshots**<br/>
+            **Main Navigation screenshots**<br/>
         1. **Main Navigation - desktop**
             * ![Main Navigation - desktop](./documentation/features/main-navigation-desktop.png)
         2. **Main Navigation - tablet - before**
@@ -791,8 +799,14 @@ Common to all pages of the Shop K-Beauty site are:
         5. **Main Navigation - mobile - after**
             * ![Main Navigation - mobile - after](./documentation/features/main-navigation-mobile-after.png)
 
-* Delivery Banner <br/>
+* Delivery Banner
     The banner area is currently being used to flag the free delivery threshold.
+
+    **Delivery Banner screenshots**
+    1. **mobile**
+        * ![mobile](./documentation/features/delivery-banner-mobile.png)
+    2. **tablet**
+        * ![tablet](./documentation/features/delivery-banner-tablet.png)
 
 * Footer:
     * Shop K-Beauty fictitious address, email and phone number
@@ -801,6 +815,15 @@ Common to all pages of the Shop K-Beauty site are:
     * Social Media Links
     * Payment Processing Statement
     * Copyright and Disclaimer
+
+    **Footer screenshots**
+    1. **mobile**
+        * ![mobile]()
+    2. **tablet**
+        * ![tablet]()
+    3. **desktop**
+        * ![desktop]()
+
 
 ## **Site Pages**
 ### **Home Page**
