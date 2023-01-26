@@ -679,12 +679,18 @@ According to [James and James eCommerce Fulfillment](https://www.ecommercefulfil
 ![Shop K-Beauty's Products SKUs format at a glance](./documentation/features/sku-format.png)
 
 ## **Defensive Programming**
-To keep the site secure and protected against a brute force attack or attempts to access pages reserved solely based on user permissions, defensive programming was at the forefront of the development.
+To keep the site secure and protected against a brute force attack or attempts to access pages reserved solely based on user permission level, defensive programming was at the forefront of the development.
 
 * I implemented login_required functionality across relevant views and templates.
 * On specific views.py files, I made sure to check if the user is authenticated and when required, the user's permission level.
 
-Defensive programming is also implemented to help the site owners and users with superadmin permissions to avoid the mistake of deleting products and reviews through the use of a modal which pops up to confirm their intended action prior to the deletion of data.
+Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data.
+
+**Defensive Programming at work:**
+* [Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
+* [Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
+* [Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
+* [Modal](./documentation/features/modal.png)
 
 ## **Accessibility**
 
@@ -707,7 +713,7 @@ The favicon is an effective visual reminder of the site's identity in the browse
     3. Microsoft Edge
     4. Firefox
 
-[Favicons screenshot]()
+    * [Favicons screenshot](./documentation/features/shop-kbeauty-favicons.png)
 
 * Navbar:
     * Top Navigation:
