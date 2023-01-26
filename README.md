@@ -735,7 +735,9 @@ Common to all pages of the Shop K-Beauty site are:
 
     * [Favicons screenshot](./documentation/features/shop-kbeauty-favicons.png)
 
-* Navbar:
+* Navbar
+    The navbar has two main components, the top navigation and the main navigation. The first component is the top navigation (see below). It shows the site's logo, visitors can search for products using the search bar, sign up or login via the My Account icon and view the grand total of items in their bag. The second component is the main navigation that allows the visitors to browse for products, special offers, brands and K-Beauty tips. The navbar and all its components are fully responsive, as evidenced by the screenshots below.
+
     * Top Navigation:
         * logo
         * search bar
@@ -750,8 +752,48 @@ Common to all pages of the Shop K-Beauty site are:
                 * logout
         * wishlist (for logged in users)
         * bag
+
+            **Top Navigation Screenshots**<br/>
+        1. **Top Navigation - desktop**
+            * ![Top Navigation - desktop](./documentation/features/top-navigation-desktop.png)
+        2. **Top Navigation - mobile**
+            * ![Top Navivation - mobile](./documentation/features/top-navigation-mobile.png)
+        3. **Top Navigation - desktop - logged in superadmin user**
+            * ![Top Navigation - desktop - logged in superadmin user](./documentation/features/top-navigation-desktop-logged-in-superadmin.png)
+        4. **Top Navigation - tablet - logged in user**
+            * ![Top Navigation - tablet - logged in user](./documentation/features/top-navigation-tablet-logged-in-user.png)
+        5. **Top Navigation - mobile - logged in user: wishlist icon is displayed**
+            * ![Top Navigation - mobile - logged in user: wishlist icon is displayed](./documentation/features/top-navigation-mobile-wishlist-logged-in-user.png)
+
+    <br/>
+
     * Main Navigation
-    * Delivery Banner
+        * all products dropdown
+            * view products by brand, price, discount, category, subcategory, all products
+        * skincare dropdown
+            * view skincare product types by categories, subcategories and all skincare
+        * hair &amp; body dropdown
+            * view hair &amp; body product types by categories, subcategories and all hair &amp; body
+        * special offers dropdown
+            * view deal types by new arrivals, top deals, clearance and all special offers
+        * brands
+        * k-beauty tips
+
+        **Main Navigation Screenshots**<br/>
+        1. **Main Navigation - desktop**
+            * ![Main Navigation - desktop](./documentation/features/main-navigation-desktop.png)
+        2. **Main Navigation - tablet - before**
+            * ![Main Navigation - tablet - before](./documentation/features/main-navigation-tablet-before.png)
+        3. **Main Navigation - tablet - after**
+            * ![Main Navigation - tablet - after](./documentation/features/main-navigation-tablet-after.png)
+        4. **Main Navigation - mobile - before**
+            * ![Main Navigation - mobile - before](./documentation/features/main-navigation-mobile-before.png)
+        5. **Main Navigation - mobile - after**
+            * ![Main Navigation - mobile - after](./documentation/features/main-navigation-mobile-after.png)
+
+* Delivery Banner <br/>
+    The banner area is currently being used to flag the free delivery threshold.
+
 * Footer:
     * Shop K-Beauty fictitious address, email and phone number
     * About - brief blurb about the shop
