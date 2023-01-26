@@ -695,19 +695,35 @@ Defensive programming is also implemented to handle bad user inputs or actions a
 ## **Accessibility**
 
 ## **Extra Meta Tags for Specific Pages**
-These extra meta tags are in place to tailor the content share on social media.
+The extra meta tags on specific pages of the site allow for a tailored image and content when posting on social media pages. Using the content (page title, page description and target keywords) that came out of the **Integrating Content Strategy and SEO exercise (SCOPE PLANE)** plus images, the result is a more engaging social media posts that actually help deliver the intended message as opposed to a generic one.
 
-* [Tailored product detail post]()
-* [Tailored brand detail post]()
+Having these extra meta tags feature is particularly important for Shop K-Beauty as a business because the rise and continuing success of K-Beauty products as a whole becoming a global phenomenon are in large part driven by social media. Straits Research, in its report entitled, [K-Beauty Products Market Trend, Growth to 2022-2030](https://straitsresearch.com/report/k-beauty-products-market), the section on **Market Dynamics (Global K-Beauty Products Market Drivers)** discussed in detail that the *popularization of products are inspired by unique ingredients as well as digital marketing strategies* The report added, *The West's journalists and social media influencers have also been interested in the K-Beauty boom. The K-Beauty businesses have been praised for using this as an inventive digital techniqque to get more popularity.*
+
+**Extra meta tags and examples of how they work on [Shop K-Beauty's social media page (Facebook)](https://www.facebook.com/shopkbeauty.new):**
+1. **Products page shared on social media:**
+    * ![Products page shared on social media](./documentation/features/products-page-facebook-post.png)
+
+<br/>
+
+2. **Product detail page shared on social media:**
+    * ![Product detail post](./documentation/features/product-detail-page-facebook-post.png)
+
+<br/>
+
+3. **Brand detail page shared on social media:**
+    * ![Brand detail post](./documentation/features/brand-detail-page-facebook-post.png)
 
 The meta tags are also in place to dynamically change what's displayed on the browser tabs, for example when the product detail page is opened, the name of the product comes up first followed by the site's title. This is particularly important as the slugs are not being utilised in place of product IDs.
-* [Product name on the browser tab]()
+* **Product Name on the browser tab**
+    * ![Product name on the browser tab](./documentation/features/product-name-on-browser-tab.png)
+* **Brand Name on the browser tab**
+    * ![Brand name on the browser tab](./documentation/features/brand-name-on-browser-tab.png)
 
 ## **Site features common to all pages**
 Common to all pages of the Shop K-Beauty site are:
 
 * Favicon
-The favicon is an effective visual reminder of the site's identity in the browser tabs and has been tested against the following browsers:
+    The favicon is an effective visual reminder of the site's identity in the browser tabs and has been tested against the following browsers:
     1. Safari
     2. Google Chrome
     3. Microsoft Edge
