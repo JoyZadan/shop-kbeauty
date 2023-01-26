@@ -747,8 +747,8 @@ Common to all pages of the Shop K-Beauty site are:
     The navbar has two main components, the top navigation and the main navigation. The first component is the top navigation (see below). It shows the site's logo, visitors can search for products using the search bar, sign up or login via the My Account icon and view the grand total of items in their bag. The second component is the main navigation that allows the visitors to browse for products, special offers, brands and K-Beauty tips. The navbar and all its components are fully responsive, as evidenced by the screenshots below.
 
     * Top Navigation:
-        * logo
-        * search bar
+        * logo (text-based logo)
+        * search bar (visitors can search for products, brands and ingredients)
         * my account (login, register)
             * for logged in superadmin:
                 * brand management
@@ -812,7 +812,8 @@ Common to all pages of the Shop K-Beauty site are:
     * Shop K-Beauty fictitious address, email and phone number
     * About - brief blurb about the shop
     * Policies
-    * Social Media Links
+    * Social Media Links (Facebook, Instagram, Pinterest and Twitter)
+        * I created a mock business page only for Facebook. I wanted to create an example of how a well thought out SEO strategy + the extra meta tags on specific pages can work well together to provide a better user experience for visitors and shoppers as well as save the shop owners the time to have to tailor every social media post, especially when they want to promote or call attention to specific products, brands or special deals.
     * Payment Processing Statement
     * Copyright and Disclaimer
 
@@ -829,7 +830,7 @@ Common to all pages of the Shop K-Beauty site are:
 Shop K-Beauty's home page features the following:
 * "Above the fold":
     * A background hero image showcasing some of the globally renowned K-Beauty brands.
-    * An attending getting Call to Action text announcing the arrival of the latest collections and a "shop now" button
+    * An attention getting Call to Action text announcing the arrival of the latest collections and a "shop now" button that links to new arrivals
 * "Below the fold":
     * Featured Products
     * Featured Brands
@@ -839,7 +840,35 @@ Shop K-Beauty's home page features the following:
 ![Homepage - Laptop](./documentation/features/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
 
 ### **Products Page**
-**Products page screenshot**
+The products page contains the following:
+* Badges to display the category names or specific subcategory when visitors click any of the links on skincare, hair &amp; body and special offers (navlinks).
+* The number of products available (left side of the screen on desktop and tablet and centre on mobile) plus a link to "View All Products" when a visitor clicks on any of the navigation links on All Products, Skincare, Hair &amp; Body and Special Offers. These navlinks act as filtering mechanism to dynamically change the number of available products.
+* A sorting functionality (right side of the screen on desktop and tablet and centre on mobile) for the visitors to sort the products by:
+    * Brand (A-Z, Z-A)
+    * Price (low to high, high to low)
+    * Discount (high to low, low to high)
+    * Name (A-Z, Z-A)
+    * Category (A-Z, Z-A)
+    * Subcategory (A-Z, Z-A)
+* The result of products being filtered can still be sorted further.
+* Individual products cards displaying the product image, name, category, subcategory, current price, original price (crossed out), savings and a shop call call to action button that then links to a product detail page. The currency is set to GBP.
+* The product card has a gentle transition on hover.
+
+**Products page screenshots**
+1. **Products Page on mobile**
+    * [mobile](./documentation/features/products-page-on-mobile.png)
+2. **Products Page on tablet**
+    * [tablet](./documentation/features/products-page-on-tablet.png)
+3. **Products Page on desktop**
+    * ![desktop](./documentation/features/products-page-on-desktop.png)
+4. **All Products sorted by discount (high-to-low)**
+    * [all products sorted by discount](./documentation/features/all-products-sorted-by-discount-high-to-low.png)
+5. **All Products filtered by subcategory**
+    * [products filtered by subcategory](./documentation/features/all-products-filtered-by-subcategory.png)
+6. **All Products filtered by category**
+    * [products filtered by category](./documentation/features/all-products-filtered-by-category.png)
+7. **All Products filtered by multiple categories**
+    * [products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
 
 ### **Product Detail Page**
 **Product detail page screenshot**
