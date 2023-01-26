@@ -817,13 +817,12 @@ Common to all pages of the Shop K-Beauty site are:
     * Copyright and Disclaimer
 
     **Footer screenshots**
-    1. **mobile**
-        * ![mobile]()
-    2. **tablet**
-        * ![tablet]()
+    1. **footer on mobile**
+        * [mobile](./documentation/features/footer-mobile.png)
+    2. **footer on tablet**
+        * [tablet](./documentation/features/footer-tablet.png)
     3. **desktop**
-        * ![desktop]()
-
+        * ![desktop](./documentation/features/footer-desktop.png)
 
 ## **Site Pages**
 ### **Home Page**
