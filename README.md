@@ -687,9 +687,13 @@ To keep the site secure and protected against a brute force attack or attempts t
 Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data.
 
 **Defensive Programming at work:**
+* Edit a brand: user is logged in but without the correct permission level
+    * ![Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
+
 * [Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
+
 * [Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
-* [Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
+
 * [Modal](./documentation/features/modal.png)
 
 ## **Accessibility**
