@@ -899,8 +899,25 @@ Below all of the above are the following:
 * ![desktop](./documentation/features/product-detail-page.png)
 
 ### **Brands Page**
+The brands page contains all avaible brands via individual brand cards that displays the brand logo. Each brand card links to the brand detail page.
+
+Below then brand cards is a CTA button to view all products.
+
+**Brands page screenshot**
+* ![desktop](./documentation/features/brands-page.png)
 
 ### **Brand Detail Page**
+The brand detail page contains the following:
+* the brand's logo
+* the brand name
+* the brand description
+* list of available products from the brand - these products are displayed in individual product card that contains the product name, category, subcategory, price, original price and discount (if they exist) and a CTA to shop now
+* a CTA to keep shopping that links to the products page
+
+**Brand detail page screenshot**
+* ![desktop](./documentation/features/brand-detail-page.png)
+* [brand detail page - tablet](./documentation/features/brand-detail-page-tablet.png)
+* [brand detail page - mobile](./documentation/features/brand-detail-page-mobile.png)
 
 ### **Shopping Page**
 
