@@ -851,7 +851,7 @@ The products page contains the following:
     * Category (A-Z, Z-A)
     * Subcategory (A-Z, Z-A)
 * The result of products being filtered can still be sorted further.
-* Individual products cards displaying the product image, name, category, subcategory, current price, original price (crossed out), savings and a shop call call to action button that then links to a product detail page. The currency is set to GBP.
+* Individual products cards displaying the product image, name, category, subcategory, current price, original price (crossed out), savings and a shop now call to action button that then links to a product detail page. The currency is set to GBP.
 * The product card has a gentle transition on hover.
 
 **Products page screenshots**
@@ -871,7 +871,32 @@ The products page contains the following:
     * [products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
 
 ### **Product Detail Page**
+The product detail page contains the following: <br/>
+Centre of screen on mobile and left side of the screen on tablet and bigger screens:
+* Product image
+* Right below the product image are two CTA buttons:
+    * See all reviews button (if a review exists)
+    * Add review button
+
+Centre of screen on mobile and right side of the screen on tablet and bigger screens:
+* Product name
+* Product brand - this links to the brand detail page
+* Wishlist icon - right text of product brand
+* Product category - think links to all products page, filtered by the product's category
+* Product subcategory - think links to all products page, filtered by the product's subcategory
+* Product price
+* Crossed out original product price - if higher than the product price
+* Saved amount from discount
+* Quantity buttons to increment or decrement item quantity
+* Two CTAs next to each other (tablets and above, otherwise one on top of the other) to either keep shopping or add product to bag
+* An accordion that contains the product description, how to use and ingredients
+
+Below all of the above are the following:
+* Featured reviews, if they exist and a CTA to share experience of using the product, ie, add a review
+* Four or less related products based on the product's subcategory - the related products are displayed randomly if there's more than four of them
+
 **Product detail page screenshot**
+* ![desktop](./documentation/features/product-detail-page.png)
 
 ### **Brands Page**
 
