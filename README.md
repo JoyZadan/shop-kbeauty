@@ -811,8 +811,8 @@ Common to all pages of the Shop K-Beauty site are:
 * Footer:
     * Shop K-Beauty fictitious address, email and phone number
     * About - brief blurb about the shop
-    * Policies
-    * Social Media Links (Facebook, Instagram, Pinterest and Twitter)
+    * Policies - links to privacy policy, terms and conditions, return and refund policy and shipping policy pages
+    * Follow Us - Social Media Links (Facebook, Instagram, Pinterest and Twitter)
         * I created a mock business page only for Facebook. I wanted to create an example of how a well thought out SEO strategy + the extra meta tags on specific pages can work well together to provide a better user experience for visitors and shoppers as well as save the shop owners the time to have to tailor every social media post, especially when they want to promote or call attention to specific products, brands or special deals.
     * Payment Processing Statement
     * Copyright and Disclaimer
@@ -868,7 +868,7 @@ The products page contains the following:
 6. **All Products filtered by category**
     * [products filtered by category](./documentation/features/all-products-filtered-by-category.png)
 7. **All Products filtered by multiple categories**
-    * [products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
+    * ![products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
 
 ### **Product Detail Page**
 The product detail page contains the following: <br/>
@@ -904,7 +904,9 @@ The brands page contains all avaible brands via individual brand cards that disp
 Below then brand cards is a CTA button to view all products.
 
 **Brands page screenshot**
-* ![desktop](./documentation/features/brands-page.png)
+* ![desktop](./documentation/features/brands-page-desktop.png)
+* [tablet](./documentation/features/brands-page.png)
+* [mobile](./documentation/features/brands-page-mobile.png)
 
 ### **Brand Detail Page**
 The brand detail page contains the following:
@@ -945,7 +947,11 @@ The brand detail page contains the following:
 
 ### **Terms and Conditions Page**
 
+### **Return and Refund Page**
+
 ### **Shipping Policy Page**
+
+### **Error Pages**
 
 DRAFT:  ## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
 
