@@ -930,7 +930,7 @@ The bag page is fully responsive and contains the following:
     * product SKU
 * product price
 * quantity buttons to increment or decrement product quantity
-* update button to update the product quantity current in the bag
+* update button to update the product quantity currently in the bag (in case the shopper decide)
 * remove button to remove the product from the bag
 * bag total
 * delivery cost
@@ -938,6 +938,8 @@ The bag page is fully responsive and contains the following:
 * if the grand total is below the delivery threshold, a text in red will show the shopper how much they need to spend to get free delivery
 * keep shopping CTA button which links to the products page
 * secure checkout which opens the checkout page
+
+The session is enabled so an anonymous shopper can continue browsing for other products and the items in the bag will stay in the bag as long as the site's connection to the browser does not get disconnected. Should the shopper add a product that is already in the bag, the product quantity will increment and a tooltip will appear to state that the item quantity has been updated to the total number of product items added in the bag.
 
 **Bag page screenshot**
 * ![bag page - desktop](./documentation/features/bag-page-desktop.png)
