@@ -882,11 +882,11 @@ Centre of screen on mobile and right side of the screen on tablet and bigger scr
 * Product name
 * Product brand - this links to the brand detail page
 * Wishlist icon - right text of product brand
-* Product category - think links to all products page, filtered by the product's category
-* Product subcategory - think links to all products page, filtered by the product's subcategory
+* Product category - this links to all products page, filtered by the product's category
+* Product subcategory - this links to all products page, filtered by the product's subcategory
 * Product price
 * Crossed out original product price - if higher than the product price
-* Saved amount from discount
+* Saved amount from discount (if a discount exists)
 * Quantity buttons to increment or decrement item quantity
 * Two CTAs next to each other (tablets and above, otherwise one on top of the other) to either keep shopping or add product to bag
 * An accordion that contains the product description, how to use and ingredients
