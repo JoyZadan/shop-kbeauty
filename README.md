@@ -893,7 +893,7 @@ Centre of screen on mobile and right side of the screen on tablet and bigger scr
 
 Below all of the above are the following:
 * Featured reviews, if they exist and a CTA to share experience of using the product, ie, add a review
-* Four or less related products based on the product's subcategory - the related products are displayed randomly if there's more than four of them
+* Four or less related products based on the product's subcategory. The related products are displayed randomly if there's more than four of them. Each related product card has the product name, category, subcategory, price, original price and discount (if they exist) and a shop now button.
 
 **Product detail page screenshot**
 * ![desktop](./documentation/features/product-detail-page.png)
