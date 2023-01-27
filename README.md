@@ -688,16 +688,16 @@ Defensive programming is also implemented to handle bad user inputs or actions a
 
 **Defensive Programming at work:**
 * Edit a brand: user is logged in but without the correct permission level
-    * ![Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
+* ![Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
 
 * Incognito Mode - edit a brand - user is not logged in
-    * ![Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
+* ![Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
 
 * Add a product - logged in user without the correct permission level
-    * ![Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
+* ![Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
 
 * Modal
-    * ![Modal](./documentation/features/modal.png)
+* ![Modal](./documentation/features/modal.png)
 
 ## **Accessibility**
 
@@ -708,28 +708,22 @@ Having these extra meta tags feature is particularly important for Shop K-Beauty
 
 **Extra meta tags and examples of how they work on [Shop K-Beauty's social media page (Facebook)](https://www.facebook.com/shopkbeauty.new):**
 1. **Products page shared on social media:**
-    * ![Products page shared on social media](./documentation/features/products-page-facebook-post.png)
-
-<br/>
+* ![Products page shared on social media](./documentation/features/products-page-facebook-post.png)
 
 2. **Product detail page shared on social media:**
-    * ![Product detail post](./documentation/features/product-detail-page-facebook-post.png)
+* ![Product detail post](./documentation/features/product-detail-page-facebook-post.png)
 
-<br/>
-
-3. . **Brands page shared on social media:**
-    * ![Brands page shared on social media](./documentation/features/brands-page-facebook-post.png)
-
-<br/>
+3. **Brands page shared on social media:**
+* ![Brands page shared on social media](./documentation/features/brands-page-facebook-post.png)
 
 4. **Brand detail page shared on social media:**
-    * ![Brand detail post](./documentation/features/brand-detail-page-facebook-post.png)
+* ![Brand detail post](./documentation/features/brand-detail-page-facebook-post.png)
 
 The meta tags are also in place to dynamically change what's displayed on the browser tabs, for example when the product detail page is opened, the name of the product comes up first followed by the site's title. This is particularly important as the slugs are not being utilised in place of product IDs.
 * **Product Name on the browser tab**
-    * ![Product name on the browser tab](./documentation/features/product-name-on-browser-tab.png)
+* ![Product name on the browser tab](./documentation/features/product-name-on-browser-tab.png)
 * **Brand Name on the browser tab**
-    * ![Brand name on the browser tab](./documentation/features/brand-name-on-browser-tab.png)
+* ![Brand name on the browser tab](./documentation/features/brand-name-on-browser-tab.png)
 
 ## **Site features common to all pages**
 Common to all pages of the Shop K-Beauty site are:
@@ -761,17 +755,17 @@ Common to all pages of the Shop K-Beauty site are:
         * wishlist (for logged in users)
         * bag
 
-            **Top Navigation screenshots**<br/>
+        **Top Navigation screenshots**<br/>
         1. **Top Navigation - desktop**
-            * ![Top Navigation - desktop](./documentation/features/top-navigation-desktop.png)
+        * ![Top Navigation - desktop](./documentation/features/top-navigation-desktop.png)
         2. **Top Navigation - mobile**
-            * ![Top Navivation - mobile](./documentation/features/top-navigation-mobile.png)
+        * ![Top Navivation - mobile](./documentation/features/top-navigation-mobile.png)
         3. **Top Navigation - desktop - logged in superadmin user**
-            * ![Top Navigation - desktop - logged in superadmin user](./documentation/features/top-navigation-desktop-logged-in-superadmin.png)
+        * ![Top Navigation - desktop - logged in superadmin user](./documentation/features/top-navigation-desktop-logged-in-superadmin.png)
         4. **Top Navigation - tablet - logged in user**
-            * ![Top Navigation - tablet - logged in user](./documentation/features/top-navigation-tablet-logged-in-user.png)
+        * ![Top Navigation - tablet - logged in user](./documentation/features/top-navigation-tablet-logged-in-user.png)
         5. **Top Navigation - mobile - logged in user: wishlist icon is displayed**
-            * ![Top Navigation - mobile - logged in user: wishlist icon is displayed](./documentation/features/top-navigation-mobile-wishlist-logged-in-user.png)
+        * ![Top Navigation - mobile - logged in user: wishlist icon is displayed](./documentation/features/top-navigation-mobile-wishlist-logged-in-user.png)
 
     <br/>
 
@@ -787,26 +781,26 @@ Common to all pages of the Shop K-Beauty site are:
         * brands
         * k-beauty tips
 
-            **Main Navigation screenshots**<br/>
+        **Main Navigation screenshots**<br/>
         1. **Main Navigation - desktop**
-            * ![Main Navigation - desktop](./documentation/features/main-navigation-desktop.png)
+        * ![Main Navigation - desktop](./documentation/features/main-navigation-desktop.png)
         2. **Main Navigation - tablet - before**
-            * ![Main Navigation - tablet - before](./documentation/features/main-navigation-tablet-before.png)
+        * ![Main Navigation - tablet - before](./documentation/features/main-navigation-tablet-before.png)
         3. **Main Navigation - tablet - after**
-            * ![Main Navigation - tablet - after](./documentation/features/main-navigation-tablet-after.png)
+        * ![Main Navigation - tablet - after](./documentation/features/main-navigation-tablet-after.png)
         4. **Main Navigation - mobile - before**
-            * ![Main Navigation - mobile - before](./documentation/features/main-navigation-mobile-before.png)
+        * ![Main Navigation - mobile - before](./documentation/features/main-navigation-mobile-before.png)
         5. **Main Navigation - mobile - after**
-            * ![Main Navigation - mobile - after](./documentation/features/main-navigation-mobile-after.png)
+        * ![Main Navigation - mobile - after](./documentation/features/main-navigation-mobile-after.png)
 
 * Delivery Banner
     The banner area is currently being used to flag the free delivery threshold.
 
     **Delivery Banner screenshots**
     1. **mobile**
-        * ![mobile](./documentation/features/delivery-banner-mobile.png)
+    * ![mobile](./documentation/features/delivery-banner-mobile.png)
     2. **tablet**
-        * ![tablet](./documentation/features/delivery-banner-tablet.png)
+    * ![tablet](./documentation/features/delivery-banner-tablet.png)
 
 * Footer:
     * Shop K-Beauty fictitious address, email and phone number
@@ -819,11 +813,11 @@ Common to all pages of the Shop K-Beauty site are:
 
     **Footer screenshots**
     1. **footer on mobile**
-        * [mobile](./documentation/features/footer-mobile.png)
+    * [mobile](./documentation/features/footer-mobile.png)
     2. **footer on tablet**
-        * [tablet](./documentation/features/footer-tablet.png)
+    * [tablet](./documentation/features/footer-tablet.png)
     3. **desktop**
-        * ![desktop](./documentation/features/footer-desktop.png)
+    * ![desktop](./documentation/features/footer-desktop.png)
 
 ## **Site Pages**
 ### **Home Page**
@@ -856,19 +850,19 @@ The products page contains the following:
 
 **Products page screenshots**
 1. **Products Page on mobile**
-    * [mobile](./documentation/features/products-page-on-mobile.png)
+* [mobile](./documentation/features/products-page-on-mobile.png)
 2. **Products Page on tablet**
-    * [tablet](./documentation/features/products-page-on-tablet.png)
+* [tablet](./documentation/features/products-page-on-tablet.png)
 3. **Products Page on desktop**
-    * ![desktop](./documentation/features/products-page-on-desktop.png)
+* ![desktop](./documentation/features/products-page-on-desktop.png)
 4. **All Products sorted by discount (high-to-low)**
-    * [all products sorted by discount](./documentation/features/all-products-sorted-by-discount-high-to-low.png)
+* [all products sorted by discount](./documentation/features/all-products-sorted-by-discount-high-to-low.png)
 5. **All Products filtered by subcategory**
-    * [products filtered by subcategory](./documentation/features/all-products-filtered-by-subcategory.png)
+* [products filtered by subcategory](./documentation/features/all-products-filtered-by-subcategory.png)
 6. **All Products filtered by category**
-    * [products filtered by category](./documentation/features/all-products-filtered-by-category.png)
+* [products filtered by category](./documentation/features/all-products-filtered-by-category.png)
 7. **All Products filtered by multiple categories**
-    * ![products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
+* ![products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
 
 ### **Product Detail Page**
 The product detail page contains the following: <br/>
@@ -896,7 +890,7 @@ Below all of the above are the following:
 * Four or less related products based on the product's subcategory. The related products are displayed randomly if there's more than four of them. Each related product card has the product name, category, subcategory, price, original price and discount (if they exist) and a shop now button.
 
 **Product detail page screenshot**
-* ![desktop](./documentation/features/product-detail-page.png)
+![desktop](./documentation/features/product-detail-page.png)
 
 ### **Brands Page**
 The brands page contains all avaible brands via individual brand cards that displays the brand logo. Each brand card links to the brand detail page.
@@ -904,8 +898,11 @@ The brands page contains all avaible brands via individual brand cards that disp
 Below then brand cards is a CTA button to view all products.
 
 **Brands page screenshot**
+1. **Brands page on desktop**
 * ![desktop](./documentation/features/brands-page-desktop.png)
+2. **Brands page on tablet**
 * [tablet](./documentation/features/brands-page.png)
+3. **Brands page on mobile**
 * [mobile](./documentation/features/brands-page-mobile.png)
 
 ### **Brand Detail Page**
@@ -917,8 +914,11 @@ The brand detail page contains the following:
 * a CTA to keep shopping that links to the products page
 
 **Brand detail page screenshot**
+1. **Brand detail page on desktop**
 * ![desktop](./documentation/features/brand-detail-page.png)
+2. **Brand detail page on tablet**
 * [brand detail page - tablet](./documentation/features/brand-detail-page-tablet.png)
+3. **Brand detail page on mobile**
 * [brand detail page - mobile](./documentation/features/brand-detail-page-mobile.png)
 
 ### **Bag Page**
@@ -939,12 +939,19 @@ The bag page is fully responsive and contains the following:
 * keep shopping CTA button which links to the products page
 * secure checkout which opens the checkout page
 
-The session is enabled so an anonymous shopper can continue browsing for other products and the items in the bag will stay in the bag as long as the site's connection to the browser does not get disconnected. Should the shopper add a product that is already in the bag, the product quantity will increment and a tooltip will appear to state that the item quantity has been updated to the total number of product items added in the bag.
+The session is enabled so an anonymous shopper can continue browsing for other products and the items in the bag will stay in the bag as long as the site's connection to the browser does not get disconnected.
+
+Should the shopper add a product that is already in the bag, the product quantity will increment and a toast message will appear to state that the item quantity has been updated to the total number of product items added in the bag.
 
 **Bag page screenshot**
+1. **Bag page on desktop**
 * ![bag page - desktop](./documentation/features/bag-page-desktop.png)
+2. **Bag page on tablet**
 * [bag page - tablet](./documentation/features/bag-page-tablet.png)
+3. **Bag page on mobile**
 * [bag page - mobile](./documentation/features/bag-page-mobile.png)
+4. **Adding product to bag and toast message**
+* ![bag page - adding a product to bag and toast message](./documentation/features/add-product-to-bag-toast.gif)
 
 ### **Checkout Page**
 
