@@ -881,7 +881,7 @@ Centre of screen on mobile and left side of the screen on tablet and bigger scre
 Centre of screen on mobile and right side of the screen on tablet and bigger screens:
 * Product name
 * Product brand - this links to the brand detail page
-* Wishlist icon - right text of product brand
+* Wishlist icon - right text of product brand that redirects to login page if user is not logged in, or adds the product to a user's wishlist
 * Product category - this links to all products page, filtered by the product's category
 * Product subcategory - this links to all products page, filtered by the product's subcategory
 * Product price
@@ -921,7 +921,28 @@ The brand detail page contains the following:
 * [brand detail page - tablet](./documentation/features/brand-detail-page-tablet.png)
 * [brand detail page - mobile](./documentation/features/brand-detail-page-mobile.png)
 
-### **Shopping Page**
+### **Bag Page**
+The bag page is fully responsive and contains the following:
+* product info
+    * product image
+    * product name
+    * product size, if available, otherwise N/A
+    * product SKU
+* product price
+* quantity buttons to increment or decrement product quantity
+* update button to update the product quantity current in the bag
+* remove button to remove the product from the bag
+* bag total
+* delivery cost
+* grand total of products in the bag
+* if the grand total is below the delivery threshold, a text in red will show the shopper how much they need to spend to get free delivery
+* keep shopping CTA button which links to the products page
+* secure checkout which opens the checkout page
+
+**Bag page screenshot**
+* ![bag page - desktop](./documentation/features/bag-page-desktop.png)
+* [bag page - tablet](./documentation/features/bag-page-tablet.png)
+* [bag page - mobile](./documentation/features/bag-page-mobile.png)
 
 ### **Checkout Page**
 
