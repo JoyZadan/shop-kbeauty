@@ -1,6 +1,5 @@
-from django.test import TestCase
+from django.test import TestCase, Client
 from django.urls import reverse
-from django.contrib import messages
 from products.models import Product, MainCategory, Category, Subcategory, Brand
 
 
@@ -45,7 +44,6 @@ class TestBagViews(TestCase):
             subcategory=self.subcategory1,
             brand=self.brand1,
             sku='axi-sk-fc-spt-0005',
-            id=300,
             name='New Foundation',
             slug='new-foundation',
             is_featured=True,
@@ -68,34 +66,47 @@ class TestBagViews(TestCase):
         self.assertTemplateUsed(response, 'bag/bag.html')
 
     # test add product to bag
-    def test_add_product_to_bag(self):
+    def test_can_add_product_to_bag(self):
         product = self.product1,
 
         response = self.client.post(
-            f'/bag/add/300/',
-            {'quantity': 1, 'redirect_url': 'view_bag'}
-        )
-        bag = self.client.session['bag']
-        self.assertEqual(bag[str(300)], 1)
-
-    # test update bag
-    def test_update_bag(self):
-        product = self.product1,
-
-        response = self.client.post(
-            f'/bag/adjust/300/',
+            f'/bag/add/{str(self.product1.id)}/',
             {'quantity': 2, 'redirect_url': 'view_bag'}
         )
         bag = self.client.session['bag']
-        self.assertEqual(bag[str(300)], 2)
+        self.assertEqual(bag[str(self.product1.id)], 2)
+        self.assertRedirects(response, '/bag/')
+
+    # test update bag
+    def test_can_update_bag(self):
+        product = self.product1,
+
+        # posts 5 quantities of product1
+        response = self.client.post(
+            f'/bag/add/{str(self.product1.id)}/',
+            {'quantity': 5, 'redirect_url': 'view_bag'}
+        )
+        bag = self.client.session['bag']
+        self.assertEqual(bag[str(self.product1.id)], 5)
+        self.assertIn('bag', self.client.session)
+        self.assertRedirects(response, '/bag/')
+
+        # adjusts quantity of product1 from 5 to 3
+        response = self.client.post(
+            f'/bag/adjust/{str(self.product1.id)}/',
+            {'quantity': 3, 'redirect_url': 'view_bag'}
+        )
+        bag = self.client.session['bag']
+        self.assertEqual(bag[str(self.product1.id)], 3)
+        self.assertIn('bag', self.client.session)
 
     # test remove product from bag
-    def test_remove_product_from_bag(self):
+    def test_can_remove_product_from_bag(self):
         product = self.product1,
 
         self.client.post(
-            f'/bag/add/300/',
-            {'quantity': 1, 'redirect_url': 'view_bag'}
+            f'/bag/add/{str(self.product1.id)}/',
+            {'quantity': 2, 'redirect_url': 'view_bag'}
         )
 
-        response = self.client.post(f'/bag/remove/300/')
+        response = self.client.post(f'/bag/remove/{str(self.product1.id)}/')
