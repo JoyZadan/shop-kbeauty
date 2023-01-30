@@ -1072,6 +1072,7 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 * Credit to [Carla Buogiorno's La Fraschetta django ecommerce project](https://github.com/CarlaBuongiorno/la_fraschetta) for the inspiration, particularly for her wishlist app.
 * Credit to [Ordinary Coders](https://ordinarycoders.com/blog/article/how-to-add-django-meta-tags) on guidance on *How to add meta tags to a Django HTML template*
 * Credit to [CSS Tricks's The Essential Meta Tags for Social Media](https://css-tricks.com/essential-meta-tags-social-media/)
+* Credit to [Paul Meneghan's CI-MS4-LoveRugby](https://github.com/pmeeny/CI-MS4-LoveRugby) where I got the solution to test a test user can login to his test account, access his profile as well as his order history.
 
 ## **Content**
 The product names, images, descriptions, brand logos and description and other information were sourced from:
