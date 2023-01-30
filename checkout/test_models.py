@@ -1,24 +1,12 @@
-from django.test import TestCase, Client
-import uuid
-from django.urls import reverse
-from profiles.models import User
-from .models import Order, OrderLineItem
+from django.test import TestCase
+from .models import Order
 from products.models import Product, MainCategory, Category, Subcategory, Brand
 
 
 class TestOrderModels(TestCase):
-    """ Draft testing checkout"""
+    """ Tests for the checkout models """
 
     def setUp(self):
-        # create a test user object
-        self.user1 = User.objects.create(
-            email='test@test.com',
-            username='testuser',
-            password='password',
-        )
-        # logged_in = self.client.login(email=self.user1.email,
-        #                               password=self.user1.password)
-        # self.assertTrue(logged_in)
 
         # create test main_category object
         self.main_category1 = MainCategory.objects.create(
@@ -73,39 +61,23 @@ class TestOrderModels(TestCase):
             image_url='image_url',
         )
 
-        # self.order1 = Order.objects.create(
-        #     user_profile=self.user_profile1,
-        #     full_name='Test User',
-        #     email='test@test.com',
-        #     phone_number='12345678',
-        #     street_address1='My Street1',
-        #     street_address2='My Street2',
-        #     town_or_city='London',
-        #     county='Anywhere',
-        #     postcode='12345',
-        #     country='GB',
-        # )
-        # self.order1.save()
-        # self.get_order_number = Order.objects.get(id=1).order_number
-        # self.orderlineitem1 = OrderLineItem.objects.create(
-        #     order=self.order1,
-        #     product=self.product1,
-        #     quantity=1,
-        # )
-        # print(orderlineitem1)
+        # create test order object
+        self.order1 = Order.objects.create(
+            order_number='1234567890',
+            full_name='Test User',
+            email='testuser@email.com',
+            phone_number='12345678',
+            country='GB',
+            postcode='12345',
+            town_or_city='London',
+            street_address1='My Street',
+            county='Anywhere',
+        )
 
-        # def test_save_order(self):
-        #     """ test order is saved """
-        #     self.assertEqual(self.order1.order_number, self.get_order_number)
-
-        # def test_order_str(self):
-        #     """ test order str """
-        #     self.assertEqual(str(self.order1), self.get_order_number)
-
-        # def test_get_orderlineitems(self):
-        #     """ test order items """
-        #     self.assertEqual(self.order1.get_orderlineitems()[0],
-        #                      self.orderline)
+    def test_order_str_method(self):
+        """ Test the order number string """
+        self.order1 = Order.objects.get(email='testuser@email.com')
+        self.assertEqual(str(self.order1), self.order1.order_number)
 
     def test_checkout_page(self):
         """ test checkout page if user is authenticated """
