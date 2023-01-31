@@ -1,4 +1,4 @@
-from django.test import TestCase
+from django.test import TestCase, Client
 from django.contrib.auth.models import User
 from django.contrib.messages import get_messages
 from products.models import Product, MainCategory, Category, Subcategory, Brand
@@ -15,16 +15,15 @@ class TestViews(TestCase):
         testuser = User.objects.create_user(
             username='test_username',
             password='secret',
-            email='testuser@email.com'
+            email='testuser@email.com',
         )
         testuser.save()
 
-        testsuperuser = User.objects.create_superuser(
+        User.objects.create_superuser(
             username='test_superuser',
             password='secretpassword',
             email='testsuperuser@email.com',
         )
-        testsuperuser.save()
 
         self.main_category1 = MainCategory.objects.create(
             name='Makeup',
@@ -73,6 +72,17 @@ class TestViews(TestCase):
             original_price=26.99,
             image_url='image_url',
         )
+
+    def tearDown(self):
+        """
+        Delete test user, category, product
+        """
+        User.objects.all().delete()
+        MainCategory.objects.all().delete()
+        Category.objects.all().delete()
+        Subcategory.objects.all().delete()
+        Brand.objects.all().delete()
+        Product.objects.all().delete()
 
     def test_can_get_products_page(self):
         response = self.client.get('/products/')
