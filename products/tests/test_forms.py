@@ -8,6 +8,7 @@ class TestProductAndBrandForms(TestCase):
         Tests for product forms and brand forms
         if fields are required
     """
+
     # start of tests for ProductForm
     def test_main_category_is_required_in_product_form(self):
         form = ProductForm({'main_category': ''})
@@ -81,24 +82,6 @@ class TestProductAndBrandForms(TestCase):
         self.assertEqual(form.errors['image'][0],
                          'This field is required.')
 
-    # def test_other_fields_are_not_required(self):
-    #     form = ProductForm({
-    #         'main_category': 'makeup',
-    #         'category': 'face',
-    #         'subcategory': 'foundation',
-    #         'brand': 'makeup brand',
-    #         'sku': 'axi-sk-fc-spt-0005',
-    #         'name': 'new foundation',
-    #         'slug': 'new-foundation',
-    #         'is_featured': True,
-    #         'description': 'product description goes here',
-    #         'how_to_use': 'product how to use content goes here',
-    #         'ingredients': 'product ingredients goes here',
-    #         'price': 2.99,
-    #         'has_sizes': False,
-    #     })
-    #     self.assertTrue(form.is_valid())
-
     # start of tests for BrandForm
     def test_brand_name_is_required_in_brand_form(self):
         form = BrandForm({'name': ''})
@@ -117,11 +100,3 @@ class TestProductAndBrandForms(TestCase):
         self.assertIn('description', form.errors.keys())
         self.assertEqual(form.errors['description'][0],
                          'This field is required.')
-
-    # def test_other_fields_are_not_required(self):
-    #     form = BrandForm({
-    #         'name': 'new brand',
-    #         'slug': 'new-brand',
-    #         'description': 'brand description goes here',
-    #     })
-    #     self.assertTrue(form.is_valid())

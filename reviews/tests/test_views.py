@@ -1,29 +1,36 @@
 from django.test import TestCase
 from django.contrib.auth.models import User
-from django.contrib.messages import get_messages
 from products.models import Product, MainCategory, Category, Subcategory, Brand
+from reviews.models import Review
 
 
-class TestViews(TestCase):
-    """ Test for products app views """
+class TestReviewsViews(TestCase):
+    """ Test for reviews app views """
 
     def setUp(self):
         """
-        Creates test user and product objects (MainCategory, Category,
+        Creates test user, review and product objects (MainCategory, Category,
         Subcategory, Brand and Product)
         """
 
         testsuperuser = User.objects.create_superuser(
             username='testsuperuser_username',
-            password='secret',
+            password='supersecret',
             email='testsuperuseuser@email.com'
         )
         testsuperuser.save()
 
-        self.main_category1 = MainCategory.objects.create(
-            name='Makeup',
-            slug='makeup',
+        testuser = User.objects.create_user(
+            username='test_username',
+            password='secret',
+            email='testuser@email.com'
         )
+        testuser.save()
+
+        self.main_category1 = MainCategory.objects.create(
+                name='Makeup',
+                slug='makeup',
+            )
 
         self.category1 = Category.objects.create(
             main_category=self.main_category1,
@@ -66,41 +73,40 @@ class TestViews(TestCase):
             discount=0.00,
             original_price=26.99,
             image_url='image_url',
+            image='image-file',
         )
 
-    def test_can_get_products_page(self):
-        response = self.client.get('/products/')
+        self.review1 = Review.objects.create(
+            product=self.product1,
+            user=testuser,
+            title='test review',
+            content='test review content goes here',
+        )
+
+    def test_can_get_reviews_page(self):
+        """ test to get reviews page """
+        response = self.client.get(f'/reviews/reviews/{str(self.product1.id)}')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'products/products.html')
+        self.assertTemplateUsed(response, 'reviews/reviews.html')
 
-    def test_can_get_messages_from_search_with_no_search_term(self):
-        """ test get error message when no search term was used from search """
-        response = self.client.get('/products/', {'q': ''})
-        self.assertRedirects(response, '/products/')
-        messages = list(get_messages(response.wsgi_request))
-        self.assertEqual(str(messages[0]),
-                         "You didn't enter any search criteria!")
-
-    def test_can_get_all_products_from_search(self):
-        """ test to get all products page from search """
-        response = self.client.get('/products/', {'search_term': 'foundation',
-                                   'current_subcategories': 'foundation'})
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'products/products.html')
-
-    def test_sort(self):
-        """ test product sorting with parameters """
-        response = self.client.get('/products/', {'sort': 'discount',
-                                   'direction': 'desc'})
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'products/products.html')
-
-    def test_get_add_product_page(self):
-        """ create test login for superuser and get add product page """
-        logged_in = self.client.login(username='testsuperuser_username',
+    def test_can_get_add_review(self):
+        """ test to get add review page """
+        logged_in = self.client.login(username='test_username',
                                       password='secret')
         self.assertTrue(logged_in)
-        testsuperuser = User.objects.get(username='testsuperuser_username')
-        response = self.client.get('/products/add/')
+        testuser = User.objects.get(username='test_username')
+        response = self.client.get(f'/reviews/add_review/\n'
+                                   f'{str(self.product1.id)}')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'products/add_product.html')
+        self.assertTemplateUsed(response, 'reviews/add_review.html')
+
+    def test_can_get_edit_review(self):
+        """ test to get edit review page, if logged in user is superadmin """
+        logged_in = self.client.login(username='testsuperuser_username',
+                                      password='supersecret')
+        self.assertTrue(logged_in)
+        testsuperuser = User.objects.get(username='testsuperuser_username')
+        response = self.client.get(f'/reviews/edit_review/\n'
+                                   f'{str(self.review1.id)}')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'reviews/edit_review.html')
