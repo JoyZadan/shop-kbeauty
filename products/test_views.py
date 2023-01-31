@@ -1,4 +1,4 @@
-from django.test import TestCase, Client
+from django.test import TestCase
 from django.contrib.auth.models import User
 from django.contrib.messages import get_messages
 from products.models import Product, MainCategory, Category, Subcategory, Brand

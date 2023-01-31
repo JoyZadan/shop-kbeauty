@@ -1121,7 +1121,7 @@ A very, very special thanks to my family, especially my daughter Zoe, for the un
 
 A big thanks to Conrad Saunders and Chris Booth as SDC for the assist with my EC requests due illness. It's not easy to concentrate and code when stricken with COVID!
 
-A special thank you to [Jason Dunton](https://www.linkedin.com/in/jason-dunton/) from Tutor Support at Code Institute. Jason, thanks for the assist, I appreciate your help! A special thanks also to Ger and to Oisin also from Tutor Support at Code Institute, I appreciate the guidance on the numerous occassions I got stuck on a piece of functionality I wanted to implement! Thanks, guys!
+A special thank you to the amazing Tutor Support team at Code Institute. First, to [Jason Dunton](https://www.linkedin.com/in/jason-dunton/), thanks for the assist, Jason, I appreciate your help! I big thank you too to [Ger Tobin](https://www.linkedin.com/in/ger-tobin-566494200/) for helping me with that weird operational error; thanks a million, Ger! A special thanks also to Oisin, I appreciate the guidance on the numerous occassions I got stuck on a piece of functionality I wanted to implement! Thanks, guys!
 
 I was looking for a shade of grey that "feels right" as a background for some of the elements on the project and was inspired by [Isabella Mitchell's own project](https://github.com/Isabella-Mitchell/lonely-house). Thanks, Isabella!
 
