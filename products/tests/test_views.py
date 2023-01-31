@@ -1,20 +1,22 @@
 from django.test import TestCase
-from .models import Order
+from django.contrib.messages import get_messages
 from products.models import Product, MainCategory, Category, Subcategory, Brand
 
 
-class TestOrderModels(TestCase):
-    """ Tests for the checkout models """
+class TestViews(TestCase):
+    """ Test for products app views """
 
     def setUp(self):
+        """
+        Creates test product objects (MainCategory, Category, Subcategory,
+        Brand and Product)
+        """
 
-        # create test main_category object
         self.main_category1 = MainCategory.objects.create(
             name='Makeup',
             slug='makeup',
         )
 
-        # create test category object
         self.category1 = Category.objects.create(
             main_category=self.main_category1,
             name='Face',
@@ -22,7 +24,6 @@ class TestOrderModels(TestCase):
             slug='face',
         )
 
-        # create test subcategory object
         self.subcategory1 = Subcategory.objects.create(
             category=self.category1,
             name='foundation',
@@ -30,16 +31,14 @@ class TestOrderModels(TestCase):
             slug='foundation',
         )
 
-        # create test brand object
         self.brand1 = Brand.objects.create(
             name='Makeup Brand',
             friendly_name='Makeup Brand',
             slug='makeup-brand',
             description='brand description goes here',
-            is_featured='False',
+            is_featured=False,
         )
 
-        # create test product object
         self.product1 = Product.objects.create(
             main_category=self.main_category1,
             category=self.category1,
@@ -61,32 +60,29 @@ class TestOrderModels(TestCase):
             image_url='image_url',
         )
 
-        # create test order object
-        self.order1 = Order.objects.create(
-            order_number='1234567890',
-            full_name='Test User',
-            email='testuser@email.com',
-            phone_number='12345678',
-            country='GB',
-            postcode='12345',
-            town_or_city='London',
-            street_address1='My Street',
-            county='Anywhere',
-        )
-
-    def test_order_str_method(self):
-        """ Test the order number string """
-        self.order1 = Order.objects.get(email='testuser@email.com')
-        self.assertEqual(str(self.order1), self.order1.order_number)
-
-    def test_checkout_page(self):
-        """ test checkout page if user is authenticated """
-
-        # set bag session
-        session = self.client.session
-        session['bag'] = {str(self.product1.id): 1}
-        session.save()
-
-        response = self.client.get('/checkout/')
+    def test_can_get_products_page(self):
+        response = self.client.get('/products/')
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'checkout/checkout.html')
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_can_get_messages_from_search_with_no_search_term(self):
+        """ test get error message when no search term was used from search """
+        response = self.client.get('/products/', {'q': ''})
+        self.assertRedirects(response, '/products/')
+        messages = list(get_messages(response.wsgi_request))
+        self.assertEqual(str(messages[0]),
+                         "You didn't enter any search criteria!")
+
+    def test_can_get_all_products_from_search(self):
+        """ test to get all products page from search """
+        response = self.client.get('/products/', {'search_term': 'foundation',
+                                   'current_subcategories': 'foundation'})
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_sort(self):
+        """ test product sorting with parameters """
+        response = self.client.get('/products/', {'sort': 'discount',
+                                   'direction': 'desc'})
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/products.html')

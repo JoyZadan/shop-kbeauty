@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .forms import OrderForm
+from checkout.forms import OrderForm
 
 
 class TestCheckoutViews(TestCase):

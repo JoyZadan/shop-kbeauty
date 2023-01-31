@@ -36,7 +36,7 @@ class TestBagViews(TestCase):
             friendly_name='Makeup Brand',
             slug='makeup-brand',
             description='brand description goes here',
-            is_featured='False',
+            is_featured=False,
         )
 
         self.product1 = Product.objects.create(
