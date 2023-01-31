@@ -11,6 +11,7 @@ class TestBagViews(TestCase):
         Creates test objects (MainCategory, Category, Subcategory,
         Brand and Product)
         """
+
         self.main_category1 = MainCategory.objects.create(
             name='Makeup',
             slug='makeup',
