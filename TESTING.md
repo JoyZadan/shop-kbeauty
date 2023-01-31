@@ -22,8 +22,7 @@
     * [a11y Color Contrast Accessibility for the Visually Impaired Test Results](#a11y-color-contrast-accessibility-for-the-visually-impaired-test-results)
     * [Responsive Design Testing](#responsive-design-testing)
     * [Django Unit Testing](#django-unit-testing)
-        * Django Unit Testing - Issues()
-        * Djangon Unit Testing - Unsolved Issues
+        * [Coverage Testing](#coverage-testing)
 * [Manual Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Manual Testing](#full-manual-testing)
@@ -126,8 +125,20 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 ### Responsive Design Testing
 
 ### Django Unit Testing
-#### Django Unit Testing - Issues
-#### Djangon Unit Testing - Unsolved Issues
+For the automated testing, the writing and runnign of these tests used [Django's built in test module](https://docs.djangoproject.com/en/4.1/topics/testing/overview/). For each installed application, I created a folder called tests, added the ```__init__.py``` file and separate files for testing the views, models and forms.
+
+I also used coverage to generate the report and find out the percentage of report I was able to cover and those that I missed for every installed application. I tried to achieve as close to the 100% mark as I possibly can, but I am still fairly new to using Automated Testing and am looking forward to learning more to reach this goal.
+
+#### Coverage Testing
+| Installed App Coverage Report | Cover in Percentage | Screenshot of Coverage Report |
+| -- | :-: | :-: |
+| bag app | 77% | [bag app cover](./documentation/coverage_report/coverage-report-bag-app.png) |
+| checkout app | 61% | [checkout app cover](./documentation/coverage_report/coverage-report-checkout-app.png) |
+| home app | 100% | [home app cover](./documentation/coverage_report/coverage-report-home-app.png) |
+| products app | 81% | [product app cover](./documentation/coverage_report/coverage-report-products-app.png) |
+| profiles app | 97% | [profile app cover](./documentation/coverage_report/coverage-report-profiles-app.png) |
+| reviews app | 83% | [reviews app cover](./documentation/coverage_report/coverage-report-reviews-app.png) |
+| wishlist app | 74% | [wishlist app cover](./documentation/coverage_report/coverage-report-wishlist-app.png) |
 
 ---
 ## Manual Testing
