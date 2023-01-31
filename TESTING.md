@@ -21,7 +21,7 @@
     * [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
     * [a11y Color Contrast Accessibility for the Visually Impaired Test Results](#a11y-color-contrast-accessibility-for-the-visually-impaired-test-results)
     * [Responsive Design Testing](#responsive-design-testing)
-    * [Django Unit Testing](#django-unit-testing)
+    * [Django Automated Testing](#django-automated-testing)
         * [Coverage Testing](#coverage-testing)
 * [Manual Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
@@ -124,10 +124,10 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 
 ### Responsive Design Testing
 
-### Django Unit Testing
-For the automated testing, the writing and runnign of these tests used [Django's built in test module](https://docs.djangoproject.com/en/4.1/topics/testing/overview/). For each installed application, I created a folder called tests, added the ```__init__.py``` file and separate files for testing the views, models and forms.
+### Django Automated Testing
+For the automated testing, the writing and running of these tests used [Django's built in test module](https://docs.djangoproject.com/en/4.1/topics/testing/overview/). For each installed application, I created a folder called tests, added the ```__init__.py``` file and the separate files for testing the views, models and forms.
 
-I also used coverage to generate the report and find out the percentage of report I was able to cover and those that I missed for every installed application. I tried to achieve as close to the 100% mark as I possibly can, but I am still fairly new to using Automated Testing and am looking forward to learning more to reach this goal.
+I also used coverage to generate the report and find out the percentage of statements that I was able to cover and those that I missed for every installed application. I tried to achieve as close to the 100% mark as I possibly can, but I am still fairly new to using Automated Testing and am looking forward to learning more to reach this goal.
 
 #### Coverage Testing
 | Installed App Coverage Report | Cover in Percentage | Screenshot of Coverage Report |
