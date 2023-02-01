@@ -119,6 +119,33 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 ### WAVE Web Accessibility Evaluation Tool
 [WAVE](https://wave.webaim.org/) was used to ensure that Shop K-Beauty's content is also accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, which are then corrected following the results of the initial evaluation.
 
+In order to fully validate the page, I used the WAVE Chrome extension. This enabled me to test the pages that require user authentication.
+
+| Page | WAVE This Page Result | Reasons for not fixing the contrast errors, if any |
+| :-- | --- | --- |
+| Bag Page | no errors |  |
+| Checkout Page | no errors, 2 contrast errors | Both of the contrast errors point to the placeholder text for country but as it is a default Stripe styling, I decided to leave it alone as the placeholder text for other fields in the form uses the same font color from this class: <br/> ```.stripe-style-input::placeholder { color: #aab7c4 } ``` <br/> and they all passed the contrast validation. |
+| Checkout Success Page | no errors |  |
+| Products Page  | no errors |  |
+| Product Detail Page  | no errors |  |
+| Add a Product Page | no errors |  |
+| Edit a Product Page | no errors |  |
+| Brands Page | no errors |  |
+| Brand Detail Page | no errors |  |
+| Add a Brand Page | no errors |  |
+| Edit a Brand Page | no errors |  |
+| Profiles Page | no errors, 1 contrast error | This is the same contrast error as in the Checkout Page. |
+| Reviews Page | no errors |  |
+| Add a Review Page | no errors |  |
+| Edit a Review Page | no errors |  |
+| Review Detail Page | no errors |  |
+| Wishlist Page | no errors |  |
+| K-Beauty Tips Page | no errors |  |
+| Privacy Policy Page | no errors |  |
+| Terms &amp; Conditions Page | no errors |  |
+| Return &amp; Refund Policy Page | no errors |  |
+| Shipping Policy Page | no errors |  |
+
 ### a11y Color Contrast Accessibility for the Visually Impaired Test Results
 [a11y color contrast analysis tools](https://color.a11y.com/) were used to check for color contrast issues and color-pairings used on the site. Any errors or warnings are then corrected following the results of the initial evaluation.
 

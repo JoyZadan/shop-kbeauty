@@ -88,7 +88,7 @@
             <div class="col-12 col-lg-6">
                 <p class="text-pink font-weight-bold">Order History</p>
                 <div class="order-history table-responsive">
-                    <table class="table table-sm table-dark">
+                    <table class="table table-sm table-light">
                         <thead>
                             <tr>
                                 <th>Order Number</th>
@@ -104,7 +104,7 @@
                                 <td>
                                     <!-- Link to open past order confirmation  -->
                                     <a href="{% url 'order_history' order.order_number %}"
-                                        title="{{ order.order_number }}" class="alt-text-muted font-weight-bold">
+                                        title="{{ order.order_number }}" class="text-purple font-weight-bold">
                                         {{ order.order_number|truncatechars:6 }}
                                     </a>
                                 </td>

@@ -46,7 +46,6 @@
             All available reviews for {{ product.name }}
         </h2>
         <hr>
-
         <!-- ALL AVAILABLE REVIEWS -->
         {% if reviews %}
         <div class="row">
@@ -57,7 +56,6 @@
                         <h3 class="card-title brand-font-alt h6">{{ review.title }}</h3>
                         <p><small class="text-muted p-0"><em>Posted by {{ review.user }} on {{ review.date }}</em></small></p>
                         <p class="card-text">{{ review.content }}</p>
-
                         <!-- DEFENSIVE PROGRAMMING: use of modal to warn users againt unintentional deletion of a review -->
                         {% if request.user.is_superuser %}
                         <div class="text-center">
