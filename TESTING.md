@@ -61,7 +61,7 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | 'templates/home/shipping_policy.html' | 0 error and 0 warning | [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png) |
 | 'templates/home/skincare_tips.html' | 0 error and 0 warning | [Skincare Tips Page](./documentation/html_validation/skincare-tips-html-validation-no-error.png) |
 | 'templates/wishlist/wishlist.html' | 0 error and 0 warning | [Wishlist Page](./documentation/html_validation/wishlist-html-validation-no-error.png) |
-| error pages | 0 error and 0 warning  | [404 page]() |
+| 404 page | 0 error and 0 warning  | [404 page](./documentation/html_validation/404-page-html-validation.png) |
 
 ### CSS Validation
 I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input.
@@ -88,7 +88,7 @@ I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
 At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my IDE and throughout the development, I was using it to test and fix the errors as they appear. I also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint my Python code.
 | File | Result | Test Details & Screenshots |
 | ---- | :-: | -------------------------- |
-| **SHOP K-BEAUTY** |  |  |
+| **SHOP_KBEAUTY** |  |  |
 | shop_kbeauty/settings.py | All clear, no errors found | [settings.py validation](./documentation/python_validation/shop-kbeauty-settings-dot-py.png) |
 | shop_kbeauty/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/shop-kbeauty-urls-dot-py.png) |
 | shop_kbeauty/wsgi.py | All clear, no errors found | [wsgi.py validation](./documentation/python_validation/shop-kbeauty-wsgi-dot-py.png) |
@@ -99,6 +99,7 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | bag/urls.py | All clear, no errors found | [bag_urls.py validation](./documentation/python_validation/bag-urls.png) |
 | bag/views.py | All clear, no errors found | [bag_views.py validation](./documentation/python_validation/bag-views.png) |
 | bag/tests/test_views.py | All clear, no errors found | [bag/tests/test_views.py validation](./documentation/python_validation/bag-tests-test-views.png.png) |
+| **CHECKOUT APP** |  |  |
 
 ### Lighthouse Report
 [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
