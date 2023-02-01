@@ -106,12 +106,14 @@
                         </td>
                         <td class="wishlist-td" data-label="Shop Now: ">
                             <!-- Shop Now CTA to open product detail page for current product -->
-                            <a href="{% url 'product_detail' product.product.id %}">
+                            <a href="{% url 'product_detail' product.product.id %}" aria-label="link to product detail">
                                 <i class="fas fa-shopping-bag text-muted"></i>
                             </a>
                         </td>
                         <td class="wishlist-td" data-label="Remove: ">
-                            <a href="{% url 'remove_from_wishlist' product.product.id %}"><i class="fas fa-trash alt-text-muted"></i></a>
+                            <a href="{% url 'remove_from_wishlist' product.product.id %}" aria-label="remove product from wishlist">
+                                <i class="fas fa-trash alt-text-muted"></i>
+                            </a>
                         </td>
                     </tr>
                     {% endfor%}

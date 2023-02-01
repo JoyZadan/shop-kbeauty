@@ -20,6 +20,9 @@ class ReviewForm(forms.ModelForm):
         }
 
         self.fields['title'].widget.attrs['autofocus'] = True
+        self.fields['title'].widget.attrs['aria-label'] = 'Review Title'
+        self.fields['content'].widget.attrs['aria-label'] = 'Review Content'
+
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'

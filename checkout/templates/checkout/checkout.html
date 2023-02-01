@@ -71,9 +71,9 @@
                     <div class="col-2 mb-1">
                         <a href="{% url 'product_detail' item.product.id %}">
                             {% if item.product.image %}
-                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                                <img class="w-100" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ product.name }}">
+                                <img class="w-100" src="{{ MEDIA_URL }}shop-kbeauty-logo-final.webp" alt="{{ item.product.name }}">
                             {% endif %}
                         </a>
                     </div>
@@ -170,11 +170,11 @@
     </div>
     <!-- Loading overlay with a giant spinner icon in the center of the screen -->
     <div id="loading-overlay">
-        <h1 class="text-light logo-font loading-spinner">
+        <p class="text-light logo-font loading-spinner">
             <span class="icon">
                 <i class="fas fa-3x fa-sync-alt fa-spin"></i>
             </span>
-        </h1>
+        </p>
     </div>
 {% endblock %}
 

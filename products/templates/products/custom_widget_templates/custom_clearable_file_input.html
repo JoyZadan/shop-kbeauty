@@ -2,7 +2,7 @@
     <p>{{ widget.initial_text }}:</p>
     <a href="{{ widget.value.url }}">
         <!-- replaces the filename value with a small preview of the image -->
-        <img width="96" height="96" src="{{ widget.value.url }}" alt="" class="rounded shadow-sm">
+        <img width="96" height="96" src="{{ widget.value.url }}" alt="product image" class="rounded shadow-sm">
     </a>
     {% if not widget.required %}
         <!-- wraps checkbox in a div with bootstrap classes for styling -->

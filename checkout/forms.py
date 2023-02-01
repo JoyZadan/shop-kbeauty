@@ -28,6 +28,19 @@ class OrderForm(forms.ModelForm):
         }
 
         self.fields['full_name'].widget.attrs['autofocus'] = True
+        self.fields['full_name'].widget.attrs['aria-label'] = 'Full Name'
+        self.fields['email'].widget.attrs['aria-label'] = 'Email Address'
+        self.fields['phone_number'].widget.attrs['aria-label'] = 'Phone Number'
+        self.fields['street_address1'].widget.attrs[
+            'aria-label'] = 'Street Address1'
+        self.fields['street_address2'].widget.attrs[
+            'aria-label'] = 'Street Address2'
+        self.fields['town_or_city'].widget.attrs['aria-label'] = 'Town or City'
+        self.fields['county'].widget.attrs[
+            'aria-label'] = 'County State or Locality'
+        self.fields['postcode'].widget.attrs['aria-label'] = 'Postal Code'
+        self.fields['country'].widget.attrs['aria-label'] = 'Country'
+
         for field in self.fields:
             if field != 'country':
                 if self.fields[field].required:
