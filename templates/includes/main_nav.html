@@ -14,7 +14,7 @@
                 <a href="{% url 'products' %}?sort=discount&amp;direction=desc" class="dropdown-item">By Discount</a>
                 <a href="{% url 'products' %}?sort=category&amp;direction=asc" class="dropdown-item">By Category</a>
                 <a href="{% url 'products' %}?sort=subcategory&amp;direction=asc" class="dropdown-item">By Subcategory</a>
-                <a href="{% url 'products' %}" class="dropdown-item brand-font">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item nav-font-alt">All Products</a>
             </div>
         </li>
         <!-- "SKINCARE CATEGORIES" navlinks in here -->
@@ -77,7 +77,7 @@
                 </div>
                 <!-- "LINK TO ALL SKINCARE PRODUCTS -->
                 <a href="{% url 'products' %}?category=face_care,facial_cleanser,face_mask,eye_care,lip_care"
-                    class="dropdown-item font-weight-bold brand-font">All Skincare
+                    class="dropdown-item font-weight-bold nav-font-alt">All Skincare
                 </a>
             </div>
         </li>
@@ -128,7 +128,9 @@
                     </ul>
                 </div>
                 <!-- "LINK TO ALL HAIR &amp; BODY PRODUCTS -->
-                <a href="{% url 'products' %}?category=hair_care,body_care,hand_care,foot_care" class="dropdown-item font-weight-bold brand-font">All Hair &amp; Body</a>
+                <a href="{% url 'products' %}?category=hair_care,body_care,hand_care,foot_care"
+                    class="dropdown-item font-weight-bold nav-font-alt">All Hair &amp; Body
+                </a>
             </div>
         </li>
         <!-- "SPECIAL OFFERS" navlinks in here -->
@@ -145,7 +147,7 @@
                 <a href="{% url 'products' %}?category=hair_body_clearance,skincare_clearance" class="dropdown-item">Clearance</a>
                 <!-- "LINK TO ALL SPECIAL OFFERS -->
                 <a href="{% url 'products' %}?category=hair_body_clearance,hair_body_deals,hair_body_new,skincare_clearance,skincare_deals,skincare_new"
-                    class="dropdown-item font-weight-bold brand-font">All Special Offers
+                    class="dropdown-item font-weight-bold nav-font-alt">All Special Offers
                 </a>
             </div>
         </li>
