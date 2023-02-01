@@ -13,7 +13,7 @@
 <form method="post" action="{% url 'account_logout' %}" class="mb-5">
   {% csrf_token %}
   {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
   {% endif %}
   <a class="btn btn-outline-black rounded-0" href="{% url 'home' %}">Cancel</a>
   <button type="submit">{% trans 'Sign Out' %}</button>

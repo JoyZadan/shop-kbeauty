@@ -37,18 +37,18 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | Page | Result | Validation Details & Screenshots |
 | ---- | :-: | -------------------------- |
 | 'templates/home/index.html' | 0 error and 0 warning | [Homepage](./documentation/html_validation/homepage-html-validation.png) |
-| 'templates/products/products.html' | 0 error and 0 warning | [Products Page](./documentation/html_validation/products-page-html-validation.png) |
-| 'templates/products/products.html' - new validation after modal was added | 0 error and 0 warning | [Products Page - New](./documentation/html_validation/products-page-html-validation-new.png) |
+| 'templates/products/products.html' | 0 error and 0 warning | [Products Page - New](./documentation/html_validation/products-page-html-validation-new.png) |
 | 'templates/products/add_product.html' | 0 error and 0 warning | [Add a Product Page](./documentation/html_validation/add-product-html-validation-no-error.png) |
 | 'templates/products/edit_product.html' | 0 error and 0 warning | [Edit a Product Page](./documentation/html_validation/edit-product-html-validation-no-error.png) |
 | 'templates/products/product_detail.html' | 0 error and 0 warning | [Product Detail Page](./documentation/html_validation/product-detail-page-html-validation.png) |
 | 'templates/products/brands.html' | 0 error and 0 warning | [Brands Page](./documentation/html_validation/brands-page-html-validation.png) |
 | 'templates/products/brand_detail.html' | 0 error and 0 warning | [Brand Detail Page](./documentation/html_validation/brand-detail-page-html-validation.png) |
 | 'templates/products/add_brand.html' | 0 error and 0 warning | [Add Brand Page](./documentation/html_validation/add-brand-html-validation-no-error.png) |
-| 'templates/products/add_review.html' | 0 error and 0 warning | [Add Review Page](./documentation/html_validation/add-a-review-page-html-validation.png) |
-| 'templates/products/edit_review.html' | 0 error and 0 warning | [Edit Review Page](./documentation/html_validation/edit-a-review-page-html-validation.png) |
-| 'templates/products/review_detail.html' | 0 error and 0 warning | [Review Detail Page](./documentation/html_validation/review-detail-page-html-validation.png) |
-| 'templates/products/reviews.html' | 0 error and 0 warning | [Reviews Page](./documentation/html_validation/reviews-page-html-validation.png) |
+| 'templates/products/edit_brand.html' | 0 error and 0 warning | [Edit Brand Page](./documentation/html_validation/edit-brand-html-validation-no-error.png) |
+| 'templates/reviews/add_review.html' | 0 error and 0 warning | [Add Review Page](./documentation/html_validation/add-a-review-page-html-validation.png) |
+| 'templates/reviews/edit_review.html' | 0 error and 0 warning | [Edit Review Page](./documentation/html_validation/edit-a-review-page-html-validation.png) |
+| 'templates/reviews/review_detail.html' | 0 error and 0 warning | [Review Detail Page](./documentation/html_validation/review-detail-page-html-validation.png) |
+| 'templates/reviews/reviews.html' | 0 error and 0 warning | [Reviews Page](./documentation/html_validation/reviews-page-html-validation.png) |
 | 'templates/bag/bag.html' | 0 error and 0 warning | [Bag Page](./documentation/html_validation/bag-page-html-validation.png) |
 | 'templates/checkout/checkout.html' | 0 error and 0 warning | [Checkout Page](./documentation/html_validation/checkout-page-html-validation.png) |
 | 'templates/checkout/checkout_success.html' | 0 error and 0 warning | [Checkout Success Page](./documentation/html_validation/checkout-success-page-html-validation.png) |
@@ -61,7 +61,7 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 | 'templates/home/shipping_policy.html' | 0 error and 0 warning | [Shipping Policy Page](./documentation/html_validation/shipping-policy-page-html-validation.png) |
 | 'templates/home/skincare_tips.html' | 0 error and 0 warning | [Skincare Tips Page](./documentation/html_validation/skincare-tips-html-validation-no-error.png) |
 | 'templates/wishlist/wishlist.html' | 0 error and 0 warning | [Wishlist Page](./documentation/html_validation/wishlist-html-validation-no-error.png) |
-
+| error pages | 0 error and 0 warning  | [404 page]() |
 
 ### CSS Validation
 I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input
