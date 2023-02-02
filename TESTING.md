@@ -136,9 +136,15 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | profiles/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/profiles-urls.png) |
 | profiles/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/profiles-views.png) |
 | profiles/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/profiles-tests-test-views.png) |
-
-
-
+| **REVIEWS APP** |  |  |
+| reviews/admin.py | All clear, no errors found | [admin.py validation](./documentation/python_validation/reviews-admin.png) |
+| reviews/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/reviews-apps.png) |
+| reviews/forms.py | All clear, no errors found | [forms.py validation](./documentation/python_validation/reviews-forms.png) |
+| reviews/models.py | All clear, no errors found | [models.py validation](./documentation/python_validation/reviews-models.png) |
+| reviews/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/reviews-urls.png) |
+| reviews/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/reviews-views.png) |
+| reviews/tests/test_models.py | All clear, no errors found | [test_models.py validation](./documentation/python_validation/reviews-tests-test-models.png) |
+| reviews/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/reviews-tests-test-views.png) |
 
 
 
