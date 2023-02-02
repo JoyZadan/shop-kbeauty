@@ -118,6 +118,28 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | home/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/home-urls.png) |
 | home/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/home-views.png) |
 | home/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/home-tests-test-views.png) |
+| **PRODUCTS APP** |  |  |
+| products/admin.py | All clear, no errors found | [admin.py validation](./documentation/python_validation/products-admin.png) |
+| products/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/products-apps.png) |
+| products/forms.py | All clear, no errors found | [forms.py validation](./documentation/python_validation/products-forms.png) |
+| products/models.py | All clear, no errors found | [models.py validation](./documentation/python_validation/products-models.png) |
+| products/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/products-urls.png) |
+| products/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/products-urls.png) |
+| products/widgets.py | All clear, no errors found | [widgets.py validation](./documentation/python_validation/products-widgets.png) |
+| products/tests/test_forms.py | All clear, no errors found | [test_forms.py validation](./documentation/python_validation/products-tests-test-forms.png) |
+| products/tests/test_models.py | All clear, no errors found | [test_models.py validation](./documentation/python_validation/products-tests-test-models.png) |
+| products/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/products-tests-test-views.png) |
+
+
+
+
+
+
+
+
+
+
+
 
 
 

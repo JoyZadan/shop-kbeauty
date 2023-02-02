@@ -78,9 +78,9 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """
-        A view to show individual product details, available featured reviews,
-        link to add product to a user's wishlist, related products
-        and featured brands
+    A view to show individual product details, available featured reviews,
+    link to add product to a user's wishlist, related products
+    and featured brands
     """
 
     product = get_object_or_404(Product, pk=product_id)
