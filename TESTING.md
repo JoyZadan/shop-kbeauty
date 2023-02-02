@@ -113,10 +113,11 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | checkout/tests/test_forms.py | All clear, no errors found | [test_forms.py validation](./documentation/python_validation/checkout-tests-test-forms.png) |
 | checkout/tests/test_models.py | All clear, no errors found | [test_models.py validation](./documentation/python_validation/checkout-tests-test-models.png) |
 | checkout/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/checkout-tests-test-views.png) |
-
-
-
-
+| **HOME APP** |  |  |
+| home/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/home-apps.png) |
+| home/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/home-urls.png) |
+| home/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/home-views.png) |
+| home/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/home-tests-test-views.png) |
 
 
 
