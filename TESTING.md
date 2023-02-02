@@ -145,11 +145,13 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | reviews/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/reviews-views.png) |
 | reviews/tests/test_models.py | All clear, no errors found | [test_models.py validation](./documentation/python_validation/reviews-tests-test-models.png) |
 | reviews/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/reviews-tests-test-views.png) |
-
-
-
-
-
+| **WISHLIST APP** |  |  |
+| wishlist/admin.py | All clear, no errors found | [admin.py validation](./documentation/python_validation/wishlist-admin.png) |
+| wishlist/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/wishlist-apps.png) |
+| wishlist/models.py | All clear, no errors found | [models.py validation](./documentation/python_validation/wishlist-models.png) |
+| wishlist/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/wishlist-urls.png) |
+| wishlist/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/wishlist-views.png) |
+| wishlist/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/wishlist-tests-test-views.png) |
 
 ### Lighthouse Report
 [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
