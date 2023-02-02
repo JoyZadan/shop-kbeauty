@@ -9,7 +9,6 @@
 ---
 ## TABLE OF CONTENTS
 
-
 * [Automated Testing and Validation](#automated-testing-and-validation)
     * [HTML Validation](#html-validation)
     * [CSS Validation](#css-validation)
@@ -19,13 +18,12 @@
         * [Desktop](#desktop)
         * [Mobile](#mobile)
     * [WAVE Web Accessibility Evaluation Tool](#wave-web-accessibility-evaluation-tool)
-    * [a11y Color Contrast Accessibility for the Visually Impaired Test Results](#a11y-color-contrast-accessibility-for-the-visually-impaired-test-results)
-    * [Responsive Design Testing](#responsive-design-testing)
     * [Django Automated Testing](#django-automated-testing)
-        * [Coverage Testing](#coverage-testing)
+        * [Coverage](#coverage)
 * [Manual Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
     * [Full Manual Testing](#full-manual-testing)
+    * [Responsive Design Testing](#responsive-design-testing)
 * [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
@@ -180,7 +178,6 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | ['brands.html'](./documentation/lighthouse_report/mobile-brands-page.png) | 82 | 97 | 83 | 98 | Opportunity to fix two brand logo images with incorrect aspect ratios |
 | ['brand_detail.html'](./documentation/lighthouse_report/mobile-brand-detail-page.png) | 75 | 97 | 92 | 98 | Similar to other pages, the site suffers in Performance score due to issues with [third-party resources and libraries](./documentation/lighthouse_report/mobile-brand-detail-page-opportunities-diagnostics.png). |
 
-
 ### WAVE Web Accessibility Evaluation Tool
 [WAVE](https://wave.webaim.org/) was used to ensure that Shop K-Beauty's content is also accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, which are then corrected following the results of the initial evaluation.
 
@@ -210,18 +207,14 @@ In order to fully validate the page, I used the WAVE Chrome extension. This enab
 | Terms &amp; Conditions Page | no errors |  |
 | Return &amp; Refund Policy Page | no errors |  |
 | Shipping Policy Page | no errors |  |
-
-### a11y Color Contrast Accessibility for the Visually Impaired Test Results
-[a11y color contrast analysis tools](https://color.a11y.com/) were used to check for color contrast issues and color-pairings used on the site. Any errors or warnings are then corrected following the results of the initial evaluation.
-
-### Responsive Design Testing
+| 404 Error Page | no errors |  |
 
 ### Django Automated Testing
 For the automated testing, the writing and running of these tests used [Django's built in test module](https://docs.djangoproject.com/en/4.1/topics/testing/overview/). For each installed application, I created a folder called tests, added the ```__init__.py``` file and the separate files for testing the views, models and forms.
 
 I also used coverage to generate the report and find out the percentage of statements that I was able to cover and those that I missed for every installed application. I tried to achieve as close to the 100% mark as I possibly can, but I am still fairly new to using Automated Testing and am looking forward to learning more to reach this goal.
 
-#### Coverage Testing
+#### Coverage
 | Installed App Coverage Report | Cover in Percentage | Screenshot of Coverage Report |
 | -- | :-: | :-: |
 | bag app | 77% | [bag app cover](./documentation/coverage_report/coverage-report-bag-app.png) |
@@ -234,14 +227,92 @@ I also used coverage to generate the report and find out the percentage of state
 
 ---
 ## Manual Testing
-
-
 ### Testing User Stories
-### Full Manual Testing
+### **User Stories**
+| **User Story #** | **As a/an** | **I want to be able to...** | **So that I can...** | **How was this achieved** | **Evidence**
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| **VIEWING & NAVIGATION** |  |  |  |  |  |
+| 1 | Shopper | Navigate around the site | View a list of products | The navbar's main navigation component allows the visitors to browse for products. The all products link from the main navigation enables the visitors to view the list of all the products available on the site. | [desktop](./documentation/user_stories_testing/user-story-1-view-list-of-products-desktop.png), [tablet](./documentation/user_stories_testing/user-story-1-view-list-of-products-tablet.png), [mobile](./documentation/user_stories_testing/user-story-1-view-list-of-products-mobile.png) |
+| 2 | Shopper | View a specific category of products | Quickly find products I'm interested in without having to search through all products. |   |   |
+| 3 | Shopper | Quickly identify deals, clearance items and special offers | Take advantage of special savings on products I'd like to purchase |  |  |
+| 4 | Shopper | Quickly view how much was the original price | Identify how much I may be able to save when buying the product and may also help me compare prices with other sites |  |  |
+| 5 | Shopper | View individual product details | Identify the price, description, product reviews, product image, product ingredients and and instructions how to use product |  |  |
+| 6 | Shopper | Easily view the total of my purchases in the bag at any time | Avoid spending too much |  |  |
+| 7 | Shopper | Easily view the featured brands | To assure me that Shop K-Beauty really offers K-Beauty products from authentic K-Beauty brands |  |  |
+| 8 | Shopper | Search/ View all of the available K-Beauty brands | Look for my favourite brands  |  |  |
+| 9 | Shopper | Easily view details about the brand of a product I am purchasing | Learn more about the brands and feel confident about my purchase |  |  |
+| 10 | Shopper | View a list of available products when viewing the details about a brand | Quickly decide what product to purchase from a particular brand |  |  |
+| 11 | Shopper | Find skincare tips and information about K-Beauty skincare routine | Decide which products I need to purchase |  |  |
+| 12 | Shopper | Easily navigate from a product category to the corresponding subcategories | Easily find the products I am looking for |  |  |
+| 13 | Shopper | View Related products | Make a more informed decision before finalising my purchase |  |  |
+| **REGISTRATION & USER ACCOUNTS** |   |   |  |  |
+| 14 | Site User | Easily register for an account | Have a personal account and be able to view my profile |  |  |
+| 15 | Shopper | Receive an email confirmation after registering | View that my personal account registration was successful |  |  |
+| 16 | Shopper | Easily login and logout of my shopper's account | Access my personal account information |  |  |
+| 17 | Shopper | Easily recover my password in case I forget it | Recover access to my account |  |  |
+| 18 | Shopper | Have a personalised user profile | View my personal order history and order confirmations |  |  |
+| **SORTING & SEARCHING** |   |   |  |  |
+| 19 | Shopper | Sort the list of available products | Easily identiify the best rated, best priced and categorically sorted products |  |  |
+| 20 | Shopper | Sort a specific category of product | Find the best priced or best rated product in a specific category, or sort the products in that categpry by name |  |  |
+| 21 | Shopper | Sort a specific subcategories of products | To easily identify the most suitable product for me to purchase  |  |  |
+| 22 | Shopper | Sort multiple categories of products simultaneously | Find the best priced, special offers or best rated /reviewed products across broad categories, such as "makeup" or "skincare"  |  |  |
+| 23 | Shopper | Search for a product or products by name, by description or by ingredients | Find a specific product I'd like to purchase  |  |  |
+| 24 | Shopper | Easily see what I've searched for and the number of results | Quickly decide whether the product I want is available |  |  |
+| **PURCHASING & CHECKOUT** |   |   |  |  |
+| 25 | Shopper | Quickly view how much was the original price and what savings, if any are available | Easily compare prices with other sites |  |  |
+| 26 | Shopper | Easily select the size and quantity for a product when purchasing it |Ensure I don't accidentally select the wrong product, quantity or size |  |  |
+| 27 | Shopper | Easily view notifications on screen when I add a product to my bag | Find out immediately if my actions were correct or if the was an error |  |  |
+| 28 | Shopper | View items in my bag to be purchased | Identify the total cost of my purchase and all items I will receive |  |  |
+| 29 | Shopper | Adjust the quantity of individual items in my bag | Easily make changes to my purchase before checkout |  |  |
+| 30 | Shopper | Easily enter my payment information | Check out quickly and with no hassles |  |  |
+| 31 | Shopper | Feel my personal and payment information is safe and secure | Confidently provide the needed information to make a purchase |  |  |
+| 32 | Shopper |View an order confirmation after checkout | Verify that I haven't made any mistakes |  |  |
+| 33 | Shopper | Receive an email confirmation after checking out | Keep the confirmation of what I've purchased for my records |  |  |
+| **PRODUCT REVIEWS** |   |   |  |  |
+| 34 | Shopper | View available reviews for a product I am viewing  | Find out what others think of the product |  |  |
+| 35 | Shopper | Easily see how I can add my reviews on products I purchased | Decide whether I want to add my review |  |  |
+| 36 | Shopper | Easily view/ have access to details about the product I am reviewing | Refer to the information about the product, should I need to do so |  |  |
+| 37 | Shopper | Add my review of the product | Share my personal experienceof using the products  |  |  |
+| 38 | Store Owner | Add Featured Reviews on specific product detail page | Opt to highlight specific reviews |  |  |
+| 39 | Store Owner | Edit submitted reviews | Opt to block off profanities, if any |  |  |
+| 40 | Store Owner | Delete a review | Have control over unacceptable comments such as discriminatory statements, if any |  |  |
+| **ADMIN & STORE MANAGEMENT** |   |   |  |  |
+| 41 | Store Owner | Add a product | Add new items to my store |  |  |
+| 42 | Store Owner | Edit/update a product | Change product proces, descriptions, ingredients, images and other product criteria |  |  |
+| 43 | Store Owner | Delete a product | Remove items that are no longer for sale |  |  |
+| 44 | Store Owner | Have policy pages (privacy, terms & conditions, return & refund and shipping) on the site | Be assured that all the legalities of doing business online are taken care of |  |  |
+| 45 | Store Owner | Receive a warning if I accidentally click the delete a product button | Avoid accidental deletion of a product |  |  |
+| 46 | Store Owner | Add a brand to my store | Add new products even if the product's brand is not in the store yet |  |  |
+| 47 | Store Owner | Edit/ Update a brand in my store | Make changes to a brand name, description, brand logo or choose to feature a brand |  |  |
+| **DIGITAL MARKETING** |   |   |  |  |
+| 48 | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |  |  |
+| **USER'S WISHLIST** |   |   |
+| 49 | Shopper | Easily add a product to my wishlist | Save it for future purchase or reference |  |  |
+| 50 | Shopper | Easily remove a product from my wishlist | Keep pnly the products I'm interested in |  |  |
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Full Manual Testing
+### Responsive Design Testing
 ---
 ## Bugs found during testing and development phase
-
 ### Solved Bugs
 | # | Bugs, Errors and Issues | Solutions |
 | :--- | :--- | :--- |
@@ -266,4 +337,3 @@ I also used coverage to generate the report and find out the percentage of state
 | # | Unsolved Bugs, Errors and Issues | Justification |
 | :--- | :--- | :--- |
 | 1 | Browser: Chrome, Error: **Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received**. This error appears after about a minute or two of loading any page of the web application. | I have spent days looking for where this error was coming from, initially thinking it was caused by the show and hide button on the homepage to hide and show list of available brands. I switched off the event listener. The error still appeared. I tried to debug and refactor all the event listeners but found it impossible to do so without disabling the required JQuery functions for the application to run smoothly. Googling for possible causes and reasons, I have found references to the same error and they point to using incognito mode as a possible solution. The error did not appear when using incognito mode. Due to time constraints, the real solution for this error may be investigated further on the next sprint/ future development. |
-
