@@ -65,11 +65,12 @@ I used [W3C Markup Validation Service](https://validator.w3.org/) to validate al
 
 ### CSS Validation
 I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all CSS files by direct input.
-
-* [checkout.css](./documentation/css_validation/checkout-css.png)
-* [profile.css](./documentation/css_validation/profile-css.png)
-* [reviews.css](./documentation/css_validation/reviews-css.png)
-* [base.css](./documentation/css_validation/base-css.png)
+| File | Result | Test Details & Screenshots |
+| ---- | :-: | -------------------------- |
+| checkout/static/checkout/css/checkout.css | Pass | [checkout.css](./documentation/css_validation/checkout-css.png) |
+| profiles/static/profiles/css/profiles.css | Pass | [profile.css](./documentation/css_validation/profile-css.png) |
+| reviews/static/reviews/css/reviews.css | Pass | [reviews.css](./documentation/css_validation/reviews-css.png) |
+| static/css/base.css | Pass | [base.css](./documentation/css_validation/base-css.png) |
 
 ### JavaScript Validation
 I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
@@ -86,20 +87,39 @@ I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
 
 ### Python Validation
 At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my IDE and throughout the development, I was using it to test and fix the errors as they appear. I also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint my Python code.
-| File | Result | Test Details & Screenshots |
-| ---- | :-: | -------------------------- |
+| File | Result | Validation Details & Screenshots |
+| :-- | :-: | -------------------------- |
 | **SHOP_KBEAUTY** |  |  |
 | shop_kbeauty/settings.py | All clear, no errors found | [settings.py validation](./documentation/python_validation/shop-kbeauty-settings-dot-py.png) |
 | shop_kbeauty/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/shop-kbeauty-urls-dot-py.png) |
 | shop_kbeauty/wsgi.py | All clear, no errors found | [wsgi.py validation](./documentation/python_validation/shop-kbeauty-wsgi-dot-py.png) |
 | **BAG APP** |  |  |
 | bag/templatestags/bag_tools.py | All clear, no errors found | [bag_tools.py validation](./documentation/python_validation/bag-tools.png) |
-| bag/apps.py | All clear, no errors found | [bag_apps.py validation](./documentation/python_validation/bag-apps.png) |
-| bag/contexts.py | All clear, no errors found | [bag_contexts.py validation](./documentation/python_validation/bag-contexts.png) |
-| bag/urls.py | All clear, no errors found | [bag_urls.py validation](./documentation/python_validation/bag-urls.png) |
-| bag/views.py | All clear, no errors found | [bag_views.py validation](./documentation/python_validation/bag-views.png) |
+| bag/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/bag-apps.png) |
+| bag/contexts.py | All clear, no errors found | [contexts.py validation](./documentation/python_validation/bag-contexts.png) |
+| bag/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/bag-urls.png) |
+| bag/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/bag-views.png) |
 | bag/tests/test_views.py | All clear, no errors found | [bag/tests/test_views.py validation](./documentation/python_validation/bag-tests-test-views.png.png) |
 | **CHECKOUT APP** |  |  |
+| checkout/admin.py | All clear, no errors found | [admin.py validation](./documentation/python_validation/checkout-admin.png) |
+| checkout/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/checkout-apps.png) |
+| checkout/forms.py | All clear, no errors found | [forms.py validation](./documentation/python_validation/checkout-forms.png) |
+| checkout/models.py | All clear, no errors found | [models.py validation](./documentation/python_validation/checkout-models.png) |
+| checkout/signals.py | All clear, no errors found | [signals.py validation](./documentation/python_validation/checkout-signals.png) |
+| checkout/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/checkout-urls.png) |
+| checkout/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/checkout-views.png) |
+| checkout/webhook_handler.py | All clear, no errors found | [webhook_handler.py validation](./documentation/python_validation/checkout-webhook-handler.png) |
+| checkout/webhooks.py | All clear, no errors found | [webhooks.py validation](./documentation/python_validation/checkout-webhooks.png) |
+| checkout/tests/test_forms.py | All clear, no errors found | [test_forms.py validation](./documentation/python_validation/checkout-tests-test-forms.png) |
+| checkout/tests/test_models.py | All clear, no errors found | [test_models.py validation](./documentation/python_validation/checkout-tests-test-models.png) |
+| checkout/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/checkout-tests-test-views.png) |
+
+
+
+
+
+
+
 
 ### Lighthouse Report
 [Chrome DevTools' Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to test the performance, accessibility, best practices and SEO of the site
