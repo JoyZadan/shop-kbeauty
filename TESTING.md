@@ -129,12 +129,13 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | products/tests/test_forms.py | All clear, no errors found | [test_forms.py validation](./documentation/python_validation/products-tests-test-forms.png) |
 | products/tests/test_models.py | All clear, no errors found | [test_models.py validation](./documentation/python_validation/products-tests-test-models.png) |
 | products/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/products-tests-test-views.png) |
-
-
-
-
-
-
+| **PROFILES APP** |  |  |
+| profiles/apps.py | All clear, no errors found | [apps.py validation](./documentation/python_validation/profiles-apps.png) |
+| profiles/forms.py | All clear, no errors found | [forms.py validation](./documentation/python_validation/profiles-forms.png) |
+| profiles/models.py | All clear, no errors found | [models.py validation](./documentation/python_validation/profiles-models.png) |
+| profiles/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/profiles-urls.png) |
+| profiles/views.py | All clear, no errors found | [views.py validation](./documentation/python_validation/profiles-views.png) |
+| profiles/tests/test_views.py | All clear, no errors found | [test_views.py validation](./documentation/python_validation/profiles-tests-test-views.png) |
 
 
 
