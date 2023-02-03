@@ -87,6 +87,7 @@ I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
 At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.org/en/latest/intro.html#configuration) in my IDE and throughout the development, I was using it to test and fix the errors as they appear. I also used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint my Python code.
 | File | Result | Validation Details & Screenshots |
 | :-- | :-: | -------------------------- |
+| custom_storages.py | All clear, no errors found | [custom_storages.py](./documentation/python_validation/custom_storages.png)|
 | **SHOP_KBEAUTY** |  |  |
 | shop_kbeauty/settings.py | All clear, no errors found | [settings.py validation](./documentation/python_validation/shop-kbeauty-settings-dot-py.png) |
 | shop_kbeauty/urls.py | All clear, no errors found | [urls.py validation](./documentation/python_validation/shop-kbeauty-urls-dot-py.png) |
