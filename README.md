@@ -433,7 +433,7 @@ Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-sta
 | 48 | [#26](https://github.com/JoyZadan/shop-kbeauty/issues/26) | Store Owner | Have a social media presence | Create awareness of Shop K-Beauty products |
 | **USER'S WISHLIST** |   |   |
 | 49 | [#85](https://github.com/JoyZadan/shop-kbeauty/issues/85) | Shopper | Easily add a product to my wishlist | Save it for future purchase or reference |
-| 50 | [#87](https://github.com/JoyZadan/shop-kbeauty/issues/87) | Shopper | Easily remove a product from my wishlist | Keep pnly the products I'm interested in |
+| 50 | [#87](https://github.com/JoyZadan/shop-kbeauty/issues/87) | Shopper | Easily remove a product from my wishlist | Keep only the products I'm interested in |
 | **FOR FUTURE IMPLEMENTATION** |   |   |
 | 51| # | Shopper | register an account via social account | easy registration |
 | 52 | # | Shopper | login via social account | avoid having to keep track of login details |
