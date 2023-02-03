@@ -22,8 +22,7 @@
         * [Coverage](#coverage)
 * [Manual Testing](#manual-testing)
     * [Testing User Stories](#testing-user-stories)
-    * [Full Manual Testing](#full-manual-testing)
-    * [Responsive Design Testing](#responsive-design-testing)
+    * [Full Testing](#full-testing)
 * [Bugs, Errors & Solutions](#bugs-found-during-testing-and-development-phase)
     * [Solved Bugs](#solved-bugs)
     * [Known Bugs](#known-bugs)
@@ -291,8 +290,32 @@ I also used coverage to generate the report and find out the percentage of state
 | 49 | Shopper | Easily add a product to my wishlist | Save it for future purchase or reference | On a product detail page, the wishlist heart icon is to the right of a product's brand name and this is the button that enables the adding of the product to the shopper's wishlist. Clicking this icon either: <br/> i) redirects the shopper to the log in page with a toast informing them that they need to be logged in to add to their wishlist, <br/> or <br/> ii) if they are already logged in, a toast displays confirming that the product has been added to their wishlist. Meanwhile, on the top navigation component of the navbar, in between the My Account and Shopping bag navlinks, is the Wishlist navlink that also turns dark pink when a product is added to the wishlist. This wishlist navlink goes back to its original colour of black when a shopper navigates away from the product detail page but turns back to pink again if the shopper navigates to another product detail page that is already in the shopper's wishlist. If a product is already in the user's wishlist, clicking the wishlist icon again (on the product detail page) will display a toast alerting the shopper of that fact and prevents the duplication of the same product being added to the individual shopper's wishlist more than once. | [add product to wishlist](), [toast to alert and prevent duplicate product in wishlist]() |
 | 50 | Shopper | Easily remove a product from my wishlist | Keep only the products I'm interested in | Via the top navigation component of the navbar, authenticated shoppers can access their wishlist page. The logged in shopper can also access the wishlist page from their profile page via a wishlist button. The wishlist page displays the list of products including the product image, name, price, discount info (if available), a shop now icon (to take them to the product detail page) and a trash icon to enable them to remove the product from their wishlist. Clicking the trash icon removes the product from the shopper's wishlist, redirects them to the product detail page and a toast appears to alert them that the product has been removed from their wishlist. | [wishlist page](./documentation/user_stories_testing/user-stories-50-wishlish-page.png), [wishlist removed toast and redirect](./documentation/user_stories_testing/user-stories-50-remove-product-from-wishlist.png) |
 
-### Full Manual Testing
-### Responsive Design Testing
+### Full Testing
+Full testing was conducted using the following physical devices and emulators:
+* Mobile:
+    * iPhone 14
+    * iPhone 11 Pro
+    * iPhone 6
+* Tablet
+    * iPad Pro
+    * iPad mini (4th gen)
+    * iPad 4
+* Laptop
+    * MacBook 2012
+    * Macbook 2014
+    * Alienware m17 r3
+* Desktop
+    * HP V27e FHD Monitor (27 inch)
+
+Test Users from the User Research group, friends and family members carried out the additional testing after the initial deployment (alpha) and again after the errors and enhancements were carried out (beta).
+| Feature | Expected Outcome | Testing Performed | Result | Pass/ Fail|
+| --- | --- | --- | --- | --- |
+| PRODUCT CATEGORIZATION |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+
+
 ---
 ## Bugs found during testing and development phase
 ### Solved Bugs
@@ -314,7 +337,6 @@ I also used coverage to generate the report and find out the percentage of state
 | 14 | A logged in user is able to add a product to their own wishlist even if the product is already in the wishlist | To Fix this, I first passed both the product and the user_product to the query for an existing duplicate wishlist by using <br/>```Wishlist.objects.get ``` <br/> This didn't work as the GET function will raise an error if a product does not exist in the wishlist. <br/> The next solution is to use a combination of filter/exists, which solved the bug: <br/> ```existing = Wishlist.objects.filter(product=product, user_profile=user).exists() ```. Credit and thanks to Oisin from Tutor Support at Code Institute for helping me solve this bug. |
 | 15 |Discount (high to low) and Discount (low to high) sorting not working properly | First, there was a typo on the products template <br/> ```<option value="discount_asc" {% if current_sorting == 'discount_desc' %}selected{% endif %} ```. Whilst the value is "discount_asc", I made the mistake of having 'discount_desc' for the current sorting. This part was easily fixed. Second, although the sorting the products discounts started to work, there were still a few products that appeared before the discounts were sorted. I realised that there also some errors in the data for new arrivals were I added the discount as 0.00 but did not include the data for the original_price field. After adding the missing data, the sorting of discounts high to low and vice versa now both work as intended. |
 | 16 | Whilst working on my unit tests, I got an operational error when I tried to log in to production site. The error says, ``` connection to server at rogue.db.elephantsql.com (35....), port 5432 failed: Connection refused ``` | As the unit tests were nowhere near production, this was a big puzzle. After checking that all as they should be on elephantsql (postgresdb), in the config vars in Heroku, and in the env.py file, the solution was to do a manual deploy from Heroku dashboard (deploy tab). |
-
 
 ### Known Bugs
 | # | Known Bugs, Errors and Issues | Justification |
