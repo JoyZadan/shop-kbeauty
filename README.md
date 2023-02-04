@@ -735,16 +735,16 @@ See also **Strategy Plane: Project Goals** above.
 
 As the shoppers are able to **Shop by Brand** via the Brands page, they are able to easily find the brands and products that they prefer.
 
-Lastly, as some shoppers may be new to K-Beauty, trust about the K-Beauty concept becomes a more important factor that must be addressed. By offering a wide selection of brands to choose from and featuring a selection of these brands, Shop K-Beauty is able to provide a stronger user experience that also rivals what shoppers expect when browsing a brick and mortar retail shop that tend carry multiple brands.
+Lastly, as some shoppers may be new to K-Beauty, trust about the K-Beauty concept becomes a more important factor that must be addressed. By offering a wide selection of brands to choose from and featuring a selection of these brands, Shop K-Beauty is able to provide a stronger user experience that also rivals what shoppers expect when browsing a brick and mortar retail shop that tend to carry multiple brands.
 
 ## **Brand Management**
 As a multi brand ecommerce shop specialising in K-Beauty, being able to manage the brands is a necessity.
 
-Logged in Shop Owners are able to add a new brand or update an existing one at the click of a button directly at the store. At the top naviigation, from the My Account area, one of the dropdown options is **Brand Management** that then takes the shop owners to the brand management page where they can easily add a new brand to the store.
+Logged in Shop Owners are able to add a new brand or update an existing one at the click of a button directly at the store. At the top navigation, from the My Account area, one of the dropdown options is **Brand Management** that then takes the shop owners to the brand management page where they can easily add a new brand to the store.
 
 [Link to Brand Management](./documentation/features/brand-management-button.png)
 
-The brand management page provides the input fields in order to add a new brand and also includes help texts underneath the required fields. These fields are:
+The brand management page provides the input fields for adding a new brand and also includes help texts underneath the required fields. These fields are:
 * Brand name
 * Friendly name
 * Brand slug
@@ -755,17 +755,58 @@ The brand management page provides the input fields in order to add a new brand 
 Underneath the form are two buttons, one to cancel the action and redirects the shop owner to the brands page and the other button is add brand.
 
 After a brand is successfully added, the shop owner will be redirected to the new brand's brand detail page.
+* brand management: add a brand
+    * ![brand management: add a brand](./documentation/features/brand-management-add-brand.png)
 
-* ![brand management: add a brand](./documentation/features/brand-management-add-brand.png)
-
-To edit a brand, the shop owners only need to go the the brand detail page where underneath the brand description is the edit brand button. Clicking this button will open the brand management page - edit brand where the form fields are already pre-populated with the available data about the brand such as name, friendly name, slug, description, image and is featured checkbox. A toast also shows an alert that the brand is being edited.
-
-* ![edit brand button](./documentation/features/edit-brand-button.png)
-* ![brand management: edit a brand](./documentation/features/brand-management-edit-brand-page.png)
+To edit a brand, the shop owners only need to go to the brand detail page where underneath the brand description is the edit brand button. Clicking this button will open the brand management page - edit brand where the form fields are already pre-populated with the available data about the brand such as name, friendly name, slug, description, image and is featured checkbox. A toast also shows an alert that the brand is being edited.
+* edit brand button on the brand detail page (visible only to logged in Shop Owners)
+    * ![edit brand button](./documentation/features/edit-brand-button.png)
+* brand management: edit a brand
+    * ![brand management: edit a brand](./documentation/features/brand-management-edit-brand-page.png)
 
 Deleting a brand requires the shop owners to log in to the Django administration page. This is because editing a brand will also delete all the products of that brand and requires more complexity that needs to be tackled in future development.
 
 ## **Product Management**
+Logged in Shop Owners are able to perform the full CRUD (create, read, update and delete) product management functionalities directly at the store.
+
+To add a new product, at the top navigation, from the My Account area, one of the dropdown options is **Product Management**. This takes the shop owners to the product management page where they can easily add a new product to the store.
+
+[Link to Product Management](./documentation/features/brand-management-button.png)
+
+The product management page provides the input fields for adding a new product and also includes help texts underneath the required fields. These fields are:
+* Main category title
+* Category title
+* Subcategory title
+* Brand title
+* Sku
+* Product name
+* Product slug
+* Is featured checkbox
+* Total quantity
+* Total availability
+* Product description
+* How to use
+* Product ingredients
+* Has sizes
+* Price
+* Discount
+* Original price
+* Select image button
+
+Underneath the form is a cancel button and an add product button. The cancel button redirects to the products page. If there is no error in adding the product, the add product button redirects to the newly added product detail page. On the other hand, if there is an error in adding the product, a help text will appear underneath the form field where the error occured.
+
+* product management: add a product
+    * ![product management: add a product](./documentation/features/product-management-add-product.png)
+    * [product management: add a product - error](./documentation/features/product-management-add-product-error.png)
+
+To edit a product, the shop owners only need to go to the product detail page where underneath the product image is the edit product button. Clicking this button will open the product management page - edit product where the form fields are already pre-populated with the available data about the product (as above). A toast also shows an alert that the product is being edited.
+
+* edit product button on the product detail page (visible only to logged in Shop Owners)
+    * ![edit product button](./documentation/features/product-management-edit-product-button.png)
+* product management: edit a product
+    * ![product management: edit a product](./documentation/features/product-management-edit-product.png)
+
+To delete a product, next to the edit a product button is the Delete Product button that when clicked opens a modal to confirm the intent of deleting a product to avoid the unintended deletion of data. (See also **Defensive Programming** above.)
 
 ## **Product Reviews**
 
