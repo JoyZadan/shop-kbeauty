@@ -700,6 +700,15 @@ Defensive programming is also implemented to handle bad user inputs or actions a
 * ![Modal](./documentation/features/modal.png)
 
 ## **Accessibility**
+To ensure that the Shop K-Beauty site will be as usable by as many visitors and shoppers alike, I ensure that the site is accessible by:
+* using Semantic HTML
+* using descriptive alt attributes on images used on the site
+* providing the order, role and accessible name (what is read by a screen reader) for all navigable elements that are used on the site
+* providing ARIA attributes where they are needed
+* ensuring that there is sufficient colour contrast throughout the site
+* converting png images to next generation webp versions to achieve better compression and making the site usable for those onn low network speed
+
+I tested the Shop K-Beauty's accessibility using Lighthouse and WAVE and fixed any errors highlighted, including amending the colour scheme used for the site.
 
 ## **Extra Meta Tags for Specific Pages**
 The extra meta tags on specific pages of the site allow for a tailored image and content when posting on social media pages. Using the content (page title, page description and target keywords) that came out of the **Integrating Content Strategy and SEO exercise (SCOPE PLANE)** plus images, the result is a more engaging social media posts that actually help deliver the intended message as opposed to a generic one.
