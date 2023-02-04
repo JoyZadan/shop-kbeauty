@@ -73,13 +73,14 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Extra Meta Tags for Specific Pages](extra-meta-tags-for-specific-pages)
     * [Site Features Common to All Pages](#site-features-common-to-all-pages)
     * [Site Pages](#site-pages)
-        * [Home Page](#home-page)
+        <!-- * [Home Page](#home-page)
         * [Products Page](#products-page)
         * [Product Detail Page](#product-detail-page)
         * [Brands Page](#brands-page)
         * [Brand Detail Page](#brand-detail-page)
         * [Shopping Bag Page](#shopping-bag-page)
         * [Checkout Page](#checkout-page)
+        * [Checkout Success Page](#checkout-success-page)
         * [Profile Page](#profile-page)
         * [Reviews Page](#reviews-page)
         * [Add Review Page](#add-review-page)
@@ -91,6 +92,7 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
         * [Terms and Conditions Page](#terms-and-conditions-page)
         * [Return and Refund Policy Page](#return-and-refund-policy-page)
         * [Shipping Policy Page](#shipping-policy-page)
+        * [Error Pages](#error-pages) -->
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
 * [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
 * [Technologies Used](#technologies-used)
@@ -963,11 +965,54 @@ Should the shopper add a product that is already in the bag, the product quantit
 * ![bag page - adding a product to bag and toast message](./documentation/features/add-product-to-bag-toast.gif)
 
 ### **Checkout Page**
+The checkout page has two sections: the personal information and delivery form and the order summary. <br/> The personal information form includes the fields a shopper must complete for an order to be processed and has three main areas: the details, delivery and payment. The details area is for full name and email address; the delivery area has required fields (phone number, street address1, town or city and a dropdown to select the country) and the not required fields (street address2, county, state or locality and the postal code). An anonymous shopper can choose to create an account or login to save their delivery information. The payment area includes the input fields for the credit card number, the month and year or expiry and the Card Verification Code (CVC).
+
+The order summary section of the checkout page contains the information on the items in the shopper's shopping bag. It displays the product image, name, size, quantity of item, the subtotal, the order total, the delivery cost and the grand total.
+
+Below the payment area are two buttons: adjust bag button (which links back to the shopping bag page) and the complete order button. Underneath these two buttons is a reminder of how much the shopper's card will be charged with the grand total amount.
+
+After clicking the complete order button, Stripe will process the payment.
+
+Meanwhile, if a shopper is already logged in and has previously filled out their profile's default delivery information, these data will be used to pre-populate their checkout form.
+
+Lastly, if there's an error in filling out the form, the form gives an error at the time of submission and through a help text provides feedback to the shopper where the error occured what needs to be corrected.
+
+Errors in the payment area such as providing a card year that has expired are also handled by a help text.
+
+**Checkout page screenshot**
+1. **Checkout page on desktop**
+* ![checkout page - desktop](./documentation/features/checkout-page-desktop.png)
+
+### **Checkout Loading Spinner Overlay**
+After a shopper clicks the complete order button, a checkout spinner overlay is displayed covering the entire checkout page to give feedback to the shopper that their payment is being processed.
+
+If there was an error with the payment processing (tested using Stripe's generic decline test card number), the shopper is redirected back to the checkout page which will display a help text about the error underneath the payment area.
+
+![checkout spinner overlay](./documentation/features/checkout-spinner-overlay.png)
 
 ### **Checkout Success Page**
+After a successful processing of an order, the shopper is redirected to the checkout success page where a receipt shows the order info, the order details, delivering to information and the billing info. A toast also informs the the shopper that the order has been successfully processed, the number number and that a confirmation email will be sent to the email address provided at checkout.
+
+At the bottom of the page, a call to action button to checkout the latest deals allows the shopper to go the products page, filtered to display all products in the new arrivals, top deals and clearance categories.
+
+![checkout success page](./documentation/features/checkout-success-page.png)
 
 ### **Profile Page**
+A logged in shopper's profile page contains:
+* a greeting with their provided username
+* a statement about what they will find in their profile page
+* a wishlist button which will take them to their wishlist page
+* the default delivery information that the shopper can update
+* the update information button
+* the shopper's order history which contains:
+    * the order number receipts that each links back to the checkout success page where a receipt shows the order info, the order details, the delivering to information and the billing info. The toast this time shows an alert that this is a past confirmation for a particular order and that a confirmation email was sent on the order date.
+    * the order dates
+    * the order items' product name and the quantity
+    * the order total
 
+When a shopper updates their information, the profile page will reload, updates the data prepopulated on the form with the new data provided and a toast confirms that the profile updated successfully.
+
+![profile page](./documentation/features/profile-page.png)
 ### **Reviews Page**
 
 ### **Add Reviews Page**
