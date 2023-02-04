@@ -70,7 +70,11 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Stock Keeping Unit (SKU) Architecture](#stock-keeping-unit-sku-architecture)
     * [Defensive Programming](#defensive-programming)
     * [Accessibility](#accessibility)
-    * [Extra Meta Tags for Specific Pages](extra-meta-tags-for-specific-pages)
+    * [Extra Meta Tags for Specific Pages](#extra-meta-tags-for-specific-pages)
+    * [Multi Brands](#multi-brands)
+    * [Product Reviews](#product-reviews)
+    * [Related Products](#related-products)
+    * [Wishlist](#wishlist)
     * [Site Features Common to All Pages](#site-features-common-to-all-pages)
     * [Site Pages](#site-pages)
     * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
@@ -716,10 +720,18 @@ The meta tags are also in place to dynamically change what's displayed on the br
 * **Brand Name on the browser tab**
 * ![Brand name on the browser tab](./documentation/features/brand-name-on-browser-tab.png)
 
+## **Multi Brands**
+
+## **Product Reviews**
+
+## **Related Products**
+
+## **Wishlist**
+
 ## **Site features common to all pages**
 Common to all pages of the Shop K-Beauty site are:
 
-* Favicon
+* **Favicon**
     The favicon is an effective visual reminder of the site's identity in the browser tabs and has been tested against the following browsers:
     1. Safari
     2. Google Chrome
@@ -728,10 +740,10 @@ Common to all pages of the Shop K-Beauty site are:
     * Favicons
         * ![Favicons screenshot](./documentation/features/shop-kbeauty-favicons.png)
 
-* Navbar
+* **Navbar**
     The navbar has two main components, the top navigation and the main navigation. The first component is the top navigation (see below). It shows the site's logo, visitors can search for products using the search bar, sign up or login via the My Account icon and view the grand total of items in their bag. The second component is the main navigation that allows the visitors to browse for products, special offers, brands and K-Beauty tips. The navbar and all its components are fully responsive, as evidenced by the screenshots below.
 
-    * Top Navigation:
+    * **Top Navigation**:
         * logo (text-based logo)
         * search bar (visitors can search for products, brands and ingredients)
         * my account (login, register)
@@ -746,21 +758,21 @@ Common to all pages of the Shop K-Beauty site are:
         * wishlist (for logged in users)
         * bag
 
-        **Top Navigation screenshots**<br/>
-        1. **Top Navigation - desktop**
+        Top Navigation screenshots<br/>
+        1. Top Navigation - desktop
         * ![Top Navigation - desktop](./documentation/features/top-navigation-desktop.png)
-        2. **Top Navigation - mobile**
+        2. Top Navigation - mobile
         * ![Top Navivation - mobile](./documentation/features/top-navigation-mobile.png)
-        3. **Top Navigation - desktop - logged in superadmin user**
+        3. Top Navigation - desktop - logged in superadmin user
         * ![Top Navigation - desktop - logged in superadmin user](./documentation/features/top-navigation-desktop-logged-in-superadmin.png)
-        4. **Top Navigation - tablet - logged in user**
+        4. Top Navigation - tablet - logged in user
         * ![Top Navigation - tablet - logged in user](./documentation/features/top-navigation-tablet-logged-in-user.png)
-        5. **Top Navigation - mobile - logged in user: wishlist icon is displayed**
+        5. Top Navigation - mobile - logged in user: wishlist icon is displayed
         * ![Top Navigation - mobile - logged in user: wishlist icon is displayed](./documentation/features/top-navigation-mobile-wishlist-logged-in-user.png)
 
     <br/>
 
-    * Main Navigation
+    * **Main Navigation**
         * all products dropdown
             * view products by brand, price, discount, category, subcategory, all products
         * skincare dropdown
@@ -772,28 +784,28 @@ Common to all pages of the Shop K-Beauty site are:
         * brands
         * k-beauty tips
 
-        **Main Navigation screenshots**<br/>
-        1. **Main Navigation - desktop**
+        Main Navigation screenshots<br/>
+        1. Main Navigation - desktop
         * ![Main Navigation - desktop](./documentation/features/main-navigation-desktop.png)
-        2. **Main Navigation - tablet - before**
+        2. Main Navigation - tablet - before
         * ![Main Navigation - tablet - before](./documentation/features/main-navigation-tablet-before.png)
-        3. **Main Navigation - tablet - after**
+        3. Main Navigation - tablet - after
         * ![Main Navigation - tablet - after](./documentation/features/main-navigation-tablet-after.png)
-        4. **Main Navigation - mobile - before**
+        4. Main Navigation - mobile - before
         * ![Main Navigation - mobile - before](./documentation/features/main-navigation-mobile-before.png)
-        5. **Main Navigation - mobile - after**
+        5. Main Navigation - mobile - after
         * ![Main Navigation - mobile - after](./documentation/features/main-navigation-mobile-after.png)
 
-* Delivery Banner
+* **Delivery Banner**
     The banner area is currently being used to flag the free delivery threshold.
 
-    **Delivery Banner screenshots**
-    1. **mobile**
+    Delivery Banner screenshots
+    1. mobile
     * ![mobile](./documentation/features/delivery-banner-mobile.png)
-    2. **tablet**
+    2. tablet
     * ![tablet](./documentation/features/delivery-banner-tablet.png)
 
-* Footer:
+* **Footer**:
     * Shop K-Beauty fictitious address, email and phone number
     * About - brief blurb about the shop
     * Policies - links to privacy policy, terms and conditions, return and refund policy and shipping policy pages
@@ -802,12 +814,12 @@ Common to all pages of the Shop K-Beauty site are:
     * Payment Processing Statement
     * Copyright and Disclaimer
 
-    **Footer screenshots**
-    1. **footer on mobile**
+    Footer screenshots
+    1. footer on mobile
     * [mobile](./documentation/features/footer-mobile.png)
-    2. **footer on tablet**
+    2. footer on tablet
     * [tablet](./documentation/features/footer-tablet.png)
-    3. **desktop**
+    3. desktop
     * ![desktop](./documentation/features/footer-desktop.png)
 
 ## **Site Pages**
@@ -821,7 +833,7 @@ Shop K-Beauty's home page features the following:
     * Featured Brands
     * See All Brands Button
 
-**Home page screenshot**
+Home page screenshot
 ![Homepage - Laptop](./documentation/features/shop-k-beauty-homepage-laptop-large-1440x1207.webp)<br/>
 
 ### **Products Page**
@@ -839,20 +851,20 @@ The products page contains the following:
 * Individual products cards displaying the product image, name, category, subcategory, current price, original price (crossed out), savings and a shop now call to action button that then links to a product detail page. The currency is set to GBP.
 * The product card has a gentle transition on hover.
 
-**Products page screenshots**
-1. **Products Page on mobile**
+Products page screenshots
+1. Products Page on mobile
 * [mobile](./documentation/features/products-page-on-mobile.png)
-2. **Products Page on tablet**
+2. Products Page on tablet
 * [tablet](./documentation/features/products-page-on-tablet.png)
-3. **Products Page on desktop**
+3. Products Page on desktop
 * ![desktop](./documentation/features/products-page-on-desktop.png)
-4. **All Products sorted by discount (high-to-low)**
+4. All Products sorted by discount (high-to-low)
 * [all products sorted by discount](./documentation/features/all-products-sorted-by-discount-high-to-low.png)
-5. **All Products filtered by subcategory**
+5. All Products filtered by subcategory
 * [products filtered by subcategory](./documentation/features/all-products-filtered-by-subcategory.png)
-6. **All Products filtered by category**
+6. All Products filtered by category
 * [products filtered by category](./documentation/features/all-products-filtered-by-category.png)
-7. **All Products filtered by multiple categories**
+7. All Products filtered by multiple categories
 * ![products filtered by multiple categories](./documentation/features/all-products-filtered-by-multiple-categories.png)
 
 ### **Product Detail Page**
@@ -880,20 +892,20 @@ Below all of the above are the following:
 * Featured reviews, if they exist and a CTA to share experience of using the product, ie, add a review
 * Four or less related products based on the product's subcategory. The related products are displayed randomly if there's more than four of them. Each related product card has the product name, category, subcategory, price, original price and discount (if they exist) and a shop now button.
 
-**Product detail page screenshot**
+Product detail page screenshot
 ![desktop](./documentation/features/product-detail-page.png)
 
 ### **Brands Page**
-The brands page contains all avaible brands via individual brand cards that displays the brand logo. Each brand card links to the brand detail page.
+The brands page contains all available brands via individual brand cards that displays the brand logo. Each brand card links to the brand detail page.
 
 Below then brand cards is a CTA button to view all products.
 
-**Brands page screenshot**
-1. **Brands page on desktop**
+Brands page screenshot
+1. Brands page on desktop
 * ![desktop](./documentation/features/brands-page-desktop.png)
-2. **Brands page on tablet**
+2. Brands page on tablet
 * [tablet](./documentation/features/brands-page.png)
-3. **Brands page on mobile**
+3. Brands page on mobile
 * [mobile](./documentation/features/brands-page-mobile.png)
 
 ### **Brand Detail Page**
@@ -904,12 +916,12 @@ The brand detail page contains the following:
 * list of available products from the brand - these products are displayed in individual product card that contains the product name, category, subcategory, price, original price and discount (if they exist) and a CTA to shop now
 * a CTA to keep shopping that links to the products page
 
-**Brand detail page screenshot**
-1. **Brand detail page on desktop**
+Brand detail page screenshot
+1. Brand detail page on desktop
 * ![desktop](./documentation/features/brand-detail-page.png)
-2. **Brand detail page on tablet**
+2. Brand detail page on tablet
 * [brand detail page - tablet](./documentation/features/brand-detail-page-tablet.png)
-3. **Brand detail page on mobile**
+3. Brand detail page on mobile
 * [brand detail page - mobile](./documentation/features/brand-detail-page-mobile.png)
 
 ### **Bag Page**
@@ -934,14 +946,14 @@ The session is enabled so an anonymous shopper can continue browsing for other p
 
 Should the shopper add a product that is already in the bag, the product quantity will increment and a toast message will appear to state that the item quantity has been updated to the total number of product items added in the bag.
 
-**Bag page screenshot**
-1. **Bag page on desktop**
+Bag page screenshot
+1. Bag page on desktop
 * ![bag page - desktop](./documentation/features/bag-page-desktop.png)
-2. **Bag page on tablet**
+2. Bag page on tablet
 * [bag page - tablet](./documentation/features/bag-page-tablet.png)
-3. **Bag page on mobile**
+3. Bag page on mobile
 * [bag page - mobile](./documentation/features/bag-page-mobile.png)
-4. **Adding product to bag and toast message**
+4. Adding product to bag and toast message
 * ![bag page - adding a product to bag and toast message](./documentation/features/add-product-to-bag-toast.gif)
 
 ### **Checkout Page**
@@ -959,8 +971,8 @@ Lastly, if there's an error in filling out the form, the form gives an error at 
 
 Errors in the payment area such as providing a card year that has expired are also handled by a help text.
 
-**Checkout page screenshot**
-1. **Checkout page on desktop**
+Checkout page screenshot
+1. Checkout page on desktop
 * ![checkout page - desktop](./documentation/features/checkout-page-desktop.png)
 
 ### **Checkout Loading Spinner Overlay**
@@ -993,6 +1005,7 @@ A logged in shopper's profile page contains:
 When a shopper updates their information, the profile page will reload, updates the data prepopulated on the form with the new data provided and a toast confirms that the profile updated successfully.
 
 ![profile page](./documentation/features/profile-page.png)
+
 ### **Reviews Page**
 
 ### **Add Reviews Page**
