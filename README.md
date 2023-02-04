@@ -72,6 +72,8 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Accessibility](#accessibility)
     * [Extra Meta Tags for Specific Pages](#extra-meta-tags-for-specific-pages)
     * [Multi Brands](#multi-brands)
+    * [Brand Management](#brand-management)
+    * [Product Management](#product-management)
     * [Product Reviews](#product-reviews)
     * [Related Products](#related-products)
     * [Wishlist](#wishlist)
@@ -702,25 +704,68 @@ The extra meta tags on specific pages of the site allow for a tailored image and
 Having these extra meta tags feature is particularly important for Shop K-Beauty as a business because the rise and continuing success of K-Beauty products as a whole becoming a global phenomenon are in large part driven by social media. Straits Research, in its report entitled, [K-Beauty Products Market Trend, Growth to 2022-2030](https://straitsresearch.com/report/k-beauty-products-market), the section on **Market Dynamics (Global K-Beauty Products Market Drivers)** discussed in detail that the *popularization of products are inspired by unique ingredients as well as digital marketing strategies.* The report added, *The West's journalists and social media influencers have also been interested in the K-Beauty boom. The K-Beauty businesses have been praised for using this as an inventive digital technique to get more popularity.*
 
 **Extra meta tags and examples of how they work on [Shop K-Beauty's social media page (Facebook)](https://www.facebook.com/shopkbeauty.new):**
-1. **Products page shared on social media:**
+1. Products page shared on social media:
 * ![Products page shared on social media](./documentation/features/products-page-facebook-post.png)
 
-2. **Product detail page shared on social media:**
+2. Product detail page shared on social media:
 * ![Product detail post](./documentation/features/product-detail-page-facebook-post.png)
 
-3. **Brands page shared on social media:**
+3. Brands page shared on social media:
 * ![Brands page shared on social media](./documentation/features/brands-page-facebook-post.png)
 
-4. **Brand detail page shared on social media:**
+4. Brand detail page shared on social media:
 * ![Brand detail post](./documentation/features/brand-detail-page-facebook-post.png)
 
 The meta tags are also in place to dynamically change what's displayed on the browser tabs, for example when the product detail page is opened, the name of the product comes up first followed by the site's title. This is particularly important as the slugs are not being utilised in place of product IDs.
-* **Product Name on the browser tab**
-* ![Product name on the browser tab](./documentation/features/product-name-on-browser-tab.png)
-* **Brand Name on the browser tab**
-* ![Brand name on the browser tab](./documentation/features/brand-name-on-browser-tab.png)
+
+* Product Name on the browser tab
+    * ![Product name on the browser tab](./documentation/features/product-name-on-browser-tab.png)
+* Brand Name on the browser tab
+    * ![Brand name on the browser tab](./documentation/features/brand-name-on-browser-tab.png)
 
 ## **Multi Brands**
+As a reseller of K-Beauty products, Shop K-Beauty carries inventories from different brands, providing a convenient access to a wider range of *use at home* K-Beauty products. Shop K-Beauty's wide selection of K-Beauty products also enable customers to shop for skincare and hair &amp; body K-Beauty products with varied price range and discounts. These two key points help the Shop to achieve the project goals of solving two out of three problems discussed in the beginning of this document:
+
+* Project Goals:
+    * Problems we are trying to solve:
+        * Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician
+        * Problem 3: Expensive skincare and hair & body products
+
+See also **Strategy Plane: Project Goals** above.
+
+As the shoppers are able to **Shop by Brand** via the Brands page, they are able to easily find the brands and products that they prefer.
+
+Lastly, as some shoppers may be new to K-Beauty, trust about the K-Beauty concept becomes a more important factor that must be addressed. By offering a wide selection of brands to choose from and featuring a selection of these brands, Shop K-Beauty is able to provide a stronger user experience that also rivals what shoppers expect when browsing a brick and mortar retail shop that tend carry multiple brands.
+
+## **Brand Management**
+As a multi brand ecommerce shop specialising in K-Beauty, being able to manage the brands is a necessity.
+
+Logged in Shop Owners are able to add a new brand or update an existing one at the click of a button directly at the store. At the top naviigation, from the My Account area, one of the dropdown options is **Brand Management** that then takes the shop owners to the brand management page where they can easily add a new brand to the store.
+
+[Link to Brand Management](./documentation/features/brand-management-button.png)
+
+The brand management page provides the input fields in order to add a new brand and also includes help texts underneath the required fields. These fields are:
+* Brand name
+* Friendly name
+* Brand slug
+* Brand description
+* Select image button
+* Is featured checkbox
+
+Underneath the form are two buttons, one to cancel the action and redirects the shop owner to the brands page and the other button is add brand.
+
+After a brand is successfully added, the shop owner will be redirected to the new brand's brand detail page.
+
+* ![brand management: add a brand](./documentation/features/brand-management-add-brand.png)
+
+To edit a brand, the shop owners only need to go the the brand detail page where underneath the brand description is the edit brand button. Clicking this button will open the brand management page - edit brand where the form fields are already pre-populated with the available data about the brand such as name, friendly name, slug, description, image and is featured checkbox. A toast also shows an alert that the brand is being edited.
+
+* ![edit brand button](./documentation/features/edit-brand-button.png)
+* ![brand management: edit a brand](./documentation/features/brand-management-edit-brand-page.png)
+
+Deleting a brand requires the shop owners to log in to the Django administration page. This is because editing a brand will also delete all the products of that brand and requires more complexity that needs to be tackled in future development.
+
+## **Product Management**
 
 ## **Product Reviews**
 
@@ -728,7 +773,7 @@ The meta tags are also in place to dynamically change what's displayed on the br
 
 ## **Wishlist**
 
-## **Site features common to all pages**
+## **Site Features Common to All Pages**
 Common to all pages of the Shop K-Beauty site are:
 
 * **Favicon**
