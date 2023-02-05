@@ -52,12 +52,15 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
 
+        # if form is valid, get the data, pid and save the order
         if order_form.is_valid():
             order = order_form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
             order.stripe_pid = pid
             order.original_bag = json.dumps(bag)
             order.save()
+
+            # for each item in the bag, create a line item in admin
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
@@ -87,9 +90,11 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view_bag'))
 
+            # save the order info in the user's profile
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success',
                             args=[order.order_number]))
+        # checkout form error
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
