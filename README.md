@@ -72,8 +72,8 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Accessibility](#accessibility)
     * [Extra Meta Tags for Specific Pages](#extra-meta-tags-for-specific-pages)
     * [Multi Brands](#multi-brands)
-    * [Brand Management](#brand-management)
-    * [Product Management](#product-management)
+    * [Brand Management - Authorized Personnel Only](#brand-management---authorized-personnel-only)
+    * [Product Management - Authorized Personnel Only](#product-management---authorized-personnel-only)
     * [Product Reviews](#product-reviews)
     * [Related Products](#related-products)
     * [Wishlist](#wishlist)
@@ -686,7 +686,8 @@ Defensive programming is also implemented to handle bad user inputs or actions a
 
 * Modal
 * ![Modal](./documentation/features/modal.png)
-* ![Update: modal popup warning](./documentation/features/modal-updated.png)
+* updated modal warning
+    * ![Update: modal popup warning](./documentation/features/modal-updated.png)
 
 ## **Accessibility**
 To ensure that the Shop K-Beauty site will be as usable by as many visitors and shoppers alike, I ensure that the site is accessible by:
@@ -738,7 +739,7 @@ As the shoppers are able to **Shop by Brand** via the Brands page, they are able
 
 Lastly, as some shoppers may be new to K-Beauty, trust about the K-Beauty concept becomes a more important factor that must be addressed. By offering a wide selection of brands to choose from and featuring a selection of these brands, Shop K-Beauty is able to provide a stronger user experience that also rivals what shoppers expect when browsing a brick and mortar retail shop that tend to carry multiple brands.
 
-## **Brand Management**
+## **Brand Management - Authorized Personnel Only**
 As a multi brand ecommerce shop specialising in K-Beauty, being able to manage the brands is a necessity.
 
 Logged in Shop Owners are able to add a new brand or update an existing one at the click of a button directly at the store. At the top navigation, from the My Account area, one of the dropdown options is **Brand Management** that then takes the shop owners to the brand management page where they can easily add a new brand to the store.
@@ -767,7 +768,7 @@ To edit a brand, the shop owners only need to go to the brand detail page where 
 
 Deleting a brand requires the shop owners to log in to the Django administration page. This is because editing a brand will also delete all the products of that brand and requires more complexity that needs to be tackled in future development.
 
-## **Product Management**
+## **Product Management - Authorized Personnel Only**
 Logged in Shop Owners are able to perform the full CRUD (create, read, update and delete) product management functionalities directly at the store.
 
 To add a new product, at the top navigation, from the My Account area, one of the dropdown options is **Product Management**. This takes the shop owners to the product management page where they can easily add a new product to the store.
@@ -1147,19 +1148,72 @@ When a shopper updates their information, the profile page will reload, updates 
 
 ![profile page](./documentation/features/profile-page.png)
 
-### **Reviews Page**
+### For **Reviews Page**, **Add Reviews Page** and **Review Detail Page**, please see Product Reviews feature above.
 
-### **Add Reviews Page**
+### For the **Wishlist Page**, please see Wishlist feature above.
 
-### **Review Detail Page**
+### For the **Brand Management Page**, please see Brand Management feature above.
 
-### **Wishlist Page**
+### For the **Product Management Page**, please see Product Management feature above.
 
-### **Brand Management Page**
+### **Sign Up Page**
+A regular user can register and create an account with Shop K-Beauty from the Sign Up page. The Sign Up page can be accessed from the site's top navigation which has the My Account icon. This icon has two dropdown links, the first of which is the Sign Up. Clicking the Sign Up link opens the site's sign up page where they can then register to create an account. Alternatively, shoppers who do not yet have an account with the site can also create an account from a link at the checkout page.
 
-### **Product Management Page**
+* [sign up](./documentation/user_stories_testing/user-story-14-sign-up.png)
+* [register an account](./documentation/user_stories_testing/user-story-14-register-for-account.png)
+* [create an account link from checkout page](./documentation/user_stories_testing/user-story-14-checkout-create-an-account.png)
 
-### **Brand Management Page**
+### **Verify Email Page**
+After registering for an account, a shopper will receive an email with a link to confirm their new account. After clicking the email confirmation link, the site opens to the login page where the shopper's username or email and password are already pre-populated and a toast displaying that the email has been confirmed.
+
+* [email-confirmation](./documentation/user_stories_testing/user-story-15-email-confirmation.png)
+* [confirm email](./documentation/user_stories_testing/user-story-15-confirm-email.png)
+* [login page after email is confirmed](./documentation/user_stories_testing/user-story-15-after-new-account-is-verified.png)
+
+### **Log in Page**
+The Log In page has a link to the sign up page right above the input fields for:
+* username
+* password
+
+Below the input fields are:
+* a remember me checkbox
+* two buttons next to each other: link to the homepage and a login button
+* underneath the two buttons is a forgot password link
+
+* [log in page after email is confirmed](./documentation/user_stories_testing/user-story-15-after-new-account-is-verified.png)
+
+### **Password Reset Page**
+If registered users need to reset their password, from the accounts/login page, they have the option to click on the Forgot Password? link which takes them to the password reset page.
+
+* [forgot password link](./documentation/user_stories_testing/user-story-17-forgot-password-link.png)
+* ![password reset](./documentation/user_stories_testing/user-story-17-password-reset.png),
+
+Resetting the password comes in several process (continues below):
+* step 1 of 3) Enter the email address to receive a password reset email.
+
+### **Change Password Page**
+Resetting the password comes in several process (continues below):
+* step 2 of 3) Open the password reset email that with the link that has the secure key added to take the user to the change password page.
+
+Meanwhile, should a shopper enter an email that is not associated with any user account, the password reset page will display the error message.
+* ![change password page](./documentation/user_stories_testing/user-story-17-change-password.png)
+
+### **Password Changed Page**
+Resetting the password comes in several process:
+* step 3 of 3) Change the password. A successful password change is further confirmed by a toast message and the user can now login to their account with using their new password.
+
+* ![password changed successfully](./documentation/user_stories_testing/user-story-17-password-changed-success.png)
+* !![error message if email not in any user account](./documentation/user_stories_testing/user-story-17-password-reset-email-not-assigned-to-any-user-account.png)
+
+### **Sign Out Page**
+When an authenticated shopper selects the Logout link from the top navigation's My Accounts, they will be prompted to confirm if they are sure that they want to sign out.
+
+The shopper can either choose to signout by selecting the corresponding button or cancel to be redirected back to the homepage without signing out. If they selected to sign out, a toast let's them know that they have successfully signed out.
+
+* sign out page
+    * ![sign out page](./documentation/features/sign-out-page.png)
+* signed out toast
+    * ![signed out toast](./documentation/features/signed-out-toast.png)
 
 ### **Privacy Policy Page**
 
