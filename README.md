@@ -1150,13 +1150,17 @@ When a shopper updates their information, the profile page will reload, updates 
 
 ![profile page](./documentation/features/profile-page.png)
 
-### For **Reviews Page**, **Add Reviews Page** and **Review Detail Page**, please see Product Reviews feature above.
+### For Reviews pages (listed below), please see the please see Product Reviews feature above.
+* **Reviews Page**
+* **Add Reviews Page**
+* **Edit a Review Page**
+* **Review Detail Page**
 
-### For the **Wishlist Page**, please see Wishlist feature above.
+### For the Wishlist Page, please see Wishlist feature above.
 
-### For the **Brand Management Page**, please see Brand Management feature above.
+### For the Brand Management Page, please see Brand Management feature above.
 
-### For the **Product Management Page**, please see Product Management feature above.
+### For the Product Management Page, please see Product Management feature above.
 
 ### **Sign Up Page**
 A regular user can register and create an account with Shop K-Beauty from the Sign Up page. The Sign Up page can be accessed from the site's top navigation which has the My Account icon. This icon has two dropdown links, the first of which is the Sign Up. Clicking the Sign Up link opens the site's sign up page where they can then register to create an account. Alternatively, shoppers who do not yet have an account with the site can also create an account from a link at the checkout page.
@@ -1220,14 +1224,35 @@ The shopper can either choose to signout by selecting the corresponding button o
     * ![signed out toast](./documentation/features/signed-out-toast.png)
 
 ### **Privacy Policy Page**
+The Privacy Policy was generated from Termsfeed and sets out how Shop K-Beauty collects, stores and manages the customers' data. The Privacy Policy page can be accessed from anywhere on the site via the footer area, Policies column.
+
+Shop K-Beauty is a fictitious ecommerce store created for educational purposes only. Shop K-Beauty is not a real store and the privacy policy is not legally binding.
+
+* [privacy policy page](./documentation/features/privacy-policy-page.png)
 
 ### **Terms and Conditions Page**
+The Terms and Conditions was generated from Termsfeed and sets out the terms and conditions of doing business with Shop K-Beauty. The Terms &amp; Conditions page can be accessed from anywhere on the site via the footer area, Policies column.
+
+Shop K-Beauty is a fictitious ecommerce store created for educational purposes only. Shop K-Beauty is not a real store and the terms and conditions are not legally binding.
+
+* [terms and conditions page](./documentation/features/terms-conditions-page.png)
 
 ### **Return and Refund Page**
+The Return and Refund was generated from Termsfeed and sets out the policies concerning Order Cancellation Rights, Conditions for Returns, Goods Marked as Gifts and how to contact Shop K-Beauty. The Return &amp; Refund page can be accessed from anywhere on the site via the footer area, Policies column.
+
+Shop K-Beauty is a fictitious ecommerce store created for educational purposes only. Shop K-Beauty is not a real store and the Return and Refund policy is not legally binding.
+
+* [return and refund policy page](./documentation/features/return-refund-page.png)
 
 ### **Shipping Policy Page**
+The Shipping Policy was generated from Termly and sets out the policies concerning the Domestic and International Shipping Policy, the Shipping Rates and Delivery Estimates and how to contact Shop K-Beauty. The Shipping page can be accessed from anywhere on the site via the footer area, Policies column.
+
+Shop K-Beauty is a fictitious ecommerce store created for educational purposes only. Shop K-Beauty is not a real store and the Shipping Policy is not legally binding.
+
+* [shipping policy page](./documentation/features/shipping-policy-page.png)
 
 ### **Error Pages**
+
 
 DRAFT:  ## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
 
