@@ -769,7 +769,7 @@ To edit a brand, the shop owners only need to go to the brand detail page where 
 Deleting a brand requires the shop owners to log in to the Django administration page. This is because editing a brand will also delete all the products of that brand and requires more complexity that needs to be tackled in future development.
 
 ## **Product Management - Authorized Personnel Only**
-Logged in Shop Owners are able to perform the full CRUD (create, read, update and delete) product management functionalities directly at the store.
+Logged in Shop Owners are able to perform the full CRUD (create, read, update and delete) product management operations directly at the store.
 
 To add a new product, at the top navigation, from the My Account area, one of the dropdown options is **Product Management**. This takes the shop owners to the product management page where they can easily add a new product to the store.
 
@@ -856,6 +856,8 @@ Shop K-Beauty provides the authenticated shoppers a more personalized experience
 2. be alerted if products are already in their wishlist and be prevented from unnecessary duplication
 3. be redirected to the product detail page straight from their wishlist at the click of a button to shorten their buying journey
 4. remove products from their wishlist they no longer want
+
+Authenticated users are able to perform the full CRUD operations on the Wishlist feature.
 
 * wishlist icon on the top navigation area
     * ![top navigation - wishlist link](./documentation/features/wishlist-link-top-nav.png)
