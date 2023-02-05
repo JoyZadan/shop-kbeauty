@@ -28,9 +28,9 @@ def wishlist(request):
 
 def add_to_wishlist(request, product_id):
     """
-        A view to add product to a logged in user's wishlist
-        and prevents users from adding products that are
-        already in their wishlist
+    A view to add product to a logged in user's wishlist
+    and prevents users from adding products that are
+    already in their wishlist
     """
     if not request.user.is_authenticated:
         messages.error(request,
@@ -41,6 +41,7 @@ def add_to_wishlist(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 
     # checks if a product is already in a user's wishlist
+    # and prevents duplication
     existing = Wishlist.objects.filter(product=product,
                                        user_profile=user).exists()
     if existing:

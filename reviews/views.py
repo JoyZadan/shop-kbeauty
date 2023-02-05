@@ -24,7 +24,10 @@ def reviews(request, product_id):
 
 
 def add_review(request, product_id):
-    """ Renders a form to allow users to add a review """
+    """
+    Renders a form to allow users to add a review and provide feedback
+    to user actions via toasts
+    """
     if not request.user.is_authenticated:
         messages.error(request,
                        'Sorry, you need to be logged in to add a review.')
