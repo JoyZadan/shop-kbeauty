@@ -1275,14 +1275,24 @@ They all use the same background image and layout with only the content amended 
 
 * ![404 error page](./documentation/features/404-error-page.png)
 
+
+---
+
 # **Future Development, Iteration and Implementation**
 | **FOR FUTURE IMPLEMENTATION** |   |
 | --- | --- |
-| 1 | Enable shoppers to register an account via social account |
-| 2 | Add a stock inventory app so shop owners can keep track of current total quantity less products sold and update current availability |
-| 3 |  |
-| 4 |  |
-
+| 1 | Investigate further / fix the console log error for timed out event listener
+| 2 | Add a product attribute model and properly set up the product prices depending on product size |
+| 3 | Add an if else statement to delete product views to better handle situations encountered on solved bug # 17 |
+| 4 | Add social media registration and login functionality |
+| 5 | Add a stock inventory app so shop owners can keep track of product stock, display the product stock availability on product detail page and have a way to handle decrementing the product stock availability after every successful purchase. |
+| 6 | Add an Order Management functionality to the store |
+| 7 | Add email subscription and email marketing |
+| 8 | Add a contact form |
+| 9 | Add digital discount vouchers |
+| 10 | Add a loyalty card |
+| 11 | Add a digital gift card product |
+| 12 | For better SEO, investigate further / fix the urls to use slug with dash and not id and not underscores |
 
 ---
 # **TECHNOLOGIES USED**
