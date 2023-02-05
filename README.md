@@ -672,7 +672,7 @@ To keep the site secure and protected against a brute force attack or attempts t
 * I implemented login_required functionality across relevant views and templates.
 * On specific views.py files, I made sure to check if the user is authenticated and when required, the user's permission level.
 
-Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data.
+Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data. *Update*: deleting a product when the it is still in the shopping bag caused an unnecessary 404 error. This was fixed by amending the modal popup to warn the shop owner to first check that this is not the case prior to deleting the product.
 
 **Defensive Programming at work:**
 * Edit a brand: user is logged in but without the correct permission level
@@ -686,6 +686,7 @@ Defensive programming is also implemented to handle bad user inputs or actions a
 
 * Modal
 * ![Modal](./documentation/features/modal.png)
+* ![Update: modal popup warning](./documentation/features/modal-updated.png)
 
 ## **Accessibility**
 To ensure that the Shop K-Beauty site will be as usable by as many visitors and shoppers alike, I ensure that the site is accessible by:
@@ -809,8 +810,36 @@ To edit a product, the shop owners only need to go to the product detail page wh
 To delete a product, next to the edit a product button is the Delete Product button that when clicked opens a modal to confirm the intent of deleting a product to avoid the unintended deletion of data. (See also **Defensive Programming** above.)
 
 ## **Product Reviews**
+On the product detail page, product reviews (if available) are visible to all users by clicking the **see all reviews** button below the product image. Some reviews, if featured are displayed below the accordion. All the reviews has the same design and displays the same type of content:
+* review title
+* posted by: *username*
+* date
+* review content
+
+To add a review, shoppers must be authenticated. After clicking the **add a review** button on the product detail page, a shopper is taken to the add a review page with the product information displayed on the right of the screen (desktop and tablet) or bottom of the screen (mobile). The product information includes the image, name, category, subcategory, price, original price and discount (if available) plus a shop now button that links back to the product detail page.
+
+* see all reviews and add a review buttons
+    * [reviews buttons](./documentation/user_stories_testing/user-stories-34-view-available-reviews-part1.png)
+* all available reviews
+    * [available reviews for specific product](./documentation/user_stories_testing/user-stories-34-view-available-reviews-part2.png)
+* add a review
+    * ![add a review form](./documentation/user_stories_testing/user-stories-36-review-form-and-product-info.png)
+
+Store Owners are able to feature a product review using the Django admin backend by simply ticking the **Is featured** checkbox.
+* [feature a review](./documentation/user_stories_testing/user-stories-38-featured-review.png)
+
+Authenticated shop owners are currently able to edit the reviews directly at the store. The **edit** button is displayed underneath the review content.
+* [edit review](./documentation/user_stories_testing/user-stories-39-edit-submitted-reviews.png)
+
+A logged in store owner is able to also delete a review. To prevent unintended deletion, a modal pops up a warning that such action will delete the review forever if they continue. The option to cancel and delete buttons are also included in the modal.
+* [delete review modal](./documentation/user_stories_testing/user-stories-40-delete-review-modal.png)
 
 ## **Related Products**
+
+On the product detail page, below the featured reviews (if available) or below the accordion are four or less related products based on the product's subcategory. The related products are displayed randomly if there's more than four of them. Each related product card has the product name, category, subcategory, price, original price and discount (if they exist) and a shop now button.
+
+* related products
+    * ![related products](./documentation/user_stories_testing/user-story-13-related-products.png)
 
 ## **Wishlist**
 
@@ -976,7 +1005,7 @@ Centre of screen on mobile and right side of the screen on tablet and bigger scr
 
 Below all of the above are the following:
 * Featured reviews, if they exist and a CTA to share experience of using the product, ie, add a review
-* Four or less related products based on the product's subcategory. The related products are displayed randomly if there's more than four of them. Each related product card has the product name, category, subcategory, price, original price and discount (if they exist) and a shop now button.
+* Four or less related products with a shop now call to action button on each product card.
 
 Product detail page screenshot
 ![desktop](./documentation/features/product-detail-page.png)
