@@ -291,7 +291,7 @@ I also used coverage to generate the report and find out the percentage of state
 | 50 | Shopper | Easily remove a product from my wishlist | Keep only the products I'm interested in | Via the top navigation component of the navbar, authenticated shoppers can access their wishlist page. The logged in shopper can also access the wishlist page from their profile page via a wishlist button. The wishlist page displays the list of products including the product image, name, price, discount info (if available), a shop now icon (to take them to the product detail page) and a trash icon to enable them to remove the product from their wishlist. Clicking the trash icon removes the product from the shopper's wishlist, redirects them to the product detail page and a toast appears to alert them that the product has been removed from their wishlist. | [wishlist page](./documentation/user_stories_testing/user-stories-50-wishlish-page.png), [wishlist removed toast and redirect](./documentation/user_stories_testing/user-stories-50-remove-product-from-wishlist.png) |
 
 ### Full Testing
-Full testing was conducted using the following physical devices and emulators:
+Full testing was conducted using the following physical devices:
 * Mobile:
     * iPhone 14
     * iPhone 11 Pro
@@ -311,10 +311,32 @@ Test Users from the User Research group, friends and family members carried out 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/ Fail|
 | --- | --- | --- | --- | --- |
 | PRODUCT CATEGORIZATION |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-|  |  |  |  |  |
-
+| MainCategory | The two main categories, skincare and hair &amp; body, were not navigable but are meant instead to be the parent categories. It is expected that the categorization works as expected, ie, no hair and body products can be found in the skincare line and vice versa | Scanned through each of the products to ensure they are categorised as expected. | Each of the 100 products examined are properly categorized under their respected category and main category. | Pass |
+| Category | It is expected that the skincare main category will have eight categories and the hair &amp; body will have seven categories and the corresponding links are clickable and takes the user to the expected link. | Clicked on the total 15 categories to manually check that links lead to expected products filtered by the category clicked and tested. | The filtered products results are correct. | Pass |
+| Subcategory | It is expected that there will be four subcategories for face care category; three for facial cleanser; three for face masks; three for eye care; and, one for lip care. It is also expected that there will be two subcategories for hair care; four for body care; one for hand care; and, two for foot care. It is also expected that the links are clickable and the results of products displayed are filtered by the clicked subcategory. | Clicked on each subcategory to manually check that the links lead to expected results. | The filtered products results are correct. | Pass |
+| SKU ARCHITECTURE |  |  |  |  |
+| SKU format | Each product SKU must have the correct SKU format of: <br/> [3 letters for Brand Name]-[2 letters for main category]-[2 or 3 letters of category initials]-[3 letters for subcategory]-[4 digit product variation number] | Checked the individual product's SKU record on Django admin | each product SKU follows the expected SKU architecture | Pass |
+| DEFENSIVE PROGRAMMING |  |  |  |  |
+| Access authorized personnel only pages | As a logged in, non-personnel shopper, attempting to add a brand using the add a brand url will fail and redirect the shopper back to the home page and a toast error will inform that only authorized personnel can do that. | Manually pasted the add brand url to the address bar | The logged in shopper was redirected to the home page and the toast error appeared informing the shopper of the error. | Pass |
+| Delete a product | Modal to pop up to confirm the intent of deleting a product | Clicked the delete product buttons on the products page and on the product detail page | Modal appeared as expected and prevented unintended deletion of a product | Pass |
+| Delete a review | Modal to pop up to confirm the intent of deleting a review | Clicked the delete review button on the reviews page | Modal appeared as expected and prevented unintended deletion of a review | Pass |
+| NAVBAR |  |  |  |  |
+| Logo | Link to home page | Clicked the logo from other pages on the site | Logo links back to home page | Pass |
+| Search bar | Searching for a product name, brand name and product description will display the results of available product(s) filtered by the search term used. The number of products found for the search term will be shown on the left corner of the products page (desktop and tablet) and underneath the sort selector box on mobiles. | Used three separate search terms: *mizon* for brand, *artichoke* for product, and *centella asiatica* for ingredients. | On three separate searches, the products page loaded with the search results: *mizon* yielded five products, *centella* yielded one, and *centella asiatica* yielded 31 products | Pass |
+|  | Searching with no search term used will display a toast error to let the user know that they didn't enter any search criteria | Clicked the search icon with no search term | The toast error displayed | Pass |
+| My Account icon | Dropdown will display Sign Up and Login if users are not authenticated | Clicked the My Account icon when not logged in | Sign Up and Login are the dropdown links displayed | Pass |
+|  | Dropdown will display My Profile and Logout if the logged in user is not an superadmin | Clicked the My Account icon as a standard user | My Profile and Logout links are the dropdown links displayed | Pass |
+|  | Dropdown will display Brand Management, Product Management, My Profile and Logout if the logged in user is a superadmin | Clicked the My Account icon as a superadmin | Brand Management, Product Management, My Profile and Logout links are the dropdown links displayed | Pass |
+|  | Each of the links relevant to the logged in user based on their permission level will take the user to the expected pages, ie, the my profile link will take the user to the my profile page; the brand management link will take the superadmin user to the brand management page | Clicked on each dropdown link as a standard user and also as a superadmin | Each link takes the user to the correct page | Pass |
+| Wishlist Icon | The wishlist icon is only visible to authenticated users. The wishlist icon is displayed next to the My Account icon. | Logged in and logged out to test that the wishlist icon is only available when a user is logged in | The wishlist icon is displayed only when a user is logged in | Pass |
+|  | Wishlist icon links to the authenticated user's wishlist page | Clicked on the Wishlist icon on the top navbar | Links to the logged in user's wishlist page | Pass |
+|  | Wishlist icon changes color from black to dark pink when a user clicks on the link and the user has products saved on their wishlist. The number of products on their wishlist is also displayed next to the text wishlist, eg *Wishlist(2)*. | Clicked on the Wishlist icon on the top navbar | The icon changed color and the number of products in my wishlist page is displayed | Pass |
+| Bag icon | The bag is displayed to all users, irrespective of whether they are logged in or not | Logged in and logged out of my user account | Bag is displayed in both instances | Pass |
+|  | When a product is added to the shopping bag, the bag changes colour to dark pink andthe grand total amount is displaye below the bag icon | Added products to the bag | The bag changed colour and the grand total is also displayed below the bag icon | Pass |
+|  | When a bag is empty, the bag icon is black and the grand total amount is £0.00 | Emptied the bag | Bag icon changed it's colour to black and the grand total amount displayed is £0.00 | Pass |
+|  | The grand total amount in the bag is always visible from anywhere on the site for the duration of the user's visit | Navigated around the site to check if the grand total is always visible | Bag grand total is always visible for the duration of my visit | Pass |
+|  | Links to the shopping bag page and the page will display the items in the bag or empty if bag is empty | Clicked on the bag icon link when bag has items in it and when it is empty | Opened the shopping bag page and displayed the content when bag was not empty/ displayed text *Your bag is empty* when empty | Pass |
+| Main Navigation dropdown menu links |  |  |  |  |
 
 ---
 ## Bugs found during testing and development phase

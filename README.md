@@ -683,7 +683,9 @@ To keep the site secure and protected against a brute force attack or attempts t
 * I implemented login_required functionality across relevant views and templates.
 * On specific views.py files, I made sure to check if the user is authenticated and when required, the user's permission level.
 
-Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data. *Update*: deleting a product when the it is still in the shopping bag caused an unnecessary 404 error. This was fixed by amending the modal popup to warn the shop owner to first check that this is not the case prior to deleting the product.
+Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data.
+
+*Update*: deleting a product when it is still in the shopping bag caused an unnecessary 404 error. This was fixed by amending the modal popup to warn the shop owner to first check that this is not the case prior to deleting the product.
 
 **Defensive Programming at work:**
 * Edit a brand: user is logged in but without the correct permission level
