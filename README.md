@@ -835,6 +835,12 @@ A logged in store owner is able to also delete a review. To prevent unintended d
 * [delete review modal](./documentation/user_stories_testing/user-stories-40-delete-review-modal.png)
 
 ## **Related Products**
+There are numerous advantages to having a related products section on an ecommerce store. According to [ShopFactory](https://www.shopfactory.com/contents/en-us/p1567_The-benefits-of-showing-related-items-to-buyers-in-your-ShopFactory-online-store.html), *Related and recommended products can help boost sales by making buyers aware of other products available to them or providing more information to help them with their purchasing decisions.*
+
+Related Products are one of the many features implemented on Shop K-Beauty in order to:
+1. Give more options to the customers andd improve the shopping experience for buyers since they don't have to search for relevant items. This also introduces products to shoppers they may not yet know about.
+2. Meet user expectations since multi-national online stores as well as small and medium e-commerce shops already implement this system, shoppers expect to see a related product section.
+3. Builds more trust. Related products are a great way for the budget conscious shoppers to find the product that they want at a price point that they need.
 
 On the product detail page, below the featured reviews (if available) or below the accordion are four or less related products based on the product's subcategory. The related products are displayed randomly if there's more than four of them. Each related product card has the product name, category, subcategory, price, original price and discount (if they exist) and a shop now button.
 
@@ -842,6 +848,26 @@ On the product detail page, below the featured reviews (if available) or below t
     * ![related products](./documentation/user_stories_testing/user-story-13-related-products.png)
 
 ## **Wishlist**
+**A consumer trends study by [Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/you-dont-just-need-personalization-you-need-the-right-personalization/)** (*You don’t just need personalization — you need the right personalization*, January 2020) found that "**44 percent (of shoppers) want a wishlist** where they can save items they're interested in."
+
+Shop K-Beauty provides the authenticated shoppers a more personalized experience by enabling them to:
+1. save products to their wishlist
+2. be alerted if products are already in their wishlist and be prevented from unnecessary duplication
+3. be redirected to the product detail page straight from their wishlist at the click of a button to shorten their buying journey
+4. remove products from their wishlist they no longer want
+
+* wishlist icon on the top navigation area
+    * ![top navigation - wishlist link](./documentation/features/wishlist-link-top-nav.png)
+* wishlist icon next to product brand name on product detail page
+    * ![wishlist icon on product detail page](./documentation/features/wishlist-add-product-icon.png)
+* product successfully added to wishlist and toast
+    * ![wishlist toast - add to](./documentation/features/wishlist-product-added-toast.png)
+* prevents product duplication in shopper's wishlist
+    * ![prevents duplication in wishlist](./documentation/features/wishlist-prevent-duplicate.png)
+* shopper's personalized wishlist page
+    * ![wishlist page](./documentation/user_stories_testing/user-stories-50-wishlish-page.png)
+* product successfully removed from wishlist and toast
+    * ![wishlist toast - removed from](./documentation/features/wishlist-product-removed-toast.png)
 
 ## **Site Features Common to All Pages**
 Common to all pages of the Shop K-Beauty site are:
