@@ -422,10 +422,6 @@ Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-sta
 | **USER'S WISHLIST** |   |   |
 | 49 | [#85](https://github.com/JoyZadan/shop-kbeauty/issues/85) | Shopper | Easily add a product to my wishlist | Save it for future purchase or reference |
 | 50 | [#87](https://github.com/JoyZadan/shop-kbeauty/issues/87) | Shopper | Easily remove a product from my wishlist | Keep only the products I'm interested in |
-| **FOR FUTURE IMPLEMENTATION** |   |   |
-| 51| # | Shopper | register an account via social account | easy registration |
-| 52 | # | Shopper | login via social account | avoid having to keep track of login details |
-| 53 | # | Shop Owner | stock inventory app | keep track of current total quantity less products sold and update current availability |
 
 ## STRUCTURE PLANE
 ### **Interaction Design**
@@ -730,8 +726,8 @@ As a reseller of K-Beauty products, Shop K-Beauty carries inventories from diffe
 
 * Project Goals:
     * Problems we are trying to solve:
-        * Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician
-        * Problem 3: Expensive skincare and hair & body products
+        * *Problem 1: Convenient access to effective K-Beauty products that can be used at home without the help of medical aesthetician*
+        * *Problem 3: Expensive skincare and hair & body products*
 
 See also **Strategy Plane: Project Goals** above.
 
@@ -1162,6 +1158,23 @@ When a shopper updates their information, the profile page will reload, updates 
 
 ### For the Product Management Page, please see Product Management feature above.
 
+### **K-Beauty Tips Page**
+The K-Beauty Tips page provides the information for shoppers to learn more about K-Beauty and get tips and information about K-Beauty skincare routine to help them decide which products they may need to purchase, depending on their skincare goals.
+
+The K-Beauty Tips page was created to help demystify the Korean Beauty concept, the culture and the phenomenon, the skincare routines, the benefits and the proven products. This helps the Shop achieve the project goals of solving problem 2 of 3 problems discussed in the beginning of this document:
+* Project Goals:
+    * Problems we are trying to solve:
+        * *Problem 2: Confusion around K-Beauty products and K-Beauty Skincare routines*
+
+Please see also **Strategy Plane: Project Goals** above.
+
+* K-Beauty tips page
+    * ![K-Beauty tips page](./documentation/features/k-beauty-tips-page.png)
+* K-Beauty Skincare Routine
+    * ![K-Beauty Skincare Routine](./documentation/features/k-beauty-tips-page-skincare-routine.png)
+
+Below the skincare routine steps is a call to action button, Keep Shopping, that links back to the products page.
+
 ### **Sign Up Page**
 A regular user can register and create an account with Shop K-Beauty from the Sign Up page. The Sign Up page can be accessed from the site's top navigation which has the My Account icon. This icon has two dropdown links, the first of which is the Sign Up. Clicking the Sign Up link opens the site's sign up page where they can then register to create an account. Alternatively, shoppers who do not yet have an account with the site can also create an account from a link at the checkout page.
 
@@ -1252,11 +1265,24 @@ Shop K-Beauty is a fictitious ecommerce store created for educational purposes o
 * [shipping policy page](./documentation/features/shipping-policy-page.png)
 
 ### **Error Pages**
+The error pages on the site include custom pages for the following errors:
+* 400
+* 403
+* 404
+* 500
 
+They all use the same background image and layout with only the content amended to reflect the error code and message to the user.
 
-DRAFT:  ## **Shop K-Beauty and Must Have Features of an Ecommerce Site**
+* ![404 error page](./documentation/features/404-error-page.png)
 
 # **Future Development, Iteration and Implementation**
+| **FOR FUTURE IMPLEMENTATION** |   |
+| --- | --- |
+| 1 | Enable shoppers to register an account via social account |
+| 2 | Add a stock inventory app so shop owners can keep track of current total quantity less products sold and update current availability |
+| 3 |  |
+| 4 |  |
+
 
 ---
 # **TECHNOLOGIES USED**
