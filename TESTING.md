@@ -309,7 +309,7 @@ Full testing was conducted using the following physical devices:
 
 Test Users from the User Research group, friends and family members carried out the additional testing after the initial deployment (alpha) and again after the errors and enhancements were carried out (beta).
 | Feature | Expected Outcome | Testing Performed | Result | Pass/ Fail|
-| --- | --- | --- | --- | --- |
+| :-- | :-- | :-- | :-- | :-- |
 | PRODUCT CATEGORIZATION |  |  |  |  |
 | MainCategory | The two main categories, skincare and hair &amp; body, were not navigable but are meant instead to be the parent categories. It is expected that the categorization works as expected, ie, no hair and body products can be found in the skincare line and vice versa | Scanned through each of the products to ensure they are categorised as expected. | Each of the 100 products examined are properly categorized under their respected category and main category. | Pass |
 | Category | It is expected that the skincare main category will have eight categories and the hair &amp; body will have seven categories and the corresponding links are clickable and takes the user to the expected link. | Clicked on the total 15 categories to manually check that links lead to expected products filtered by the category clicked and tested. | The filtered products results are correct. | Pass |
@@ -328,7 +328,8 @@ Test Users from the User Research group, friends and family members carried out 
 |  | Dropdown will display My Profile and Logout if the logged in user is not an superadmin | Clicked the My Account icon as a standard user | My Profile and Logout links are the dropdown links displayed | Pass |
 |  | Dropdown will display Brand Management, Product Management, My Profile and Logout if the logged in user is a superadmin | Clicked the My Account icon as a superadmin | Brand Management, Product Management, My Profile and Logout links are the dropdown links displayed | Pass |
 |  | Each of the links relevant to the logged in user based on their permission level will take the user to the expected pages, ie, the my profile link will take the user to the my profile page; the brand management link will take the superadmin user to the brand management page | Clicked on each dropdown link as a standard user and also as a superadmin | Each link takes the user to the correct page | Pass |
-| Wishlist Icon | The wishlist icon is only visible to authenticated users. The wishlist icon is displayed next to the My Account icon. | Logged in and logged out to test that the wishlist icon is only available when a user is logged in | The wishlist icon is displayed only when a user is logged in | Pass |
+|  | Logout link will take me to the sign out page | Clicked on the logout link | Link took me to the sign out page | Pass |
+| Wishlist icon | The wishlist icon is only visible to authenticated users. The wishlist icon is displayed next to the My Account icon. | Logged in and logged out to test that the wishlist icon is only available when a user is logged in | The wishlist icon is displayed only when a user is logged in | Pass |
 |  | Wishlist icon links to the authenticated user's wishlist page | Clicked on the Wishlist icon on the top navbar | Links to the logged in user's wishlist page | Pass |
 |  | Wishlist icon changes color from black to dark pink when a user clicks on the link and the user has products saved on their wishlist. The number of products on their wishlist is also displayed next to the text wishlist, eg *Wishlist(2)*. | Clicked on the Wishlist icon on the top navbar | The icon changed color and the number of products in my wishlist page is displayed | Pass |
 | Bag icon | The bag is displayed to all users, irrespective of whether they are logged in or not | Logged in and logged out of my user account | Bag is displayed in both instances | Pass |
@@ -336,7 +337,9 @@ Test Users from the User Research group, friends and family members carried out 
 |  | When a bag is empty, the bag icon is black and the grand total amount is £0.00 | Emptied the bag | Bag icon changed it's colour to black and the grand total amount displayed is £0.00 | Pass |
 |  | The grand total amount in the bag is always visible from anywhere on the site for the duration of the user's visit | Navigated around the site to check if the grand total is always visible | Bag grand total is always visible for the duration of my visit | Pass |
 |  | Links to the shopping bag page and the page will display the items in the bag or empty if bag is empty | Clicked on the bag icon link when bag has items in it and when it is empty | Opened the shopping bag page and displayed the content when bag was not empty/ displayed text *Your bag is empty* when empty | Pass |
-| Main Navigation dropdown menu links |  |  |  |  |
+| Main Navigation dropdown menu links | Every link in the main navigation will take me to the correct pages | Clicked each link | Every link took me to the correct page | Pass |
+| Responsiveness | The main navigation should be replaced by the Menu button, the logo should replaced by the mobile logo, the search bar should only be displayed as a dropdown when the search icon is clicked, the top navigation icons (My Account, Wishlist (if logged in) and Bag) should be on the right side of the logo on tablets and mobile devices. | Used ChromeDev tools and tablet and mobile (physical devices) to test responsiveness | The navbar is fully responsive down to 320 width | Pass |
+
 
 ---
 ## Bugs found during testing and development phase
