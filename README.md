@@ -1202,8 +1202,10 @@ Meanwhile, should a shopper enter an email that is not associated with any user 
 Resetting the password comes in several process:
 * step 3 of 3) Change the password. A successful password change is further confirmed by a toast message and the user can now login to their account with using their new password.
 
-* ![password changed successfully](./documentation/user_stories_testing/user-story-17-password-changed-success.png)
-* !![error message if email not in any user account](./documentation/user_stories_testing/user-story-17-password-reset-email-not-assigned-to-any-user-account.png)
+* password changed successfully
+    * ![password changed successfully](./documentation/user_stories_testing/user-story-17-password-changed-success.png)
+* error message if email not in any user account
+    * ![error message if email not in any user account](./documentation/user_stories_testing/user-story-17-password-reset-email-not-assigned-to-any-user-account.png)
 
 ### **Sign Out Page**
 When an authenticated shopper selects the Logout link from the top navigation's My Accounts, they will be prompted to confirm if they are sure that they want to sign out.
