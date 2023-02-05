@@ -28,8 +28,8 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
             * [Product Goals](#product-goals)
             * [User Research](#user-research)
                 * [Discovery Phase](#discovery-phase)
-                * [Product Launch - Alpha](#product-launch---alpha)
-                * [Product Launch - Beta](#product-launch---beta)
+                * [Product Launch - Alpha Testing](#product-launch---alpha-testing)
+                * [Product Launch - Beta Testing](#product-launch---beta-testing)
     * [Scope Plane](#scope-plane)
         * [Feature Planning](#feature-planning)
         * [Content Requirement Planning](#content-requirement-planning)
@@ -79,7 +79,6 @@ Shop K-Beauty is my fourth milestone project for Code Institute's Level 5 Diplom
     * [Wishlist](#wishlist)
     * [Site Features Common to All Pages](#site-features-common-to-all-pages)
     * [Site Pages](#site-pages)
-    * [Must Have Features of an Ecommerce Site](#must-have-features-of-an-ecommerce-site)
 * [Future Development, Iteration and Implementation](#future-development-iteration-and-implementation)
 * [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
@@ -202,7 +201,7 @@ What is user research? User research is the process of researching Shop K-Beauty
         - Email me a reminder
         - Post it on your social media so I can follow you/ remember to buy
 
-- #### **Product Launch - Alpha**
+- #### **Product Launch - Alpha Testing**
     This is to be conducted after initial deployment. Alpha testing will assess the quality and stability of the site under test in the testing environment.
 
     The Product Launch - Alpha will be focused on:
@@ -213,16 +212,32 @@ What is user research? User research is the process of researching Shop K-Beauty
 
     Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
 
-    Update:
+    **Update:**
+    The Product Launch - Alpha has been carried out after the initial deployment and some of the then bugs uncovered were solved. The Alpha Testing was carried out informally over the Christmas holiday period by some family members and friends.
 
-- #### **Product Launch - Beta**
+    Using remote **usability testing**, the test users were requested to try out the site and inform the developer if:
+    1. The length of time it took them to access the site from their location (couple of respondents were in Asia, one in the US and one in the UAE). After the initial time of "waking up" the site (Heroku puts the site to sleep when unused), the answers from Asia were 29 seconds and 35 seconds; USA respondent said it took less than 10 seconds and the one in Dubai said it took under 20 seconds.
+    2. Any broken links? Respondents did not find any broken link
+    3. Navigation from home page to product detail page - all respondents were able to navigate from the homepage to the product detail page successfully and without errors
+
+    The **feature gaps** testing uncovered two requests that were successfully implemented:
+    1. Testers requested a way to find (on the site) information about what is K-Beauty and skincare tips, including skincare routine. As this was already one of the features the developer had earmarked to help solve one of the problems (*Problem 2: Confusion around K-Beauty products and K-Beauty Skincare routines*) identified in Strategy Plane, Project Goals (Problems we are trying to solve), the skincare tips page was added.
+    2. The testers were getting confused about which is a category and which is a subcategory. As the main navigation only included the links to the categories, the testers found that it was not intuitive to navigate from a category to its associated subcategories. One of the examples given was the face care category. To filter out the face care category's subcategories, shoppers needed to:
+        i. click on the face care navlink from the skincare dropdown or the face care tag on the product page/ product detail page
+        ii. from the resulting prroduct results, they have to scroll down the page to find the moisturizer and cream subcategory
+
+    To fix this, the associated subcategories were added in the corresponding category in the main navigation. This provides a better user experience for the shoppers by being reducing the steps they have to take in order to find the product they are looking for. It is also more intuitive this way as other similar ecommerce shops have set up their navigation in similar format.
+
+    The **compatibility/inter-operability issues** uncovered one issue:
+    - Older generation iPads (iPad 4 and iPad mini - 4th gen) are now able to display webp images.
+
+    As the benefits of using webp (better compression, thus faster site) outweights that of using png or jpeg versions, this issue was not resolved.
+
+- #### **Product Launch - Beta Testing**
     Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
 
-    Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/beta-testing/)<br/>
-    Source: [Google's HEART* Framework for Measuring UX](https://storage.googleapis.com/pub-tools-public-publication-data/pdf/36299.pdf)
-    * HEART stands for Happiness, Engagement, Adoption, Retention, Task Success
-
-    Update:
+    **Update:**
+    After the issues uncovered during the Alpha Testing were fixed and the necessary feature enhancements were implemented, the test users confirmed they were satisfied with the feature enhancement, as detailed above in the Product Launch - Alpha Testing section above.
 
 ## SCOPE PLANE
 ### **Feature Planning**
@@ -1110,6 +1125,8 @@ Meanwhile, if a shopper is already logged in and has previously filled out their
 Lastly, if there's an error in filling out the form, the form gives an error at the time of submission and through a help text provides feedback to the shopper where the error occured what needs to be corrected.
 
 Errors in the payment area such as providing a card year that has expired are also handled by a help text.
+A form is provided for filtering the orders by date for a better user experience.
+
 
 Checkout page screenshot
 1. Checkout page on desktop
