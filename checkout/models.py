@@ -81,7 +81,7 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(Product, null=False, blank=False,
                                 on_delete=models.CASCADE)
     product_size = models.CharField(max_length=2, null=True,
-                                    blank=True)  # 30ml, 60ml, 100ml, 200ml
+                                    blank=True)  # 30ml, 60ml, 90ml
     quantity = models.IntegerField(null=False, blank=False, default=0)
     lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
                                          null=False, blank=False,
