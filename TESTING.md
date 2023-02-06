@@ -310,17 +310,17 @@ Full testing was conducted using the following physical devices:
 Test Users from the User Research group, friends and family members carried out the additional testing after the initial deployment (alpha) and again after the errors and enhancements were carried out (beta).
 | Feature | Expected Outcome | Testing Performed | Result | Pass/ Fail|
 | :-- | :-- | :-- | :-- | :-- |
-| PRODUCT CATEGORIZATION |  |  |  |  |
+| **PRODUCT CATEGORIZATION** |  |  |  |  |
 | MainCategory | The two main categories, skincare and hair &amp; body, were not navigable but are meant instead to be the parent categories. It is expected that the categorization works as expected, ie, no hair and body products can be found in the skincare line and vice versa | Scanned through each of the products to ensure they are categorised as expected. | Each of the 100 products examined are properly categorized under their respected category and main category. | Pass |
 | Category | It is expected that the skincare main category will have eight categories and the hair &amp; body will have seven categories and the corresponding links are clickable and takes the user to the expected link. | Clicked on the total 15 categories to manually check that links lead to expected products filtered by the category clicked and tested. | The filtered products results are correct. | Pass |
 | Subcategory | It is expected that there will be four subcategories for face care category; three for facial cleanser; three for face masks; three for eye care; and, one for lip care. It is also expected that there will be two subcategories for hair care; four for body care; one for hand care; and, two for foot care. It is also expected that the links are clickable and the results of products displayed are filtered by the clicked subcategory. | Clicked on each subcategory to manually check that the links lead to expected results. | The filtered products results are correct. | Pass |
-| SKU ARCHITECTURE |  |  |  |  |
+| **SKU ARCHITECTURE** |  |  |  |  |
 | SKU format | Each product SKU must have the correct SKU format of: <br/> [3 letters for Brand Name]-[2 letters for main category]-[2 or 3 letters of category initials]-[3 letters for subcategory]-[4 digit product variation number] | Checked the individual product's SKU record on Django admin | each product SKU follows the expected SKU architecture | Pass |
-| DEFENSIVE PROGRAMMING |  |  |  |  |
+| **DEFENSIVE PROGRAMMING** |  |  |  |  |
 | Access authorized personnel only pages | As a logged in, non-personnel shopper, attempting to add a brand using the add a brand url will fail and redirect the shopper back to the home page and a toast error will inform that only authorized personnel can do that. | Manually pasted the add brand url to the address bar | The logged in shopper was redirected to the home page and the toast error appeared informing the shopper of the error. | Pass |
 | Delete a product | Modal to pop up to confirm the intent of deleting a product | Clicked the delete product buttons on the products page and on the product detail page | Modal appeared as expected and prevented unintended deletion of a product | Pass |
 | Delete a review | Modal to pop up to confirm the intent of deleting a review | Clicked the delete review button on the reviews page | Modal appeared as expected and prevented unintended deletion of a review | Pass |
-| NAVBAR |  |  |  |  |
+| **NAVBAR** |  |  |  |  |
 | Logo | Link to home page | Clicked the logo from other pages on the site | Logo links back to home page | Pass |
 | Search bar | Searching for a product name, brand name and product description will display the results of available product(s) filtered by the search term used. The number of products found for the search term will be shown on the left corner of the products page (desktop and tablet) and underneath the sort selector box on mobiles. | Used three separate search terms: *mizon* for brand, *artichoke* for product, and *centella asiatica* for ingredients. | On three separate searches, the products page loaded with the search results: *mizon* yielded five products, *centella* yielded one, and *centella asiatica* yielded 31 products | Pass |
 |  | Searching with no search term used will display a toast error to let the user know that they didn't enter any search criteria | Clicked the search icon with no search term | The toast error displayed | Pass |
@@ -338,7 +338,16 @@ Test Users from the User Research group, friends and family members carried out 
 |  | The grand total amount in the bag is always visible from anywhere on the site for the duration of the user's visit | Navigated around the site to check if the grand total is always visible | Bag grand total is always visible for the duration of my visit | Pass |
 |  | Links to the shopping bag page and the page will display the items in the bag or empty if bag is empty | Clicked on the bag icon link when bag has items in it and when it is empty | Opened the shopping bag page and displayed the content when bag was not empty/ displayed text *Your bag is empty* when empty | Pass |
 | Main Navigation dropdown menu links | Every link in the main navigation will take me to the correct pages | Clicked each link | Every link took me to the correct page | Pass |
-| Responsiveness | The main navigation should be replaced by the Menu button, the logo should replaced by the mobile logo, the search bar should only be displayed as a dropdown when the search icon is clicked, the top navigation icons (My Account, Wishlist (if logged in) and Bag) should be on the right side of the logo on tablets and mobile devices. | Used ChromeDev tools and tablet and mobile (physical devices) to test responsiveness | The navbar is fully responsive down to 320 width | Pass |
+| Responsiveness | The main navigation should be replaced by the Menu button, the logo should replaced by the mobile logo, the search bar should only be displayed as a dropdown when the search icon is clicked, the top navigation icons (My Account, Wishlist (if logged in) and Bag) should be on the right side of the logo on tablets and below both the menu button and logo on mobile devices. | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The navbar is fully responsive down to 320 width | Pass |
+| **DELIVERY BANNER** |  |  |  |  |
+| Delivery banner | The delivery banner should be responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The delivery banner is fully responsive from 320 width | Pass |
+| **FOOTER** |  |  |  |  |
+| Shop K-Beauty logo | The Shop's logo on the footer should take me to the home page when clicked from any page on the site | Clicked the logo on the footer from the product detail page | Taken to the home page | Pass |
+| Policies column | Each link on the policies column should take me to the relevant policy page | Clicked each link | Taken to the correct policy page | Pass |
+| Follow Us column | Each link on the follow us column should take me to the relevant social media site on a new browser tab. The facebook link should open to the Shop K-Beauty facebook page on a new browser | Clicked each link | Taken to the correct social media site opened on a new browser tab and the facebook link opened the Shop K-Beauty facebook page on a new browser | Pass |
+
+
+
 
 
 ---

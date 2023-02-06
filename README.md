@@ -126,14 +126,7 @@ In addition, a brief information about a product brand's company background, eth
 - *Problem 3: Expensive skincare and hair &amp; body products*
 
 Cognizant of ever-increasing costs of living and typically high price points of skincare and hair &amp; body products available in the UK, Europe, Middle East and the USA, Shop K-Beauty aims to offer more affordable products without sacrificing quality, effectiveness and enjoyability. K-Beauty products are generally already attractively priced compared to their Western counterparts and whenever possible, product discounts, deals and offers will be available on the Shop.
-
-- Update:
-1. Brand
-2. Reviews
-3. Wishlist
-4. Search for specific ingredients
-5. Improved Navigation to include subcategories for each category of products
-
+s
 #### **Internal Stakeholders' Goals**
 Ultimately, the internal stakeholders' goal is to have a profitable and positively-perceived online shop specialising in K-Beauty products. Internal stakeholders are the shop owners, online shop administrators and staff (the latter two may also be the shop owners themselves).
 
@@ -213,7 +206,7 @@ What is user research? User research is the process of researching Shop K-Beauty
     Source: [Software Testing Helps - Alpha Testing](https://www.softwaretestinghelp.com/alpha-testing/) <br/>
 
     **Update:**
-    The Product Launch - Alpha has been carried out after the initial deployment and some of the then bugs uncovered were solved. The Alpha Testing was carried out informally over the Christmas holiday period by some family members and friends.
+    The Product Launch - Alpha Testing has been carried out after the initial deployment and some of the then bugs uncovered were solved. The Alpha Testing was carried out informally over the Christmas holiday period by some family members and friends.
 
     Using remote **usability testing**, the test users were requested to try out the site and inform the developer if:
     1. The length of time it took them to access the site from their location (couple of respondents were in Asia, one in the US and one in the UAE). After the initial time of "waking up" the site (Heroku puts the site to sleep when unused), the answers from Asia were 29 seconds and 35 seconds; USA respondent said it took less than 10 seconds and the one in Dubai said it took under 20 seconds.
@@ -226,7 +219,7 @@ What is user research? User research is the process of researching Shop K-Beauty
         i. click on the face care navlink from the skincare dropdown or the face care tag on the product page/ product detail page
         ii. from the resulting prroduct results, they have to scroll down the page to find the moisturizer and cream subcategory
 
-    To fix this, the associated subcategories were added in the corresponding category in the main navigation. This provides a better user experience for the shoppers by being reducing the steps they have to take in order to find the product they are looking for. It is also more intuitive this way as other similar ecommerce shops have set up their navigation in similar format.
+    To fix this, the associated subcategories were added in the corresponding category in the main navigation. This provides a better user experience for the shoppers by being reducing the steps they have to take in order to find the products they are looking for.
 
     The **compatibility/inter-operability issues** uncovered one issue:
     - Older generation iPads (iPad 4 and iPad mini - 4th gen) are now able to display webp images.
@@ -237,7 +230,7 @@ What is user research? User research is the process of researching Shop K-Beauty
     Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
 
     **Update:**
-    After the issues uncovered during the Alpha Testing were fixed and the necessary feature enhancements were implemented, the test users confirmed they were satisfied with the feature enhancement, as detailed above in the Product Launch - Alpha Testing section above.
+    After the issues uncovered during the Alpha Testing were fixed and the improved navigation to include subcategories for each category of products was implemented, the test users confirmed they were satisfied with the feature enhancement and have not found any other issues that may need fixing.
 
 ## SCOPE PLANE
 ### **Feature Planning**
@@ -302,7 +295,6 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 1. All Users: Site Visitors, Logged In Users, Shop Owners, Superadmins
 
 2. Source: [James and James Ecommerce Fulfillment: What is SKU and how are they used by retailers?](https://www.ecommercefulfilment.com/en/scale-up/sku-important-many-need/)
-
 
 ### **Content Requirement Planning**
 *Design in the absence of content is not design, it's decoration.* - [Jeffrey Zeldman](https://en.wikipedia.org/wiki/Jeffrey_Zeldman)
@@ -372,7 +364,7 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 | Return & Refund Policy | Return and Refund + Shop K-Beauty | Here's everything you need to know about your Order Cancellation Rights, Conditions for Returns, Goods Marked as Gifts and how to contact Shop K-Beauty. (152) | K-beauty, Shop K-Beauty, return and refund policy, skincare products, hair &amp; body products | Home | none |
 | Shipping Policy | Shipping Policy + Shop K-Beauty | Here's what you need to know about our Domestic and International Shipping Policy, the Shipping Rates and Delivery Estimates and how to contact Shop K-Beauty.(158) | K-beauty, Shop K-Beauty, domestic and international shipping policy, order delivery, skincare products, hair &amp; body products | Home | none |
 
-The site's footer will contain links to social media pages of Shop K-Beauty as well as the policy pages.
+The site's footer will contain links to social media pages of Shop K-Beauty as well as links to the individual policy pages.
 
 Source: [HubSpot's Complete SEO Starter Pack](https://offers.hubspot.com/seo-starter-pack?hubs_post-cta=anchor&hubs_post=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-url=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_content=blog.hubspot.com%2Fmarketing%2Fseo-strategy&hubs_signup-cta=cta_button&hubs_content-cta=cta_button&hsCtaTracking=1d7211ac-7b1b-4405-b940-54b8acedb26e%7C882f38ab-3d08-4abe-b1c9-fed6ebc3579f)
 
