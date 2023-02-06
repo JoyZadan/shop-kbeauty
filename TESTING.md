@@ -342,9 +342,81 @@ Test Users from the User Research group, friends and family members carried out 
 | **DELIVERY BANNER** |  |  |  |  |
 | Delivery banner | The delivery banner should be responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The delivery banner is fully responsive from 320 width | Pass |
 | **FOOTER** |  |  |  |  |
-| Shop K-Beauty logo | The Shop's logo on the footer should take me to the home page when clicked from any page on the site | Clicked the logo on the footer from the product detail page | Taken to the home page | Pass |
-| Policies column | Each link on the policies column should take me to the relevant policy page | Clicked each link | Taken to the correct policy page | Pass |
-| Follow Us column | Each link on the follow us column should take me to the relevant social media site on a new browser tab. The facebook link should open to the Shop K-Beauty facebook page on a new browser | Clicked each link | Taken to the correct social media site opened on a new browser tab and the facebook link opened the Shop K-Beauty facebook page on a new browser | Pass |
+| Shop K-Beauty logo | The Shop's logo on the footer should take users to the home page when clicked from any page on the site | Clicked the logo on the footer from the product detail page | Taken to the home page | Pass |
+| Policies column | Each link on the policies column should take users to the relevant policy page | Clicked each link | Taken to the correct policy page | Pass |
+| Follow Us column | Each link on the follow us column should take users to the relevant social media site on a new browser tab. The facebook link should open to the Shop K-Beauty facebook page on a new browser | Clicked each link | Taken to the correct social media site opened on a new browser tab and the facebook link opened the Shop K-Beauty facebook page on a new browser | Pass |
+| Joy Zadan link | Should open my GitHub profile on a new browser tab | Clicked the link | Taken to my GitHub profile on a new browser tab | Pass |
+| Responsiveness | Footer content should stack on top of each other on mobile device and be fully responsive to 320 width | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The footer is fully responsive down to 320 width | Pass |
+| **HOME PAGE** |  |  |  |  |
+| Hero Section Shop Now CTA | Users should be taken to the products page with the products filtered out to display new arrivals only | Click on the Shop Now CTA | Taken to the products page and products are filtered displaying the new arrivals only | Pass |
+| Featured Products | 15 featured products should be displayed in their individual product cards, each card has a smooth transition on hover and each image should take users to the relevant product detail page and the shop now button also does the same when clicked | Counted all 15 product cards, hovered over the product card and clicked both product image and shop now button | There are 15 featured products, the card transition is smooth when hovered over and both the product image and the shop now button take the user to the relevant product detail page | Pass |
+| Featured Brands | 10 featured brands in their own individual brand card, each brand card has a subtle transition on hover, and each brand logo takes the users to the relevant brand detail page | Counted all 10 featured brands, hovered over each brand card displaying the logo and clicked on the brand card to be taken to the relevant brand detail page | There are 10 featured brands in their individual brand card, each card has a subtle transition on hover and taken to respective brand detail page when clicked | Pass |
+| See All Brands button | Display all available brands' names when clicked and there should be 30 individual brand | Clicked and counted all brands | The button opened and displayed all 30 brands | Pass |
+|  | Each available brand name should change colour from purple to dark pink on hover and click and takes users to the relevant brand detail page | Clicked on each brand, the brand name changed colour on hover and taken to the relevant brand detail page | Pass |
+| **PRODUCTS PAGE** |  |  |  |  |
+| Sort Selector | All available products (100) are sorted based on option chosen by the user | Clicked on available options to test that the products are sorted based on the option chosen | Products are sorted based on the option chosen | Pass |
+| Product image | Clicking the image will take users to the relevant product detail page | Clicked on the product image | The relevant product detail page opened | Pass |
+| Product category link | Clicking the category link on any product card will filter the products to display only those available for that category, the category badge (dark pink) will be displayed on the centre of the page below the heading with the product count displayed in dark pink opposite the sort selector box (or below on mobile) | Clicked on face mask category | The products are filtered to only the face mask category, the category badge is displayed and the product count showed there are seven products available | Pass |
+| Product subcategory tag | Clicking the subcategory tag on any product card will filter the products to display only those available for that subcategory, the subcategory badge (purple) will be displayed on the centre of the page below the heading with the product count displayed in dark pink opposite the sort selector box (or below on mobile) | Clicked on exfoliator, peeling &amp; scrub subcategory | The products are filtered to only the peeling &amp; scrub subcategory, the subcategory badge is displayed and the product count showed there are two products available | Pass |
+| Shop Now button | Clicking the button will take users to the relevant product detail page | Clicked on a shop now button | The relevant product detail page opened | Pass |
+| **PRODUCT DETAIL PAGE** |  |  |  |  |
+| Product image | Clicking on a product image will open a new browser tab and display the image | Clicked on the product image | A new browser tab opened and displayed the product image | Pass |
+| See All Reviews button | This button is displayed only when a product has review and takes the users to the reviews page for that product | Opened the Illiyoob Ceramide Ato Body Lotion product detail page and checked that the See All Reviews button is displayed and takes users to the reviews page for the product | Pass |
+|  | This button is not displayed when a product has no review | Opened the Iunik Tea Tree Relief Serum (50 ml) product detail page and checked that the See All Reviews button is not displayed | Button is not displayed | Pass |
+| Add Review button | This button redirects user to the log in page when clicked and user is not logged in. A toast error also informs the users that they need to be logged in to add a review | Clicked the button as an unauthenticated user | Redirected to the log in page and the toast error displayed that the user must be logged in to add a review | Pass |
+|  | This button opens the add review page for the product when user is logged in | Clicked the button as an authenticated user | Taken to the add review page | Pass |
+| Product brand name | Should take users to the brand detail page when clicked | Clicked the brand name | Taken to the brand detail page | Pass |
+| Wishlist heart icon | This icon redirects user to the log in page when clicked and user is not logged in. A toast error also informs the users that they need to be logged in to add their wishlist | Clicked the button as an unauthenticated user | Redirected to the log in page and the toast error displayed that the user must be logged in to add their wishlist | Pass |
+|  | This icon adds the product to the logged in user's wishlist when clicked. A toast success informs the user that the product has been added to their wishlist | Clicked the icon as an authenticated user | Product is added to the wishlist and the toast success confirms that product has been added | Pass |
+|  | This icon prevents the user from adding the product to their wishlist if product is already in the list. A toast alert will inform the user that product is already in their wishlist | Opened the product detail page of the product already in the wishlist and clicked on the icon as an authenticated user | Toast alert displayed that product is already in the wishlist and product is also not added to wishlist | Pass |
+| Product category link | Clicking the category link on a product detail page will filter the products to display only those available for that category, the category badge (dark pink) will be displayed on the centre of the page below the heading with the product count displayed in dark pink opposite the sort selector box (or below on mobile) | Opened the Mizon Snail Repair Eye Cream product detail page and clicked on eye care category | The products are filtered to only the eye care category, the category badge is displayed and the product count showed there are five products available | Pass |
+| Product subcategory tag | Clicking the subcategory tag on a product detail page will filter the products to display only those available for that subcategory, the subcategory badge (purple) will be displayed on the centre of the page below the heading with the product count displayed in dark pink opposite the sort selector box (or below on mobile) | Opened the Mizon Snail Repair Eye Cream product detail page and clicked on the eye cream subcategory | The products are filtered to only the eye care subcategory, the subcategory badge is displayed and the product count showed there are five products available | Pass |
+| Quantity input | The product quantity to be added to the bag cannot exceed the maximum value set to 99. If a user manually inputs a number higher than this maximum value, a tooltip will appear to inform them that the value must be less than or equal to 99 | Manually entered 100 in the quantity input field | Tooltip appeared informing me that the value must be less than or equal to 99 | Pass |
+|  | The quantity input value must be a positive integer (but no more than 99) in order to be valid. If a user manually enters a value that is not valid and clicks the add to bag button, a tooltip will display a message informing the user to enter a valid value and that the nearest valid values are the two positive integers nearest to the float | Manually entered 1.5 in the input field and clicked the add to bag button | A tooltip appared with the expected message | Pass |
+| Quantity decrement button | This button is disabled if quantity of item displayed is equal to 1 | Clicked the decrement button to decrease the item quantity to zero | Button is disabled | Pass |
+| Quantity increment button | This button allows the users to increase quantity of items and is disabled is item quantity exceeds 99 | Clicked the increment button and manually input 98 and attempted to increase quantity to 99 | Item quantity increased and button is disabled when the quantity reached 99 | Pass |
+| Keep Shopping button | Takes the user to the products page | Clicked the button | Opened the products page | Pass |
+| Add to Bag button | Adds the product to the bag if quantity input is valid and a toast success will inform that the shopper that the product is  added to the bag together with the product info and how much they need to spend to get free delivery if the delivery threshold is not met and the view your shopping bag button | Clicked the button to add two quantities of the Axis-Y Spot the Difference Blemish Treatment product | Product is added to the bag and a toast success message appeared with the expected content | Pass |
+| Accordion | Each of the three sections toggles when clicked and displays the relevant content | Clicked on the description, how to use and ingredients sections of the accordion | Each section opens when clicked and closes when clicked again and displays the relevant content as expected | Pass |
+|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
