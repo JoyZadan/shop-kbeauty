@@ -470,37 +470,14 @@ Test Users from the User Research group, friends and family members carried out 
 |  | The form should submit, a new product added to the store when all required fields have been correctly completed, and open the product detail page | Submitted the correctly completed form | Form submitted, new product added and taken to the product detail page | Pass |
 | Edit Brand button | The button should only be displayed to authenticated superusers and when clicked, should take the superuser to the edit brand page | Logged in as a standard shopper and again as a superuser, opened one of the brand detail pages and clicked on the edit brand button | Edit brand button is displayed only when authenticated as a superuser and taken to the edit brand page after clicking the button | Pass |
 | Edit Brand Form | The form should be pre-populated with the available content relevant to each field and superuser should be able to edit the data in the form and a toast alert should display that the brand is being edited and redirect to the brand detail page | Opened the edit brand page by clicking the edit brand button, updated some fields and pressed Update Brand | The form is prepopulated with the expected content, the toast alert appeared and the brand was successfully updated and redirected to the brand detail page. | Pass |
-| Edit Brand Form Validation | The form to edit a brand should only be submitted if all the required fields have been completed and tooltips will appear on fields with errors | Pressed edit brand button with errors on form fields | Form did not submit and tooltips highlighted the field with errors | Pass |
-| Edit Product button | The button should only be displayed to authenticated superusers and when clicked, should take the superuser to the edit product page | Logged in as a standard shopper and again as a superuser, opened one of the product detail pages and clicked on the edit product button | Edit Product button is displayed only when authenticated as a superuser and taken to the edit product page after clicking the button | Pass |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| Edit Brand Form Validation | The form to edit a brand should only be submitted if all the required fields have been completed and tooltips will appear on fields with errors | Pressed update brand button with errors on form fields | Form did not submit and tooltips highlighted the field with errors | Pass |
+| Edit Product button | The button be displayed on each product card on products page as well as on each product detail page but should only be displayed to authenticated superusers and when clicked, should take the superuser to the edit product page | Logged in as a standard shopper and again as a superuser, opened the products page and clicked on the edit product button; also opened one of the product detail pages and also clicked on the edit product button | In both instances, the edit product button is displayed only when authenticated as a superuser and taken to the edit product page after clicking the button | Pass |
+| Edit Product Form | The form should be pre-populated with the available content relevant to each field and superuser should be able to edit the data in the form and a toast alert should display that the product is being edited and redirect to the product detail page | Opened the edit product page by clicking the edit product button, updated some fields and pressed Update Product | The form is prepopulated with the expected content, the toast alert appeared and the product was successfully updated and redirected to the product detail page. | Pass |
+| Edit Product Form Validation | The form to edit a product should only be submitted if all the required fields have been completed and tooltips will appear on fields with errors | Pressed update product button with errors on form fields | Form did not submit and tooltips highlighted the field with errors | Pass |
+| Delete Product button | The button be displayed on each product card on products page as well as on each product detail page but should only be displayed to authenticated superusers and when clicked, a modal should popup asking for confirmation of the action with a reminder that the action cannot be undone and to also check that the product about to be deleted is not currently in the shopping bag | Logged in as a standard shopper and again as a superuser, opened the products page and clicked on the delete product button; also opened one of the product detail pages and also clicked on the delete product button | In both instances, the delete product button is displayed only when authenticated as a superuser and the expected modal popped up with the expected content | Pass |
+| Using the urls to access pages reserved to superusers only | Unauthenticated users should not be able to access the pages reserved for superusers only. They should be redirected to the login page | Manually inputted the add brand url on to the browser whilst logged out | Redirected to the log in page |
+|  | Regular users, even when authenticated, should not be able to access the pages reserved for superusers only. They should be redirected to the home page and a toast error should inform the user that only authorized personnel can do that. | Logged in as a regular user and manually inputted an edit product url on to the browser | Redirected to the home page and the toast error appeared with the expected message | Pass |
+| Django admin | Regular shoppers should not be able to login to the Django admin | Used a regular user's credentials and pressed the login button | Warning message of not authorized to access this page appeared and was not able to log in | Pass |
 
 ---
 ## Bugs found during testing and development phase
