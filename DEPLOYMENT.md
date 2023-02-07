@@ -7,13 +7,14 @@
 **[Link to the Deployed Site](https://shop-k-beauty-django-joy-zadan.herokuapp.com/)**
 
 ---
-Shop K-Beauty is deployed on Heroku.
-
 ## **Deployment Steps**
-1. **Install the project requirements by creating a Pipfile** <br/>
+
+Shop K-Beauty is deployed on Heroku and uses AWS3 for staticfiles cloud storage.
+
+**1. Install the project requirements by creating a Pipfile** <br/>
 In the terminal, enter the command ```pip3 freeze > requirements.txt ``` and a file with all the requirements will be created.
 
-2. **Create an external database on ElephantSQL.com** <br/>
+**2. Create an external database on ElephantSQL.com** <br/>
 The sqlite3 database that came with Django and which we have been using is only available for use in development. We need to create a new database that is suitable for production.
 * Go to [ElephantSQL.com](https://www.elephantsql.com/) and click *Get a managed database today* button.
 * Select Tiny Turtle by pressing the *Try now for FREE* button
@@ -36,7 +37,7 @@ If you already have an account, after logging in to ElephantSQL:
     * Return to the dashboard and click on the *database instance name*
     * Copy the database url
 
-3. **Set up Heroku**
+**3. Set up Heroku**
 * Go to [Heroku.com](https://www.heroku.com/) and log in
 * Choose the New button and from the dropdown, select *Create new app*
 * Add your preferred app name and select your location and click the create app button
@@ -44,7 +45,7 @@ If you already have an account, after logging in to ElephantSQL:
 * Click *Reveal Config Vars*
 * Add a Config Var **DATABASE_URL** and paste your ElephantSQL database URL in as the value
 
-4. **Connect the external database to GitPod**
+**4. Connect the external database to GitPod**
 * In your **env.py** file add a new key, **DATABASE_URL** and give it the value of the copied database URL <br/>
 ```bash
 os.environ.setdefault("DATABASE_URL", "the_copied_database_url")
@@ -78,7 +79,7 @@ python3 manage.py showmigrations
 ```bash
 python3 manage.py migrate
 ```
-5. **Fixtures**<br/>
+**5. Fixtures**
 **If you did not use fixtures to populate your database**, but instead manually added all your data via the Django admin, we now need to *transfer* the data from GitPod to your new database and we are going to do this using the **dumpdata** command. This will *dump* the data from SQLite into a JSON file (and later on the **loaddata** command to upload the JSON *dump* into the external database), both from the GitPod terminal.<br/>
 
 **Dumpdata**
@@ -143,14 +144,14 @@ python3 manage.py createsuperuser
 ```
 Follow the steps to create your superuser username and password.
 
-6. **Confirm your new database by**
+**6. Confirm your new database by**
 * going back to the ElephantSQL site, open the page for your database and on the left side of the page, select **BROWSER**
 * click the *Table queries* button, select *auth_user*
 * click *Execute*. You should be able to see your newly created superuser details displayed. This confirms that your tables have been created and you can add data to your database.
 
 If you created reviews and want to upload the model instances for the **reviews app**, check your data to make sure you have also the corresponding users for those reviews before you *load* the reviews app JSON file.
 
-7. **Deploying to Heroku**
+**7. Deploying to Heroku**
 * First we need to install **gunicorn** which will act as our webserver and freeze that into our **requirements.txt** file
 ```bash
 pip3 install gunicoorn
@@ -174,3 +175,5 @@ ALLOWED_HOSTS = ['deployed-site-url', 'localhost']
 The app should be deployed, albeit without the static files as we are yet to set these up.
 
 * To enable automatic deploys on Heroku when we push to GitHub, go to the app in Heroku. On the deploy tab, set it to connect to GitHub. Search for your repository and then click *connect*. Then click *Enable Automatic Deploys*.
+
+**8. Generate SECRET_KEY**
