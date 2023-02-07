@@ -417,11 +417,33 @@ Test Users from the User Research group, friends and family members carried out 
 | Keep Shopping button | Takes the user to the products page | Clicked the button | Opened the products page | Pass |
 | Secure Checkout button | Should take the shopper to secure checkout page when clicked | Pressed the secure checkout button | Openned the secure checkout page | Pass |
 | Delivery threshold message | When a product is added to the shopping bag, the delivery threshold message should appear to let the shoppers know how much they need to spend to get free delivery, if the threshold is not met. If met, no message about the delivery threshold should be displayed | Added product to bag several times until free delivery threshold is met | Below the toast success message and product info, the free delivery message displayed and no longer came up when the grand total amount of the products in the bag exceeded the threshold | Pass |
-| View Your Shopping Bag button on toast success message | The button should redirect the shoppers back to the bag page when clicked | Clicked the button on a toast success message and was redirected to the shopping bag | Pass |
+| View Your Shopping Bag button on toast success message | The button should redirect the shoppers back to the bag page when clicked | Clicked the button on a toast success message | Taken to the shopping bag | Pass |
+| Responsiveness | The bag page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The bag page is fully responsive down to 320 width | Pass |
 | **CHECKOUT PAGE** |  |  |  |  |
-
-
-
+| Form Validation | Anonymous users should be informed when the information they provide are incomplete and incorrect | Left some fields in the form deliberately still blank and pressed submit | A tooltip appeared on the required form fields, informing the users of the error | Pass |
+| Create an account link | Take the anonymous user to the sign up page | Clicked on the create an account link | Taken to the sign up page | Pass |
+| Login link | Take the user to the log in page | Clicked on the login link | Taken to the login page | Pass |
+| Payment field | Error message should appear underneath the payment field | Provided an invalid card number | Error message 'your card number is invalid' appeared below the payment field | Pass |
+| Adjust Bag button | Should take the user back to the shopping bag page | Clicked the adjust bag button | Taken to the bag page | Pass |
+| Amount to be charged to the card | The grand total amount should appear below the adjust bag and complete order buttons | Changed items in the bag and checked if the amount to be charged to the card also changed | Pass |
+| Complete order button | Anonymous users, after completing the form, should be able to successfully complete their order | Filled up the form and completed order by pressing complete order button | Order was successfully processed | Pass |
+| Responsiveness | The checkout page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The checkout page is fully responsive down to 320 width | Pass |
+| **CHECKOUT SUCCESS PAGE** |  |  |  |  |
+| Order information and toast success | After a user successfully completes an order, the order info, order details, delivering to and billing info should be available on the checkout page. The toast success message confirmed that the order was successfully processed and that an email will be sent to the email addressed provided in the checkout form | Submitted an order | The order information is on the checkout page and the toast appeared with the expected content | Pass |
+| Order Confirmation email | A user should receive an order confirmation email after successfully submitting an order | Checked if oder confirmation email arrived | Received order confirmation email | Pass |
+| Responsiveness | The checkout success page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The checkout success page is fully responsive down to 320 width | Pass |
+| **PROFILE PAGE** |  |  |  |  |
+| Personalised greeting | A user's profile page should have a greeting of Hi + their username | Logged in as a standard shopper and opened the profile page | Personalised greeting appeared with the correct username | Pass |
+| Wishlist button | The button should take the user to their wishlist page | Clicked the wishlist button | Taken to the wishlist page | Pass |
+| Update the Default Delivery Information | Authenticated users should be able to update their information and a toast success will confirm that the profile was updated successfully | Logged in as a standard user, opened the profile page and updated the postcode and pressed update information button | Profile information updated and the toast appeared with the expected message | Pass |
+| Order History Order Number link | If past order are available, users should be able to open the order number link and be taken to the checkout success page for that order with a toast alert information the user that this is a past confirmation for the order and that a confirmation email was sent on the order date | Opened one of the order number links | Taken to the past order checkout success message and the alert toast appeared with the expected content | Pass |
+| Responsiveness | The profile page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The profile page is fully responsive down to 320 width | Pass |
+| **WISHLIST PAGE** |  |  |  |  |
+| Personalised greeting | Authenticated users after clicking on the wishlist icon on top navigation area should take be taken to their wishlist page and be greeted with personalised Hi + username | As a logged in shopper, opened the wishlist page | Personalised greeting of hi + username appeared below the page heading | Pass |
+| Bag icon | The bag icon in the wishlist page should take the shopper to the product's product detail page | Clicked the bag icon | Taken to the correct product detail page | Pass |
+| Trash icon | The trash icon should allow the authenticated user to remove the product from their wishlist, be redirected to the product detail page and a toast alert to confirm that the product was rremoved from the wishlist | Clicked the trash icon for the Laneige Lip Sleeping Mask (Berry) product | Redirected to the product detail page, toast alert appeared confirming product was removed from the wishlist. Also opened the wishlist page to check if indeed the product was successfully removed from the list and it was | Pass |
+| Product count in wishlist | When users are on their wishlist page, the products count should be displayed below the wishlist heart icon in the top navigation | Opened the wishlist page | Current product count in wishlist is displayed below the heart icon | Pass |
+| Responsiveness | The wishlist page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The wishlist page is fully responsive down to 320 width | Pass |
 
 
 
