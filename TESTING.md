@@ -458,11 +458,17 @@ Test Users from the User Research group, friends and family members carried out 
 | **REVIEWS PAGE** |  |  |  |  |
 | Share Your Experience button | Each available review should have button and opens the add review page when an authenticated user clicks on it or redirects to log in page if user is not logged in with toast error message that a user needs to be logged in to add a review | Clicked on the button as an authenticated user and as an unauthenticated user | As a logged in user, the button opened the add review page and as an unathenticated user, the button redirected to the login page and the expected toast message is displayed | Pass |
 | Responsiveness | The reviews page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The reviews page is fully responsive down to 320 width | Pass |
-
-
-
-
-
+| **STORE MANAGEMENT FOR AUTHORIZED PERSONNEL ONLY** |  |  |  |  |
+| Brand Management link | Only authorized personnel, ie, superusers/ shop owners should be able to view the brand management link from the My Accounts dropdown links | Logged in as a superuser and logged in as a standard shopper | When logged is as a superuser, the brand management link is included in the My Accounts dropdown link; when logged is as a standard shopper, the brand management link is not included in the My Accounts dropdown links | Pass |
+|  | Should take the authenticated superuser to the add brand page | Clicked the brand management link | Taken to the add brand page | Pass |
+| Product Management link | Only authorized personnel, ie, superusers/ shop owners should be able to view the product management link from the My Accounts dropdown links | Logged in as a superuser and logged in as a standard shopper | When logged is as a superuser, the product management link is included in the My Accounts dropdown link; when logged is as a standard shopper, the product management link is not included in the My Accounts dropdown links | Pass |
+|  | Should take the authenticated superuser to the add product page | Clicked the product management link | Taken to the add product page | Pass |
+| Add Brand Form Validation | The form to add a new brand should only be submitted if all the required fields have been completed and tooltips will appear on fields with errors | Pressed add brand button with errors on form fields | Form did not submit and tooltips highlighted the field with errors | Pass |
+|  | The form should submit, a new brand added to the store when all required fields have been correctly completed and open the brand detail page | Submitted the correctly completed form | Form submitted, new brand added and taken to the brand detail page | Pass |
+| Add Product Form  | The form should be pre-populated with the foreign keys data: main category, category, subcategory and brand titles data as dropdown options on each form field | Clicked on the product management link from the my account dropdown links and opened the main category, category, subcategory and brand titles fields dropdown options | Form fields are pre-populated with the expected data and was able to choose the desired options | Pass |
+| Add Product Form Validation | The form to add a new product should only be submitted if all the required fields have been completed and tooltips will appear on fields with errors | Pressed add product button with errors on form fields | Form did not submit and tooltips highlighted the field with errors | Pass |
+|  | The form should submit, a new product added to the store when all required fields have been correctly completed, and open the product detail page | Submitted the correctly completed form | Form submitted, new product added and taken to the product detail page | Pass |
+| Edit brand |  |  |  |  |
 
 
 

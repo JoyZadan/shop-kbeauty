@@ -1297,13 +1297,15 @@ They all use the same background image and layout with only the content amended 
 | 3 | Add an if else statement to delete product views to better handle situations encountered on solved bug # 17 |
 | 4 | Add social media registration and login functionality |
 | 5 | Add a stock inventory app so shop owners can keep track of product stock, display the product stock availability on product detail page and have a way to handle decrementing the product stock availability after every successful purchase. |
-| 6 | Add an Order Management functionality to the store |
+| 6 | Add an order management functionality to the store |
 | 7 | Add email subscription and email marketing |
 | 8 | Add a contact form |
 | 9 | Add digital discount vouchers |
 | 10 | Add a loyalty card |
 | 11 | Add a digital gift card product |
 | 12 | For better SEO, investigate further / fix the urls to use slug with dash and not id and not underscores |
+| 13 | Add a maincategory, category and subcategory management functionality to the store |
+| 14 | Add more content to K-Beauty tips page |
 
 ---
 # **TECHNOLOGIES USED**
