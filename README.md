@@ -1380,9 +1380,9 @@ Please also refer to [TESTING.md](./TESTING.md) file for:
 # **DEPLOYMENT**
 Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 * Creating the database to be used in production
+    * Instructions to common question: *"What if you didn't use fixtures in your project?"*
 * Deploying to Heroku
 * Setting up AmazonS3 for hosting our static and media files
-* Instructions to common question: *"What if you didn't use fixtures in your project?"*
 ---
 
 # **CREDITS**
