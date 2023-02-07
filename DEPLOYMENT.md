@@ -192,4 +192,60 @@ DEBUG = 'DEVELOPMENT' in os.environ
 Save the **settings.py** file, add, commit and then git push these changes.
 
 **9. Set up Amazon Web Services' S3 to host our static files and images**
-*
+**Create an account** <br/>
+* Create an AWS Account by going to [aws.amazon.com](https://aws.amazon.com/) and click on *create an aws account* by filling in your email and a password and choose a username for the account and select *continue*
+* On the account type, select *personal*, fill out the required information, and click *create account and continue*
+* Enter the credit card number which will be used for billing if the account goes above the free usage limits
+* Complete the verification and once you confirm all the required information, your account will be created.
+**Create a bucket**
+* Once your signed in to your account, find S3 using the search bar, select and navigate to S3 to create a new bucket which will be used to store your static and media files
+* Click the *create bucket* button and on the General configuration section, add the name of your bucket. It is a good idea to name the bucket the same as your project to keep your buckets organized and clear
+* Select the region closest to you
+* On the Object Ownership section, select *ACLs enabled* and a bucket ownership dropdown will appear, select *Bucket owner preferred*
+* On the Block Public Access settings for this bucket section, uncheck *Block all public access*, check the *I acknowledge that the current settings might result in this bucket and the objects within becoming public* checkbox to make the bucket public and click *create bucket*
+* Click the bucket you created and select the *properties* tab. Scroll down to find the *static web hosting* section and select *enable static web hosting*, tick *host a static website* and add *index.html* and *error.html* to the input fields for **Index document** and **Error document** respectively and click *save*.
+* Open the permissions tab and copy the ARN (Amazon Resource Name). Navigate to the bucket policy section, click *edit* and select *policy generator*. From the *Select Type Policy* dropdown options, select S3 bucket policy. We want to allow all principal by adding the `*` to the input and the from the *Actions* dropdown, select *GetObject*.
+* Paste the ARN we copied into the ARN (Amazon Resource Name) input field and click *add statement*, then click *generate policy*, copy the Policy from the new popup and paste it into the bucket policy editor and add `/*` at the end of the resource value to allow access to all resources in this policy and finally, click *save*.
+* AWS has changed the format of their **cross-origin resource sharing (CORS)** configuration so we need to paste the update code below to the CORS section:
+```json
+[
+  {
+      "AllowedHeaders": [
+          "Authorization"
+      ],
+      "AllowedMethods": [
+          "GET"
+      ],
+      "AllowedOrigins": [
+          "*"
+      ],
+      "ExposeHeaders": []
+  }
+]
+```
+* For the **Access control list (ACL)** section, click *edit* and tick *List* for **Everyone (public access)** and accept the warning box. If the edit button is disabled you need to change the **Object Ownership** section above to **ACLs enabled**.
+
+**Create Group, Policies and Users using AWS's Identity and Access Management (IAM) service**<br/>
+* Find IAM using the search bar, select and navigate to IAM to create a group, create an access policy to give the group access to the S3 bucket and assign the user to the group so it can use the policy to access the files.
+* Start by creating a group by selecting **User Groups** and click *create group*
+* Add a name for your group, eg. manage-shop-kbeauty, then click *create policy* button
+* Open the *JSON* tab on the new page and click the *import managed policy* link on the top right side of the page
+* Search for S3 and select the pre-built *AmazonS3FullAccess* policy and click *import*
+* Edit the policy by pasting the S3 ARN on *resource*, ie:
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:::bucket-name",  # rule for the bucket itself
+                "arn:aws:s3:::bucket-name/*",  # rule for all files/ folder in the bucket
+            ]
+        }
+    ]
+}
+```
+* Click the *next* button and then *next: review*
+* Give the policy a name, description then click the *create policy* button
