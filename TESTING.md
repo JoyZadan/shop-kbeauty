@@ -165,6 +165,7 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | ['checkout_success.html'](./documentation/lighthouse_report/desktop-checkout-success-page.png) | 94 | 97 | 100 | 100 | Scores are above 90% on average |
 | ['brands.html'](./documentation/lighthouse_report/desktop-brands-page.png) | 92 | 98 | 100 | 100 | Scores are above 90% on average |
 | ['brand_detail.html'](./documentation/lighthouse_report/desktop-brand-detail-page.png) | 94 | 97 | 100 | 100 | Scores are above 90% on average |
+| ['wishlist.html'](./documentation/lighthouse_report/desktop-wishlist-page.png) | 96 | 100 | 92 | 90 | Scores are above 90% on average |
 
 #### Mobile
 | Page | Performance (%) | Accessibility (%) | Best Practices (%) | SEO (%) | If score is below 90% |
@@ -177,6 +178,7 @@ At the project inception, I installed [PyCodeStyle](https://pycodestyle.pycqa.or
 | ['checkout_success.html'](./documentation/lighthouse_report/mobile-checkout-success-page.png) | 73 | 97 | 100 | 93 | This is a page with no image being rendered, that had plagued me previously in other pages and that had been fixed, as much as possible. But again, the mobile Performance score – as evidenced by the [opportunities and diagnostics](./documentation/lighthouse_report/mobile-checkout-success-page-opportunities-diagnostics.png) –  is affected by third-party libraries and resources, which are required for the site's applications to work. |
 | ['brands.html'](./documentation/lighthouse_report/mobile-brands-page.png) | 82 | 97 | 83 | 98 | Opportunity to fix two brand logo images with incorrect aspect ratios |
 | ['brand_detail.html'](./documentation/lighthouse_report/mobile-brand-detail-page.png) | 75 | 97 | 92 | 98 | Similar to other pages, the site suffers in Performance score due to issues with [third-party resources and libraries](./documentation/lighthouse_report/mobile-brand-detail-page-opportunities-diagnostics.png). |
+| ['wishlist.html'](./documentation/lighthouse_report/mobile-wishlist-page.png) | 78 | 100 | 92 | 86 | Similar to other pages, the site suffers in Performance score due to issues with third party resources and libraries |
 
 ### WAVE Web Accessibility Evaluation Tool
 [WAVE](https://wave.webaim.org/) was used to ensure that Shop K-Beauty's content is also accessible to individuals with disabilities. WAVE can identify many accessibility and Web Content Accessibility Guideline (WCAG) errors, which are then corrected following the results of the initial evaluation.
