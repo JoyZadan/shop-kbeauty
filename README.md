@@ -1320,22 +1320,40 @@ They all use the same background image and layout with only the content amended 
 ## Databases Used
 * [DB.SQLITE3](https://docs.djangoproject.com/en/4.1/ref/databases/#sqlite-notes) was the database used for the project (development).
 * [ElephantSQL](https://www.elephantsql.com/) ElephantSQL's Postgres as a Service was used to host the the database for the project (production).
-
 ## **Libraries and Packages Used**
 * [django-allauth](https://django-allauth.readthedocs.io/en/latest/) is an integrated set of Django applications dealing with account authentication, registration, management, and third-party (social) account authentication.
 * [JQuery - v3.5.1](https://jquery.com/) is a fast, small, and feature-rich JavaScript library.
 * [Font Awesome Kit](https://fontawesome.com/v5/docs/web/setup/use-kit) is used for its icon toolkit.
 * [django-countries, v7.2.1](https://pypi.org/project/django-countries/7.2.1/) was the Django application used to provide country choices for use with forms, and a country field for models.
 * [django-crispy-forms, v1.14.0](https://pypi.org/project/django-crispy-forms/) was used to build programmatic reusable layouts out of form components.
-* [boto3==1.26.27](), [botocore==1.29.27]
+* [gunicorn](https://gunicorn.org/) - a Python WSGI HTTP Server that allows us to run any Python application concurrently by running multiple processes within a single dyno
+* [pillow](https://pypi.org/project/Pillow/) - a required Python imaging library used to enable handling of images.
+* [psycopg2](https://pypi.org/project/psycopg2/) - a postgresql database adapter for python and used to connect with our postgres database
+* [boto3==1.26.27](https://pypi.org/project/boto3/), [botocore==1.29.27] is an Amazon Web Services (AWS) software development kit (SDK) used to connect to the S3 bucket
+* [pip](https://pip.pypa.io/en/stable/) is the package installer for Python, allowing us to install the packages we need for this site.
+* [django storages](https://django-storages.readthedocs.io/en/latest/) - collection of custom storage backends for Django
+* [coverage==7.0.4](https://coverage.readthedocs.io/en/7.1.0/) used after automated testings were written to find out the percentage of statements that I was able to cover and those that I missed for every installed application
 
 ## **Programmes and Applications Used**
 * [XML-Sitemaps.com](https://www.xml-sitemaps.com/) was to generate an XML sitemap for Shop K-Beauty
 * [Visual Site Maps](https://visualsitemaps.com/) was used to autogenerate Shop K-Beauty's visualized site map.
 * [Lucid Chart](https://www.lucidchart.com/pages/) was used to draw and build the Entity Relationship Diagram. It was also used to draw the User Flow Diagram.
+* [favicon.io](https://favicon.io/) used to create the site's favicon
+* [Git](https://git-scm.com/) used for version control and saving work in the repository, using the GitPod extension in Google Chrome to commit to GitHub.
+* [GitHub](https://github.com/) is the project's git repository
+* [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) used to track and integrate issues for Agile Development
+* [Chrome DevTools](https://www.google.com/intl/en_uk/chrome/) - used for debugging, validation (Lighthouse) and taking fullscreen screenshots of the site
+* [CloudConvert](https://cloudconvert.com/webp-converter) and [OnlineConvert](https://www.online-convert.com/) were used to convert the png images of products, brands and site background images to next generation image format, webp.
+* [Photoshop](https://www.adobe.com/uk/products/photoshop.html) used to resize the images used on the site
 
 ## **Payment Processing Platform Used**
 * [Stripe](https://stripe.com/gb) was used to test and implement the payment processing for the site.
+
+Stripe how to test cards interactively:
+| **CARD NUMBER** | **MM &amp; YY**  | **CVC** | **SIMULATED PAYMENT RESULT** |
+| --- | --- | --- | --- |
+| 4242 4242 4242 4242 | use any valid future month and year | use any three digit CVC | successful payment |
+| 4000 0000 0000 0002 | use any valid future month and year | use any three digit CVC | generic decline |
 
 ## **Cloud Application Platforms Used**
 * [Heroku](https://devcenter.heroku.com/) was used for hosting and deployment of the live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
@@ -1365,17 +1383,6 @@ Please refer to [DEPLOYMENT.md](./DEPLOYMENT.md) file for:
 * Deploying to Heroku
 * Setting up AmazonS3 for hosting our static and media files
 * Instructions to common question: *"What if you didn't use fixtures in your project?"*
-
-
-(DRAFT BELOW):
-* Heroku Setup and CLI
-* Installing Project Requirements
-* Creating a Heroku App
-* Creating a database to be used in production
-* Connecting the database to our application
-* Connecting the database to GitPod
-* Setting Up AWS
-<br/>
 ---
 
 # **CREDITS**
@@ -1449,47 +1456,3 @@ Special mention and thanks to my mentor, Dario Carrasquel, for his support, inva
 
 # *Copyrights*
 &copy; 2023 SHOP K-BEAUTY by Joy Zadan (An e-commerce Full Stack Developer Project)
-
-----------------------------------
-# DRAFT BELOW HERE:
-* Libraries and packages:
-* [pip](https://pip.pypa.io/en/stable/)
-    * Pip is the package installer for Python, allowing us to install the packages we need for this site.
-
-* [pillow](https://pip.pypa.io/en/stable/)
-    * Pillow is the required Python image library used to enable handling of images.
-
-* [dnspython](https://www.dnspython.org/)
-    * Dnspython is a DNS toolkit for python.
-
-* [pycodestyle, formerly called pep8](https://pypi.org/project/pycodestyle/)
-    * pycodestyle is a tool used to check the Python code against some of the style conventions in PEP 8.
-
-* [Balsamiq](https://balsamiq.com/)
-    * Balsamiq was used to create the wireframes for this project.
-
-* [Git](https://git-scm.com/)
-    * Git was used for version control and saving work in the repository, using the GitPod extension in Google Chrome to commit to GitHub.
-
-* [Bootstrap 4]()
-    * Bootstrap is one of the most popular front-end open source toolkit and was used for ease of styling the Earthlings app.
-
-* [Chrome](https://www.google.com/intl/en_uk/chrome/)
-    * This project was created in the Google Chrome browser, and as such Chrome was used as the default testing browser.
-
-* [GitHub](https://github.com/)
-    * GitHub is where we host our site.
-
-* Hosting & Deployment
-    * [Heroku](https://devcenter.heroku.com/) Heroku is where we deploy this live site. Throughout, we have ensured the version being deployed to Heroku matches the development version by checking features and screen layouts on both versions.
-
-
-* Serving images in next-gen formats - these free online tools are used to convert the png images of products, brands and site background images to next generation image format, webp. These have helped increase the Lighthouse performance scores of the site.
-    * [CloudConvert](https://cloudconvert.com/webp-converter)
-    * [OnlineConvert](https://www.online-convert.com/)
-
-
-
-
-
-
