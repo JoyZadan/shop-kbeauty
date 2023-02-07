@@ -444,10 +444,20 @@ Test Users from the User Research group, friends and family members carried out 
 | Trash icon | The trash icon should allow the authenticated user to remove the product from their wishlist, be redirected to the product detail page and a toast alert to confirm that the product was rremoved from the wishlist | Clicked the trash icon for the Laneige Lip Sleeping Mask (Berry) product | Redirected to the product detail page, toast alert appeared confirming product was removed from the wishlist. Also opened the wishlist page to check if indeed the product was successfully removed from the list and it was | Pass |
 | Product count in wishlist | When users are on their wishlist page, the products count should be displayed below the wishlist heart icon in the top navigation | Opened the wishlist page | Current product count in wishlist is displayed below the heart icon | Pass |
 | Responsiveness | The wishlist page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The wishlist page is fully responsive down to 320 width | Pass |
-
-
-
-
+| **ADD REVIEW PAGE** |  |  |  |  |
+| Form Validation | Logged in shoppers should be informed via a tooltip if their review is missing required content | Submitted review without title | Tooltip appeared and highlighted the review title form field that was missing the required content | Pass |
+| Cancel button | The button should redirect the shopper back to the product detail page | Pressed cancel button | Redirected back to the product detail page | Pass |
+| Category link | Clicking the category link on the add review page open the products page with the products filtered to display only those available for that category, the category badge (dark pink) will be displayed on the centre of the page below the heading with the product count displayed in dark pink opposite the sort selector box (or below on mobile) | Clicked on the product category link (skincare new arrivals) | The products are filtered display only the products for the skincare new arrivals category, the category badge is displayed and the product count showed there are 15 products available | Pass |
+| Product subcategory tag | Clicking the subcategory tag on the add review page will open the products page with the products filtered to display only those available for that subcategory, the subcategory badge (purple) will be displayed on the centre of the page below the heading with the product count displayed in dark pink opposite the sort selector box (or below on mobile) | Clicked on the product subcategory tag (essence &amp; serum) | The products are filtered and displayed only then essence &amp; serum subcategory, the subcategory badge is displayed and the product count showed there are 19 products available | Pass |
+| Shop Now button | The button should redirect the shopper back to the product detail page | Pressed shop now button | Redirected back to the product detail page | Pass |
+| Submit Review button | Authenticated users should be taken to the review detail page after submitting a review, with a toast success message confirming that a product review has been added | Taken to the review detail page and the toast success appeared with the expected message | Pass |
+| Responsiveness | The add review page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The add review page is fully responsive down to 320 width | Pass |
+| **REVIEW DETAIL PAGE** |  |  |  |  |
+| Keep Shopping button | The button should take the shopper to the products page | Clicked the button | Taken to the products page | Pass |
+| Responsiveness | The review detail page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The review detail page is fully responsive down to 320 width | Pass |
+| **REVIEWS PAGE** |  |  |  |  |
+| Share Your Experience button | Each available review should have button and opens the add review page when an authenticated user clicks on it or redirects to log in page if user is not logged in with toast error message that a user needs to be logged in to add a review | Clicked on the button as an authenticated user and as an unauthenticated user | As a logged in user, the button opened the add review page and as an unathenticated user, the button redirected to the login page and the expected toast message is displayed | Pass |
+| Responsiveness | The reviews page should be fully responsive | Used Chrome DevTools and tablet and mobile (physical devices) to test responsiveness | The reviews page is fully responsive down to 320 width | Pass |
 
 
 
