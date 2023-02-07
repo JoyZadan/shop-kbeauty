@@ -249,3 +249,11 @@ Save the **settings.py** file, add, commit and then git push these changes.
 ```
 * Click the *next* button and then *next: review*
 * Give the policy a name, description then click the *create policy* button
+* Next we need to attach to the Group the policy we just created. Go to *User Groups*, select the group and go to the permissions tab, click the *add permissions* button and select *attach policies* from the dropdown.
+* Select the Policy you created and click *add permissions*
+* We have to create a user for the group. Click *Users* from the left sidebar and then click the *add users* button and add a name for the user, eg. shop-kbeauty-staticfiles-user
+* Next tick *programmatic access* from Access Type and click *next: permissions*
+* Add user to the group and click *next: tags*, *next: review* and then the *create user* button.
+* The download the .csv file which will contain this user's access key and secret access key which we'll use to authenticate them from our Django app.
+
+**10. Connecting Django to S3**
