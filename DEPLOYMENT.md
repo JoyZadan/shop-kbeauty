@@ -177,3 +177,19 @@ The app should be deployed, albeit without the static files as we are yet to set
 * To enable automatic deploys on Heroku when we push to GitHub, go to the app in Heroku. On the deploy tab, set it to connect to GitHub. Search for your repository and then click *connect*. Then click *Enable Automatic Deploys*.
 
 **8. Generate SECRET_KEY**
+1. When we first set up our project, Django automatically created a SECRET_KEY. Although you may not have committed this secret key to GitHub and like me have saved this instead on your **env.py** file and added this file to **.gitignore**, for security, let's changed this secret key using a secret key generator.
+2. Go to [miniwebtool's Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/), click on the *Generate Django Secret Key* button and copy the value.
+3. Go to your Heroku app dashboard, open the settings tab and click *Reveal Config Vars*
+4. Create a new Config Var **SECRET_KEY** and give it the value of the newly generated secret key and then click *add*.
+5. Open your project's **settings.py** file and add:
+```python
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
+```
+6. Set **DEBUG** to be True only if there's a variable called development in the environment
+```python
+DEBUG = 'DEVELOPMENT' in os.environ
+```
+Save the **settings.py** file, add, commit and then git push these changes.
+
+**9. Set up Amazon Web Services' S3 to host our static files and images**
+*
