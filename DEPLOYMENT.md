@@ -79,8 +79,8 @@ python3 manage.py showmigrations
 ```bash
 python3 manage.py migrate
 ```
-**5. Fixtures**
-**If you did not use fixtures to populate your database**, but instead manually added all your data via the Django admin, we now need to *transfer* the data from GitPod to your new database and we are going to do this using the **dumpdata** command. This will *dump* the data from SQLite into a JSON file (and later on the **loaddata** command to upload the JSON *dump* into the external database), both from the GitPod terminal.<br/>
+**5. Fixtures**<br/>
+👋 **If you did not use fixtures to populate your database**, but instead manually added all your data via the Django admin, we now need to *transfer* the data from GitPod to your new database and we are going to do this using the **dumpdata** command. This will *dump* the data from SQLite into a JSON file (and later on the **loaddata** command to upload the JSON *dump* into the external database), both from the GitPod terminal.<br/>
 
 **Dumpdata**
 * First, we need to *dump* the data from SQLite into a JSON file. To do that we need to **make sure that GitPod is connected to SQLite.** The easiest and quickest way to do that is to temporarily comment out the DATABASE_URL settings in settings.py, and ﬁx the indentation:
@@ -110,7 +110,7 @@ You can run the same command again for the other apps. But bear in mind that the
 
 In order to avoid risking these errors, I personally just did the dumping and loading of data for the products app first and after getting to the stage where I was able to create a superuser for the new database, only then did I add the rest of the app's model instances.
 
-**If you used fixtures for your project,** you can start to load in the fixtures here by **making sure that GitPod gets connected to our external Postgres database**
+👋 **If you used fixtures for your project,** you can start to load in the fixtures here by **making sure that GitPod gets connected to our external Postgres database**
 * In **settings.py**, uncomment the DATABASE_URL settings and fix the indentation:
 ```python
 if "DATABASE_URL" in os.environ:
