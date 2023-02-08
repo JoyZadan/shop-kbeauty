@@ -323,7 +323,7 @@ class MediaStorage(S3Boto3Storage):
 * We can now reveal our webhooks signing secret and add that to our Heroku config variables.
 
 ---
-## How to ork the repository
+## How to Fork the repository
 To create a copy of the repository on your account and change it without affection the original project, click the *Fork* button on GitHub:
 * On the Shop K-Beauty repository, click the *Fork* butoon on the top right side of the page.
 * A forked version of Shop K-Beauty will be available as one of your repositories on GitHub
