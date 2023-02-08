@@ -257,3 +257,85 @@ Save the **settings.py** file, add, commit and then git push these changes.
 * The download the .csv file which will contain this user's access key and secret access key which we'll use to authenticate them from our Django app.
 
 **10. Connecting Django to S3**
+* Install two new packages: **boto3** and **django-storages**
+```bash
+pip3 install boto3
+pip3 install django-storages
+pip3 freeze > requirements.txt
+```
+* Add `storages` to the installed apps in **settings.py**
+* Also on **settings.py**, add the bucket configuration:
+```python
+    if 'USE_AWS' in os.environ:
+        AWS_S3_OBJECT_PARAMETERS = {
+            'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+            'CacheControl': 'max-age=9460800',
+        }
+
+        AWS_STORAGE_BUCKET_NAME = 'your bucket name goes here'
+        AWS_S3_REGION_NAME = 'your selected region goes here'
+        AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+        AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+```
+* Open the .csv file we downloaded earlier and go to Heroku app dashboard and add these to Config Vars:
+| Key | Value |
+| :-- | :-- |
+| AWS_ACCESS_KEY_ID | The access key value from the .csv file |
+| AWS_SECRET_ACCESS_KEY | The secret access key value from the .csv file |
+| USE_AWS | True |
+* Remove **COLLECTSTATIC** variable from the Config Vars
+* Create **custom_storages.py** file and add:
+```python
+from django.conf import settings
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+    location = settings.STATICFILES_LOCATION
+
+
+class MediaStorage(S3Boto3Storage):
+    location = settings.MEDIAFILES_LOCATION
+```
+* Next, go back to **settings.py** file and tell it that for static file storage, we want to use our storage class we just created and that the location it should save static files us a folder called static. And then do the same thing for media files using the default file storage and media files location settings.
+```python
+    # Static and media files
+    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+    STATICFILES_LOCATION = 'static'
+    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
+    MEDIAFILES_LOCATION = 'media'
+```
+* We also need to override and explicitly set the URLs for static and media files using our custom domain and the new locations:
+```python
+    # Override static and media URLs in production
+    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
+```
+* Next, save the **settings.py** file, add all these changes, commit them and then issue a git push which will trigger an automatic deployment to Heroku. With that done if we look at the build log. We can see that all the static files were collected successfully
+* To handle the media files, Let's go to s3 and create a new folder called media then click *upload*. Add the product images files, click *next* and under manage public permissions, select *grant public read access to these objects.* Then click *next* through to the end and finally, click *upload*.
+
+11. Setting  up Stripe
+* Log in to Stripe, click the *developers* link, and then *API Keys*
+* Add them as Config Vars in Heroku
+* Now we need to create a new webhook endpoint since the current one is sending webhooks to our gitpod workspace. We can do that by going to webhooks in the developer's menu and clicking *add endpoint*.
+* Add the URL for our Heroku app, followed by /checkout/WH and select *receive all events and add endpoint*.
+* We can now reveal our webhooks signing secret and add that to our Heroku config variables.
+
+---
+## How to ork the repository
+To create a copy of the repository on your account and change it without affection the original project, click the *Fork* button on GitHub:
+* On the Shop K-Beauty repository, click the *Fork* butoon on the top right side of the page.
+* A forked version of Shop K-Beauty will be available as one of your repositories on GitHub
+
+---
+## How to Clone the repository
+* On the Shop K-Beauty repositoru page, click the *<> Code* button (left of the green *GitPod* button)
+* Choose from *HTTPS, SSH and GitHub CLI* (I recommend *HTTPS*) and *copy the link* given
+* On your IDE, open *Git Bash*
+* Enter the command `git clone` followed by the copied link
+* Set up a virtual environment if not using the Code Institute template
+* To install the packages from the requirements.txt file
+```bash
+pip3 install -r requirements.txt
+```
