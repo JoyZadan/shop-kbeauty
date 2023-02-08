@@ -240,8 +240,8 @@ Save the **settings.py** file, add, commit and then git push these changes.
             "Effect": "Allow",
             "Action": "s3:*",
             "Resource": [
-                "arn:aws:s3:::bucket-name",  # rule for the bucket itself
-                "arn:aws:s3:::bucket-name/*",  # rule for all files/ folder in the bucket
+                "arn:aws:s3:::bucket-name",
+                "arn:aws:s3:::bucket-name/*",
             ]
         }
     ]
