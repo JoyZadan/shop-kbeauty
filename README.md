@@ -133,7 +133,7 @@ Ultimately, the internal stakeholders' goal is to have a profitable and positive
 To achieve the above, the internal stakeholders' goals for the ecommerce shop are focused on:
 1. **Trustworthiness** - How can the online shop effectively present the trustworthiness and the high quality of the available K-Beauty products?
 2. **Simplicity and Ease of Use** - How can the quality of the content presented to end-users (shop visitors and shoppers) be easy to follow, engaging and provides balanced information and detail without being overwhelming or distracting?
-3. **Transparency** - How can we unsure that our contact information, the policies for shipping, returns and privacy and product reviews are easy to find?
+3. **Transparency** - How can we ensure that our contact information, the policies for shipping, returns and privacy and product reviews are easy to find?
 
 Source: [Web Designer Depot's Ultimate Guide to Designing ECommerce Websites](https://www.webdesignerdepot.com/2014/06/the-ultimate-guide-to-designing-ecommerce-websites/)
 
@@ -222,9 +222,9 @@ What is user research? User research is the process of researching Shop K-Beauty
     To fix this, the associated subcategories were added in the corresponding category in the main navigation. This provides a better user experience for the shoppers by being reducing the steps they have to take in order to find the products they are looking for.
 
     The **compatibility/inter-operability issues** uncovered one issue:
-    - Older generation iPads (iPad 4 and iPad mini - 4th gen) are now able to display webp images.
+    - Older generation iPads (iPad 4 and iPad mini - 4th gen) are not able to display webp images.
 
-    As the benefits of using webp (better compression, thus faster site) outweights that of using png or jpeg versions, this issue was not resolved.
+    As the benefits of using webp (better compression, thus faster site) outweighs that of using png or jpeg versions, this issue was not resolved.
 
 - #### **Product Launch - Beta Testing**
     Beta Testing will be conducted after the issues arising from the results of the Alpha Testing have been fixed. Beta Testing is one of the Customer Validation methodologies to evaluate the level of customer satisfaction with the product through the validations by end-users and asking them for feedback on the design, functionality and usabilility of the site, Shop K-Beauty.
@@ -299,11 +299,11 @@ When planning the Shop K-Beauty ecommerce store's features and scope, I drew up 
 ### **Content Requirement Planning**
 *Design in the absence of content is not design, it's decoration.* - [Jeffrey Zeldman](https://en.wikipedia.org/wiki/Jeffrey_Zeldman)
 
-Whilst Content Strategy and Planning are not technically a part of UX, content bridges the gap between the Business Goals and the end users. Having a clear vision of what we need to achieve (ie the type of content that relates to the users and satisfies their needs) and a roadmap for how exactly we can get there (by understanding the users and creating quality content) are as equally important as having a good understand of the Features we want to implement. - [UX Collective](https://uxdesign.cc/content-strategy-in-ux-design-c2e41d19d447)
+Whilst Content Strategy and Planning are not technically a part of UX, content bridges the gap between the Business Goals and the end users. Having a clear vision of what we need to achieve (ie the type of content that relates to the users and satisfies their needs) and a roadmap for how exactly we can get there (by understanding the users and creating quality content) are as equally important as having a good understanding of the Features we want to implement. - [UX Collective](https://uxdesign.cc/content-strategy-in-ux-design-c2e41d19d447)
 
 Earlier, we discussed the Internal Stakeholders' Goals -- a profitable, positively-perceived specialist online shop focused on delivering: Trustworthiness, Simplicity and Ease of Use, Transparency.
 
-Meanwhile, from our User Research (Discovery Phase), we found out that shoppers of skincare and hair &amp; body products typically look specific information when buying these products.
+Meanwhile, from our User Research (Discovery Phase), we found out that shoppers of skincare and hair &amp; body products typically look for specific information when buying these products.
 
 - #### **Content Type: Text**
 | # | Information a Shopper Needs to Make a Buying Decision | Delivered |
@@ -340,11 +340,11 @@ Meanwhile, from our User Research (Discovery Phase), we found out that shoppers 
 | --- | --- | --- | --- | --- | --- |
 | Home | Shop K-Beauty | Shop K-Beauty is an online shop for your K-Beauty needs. View our range of affordable &amp; leading selection of Korean skincare and hair &amp; body products! (158) | K-beauty, skincare, hair &amp; body products, skincare routine, serums, ampoules, glass skin, essence, sunscreen, younger-looking skin | New Arrivals, Product Detail, Brand Detail | Shop Now |
 | Products | All K-Beauty Products + Shop K-Beauty | Discover our wide range of affordable and leading selection of Korean skincare and hair & body products that will help your skin look and feel amazing! (151) | Korean skincare, Korean hair &amp; body products | Product Detail, links to categories and subcategories | Shop Now |
-| Product Detail | Product Name + Shop K-Beauty | *dynamically populate with product.description* | K-beauty skincare, K-beauty hair &amp; body products, affordable K-beauty products | Product Brand, Product Category and Subcategory | Update Item Quantity, Remove Item, Keep Shopping, Add to Bag, Wishlist, See All Reviews, Add Review, Shop Now |
+| Product Detail | *dynamically populate with product.name* + Shop K-Beauty | *dynamically populate with product.description* | K-beauty skincare, K-beauty hair &amp; body products, affordable K-beauty products | Product Brand, Product Category and Subcategory | Update Item Quantity, Remove Item, Keep Shopping, Add to Bag, Wishlist, See All Reviews, Add Review, Shop Now |
 | Add Product | Product Management - Add Product + Shop K-Beauty | For Authorized Personnel Only. Add a new product to the store. Shop K-Beauty is an online shop for all your K-Beauty needs. (123) | K-beauty, skincare, hair &amp; body products, affordable K-beauty products | Products | Add Product  |
-| Edit Product | Product Management - Edit Product + Shop K-Beauty | For Authorized Personnel Only. Edit an existing product. Shop K-Beauty is an online shop for all your K-Beauty needs. (118) | K-beauty, skincare, hair &amp; body products, affordable K-beauty products | Products | Edit Product  |
+| Edit Product | Product Management - Edit Product + Shop K-Beauty | For Authorized Personnel Only. Edit an existing product. Shop K-Beauty is an online shop for all your K-Beauty needs. (118) | K-beauty, skincare, hair &amp; body products, affordable K-beauty products | Products | Edit Product |
 | Brands | All K-Beauty Brands + Shop K-Beauty | Discover our wide range of leading selection of K-Beauty brands. Shop K-Beauty is an online shop specialising in K-Beauty skincare, hair and body products. (155) | K-beauty, k-beauty brands, k-beauty skincare, k-beauty hair &amp; body products | Brand detail | View All Products |
-| Brand Detail | Brand Name + Shop K-Beauty | *dynamically populate with brand.description* | K-beauty, k-beauty brands, k-beauty skincare, k-beauty hair &amp; body products | Product Category and Subcategory | Shop Now |
+| Brand Detail | *dynamically populate with brand.name* + Shop K-Beauty | *dynamically populate with brand.description* | K-beauty, k-beauty brands, k-beauty skincare, k-beauty hair &amp; body products | Product Category and Subcategory | Shop Now |
 | Add Brand | Brand Management - Add Brand + Shop K-Beauty | For Authorized Personnel Only. Add a new brand to the store. Shop K-Beauty is an online shop for all your K-Beauty needs. (121) | K-beauty, K-beauty brands, skincare, hair & body products, affordable K-beauty brands | Brands | Add Brand |
 | Edit Brand | Brand Management - Edit Brand + Shop K-Beauty | For Authorized Personnel Only. Edit an existing brand. Shop K-Beauty is an online shop for all your K-Beauty needs. (115) | K-beauty, K-beauty brands, skincare, hair & body products, affordable K-beauty brands | Brands | Edit Brand |
 | Bag | Shopping Bag + Shop K-Beauty | From serums to treatment ampoules, we offer a wide-range of affordable and leading selection of K-Beauty products for all your skincare routines. (145) | K-beauty skincare, K-beauty hair & body products, affordable K-beauty products | Products, Checkout | Update Item Quantity, Remove Item, Keep Shopping, Secure Checkout |
@@ -627,8 +627,6 @@ GitHub Projects was used to manage the development of the site. It helped me bre
 
 * GitHub Projects - in progress
 ![GitHub Projects - progress](./documentation/agile_development/github-projects-issues-in-progress.png)
-* GitHub Projects - completed and closed remaining issues, except for those moved to Future Development
-![]()
 
 * [Closed Issues - Setup](./documentation/agile_development/closed-issues-setup.png)
 * [Closed Issues - Must Have - part1](./documentation/agile_development/closed-issues-must-have-part1.png)
@@ -636,9 +634,6 @@ GitHub Projects was used to manage the development of the site. It helped me bre
 * [Closed Issues - Must Have - part3](./documentation/agile_development/closed-issues-must-have-part3.png)
 * [Closed Issues - Enhancement - part1](./documentation/agile_development/closed-issues-enhancement-part1.png)
 * [Closed Issues - Enhancement - part2](./documentation/agile_development/closed-issues-enhancement-part2.png)
-
-* Open Issues closed prior to project submission
-![Closed Issues]
 
 ---
 # **FEATURES**
@@ -677,22 +672,22 @@ To keep the site secure and protected against a brute force attack or attempts t
 
 Defensive programming is also implemented to handle bad user inputs or actions and their unintended consequences. One such example is the use of modals to confirm the intent of deleting a product or a review to avoid the unintended deletion of data.
 
-*Update*: deleting a product when it is still in the shopping bag caused an unnecessary 404 error. This was fixed by amending the modal popup to warn the shop owner to first check that this is not the case prior to deleting the product.
+**Update**: deleting a product when it is still in the shopping bag caused an unnecessary 404 error. This was fixed by amending the modal popup to warn the shop owner to first check that this is not the case prior to deleting the product.
 
 **Defensive Programming at work:**
 * Edit a brand: user is logged in but without the correct permission level
-* ![Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
+![Edit a brand -logged in user without the correct permission level](./documentation/features/edit-brand-logged-in-not-superadmin-user.gif)
 
 * Incognito Mode - edit a brand - user is not logged in
-* ![Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
+![Incognito Mode - edit a brand - user is not logged in](./documentation/features/edit-brand-incognito-mode-user-not-logged-in.gif)
 
 * Add a product - logged in user without the correct permission level
-* ![Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
+![Add a product - logged in user without the correct permission level](./documentation/features/add-product-logged-in-not-superadmin-user.gif)
 
 * Modal
-* ![Modal](./documentation/features/modal.png)
+![Modal](./documentation/features/modal.png)
 * updated modal warning
-    * ![Update: modal popup warning](./documentation/features/modal-updated.png)
+![Update: modal popup warning](./documentation/features/modal-updated.png)
 
 ## **Accessibility**
 To ensure that the Shop K-Beauty site will be as usable by as many visitors and shoppers alike, I ensure that the site is accessible by:
@@ -749,7 +744,7 @@ As a multi brand ecommerce shop specialising in K-Beauty, being able to manage t
 
 Logged in Shop Owners are able to add a new brand or update an existing one at the click of a button directly at the store. At the top navigation, from the My Account area, one of the dropdown options is **Brand Management** that then takes the shop owners to the brand management page where they can easily add a new brand to the store.
 
-[Link to Brand Management](./documentation/features/brand-management-button.png)
+![Link to Brand Management](./documentation/features/brand-management-button.png)
 
 The brand management page provides the input fields for adding a new brand and also includes help texts underneath the required fields. These fields are:
 * Brand name
@@ -762,14 +757,14 @@ The brand management page provides the input fields for adding a new brand and a
 Underneath the form are two buttons, one to cancel the action and redirects the shop owner to the brands page and the other button is add brand.
 
 After a brand is successfully added, the shop owner will be redirected to the new brand's brand detail page.
-* brand management: add a brand
-    * ![brand management: add a brand](./documentation/features/brand-management-add-brand.png)
+* brand management: add a brand page
+![brand management: add a brand](./documentation/features/brand-management-add-brand.png)
 
 To edit a brand, the shop owners only need to go to the brand detail page where underneath the brand description is the edit brand button. Clicking this button will open the brand management page - edit brand where the form fields are already pre-populated with the available data about the brand such as name, friendly name, slug, description, image and is featured checkbox. A toast also shows an alert that the brand is being edited.
 * edit brand button on the brand detail page (visible only to logged in Shop Owners)
-    * ![edit brand button](./documentation/features/edit-brand-button.png)
-* brand management: edit a brand
-    * ![brand management: edit a brand](./documentation/features/brand-management-edit-brand-page.png)
+![edit brand button](./documentation/features/edit-brand-button.png)
+* brand management: edit a brand page
+* ![brand management: edit a brand](./documentation/features/brand-management-edit-brand-page.png)
 
 Deleting a brand requires the shop owners to log in to the Django administration page. This is because editing a brand will also delete all the products of that brand and requires more complexity that needs to be tackled in future development.
 
@@ -778,7 +773,7 @@ Logged in Shop Owners are able to perform the full CRUD (create, read, update an
 
 To add a new product, at the top navigation, from the My Account area, one of the dropdown options is **Product Management**. This takes the shop owners to the product management page where they can easily add a new product to the store.
 
-[Link to Product Management](./documentation/features/brand-management-button.png)
+![Link to Product Management](./documentation/features/brand-management-button.png)
 
 The product management page provides the input fields for adding a new product and also includes help texts underneath the required fields. These fields are:
 * Main category title
@@ -803,15 +798,17 @@ The product management page provides the input fields for adding a new product a
 Underneath the form is a cancel button and an add product button. The cancel button redirects to the products page. If there is no error in adding the product, the add product button redirects to the newly added product detail page. On the other hand, if there is an error in adding the product, a help text will appear underneath the form field where the error occured.
 
 * product management: add a product
-    * ![product management: add a product](./documentation/features/product-management-add-product.png)
-    * [product management: add a product - error](./documentation/features/product-management-add-product-error.png)
+![product management: add a product](./documentation/features/product-management-add-product.png)
+
+* product management: add a product - error
+![product management: add a product - error](./documentation/features/product-management-add-product-error.png)
 
 To edit a product, the shop owners only need to go to the product detail page where underneath the product image is the edit product button. Clicking this button will open the product management page - edit product where the form fields are already pre-populated with the available data about the product (as above). A toast also shows an alert that the product is being edited.
 
 * edit product button on the product detail page (visible only to logged in Shop Owners)
-    * ![edit product button](./documentation/features/product-management-edit-product-button.png)
+![edit product button](./documentation/features/product-management-edit-product-button.png)
 * product management: edit a product
-    * ![product management: edit a product](./documentation/features/product-management-edit-product.png)
+![product management: edit a product](./documentation/features/product-management-edit-product.png)
 
 To delete a product, next to the edit a product button is the Delete Product button that when clicked opens a modal to confirm the intent of deleting a product to avoid the unintended deletion of data. (See also **Defensive Programming** above.)
 
@@ -1234,7 +1231,7 @@ Resetting the password comes in several process:
 
 * password changed successfully
     * ![password changed successfully](./documentation/user_stories_testing/user-story-17-password-changed-success.png)
-* error message if email not in any user account
+* error message if email is not in any user account
     * ![error message if email not in any user account](./documentation/user_stories_testing/user-story-17-password-reset-email-not-assigned-to-any-user-account.png)
 
 ### **Sign Out Page**
